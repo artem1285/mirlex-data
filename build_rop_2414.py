@@ -112,7 +112,7 @@ def extract_footnotes(text):
 def parse_tn_rules(text):
     text = clean(text)
     rules = []
-    pat = re.compile(r"(из\s+)?(\d{4}(?:\s+\d{2,3}){0,3})(?:\s*<\s*(\d{1,2})\s*>)?", re.I)
+    pat = re.compile(r"(из\s+)?(\d{4}(?:\s+\d{1,3}){0,3})(?:\s*<\s*(\d{1,2})\s*>)?", re.I)
     for m in pat.finditer(text):
         code = clean(m.group(2))
         foot = int(m.group(3)) if m.group(3) else None
