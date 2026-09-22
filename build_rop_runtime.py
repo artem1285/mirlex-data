@@ -20,6 +20,7 @@ from pathlib import Path
 
 SRC = Path("rop-2414.json")
 OUT = Path("rop-check.data.js")
+RULES = Path("rop-rule-explanations.json")
 
 def clean(v):
     return re.sub(r"\s+", " ", (v or "").replace("\xa0", " ")).strip()
@@ -171,6 +172,22 @@ def main():
     payload = json.loads(SRC.read_text(encoding="utf-8"))
     payload = normalize(payload)
     check(payload)
+
+    rule_explanations = json.loads(RULES.read_text(encoding="utf-8"))
+    required = {str(i) for i in range(1, 12)}
+    actual = set(rule_explanations.get("footnotes", {}).keys())
+
+    if not required.issubset(actual):
+        missing = sorted(required - actual, key=int)
+        raise RuntimeError(f"Нет машинных пояснений для сносок: {missing}")
+
+    if not rule_explanations.get("from", {}).get("user_text"):
+        raise RuntimeError("Нет машинного пояснения для конструкции «из»")
+
+    if not rule_explanations.get("plain_heading", {}).get("user_text"):
+        raise RuntimeError("Нет машинного пояснения для кода без «из»")
+
+    payload["ruleExplanations"] = rule_explanations
 
     # Compact JS assignment. CDN/browser compression makes it small on the wire.
     js = (
