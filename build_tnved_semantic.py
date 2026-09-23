@@ -2,23 +2,21 @@
 # -*- coding: utf-8 -*-
 
 """
-MIRLEX | build_tnved_semantic.py
+MIRLEX | build_tnved_semantic.py v2
 
-Автоматически обогащает заданные полные коды ТН ВЭД:
-- официальным/справочным наименованием кода;
-- связанной позицией ОКПД 2, если она опубликована источником;
+Обогащает полные коды ТН ВЭД:
+- точным наименованием кода;
+- связанной позицией ОКПД 2;
 - URL источника;
 - датой получения.
 
-Текущий источник: публичная карточка кода Alta-Soft.
-Для production можно заменить источник на лицензированный API/НСИ без изменения
-формата tnved-semantic-map.json.
-
-ВАЖНО:
-- существующие записи не перезапрашиваются ежедневно;
-- запись обновляется только если старше REFRESH_DAYS;
-- ошибка внешнего источника НЕ ломает основную базу №2414;
-- файл не используется для самостоятельной переклассификации товара.
+Исправления v2:
+- наименование извлекается только из блока "Код ТН ВЭД";
+- ОКПД 2 извлекается из блока "Позиция ОКПД 2";
+- мусорные значения ("Техническая поддержка", навигация и т.п.) запрещены;
+- свежая, но невалидная запись принудительно перезапрашивается;
+- контрольные коды валидируются по ожидаемым ОКПД2;
+- при ошибке контрольных данных workflow ПАДАЕТ, а не публикует плохую базу.
 """
 
 from __future__ import annotations
@@ -43,7 +41,27 @@ MAX_RETRIES = 3
 BASE_URL = "https://www.alta.ru/tnved/code/{code}/"
 
 HEADERS = {
-    "User-Agent": "MIRLEX-data-builder/1.0 (+https://github.com/artem1285/mirlex-data)"
+    "User-Agent": "MIRLEX-data-builder/2.0 (+https://github.com/artem1285/mirlex-data)"
+}
+
+BAD_NAME_MARKERS = (
+    "техническая поддержка",
+    "информация по коду",
+    "такса онлайн",
+    "пояснения к позиции",
+    "классификационные решения",
+    "товары и коды",
+    "таможенные платежи",
+    "получить информацию",
+)
+
+CONTROL_EXPECTED = {
+    "9031100000": ("машины балансировочные", "28.99.39"),
+    "9031803400": ("прибор", "26.51.66"),
+    "9027109000": ("газо-", "26.51.53"),
+    "8443318000": ("машин", "26.20.18"),
+    "8471300000": ("машин", "26.20.11"),
+    "8467211000": ("дрел", "28.24.11"),
 }
 
 
@@ -71,6 +89,32 @@ def age_days(iso_value: str | None) -> int:
         return 10**9
 
 
+def clean_line(v: str) -> str:
+    return re.sub(r"\s+", " ", v or "").strip()
+
+
+def is_bad_name(v: str) -> bool:
+    s = clean_line(v).lower()
+    if len(s) < 4:
+        return True
+    if any(x in s for x in BAD_NAME_MARKERS):
+        return True
+    if re.fullmatch(r"[\d\s./-]+", s):
+        return True
+    return False
+
+
+def valid_entry(entry: dict | None) -> bool:
+    if not entry:
+        return False
+    if is_bad_name(entry.get("name", "")):
+        return False
+    prefixes = entry.get("okpdPrefixes") or []
+    if not prefixes:
+        return False
+    return all(re.fullmatch(r"\d{2}\.\d{2}\.\d{2}(?:\.\d{3})?", p or "") for p in prefixes)
+
+
 def fetch_html(url: str) -> str:
     last = None
     for attempt in range(1, MAX_RETRIES + 1):
@@ -81,72 +125,118 @@ def fetch_html(url: str) -> str:
         except Exception as e:
             last = e
             if attempt < MAX_RETRIES:
-                time.sleep(1.0 * attempt)
+                time.sleep(float(attempt))
     raise RuntimeError(f"Не удалось получить {url}: {last}")
+
+
+def extract_lines(soup: BeautifulSoup) -> list[str]:
+    return [
+        clean_line(x)
+        for x in soup.get_text("\n", strip=True).splitlines()
+        if clean_line(x)
+    ]
+
+
+def extract_name(code: str, lines: list[str]) -> str:
+    # Ищем именно заголовочный блок:
+    # "Код ТН ВЭД" -> "9031100000" -> "Машины балансировочные..."
+    for i, line in enumerate(lines):
+        if line.lower() != "код тн вэд":
+            continue
+
+        for j in range(i + 1, min(i + 5, len(lines))):
+            if digits(lines[j]) != code:
+                continue
+
+            for cand in lines[j + 1:min(j + 6, len(lines))]:
+                c = clean_line(cand)
+                if c.lower().startswith("информация по"):
+                    break
+                if not is_bad_name(c):
+                    return c
+
+    # Резерв: после "# Информация по товарному коду CODE" часто повторяется иерархия.
+    # Но НЕ берём произвольный текст после любого вхождения кода.
+    raise RuntimeError(f"Не удалось безопасно извлечь наименование ТН ВЭД {code}")
+
+
+def extract_okpd(lines: list[str]) -> tuple[str, str]:
+    for i, line in enumerate(lines):
+        if line.lower() != "позиция окпд 2":
+            continue
+
+        window = lines[i + 1:min(i + 12, len(lines))]
+
+        # Вариант 1: код + название в одной строке.
+        for cand in window:
+            m = re.match(r"^(\d{2}\.\d{2}\.\d{2}(?:\.\d{3})?)\s+(.+)$", cand)
+            if m:
+                return m.group(1), clean_line(m.group(2))
+
+        # Вариант 2: код отдельной строкой, название следующей.
+        for j, cand in enumerate(window):
+            if re.fullmatch(r"\d{2}\.\d{2}\.\d{2}(?:\.\d{3})?", cand):
+                name = ""
+                if j + 1 < len(window):
+                    nxt = clean_line(window[j + 1])
+                    if not re.fullmatch(r"[\d\s./-]+", nxt):
+                        name = nxt
+                return cand, name
+
+    raise RuntimeError("Не удалось извлечь позицию ОКПД 2")
 
 
 def parse_alta(code: str, html: str) -> dict:
     soup = BeautifulSoup(html, "html.parser")
-    text = "\n".join(
-        line.strip()
-        for line in soup.get_text("\n", strip=True).splitlines()
-        if line.strip()
-    )
+    lines = extract_lines(soup)
 
-    # Проверяем, что страница именно нужного кода.
-    if code not in digits(text):
-        # digits(text) слишком длинный; дополнительная простая проверка.
-        if code not in text.replace(" ", ""):
-            raise RuntimeError(f"Страница источника не содержит код {code}")
+    name = extract_name(code, lines)
+    okpd_code, okpd_name = extract_okpd(lines)
 
-    # Наименование: в публичной карточке идёт сразу после блока "Код ТН ВЭД" + code.
-    lines = [x.strip() for x in soup.get_text("\n", strip=True).splitlines() if x.strip()]
-    name = ""
-    for i, line in enumerate(lines):
-        if digits(line) == code:
-            # Первый разумный текст после полного кода до "Информация по..."
-            for cand in lines[i + 1:i + 8]:
-                if cand.lower().startswith("информация по"):
-                    break
-                if len(cand) > 3 and not re.fullmatch(r"[\d\s]+", cand):
-                    name = cand
-                    break
-            if name:
-                break
-
-    # Позиция ОКПД 2: ищем строку вида XX.XX.XX после заголовка "Позиция ОКПД 2".
-    okpd_code = ""
-    okpd_name = ""
-    okpd_anchor = None
-    for i, line in enumerate(lines):
-        if line.strip().lower() == "позиция окпд 2":
-            okpd_anchor = i
-            break
-
-    if okpd_anchor is not None:
-        for cand in lines[okpd_anchor + 1:okpd_anchor + 10]:
-            m = re.match(r"^(\d{2}\.\d{2}\.\d{2}(?:\.\d{3})?)\s+(.+)$", cand)
-            if m:
-                okpd_code = m.group(1)
-                okpd_name = m.group(2).strip()
-                break
-
-    if not name:
-        raise RuntimeError(f"Не удалось извлечь наименование ТН ВЭД {code}")
-
-    return {
+    entry = {
         "displayCode": f"{code[:4]} {code[4:6]} {code[6:9]} {code[9:]}",
         "name": name,
-        "okpdPrefixes": [okpd_code] if okpd_code else [],
+        "okpdPrefixes": [okpd_code],
         "okpdName": okpd_name,
         "source": "Alta-Soft TN VED",
         "sourceUrl": BASE_URL.format(code=code),
-        "fetchedAt": iso_now()
+        "fetchedAt": iso_now(),
     }
+
+    if not valid_entry(entry):
+        raise RuntimeError(f"Извлечённая запись не прошла валидацию: {code}: {entry}")
+
+    return entry
+
+
+def validate_controls(codes: dict):
+    errors = []
+
+    for code, (name_marker, okpd_prefix) in CONTROL_EXPECTED.items():
+        entry = codes.get(code)
+        if not entry:
+            errors.append(f"{code}: отсутствует")
+            continue
+
+        if name_marker.lower() not in (entry.get("name") or "").lower():
+            errors.append(
+                f"{code}: неверное наименование: {entry.get('name')!r}, "
+                f"ожидался маркер {name_marker!r}"
+            )
+
+        if okpd_prefix not in (entry.get("okpdPrefixes") or []):
+            errors.append(
+                f"{code}: неверный ОКПД2: {entry.get('okpdPrefixes')}, "
+                f"ожидался {okpd_prefix}"
+            )
+
+    if errors:
+        raise RuntimeError("Контроль semantic TN VED не пройден:\n- " + "\n- ".join(errors))
 
 
 def main():
     targets = load_json(CODES, {"codes": []})
+
     target_codes = []
     for raw in targets.get("codes", []):
         d = digits(str(raw))
@@ -155,14 +245,17 @@ def main():
         if d not in target_codes:
             target_codes.append(d)
 
-    current = load_json(OUT, {
-        "meta": {
-            "dataset": "MIRLEX verified TN VED semantic mappings",
-            "purpose": "Проверенный слой для сужения строк ПП РФ №2414 по полному коду ТН ВЭД.",
-            "note": "Не является полной ТН ВЭД ЕАЭС и не предназначен для переклассификации товара."
+    current = load_json(
+        OUT,
+        {
+            "meta": {
+                "dataset": "MIRLEX verified TN VED semantic mappings",
+                "purpose": "Проверенный слой для сужения строк ПП РФ №2414 по полному коду ТН ВЭД.",
+                "note": "Не является полной ТН ВЭД ЕАЭС и не предназначен для переклассификации товара.",
+            },
+            "codes": {},
         },
-        "codes": {}
-    })
+    )
 
     current.setdefault("meta", {})
     current.setdefault("codes", {})
@@ -174,59 +267,61 @@ def main():
     for idx, code in enumerate(target_codes, start=1):
         old = current["codes"].get(code)
 
-        # Старые ручные записи без fetchedAt считаем действующими и не затираем.
-        if old and (not old.get("fetchedAt") or age_days(old.get("fetchedAt")) < REFRESH_DAYS):
+        # Кэшируем только ВАЛИДНЫЕ записи.
+        # Мусорная запись принудительно перезапрашивается даже если она свежая.
+        if old and valid_entry(old) and age_days(old.get("fetchedAt")) < REFRESH_DAYS:
             kept += 1
             continue
 
-        url = BASE_URL.format(code=code)
+        # Проверенные ручные записи без fetchedAt сохраняем только если они валидны.
+        if old and valid_entry(old) and not old.get("fetchedAt"):
+            kept += 1
+            continue
+
         try:
-            html = fetch_html(url)
+            html = fetch_html(BASE_URL.format(code=code))
             entry = parse_alta(code, html)
-
-            # Никогда не ухудшаем существующую запись: если источник временно не дал ОКПД,
-            # сохраняем прежний подтверждённый префикс.
-            if old and not entry["okpdPrefixes"] and old.get("okpdPrefixes"):
-                entry["okpdPrefixes"] = old["okpdPrefixes"]
-                entry["okpdName"] = old.get("okpdName", "")
-
             current["codes"][code] = entry
             updated += 1
         except Exception as e:
             failed.append({"code": code, "error": str(e)})
+
+            # Если старая запись невалидна — удаляем, чтобы MIRLEX её не использовал.
+            if old and not valid_entry(old):
+                current["codes"].pop(code, None)
         finally:
             if idx < len(target_codes):
                 time.sleep(REQUEST_DELAY_SEC)
 
-    current["meta"].update({
-        "updated": iso_now(),
-        "targetCodeCount": len(target_codes),
-        "mappedCodeCount": len(current["codes"]),
-        "refreshDays": REFRESH_DAYS,
-        "sourcePolicy": "public-card cache; production may switch to licensed API/NSI"
-    })
+    current["meta"].update(
+        {
+            "updated": iso_now(),
+            "targetCodeCount": len(target_codes),
+            "mappedCodeCount": len(current["codes"]),
+            "refreshDays": REFRESH_DAYS,
+            "builderVersion": 2,
+            "sourcePolicy": "validated public-card cache; production may switch to licensed API/NSI",
+        }
+    )
+
+    # Жёсткий контроль ДО записи финального файла.
+    validate_controls(current["codes"])
 
     OUT.write_text(
         json.dumps(current, ensure_ascii=False, indent=2),
-        encoding="utf-8"
+        encoding="utf-8",
     )
 
     print(
-        f"Semantic TN VED: targets={len(target_codes)}, "
-        f"mapped={len(current['codes'])}, updated={updated}, kept={kept}, failed={len(failed)}"
+        f"Semantic TN VED v2: targets={len(target_codes)}, "
+        f"mapped={len(current['codes'])}, updated={updated}, "
+        f"kept={kept}, failed={len(failed)}"
     )
 
     if failed:
-        print("FAILED:")
+        print("WARNINGS:")
         for row in failed:
             print(f"- {row['code']}: {row['error']}")
-
-    # Внешний справочник — дополнительный слой. Не валим весь ROP build,
-    # если отдельные карточки временно недоступны.
-    # Но базовые контрольные записи должны остаться.
-    for control in ("8443318000", "8471300000", "8467211000", "8518900008"):
-        if control not in current["codes"]:
-            raise RuntimeError(f"Отсутствует контрольная semantic-запись: {control}")
 
 
 if __name__ == "__main__":
