@@ -3,7 +3,11 @@
     "dataset": "MIRLEX verified TN VED semantic mappings",
     "purpose": "Проверенный слой для сужения строк ПП РФ №2414 по полному коду ТН ВЭД.",
     "note": "Не является полной ТН ВЭД ЕАЭС и не предназначен для переклассификации товара. Используется только как дополнительный проверенный фильтр.",
-    "updated": "2026-09-23"
+    "updated": "2026-09-23T16:04:04Z",
+    "targetCodeCount": 41,
+    "mappedCodeCount": 45,
+    "refreshDays": 30,
+    "sourcePolicy": "public-card cache; production may switch to licensed API/NSI"
   },
   "codes": {
     "8443318000": {
@@ -41,6 +45,375 @@
       ],
       "source": "Alta-Soft TN VED",
       "sourceUrl": "https://www.alta.ru/tnved/code/8518900008/"
+    },
+    "4009310000": {
+      "displayCode": "4009 31 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/4009310000/",
+      "fetchedAt": "2026-09-23T16:03:04Z"
+    },
+    "4009320000": {
+      "displayCode": "4009 32 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/4009320000/",
+      "fetchedAt": "2026-09-23T16:03:05Z"
+    },
+    "4016930005": {
+      "displayCode": "4016 93 000 5",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/4016930005/",
+      "fetchedAt": "2026-09-23T16:03:07Z"
+    },
+    "4016999708": {
+      "displayCode": "4016 99 970 8",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/4016999708/",
+      "fetchedAt": "2026-09-23T16:03:09Z"
+    },
+    "7009920000": {
+      "displayCode": "7009 92 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/7009920000/",
+      "fetchedAt": "2026-09-23T16:03:10Z"
+    },
+    "8414108900": {
+      "displayCode": "8414 10 890 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8414108900/",
+      "fetchedAt": "2026-09-23T16:03:12Z"
+    },
+    "8414594000": {
+      "displayCode": "8414 59 400 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8414594000/",
+      "fetchedAt": "2026-09-23T16:03:13Z"
+    },
+    "8414802200": {
+      "displayCode": "8414 80 220 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8414802200/",
+      "fetchedAt": "2026-09-23T16:03:16Z"
+    },
+    "8419390008": {
+      "displayCode": "8419 39 000 8",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8419390008/",
+      "fetchedAt": "2026-09-23T16:03:17Z"
+    },
+    "8424300800": {
+      "displayCode": "8424 30 080 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8424300800/",
+      "fetchedAt": "2026-09-23T16:03:19Z"
+    },
+    "8424301000": {
+      "displayCode": "8424 30 100 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8424301000/",
+      "fetchedAt": "2026-09-23T16:03:21Z"
+    },
+    "8425190009": {
+      "displayCode": "8425 19 000 9",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8425190009/",
+      "fetchedAt": "2026-09-23T16:03:22Z"
+    },
+    "8425390006": {
+      "displayCode": "8425 39 000 6",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8425390006/",
+      "fetchedAt": "2026-09-23T16:03:24Z"
+    },
+    "8425410000": {
+      "displayCode": "8425 41 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8425410000/",
+      "fetchedAt": "2026-09-23T16:03:25Z"
+    },
+    "8425420000": {
+      "displayCode": "8425 42 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8425420000/",
+      "fetchedAt": "2026-09-23T16:03:27Z"
+    },
+    "8425490000": {
+      "displayCode": "8425 49 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8425490000/",
+      "fetchedAt": "2026-09-23T16:03:28Z"
+    },
+    "8467190000": {
+      "displayCode": "8467 19 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8467190000/",
+      "fetchedAt": "2026-09-23T16:03:30Z"
+    },
+    "8467295900": {
+      "displayCode": "8467 29 590 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8467295900/",
+      "fetchedAt": "2026-09-23T16:03:31Z"
+    },
+    "8467890000": {
+      "displayCode": "8467 89 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8467890000/",
+      "fetchedAt": "2026-09-23T16:03:33Z"
+    },
+    "8481100500": {
+      "displayCode": "8481 10 050 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481100500/",
+      "fetchedAt": "2026-09-23T16:03:35Z"
+    },
+    "8481309908": {
+      "displayCode": "8481 30 990 8",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481309908/",
+      "fetchedAt": "2026-09-23T16:03:37Z"
+    },
+    "8481409009": {
+      "displayCode": "8481 40 900 9",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481409009/",
+      "fetchedAt": "2026-09-23T16:03:38Z"
+    },
+    "8481805990": {
+      "displayCode": "8481 80 599 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481805990/",
+      "fetchedAt": "2026-09-23T16:03:40Z"
+    },
+    "8481807900": {
+      "displayCode": "8481 80 790 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481807900/",
+      "fetchedAt": "2026-09-23T16:03:41Z"
+    },
+    "8481809907": {
+      "displayCode": "8481 80 990 7",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481809907/",
+      "fetchedAt": "2026-09-23T16:03:43Z"
+    },
+    "8481900000": {
+      "displayCode": "8481 90 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8481900000/",
+      "fetchedAt": "2026-09-23T16:03:44Z"
+    },
+    "8504405500": {
+      "displayCode": "8504 40 550 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8504405500/",
+      "fetchedAt": "2026-09-23T16:03:46Z"
+    },
+    "8508110000": {
+      "displayCode": "8508 11 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8508110000/",
+      "fetchedAt": "2026-09-23T16:03:47Z"
+    },
+    "8508190001": {
+      "displayCode": "8508 19 000 1",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8508190001/",
+      "fetchedAt": "2026-09-23T16:03:49Z"
+    },
+    "8513100000": {
+      "displayCode": "8513 10 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8513100000/",
+      "fetchedAt": "2026-09-23T16:03:50Z"
+    },
+    "8516299900": {
+      "displayCode": "8516 29 990 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/8516299900/",
+      "fetchedAt": "2026-09-23T16:03:52Z"
+    },
+    "9026204000": {
+      "displayCode": "9026 20 400 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9026204000/",
+      "fetchedAt": "2026-09-23T16:03:53Z"
+    },
+    "9026208000": {
+      "displayCode": "9026 20 800 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9026208000/",
+      "fetchedAt": "2026-09-23T16:03:54Z"
+    },
+    "9027109000": {
+      "displayCode": "9027 10 900 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9027109000/",
+      "fetchedAt": "2026-09-23T16:03:55Z"
+    },
+    "9030331000": {
+      "displayCode": "9030 33 100 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9030331000/",
+      "fetchedAt": "2026-09-23T16:03:57Z"
+    },
+    "9031100000": {
+      "displayCode": "9031 10 000 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9031100000/",
+      "fetchedAt": "2026-09-23T16:03:58Z"
+    },
+    "9031803400": {
+      "displayCode": "9031 80 340 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9031803400/",
+      "fetchedAt": "2026-09-23T16:03:59Z"
+    },
+    "9031809100": {
+      "displayCode": "9031 80 910 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9031809100/",
+      "fetchedAt": "2026-09-23T16:04:00Z"
+    },
+    "9031809800": {
+      "displayCode": "9031 80 980 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9031809800/",
+      "fetchedAt": "2026-09-23T16:04:01Z"
+    },
+    "9031908500": {
+      "displayCode": "9031 90 850 0",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9031908500/",
+      "fetchedAt": "2026-09-23T16:04:02Z"
+    },
+    "9405420022": {
+      "displayCode": "9405 42 002 2",
+      "name": "Техническая поддержка 24х7:",
+      "okpdPrefixes": [],
+      "okpdName": "",
+      "source": "Alta-Soft TN VED",
+      "sourceUrl": "https://www.alta.ru/tnved/code/9405420022/",
+      "fetchedAt": "2026-09-23T16:04:04Z"
     }
   }
 }
