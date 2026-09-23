@@ -2,6 +2,8 @@ name: Build ROP 2414 database
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
   contents: write
