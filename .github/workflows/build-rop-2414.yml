@@ -32,14 +32,17 @@ jobs:
       - name: Build browser runtime database
         run: python build_rop_runtime.py
 
-      - name: Commit verified database and runtime bundle
+      - name: Build TN VED index for PP 2414
+        run: python build_tnved_2414_index.py
+
+      - name: Commit verified databases and runtime bundle
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add rop-2414.json rop-check.data.js
+          git add rop-2414.json rop-check.data.js tnved-2414-index.json
           if git diff --cached --quiet; then
             echo "No database changes."
             exit 0
           fi
-          git commit -m "Update verified PP 2414 database and runtime bundle"
+          git commit -m "Update verified PP 2414 databases and runtime bundle"
           git push
