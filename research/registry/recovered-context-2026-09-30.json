@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-09-30",
+  "provenance": "Recovered from active MIRLEX hard-radar context after GitHub write access was restored. Preserve IDs exactly. Cards with incomplete source trail are preservation records, not publication-ready legal conclusions.",
+  "rop": [
+    {
+      "id": "ROP-001",
+      "summary": "Interagency cross-check of ROP data with FTS, Minpromtorg, CRPT and FNS.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-002",
+      "summary": "Chestny ZNAK / GIS MT used as a control source for identifying potentially obligated entities and warnings.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-003",
+      "summary": "Contract manufacturing/private label: risk of identifying the wrong producer/obligated entity; verify actual release and GIS MT.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-004",
+      "summary": "Recycler register: verify recycler, operation, group/waste and evidence; contract alone is insufficient.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-005",
+      "summary": "Act alone is insufficient; factual recycling and output/reuse are checked.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-006",
+      "summary": "Enhanced sanctions under Art. 8.41.1 KoAP from 2026; exact current wording/amounts must be revalidated before use.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-007",
+      "summary": "Administrative case may be initiated without a separate control event; revalidate current procedural basis before use.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-008",
+      "summary": "Importer base can be reconstructed from customs/shipping documents; source and current control mechanics must be revalidated.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-009",
+      "summary": "Recycler can become eco-fee payer for unconfirmed recycling; revalidate exact legal mechanism.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-010",
+      "summary": "Recycler act constrained by registry inclusion date and confirmed capacity.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-011",
+      "summary": "Broadened exposure for inaccurate ROP reporting from 03.03.2026; revalidate current KoAP wording.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-012",
+      "summary": "Recycler inspection alone does not automatically prove a producer/importer debt for historic periods; preserve as court-evidence pattern.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-013",
+      "summary": "Defective/cancelled recycler inspection act can undermine evidentiary basis.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-014",
+      "summary": "Actual technological capacity is a central verification parameter for recycler compliance.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-015",
+      "summary": "Sorting/secondary material alone may not satisfy recycling; check waste-to-product technological correspondence.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-016",
+      "summary": "Historic subcontracting pattern: under current ROP trace the final recycler, not only intermediary chain.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-017",
+      "summary": "Rosprirodnadzor must prove violation by the specific obligated entity; preserve as evidentiary/court pattern for historic periods.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-018",
+      "summary": "Producer/importer recycling act can be cross-checked with recycler quarterly reporting.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-019",
+      "summary": "Recycler register is dynamic; check status, capacity and product/operation across the relevant period.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-020",
+      "summary": "Packaging moves to 100% recycling norm from 2027 — MUST REVALIDATE before use.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-021",
+      "summary": "Three ROP forms operate as a dependent calculation chain: mass → recycling → eco-fee.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-022",
+      "summary": "Anti-double-count: same secondary raw material mass cannot be simultaneously counted for self-recycling and reducing coefficient; revalidate exact rule.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-023",
+      "summary": "Non-EAEU importer reporting transition delayed to 01.01.2028 — MUST REVALIDATE before use.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-024",
+      "summary": "Recycler exclusion from register does not automatically invalidate earlier recycling; check inclusion/exclusion date and factual volume.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-025",
+      "summary": "Recycling act may be issued after factual recycling, but recycling itself must fall within the reporting year; revalidate current form rules.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "ROP-026",
+      "summary": "PP 2394 waste/secondary raw material → product mapping changes from 01.01.2027 under PP 370; versioned dataset required.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    }
+  ],
+  "industry": [
+    {
+      "id": "IND-CARWASH-001",
+      "summary": "Water protection zone can be a stop-factor for car-wash activity; location/water-body/protection-zone is an early filter.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-CARWASH-002",
+      "summary": "Hidden tank/wastewater collection defect can turn water issue into soil contamination and environmental damage; trace the full physical route.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-CARWASH-003",
+      "summary": "Land plot/VRI must be checked before environmental documents; improper land use can lead to dismantling/termination risks.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-PRINT-001",
+      "summary": "Auxiliary drying/burner in printing can be a major air-emission source; reconstruct actual process and exhaust.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-PRINT-002",
+      "summary": "Smell/smoke complaint requires analysis of actual operating regime/time/process, not document-only review.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-TEXTILE-001",
+      "summary": "Textile diagnostics must reconstruct actual processes before trusting a 'not registered as NVOС' status.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-TEXTILE-002",
+      "summary": "Wet textile processes require two-level wastewater analysis: resident pretreatment → industrial park/central system → common treatment/final discharge.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-TEXTILE-003",
+      "summary": "Contamination of textile materials changes the waste route; classify by origin/use/contaminant, not only material name.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-PACK-001",
+      "summary": "Packaging manufacturer needs a zero-stage product-legality filter before plant compliance; material/color/multilayer/label can matter.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-CHEM-001",
+      "summary": "Chemical residues 'stored on own territory' are not automatically lawfully accumulated; trace residue-to-surface/soil/receiver.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-LKM-001",
+      "summary": "LKM equipment washing/cleanout is an independent waste/water node; determine what happens between batches.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-LKM-002",
+      "summary": "Recipe/raw-material/solvent/process changes must trigger review of emission inventory relevance.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-LKM-003",
+      "summary": "LKM waste identification must follow recipe and stage of generation, not generic 'paint waste' labels.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-HCHEM-001",
+      "summary": "Household-chemistry process upset/off-spec batch/overflow can turn normal sewer route into concentrated pollutant pathway.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-POLYMER-001",
+      "summary": "Polymer film/plastics: extrusion/thermal process activates air/NVOС/PEC/NMU and full operational waste map.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-CONSTRUCTION-001",
+      "summary": "Construction requires a full environmental lifecycle from project/site status to closure and transition to operation.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-WATER-001",
+      "summary": "Discharge/WWTP must be traced through efficiency, sludge, soil/water-protection and incident consequences.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-LOS-001",
+      "summary": "LOS/stormwater/industrial sewer is an operational lifecycle: design → commissioning → maintenance → lab → sludge/waste → repair → retest.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-OIL-001",
+      "summary": "PLARN is an operational readiness and incident-response lifecycle, not only a document.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-LIVESTOCK-001",
+      "summary": "Livestock/poultry: determine by-product-vs-waste status and trace storage, treatment, land use, wastewater, air and bio-waste.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-WATERINTAKE-001",
+      "summary": "Own borehole is a cross-industry lifecycle: subsoil right/licence/zone/operation/accounting → wastewater → closure.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-SITE-001",
+      "summary": "Zero-stage site gate: 'can this business be located here?' before environmental documents.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-WOOD-001",
+      "summary": "Woodworking/pil sawmill: aspiration/air/NVOС/PEC + wood residues + coatings/glues + boiler if present.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-CONCRETE-001",
+      "summary": "Concrete/JBI/paving: site/SZZ → cement handling/GOUs → noise → washing/water → concrete sludge/waste.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-STO-001",
+      "summary": "STO/autoservice: site/VRI gate plus oils/batteries/tires, welding, sandblasting, painting, washing/stormwater, air/noise.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-LIVESTOCK-002",
+      "summary": "Manure/litter → processing → product/fertilizer → land is a separate end-to-end control route.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-FOOD-001",
+      "summary": "Food industry needs a parent route plus subindustry modules; early split by water source and production wastewater route.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-CONSTRUCTION-002",
+      "summary": "Construction soil/materials need status determination and final-destination tracing; 'soil' is not an automatic exemption.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    },
+    {
+      "id": "IND-UNIVERSAL-001",
+      "summary": "Universal physical accumulation-area check: material → surface/protection → amount/time → documents → recipient → actual destination.",
+      "status": "PRESERVED_REVALIDATION_REQUIRED"
+    }
+  ],
+  "universal": [
+    {
+      "id": "U-001",
+      "summary": "Environmental responsibility map: impact creator → owner → tenant → operator → subscriber → operational boundary → documents/contracts → costs/regress."
+    },
+    {
+      "id": "U-002",
+      "summary": "Environmental incident protocol: sampling, inspection, photos, remarks, reserve/parallel samples, lab, timing and evidence handling."
+    },
+    {
+      "id": "U-003",
+      "summary": "Physical tracing of water/wastewater: operation → material → wash/CIP/equipment → local treatment → mixing → control point → declaration → sample."
+    },
+    {
+      "id": "U-004",
+      "summary": "Hidden operation inside a simple business: do not trust business name/OKVED; inspect boiler, welding, painting, sharpening, battery charging, generator, woodworking, furnace, process exhaust, etc."
+    }
+  ]
+}
