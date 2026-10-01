@@ -56,6 +56,11 @@
       "path": "research/registry/radar-2026-10-01-run-07.json",
       "cards": 1,
       "status": "VERIFIED_CURRENT"
+    },
+    {
+      "path": "research/registry/radar-2026-10-01-run-08.json",
+      "cards": 1,
+      "status": "VERIFIED_CURRENT_WITH_FILE_EVIDENCE"
     }
   ],
   "permanent_id_policy": {
@@ -80,7 +85,7 @@
   },
   "current_counts": {
     "rop_ids": 26,
-    "known_industry_ids": 57,
+    "known_industry_ids": 58,
     "universal_ids": 4
   },
   "next_priority": [
@@ -94,5 +99,11 @@
     "Chat ID collision detected: IND-ENERGY-001 had been reused for SAKV and bird-protection. Registry preserves IND-ENERGY-001 for SAKV and migrates bird-protection to IND-BIODIV-002 with migration metadata.",
     "Never invent missing source URLs. Records marked source re-link/revalidation required must be revalidated before publication/automation."
   ],
-  "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card."
+  "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
+  "radar_mandatory_layers": [
+    "SANITARY_HYGIENE"
+  ],
+  "radar_rules": [
+    "For every industry, independently identify substances/mixtures actually used or generated and test chemical, physical and biological factors against current SanPiN/SP requirements and Rospotrebnadzor checklists; do not wait for industry-specific sources to mention them."
+  ]
 }
