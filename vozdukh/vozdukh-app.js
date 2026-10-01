@@ -434,7 +434,7 @@
     try{
       const res=await fetch(cfg.backendEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
       if(!res.ok) throw new Error();
-      shell('<div class="mvx-success"><h3>Заявка отправлена</h3><p>Мы проверим результаты и свяжемся с вами.</p></div>');
+      shell('<div class="mvx-success"><h3>Заявка отправлена</h3><p>Мы проверим результаты диагностики и свяжемся с вами в течение рабочего дня.</p><p class="mvx-muted" style="font-size:14px;margin-top:10px">Если заявка отправлена вне рабочего времени, свяжемся на следующий рабочий день.</p></div>');
     }catch(_){
       err.hidden=false;
       err.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';
