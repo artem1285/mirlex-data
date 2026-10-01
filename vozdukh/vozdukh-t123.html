@@ -1,0 +1,282 @@
+<div id="mirlex-vozdukh-root" hidden></div>
+
+<style>
+#mirlex-vozdukh-root{font-family:Inter,Arial,sans-serif;color:#1F2A32;background:#E6EBED;padding:0;margin:0}
+#mirlex-vozdukh-root.mvx-open{display:block!important;padding:56px 20px}
+#mirlex-vozdukh-root[hidden]{display:none!important}
+#mirlex-vozdukh-root .mvx-shell{max-width:980px;margin:0 auto}
+#mirlex-vozdukh-root .mvx-card{background:#fff;border-radius:24px;padding:40px;box-shadow:0 10px 35px rgba(31,42,50,.08)}
+#mirlex-vozdukh-root .mvx-top{display:flex;gap:18px;align-items:center;justify-content:space-between;margin-bottom:28px}
+#mirlex-vozdukh-root .mvx-kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3CB371}
+#mirlex-vozdukh-root .mvx-time{font-size:14px;color:#5e6a72;white-space:nowrap}
+#mirlex-vozdukh-root h2{font-size:38px;line-height:1.12;margin:0 0 14px}
+#mirlex-vozdukh-root h3{font-size:28px;line-height:1.2;margin:0 0 12px}
+#mirlex-vozdukh-root p{font-size:18px;line-height:1.55;margin:0 0 18px}
+#mirlex-vozdukh-root .mvx-muted{color:#66737b}
+#mirlex-vozdukh-root .mvx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0}
+#mirlex-vozdukh-root .mvx-option{width:100%;text-align:left;border:1px solid #d7dee2;background:#fff;border-radius:16px;padding:18px 18px;cursor:pointer;transition:.18s ease;font:inherit;color:inherit}
+#mirlex-vozdukh-root .mvx-option:hover{border-color:#3CB371;transform:translateY(-1px)}
+#mirlex-vozdukh-root .mvx-option[aria-pressed="true"]{border-color:#3CB371;background:#eef8f2;box-shadow:inset 0 0 0 1px #3CB371}
+#mirlex-vozdukh-root .mvx-option strong{display:block;font-size:17px;margin-bottom:5px}
+#mirlex-vozdukh-root .mvx-option span{display:block;font-size:14px;line-height:1.4;color:#6a747b}
+#mirlex-vozdukh-root .mvx-actions{display:flex;justify-content:space-between;gap:12px;margin-top:28px}
+#mirlex-vozdukh-root .mvx-btn{border:0;border-radius:14px;padding:15px 22px;font-size:16px;font-weight:700;cursor:pointer}
+#mirlex-vozdukh-root .mvx-btn-primary{background:#3CB371;color:#fff}
+#mirlex-vozdukh-root .mvx-btn-secondary{background:#eef1f2;color:#1F2A32}
+#mirlex-vozdukh-root .mvx-btn:disabled{opacity:.45;cursor:not-allowed}
+#mirlex-vozdukh-root .mvx-progress{height:6px;background:#dde4e7;border-radius:999px;overflow:hidden;margin:0 0 24px}
+#mirlex-vozdukh-root .mvx-progress>i{display:block;height:100%;background:#3CB371;transition:width .25s ease}
+#mirlex-vozdukh-root .mvx-summary{display:grid;gap:10px;margin:22px 0}
+#mirlex-vozdukh-root .mvx-summary div{background:#f5f7f8;border-radius:14px;padding:14px 16px}
+#mirlex-vozdukh-root .mvx-form{display:grid;gap:14px;margin-top:24px}
+#mirlex-vozdukh-root .mvx-form input,#mirlex-vozdukh-root .mvx-form textarea{width:100%;box-sizing:border-box;border:1px solid #ccd5da;border-radius:12px;padding:14px 15px;font:inherit}
+#mirlex-vozdukh-root .mvx-consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.45;color:#58636a}
+#mirlex-vozdukh-root .mvx-consent input{width:auto;margin-top:3px}
+#mirlex-vozdukh-root .mvx-consent a{color:#1F2A32;text-decoration:underline}
+#mirlex-vozdukh-root .mvx-error{color:#9d2b2b;font-size:14px;margin-top:8px}
+#mirlex-vozdukh-root .mvx-success{background:#eef8f2;border-radius:16px;padding:18px}
+@media(max-width:768px){
+  #mirlex-vozdukh-root.mvx-open{padding:34px 14px}
+  #mirlex-vozdukh-root .mvx-card{padding:26px 18px;border-radius:18px}
+  #mirlex-vozdukh-root h2{font-size:30px}
+  #mirlex-vozdukh-root h3{font-size:24px}
+  #mirlex-vozdukh-root p{font-size:16px}
+  #mirlex-vozdukh-root .mvx-grid{grid-template-columns:1fr}
+  #mirlex-vozdukh-root .mvx-top{align-items:flex-start}
+}
+@media(max-width:430px){
+  #mirlex-vozdukh-root .mvx-actions{flex-direction:column-reverse}
+  #mirlex-vozdukh-root .mvx-btn{width:100%}
+  #mirlex-vozdukh-root .mvx-time{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  #mirlex-vozdukh-root .mvx-option,#mirlex-vozdukh-root .mvx-progress>i{transition:none}
+}
+</style>
+
+<script>
+(function(){
+  const BASE='https://artem1285.github.io/mirlex-data/vozdukh/';
+  const root=document.getElementById('mirlex-vozdukh-root');
+  if(!root) return;
+
+  const state={step:'intro',selectedGroups:[],answers:{},branchQueue:[],branchIndex:0,docIndex:0,startedAt:null};
+  let cfg=null,processes=null,rules=null,docs=null;
+
+  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;' }[m]));
+
+  async function loadData(){
+    if(cfg) return;
+    const [a,b,c,d]=await Promise.all([
+      fetch(BASE+'vozdukh-config.json',{cache:'no-store'}),
+      fetch(BASE+'vozdukh-processes.json',{cache:'no-store'}),
+      fetch(BASE+'vozdukh-rules.json',{cache:'no-store'}),
+      fetch(BASE+'vozdukh-documents.json',{cache:'no-store'})
+    ]);
+    if(!a.ok||!b.ok||!c.ok||!d.ok) throw new Error('Не удалось загрузить данные диагностики');
+    [cfg,processes,rules,docs]=await Promise.all([a.json(),b.json(),c.json(),d.json()]);
+  }
+
+  function openQuiz(){
+    root.hidden=false;
+    root.classList.add('mvx-open');
+    loadData().then(()=>{
+      if(!state.startedAt) renderIntro(); else renderCurrent();
+      setTimeout(()=>root.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}),60);
+    }).catch(renderLoadError);
+  }
+
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a[href="#proverit-vozdukh"],button[data-vozdukh-open]');
+    if(!a) return;
+    e.preventDefault();
+    openQuiz();
+  });
+
+  function remainingText(){
+    if(!state.startedAt) return 'Около 5 минут';
+    const total=Math.max(1,1+state.branchQueue.length+docs.questions.length);
+    const done=(state.step==='processes'?0:1)+(state.step==='branch'?state.branchIndex:state.step==='documents'?state.branchQueue.length:state.step==='result'||state.step==='form'?total:0)+(state.step==='documents'?state.docIndex:0);
+    const left=Math.max(0,total-done);
+    const seconds=Math.max(20,left*(rules?.secondsPerQuestion||12));
+    const min=Math.max(1,Math.ceil(seconds/60));
+    if(state.step==='form') return 'Последний шаг';
+    if(left<=1) return 'Почти готово';
+    return 'Осталось примерно '+min+' '+(min===1?'минута':min<5?'минуты':'минут');
+  }
+
+  function shell(body,progress=0){
+    root.innerHTML='<div class="mvx-shell"><div class="mvx-card">'+
+      '<div class="mvx-top"><div class="mvx-kicker">MIRLEX · Воздух</div><div class="mvx-time">'+esc(remainingText())+'</div></div>'+
+      '<div class="mvx-progress"><i style="width:'+Math.max(0,Math.min(100,progress))+'%"></i></div>'+body+
+      '</div></div>';
+  }
+
+  function renderIntro(){
+    state.step='intro';
+    shell('<h2>Разберём вашу площадку по воздуху</h2>'+
+      '<p>Ответьте на несколько вопросов о том, что происходит на предприятии.</p>'+
+      '<p class="mvx-muted">Экологические термины знать не нужно. Просто отмечайте то, что узнаёте на своей площадке.</p>'+
+      '<div class="mvx-actions"><span></span><button class="mvx-btn mvx-btn-primary" id="mvx-start">Начать</button></div>',0);
+    root.querySelector('#mvx-start').onclick=()=>{state.startedAt=Date.now();renderProcesses();};
+  }
+
+  function renderProcesses(){
+    state.step='processes';
+    const cards=processes.groups.map(g=>'<button class="mvx-option" data-id="'+esc(g.id)+'" aria-pressed="'+(state.selectedGroups.includes(g.id))+'"><strong>'+esc(g.title)+'</strong><span>'+esc(g.hint)+'</span></button>').join('');
+    shell('<h3>Что происходит на вашей площадке?</h3><p class="mvx-muted">Отметьте всё, что есть.</p><div class="mvx-grid">'+cards+'</div>'+
+      '<div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back">Назад</button><button class="mvx-btn mvx-btn-primary" id="mvx-next" '+(!state.selectedGroups.length?'disabled':'')+'>Продолжить</button></div>',12);
+    root.querySelectorAll('.mvx-option').forEach(btn=>btn.onclick=()=>{
+      const id=btn.dataset.id;
+      state.selectedGroups=state.selectedGroups.includes(id)?state.selectedGroups.filter(x=>x!==id):state.selectedGroups.concat(id);
+      renderProcesses();
+    });
+    root.querySelector('#mvx-back').onclick=renderIntro;
+    root.querySelector('#mvx-next').onclick=()=>{
+      state.branchQueue=[];
+      state.selectedGroups.forEach(id=>{(rules.branches[id]||[]).forEach(q=>state.branchQueue.push({group:id,...q}));});
+      state.branchIndex=0;
+      state.branchQueue.length?renderBranch():renderDocuments();
+    };
+  }
+
+  function renderQuestion(q,onNext,onBack,progress){
+    const prev=state.answers[q.id];
+    let input='';
+    if(q.type==='text'){
+      input='<textarea id="mvx-text" rows="4" placeholder="Короткий ответ">'+esc(prev||'')+'</textarea>';
+    }else{
+      const multi=q.type==='multi';
+      input='<div class="mvx-grid">'+q.options.map(opt=>{
+        const selected=multi?Array.isArray(prev)&&prev.includes(opt):prev===opt;
+        return '<button class="mvx-option" data-opt="'+esc(opt)+'" aria-pressed="'+selected+'"><strong>'+esc(opt)+'</strong></button>';
+      }).join('')+'</div>';
+    }
+    shell('<h3>'+esc(q.title)+'</h3>'+(q.hint?'<p class="mvx-muted">'+esc(q.hint)+'</p>':'')+input+
+      '<div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back">Назад</button><button class="mvx-btn mvx-btn-primary" id="mvx-next">Продолжить</button></div>',progress);
+    if(q.type==='text'){
+      root.querySelector('#mvx-next').onclick=()=>{state.answers[q.id]=root.querySelector('#mvx-text').value.trim();onNext();};
+    }else{
+      const multi=q.type==='multi';
+      root.querySelectorAll('[data-opt]').forEach(btn=>btn.onclick=()=>{
+        const opt=btn.dataset.opt;
+        if(multi){
+          const cur=Array.isArray(state.answers[q.id])?state.answers[q.id]:[];
+          state.answers[q.id]=cur.includes(opt)?cur.filter(x=>x!==opt):cur.concat(opt);
+        }else state.answers[q.id]=opt;
+        renderQuestion(q,onNext,onBack,progress);
+      });
+      root.querySelector('#mvx-next').onclick=onNext;
+    }
+    root.querySelector('#mvx-back').onclick=onBack;
+  }
+
+  function renderBranch(){
+    state.step='branch';
+    const q=state.branchQueue[state.branchIndex];
+    const p=18+Math.round((state.branchIndex/Math.max(1,state.branchQueue.length))*42);
+    renderQuestion(q,()=>{
+      state.branchIndex++;
+      if(state.branchIndex>=state.branchQueue.length){state.docIndex=0;renderDocuments();} else renderBranch();
+    },()=>{
+      if(state.branchIndex===0) renderProcesses(); else {state.branchIndex--;renderBranch();}
+    },p);
+  }
+
+  function renderDocuments(){
+    state.step='documents';
+    const q=docs.questions[state.docIndex];
+    const p=62+Math.round((state.docIndex/Math.max(1,docs.questions.length))*22);
+    renderQuestion({...q,type:'single'},()=>{
+      state.docIndex++;
+      if(state.docIndex>=docs.questions.length) renderResult(); else renderDocuments();
+    },()=>{
+      if(state.docIndex===0){
+        if(state.branchQueue.length){state.branchIndex=Math.max(0,state.branchQueue.length-1);renderBranch();} else renderProcesses();
+      }else{state.docIndex--;renderDocuments();}
+    },p);
+  }
+
+  function renderResult(){
+    state.step='result';
+    const names=state.selectedGroups.map(id=>processes.groups.find(g=>g.id===id)?.title).filter(Boolean);
+    const inventory=state.answers.inventory||'Не указано';
+    const changes=state.answers.changes||'Не указано';
+    const nvos=state.answers.nv_os||'Не указано';
+    shell('<h3>Проверка завершена</h3>'+
+      '<p>Мы собрали основные сведения о площадке и можем проверить результаты подробнее.</p>'+
+      '<div class="mvx-summary">'+
+      '<div><strong>Что происходит на площадке</strong><br>'+esc(names.join(', ')||'Не указано')+'</div>'+
+      '<div><strong>Документы по источникам выбросов</strong><br>'+esc(inventory)+'</div>'+
+      '<div><strong>Объект НВОС</strong><br>'+esc(nvos)+'</div>'+
+      '<div><strong>Изменения после подготовки документов</strong><br>'+esc(changes)+'</div>'+
+      '</div>'+
+      '<div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back">Назад</button><button class="mvx-btn mvx-btn-primary" id="mvx-form-open">Получить полный отчёт по воздуху</button></div>',90);
+    root.querySelector('#mvx-back').onclick=()=>{state.docIndex=docs.questions.length-1;renderDocuments();};
+    root.querySelector('#mvx-form-open').onclick=renderForm;
+  }
+
+  function renderForm(){
+    state.step='form';
+    shell('<h3>Получить полный отчёт по воздуху</h3>'+
+      '<p>Оставьте контактные данные. Мы проверим результаты, подготовим рекомендации по вашей площадке и свяжемся с вами.</p>'+
+      '<form class="mvx-form" id="mvx-form">'+
+      '<input name="name" autocomplete="name" placeholder="Имя" required>'+
+      '<input name="phone" autocomplete="tel" placeholder="Телефон" required>'+
+      '<input name="email" type="email" autocomplete="email" placeholder="Email">'+
+      '<input name="company" autocomplete="organization" placeholder="Организация">'+
+      '<label class="mvx-consent"><input type="checkbox" name="personal_data_consent" required><span>Я даю <a href="'+esc(cfg.consentUrl)+'" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и подтверждаю ознакомление с <a href="'+esc(cfg.privacyUrl)+'" target="_blank" rel="noopener">Политикой обработки персональных данных</a>.</span></label>'+
+      '<button class="mvx-btn mvx-btn-primary" type="submit">Отправить заявку</button>'+
+      '<div class="mvx-error" id="mvx-error" hidden></div>'+
+      '</form>'+
+      '<p class="mvx-muted" style="font-size:14px;margin-top:16px">После отправки заявки мы проверим результаты, подготовим полный отчёт по воздуху и при необходимости свяжемся с вами для уточнения информации.</p>',100);
+    root.querySelector('#mvx-form').onsubmit=submitForm;
+  }
+
+  async function submitForm(e){
+    e.preventDefault();
+    const form=e.currentTarget;
+    const err=root.querySelector('#mvx-error');
+    if(!form.reportValidity()) return;
+    if(!cfg.backendEndpoint){
+      err.hidden=false;
+      err.textContent='Отправка заявки будет подключена перед публикацией страницы.';
+      return;
+    }
+    const fd=new FormData(form);
+    const payload={
+      module:'vozdukh',
+      version:cfg.version,
+      contact:Object.fromEntries(fd.entries()),
+      diagnosis:{selectedGroups:state.selectedGroups,answers:state.answers},
+      startedAt:state.startedAt,
+      finishedAt:Date.now(),
+      page:location.href
+    };
+    try{
+      const res=await fetch(cfg.backendEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      if(!res.ok) throw new Error();
+      shell('<div class="mvx-success"><h3>Заявка отправлена</h3><p>Мы проверим результаты и свяжемся с вами.</p></div>',100);
+    }catch(_){
+      err.hidden=false;
+      err.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';
+    }
+  }
+
+  function renderCurrent(){
+    if(state.step==='intro') renderIntro();
+    else if(state.step==='processes') renderProcesses();
+    else if(state.step==='branch') renderBranch();
+    else if(state.step==='documents') renderDocuments();
+    else if(state.step==='result') renderResult();
+    else if(state.step==='form') renderForm();
+  }
+
+  function renderLoadError(){
+    root.hidden=false;root.classList.add('mvx-open');
+    shell('<h3>Диагностика временно недоступна</h3><p>Обновите страницу и попробуйте ещё раз.</p>',0);
+  }
+
+  if(location.hash==='#proverit-vozdukh') openQuiz();
+})();
+</script>
