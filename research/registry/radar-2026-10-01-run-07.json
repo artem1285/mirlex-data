@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "2026-10-01-07",
+  "created_on": "2026-10-01",
+  "cards": [
+    {
+      "id": "IND-NVOSPAY-001",
+      "record_type": "NEW_FINDING",
+      "date": "2026-10-01",
+      "industry_contour": "UNIVERSAL / NVOС I category / KER / environmental impact fee",
+      "actuality_status": "VERIFIED_CURRENT",
+      "primary_source": [
+        "https://rpn.gov.ru/press/news/tsementnyy_zavod_glatsem_pogasil_dolg_po_plate_za_nvos/",
+        "https://rpn.gov.ru/press/news/ooo_ekoservis_obyazano_doplatit_za_nvos_59_mln_rubley/",
+        "https://rpn.gov.ru/press/news/novyy_poryadok_deklarirovaniya_platy_za_nvos/"
+      ],
+      "current_npa": [
+        "Federal Law 7-FZ, articles 16.1-16.4, current as of 2026-10-01",
+        "Government Resolution 881 dated 2023-05-31",
+        "Minprirody Order 182 dated 2026-04-01, effective 2026-09-01"
+      ],
+      "factual_pattern": "NVOS_OBJECT -> CATEGORY -> KER_DUTY -> KER_EFFECTIVE_DATE -> ACTUAL_OPERATION_PERIOD -> IMPACT_BASE -> APPLICABLE_RATE -> COEFFICIENT_BY_PERIOD -> DECLARATION -> RPN_CONTROL -> ARREARS",
+      "risk": "Annual fee calculation may be understated if the reporting year is not split by periods before and after KER became effective.",
+      "evidence_court_practice": "RPN reported on 2026-09-29 that Glacem, a category I facility, omitted the increased coefficient for operation without KER from Jan 1 to Feb 24 and paid more than RUB 1.8m after control. RPN also reported on 2026-03-24 a court-backed recovery of more than RUB 59m from Ecoservice after incorrect declarations for 2022-2023.",
+      "mirlex_checks": "Object category; KER duty; KER effective date; periods of operation without KER; actual payment base by period; rates and coefficients; declaration arithmetic; reconciliation with PEC and permits.",
+      "impact": "Add permit-status timeline control to MIRLEX NVOS audit and future account. Link NVOS registration service to KER and fee lifecycle.",
+      "red_flag": "Category I object operated for any part of the reporting year without required KER while the declaration used one coefficient for the whole year.",
+      "update_needed": "OBJECT_CATEGORY -> KER_REQUIRED -> KER_STATUS_TIMELINE -> OPERATION_WITHOUT_KER_PERIOD -> PAYMENT_COEFFICIENT_SPLIT -> DECLARATION_RECALCULATION"
+    }
+  ]
+}
