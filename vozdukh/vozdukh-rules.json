@@ -410,9 +410,19 @@
       "title": "Известно, какой хладагент используется?",
       "type": "single",
       "showIf": {
-        "question": "infra_extra",
-        "includesAny": [
-          "Холодильные установки / чиллеры / крупные кондиционеры"
+        "any": [
+          {
+            "question": "infra_extra",
+            "includesAny": [
+              "Холодильные установки / чиллеры / крупные кондиционеры"
+            ]
+          },
+          {
+            "question": "other_kind",
+            "includesAny": [
+              "Холодильные установки / чиллеры"
+            ]
+          }
         ]
       },
       "options": [
