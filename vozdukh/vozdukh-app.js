@@ -316,6 +316,17 @@
     const docsA=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
     const changes=Array.isArray(state.answers.inventory_changes)?state.answers.inventory_changes:[];
     const cat=state.answers.nvos_category;
+    const nvos=state.answers.nvos_registered;
+
+    if(nvos==='Нет' && docsA.includes('Декларация о воздействии на окружающую среду')){
+      flags.push('Указана декларация о воздействии на окружающую среду, но площадка отмечена как не поставленная на учёт НВОС — эти сведения противоречат друг другу и требуют проверки.');
+    }
+    if(nvos==='Нет' && docsA.includes('Комплексное экологическое разрешение (КЭР)')){
+      flags.push('Указано комплексное экологическое разрешение, но площадка отмечена как не поставленная на учёт НВОС — сведения требуют проверки.');
+    }
+    if(docsA.includes('Декларация о воздействии на окружающую среду') && cat && cat!=='II'){
+      flags.push('Указана декларация о воздействии на окружающую среду, но категория объекта указана не II — нужно проверить категорию и документ.');
+    }
 
     if(docsA.includes('Инвентаризация источников и выбросов') && changes.length && !changes.includes('Ничего существенного не менялось') && !changes.includes('Не знаю')){
       flags.push('После инвентаризации на площадке были изменения — её актуальность нужно проверить.');
@@ -332,10 +343,17 @@
     if(hasRefrigeration() && !docsA.includes('Документы по хладагентам / озоноразрушающим веществам')){
       flags.push('Указано холодильное оборудование, но документы по хладагентам не подтверждены.');
     }
-    if(!docsA.includes('Инвентаризация источников и выбросов') && state.answers.nvos_registered==='Да'){
+    if(!docsA.includes('Инвентаризация источников и выбросов') && nvos==='Да'){
       flags.push('Инвентаризация источников и выбросов среди имеющихся документов не подтверждена.');
     }
-    return flags;
+
+    const dustOpen = (Array.isArray(state.answers.dust_kind) && state.answers.dust_kind.some(x=>['Открытое хранение','Пересыпка','Загрузка / разгрузка'].includes(x)))
+      && ['На открытой площадке','Под навесом','В нескольких местах'].includes(state.answers.dust_place);
+    if(dustOpen && state.answers.dust_control==='Ничего специального нет' && !docsA.includes('Инвентаризация источников и выбросов')){
+      flags.push('Указаны пылящие операции без специального улавливания, но инвентаризация источников и выбросов среди документов не подтверждена.');
+    }
+
+    return [...new Set(flags)];
   }
 
   function renderResult(){
