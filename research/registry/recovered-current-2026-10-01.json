@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "recovery-2026-10-01-after-registry-gap",
+  "created_on": "2026-10-01",
+  "provenance": "Recovered from MIRLEX hard-radar conversation context after detecting that post-30.09 findings were not consistently persisted. IDs preserved; one documented chat ID collision corrected with migration metadata. Source URLs missing from preserved context are explicitly flagged for re-link/revalidation rather than invented.",
+  "cards": [
+    {
+      "id": "ROP-004",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "date": "2026-10-01",
+      "industry_contour": "РОП / утилизаторы / фактическая утилизация",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Росприроднадзор, материалы 2026: запросы утилизаторам о фактической утилизации, мощностях и повторном использовании продукции; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ФЗ №89-ФЗ, действующая модель РОП",
+        "актуальные требования к реестру утилизаторов и актам утилизации"
+      ],
+      "factual_pattern": "REGISTRY_STATUS → GROUP/OPERATION → REGISTERED_CAPACITY → ACTUAL_CAPACITY_LOAD → INPUT_MASS → WASTE_IN_REGISTRY → TECHNOLOGY → OUTPUT_PRODUCT_COMPATIBILITY → MATERIAL_BALANCE → REUSE/SALE → ACT_VALIDATION",
+      "risk": "Договор и акт не подтверждают фактическую утилизацию; выявляются превышение мощности, отходы вне реестра и технологическая несопоставимость входа/продукции.",
+      "evidence_court_practice": "В контексте радара 01.10.2026 зафиксированы три типа расхождений РПН: превышение мощности; работа с отходами вне реестра; несоответствие отходов и полученной продукции. Ранее 25.03.2026 зафиксированы требования к утилизаторам свыше 75 млн руб.",
+      "mirlex_checks": "Статус реестра на дату → операция/группа → мощность → фактическая загрузка → входная масса → технология → выходной продукт → материальный баланс → реализация/повторное использование → сверка акта.",
+      "impact": "Усилить РОП-Учёт и проверку актов утилизации машинными тестами мощности, состава входа и технологического выхода.",
+      "red_flag": "Акт есть, но невозможно доказать физический материальный баланс и соответствие реестру.",
+      "update_needed": "Append evidence to ROP-004; no new ID."
+    },
+    {
+      "id": "ROP-011",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "date": "2026-09-30",
+      "industry_contour": "РОП / отчетность / достоверность данных",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Надзорная практика 2026, точный URL требует повторной привязки.",
+      "current_npa": [
+        "КоАП РФ, актуальная ответственность за нарушения отчетности РОП — повторно валидировать формулировку перед публикацией"
+      ],
+      "factual_pattern": "DATA_COMPLETENESS → DATA_ACCURACY → CROSS_SOURCE_RECONCILIATION → LIABILITY",
+      "risk": "Сам факт сдачи формы не закрывает риск: неполные/недостоверные сведения выявляются межведомственной сверкой.",
+      "evidence_court_practice": "Дополнительное подтверждение зафиксировано 30.09.2026.",
+      "mirlex_checks": "Полнота → точность → сверка ФТС/ФНС/Минпромторг/ГИС МТ/РПН → расхождения.",
+      "impact": "Встроить cross-source reconciliation в РОП-Учёт.",
+      "red_flag": "Отчет принят, но исходные данные не сверены с внешними государственными источниками.",
+      "update_needed": "Append evidence to ROP-011; no new ID."
+    },
+    {
+      "id": "IND-GREENHOUSE-001",
+      "date": "2026-09-30",
+      "industry_contour": "Тепличное/овощное производство → вода → технологические стоки",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика по ООО «Овощи Черноземья»; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ВК РФ",
+        "ФЗ №7-ФЗ"
+      ],
+      "factual_pattern": "WATER_SOURCE → PROCESS → DRAINAGE → TREATMENT → DISCHARGE → LAB → RESIDUES",
+      "risk": "Контролируется водопотребление, но не качество исходящего технологического стока.",
+      "evidence_court_practice": "Сброс в р. Усмань; превышения по 9 химическим показателям; ч.4 ст.8.13 КоАП; штраф 220 тыс. руб.; план снижения сбросов/реагентная обработка.",
+      "mirlex_checks": "Источник воды → технологические операции → дренаж → очистка → выпуск → лаборатория → остатки/осадки.",
+      "impact": "Отраслевая карточка теплиц: обязательный водный технологический контур.",
+      "red_flag": "Есть полив/питательные растворы/дренаж, но нет полной карты состава и конечного пути воды.",
+      "update_needed": "Add greenhouse water decision tree."
+    },
+    {
+      "id": "IND-RESIN-001",
+      "date": "2026-09-30",
+      "industry_contour": "Синтетические смолы/полимеры",
+      "actuality_status": "PRESERVED_REVALIDATION_REQUIRED",
+      "primary_source": "Систематизация по ФККО и технологическому процессу; первичный URL не сохранен.",
+      "current_npa": [
+        "ФЗ №89-ФЗ",
+        "ФККО/БДО в актуальной редакции"
+      ],
+      "factual_pattern": "RESINS → RAW_MATERIAL → PACKAGING → PURIFICATION → ADSORBENTS → REACTION → OFF_SPEC → WASH → WWTP",
+      "risk": "В учете остается только «отход смолы», теряются сорбенты, фильтры, промывка и загрязненная упаковка.",
+      "evidence_court_practice": "Требуется дальнейшее накопление отраслевой практики.",
+      "mirlex_checks": "Каждая стадия процесса и все побочные материальные потоки.",
+      "impact": "Модуль химпроизводств/смол для инвентаризации отходов и воды.",
+      "red_flag": "Один общий отход при многостадийной технологии.",
+      "update_needed": "Add process-stage waste generator."
+    },
+    {
+      "id": "IND-ENERGY-001",
+      "date": "2026-09-30",
+      "industry_contour": "Энергетика / котельные → САКВ",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика г. Братск; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ФЗ №7-ФЗ",
+        "требования квотирования выбросов и САКВ — повторно привязать актуальные НПА"
+      ],
+      "factual_pattern": "NVOС_CATEGORY → TERRITORY → QUOTA_STATUS → SOURCE_LIST → SAK_APPLICABILITY → PROGRAM → INSTALLATION → COMMISSIONING → DATA_TRANSFER",
+      "risk": "II категория ошибочно воспринимается как автоматическое отсутствие обязанности САКВ.",
+      "evidence_court_practice": "Суд обязал установить САКВ на котельной II категории; ч.1 ст.8.51 КоАП.",
+      "mirlex_checks": "Категория → территория эксперимента/квотирования → источники → применимость → программа → установка → ввод → передача данных.",
+      "impact": "Энергетическая карточка и универсальная проверка САКВ.",
+      "red_flag": "САКВ исключена только по категории НВОС.",
+      "update_needed": "Preserve IND-ENERGY-001 exclusively for SAKV."
+    },
+    {
+      "id": "IND-BIODIV-002",
+      "migration_from_chat_id": "IND-ENERGY-001",
+      "date": "2026-10-01",
+      "industry_contour": "Биоразнообразие / ЛЭП → птицезащита",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT_ID_COLLISION_FIXED",
+      "primary_source": "Прокурорская/судебная практика 2026 по ЛЭП Саратовской области и Забайкалья; точные URL требуют повторной привязки.",
+      "current_npa": [
+        "ФЗ №52-ФЗ «О животном мире»",
+        "ПП РФ от 31.05.2025 №813"
+      ],
+      "factual_pattern": "OVERHEAD_LINE → VOLTAGE → ROUTE/HABITAT → POLE_DESIGN → BIRD_RISK → PROTECTION_DEVICE → INSTALLATION/MAINTENANCE_CONTROL",
+      "risk": "ЛЭП не включена в экологический аудит как фактор гибели животных.",
+      "evidence_court_practice": "В 2026 судами возлагалась обязанность установки птицезащитных устройств; в одном кейсе охвачены 77 ЛЭП.",
+      "mirlex_checks": "ЛЭП от применимого напряжения → трасса → среда обитания/миграция → конструкция → ПЗУ → состояние.",
+      "impact": "Дочерний модуль верхнего контура BIODIVERSITY; применяется межотраслево.",
+      "red_flag": "Есть воздушная ЛЭП, но эколог не оценивал риск для птиц.",
+      "update_needed": "Chat reused IND-ENERGY-001 incorrectly. Registry keeps IND-ENERGY-001=SAKV and permanently migrates bird-protection pattern to IND-BIODIV-002."
+    },
+    {
+      "id": "IND-WASTEOPS-001",
+      "date": "2026-09-30",
+      "industry_contour": "Операторы ТКО → ФГИС УТКО",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика 2026 по непередаче данных во ФГИС УТКО; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ФЗ №89-ФЗ",
+        "ПП РФ №1657 о ФГИС УТКО"
+      ],
+      "factual_pattern": "WASTE_OPERATOR → DATA_PROVIDER_STATUS → REQUIRED_DATA → INTERNAL_ACCOUNTING → FGIS_UTKO → TRANSMISSION_LOG → ERROR_CONTROL → STATE_SYSTEM_CONFIRMATION",
+      "risk": "Данные есть в 1С/журнале, но отсутствует доказательство успешной передачи в госcистему.",
+      "evidence_court_practice": "Четыре лица, включая региональных операторов, привлекались по ч.13 ст.8.2; автоматическая передача восстановлена.",
+      "mirlex_checks": "Обязанность передачи → источник данных → канал → лог → ошибки → запись в ФГИС.",
+      "impact": "Цифровой аудит операторов отходов.",
+      "red_flag": "«Все есть в 1С», но нет подтверждения ФГИС.",
+      "update_needed": "Add state-system delivery proof check."
+    },
+    {
+      "id": "IND-TKO-001",
+      "date": "2026-10-01",
+      "industry_contour": "ТКО → объект → весовой контроль → ФГИС УТКО",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокуратура Советского района г. Липецка, 2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ПП РФ №1657",
+        "ПП РФ от 24.05.2024 №671"
+      ],
+      "factual_pattern": "TKO_OBJECT → VEHICLE/LOAD → WEIGHING → MASS → TIMESTAMP → INTERNAL_RECORD → FGIS_UTKO_TRANSFER → FGIS_RECORD → GAP_CONTROL → RECONCILIATION → MATERIAL_BALANCE",
+      "risk": "Весы работают, но цифровой след массы отсутствует или расходится.",
+      "evidence_court_practice": "За январь–март 2026 не вносились сведения об объемах на перегрузочной станции; после вмешательства данные внесены.",
+      "mirlex_checks": "Весы/поверка → каждая партия → дата/время → внутренний учет → передача → запись ФГИС → расхождения.",
+      "impact": "Модуль цифрового весового аудита ТКО.",
+      "red_flag": "Весовой терминал ≠ внутренний учет ≠ ФГИС.",
+      "update_needed": "Link to IND-WASTEOPS-001 but keep separate mass-control node."
+    },
+    {
+      "id": "IND-AQUA-001",
+      "date": "2026-10-01",
+      "industry_contour": "Аквакультура → береговая зона → отходы/техника",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Владивостокская природоохранная прокуратура, 2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ВК РФ",
+        "ФЗ №89-ФЗ"
+      ],
+      "factual_pattern": "AQUACULTURE → WATER_AREA → SHORE_ZONE → WATER_PROTECTION_ZONE → EQUIPMENT → FUEL/MAINTENANCE → WASTE → STORAGE_SURFACE → PATH_TO_WATER",
+      "risk": "Береговая эксплуатационная зона выпадает из экологического контроля.",
+      "evidence_court_practice": "Лодка с мотором без оборудованной поверхности; 38 м3 территории захламлено ломом; ч.1 ст.8.2 и ч.1 ст.8.42.",
+      "mirlex_checks": "Водоохранный режим → техника/ГСМ → ремонт → отходы → поверхность → путь загрязнения в воду.",
+      "impact": "Карточка рыбоводства/аквакультуры.",
+      "red_flag": "Техника, топливо и лом на берегу без инженерной защиты.",
+      "update_needed": "Add shore-operation module."
+    },
+    {
+      "id": "IND-LANDFILL-001",
+      "date": "2026-10-01",
+      "industry_contour": "Полигон ТКО → фильтрат/сток/инциденты",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика Казани и Комсомольска-на-Амуре, 2026; точные URL требуют повторной привязки.",
+      "current_npa": [
+        "ФЗ №89-ФЗ",
+        "ФЗ №7-ФЗ",
+        "требования КЭР/ПЭК и эксплуатации ОРО"
+      ],
+      "factual_pattern": "LANDFILL → EXTERNAL_RUNOFF → PROTECTION → WASTE_BODY → LEACHATE → COLLECTION → CAPACITY → TREATMENT/DISPOSAL → EMERGENCY_PATH → KER → PEC → INCIDENT → FIRE/SMOULDERING → ACTION → RPN_NOTIFICATION → EVIDENCE_LOG",
+      "risk": "Фильтрат, внешний сток и пожар рассматриваются разрозненно; отсутствует единый физический и инцидентный контроль.",
+      "evidence_court_practice": "Казань: фильтрат в несанкционированном месте, нет КЭР/берм; Комсомольск: пожар и несвоевременное уведомление РПН.",
+      "mirlex_checks": "Сток → фильтрат → емкости → аварийный путь → разрешения/ПЭК → пожарный сценарий → уведомление.",
+      "impact": "Полная эксплуатационная карта полигона + связь с U-002.",
+      "red_flag": "Есть полигон, но нет доказуемого сценария фильтрата/пожара/уведомления.",
+      "update_needed": "Append incident branch to landfill audit."
+    },
+    {
+      "id": "IND-BIOWASTE-001",
+      "date": "2026-10-01",
+      "industry_contour": "Биологические отходы / мясокостная мука / ОПО",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика Магнитогорска, 2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ветеринарные требования к биоотходам",
+        "ФЗ №89-ФЗ в применимой части",
+        "ФЗ №116-ФЗ об ОПО"
+      ],
+      "factual_pattern": "BIOWASTE → ACCEPTANCE → COLD_STORAGE → ODOUR → PROCESSING → RESIDUES → WASTE_SITE/STORMWATER + GAS_SYSTEM → OPO_IDENTIFICATION → REGISTRATION → CLASS → LICENCE",
+      "risk": "Экологический, ветеринарный, санитарный и промышленно-безопасностный контуры не связываются.",
+      "evidence_court_practice": "Хранение биоотходов без холода; отходы без твердого покрытия/навеса/ливневки; газовая сеть и цех как ОПО без регистрации/лицензии; деятельность запрещена до устранения.",
+      "mirlex_checks": "Приемка → холод → запах → процесс → остатки → площадка/ливневка → газ → ОПО.",
+      "impact": "Межконтурный модуль для переработки биоотходов.",
+      "red_flag": "Биоотходы и газовое оборудование проверяются разными специалистами без общей карты.",
+      "update_needed": "Add cross-regime audit."
+    },
+    {
+      "id": "IND-AGRO-003",
+      "date": "2026-10-01",
+      "industry_contour": "Сельхоз/животноводство/пищевое → собственная скважина",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика по ООО «Агрофирма Ариант», 2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "Закон РФ «О недрах»",
+        "условия лицензии на пользование недрами",
+        "обязательная геологическая/статистическая отчетность"
+      ],
+      "factual_pattern": "WATER_SOURCE → OWN_WELL → SUBSOIL_LICENSE → LICENSE_CONDITIONS → TECHNICAL_PROJECT → VALIDITY → ACTUAL_EXTRACTION → METERING → GEO/STAT_REPORTING → SUBMISSION_CONTROL",
+      "risk": "Лицензия есть, но проект/условия/отчетность неактуальны.",
+      "evidence_court_practice": "ООО «Агрофирма Ариант»: добыча без действующей технической документации и просрочка отчетности; ч.2 ст.7.3 и ст.7.31; 320 тыс. руб.",
+      "mirlex_checks": "Лицензия → условия → проект → срок → фактическая добыча → учет → отчетность.",
+      "impact": "Скважина как универсальный межотраслевой триггер.",
+      "red_flag": "«Лицензия есть» используется как единственное доказательство соблюдения.",
+      "update_needed": "Link to IND-WATERINTAKE-001 as current enforcement evidence."
+    },
+    {
+      "id": "IND-MINING-001",
+      "date": "2026-10-01",
+      "industry_contour": "Добыча/золото → фактическая география → ВБР/почва/отходы",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Амурская бассейновая природоохранная прокуратура, дело ООО «Рубикон», 2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "Закон РФ «О недрах»",
+        "ВК РФ",
+        "ФЗ №89-ФЗ",
+        "законодательство о ВБР"
+      ],
+      "factual_pattern": "MINING → LICENSE → TECH_PROJECT → ACTUAL_COORDINATES → WATER_PROTECTION/FISHERY → FISHERIES_APPROVAL → WBR_MEASURES → FUEL/EQUIPMENT → WASTE → SOIL → RESTORATION",
+      "risk": "Документы соответствуют проектной географии, но фактические работы вышли в иной режим территории.",
+      "evidence_court_practice": "ООО «Рубикон»: работы в водоохранной зоне с отклонениями от проекта и без согласования Росрыболовства; лом/шины/нефтезагрязнение; работы приостановлены.",
+      "mirlex_checks": "Проектные координаты ↔ фактические координаты → водоохранный/рыбохозяйственный режим → согласования → ГСМ/отходы/почва.",
+      "impact": "Карточка добычи + GIS/координатная проверка.",
+      "red_flag": "Эколог смотрит проект, но не сравнивает его с фактическим фронтом работ.",
+      "update_needed": "Add actual-coordinate verification."
+    },
+    {
+      "id": "IND-CHEM-002",
+      "date": "2026-10-01",
+      "industry_contour": "Химическое/клеевое производство → жидкие потоки",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Прокурорская практика производителя клея, 2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ФЗ №89-ФЗ",
+        "ВК РФ/водоотведение в применимой части",
+        "земельные/санитарные требования"
+      ],
+      "factual_pattern": "CHEM_PROCESS → ALL_LIQUID_STREAMS → STREAM_IDENTIFICATION → WASTEWATER_OR_WASTE → LEGAL_ROUTE → SEWER/TREATMENT_OR_WASTE_MANAGEMENT → FINAL_DESTINATION → SOIL → VOLATILIZATION/AIR",
+      "risk": "Технологическая жидкость ошибочно называется сточной водой и уходит в канаву/рельеф.",
+      "evidence_court_practice": "Жидкие производственные отходы сбрасывались в дорожную канаву и на почву; превышения в почве и атмосферном воздухе; ч.1 ст.6.3, ч.1 ст.8.2, ч.2 ст.8.6.",
+      "mirlex_checks": "Все жидкие потоки → юридический статус каждого → допустимый маршрут → конечная точка.",
+      "impact": "Универсальный liquid-stream classifier для химических производств.",
+      "red_flag": "Любая технологическая жидкость отправляется в ливневку/канаву/яму без документированной классификации.",
+      "update_needed": "Add liquid-stream legal fork."
+    },
+    {
+      "id": "IND-MED-001",
+      "date": "2026-10-01",
+      "industry_contour": "Медицинские отходы → классы А/Б/В/Г → правовой маршрут",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Нормативный радар 2026; точные официальные URL повторно привязать.",
+      "current_npa": [
+        "ПП РФ от 30.04.2026 №506 — с 01.09.2026 для соответствующих операций с медотходами",
+        "санитарные требования и ФЗ №89-ФЗ в применимых стадиях"
+      ],
+      "factual_pattern": "MEDICAL_OBJECT → WASTE_INVENTORY → A/B/V/G_CLASSIFICATION → LEGAL_REGIME; CLASS_A → REGIONAL_OPERATOR; CLASS_B/V/G → DISINFECTION → CONTRACTOR → VEHICLE → TREATMENT_FACILITY → EQUIPMENT → MASS/VOLUME_MEASUREMENT → NEUTRALIZATION → TRANSITION_TO_89-FZ",
+      "risk": "Все классы передаются одному подрядчику по общей логике обычных отходов.",
+      "evidence_court_practice": "Карточка сформирована как нормативный паттерн; практику наращивать.",
+      "mirlex_checks": "Класс → стадия → обеззараживание/обезвреживание → перевозчик/объект → момент перехода режима.",
+      "impact": "Отраслевая карточка клиник/стоматологий/лабораторий/ветеринарии.",
+      "red_flag": "Один общий договор на А/Б/В/Г без раздельного правового маршрута.",
+      "update_needed": "Add medical-waste regime decision tree."
+    },
+    {
+      "id": "IND-STORM-001",
+      "date": "2026-10-01",
+      "industry_contour": "UNIVERSAL / ливневый и талый сток → фактический путь до водного объекта",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Ярославская межрайонная природоохранная прокуратура, сообщение 02.07.2026; точный URL требует повторной привязки.",
+      "current_npa": [
+        "ВК РФ, включая ст.44, 35, 56, 60",
+        "ПП РФ от 19.01.2022 №18"
+      ],
+      "factual_pattern": "CONTAMINATED_SURFACE → STORM/MELT_WATER → COLLECTION → TREATMENT → STORAGE_POND → CAPACITY → OVERFLOW_SCENARIO → TERRAIN/DRAINAGE_DITCH → INTERMEDIATE_WATERBODY → FINAL_WATERBODY → PERMITS → MONITORING",
+      "risk": "Проектно сброса нет, но при переполнении вода физически достигает водного объекта.",
+      "evidence_court_practice": "Пруды-накопители переполнялись; сток шел через болото и ручей в Горьковское водохранилище без оформления; дополнительный кейс — канава → ручей → р. Дунайка.",
+      "mirlex_checks": "Рельеф → загрязненные зоны → ливневка → емкость → переполнение → фактическая гидрология → конечный водоприемник.",
+      "impact": "Универсальный модуль для всех площадок.",
+      "red_flag": "«Сброса нет — у нас накопитель», но сценарий переполнения не обследован.",
+      "update_needed": "Add overflow/final-receiver tracing."
+    },
+    {
+      "id": "IND-SNOW-001",
+      "date": "2026-10-01",
+      "industry_contour": "UNIVERSAL / SEASONAL / снег → талая вода → почва/вода",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Росприроднадзор, Пермь 16.09.2026; дополнительный кейс Челябинской области 27.03.2026; точные URL требуют повторной привязки.",
+      "current_npa": [
+        "Приказ Минприроды России от 08.07.2010 №238, методика вреда почвам",
+        "ФЗ №7-ФЗ"
+      ],
+      "factual_pattern": "ANY_SITE → WINTER_CLEANING → SNOW_ORIGIN → SNOW_STORAGE_LOCATION → SURFACE → BUNDING → MELTWATER_COLLECTION → MELTWATER_ROUTE → SOIL_CONTACT → LAB_CONTROL → DAMAGE_RISK",
+      "risk": "Загрязненный снег переносится на свободный грунтовый участок, загрязнение реализуется при таянии.",
+      "evidence_court_practice": "Пермь: взыскано 4,8 млн руб.; Челябинская область: заявленный вред свыше 35 млн руб.",
+      "mirlex_checks": "Откуда снег → чем загрязнен → куда складируется → основание/обваловка/лотки → куда идет талая вода.",
+      "impact": "Универсальный сезонный триггер для всех отраслей с открытой территорией.",
+      "red_flag": "Снег складируется «на свободном участке».",
+      "update_needed": "Connect universal seasonal trigger to all applicable industries."
+    },
+    {
+      "id": "IND-WBR-001",
+      "date": "2026-10-01",
+      "industry_contour": "UNIVERSAL / WATER / водные биоресурсы",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Байкальская межрегиональная природоохранная прокуратура, решение по Усть-Илимской ГЭС 2026; дорожный кейс по мосту через р. Белая; точные URL требуют повторной привязки.",
+      "current_npa": [
+        "ПП РФ от 30.05.2025 №799",
+        "ФЗ о рыболовстве и сохранении ВБР"
+      ],
+      "factual_pattern": "ACTIVITY → WATERBODY → WBR_IMPACT_SCREENING → IMPACT_ASSESSMENT → ROSRYBOLOVSTVO_APPROVAL → CONDITIONS → COMPENSATION → EXECUTION_CONTROL",
+      "risk": "Водопользование оформлено, но отдельная обязанность по ВБР не проверена.",
+      "evidence_court_practice": "Усть-Илимская ГЭС: суд обязал оценить воздействие и согласовать деятельность; ч.2 ст.8.48, штраф 100 тыс. руб.; отдельный кейс ремонта моста.",
+      "mirlex_checks": "Любое взаимодействие с водой → возможное воздействие на ВБР → оценка → согласование → условия/компенсация.",
+      "impact": "Универсальный триггер для энергетики, добычи, дорог, водоканалов и промышленности.",
+      "red_flag": "«Сброс/водопользование оформлены», но Росрыболовство никто не проверял.",
+      "update_needed": "Add universal WBR trigger and link IND-MINING-001."
+    },
+    {
+      "id": "IND-BIODIV-001",
+      "date": "2026-10-01",
+      "industry_contour": "UNIVERSAL / BIODIVERSITY / HABITAT",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Байкальская межрегиональная природоохранная прокуратура 09.09.2026 и судебная практика Братска 2026; точные URL требуют повторной привязки.",
+      "current_npa": [
+        "ФЗ №52-ФЗ",
+        "ФЗ №209-ФЗ",
+        "ст.77 ФЗ №7-ФЗ",
+        "приказ Минприроды России от 08.12.2011 №948"
+      ],
+      "factual_pattern": "ANY_OBJECT → BIODIVERSITY_SCREENING → TERRITORY/HABITAT → SPECIES → BREEDING/FEEDING/REST/MIGRATION → PHYSICAL_TRANSFORMATION → IMPACT_AREA → IMPACT_DURATION → HABITAT_LOSS/DISRUPTION → MITIGATION → RESIDUAL_DAMAGE → DAMAGE_CALCULATION",
+      "risk": "Оценивается только гибель животных, а утрата/ухудшение среды обитания выпадает.",
+      "evidence_court_practice": "Взыскано >1,3 млн руб. за нарушение среды обитания на 418 га и вынужденную миграцию; отдельный кейс 82,9 га и период воздействия 25 лет.",
+      "mirlex_checks": "Территория → виды → места размножения/кормления/отдыха/миграции → трансформация → площадь/срок → меры → остаточный вред.",
+      "impact": "Верхний универсальный контур BIODIVERSITY; дочерние WBR и птицезащита.",
+      "red_flag": "Физически меняется территория, но биоразнообразие не анализируется.",
+      "update_needed": "Create parent biodiversity screening layer."
+    },
+    {
+      "id": "IND-AIR-001",
+      "date": "2026-10-01",
+      "industry_contour": "UNIVERSAL / AIR / стационарные источники → фактический состав выброса",
+      "actuality_status": "PRESERVED_CURRENT_CONTEXT",
+      "primary_source": "Красноярская природоохранная прокуратура, практика кирпичного завода 2026; точные URL требуют повторной привязки.",
+      "current_npa": [
+        "ФЗ №7-ФЗ",
+        "ФЗ №96-ФЗ",
+        "приказ Минприроды России от 28.01.2021 №59",
+        "актуальные проверочные листы Росприроднадзора по приказу №115 с изменениями 2026"
+      ],
+      "factual_pattern": "TECHNOLOGY_MAP → RAW_MATERIALS/FUEL/ADDITIVES → CHEMICAL_PROCESS → POTENTIAL_POLLUTANTS → SOURCE_MAP → INVENTORY → EMISSION_STANDARDS → PEC → INSTRUMENTAL_SAMPLING → ACTUAL_POLLUTANTS → CROSS_CHECK → UNACCOUNTED_SUBSTANCE → EXCEEDANCE → DAMAGE/RISK",
+      "risk": "Документы на источник есть, но фактический химический профиль выброса иной.",
+      "evidence_court_practice": "На кирпичном заводе лабораторно выявлены превышения до 12,17 раза и вещества, для части которых нормативы отсутствовали; возмещено 840 тыс. руб.; административные дела и уголовное дело по ч.1 ст.251 УК РФ.",
+      "mirlex_checks": "Технология → сырье/топливо → потенциальные ЗВ → инвентаризация → нормативы → ПЭК → фактические пробы → расхождения.",
+      "impact": "Универсальный air-аудит и обязательная сверка с официальными проверочными листами.",
+      "red_flag": "Технолог/сырье указывают на возможное ЗВ, которого нет в инвентаризации/нормировании/ПЭК.",
+      "update_needed": "Add CONTROL_CHECKLIST source layer + actual-vs-documented emission cross-check."
+    }
+  ]
+}
