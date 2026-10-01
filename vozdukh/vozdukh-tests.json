@@ -1,94 +1,48 @@
 {
-  "version": "vozdukh-v2.0.0",
-  "purpose": "Контроль покрытия основных маршрутов MIRLEX Воздух",
-  "scenarios": [
-    {
-      "id": "heat_common_stack",
-      "name": "Газовая котельная, несколько котлов на одну трубу",
-      "expect": [
-        "heat_kind",
-        "heat_energy",
-        "heat_outlet",
-        "documents_present"
-      ]
-    },
-    {
-      "id": "metal_local_extract",
-      "name": "Сварка с местной вытяжкой наружу",
-      "expect": [
-        "metal_kind",
-        "metal_place",
-        "metal_path",
-        "documents_present"
-      ]
-    },
-    {
-      "id": "wood_cyclone",
-      "name": "Деревообработка, аспирация через циклон",
-      "expect": [
-        "wood_equipment",
-        "wood_path",
-        "infra_cleaning",
-        "documents_present"
-      ]
-    },
-    {
-      "id": "paint_filters",
-      "name": "Покрасочная камера с фильтрами",
-      "expect": [
-        "chem_kind",
-        "chem_path",
-        "documents_present"
-      ]
-    },
-    {
-      "id": "bulk_open",
-      "name": "Пересыпка на открытой площадке без аспирации",
-      "expect": [
-        "dust_kind",
-        "dust_place",
-        "dust_control"
-      ]
-    },
-    {
-      "id": "storage_breathing",
-      "name": "Резервуары и слив-налив с дыхательной трубой",
-      "expect": [
-        "storage_material",
-        "storage_ops",
-        "storage_system"
-      ]
-    },
-    {
-      "id": "refrigerant",
-      "name": "Холодильное оборудование / чиллеры",
-      "expect": [
-        "other_kind",
-        "refrigerant_known",
-        "documents_present"
-      ]
-    },
-    {
-      "id": "unknown",
-      "name": "Пользователь не узнаёт деятельность в списке",
-      "expect": [
-        "unknown_desc",
-        "infra_extra",
-        "documents_present"
-      ]
-    },
-    {
-      "id": "inventory_changes",
-      "name": "Инвентаризация есть, после неё были изменения",
-      "expect": [
-        "inventory_age",
-        "inventory_changes"
-      ]
-    },
-    {
-      "id": "many",
-      "name": "Семь групп одновременно — сокращённая диагностика",
-      "maxVisibleQuestions": 20
-    }
+  "version": "vozdukh-v2.1-legal-audit",
+  "checked_at": "2026-10-01",
+  "exhaustive_legal_combinations_checked": 55296,
+  "legal_outcomes": [
+    "NVOS_REG_CONTRADICTION",
+    "NVOS_IV_STATUS_CHECK",
+    "NVOS_STATUS_CHECK",
+    "DVOS_CATEGORY_CONTRADICTION",
+    "KER_CATEGORY_CONTRADICTION",
+    "DVOS_REG_CONTRADICTION",
+    "KER_REG_CONTRADICTION",
+    "KER_NOT_CONFIRMED_I",
+    "DVOS_OR_KER_NOT_CONFIRMED_II",
+    "INVENTORY_NOT_CONFIRMED",
+    "INVENTORY_CHANGE_IMPACT_CHECK",
+    "PEK_NOT_CONFIRMED",
+    "NMU_NOT_CONFIRMED",
+    "GOU_APPLICABILITY_CHECK",
+    "REFRIGERANT_REGULATION_CHECK"
+  ],
+  "invariants": [
+    "IV category never triggers PEK missing",
+    "IV category never triggers NMU missing",
+    "II category with DVOS or KER never triggers missing permit",
+    "I category with KER never triggers missing KER",
+    "NMU missing never triggers without apparent emission source",
+    "GOU check never triggers without cleaning equipment",
+    "Refrigerant regulation check never triggers without refrigeration equipment",
+    "Inventory changes never automatically state that correction is mandatory; only impact check"
+  ],
+  "intentionally_not_decided_in_air_first": [
+    "2-TP (air) applicability",
+    "SAK applicability for specific I-category installations",
+    "NDV for III category without substance classes",
+    "ODS obligations without identifying refrigerant",
+    "final NVOS category from process description alone"
+  ],
+  "source_basis": [
+    "Federal Law 96-FZ Article 22",
+    "Order of Ministry of Natural Resources 871",
+    "Federal Law 7-FZ Articles 22, 31.1, 31.2, 67, 69.2",
+    "Government Resolution 636 dated 29.05.2026",
+    "Order of Ministry of Natural Resources 651 dated 26.11.2025",
+    "Federal Law 96-FZ Article 16.1 and Order 124 dated 21.03.2025",
+    "Government Resolution 206 dated 18.02.2022 as amended 20.06.2026"
   ]
 }
