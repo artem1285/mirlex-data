@@ -4,7 +4,7 @@
   "diagnosticMaxSeconds": 420,
   "privacyUrl": "/privacy",
   "consentUrl": "/consent-personal-data",
-  "backendEndpoint": "",
+  "backendEndpoint": "https://mirlex-rop-backend.onrender.com/api/v1/vozdukh/submit",
   "brand": {
     "dark": "#1F2A32",
     "accent": "#3CB371",
