@@ -87,7 +87,7 @@
   }
 
   document.addEventListener('click',e=>{
-    const a=e.target.closest('a[href="#proverit-vozdukh"],button[data-vozdukh-open]');
+    const a=e.target.closest('a[href="#proverit-vozdukh"],a[href="#rec4405822701"],button[data-vozdukh-open]');
     if(!a) return;
     e.preventDefault();
     openQuiz();
@@ -277,6 +277,6 @@
     shell('<h3>Диагностика временно недоступна</h3><p>Обновите страницу и попробуйте ещё раз.</p>',0);
   }
 
-  if(location.hash==='#proverit-vozdukh') openQuiz();
+  if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701') openQuiz();\n  window.addEventListener('hashchange',()=>{ if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701') openQuiz(); });
 })();
 </script>
