@@ -222,7 +222,7 @@
       '<p>Оставьте контактные данные. Мы проверим результаты, подготовим рекомендации по вашей площадке и свяжемся с вами.</p>'+
       '<form class="mvx-form" id="mvx-form">'+
       '<input name="name" autocomplete="name" placeholder="Имя" required>'+
-      '<input name="phone" autocomplete="tel" placeholder="Телефон" required>'+
+      '<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Телефон, например +7 999 123-45-67" maxlength="18" required>'+
       '<input name="email" type="email" autocomplete="email" placeholder="Email">'+
       '<input name="company" autocomplete="organization" placeholder="Организация">'+
       '<label class="mvx-consent"><input type="checkbox" name="personal_data_consent" required><span>Я даю <a href="'+esc(cfg.consentUrl)+'" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и подтверждаю ознакомление с <a href="'+esc(cfg.privacyUrl)+'" target="_blank" rel="noopener">Политикой обработки персональных данных</a>.</span></label>'+
@@ -231,6 +231,25 @@
       '</form>'+
       '<p class="mvx-muted" style="font-size:14px;margin-top:16px">После отправки заявки мы проверим результаты, подготовим полный отчёт по воздуху и при необходимости свяжемся с вами для уточнения информации.</p>',100);
     root.querySelector('#mvx-form').onsubmit=submitForm;
+  }
+
+  function normalizeRuPhone(value){
+    const digits=String(value||'').replace(/\D/g,'');
+    if(digits.length===11 && digits[0]==='8') return '+7'+digits.slice(1);
+    if(digits.length===11 && digits[0]==='7') return '+'+digits;
+    if(digits.length===10) return '+7'+digits;
+    return '';
+  }
+
+  function validateRuPhone(input){
+    const normalized=normalizeRuPhone(input.value);
+    if(!normalized){
+      input.setCustomValidity('Введите полный номер телефона: 10 цифр после +7');
+      return false;
+    }
+    input.setCustomValidity('');
+    input.value=normalized;
+    return true;
   }
 
   async function submitForm(e){
