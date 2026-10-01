@@ -385,19 +385,19 @@
     });
 
     return {
-      vozdukh_version: cfg.version||'vozdukh',
-      vozdukh_processes: selected.join('; '),
-      vozdukh_nvos: state.answers.nvos_category||state.answers.nvos_registered||'Не указано',
-      vozdukh_documents: docsA.join('; ')||'Не подтверждены',
-      vozdukh_answers: answerLines.join(' | '),
-      vozdukh_flags: flags.join(' | ')||'По первичной диагностике явные пробелы не выявлены',
-      vozdukh_duration: state.startedAt?Math.max(0,Math.round((Date.now()-state.startedAt)/1000))+' сек.':'',
-      vozdukh_page: location.href
+      vozdukh_versiya: cfg.version||'vozdukh',
+      vozdukh_processy: selected.join('; '),
+      vozdukh_kategoriya_nvos: state.answers.nvos_category||state.answers.nvos_registered||'Не указано',
+      vozdukh_dokumenty: docsA.join('; ')||'Не подтверждены',
+      vozdukh_otvety_diagnostiki: answerLines.join(' | '),
+      vozdukh_rezultat_proverki: flags.join(' | ')||'По первичной диагностике явные пробелы не выявлены',
+      vozdukh_vremya_prohozhdeniya: state.startedAt?Math.max(0,Math.round((Date.now()-state.startedAt)/1000))+' сек.':'',
+      vozdukh_stranitsa: location.href
     };
   }
 
   function findTildaVozdukhForm(){
-    const marker=document.querySelector('form [name="vozdukh_answers"]');
+    const marker=document.querySelector('form [name="vozdukh_otvety_diagnostiki"]');
     return marker?marker.closest('form'):null;
   }
 
