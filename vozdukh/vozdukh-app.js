@@ -311,49 +311,147 @@
     return includes('infra_extra','Холодильные установки / чиллеры / крупные кондиционеры') || includes('other_kind','Холодильные установки / чиллеры');
   }
 
+  function hasPotentialAirActivity(){
+    const groups=state.selectedGroups||[];
+    if(groups.some(x=>['metal','chem','dust','wood','storage','other'].includes(x))) return true;
+
+    if(groups.includes('heat')){
+      const kinds=Array.isArray(state.answers.heat_kind)?state.answers.heat_kind:[];
+      const energy=Array.isArray(state.answers.heat_energy)?state.answers.heat_energy:[];
+      const onlyElectricBoilers=kinds.length>0 &&
+        kinds.every(x=>x==='Котлы') &&
+        energy.length===1 &&
+        energy[0]==='Электричество';
+      if(!onlyElectricBoilers) return true;
+    }
+
+    const infra=Array.isArray(state.answers.infra_extra)?state.answers.infra_extra:[];
+    return infra.some(x=>[
+      'Общая производственная вытяжная вентиляция',
+      'Общая аспирационная сеть',
+      'Отдельные трубы / дымоходы / вентиляционные шахты',
+      'Фильтры, циклоны, скрубберы или другая очистка воздуха',
+      'Погрузчики, спецтехника или другой транспорт работают на территории'
+    ].includes(x));
+  }
+
+  function hasApparentEmissionSource(){
+    const outlet=state.answers.heat_outlet;
+    const heatEnergy=Array.isArray(state.answers.heat_energy)?state.answers.heat_energy:[];
+    if(outlet && !['В помещение','Не знаю'].includes(outlet) && !(heatEnergy.length===1 && heatEnergy[0]==='Электричество')) return true;
+
+    if(['Есть местная вытяжка от рабочих мест','Есть одна общая вытяжка участка','Только общеобменная вентиляция цеха','Сразу выводится наружу'].includes(state.answers.metal_path)) return true;
+    if(['Есть местная вытяжка и воздух уходит наружу','Проходит через фильтры','Есть водяная завеса / скруббер','Уходит в общую вентиляцию'].includes(state.answers.chem_path)) return true;
+
+    const dk=Array.isArray(state.answers.dust_kind)?state.answers.dust_kind:[];
+    if(dk.length && ['На открытой площадке','Под навесом','В нескольких местах'].includes(state.answers.dust_place)) return true;
+
+    if(['Станки подключены к аспирации через циклон','Станки подключены к аспирации через фильтр','Есть общий воздуховод с выбросом наружу'].includes(state.answers.wood_path)) return true;
+
+    const ss=Array.isArray(state.answers.storage_system)?state.answers.storage_system:[];
+    if(ss.some(x=>['Есть дыхательная труба или вентиляционный отвод','Операции выполняются открыто'].includes(x))) return true;
+
+    if(['Есть местная вытяжка наружу','Есть общая вентиляция','Есть очистка / фильтр','Процесс идёт на открытой площадке'].includes(state.answers.other_path)) return true;
+
+    const io=Array.isArray(state.answers.infra_outlet)?state.answers.infra_outlet:[];
+    if(io.some(x=>[
+      'Через трубу / дымоход',
+      'Через вентиляционную шахту / дефлектор на крыше',
+      'Через стену',
+      'Через общий воздуховод',
+      'Есть открытые участки без организованного отвода'
+    ].includes(x))) return true;
+
+    return false;
+  }
+
+  function hasCleaningEquipment(){
+    const ic=Array.isArray(state.answers.infra_cleaning)?state.answers.infra_cleaning:[];
+    if(ic.some(x=>x!=='Не знаю')) return true;
+    if(['Станки подключены к аспирации через циклон','Станки подключены к аспирации через фильтр'].includes(state.answers.wood_path)) return true;
+    if(['Проходит через фильтры','Есть водяная завеса / скруббер'].includes(state.answers.chem_path)) return true;
+    if(state.answers.dust_control==='Есть фильтр / циклон') return true;
+    return false;
+  }
+
   function diagnosticFlags(){
-    const flags=[];
+    const out=[];
     const docsA=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
     const changes=Array.isArray(state.answers.inventory_changes)?state.answers.inventory_changes:[];
     const cat=state.answers.nvos_category;
     const nvos=state.answers.nvos_registered;
+    const apparentSource=hasApparentEmissionSource();
+    const potentialActivity=hasPotentialAirActivity();
 
-    if(nvos==='Нет' && docsA.includes('Декларация о воздействии на окружающую среду')){
-      flags.push('Указана декларация о воздействии на окружающую среду, но площадка отмечена как не поставленная на учёт НВОС — эти сведения противоречат друг другу и требуют проверки.');
-    }
-    if(nvos==='Нет' && docsA.includes('Комплексное экологическое разрешение (КЭР)')){
-      flags.push('Указано комплексное экологическое разрешение, но площадка отмечена как не поставленная на учёт НВОС — сведения требуют проверки.');
-    }
-    if(docsA.includes('Декларация о воздействии на окружающую среду') && cat && cat!=='II'){
-      flags.push('Указана декларация о воздействии на окружающую среду, но категория объекта указана не II — нужно проверить категорию и документ.');
-    }
+    const hasDoc=name=>docsA.includes(name);
+    const add=(code,text)=>out.push({code,text});
 
-    if(docsA.includes('Инвентаризация источников и выбросов') && changes.length && !changes.includes('Ничего существенного не менялось') && !changes.includes('Не знаю')){
-      flags.push('После инвентаризации на площадке были изменения — её актуальность нужно проверить.');
+    // Государственный учет / категория
+    if(nvos==='Нет' && ['I','II','III'].includes(cat)){
+      add('NVOS_REG_CONTRADICTION','Указана категория '+cat+', но площадка отмечена как не поставленная на государственный учёт НВОС — сведения противоречат друг другу и требуют проверки.');
     }
-    if(['I','II','III'].includes(cat) && !docsA.includes('Программа производственного экологического контроля (ПЭК)')){
-      flags.push('Для объекта указана категория '+cat+', но программа ПЭК среди документов не подтверждена.');
+    if(nvos==='Да' && cat==='IV'){
+      add('NVOS_IV_STATUS_CHECK','Указана IV категория и одновременно действующий государственный учёт объекта. С учётом правил, действующих с 1 сентября 2026 года, статус и актуальность учетных сведений нужно проверить.');
     }
-    if(['I','II','III'].includes(cat) && !docsA.includes('План / мероприятия при НМУ')){
-      flags.push('Для объекта указана категория '+cat+', но документы по НМУ не подтверждены.');
-    }
-    if(hasCleaning() && !docsA.includes('Паспорт и документы на газоочистное оборудование')){
-      flags.push('На площадке указана очистка воздуха, но документы на неё не подтверждены.');
-    }
-    if(hasRefrigeration() && !docsA.includes('Документы по хладагентам / озоноразрушающим веществам')){
-      flags.push('Указано холодильное оборудование, но документы по хладагентам не подтверждены.');
-    }
-    if(!docsA.includes('Инвентаризация источников и выбросов') && nvos==='Да'){
-      flags.push('Инвентаризация источников и выбросов среди имеющихся документов не подтверждена.');
+    if(nvos==='Нет' && potentialActivity && cat!=='IV'){
+      add('NVOS_STATUS_CHECK','На площадке указаны процессы, связанные с возможным воздействием на атмосферный воздух. Нужно проверить, правильно ли определён статус объекта НВОС по действующим критериям.');
     }
 
-    const dustOpen = (Array.isArray(state.answers.dust_kind) && state.answers.dust_kind.some(x=>['Открытое хранение','Пересыпка','Загрузка / разгрузка'].includes(x)))
-      && ['На открытой площадке','Под навесом','В нескольких местах'].includes(state.answers.dust_place);
-    if(dustOpen && state.answers.dust_control==='Ничего специального нет' && !docsA.includes('Инвентаризация источников и выбросов')){
-      flags.push('Указаны пылящие операции без специального улавливания, но инвентаризация источников и выбросов среди документов не подтверждена.');
+    // Разрешительный контур: КЭР / ДВОС
+    if(hasDoc('Декларация о воздействии на окружающую среду') && cat && !['II','Не помню / не знаю'].includes(cat)){
+      add('DVOS_CATEGORY_CONTRADICTION','Указана декларация о воздействии на окружающую среду, но категория объекта указана как '+cat+'. ДВОС относится к объектам II категории (за исключением II категории с КЭР) — категорию и документ нужно сверить.');
+    }
+    if(hasDoc('Комплексное экологическое разрешение (КЭР)') && cat && !['I','II','Не помню / не знаю'].includes(cat)){
+      add('KER_CATEGORY_CONTRADICTION','Указано комплексное экологическое разрешение, но категория объекта указана как '+cat+'. КЭР применяется к объектам I категории и в предусмотренном законом случае может быть получено для объекта II категории — сведения нужно сверить.');
+    }
+    if(nvos==='Нет' && hasDoc('Декларация о воздействии на окружающую среду')){
+      add('DVOS_REG_CONTRADICTION','Указана ДВОС, но площадка отмечена как не поставленная на учёт НВОС. Поскольку ДВОС относится к объектам II категории, эти сведения требуют проверки.');
+    }
+    if(nvos==='Нет' && hasDoc('Комплексное экологическое разрешение (КЭР)')){
+      add('KER_REG_CONTRADICTION','Указано КЭР, но площадка отмечена как не поставленная на учёт НВОС — сведения требуют проверки.');
+    }
+    if(cat==='I' && !hasDoc('Комплексное экологическое разрешение (КЭР)')){
+      add('KER_NOT_CONFIRMED_I','Для объекта I категории комплексное экологическое разрешение среди документов не подтверждено.');
+    }
+    if(cat==='II' && !hasDoc('Декларация о воздействии на окружающую среду') && !hasDoc('Комплексное экологическое разрешение (КЭР)')){
+      add('DVOS_OR_KER_NOT_CONFIRMED_II','Для объекта II категории не подтверждены ни ДВОС, ни КЭР. Разрешительный документ нужно проверить.');
     }
 
-    return [...new Set(flags)];
+    // Инвентаризация
+    const knownNvosObject = nvos==='Да' || ['I','II','III','IV'].includes(cat);
+    if(knownNvosObject && !hasDoc('Инвентаризация источников и выбросов')){
+      add('INVENTORY_NOT_CONFIRMED','Для объекта НВОС инвентаризация источников и выбросов среди имеющихся документов не подтверждена.');
+    }
+    if(hasDoc('Инвентаризация источников и выбросов') && changes.length && !changes.includes('Ничего существенного не менялось') && !changes.includes('Не знаю')){
+      add('INVENTORY_CHANGE_IMPACT_CHECK','После инвентаризации на площадке были изменения. Нужно проверить, повлияли ли они на состав, объём или массу выбросов и возникла ли обязанность корректировки инвентаризации.');
+    }
+
+    // ПЭК
+    if(['I','II','III'].includes(cat) && !hasDoc('Программа производственного экологического контроля (ПЭК)')){
+      add('PEK_NOT_CONFIRMED','Для объекта '+cat+' категории программа ПЭК среди документов не подтверждена.');
+    }
+
+    // НМУ — только при I–III категории и выявленном пути выброса
+    if(['I','II','III'].includes(cat) && apparentSource && !hasDoc('План / мероприятия при НМУ')){
+      add('NMU_NOT_CONFIRMED','Для объекта '+cat+' категории по ответам выявлен путь поступления выбросов в атмосферный воздух, но документы по НМУ не подтверждены.');
+    }
+
+    // Очистка воздуха / ГОУ — не приравниваем аспирацию к ГОУ автоматически
+    if(hasCleaningEquipment() && !hasDoc('Паспорт и документы на газоочистное оборудование')){
+      add('GOU_APPLICABILITY_CHECK','Указано оборудование очистки воздуха. Нужно проверить, относится ли оно к установкам очистки газа и применимы ли требования к эксплуатации и документации ГОУ.');
+    }
+
+    // Хладагенты — сначала устанавливаем вещество, а не объявляем документ обязательным
+    if(hasRefrigeration()){
+      add('REFRIGERANT_REGULATION_CHECK','На площадке указано холодильное оборудование. Нужно установить используемый хладагент и проверить, относится ли он к регулируемым веществам.');
+    }
+
+    const seen=new Set();
+    return out.filter(x=>{
+      if(seen.has(x.code)) return false;
+      seen.add(x.code);
+      return true;
+    }).map(x=>x.text);
   }
 
   function renderResult(){
@@ -369,7 +467,7 @@
       '<div><strong>Объект НВОС</strong><br>'+esc(state.answers.nvos_category||state.answers.nvos_registered||'Не указано')+'</div>'+
       '<div><strong>Документы</strong><br>'+esc(docsA.join(', ')||'Не подтверждены')+'</div>'+
       '</div>'+
-      '<div class="mvx-flags">'+(flags.length?flags.map(x=>'<div class="mvx-flag">⚠ '+esc(x)+'</div>').join(''):'<div class="mvx-flag mvx-ok">По первичной диагностике явных пробелов не выявлено. Документы всё равно проверим перед выводом.</div>')+'</div>'+
+      '<div class="mvx-flags">'+(flags.length?flags.map(x=>'<div class="mvx-flag">⚠ '+esc(x)+'</div>').join(''):'<div class="mvx-flag mvx-ok">По ответам явных противоречий не выявлено. Окончательный вывод дадим после проверки документов.</div>')+'</div>'+
       '<div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back">Назад</button><button class="mvx-btn mvx-btn-primary" id="mvx-form-open">Получить полный отчёт по воздуху</button></div>');
 
     root.querySelector('#mvx-back').onclick=()=>{
@@ -408,7 +506,7 @@
       vozdukh_kategoriya_nvos: state.answers.nvos_category||state.answers.nvos_registered||'Не указано',
       vozdukh_dokumenty: docsA.join('; ')||'Не подтверждены',
       vozdukh_otvety_diagnostiki: answerLines.join(' | '),
-      vozdukh_rezultat_proverki: flags.join(' | ')||'По первичной диагностике явные пробелы не выявлены',
+      vozdukh_rezultat_proverki: flags.join(' | ')||'По ответам явных противоречий не выявлено',
       vozdukh_vremya_prohozhdeniya: state.startedAt?Math.max(0,Math.round((Date.now()-state.startedAt)/1000))+' сек.':'',
       vozdukh_stranitsa: location.href
     };
