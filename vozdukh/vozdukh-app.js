@@ -401,10 +401,6 @@
     return marker?marker.closest('form'):null;
   }
 
-  function findTildaFormBlock(form){
-    return form?(form.closest('.r')||form.closest('[id^="rec"]')||form.parentElement):null;
-  }
-
   function fillTildaForm(form){
     const report=buildTildaReport();
     Object.entries(report).forEach(([name,value])=>{
@@ -418,44 +414,26 @@
     });
   }
 
-  function hideNativeFormUntilNeeded(){
-    const form=findTildaVozdukhForm();
-    if(!form) return false;
-    const block=findTildaFormBlock(form);
-    if(block && !block.dataset.mvxPrepared){
-      block.dataset.mvxPrepared='1';
-      block.style.display='none';
-    }
-    return true;
+  function triggerVozdukhPopup(){
+    const a=document.createElement('a');
+    a.href='#popup:vozdukh';
+    a.style.display='none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>a.remove(),100);
   }
 
   function openTildaForm(){
     const form=findTildaVozdukhForm();
     if(!form){
-      shell('<h3>Форма заявки ещё не подключена</h3><p>Диагностика сохранена в этом окне. Добавьте штатную форму Tilda для «Воздуха» и повторите переход к заявке.</p><div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back-result">Назад</button></div>');
+      shell('<h3>Форма заявки ещё не подключена</h3><p>В popup «Воздух» нужно добавить скрытые поля для передачи результатов диагностики.</p><div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back-result">Назад</button></div>');
       const b=root.querySelector('#mvx-back-result');
       if(b)b.onclick=renderResult;
       return;
     }
 
     fillTildaForm(form);
-    const block=findTildaFormBlock(form);
-    if(block) block.style.display='';
-    setTimeout(()=>{
-      (block||form).scrollIntoView({
-        behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',
-        block:'start'
-      });
-    },50);
-  }
-
-  function prepareNativeFormWatcher(){
-    if(hideNativeFormUntilNeeded()) return;
-    const observer=new MutationObserver(()=>{
-      if(hideNativeFormUntilNeeded()) observer.disconnect();
-    });
-    observer.observe(document.documentElement,{childList:true,subtree:true});
-    setTimeout(()=>observer.disconnect(),10000);
+    triggerVozdukhPopup();
   }
 
   function renderCurrent(){
@@ -467,10 +445,7 @@
     else if(state.phase==='result')renderResult();
     else renderIntro();
   }
-
-  prepareNativeFormWatcher();
-
-  if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701') openQuiz();
+if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701') openQuiz();
   window.addEventListener('hashchange',()=>{if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701')openQuiz();});
 })();
 
