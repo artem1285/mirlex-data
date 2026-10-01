@@ -358,87 +358,104 @@
       const p=prevVisible(state.docRoute,state.docRoute.length-1);
       if(p<0)renderUnderstood();else{state.docIndex=p;renderDocQuestion();}
     };
-    root.querySelector('#mvx-form-open').onclick=renderForm;
+    root.querySelector('#mvx-form-open').onclick=openTildaForm;
   }
 
-  /* ФИНАЛЬНАЯ ФОРМА И ОТПРАВКА — СОХРАНЕНЫ */
-  function renderForm(){
-    state.phase='form';
-    shell('<h3>Получить полный отчёт по воздуху</h3>'+
-      '<p>Оставьте контактные данные. Мы проверим результаты, подготовим рекомендации по вашей площадке и свяжемся с вами.</p>'+
-      '<form class="mvx-form" id="mvx-form">'+
-      '<input name="name" autocomplete="name" placeholder="Имя" required>'+
-      '<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Телефон, например +7 999 123-45-67" maxlength="18" required>'+
-      '<input name="email" type="email" autocomplete="email" placeholder="Email">'+
-      '<input name="company" autocomplete="organization" placeholder="Организация">'+
-      '<label class="mvx-consent"><input type="checkbox" name="personal_data_consent" required><span>Я даю <a href="'+esc(cfg.consentUrl)+'" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и подтверждаю ознакомление с <a href="'+esc(cfg.privacyUrl)+'" target="_blank" rel="noopener">Политикой обработки персональных данных</a>.</span></label>'+
-      '<button class="mvx-btn mvx-btn-primary" type="submit">Отправить заявку</button>'+
-      '<div class="mvx-error" id="mvx-error" hidden></div>'+
-      '</form>'+
-      '<p class="mvx-muted" style="font-size:14px;margin-top:16px">После отправки заявки мы проверим результаты, подготовим полный отчёт по воздуху и при необходимости свяжемся с вами для уточнения информации.</p>');
-    root.querySelector('#mvx-form').onsubmit=submitForm;
+  /* ПЕРЕДАЧА РЕЗУЛЬТАТА В ШТАТНУЮ ФОРМУ TILDA */
+  function formatAnswer(value){
+    return Array.isArray(value)?value.join(', '):String(value??'');
   }
 
-  function normalizeRuPhone(value){
-    const digits=String(value||'').replace(/\D/g,'');
-    if(digits.length===11 && digits[0]==='8') return '+7'+digits.slice(1);
-    if(digits.length===11 && digits[0]==='7') return '+'+digits;
-    if(digits.length===10) return '+7'+digits;
-    return '';
+  function buildTildaReport(){
+    const selected=state.selectedGroups
+      .map(id=>processes.groups.find(g=>g.id===id)?.title)
+      .filter(Boolean);
+
+    const docsA=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
+    const flags=diagnosticFlags();
+
+    const answerLines=[];
+    const labels={};
+    Object.values(rules.branches||{}).forEach(list=>list.forEach(q=>labels[q.id]=q.title));
+    (rules.common||[]).forEach(q=>labels[q.id]=q.title);
+    (docs.questions||[]).forEach(q=>labels[q.id]=q.title);
+
+    Object.entries(state.answers).forEach(([id,value])=>{
+      answerLines.push((labels[id]||id)+': '+formatAnswer(value));
+    });
+
+    return {
+      vozdukh_version: cfg.version||'vozdukh',
+      vozdukh_processes: selected.join('; '),
+      vozdukh_nvos: state.answers.nvos_category||state.answers.nvos_registered||'Не указано',
+      vozdukh_documents: docsA.join('; ')||'Не подтверждены',
+      vozdukh_answers: answerLines.join(' | '),
+      vozdukh_flags: flags.join(' | ')||'По первичной диагностике явные пробелы не выявлены',
+      vozdukh_duration: state.startedAt?Math.max(0,Math.round((Date.now()-state.startedAt)/1000))+' сек.':'',
+      vozdukh_page: location.href
+    };
   }
 
-  function validateRuPhone(input){
-    const normalized=normalizeRuPhone(input.value);
-    if(!normalized){
-      input.setCustomValidity('Введите полный номер телефона: 10 цифр после +7');
-      return false;
+  function findTildaVozdukhForm(){
+    const marker=document.querySelector('form [name="vozdukh_answers"]');
+    return marker?marker.closest('form'):null;
+  }
+
+  function findTildaFormBlock(form){
+    return form?(form.closest('.r')||form.closest('[id^="rec"]')||form.parentElement):null;
+  }
+
+  function fillTildaForm(form){
+    const report=buildTildaReport();
+    Object.entries(report).forEach(([name,value])=>{
+      const field=form.querySelector('[name="'+name+'"]');
+      if(field){
+        field.value=value;
+        field.setAttribute('value',value);
+        field.dispatchEvent(new Event('input',{bubbles:true}));
+        field.dispatchEvent(new Event('change',{bubbles:true}));
+      }
+    });
+  }
+
+  function hideNativeFormUntilNeeded(){
+    const form=findTildaVozdukhForm();
+    if(!form) return false;
+    const block=findTildaFormBlock(form);
+    if(block && !block.dataset.mvxPrepared){
+      block.dataset.mvxPrepared='1';
+      block.style.display='none';
     }
-    input.setCustomValidity('');
-    input.value=normalized;
     return true;
   }
 
-  async function submitForm(e){
-    e.preventDefault();
-    const form=e.currentTarget;
-    const err=root.querySelector('#mvx-error');
-    const phone=form.elements.phone;
-    const name=form.elements.name;
-
-    if(name && name.value.trim().length<2) name.setCustomValidity('Укажите имя полностью');
-    else if(name) name.setCustomValidity('');
-    if(phone) validateRuPhone(phone);
-    if(!form.reportValidity()) return;
-
-    if(!cfg.backendEndpoint){
-      err.hidden=false;
-      err.textContent='Отправка заявки временно недоступна.';
+  function openTildaForm(){
+    const form=findTildaVozdukhForm();
+    if(!form){
+      shell('<h3>Форма заявки ещё не подключена</h3><p>Диагностика сохранена в этом окне. Добавьте штатную форму Tilda для «Воздуха» и повторите переход к заявке.</p><div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back-result">Назад</button></div>');
+      const b=root.querySelector('#mvx-back-result');
+      if(b)b.onclick=renderResult;
       return;
     }
 
-    const fd=new FormData(form);
-    const payload={
-      module:'vozdukh',
-      version:cfg.version,
-      contact:Object.fromEntries(fd.entries()),
-      diagnosis:{
-        selectedGroups:state.selectedGroups,
-        answers:state.answers,
-        diagnosticFlags:diagnosticFlags()
-      },
-      startedAt:state.startedAt,
-      finishedAt:Date.now(),
-      page:location.href
-    };
+    fillTildaForm(form);
+    const block=findTildaFormBlock(form);
+    if(block) block.style.display='';
+    setTimeout(()=>{
+      (block||form).scrollIntoView({
+        behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',
+        block:'start'
+      });
+    },50);
+  }
 
-    try{
-      const res=await fetch(cfg.backendEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-      if(!res.ok) throw new Error();
-      shell('<div class="mvx-success"><h3>Заявка отправлена</h3><p>Мы проверим результаты диагностики и свяжемся с вами в течение рабочего дня.</p><p class="mvx-muted" style="font-size:14px;margin-top:10px">Если заявка отправлена вне рабочего времени, свяжемся на следующий рабочий день.</p></div>');
-    }catch(_){
-      err.hidden=false;
-      err.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';
-    }
+  function prepareNativeFormWatcher(){
+    if(hideNativeFormUntilNeeded()) return;
+    const observer=new MutationObserver(()=>{
+      if(hideNativeFormUntilNeeded()) observer.disconnect();
+    });
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+    setTimeout(()=>observer.disconnect(),10000);
   }
 
   function renderCurrent(){
@@ -448,9 +465,10 @@
     else if(state.phase==='understood')renderUnderstood();
     else if(state.phase==='documents')renderDocQuestion();
     else if(state.phase==='result')renderResult();
-    else if(state.phase==='form')renderForm();
     else renderIntro();
   }
+
+  prepareNativeFormWatcher();
 
   if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701') openQuiz();
   window.addEventListener('hashchange',()=>{if(location.hash==='#proverit-vozdukh'||location.hash==='#rec4405822701')openQuiz();});
