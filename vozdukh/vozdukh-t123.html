@@ -106,6 +106,17 @@
   function conditionTrue(q){
     if(!q.showIf) return true;
     const c=q.showIf;
+    if(Array.isArray(c.any)){
+      return c.any.some(rule=>{
+        const v=state.answers[rule.question];
+        if(rule.equals!==undefined) return v===rule.equals;
+        if(rule.includesAny){
+          const a=Array.isArray(v)?v:[v];
+          return rule.includesAny.some(x=>a.includes(x));
+        }
+        return false;
+      });
+    }
     const v=state.answers[c.question];
     if(c.equals!==undefined) return v===c.equals;
     if(c.includesAny){
@@ -119,7 +130,7 @@
     let n=0;
     for(let i=index;i<route.length;i++){
       const q=route[i];
-      if(!q.showIf || conditionTrue(q) || state.answers[q.showIf.question]===undefined) n++;
+      if(!q.showIf || conditionTrue(q) || (q.showIf.question && state.answers[q.showIf.question]===undefined) || (Array.isArray(q.showIf.any) && q.showIf.any.some(x=>state.answers[x.question]===undefined))) n++;
     }
     return n;
   }
