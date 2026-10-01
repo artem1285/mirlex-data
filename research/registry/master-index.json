@@ -51,6 +51,11 @@
       "path": "research/registry/recovered-current-2026-10-01.json",
       "cards": 20,
       "status": "RECOVERED_FROM_ACTIVE_CONTEXT_SOURCE_RELINK_REQUIRED_WHERE_MARKED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-01-run-07.json",
+      "cards": 1,
+      "status": "VERIFIED_CURRENT"
     }
   ],
   "permanent_id_policy": {
@@ -75,7 +80,7 @@
   },
   "current_counts": {
     "rop_ids": 26,
-    "known_industry_ids": 56,
+    "known_industry_ids": 57,
     "universal_ids": 4
   },
   "next_priority": [
