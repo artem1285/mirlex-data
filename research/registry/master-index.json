@@ -61,6 +61,11 @@
       "path": "research/registry/radar-2026-10-01-run-08.json",
       "cards": 1,
       "status": "VERIFIED_CURRENT_WITH_FILE_EVIDENCE"
+    },
+    {
+      "path": "research/registry/radar-2026-10-01-run-09.json",
+      "cards": 3,
+      "status": "VERIFIED_CURRENT"
     }
   ],
   "permanent_id_policy": {
@@ -85,7 +90,7 @@
   },
   "current_counts": {
     "rop_ids": 26,
-    "known_industry_ids": 58,
+    "known_industry_ids": 61,
     "universal_ids": 4
   },
   "next_priority": [
@@ -105,5 +110,41 @@
   ],
   "radar_rules": [
     "For every industry, independently identify substances/mixtures actually used or generated and test chemical, physical and biological factors against current SanPiN/SP requirements and Rospotrebnadzor checklists; do not wait for industry-specific sources to mention them."
-  ]
+  ],
+  "radar_source_contours": [
+    "Rospotrebnadzor: sanitary rules, complaints, enforcement, checklists, laboratory measurements",
+    "Rostrud/GIT: OSH/SOUT and workplace-factor enforcement",
+    "Rostekhnadzor: industrial safety/OPO where technology triggers it",
+    "Rosrybolovstvo: aquatic biological resources and approvals",
+    "Rosnedra: subsoil/licence/well compliance",
+    "Rosselkhoznadzor/veterinary control: biological waste, animal by-products, veterinary-sanitary contours",
+    "MChS/fire supervision: fire/explosion/chemical-storage and emergency contours",
+    "Rostransnadzor: dangerous-goods transport and transport safety",
+    "Rosleskhoz/regional forest supervision: forest use/protection/fire-safety contours",
+    "Rosreestr/regional land supervision: land-use/land-condition contours where applicable",
+    "Prosecutor/courts/citizen complaints: cross-agency enforcement signals"
+  ],
+  "measurement_model": {
+    "spaces": [
+      "WORKPLACE",
+      "SITE_BOUNDARY_OR_RESIDENTIAL_RECEPTOR",
+      "PROCESS_OR_ENVIRONMENTAL_CONTROL_POINT"
+    ],
+    "factors": [
+      "CHEMICAL",
+      "BIOLOGICAL",
+      "NOISE",
+      "VIBRATION",
+      "MICROCLIMATE",
+      "LIGHT",
+      "INFRASOUND",
+      "ULTRASOUND",
+      "EMF",
+      "LASER",
+      "UV",
+      "IONIZING_RADIATION_WHERE_APPLICABLE",
+      "AEROSOLS_DUST"
+    ],
+    "rule": "Never treat one measurement protocol or SOUT as covering another control space. Derive measurements from actual technology, equipment, raw materials, chemicals, complaints, receptors and applicable law."
+  }
 }
