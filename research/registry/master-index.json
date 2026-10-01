@@ -113,7 +113,6 @@
   ],
   "radar_source_contours": [
     "Rospotrebnadzor: sanitary rules, complaints, enforcement, checklists, laboratory measurements",
-    "Rostrud/GIT: OSH/SOUT and workplace-factor enforcement",
     "Rostekhnadzor: industrial safety/OPO where technology triggers it",
     "Rosrybolovstvo: aquatic biological resources and approvals",
     "Rosnedra: subsoil/licence/well compliance",
@@ -126,25 +125,25 @@
   ],
   "measurement_model": {
     "spaces": [
-      "WORKPLACE",
       "SITE_BOUNDARY_OR_RESIDENTIAL_RECEPTOR",
-      "PROCESS_OR_ENVIRONMENTAL_CONTROL_POINT"
+      "SANITARY_OR_PROCESS_CONTROL_POINT",
+      "ENVIRONMENTAL_CONTROL_POINT"
     ],
     "factors": [
       "CHEMICAL",
       "BIOLOGICAL",
       "NOISE",
       "VIBRATION",
-      "MICROCLIMATE",
-      "LIGHT",
+      "LIGHT_WHERE_SANITARY_RELEVANT",
       "INFRASOUND",
       "ULTRASOUND",
       "EMF",
-      "LASER",
-      "UV",
-      "IONIZING_RADIATION_WHERE_APPLICABLE",
+      "UV_WHERE_SANITARY_RELEVANT",
       "AEROSOLS_DUST"
     ],
-    "rule": "Never treat one measurement protocol or SOUT as covering another control space. Derive measurements from actual technology, equipment, raw materials, chemicals, complaints, receptors and applicable law."
-  }
+    "rule": "Exclude occupational-safety/SOUT analysis. Measure and investigate factors only where they form a sanitary-epidemiological, population-impact, SZZ, environmental, waste/water/air/process or other MIRLEX-relevant compliance contour."
+  },
+  "scope_exclusions": [
+    "OCCUPATIONAL_SAFETY_LABOR_PROTECTION: exclude as a standalone MIRLEX radar/service contour. Do not scan Rostrud/GIT, SOUT, PPE, medical examinations or workplace labor-protection compliance as independent targets. Retain sanitary/epidemiological, environmental and population-impact factors (chemicals, biological factors, noise, vibration, light, EMF etc.) only where they are relevant to sanitary rules, environmental impact, SZZ, territory, waste/water/air/process or Rospotrebnadzor requirements."
+  ]
 }
