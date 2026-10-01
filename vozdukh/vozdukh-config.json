@@ -1,5 +1,5 @@
 {
-  "version": "vozdukh-v1.0.0",
+  "version": "vozdukh-v2.0.0",
   "diagnosticTargetSeconds": 270,
   "diagnosticMaxSeconds": 420,
   "privacyUrl": "/privacy",
