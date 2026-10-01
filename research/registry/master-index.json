@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-09-30",
+  "updated_on": "2026-10-01",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -31,6 +31,26 @@
       "path": "research/registry/radar-2026-09-30-batch-01.json",
       "cards": 3,
       "status": "VERIFIED_CURRENT"
+    },
+    {
+      "path": "research/registry/radar-2026-09-30-batch-02.json",
+      "cards": 3,
+      "status": "VERIFIED_CURRENT"
+    },
+    {
+      "path": "research/registry/radar-2026-09-30-batch-03.json",
+      "cards": 3,
+      "status": "VERIFIED_CURRENT"
+    },
+    {
+      "path": "research/registry/radar-2026-10-01-run-06.json",
+      "cards": 1,
+      "status": "VERIFIED_CURRENT"
+    },
+    {
+      "path": "research/registry/recovered-current-2026-10-01.json",
+      "cards": 20,
+      "status": "RECOVERED_FROM_ACTIVE_CONTEXT_SOURCE_RELINK_REQUIRED_WHERE_MARKED"
     }
   ],
   "permanent_id_policy": {
@@ -55,12 +75,19 @@
   },
   "current_counts": {
     "rop_ids": 26,
-    "known_industry_ids": 32,
+    "known_industry_ids": 56,
     "universal_ids": 4
   },
   "next_priority": [
     "Deepen weak clusters only: pulp-paper, textile gaps, construction materials outside concrete/JBI, adhesives/sealants/resins/cosmetics/rubber, weak food subindustries, greenhouses/fish farms, energy/boilers.",
     "Do not spend main search capacity on mature industries unless RED FLAG/new law/new technology/new court pattern.",
     "Build guides and decision trees once a cluster has stable obligations + recurring real-world patterns + cross-contour dependencies."
-  ]
+  ],
+  "integrity_notes": [
+    "GitHub research registry existed before this recovery; earlier conclusion that all radar data remained only in chat was incorrect.",
+    "Post-30.09 findings were not consistently persisted. recovered-current-2026-10-01.json closes the known gap from active context.",
+    "Chat ID collision detected: IND-ENERGY-001 had been reused for SAKV and bird-protection. Registry preserves IND-ENERGY-001 for SAKV and migrates bird-protection to IND-BIODIV-002 with migration metadata.",
+    "Never invent missing source URLs. Records marked source re-link/revalidation required must be revalidated before publication/automation."
+  ],
+  "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card."
 }
