@@ -1,0 +1,94 @@
+{
+  "version": "vozdukh-v2.0.0",
+  "purpose": "Контроль покрытия основных маршрутов MIRLEX Воздух",
+  "scenarios": [
+    {
+      "id": "heat_common_stack",
+      "name": "Газовая котельная, несколько котлов на одну трубу",
+      "expect": [
+        "heat_kind",
+        "heat_energy",
+        "heat_outlet",
+        "documents_present"
+      ]
+    },
+    {
+      "id": "metal_local_extract",
+      "name": "Сварка с местной вытяжкой наружу",
+      "expect": [
+        "metal_kind",
+        "metal_place",
+        "metal_path",
+        "documents_present"
+      ]
+    },
+    {
+      "id": "wood_cyclone",
+      "name": "Деревообработка, аспирация через циклон",
+      "expect": [
+        "wood_equipment",
+        "wood_path",
+        "infra_cleaning",
+        "documents_present"
+      ]
+    },
+    {
+      "id": "paint_filters",
+      "name": "Покрасочная камера с фильтрами",
+      "expect": [
+        "chem_kind",
+        "chem_path",
+        "documents_present"
+      ]
+    },
+    {
+      "id": "bulk_open",
+      "name": "Пересыпка на открытой площадке без аспирации",
+      "expect": [
+        "dust_kind",
+        "dust_place",
+        "dust_control"
+      ]
+    },
+    {
+      "id": "storage_breathing",
+      "name": "Резервуары и слив-налив с дыхательной трубой",
+      "expect": [
+        "storage_material",
+        "storage_ops",
+        "storage_system"
+      ]
+    },
+    {
+      "id": "refrigerant",
+      "name": "Холодильное оборудование / чиллеры",
+      "expect": [
+        "other_kind",
+        "refrigerant_known",
+        "documents_present"
+      ]
+    },
+    {
+      "id": "unknown",
+      "name": "Пользователь не узнаёт деятельность в списке",
+      "expect": [
+        "unknown_desc",
+        "infra_extra",
+        "documents_present"
+      ]
+    },
+    {
+      "id": "inventory_changes",
+      "name": "Инвентаризация есть, после неё были изменения",
+      "expect": [
+        "inventory_age",
+        "inventory_changes"
+      ]
+    },
+    {
+      "id": "many",
+      "name": "Семь групп одновременно — сокращённая диагностика",
+      "maxVisibleQuestions": 20
+    }
+  ]
+}
