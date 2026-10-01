@@ -60,7 +60,7 @@
   const root=document.getElementById('mirlex-vozdukh-root');
   if(!root) return;
 
-  const state={step:'intro',selectedGroups:[],answers:{},branchQueue:[],branchIndex:0,docIndex:0,startedAt:null};
+  const state={step:'intro',selectedGroups:[],answers:{},commonQueue:[],commonIndex:0,branchQueue:[],branchIndex:0,docQueue:[],docIndex:0,startedAt:null};
   let cfg=null,processes=null,rules=null,docs=null;
 
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;' }[m]));
@@ -95,7 +95,7 @@
 
   function remainingText(){
     if(!state.startedAt) return 'Около 5 минут';
-    const total=Math.max(1,1+state.branchQueue.length+docs.questions.length);
+    const total=Math.max(1,1+state.commonQueue.length+state.branchQueue.length+(state.docQueue.length||docs.questions.length));
     const done=(state.step==='processes'?0:1)+(state.step==='branch'?state.branchIndex:state.step==='documents'?state.branchQueue.length:state.step==='result'||state.step==='form'?total:0)+(state.step==='documents'?state.docIndex:0);
     const left=Math.max(0,total-done);
     const seconds=Math.max(20,left*(rules?.secondsPerQuestion||12));
@@ -133,10 +133,12 @@
     });
     root.querySelector('#mvx-back').onclick=renderIntro;
     root.querySelector('#mvx-next').onclick=()=>{
+      state.commonQueue=(rules.common||[]).map(q=>({section:'common',...q}));
+      state.commonIndex=0;
       state.branchQueue=[];
       state.selectedGroups.forEach(id=>{(rules.branches[id]||[]).forEach(q=>state.branchQueue.push({group:id,...q}));});
       state.branchIndex=0;
-      state.branchQueue.length?renderBranch():renderDocuments();
+      state.commonQueue.length?renderCommon():(state.branchQueue.length?renderBranch():prepareDocuments());
     };
   }
 
@@ -171,13 +173,57 @@
     root.querySelector('#mvx-back').onclick=onBack;
   }
 
+  function shouldShowCommon(q){
+    if(q.id==='ventilation_type' || q.id==='outlet_type') return state.answers.ventilation==='Да';
+    if(q.id==='cleaning_type') return state.answers.cleaning==='Да';
+    return true;
+  }
+
+  function renderCommon(){
+    state.step='common';
+    while(state.commonIndex<state.commonQueue.length && !shouldShowCommon(state.commonQueue[state.commonIndex])){
+      state.commonIndex++;
+    }
+    if(state.commonIndex>=state.commonQueue.length){
+      state.branchIndex=0;
+      state.branchQueue.length?renderBranch():prepareDocuments();
+      return;
+    }
+
+    const q=state.commonQueue[state.commonIndex];
+    const p=14+Math.round((state.commonIndex/Math.max(1,state.commonQueue.length))*16);
+
+    renderQuestion(q,()=>{
+      state.commonIndex++;
+      renderCommon();
+    },()=>{
+      if(state.commonIndex===0){renderProcesses();return;}
+      state.commonIndex--;
+      while(state.commonIndex>0 && !shouldShowCommon(state.commonQueue[state.commonIndex])) state.commonIndex--;
+      renderCommon();
+    },p);
+  }
+
+  function prepareDocuments(){
+    const first=docs.questions.find(q=>q.id==='documents_present');
+    const selected=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
+    state.docQueue=(docs.questions||[]).filter(q=>{
+      if(q.id==='documents_present') return true;
+      if(!q.showIfDocument) return true;
+      return selected.includes(q.showIfDocument);
+    });
+    if(!first && !state.docQueue.length){ renderResult(); return; }
+    state.docIndex=0;
+    renderDocuments();
+  }
+
   function renderBranch(){
     state.step='branch';
     const q=state.branchQueue[state.branchIndex];
     const p=18+Math.round((state.branchIndex/Math.max(1,state.branchQueue.length))*42);
     renderQuestion(q,()=>{
       state.branchIndex++;
-      if(state.branchIndex>=state.branchQueue.length){state.docIndex=0;renderDocuments();} else renderBranch();
+      if(state.branchIndex>=state.branchQueue.length){prepareDocuments();} else renderBranch();
     },()=>{
       if(state.branchIndex===0) renderProcesses(); else {state.branchIndex--;renderBranch();}
     },p);
@@ -185,34 +231,63 @@
 
   function renderDocuments(){
     state.step='documents';
-    const q=docs.questions[state.docIndex];
-    const p=62+Math.round((state.docIndex/Math.max(1,docs.questions.length))*22);
-    renderQuestion({...q,type:'single'},()=>{
+    if(!state.docQueue.length) state.docQueue=(docs.questions||[]).filter(q=>q.id==='documents_present' || !q.showIfDocument);
+    const q=state.docQueue[state.docIndex];
+    if(!q){ renderResult(); return; }
+
+    const p=62+Math.round((state.docIndex/Math.max(1,state.docQueue.length))*22);
+
+    renderQuestion(q,()=>{
+      if(q.id==='documents_present'){
+        const selected=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
+        state.docQueue=(docs.questions||[]).filter(x=>{
+          if(x.id==='documents_present') return true;
+          if(!x.showIfDocument) return true;
+          return selected.includes(x.showIfDocument);
+        });
+      }
+
       state.docIndex++;
-      if(state.docIndex>=docs.questions.length) renderResult(); else renderDocuments();
+      if(state.docIndex>=state.docQueue.length) renderResult();
+      else renderDocuments();
     },()=>{
       if(state.docIndex===0){
-        if(state.branchQueue.length){state.branchIndex=Math.max(0,state.branchQueue.length-1);renderBranch();} else renderProcesses();
-      }else{state.docIndex--;renderDocuments();}
+        if(state.branchQueue.length){
+          state.branchIndex=Math.max(0,state.branchQueue.length-1);
+          renderBranch();
+        }else if(state.commonQueue.length){
+          state.commonIndex=Math.max(0,state.commonQueue.length-1);
+          renderCommon();
+        }else renderProcesses();
+      }else{
+        state.docIndex--;
+        renderDocuments();
+      }
     },p);
   }
 
   function renderResult(){
     state.step='result';
+
     const names=state.selectedGroups.map(id=>processes.groups.find(g=>g.id===id)?.title).filter(Boolean);
-    const inventory=state.answers.inventory||'Не указано';
-    const changes=state.answers.changes||'Не указано';
-    const nvos=state.answers.nv_os||'Не указано';
+    const selectedDocs=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
+    const ventilation=state.answers.ventilation||'Не указано';
+    const cleaning=state.answers.cleaning||'Не указано';
+
     shell('<h3>Проверка завершена</h3>'+
       '<p>Мы собрали основные сведения о площадке и можем проверить результаты подробнее.</p>'+
       '<div class="mvx-summary">'+
       '<div><strong>Что происходит на площадке</strong><br>'+esc(names.join(', ')||'Не указано')+'</div>'+
-      '<div><strong>Документы по источникам выбросов</strong><br>'+esc(inventory)+'</div>'+
-      '<div><strong>Объект НВОС</strong><br>'+esc(nvos)+'</div>'+
-      '<div><strong>Изменения после подготовки документов</strong><br>'+esc(changes)+'</div>'+
+      '<div><strong>Вытяжка / аспирация</strong><br>'+esc(ventilation)+'</div>'+
+      '<div><strong>Очистка воздуха</strong><br>'+esc(cleaning)+'</div>'+
+      '<div><strong>Документы по воздуху</strong><br>'+esc(selectedDocs.join(', ')||'Не указано')+'</div>'+
       '</div>'+
       '<div class="mvx-actions"><button class="mvx-btn mvx-btn-secondary" id="mvx-back">Назад</button><button class="mvx-btn mvx-btn-primary" id="mvx-form-open">Получить полный отчёт по воздуху</button></div>',90);
-    root.querySelector('#mvx-back').onclick=()=>{state.docIndex=docs.questions.length-1;renderDocuments();};
+
+    root.querySelector('#mvx-back').onclick=()=>{
+      state.docIndex=Math.max(0,state.docQueue.length-1);
+      renderDocuments();
+    };
     root.querySelector('#mvx-form-open').onclick=renderForm;
   }
 
@@ -256,6 +331,14 @@
     e.preventDefault();
     const form=e.currentTarget;
     const err=root.querySelector('#mvx-error');
+    const phone=form.elements.phone;
+    const name=form.elements.name;
+
+    if(name && name.value.trim().length<2) name.setCustomValidity('Укажите имя полностью');
+    else if(name) name.setCustomValidity('');
+
+    if(phone) validateRuPhone(phone);
+
     if(!form.reportValidity()) return;
     if(!cfg.backendEndpoint){
       err.hidden=false;
@@ -285,6 +368,7 @@
   function renderCurrent(){
     if(state.step==='intro') renderIntro();
     else if(state.step==='processes') renderProcesses();
+    else if(state.step==='common') renderCommon();
     else if(state.step==='branch') renderBranch();
     else if(state.step==='documents') renderDocuments();
     else if(state.step==='result') renderResult();
