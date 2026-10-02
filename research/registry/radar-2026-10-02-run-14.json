@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "run_date": "2026-10-02",
+  "cards": [
+    {
+      "id": "IND-NVOSREG-001",
+      "date": "2026-10-02",
+      "industry_contour": "Universal / state registration of NVOС objects / recategorization under PP RF No. 636",
+      "actuality_status": "VERIFIED_CURRENT",
+      "primary_source": [
+        "Rosprirodnadzor, 28.08.2026, 'О корректировке сведений об объектах НВОС в государственном реестре'",
+        "Rosprirodnadzor, 01.09.2026, 'Новые критерии отнесения объектов НВОС к категориям: что изменится с 1 сентября 2026 года'"
+      ],
+      "current_npa": [
+        "Federal Law No. 7-FZ, Article 69.2",
+        "Government Resolution No. 636 of 29.05.2026, effective 01.09.2026",
+        "Government Resolution No. 830 of 07.05.2022 (state register rules)"
+      ],
+      "factual_pattern": "EXISTING NVOС OBJECT → PP 636 APPLICABILITY → ALL REGISTERED OBJECTS REQUIRE RECORD CORRECTION → SELECT HIGHEST-IMPACT CATEGORY/CRITERION → CHECK WHETHER SUPPORTING FACTS ALREADY EXIST IN REGISTER → ATTACH TECHNOLOGY/WASTEWATER/EQUIPMENT/ORO EVIDENCE WHERE NEEDED → SUBMIT CORRECTION → IF NO SUBMISSION, NOTICE AFTER 01.12.2026 → AFTER 3 MONTHS FROM NOTICE, AUTHORITY MAY CORRECT CATEGORY UNILATERALLY → NEW CATEGORY → DOWNSTREAM PERMIT/REPORTING/PAYMENT OBLIGATIONS",
+      "risk": "A company may assume no action is needed because its activity or previous criterion did not change. Rosprirodnadzor states correction applies to all registered NVOС objects, federal and regional, even where the wording of the prior criterion did not change. Wrong criterion or missing evidence can cause refusal; prolonged inaction can lead to unilateral recategorization and downstream mismatch of KER/DVOS/PEC/NVOS-payment duties.",
+      "evidence_court_practice": "Official Rosprirodnadzor implementation guidance of 28.08.2026 and regional clarification of 01.09.2026. No separate 2026 court pattern is needed to establish the current administrative procedure.",
+      "mirlex_checks": "For every registered object: current register extract → factual technology/processes → PP 636 criterion map → highest applicable category → evidence for each criterion → register completeness → correction/actualization route → submission status → resulting category → cascade check of KER/DVOS/PEC/NVOS payment and other category-dependent obligations.",
+      "impact": "Add a universal NVOS_REGISTER_VERSION_GATE to MIRLEX audit and the 'Учёт объекта НВОС' service. Assistant must not stop at 'object is registered'; it must verify that the registry record was corrected under PP 636 after 01.09.2026 and that the resulting category is propagated to downstream obligations.",
+      "red_flag": "'Объект уже стоит на учёте, категория не менялась, поэтому ничего подавать не нужно.'",
+      "update_needed": "NVOS_REGISTER → PP636_GATE → ALL_REGISTERED_OBJECTS → FACTUAL_CRITERIA → HIGHEST_IMPACT_CATEGORY → EVIDENCE_PACKAGE → CORRECTION/ACTUALIZATION → RESULTING_CATEGORY → KER/DVOS/PEC/NVOS_PAYMENT_CASCADE; add control date 01.12.2026 and notice+3-month unilateral-correction branch.",
+      "duplicate_check": "Checked GitHub registry directory and master index before assignment; no existing IND-NVOSREG ID was present. Distinct from IND-NVOSPAY-001 (payment/KER coefficient) and the pending declaration-reconciliation pattern.",
+      "cross_links": [
+        "IND-NVOSPAY-001"
+      ]
+    }
+  ]
+}
