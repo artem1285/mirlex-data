@@ -1,0 +1,15 @@
+{
+  "version": "voda-v1.0.0",
+  "diagnosticTargetSeconds": 360,
+  "diagnosticMaxSeconds": 600,
+  "privacyUrl": "/privacy",
+  "consentUrl": "/consent-personal-data",
+  "popupHash": "#popup:voda",
+  "brand": {
+    "dark": "#1F2A32",
+    "accent": "#3CB371",
+    "light": "#E6EBED"
+  },
+  "sourcesAsOf": "2026-10-02",
+  "legalNote": "Онлайн-диагностика выявляет факты и контуры для проверки; окончательный состав обязанностей определяется после проверки документов и фактической схемы."
+}
