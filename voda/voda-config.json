@@ -1,5 +1,5 @@
 {
-  "version": "voda-v1.0.0",
+  "version": "voda-v1.0.1",
   "diagnosticTargetSeconds": 360,
   "diagnosticMaxSeconds": 600,
   "privacyUrl": "/privacy",
