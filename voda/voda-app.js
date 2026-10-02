@@ -55,6 +55,7 @@ function style(){
   st.id='mirlex-voda-style';
   st.textContent=`
   #${ROOT_ID}{font-family:Inter,Arial,sans-serif;color:#1F2A32;max-width:1040px;margin:0 auto}
+  #${ROOT_ID}[hidden]{display:none!important}
   #${ROOT_ID} *{box-sizing:border-box}
   .mv-wrap{background:#fff;border:1px solid #dfe5e7;border-radius:20px;padding:28px;box-shadow:0 12px 40px rgba(31,42,50,.06)}
   .mv-kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3CB371;margin-bottom:8px}
@@ -106,6 +107,8 @@ async function loadJson(name){
 
 async function init(){
   style();
+  const r=root();
+  if(r) r.hidden=true;
   try{
     const [cfg,processes,rules,docs]=await Promise.all([
       loadJson('voda-config.json'),
@@ -114,10 +117,9 @@ async function init(){
       loadJson('voda-documents.json')
     ]);
     state.cfg=cfg; state.processes=processes; state.rules=rules; state.docs=docs;
-    renderIntro();
+    if(isVodaHash()) openQuiz();
   }catch(e){
     console.error('[MIRLEX WATER]',e);
-    shell('<div class="mv-error"><strong>Не удалось загрузить диагностику воды.</strong><br>Проверьте публикацию файлов WATER в GitHub Pages.</div>');
   }
 }
 
@@ -369,9 +371,26 @@ function openTildaForm(){
 
 function openQuiz(){
   if(!state.cfg){ return; }
+  const r=root();
+  if(!r) return;
+  r.hidden=false;
   renderIntro();
-  const r=root(); if(r) r.scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(()=>r.scrollIntoView({
+    behavior:window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',
+    block:'start'
+  }),60);
 }
+
+function isVodaHash(){
+  return location.hash==='#proverit-vodu' || location.hash==='#rec4437101601';
+}
+
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href="#proverit-vodu"],a[href="#rec4437101601"],button[data-voda-open]');
+  if(!a) return;
+  e.preventDefault();
+  openQuiz();
+});
 
 window.MIRLEX_VODA={
   open:openQuiz,
@@ -383,15 +402,7 @@ window.MIRLEX_VODA={
 document.addEventListener('DOMContentLoaded',init);
 if(document.readyState!=='loading') init();
 
-function isVodaHash(){
-  return location.hash==='#proverit-vodu' || location.hash==='#rec4437101601';
-}
-
 window.addEventListener('hashchange',()=>{
   if(isVodaHash()) openQuiz();
 });
-
-if(isVodaHash()){
-  setTimeout(()=>openQuiz(),0);
-}
 })();
