@@ -255,7 +255,7 @@
   function summaryFacts(){
     const names=state.selectedGroups.map(id=>processes.groups.find(g=>g.id===id)?.title).filter(Boolean);
     const paths=[];
-    ['heat_outlet','metal_path','chem_path','dust_control','wood_path','storage_system','other_path','infra_outlet'].forEach(id=>{
+    ['heat_outlet','metal_path','chem_path','dust_control','wood_path','storage_system','other_path','mobile_activity','infra_outlet'].forEach(id=>{
       const v=state.answers[id];
       if(v){
         const txt=Array.isArray(v)?v.join(', '):v;
@@ -308,12 +308,12 @@
   }
 
   function hasRefrigeration(){
-    return includes('infra_extra','Холодильные установки / чиллеры / крупные кондиционеры') || includes('other_kind','Холодильные установки / чиллеры');
+    return includes('infra_extra','Холодильные установки, чиллеры или крупные кондиционеры') || includes('other_kind','Холодильные установки / чиллеры');
   }
 
   function hasPotentialAirActivity(){
     const groups=state.selectedGroups||[];
-    if(groups.some(x=>['metal','chem','dust','wood','storage','other'].includes(x))) return true;
+    if(groups.some(x=>['metal','chem','dust','wood','storage','other','mobile'].includes(x))) return true;
 
     if(groups.includes('heat')){
       const kinds=Array.isArray(state.answers.heat_kind)?state.answers.heat_kind:[];
@@ -327,11 +327,10 @@
 
     const infra=Array.isArray(state.answers.infra_extra)?state.answers.infra_extra:[];
     return infra.some(x=>[
-      'Общая производственная вытяжная вентиляция',
-      'Общая аспирационная сеть',
-      'Отдельные трубы / дымоходы / вентиляционные шахты',
+      'Общая вытяжная вентиляция в цехе',
+      'Общая система удаления пыли от оборудования',
+      'Отдельные трубы, дымоходы или вентиляционные выходы',
       'Фильтры, циклоны, скрубберы или другая очистка воздуха',
-      'Погрузчики, спецтехника или другой транспорт работают на территории'
     ].includes(x));
   }
 
@@ -444,6 +443,16 @@
     // Хладагенты — сначала устанавливаем вещество, а не объявляем документ обязательным
     if(hasRefrigeration()){
       add('REFRIGERANT_REGULATION_CHECK','На площадке указано холодильное оборудование. Нужно установить используемый хладагент и проверить, относится ли он к регулируемым веществам.');
+    }
+
+
+    if((state.selectedGroups||[]).includes('mobile')){
+      add('MOBILE_SOURCES_CHECK','На площадке работает транспорт или техника с двигателями. Нужно проверить, какие из этих источников должны учитываться при инвентаризации выбросов объекта.');
+    }
+
+    const physical=Array.isArray(state.answers.physical_effects)?state.answers.physical_effects:[];
+    if(physical.length && !physical.includes('Ничего такого нет') && !physical.includes('Не знаю')){
+      add('PHYSICAL_EFFECTS_CHECK','Указаны шум, вибрация или другое физическое воздействие. Нужно проверить применимость нормативов допустимого физического воздействия на атмосферный воздух.');
     }
 
     const seen=new Set();
