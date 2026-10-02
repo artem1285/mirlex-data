@@ -117,7 +117,8 @@ async function init(){
       loadJson('voda-documents.json')
     ]);
     state.cfg=cfg; state.processes=processes; state.rules=rules; state.docs=docs;
-    if(isVodaHash()) openQuiz();
+    const r=root();
+    if(r){ r.hidden=true; r.innerHTML=''; }
   }catch(e){
     console.error('[MIRLEX WATER]',e);
   }
