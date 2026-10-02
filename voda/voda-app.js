@@ -15,6 +15,7 @@ const state={
   answers:{},
   phase:'intro',
   index:0,
+  currentSection:'',
   startedAt:null,
   cfg:null, processes:null, rules:null, docs:null
 };
@@ -58,6 +59,11 @@ function style(){
   #${ROOT_ID}[hidden]{display:none!important}
   #${ROOT_ID} *{box-sizing:border-box}
   .mv-wrap{background:#fff;border:1px solid #dfe5e7;border-radius:20px;padding:28px;box-shadow:0 12px 40px rgba(31,42,50,.06)}
+  .mv-top{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:18px}
+  .mv-brand{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3CB371}
+  .mv-meta{text-align:right}
+  .mv-stage{font-size:13px;color:#7a858c;margin-bottom:3px}
+  .mv-time{font-size:14px;color:#52616a;white-space:nowrap}
   .mv-kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3CB371;margin-bottom:8px}
   .mv-title{font-size:30px;line-height:1.15;margin:0 0 12px;font-weight:750}
   .mv-text{font-size:16px;line-height:1.55;margin:0 0 18px;color:#42515a}
@@ -84,15 +90,72 @@ function style(){
   .mv-flag.check{border-left-color:#3CB371}
   .mv-flag small{display:block;color:#66767f;margin-top:6px}
   .mv-error{padding:16px;border-radius:12px;background:#fff3f1;color:#7a2e27}
-  @media(max-width:700px){.mv-wrap{padding:20px}.mv-title{font-size:24px}.mv-options,.mv-summary{grid-template-columns:1fr}.mv-btn{width:100%}}
+  @media(max-width:700px){.mv-wrap{padding:20px}.mv-title{font-size:24px}.mv-options,.mv-summary{grid-template-columns:1fr}.mv-btn{width:100%}.mv-top{display:block}.mv-meta{text-align:left;margin-top:7px}}
   `;
   document.head.appendChild(st);
 }
 
 function root(){ return document.getElementById(ROOT_ID); }
+
+function stageName(){
+  if(state.phase==='intro') return 'Диагностика';
+  if(state.phase==='groups') return 'Водный профиль';
+  if(state.phase==='questions'){
+    return state.currentSection==='docs' ? 'Документы' : 'Водный профиль';
+  }
+  if(state.phase==='result') return 'Результат';
+  return '';
+}
+
+function conditionMayBecomeTrue(cond){
+  if(!cond) return true;
+  if(cond.selectedGroup) return state.selectedGroups.includes(cond.selectedGroup);
+  if(cond.anyOf) return cond.anyOf.some(conditionMayBecomeTrue);
+  if(cond.allOf) return cond.allOf.every(conditionMayBecomeTrue);
+
+  const checks=[
+    ['answerEquals', (v,want)=>v===want],
+    ['answerIn', (v,want)=>arr(want).includes(v)],
+    ['answerIncludes', (v,want)=>arr(v).includes(want)],
+    ['answerIncludesAny', (v,want)=>arr(want).some(x=>arr(v).includes(x))],
+    ['answerNotIncludes', (v,want)=>!arr(v).includes(want)]
+  ];
+  for(const [key,test] of checks){
+    if(cond[key]){
+      return Object.entries(cond[key]).every(([id,want])=>{
+        if(state.answers[id]===undefined) return true;
+        return test(state.answers[id],want);
+      });
+    }
+  }
+  return true;
+}
+
+function remainingText(){
+  if(state.phase==='result') return 'Диагностика завершена';
+  if(!state.startedAt) return 'Обычно 3–6 минут';
+
+  const all=(typeof candidateQuestions==='function'?candidateQuestions():[]);
+  const remaining=all.filter(q=>state.answers[q.id]===undefined && conditionMayBecomeTrue(q.when)).length;
+
+  if(remaining<=1) return 'Почти готово';
+
+  const answered=Math.max(1,Object.keys(state.answers).length);
+  const elapsed=Math.max(1,(Date.now()-state.startedAt)/1000);
+  const observed=Math.max(8,Math.min(18,elapsed/answered));
+  const base=(state.rules&&state.rules.secondsPerQuestion)||12;
+  const sec=remaining*Math.max(base,observed);
+  const min=Math.max(1,Math.ceil(sec/60));
+  return 'Осталось примерно '+min+' '+(min===1?'минута':(min>=2&&min<=4?'минуты':'минут'));
+}
+
 function shell(html){
   const r=root(); if(!r) return;
-  r.innerHTML='<div class="mv-wrap">'+html+'</div>';
+  r.innerHTML='<div class="mv-wrap">'+
+    '<div class="mv-top"><div class="mv-brand">MIRLEX · ВОДА</div>'+
+    '<div class="mv-meta"><div class="mv-stage">'+esc(stageName())+'</div>'+
+    '<div class="mv-time">'+esc(remainingText())+'</div></div></div>'+
+    html+'</div>';
 }
 function progress(pos,total){
   const p=total?Math.max(0,Math.min(100,Math.round((pos/total)*100))):0;
@@ -127,10 +190,9 @@ async function init(){
 function renderIntro(){
   state.phase='intro'; state.index=0;
   shell(`
-    <div class="mv-kicker">MIRLEX · Вода</div>
     <h2 class="mv-title">Разберём водный профиль предприятия</h2>
     <p class="mv-text">Ответьте простыми словами, откуда поступает вода, как используется, куда уходит и есть ли связь с природным водным объектом. Экологические термины знать не нужно.</p>
-    <div class="mv-note">Онлайн-результат не заменяет проверку документов. MIRLEX сначала выявляет факты, противоречия и контуры, которые требуют профессиональной проверки.</div>
+    <div class="mv-note">Онлайн-диагностика помогает собрать фактическую схему предприятия и отметить вопросы, которые требуют профессиональной проверки. Окончательный вывод делается после проверки документов.</div>
     <div class="mv-actions"><span></span><button class="mv-btn mv-primary" id="mv-start">Начать диагностику</button></div>
   `);
   $('#mv-start',root()).onclick=()=>{
@@ -143,7 +205,6 @@ function renderIntro(){
 function renderGroups(){
   const groups=state.processes.groups||[];
   shell(`
-    <div class="mv-kicker">Шаг 1</div>
     <h3 class="mv-title">Как предприятие использует воду или водный объект?</h3>
     <p class="mv-text">Можно выбрать несколько вариантов.</p>
     <div class="mv-options">${groups.map(g=>`
@@ -209,6 +270,7 @@ function renderQuestion(){
   const qs=visibleQuestions();
   if(state.index>=qs.length){ renderResult(); return; }
   const q=qs[state.index];
+  state.currentSection=q._section||'';
   shell(`
     ${progress(state.index+1,qs.length)}
     <div class="mv-step">Вопрос ${state.index+1} из ${qs.length}</div>
@@ -279,9 +341,8 @@ function renderResult(){
   const groups=selectedGroupNames();
   const docs=docsSelected();
   shell(`
-    <div class="mv-kicker">Предварительная диагностика</div>
-    <h3 class="mv-title">Что удалось определить</h3>
-    <p class="mv-text">MIRLEX собрал фактическую схему и отметил контуры, которые нужно проверить. Это предварительный результат, а не готовое юридическое заключение.</p>
+    <h3 class="mv-title">Предварительные итоги</h3>
+    <p class="mv-text">По предварительным итогам собрана фактическая схема водопользования предприятия и отмечены вопросы, которые требуют проверки. Это предварительный результат, а не готовое юридическое заключение.</p>
     <div class="mv-summary">
       <div><strong>Водный профиль</strong><br>${esc(groups.join('; ')||'Описание получено')}</div>
       <div><strong>Документы</strong><br>${esc(docs.join('; ')||'Не подтверждены')}</div>
