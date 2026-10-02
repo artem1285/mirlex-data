@@ -383,7 +383,15 @@ window.MIRLEX_VODA={
 document.addEventListener('DOMContentLoaded',init);
 if(document.readyState!=='loading') init();
 
+function isVodaHash(){
+  return location.hash==='#proverit-vodu' || location.hash==='#rec4437101601';
+}
+
 window.addEventListener('hashchange',()=>{
-  if(location.hash==='#proverit-vodu') openQuiz();
+  if(isVodaHash()) openQuiz();
 });
+
+if(isVodaHash()){
+  setTimeout(()=>openQuiz(),0);
+}
 })();
