@@ -1,0 +1,24 @@
+{
+  "run_date": "2026-10-02",
+  "cards": [
+    {
+      "id": "IND-AIR-001",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "date": "2026-10-02",
+      "industry_contour": "Universal / atmospheric air / emissions inventory / calculation methodologies / PEC",
+      "actuality_status": "VERIFIED_CURRENT",
+      "primary_source": "Rosprirodnadzor FAQ: legitimacy of emissions inventory calculations using methodologies and timing of their inclusion in the Minprirody list; Rosprirodnadzor 06.07.2026 seminar stressing completeness, timely updating and approved methodologies.",
+      "current_npa": [
+        "Federal Law No. 96-FZ, Article 22",
+        "Government Resolution No. 692 dated 21.05.2025, effective 01.09.2025 through 01.09.2031 (except clause 3)"
+      ],
+      "factual_pattern": "TECHNOLOGY/SOURCE → CALCULATION METHOD → METHOD STATUS/DATE → EMISSION INVENTORY → PEC/NORMING → FACTUAL CONTROL → MISMATCH → INVENTORY CORRECTION",
+      "risk": "A formally prepared inventory may rest on a calculation method whose legal applicability is not checked against the official methodology list and relevant dates, or may no longer reflect actual emissions.",
+      "evidence_practice": "Rosprirodnadzor states that inventory results calculated by methods can be legitimate depending on the date relationship to inclusion of the method in the official list; in July 2026 the Service separately emphasized completeness, timely updating and use of approved methods.",
+      "mirlex_checks": "For every calculated source/substance: method name/version; official-list status; inclusion date; inventory date; scope applicability; input data; actual equipment/process mode; later PEC/lab data; need for correction.",
+      "impact": "Extend IND-AIR-001 and the MIRLEX Air audit with METHOD_VALIDITY_GATE and METHOD_DATE_GATE. Assistant must not accept a calculated inventory value without tracing the method and date.",
+      "red_flag": "Inventory contains calculated emissions but the enterprise cannot identify the exact method/version, prove its status/date in the official list, or show that the method applies to the actual equipment/process.",
+      "update_required": "IND-AIR-001 + METHOD_VALIDITY_GATE + METHOD_DATE_GATE + METHOD_SCOPE_MATCH + INPUT_DATA_TRACE + PEC_FEEDBACK → INVENTORY_CORRECTION"
+    }
+  ]
+}
