@@ -71,6 +71,11 @@
       "path": "research/registry/radar-2026-10-03-run-10.json",
       "cards": 1,
       "status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE"
+    },
+    {
+      "path": "research/registry/radar-2026-10-03-final-saturation.json",
+      "cards": 4,
+      "status": "SATURATION_VERIFIED_CURRENT_ADDITIONAL_EVIDENCE"
     }
   ],
   "permanent_id_policy": {
@@ -150,5 +155,17 @@
   },
   "scope_exclusions": [
     "OCCUPATIONAL_SAFETY_LABOR_PROTECTION: exclude as a standalone MIRLEX radar/service contour. Do not scan Rostrud/GIT, SOUT, PPE, medical examinations or workplace labor-protection compliance as independent targets. Retain sanitary/epidemiological, environmental and population-impact factors (chemicals, biological factors, noise, vibration, light, EMF etc.) only where they are relevant to sanitary rules, environmental impact, SZZ, territory, waste/water/air/process or Rospotrebnadzor requirements."
-  ]
+  ],
+  "radar_phase": {
+    "status": "SATURATION",
+    "mode": "REDUCED_SPEED_CONTINUOUS_MONITORING",
+    "main_priority": "BUILD_MIRLEX_INDUSTRY_AND_SERVICE_CARDS",
+    "reopen_deep_scan_on": [
+      "new law/regulation",
+      "new standalone pattern",
+      "new technology/process risk",
+      "new RED FLAG",
+      "material evidence changing a decision tree"
+    ]
+  }
 }
