@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-01",
+  "updated_on": "2026-10-03",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -66,6 +66,11 @@
       "path": "research/registry/radar-2026-10-01-run-09.json",
       "cards": 3,
       "status": "VERIFIED_CURRENT"
+    },
+    {
+      "path": "research/registry/radar-2026-10-03-run-10.json",
+      "cards": 1,
+      "status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE"
     }
   ],
   "permanent_id_policy": {
