@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "run_date": "2026-10-03",
+  "run_type": "FINAL_BROAD_SATURATION_PASS",
+  "status": "SATURATION",
+  "conclusion": "Broad discovery phase is saturated. New official enforcement signals predominantly map to existing permanent IDs. Shift main effort to MIRLEX industry cards, service cards and Assistant decision trees; radar remains active at reduced speed for new law, new pattern, RED FLAG or material evidence.",
+  "cards": [
+    {
+      "id": "IND-CONSTRUCTION-002",
+      "date": "2026-10-03",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "construction → excavated/repair materials and construction waste → actual destination → soil",
+      "actuality_status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE",
+      "primary_source": "Rosprirodnadzor, 12.05.2026: illegal placement of construction waste in Saki, Crimea; area >2.6 thousand m2; soil pollution; damage 2.85m RUB; court recovery.",
+      "primary_source_url": "https://rpn.gov.ru/press/news/v_krymu_vyyavili_nezakonnoe_razmeshchenie_stroitelnykh_otkhodov/",
+      "current_npa": "Federal Law No. 89-FZ; Federal Law No. 7-FZ; current soil-damage methodology applies where damage is calculated.",
+      "factual_pattern": "CONSTRUCTION/REPAIR → MATERIAL/WASTE STATUS → TEMPORARY ACCUMULATION → TRANSPORT → ACTUAL DESTINATION → SOIL CONTACT → LAB → DAMAGE",
+      "risk": "Documents for removal do not prove lawful final destination; construction material/waste can be placed directly on soil and trigger damage recovery.",
+      "evidence_court_practice": "Rosprirodnadzor case published 12.05.2026; court ordered full compensation.",
+      "mirlex_checks": "status of material/waste; accumulation site; carrier; recipient; final destination; mass/volume reconciliation; soil contact; lab/damage gate",
+      "impact": "Strengthen Construction industry card and Assistant final-destination gate.",
+      "red_flag": "Construction waste or 'soil/material' leaves the site without a traceable lawful final destination.",
+      "update_needed": "IND-CONSTRUCTION-002 + FINAL_DESTINATION + MASS_BALANCE + SOIL_CONTACT + DAMAGE_GATE"
+    },
+    {
+      "id": "IND-CARWASH-002",
+      "date": "2026-10-03",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "car wash → buried wastewater tank → leakage/route → soil",
+      "actuality_status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE",
+      "primary_source": "Rosprirodnadzor, 10.03.2026: self-service car wash GREEN; buried tank identified as pollution source; laboratory-confirmed soil contamination; >2.1m RUB recovered.",
+      "primary_source_url": "https://rpn.gov.ru/press/news/rosprirodnadzor_dobilsya_vozmeshcheniya_bolee_2_1_mln_rubley_vreda_prichinennogo_pochvam_v_astrakhan/",
+      "current_npa": "Federal Law No. 7-FZ; current soil-protection/damage rules.",
+      "factual_pattern": "CAR WASH → WASTEWATER → BURIED TANK → TIGHTNESS/OVERFLOW/ROUTE → SOIL → LAB → DAMAGE",
+      "risk": "Presence of a tank does not prove controlled wastewater management; hidden defects or untraced discharge can contaminate soil.",
+      "evidence_court_practice": "Rosprirodnadzor reported court recovery of >2.1m RUB.",
+      "mirlex_checks": "water balance; tank type/volume/tightness; pumping frequency; hauler/acceptor; volume balance; overflow/leak traces; soil sampling",
+      "impact": "Strengthen Car Wash card and wastewater physical-route diagnostic.",
+      "red_flag": "Tank/septic exists but pumping volumes and final acceptance do not reconcile with generated wastewater.",
+      "update_needed": "IND-CARWASH-002 + TANK_TIGHTNESS + PUMPING_LOG + ACCEPTOR + VOLUME_BALANCE + SOIL_GATE"
+    },
+    {
+      "id": "ROP-003",
+      "date": "2026-10-03",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "ROP → contract manufacturing/private label → obligated producer",
+      "actuality_status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE",
+      "primary_source": "Rosprirodnadzor ROP guidance, updated 11.09.2026, specifically addresses contract manufacturing and identifies the producer obligation under Art. 24.2 of Law 89-FZ.",
+      "primary_source_url": "https://rpn.gov.ru/activity/rop/ROP_in_contract_manufacturing/",
+      "current_npa": "Federal Law No. 89-FZ Art. 24.2; Government Resolution No. 2414.",
+      "factual_pattern": "CONTRACT → ACTUAL MANUFACTURER → GOODS/PACKAGING RELEASE → OKPD2/GIS MT → OBLIGATED ENTITY → ROP REPORTING/FEE",
+      "risk": "Brand owner/customer and actual manufacturer can be confused, causing ROP reporting to be assigned to the wrong entity.",
+      "evidence_court_practice": "Fresh official regulator guidance; no separate court case needed for this evidence item.",
+      "mirlex_checks": "contract terms; actual manufacturing; manufacturer identity; release records; GIS MT; codes; reporting entity",
+      "impact": "Keep contract-manufacturing gate mandatory in MIRLEX ROP-Учёт.",
+      "red_flag": "ROP responsibility is assigned only from brand ownership or invoice wording without checking actual production.",
+      "update_needed": "ROP-003 + OFFICIAL_GUIDANCE_2026-09-11"
+    },
+    {
+      "id": "ROP-005",
+      "date": "2026-10-03",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "ROP → recycler → factual recycling → output/reuse",
+      "actuality_status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE",
+      "primary_source": "Rosprirodnadzor, 23.09.2026: requests to recyclers for data on actual recycling, produced output, customers and reuse; stated goal that recycling not be reduced to acts.",
+      "primary_source_url": "https://rpn.gov.ru/press/news/rosprirodnadzor_zaprosil_u_utilizatorov_dannye_o_fakticheskoy_utilizatsii_i_povtornom_ispolzovanii_p/",
+      "current_npa": "Federal Law No. 89-FZ; Government Resolution No. 742; Order of Minprirody No. 762 for recycling act form.",
+      "factual_pattern": "ACT → INPUT → TECHNOLOGY → OUTPUT → OUTPUT MASS → MATERIAL BALANCE → CUSTOMER/OFFTAKER → REUSE/SALE",
+      "risk": "Formal acts and registry status do not alone demonstrate factual recycling result.",
+      "evidence_court_practice": "Federal regulator-wide information request to recyclers is a systemic control signal.",
+      "mirlex_checks": "input mass; technology; output product; output mass; material balance; buyer/customer; transfer/reuse evidence",
+      "impact": "ROP-Учёт must validate factual result beyond uploaded recycling act.",
+      "red_flag": "Recycler can show acts and capacity but cannot show what was produced, how much, and where it went.",
+      "update_needed": "ROP-005 + OUTPUT_PRODUCT + OUTPUT_MASS + MATERIAL_BALANCE + OFFTAKER + REUSE_EVIDENCE"
+    }
+  ],
+  "saturation_evidence": {
+    "broad_contours_checked": [
+      "ROP",
+      "construction",
+      "car wash/service objects",
+      "food production",
+      "oil/oil depots",
+      "mining/water",
+      "waste placement",
+      "citizen complaints/cross-media enforcement",
+      "sanitary/population-impact search"
+    ],
+    "result": "Predominantly additional evidence for existing IDs; no new cross-industry architecture required from this final pass.",
+    "next_mode": "RADAR_REDUCED_SPEED",
+    "trigger_for_new_deep_run": [
+      "new law/regulation",
+      "new standalone enforcement pattern",
+      "new technology/process risk",
+      "new RED FLAG",
+      "material court/regulator evidence that changes an existing decision tree"
+    ],
+    "main_priority": "BUILD_MIRLEX_INDUSTRY_AND_SERVICE_CARDS"
+  }
+}
