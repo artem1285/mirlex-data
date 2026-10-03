@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-10-03",
+  "cards": [
+    {
+      "id": "ROP-008",
+      "date": "2026-10-03",
+      "classification": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "ROP / import / obligated entity / source documents",
+      "actuality_status": "VERIFIED_CURRENT",
+      "primary_source": [
+        {
+          "date": "2026-03-27",
+          "authority": "Rosprirodnadzor",
+          "url": "https://rpn.gov.ru/press/news/kto_dolzhen_platit_ekologicheskiy_sbor_i_podavat_otchetnost_v_ramkakh_rop_esli_pravo_sobstvennosti_n/",
+          "finding": "Subsequent transfer of ownership after import does not transfer the ROP obligation: the importer/declarant shown in customs documents reports and pays."
+        },
+        {
+          "date": "2026-08-12",
+          "authority": "Rosprirodnadzor",
+          "url": "https://rpn.gov.ru/press/news/rop_2026_ekologicheskiy_sbor_i_markirovka_chto_vazhno_znat_proizvoditelyam/",
+          "finding": "Rosprirodnadzor cross-checks ROP participants/products using FTS, FNS, CRPT, regional and internal information systems."
+        }
+      ],
+      "current_npa": [
+        "Federal Law No. 89-FZ of 24.06.1998, Arts. 24.2-1 and 24.2-4, current in 2026.",
+        "Government Resolution No. 741 of 31.05.2024, as amended by Resolution No. 650 of 30.05.2026, effective current edition from 01.09.2026; para. 5: importer mass data are based on customs and/or shipping documents."
+      ],
+      "factual_pattern": "IMPORT → IMPORTER/DECLARANT → CUSTOMS/SHIPPING DOCUMENTS → GOODS/PACKAGING MASS → TN VED/PRODUCT IDENTIFICATION → ROP LIST → REPORTING BASE → LATER OWNERSHIP TRANSFER DOES NOT MOVE THE ORIGINAL IMPORTER OBLIGATION → CROSS-SOURCE RECONCILIATION",
+      "risk": "A buyer or group company may incorrectly be treated as the ROP-obligated person merely because title to imported goods passed to it after customs clearance. This can leave the actual importer/declarant unreported and cause duplicate or missing ROP accounting.",
+      "evidence_court_practice": "Official Rosprirodnadzor clarification dated 27.03.2026 expressly ties the obligation to the legal entity/IP that imported the goods, is the declarant and is shown in customs documents. Rosprirodnadzor's 12.08.2026 explanation confirms automated cross-checking of participant/product data across FTS/FNS/CRPT and other systems. No separate court case is relied on for this update.",
+      "mirlex_checks": "For each import lot: country/EAEU status → declarant/importer → customs declaration or shipping document → contract/Incoterms only as supporting context → TN VED/product → packaging → mass → date of import → later sale/transfer → entity that filed ROP mass report → eco-fee/self-recycling chain. Do not determine the obligated entity solely from the current owner of the goods.",
+      "impact": "ROP-Accounting and ROP-Assistant: add IMPORTER_IDENTITY_GATE before calculation. The service must reconstruct the obligated entity from customs/shipping source documents before assigning goods/packaging mass to a company. Link to ROP-001 and ROP-011 reconciliation controls.",
+      "red_flag": "The company says 'we sold/transferred the imported goods, therefore ROP is now the buyer's responsibility' or assigns ROP by current ownership without checking who imported/declarated the goods.",
+      "update_needed": "ROP-008 + DECLARANT/IMPORTER_ID + CUSTOMS_DOCUMENT + SHIPPING_DOCUMENT + IMPORT_DATE + EAEU/NON_EAEU_GATE + LATER_TITLE_TRANSFER + ROP_REPORTING_ENTITY + CROSS_SOURCE_MATCH"
+    }
+  ]
+}
