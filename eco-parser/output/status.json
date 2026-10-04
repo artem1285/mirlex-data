@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "state": "BOOTSTRAPPED",
+  "live_wordstat": false,
+  "live_direct": false,
+  "note": "Parser structure created. Live demand requires Yandex Search API Wordstat credentials."
+}
