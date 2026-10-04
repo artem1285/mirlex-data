@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "entity": "MIRLEX_ENGINE_RULE",
+  "required": [
+    "rule_id",
+    "version",
+    "status",
+    "scope",
+    "triggers",
+    "ask",
+    "checks",
+    "outcomes",
+    "provenance",
+    "tests_required"
+  ],
+  "state_model": [
+    "TRUE",
+    "FALSE",
+    "UNKNOWN",
+    "CONTRADICTORY",
+    "NOT_APPLICABLE"
+  ],
+  "rule_contract": {
+    "rule_id": "stable Engine rule identifier",
+    "version": "semantic rule version",
+    "status": [
+      "DRAFT",
+      "REVIEWED",
+      "ACTIVE",
+      "RETIRED"
+    ],
+    "scope": {
+      "industry": "industry code or UNIVERSAL",
+      "contours": [
+        "one or more compliance/physical-flow contours"
+      ]
+    },
+    "triggers": [
+      "conditions activating rule"
+    ],
+    "ask": [
+      "questions only when required facts are missing"
+    ],
+    "evidence_requests": [
+      "documents/data/measurements to request"
+    ],
+    "checks": [
+      "deterministic or expert checks"
+    ],
+    "linked_rules": [
+      "other rules activated by facts/results"
+    ],
+    "outcomes": {
+      "red_flags": [
+        "conditions and messages"
+      ],
+      "obligations": [
+        "possible/applicable obligations with evidence threshold"
+      ],
+      "actions": [
+        "corrective/verification actions"
+      ],
+      "services": [
+        "MIRLEX service mappings"
+      ],
+      "quote_inputs": [
+        "quantities/complexity inputs needed for commercial proposal"
+      ]
+    },
+    "provenance": {
+      "radar_ids": [
+        "permanent IDs"
+      ],
+      "sources": [
+        "primary source refs where needed"
+      ]
+    },
+    "learning": {
+      "novelty_signal": "when case should create NEW_PATTERN_CANDIDATE",
+      "auto_promote": false
+    },
+    "tests_required": true
+  }
+}
