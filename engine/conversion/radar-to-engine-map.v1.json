@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-10-04",
+  "purpose": "Radar permanent IDs to Engine conversion backlog",
+  "universal": [
+    "IND-SITE-001",
+    "IND-WATERINTAKE-001",
+    "IND-WATER-001",
+    "IND-LOS-001",
+    "IND-AIR-001",
+    "IND-SOIL-001",
+    "IND-STORM-001",
+    "IND-SNOW-001",
+    "IND-SAN-001",
+    "IND-SAN-002",
+    "IND-ACCIDENT-001",
+    "IND-WASTESAN-001",
+    "IND-WASTESAN-002",
+    "IND-NVOSPAY-001",
+    "IND-BIODIV-001",
+    "IND-BIODIV-002"
+  ],
+  "industry_clusters": {
+    "construction": [
+      "IND-CONSTRUCTION-001",
+      "IND-CONSTRUCTION-002"
+    ],
+    "carwash": [
+      "IND-CARWASH-001",
+      "IND-CARWASH-002",
+      "IND-CARWASH-003"
+    ],
+    "automotive_service": [
+      "IND-STO-001"
+    ],
+    "food": [
+      "IND-FOOD-001"
+    ],
+    "wood": [
+      "IND-WOOD-001"
+    ],
+    "concrete": [
+      "IND-CONCRETE-001"
+    ],
+    "textile": [
+      "IND-TEXTILE-001",
+      "IND-TEXTILE-002",
+      "IND-TEXTILE-003",
+      "IND-TEXTILE-004"
+    ],
+    "printing": [
+      "IND-PRINT-001",
+      "IND-PRINT-002"
+    ],
+    "packaging": [
+      "IND-PACK-001"
+    ],
+    "chemical": [
+      "IND-CHEM-001",
+      "IND-CHEM-002",
+      "IND-LKM-001",
+      "IND-LKM-002",
+      "IND-LKM-003",
+      "IND-HCHEM-001",
+      "IND-POLYMER-001",
+      "IND-RESIN-001",
+      "IND-GLUE-001",
+      "IND-RUBBER-001",
+      "IND-COSMETICS-001"
+    ],
+    "building_materials": [
+      "IND-ASPHALT-001",
+      "IND-DRYMIX-001",
+      "IND-BRICK-001"
+    ],
+    "agriculture": [
+      "IND-LIVESTOCK-001",
+      "IND-LIVESTOCK-002",
+      "IND-AGRO-003",
+      "IND-GREENHOUSE-001",
+      "IND-AQUA-001",
+      "IND-BIOWASTE-001"
+    ],
+    "oil": [
+      "IND-OIL-001",
+      "IND-OIL-002"
+    ],
+    "mining": [
+      "IND-MINING-001",
+      "IND-MINING-002"
+    ],
+    "energy": [
+      "IND-ENERGY-001"
+    ],
+    "waste_operations": [
+      "IND-WASTEOPS-001",
+      "IND-TKO-001",
+      "IND-LANDFILL-001"
+    ],
+    "medical": [
+      "IND-MED-001"
+    ]
+  },
+  "rop": [
+    "ROP-001",
+    "ROP-002",
+    "ROP-003",
+    "ROP-004",
+    "ROP-005",
+    "ROP-006",
+    "ROP-007",
+    "ROP-008",
+    "ROP-009",
+    "ROP-010",
+    "ROP-011",
+    "ROP-012",
+    "ROP-013",
+    "ROP-014",
+    "ROP-015",
+    "ROP-016",
+    "ROP-017",
+    "ROP-018",
+    "ROP-019",
+    "ROP-020",
+    "ROP-021",
+    "ROP-022",
+    "ROP-023",
+    "ROP-024",
+    "ROP-025",
+    "ROP-026"
+  ],
+  "conversion_policy": {
+    "verified_current": "ACTIVE only after structural review and regression test",
+    "archived_revalidation_required": "may drive questions/check hypotheses; legal conclusion gated until current-source revalidation",
+    "additional_evidence": "strengthen existing rule; no duplicate unless decision logic changes"
+  }
+}
