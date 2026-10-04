@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "industry": "CARWASH",
+  "version": "1.0.0",
+  "status": "SEED_ACTIVE_FOR_INTERNAL_VALIDATION",
+  "intake_goal": "Collect enough factual data to run internal MIRLEX analysis and scope work; not to provide a free legal audit.",
+  "rules": [
+    {
+      "rule_id": "ENG-CARWASH-WW-TANK-001",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "scope": {
+        "industry": "CARWASH",
+        "contours": [
+          "WATER",
+          "WASTEWATER",
+          "SOIL",
+          "ACCIDENT"
+        ]
+      },
+      "triggers": [
+        "wastewater_route == STORAGE_TANK or SEPTIC or UNKNOWN_TANK"
+      ],
+      "ask": [
+        "tank_type_and_location",
+        "tank_volume_m3",
+        "water_consumption_m3_period",
+        "estimated_wastewater_m3_period",
+        "pumping_frequency",
+        "pumped_volume_m3_period",
+        "hauler",
+        "final_acceptor",
+        "overflow_route",
+        "known_leaks_or_repairs"
+      ],
+      "evidence_requests": [
+        "water_meter_or_bills",
+        "tank_specification_if_available",
+        "hauling_contract",
+        "pumping_acts",
+        "acceptance_documents"
+      ],
+      "checks": [
+        "compare water consumption with wastewater generation",
+        "compare generated wastewater with tank capacity and pumping frequency",
+        "reconcile generated wastewater with documented pumped volume",
+        "trace wastewater to final acceptor",
+        "check overflow/leak/soil-contact scenario"
+      ],
+      "linked_rules": [
+        "ENG-UNI-SOIL-001",
+        "ENG-UNI-ACCIDENT-001"
+      ],
+      "outcomes": {
+        "red_flags": [
+          "pumping volumes/frequency do not reconcile with wastewater generation",
+          "final acceptor is not traceable",
+          "overflow/leak route can reach soil"
+        ],
+        "obligations": [
+          "determine applicable wastewater, waste and soil-protection requirements only after factual route is established"
+        ],
+        "actions": [
+          "request missing evidence",
+          "establish factual wastewater route",
+          "resolve mass/volume contradiction",
+          "assess soil gate if leakage/overflow indicated"
+        ],
+        "services": [
+          "MIRLEX_OBJECT_DIAGNOSTIC",
+          "WATER_WASTEWATER_COMPLIANCE",
+          "SOIL_RISK_DIAGNOSTIC"
+        ],
+        "quote_inputs": [
+          "number_of_sites",
+          "number_of_tanks",
+          "available_document_count",
+          "need_for_site_visit",
+          "need_for_sampling_or_measurements"
+        ]
+      },
+      "provenance": {
+        "radar_ids": [
+          "IND-CARWASH-002"
+        ],
+        "sources": [
+          "research/registry/radar-2026-10-03-final-saturation.json"
+        ]
+      },
+      "learning": {
+        "novelty_signal": "Observed wastewater route, chemical/process interaction or failure mode is not represented by existing rules.",
+        "auto_promote": false
+      },
+      "tests_required": true
+    },
+    {
+      "rule_id": "ENG-CARWASH-WATER-SOURCE-001",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "scope": {
+        "industry": "CARWASH",
+        "contours": [
+          "WATER",
+          "SUBSOIL"
+        ]
+      },
+      "triggers": [
+        "water_source == OWN_WELL"
+      ],
+      "ask": [
+        "well_ownership",
+        "well_depth_if_known",
+        "actual_extraction_volume",
+        "license_or_claimed_exception",
+        "metering",
+        "well_documents"
+      ],
+      "evidence_requests": [
+        "license_if_any",
+        "well_passport_or_available_technical_documents",
+        "water_meter_records",
+        "reporting_if_any"
+      ],
+      "checks": [
+        "activate own-well/subsoil-right chain",
+        "verify claimed exception rather than assuming volume alone creates it"
+      ],
+      "linked_rules": [
+        "ENG-UNI-WATERINTAKE-001"
+      ],
+      "outcomes": {
+        "red_flags": [
+          "own well used commercially but legal basis for subsoil use is unknown"
+        ],
+        "obligations": [
+          "determine subsoil/water-use requirements from factual well and use parameters"
+        ],
+        "actions": [
+          "collect well parameters and legal documents",
+          "run universal water-intake rule"
+        ],
+        "services": [
+          "MIRLEX_OBJECT_DIAGNOSTIC",
+          "WATER_INTAKE_COMPLIANCE"
+        ],
+        "quote_inputs": [
+          "number_of_wells",
+          "document_availability",
+          "extraction_volume"
+        ]
+      },
+      "provenance": {
+        "radar_ids": [
+          "IND-WATERINTAKE-001"
+        ],
+        "sources": [
+          "research registry"
+        ]
+      },
+      "learning": {
+        "novelty_signal": "New well/use configuration changes applicability logic.",
+        "auto_promote": false
+      },
+      "tests_required": true
+    }
+  ],
+  "mandatory_universal_gates": [
+    "NVOS",
+    "LAND",
+    "WATER",
+    "AIR",
+    "WASTE",
+    "SOIL",
+    "SANITARY_POPULATION",
+    "ACCIDENT",
+    "BIODIVERSITY_WHERE_APPLICABLE"
+  ]
+}
