@@ -46,15 +46,66 @@ def request_top(api_key, folder_id, phrase, regions=None, num=100):
 def build_jobs():
     industries = load(SEEDS/"industries.json")["items"]
     services = load(SEEDS/"services.json")["items"]
+    mindmap_path = SEEDS/"semantic-mindmap.json"
+    mindmap = load(mindmap_path) if mindmap_path.exists() else {"query_families":[],"material_nodes":[],"industry_pain_terms":{}}
     jobs=[]
+
+    # Tier 1 — ready MIRLEX services.
     for item in services:
         if item.get("enabled"):
             for q in item.get("seeds",[]):
-                jobs.append({"entity_type":"service","entity_id":item["id"],"entity_name":item["name"],"seed":q})
+                jobs.append({
+                    "entity_type":"service","entity_id":item["id"],"entity_name":item["name"],
+                    "seed":q,"tier":1,"family":"SERVICE"
+                })
+
+    # Tier 1 — direct industry demand.
     for item in industries:
         if item.get("enabled"):
             for q in item.get("demand_seeds",[]):
-                jobs.append({"entity_type":"industry","entity_id":item["id"],"entity_name":item["name"],"seed":q})
+                jobs.append({
+                    "entity_type":"industry","entity_id":item["id"],"entity_name":item["name"],
+                    "seed":q,"tier":1,"family":"INDUSTRY_DIRECT"
+                })
+
+    # Tier 2 — industry pain mind-map.
+    families=mindmap.get("query_families",[])
+    pain_terms=mindmap.get("industry_pain_terms",{})
+    for item in industries:
+        if not item.get("enabled"):
+            continue
+        industry=item["name"]
+        # General industry-oriented templates.
+        for fam in families:
+            for tmpl in fam.get("templates",[]):
+                if "{industry}" in tmpl and "{x}" not in tmpl:
+                    q=tmpl.replace("{industry}",industry.lower())
+                    jobs.append({
+                        "entity_type":"industry","entity_id":item["id"],"entity_name":industry,
+                        "seed":q,"tier":2,"family":fam["id"]
+                    })
+        # Concrete waste/material pains specific to this industry.
+        for x in pain_terms.get(industry,[]):
+            for fam in families:
+                for tmpl in fam.get("templates",[]):
+                    if "{x}" in tmpl:
+                        q=tmpl.replace("{x}",x).replace("{industry}",industry.lower())
+                        jobs.append({
+                            "entity_type":"industry","entity_id":item["id"],"entity_name":industry,
+                            "seed":q,"tier":2,"family":fam["id"],"pain_node":x
+                        })
+
+    # Tier 2 — material-first discovery independent of industry.
+    for x in mindmap.get("material_nodes",[]):
+        for fam in families:
+            for tmpl in fam.get("templates",[]):
+                if "{x}" in tmpl and "{industry}" not in tmpl:
+                    q=tmpl.replace("{x}",x)
+                    jobs.append({
+                        "entity_type":"material","entity_id":x,"entity_name":x,
+                        "seed":q,"tier":2,"family":fam["id"],"pain_node":x
+                    })
+
     # stable de-dup
     seen=set(); out=[]
     for j in jobs:
@@ -103,7 +154,10 @@ def run():
                 rows.append({
                     "phrase":phrase,
                     "count":int(item.get("count",0) or 0),
-                    "intent":classify(phrase,patterns)
+                    "intent":classify(phrase,patterns),
+                    "family":j.get("family"),
+                    "tier":j.get("tier"),
+                    "pain_node":j.get("pain_node")
                 })
             rows=sorted(rows,key=lambda x:x["count"],reverse=True)
             existing["items"][f'{j["entity_type"]}:{j["entity_id"]}:{j["seed"]}']={
