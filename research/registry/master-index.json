@@ -183,6 +183,43 @@
       "VERSIONING",
       "REGRESSION_TESTS",
       "READ_BACK"
-    ]
-  }
+    ],
+    "persistence_gate": {
+      "rule": "No research/conversion result is COMPLETE until GitHub WRITE and READ_BACK succeed and the item is indexed.",
+      "states": [
+        "DISCOVERED",
+        "FORMALIZED",
+        "WRITE_PENDING",
+        "PERSISTED",
+        "READ_BACK_VERIFIED",
+        "INDEXED",
+        "COMPLETE"
+      ],
+      "failure_policy": "If dedicated write fails, persist the complete recoverable rule payload/status in an existing indexed GitHub control file before continuing; retry dedicated materialization later.",
+      "source_preservation": "Radar remains immutable evidence memory; Engine is derivative logic; Expert packages are generated from Engine."
+    }
+  },
+  "pending_engine_rules": [
+    {
+      "rule_id": "ENG-ROP-GISMT-002",
+      "version": "1.0.0",
+      "status": "PERSISTED_PENDING_DEDICATED_RULE_FILE",
+      "date": "2026-10-04",
+      "radar_ids": [
+        "ROP-002",
+        "ROP-003",
+        "ROP-011"
+      ],
+      "topic": "GIS MT / Chestny ZNAK as ROP interagency control signal",
+      "core_chain": "GIS_MT_ROLE -> FACTUAL_PRODUCER_OR_IMPORTER -> CONTRACT_MANUFACTURING -> PP_2414_GOODS_AND_PACKAGING -> MASS -> INTERAGENCY_RECONCILIATION -> OBLIGATION_OR_CONTRADICTION -> ACTION",
+      "guardrail": "GIS MT producer status is a control signal, not by itself proof of ecofee debt; establish factual and legal producer/importer status.",
+      "red_flags": [
+        "GIS MT says producer while company says seller/brand owner",
+        "actual manufacturer differs from ROP reporting entity",
+        "ROP mass differs materially from interagency data",
+        "regulator notice exists but factual role is unresolved"
+      ],
+      "next_action": "Materialize as dedicated engine/rules/rop rule and add regression tests."
+    }
+  ]
 }
