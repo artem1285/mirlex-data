@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "suite": "CARWASH_V1",
+  "cases": [
+    {
+      "test_id": "CW-001",
+      "input": {
+        "industry": "CARWASH",
+        "water_source": "OWN_WELL",
+        "wastewater_route": "STORAGE_TANK",
+        "water_consumption_m3_period": 80,
+        "pumped_volume_m3_period": 25,
+        "final_acceptor": "UNKNOWN"
+      },
+      "must_activate": [
+        "ENG-CARWASH-WW-TANK-001",
+        "ENG-CARWASH-WATER-SOURCE-001"
+      ],
+      "must_flag": [
+        "volume_balance_contradiction",
+        "final_acceptor_untraceable",
+        "well_legal_basis_check"
+      ],
+      "must_not_conclude": [
+        "illegal_discharge_as_fact",
+        "soil_contamination_as_fact"
+      ]
+    },
+    {
+      "test_id": "CW-002",
+      "input": {
+        "industry": "CARWASH",
+        "water_source": "CENTRAL",
+        "wastewater_route": "STORAGE_TANK",
+        "water_consumption_m3_period": "UNKNOWN",
+        "pumped_volume_m3_period": "UNKNOWN"
+      },
+      "must_activate": [
+        "ENG-CARWASH-WW-TANK-001"
+      ],
+      "must_request": [
+        "water_consumption_m3_period",
+        "pumped_volume_m3_period",
+        "final_acceptor"
+      ],
+      "must_not_conclude": [
+        "volume_balance_compliant",
+        "volume_balance_violation"
+      ]
+    }
+  ],
+  "pass_rule": "All required activations/flags/questions occur and prohibited unsupported conclusions do not occur."
+}
