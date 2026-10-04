@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "module": "UNIVERSAL_GATES",
+  "version": "1.0.0",
+  "status": "ACTIVE_INTERNAL",
+  "rules": [
+    {
+      "rule_id": "ENG-UNI-SITE-001",
+      "radar_ids": [
+        "IND-SITE-001"
+      ],
+      "gate": "SITE",
+      "trigger": "every physical site",
+      "chain": "SITE → LAND_USE/RESTRICTIONS → NEIGHBORS/RECEPTORS → SZZ/WATER_PROTECTION/OTHER_ZONES",
+      "ask": [
+        "site",
+        "land_basis",
+        "actual_activity",
+        "nearby_receptors",
+        "known_restrictions"
+      ],
+      "legal_mode": "REVALIDATE_BEFORE_AUTOMATED_LEGAL_CONCLUSION"
+    },
+    {
+      "rule_id": "ENG-UNI-WATERINTAKE-001",
+      "radar_ids": [
+        "IND-WATERINTAKE-001"
+      ],
+      "gate": "WATER_SOURCE",
+      "trigger": "own well or own water intake",
+      "chain": "SOURCE → RIGHT/LICENCE_OR_EXCEPTION → CONDITIONS → EXTRACTION → METERING → REPORTING → CLOSURE",
+      "ask": [
+        "water_source",
+        "well_count",
+        "well_documents",
+        "extraction_volume",
+        "metering",
+        "legal_basis"
+      ],
+      "legal_mode": "REVALIDATE_BEFORE_AUTOMATED_LEGAL_CONCLUSION"
+    },
+    {
+      "rule_id": "ENG-UNI-LOS-001",
+      "radar_ids": [
+        "IND-LOS-001",
+        "IND-WATER-001"
+      ],
+      "gate": "TREATMENT",
+      "trigger": "treatment/separator exists",
+      "chain": "INFLUENT → TREATMENT → EFFICIENCY → EFFLUENT_ROUTE → LAB → SLUDGE → FINAL_ROUTE → FAILURE",
+      "ask": [
+        "treatment_type",
+        "capacity",
+        "load",
+        "effluent_route",
+        "lab_control",
+        "maintenance",
+        "sludge_route",
+        "failure_route"
+      ],
+      "legal_mode": "REVALIDATE_BEFORE_AUTOMATED_LEGAL_CONCLUSION"
+    },
+    {
+      "rule_id": "ENG-UNI-AIR-001",
+      "radar_ids": [
+        "IND-AIR-001"
+      ],
+      "gate": "AIR",
+      "trigger": "process may create emissions",
+      "chain": "TECHNOLOGY → MATERIAL/FUEL/ADDITIVE → PROCESS → POLLUTANT → SOURCE → INVENTORY → CONTROL → MEASUREMENT",
+      "ask": [
+        "technology",
+        "equipment",
+        "materials",
+        "fuel",
+        "additives",
+        "ventilation",
+        "inventory",
+        "measurements"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-WASTE-001",
+      "radar_ids": [
+        "IND-WASTESAN-002"
+      ],
+      "gate": "WASTE",
+      "trigger": "waste/residue/by-product generated",
+      "chain": "GENERATION → STATUS → PROPERTIES → ACCUMULATION → WEATHER/SURFACE → TRANSPORT → RECIPIENT → FINAL_OPERATION → MASS_BALANCE",
+      "ask": [
+        "streams",
+        "generation_source",
+        "storage",
+        "surface_cover",
+        "contractors",
+        "recipients",
+        "final_operations",
+        "records"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-SOIL-001",
+      "radar_ids": [
+        "IND-SOIL-001"
+      ],
+      "gate": "SOIL",
+      "trigger": "substance may contact soil",
+      "chain": "SUBSTANCE → SOIL_CONTACT → SAMPLING → STANDARD_OR_BACKGROUND → AREA/DEPTH → DAMAGE → RESTORATION",
+      "ask": [
+        "possible_contact",
+        "substance",
+        "location",
+        "traces",
+        "sampling"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-STORM-001",
+      "radar_ids": [
+        "IND-STORM-001"
+      ],
+      "gate": "STORMWATER",
+      "trigger": "open industrial/traffic/storage area",
+      "chain": "SURFACE → RAIN/MELT → COLLECTION → TREATMENT → STORAGE → CAPACITY → OVERFLOW → FINAL_ROUTE",
+      "ask": [
+        "surface",
+        "collection",
+        "treatment",
+        "capacity",
+        "overflow_route",
+        "final_route",
+        "monitoring"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-SNOW-001",
+      "radar_ids": [
+        "IND-SNOW-001"
+      ],
+      "gate": "SEASONAL_SNOW",
+      "trigger": "winter snow storage/removal",
+      "chain": "SNOW → STORAGE → SURFACE/BUNDING → MELTWATER_COLLECTION → ROUTE → SOIL",
+      "ask": [
+        "snow_storage",
+        "surface",
+        "bunding",
+        "meltwater_collection",
+        "meltwater_route"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-SAN-001",
+      "radar_ids": [
+        "IND-SAN-001",
+        "IND-SAN-002"
+      ],
+      "gate": "SANITARY_POPULATION",
+      "trigger": "process may impact population/receptors",
+      "chain": "TECHNOLOGY → FACTOR → SOURCE → MODE → RECEPTOR → CONTROL_POINT → MEASUREMENT → LIMIT → MITIGATION → RECHECK",
+      "ask": [
+        "receptors",
+        "operating_modes",
+        "physical_or_other_factors",
+        "complaints",
+        "measurements",
+        "szz_status"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-ACCIDENT-001",
+      "radar_ids": [
+        "IND-ACCIDENT-001"
+      ],
+      "gate": "ACCIDENT",
+      "trigger": "credible spill/discharge/process failure",
+      "chain": "FAILURE → RELEASE → SIGNAL → BOUNDARY → SAMPLE → DAMAGE → RESPONSE → RESTORATION → CLOSURE",
+      "ask": [
+        "failure_modes",
+        "containment",
+        "emergency_route",
+        "response_resources",
+        "incident_history"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    },
+    {
+      "rule_id": "ENG-UNI-NVOS-001",
+      "radar_ids": [
+        "IND-NVOSPAY-001"
+      ],
+      "gate": "NVOS",
+      "trigger": "every object",
+      "chain": "OBJECT/ACTIVITY → CRITERIA → CATEGORY/EXCLUSION → REGISTRATION → APPLICABLE_DOCUMENTS/REPORTING",
+      "ask": [
+        "activity",
+        "equipment",
+        "capacity",
+        "registration",
+        "category",
+        "existing_documents"
+      ],
+      "legal_mode": "SOURCE_RULE"
+    }
+  ],
+  "execution_policy": {
+    "output_states": [
+      "CONFIRMED",
+      "LIKELY_APPLICABLE",
+      "NEEDS_DATA",
+      "CONTRADICTION",
+      "RED_FLAG",
+      "NOT_APPLICABLE"
+    ],
+    "prohibition": "No violation finding solely from a trigger or missing document."
+  }
+}
