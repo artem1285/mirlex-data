@@ -1,0 +1,44 @@
+name: MIRLEX ECO PARSER
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1,4"
+
+permissions:
+  contents: write
+
+jobs:
+  eco-parser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run ECO PARSER
+        env:
+          YANDEX_SEARCH_API_KEY: ${{ secrets.YANDEX_SEARCH_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID }}
+          YANDEX_WORDSTAT_REGIONS: ${{ vars.YANDEX_WORDSTAT_REGIONS }}
+          ECO_PARSER_BATCH: ${{ vars.ECO_PARSER_BATCH || '40' }}
+          YANDEX_DIRECT_TOKEN: ${{ secrets.YANDEX_DIRECT_TOKEN }}
+          YANDEX_DIRECT_LOGIN: ${{ secrets.YANDEX_DIRECT_LOGIN }}
+        run: python eco-parser/run.py
+
+      - name: Commit parser outputs
+        run: |
+          git config user.name "MIRLEX ECO PARSER"
+          git config user.email "actions@users.noreply.github.com"
+          git add eco-parser/output
+          if git diff --cached --quiet; then
+            echo "No output changes"
+          else
+            git commit -m "Update ECO PARSER outputs"
+            git push
+          fi
