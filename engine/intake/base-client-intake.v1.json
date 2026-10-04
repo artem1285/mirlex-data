@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "template": "BASE_CLIENT_INTAKE",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "id": "OBJECT",
+      "fields": [
+        "industry",
+        "site_count",
+        "site_locations"
+      ]
+    },
+    {
+      "id": "SITE",
+      "fields": [
+        "land_basis",
+        "plot_data",
+        "actual_activities",
+        "nearby_receptors",
+        "known_restrictions"
+      ]
+    },
+    {
+      "id": "TECHNOLOGY",
+      "fields": [
+        "products_services",
+        "process_steps",
+        "equipment",
+        "capacity",
+        "operating_schedule",
+        "seasonality"
+      ]
+    },
+    {
+      "id": "MATERIALS",
+      "fields": [
+        "raw_materials",
+        "chemicals_mixtures",
+        "fuels",
+        "additives",
+        "packaging"
+      ]
+    },
+    {
+      "id": "WATER",
+      "fields": [
+        "water_sources",
+        "consumption",
+        "wastewater_streams",
+        "treatment",
+        "routes",
+        "stormwater",
+        "meltwater"
+      ]
+    },
+    {
+      "id": "AIR",
+      "fields": [
+        "emission_sources",
+        "ventilation_aspiration",
+        "combustion",
+        "existing_inventory"
+      ]
+    },
+    {
+      "id": "WASTE",
+      "fields": [
+        "waste_residue_streams",
+        "accumulation",
+        "contractors",
+        "recipients",
+        "final_operations",
+        "records"
+      ]
+    },
+    {
+      "id": "RISK",
+      "fields": [
+        "spills_leaks_overflows",
+        "complaints",
+        "accidents",
+        "unknown_routes",
+        "recent_changes"
+      ]
+    },
+    {
+      "id": "DOCUMENTS",
+      "fields": [
+        "nvos",
+        "pec",
+        "air",
+        "water",
+        "waste",
+        "land",
+        "sanitary",
+        "contracts",
+        "lab_protocols",
+        "other"
+      ]
+    },
+    {
+      "id": "SCOPE",
+      "fields": [
+        "deadline",
+        "request_reason",
+        "inspection_or_prescription",
+        "desired_result"
+      ]
+    }
+  ],
+  "rule": "Industry module expands this base dynamically. UNKNOWN is allowed. Never ask irrelevant branches."
+}
