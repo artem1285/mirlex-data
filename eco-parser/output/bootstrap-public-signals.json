@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "collected_at": "2026-10-04",
+  "note": "Bootstrap public-web evidence. Not a substitute for Wordstat frequency data.",
+  "items": [
+    {
+      "entity": "SVC-PASSPORTS",
+      "signal": "commercial_supply",
+      "evidence": "Multiple 2026 offers with explicit prices for passport development.",
+      "urls": [
+        "https://eco-pasport.ru/",
+        "https://recmos.ru/ekologicheskie-uslugi/razrabotka-ekologicheskoj-dokumentacii/razrabotka-pasportov-othodov/",
+        "https://tula.hartiya.ru/uslugi/passport-othodov/"
+      ]
+    },
+    {
+      "entity": "SVC-NVOS",
+      "signal": "commercial_supply",
+      "evidence": "Specialized paid offers for NVOС registration and category determination; 2026 prices published.",
+      "urls": [
+        "https://recmos.ru/ekologicheskie-uslugi/ekologicheskoe-soprovozhdenie/postanovka-na-ecologicheskiy-uchet/",
+        "https://ekolog-lab.ru/ekologicheskaya-otchetnost/postanovka-na-uchet-obekta-nvos/",
+        "https://ecoplan02.ru/services/ekologicheskoe-proektirovanie/postanovka-obekta-nvos-na-gos-uchet-aktualizatsiya-svedeniy-onvos/"
+      ]
+    },
+    {
+      "entity": "SVC-WASTE-ACCOUNT",
+      "signal": "procurement",
+      "evidence": "2026 public procurement includes recurring waste accounting under Order 227.",
+      "urls": [
+        "https://tendik.ru/tender/eis/0372200101126000040"
+      ]
+    },
+    {
+      "entity": "SVC-2TP-WASTE",
+      "signal": "commercial_and_regulatory",
+      "evidence": "Commercial preparation services coexist with current official reporting obligation/form.",
+      "urls": [
+        "https://ecomanagerru.ru/uslugi/2tp-othody/",
+        "https://rpn.gov.ru/regions/66/for_users/report/2tp-waste/",
+        "https://ecopromcentr.ru/services/forma-2-tp-otkhody/"
+      ]
+    },
+    {
+      "entity": "SMB",
+      "signal": "landing_fit",
+      "evidence": "Market pages already frame small-business ecology through object-specific diagnosis: bakery, auto service, laundry, workshops, warehouse.",
+      "urls": [
+        "https://krasnodar-vashecolog.ru/ekologicheskie-dokumenty-malogo-biznesa-krasnodar/",
+        "https://ecoofficer.ru/blog/ekologiya-malogo-biznesa"
+      ]
+    },
+    {
+      "entity": "IND-AUTOSERVICE",
+      "signal": "industry_fit",
+      "evidence": "Dedicated environmental profile repeatedly links waste oils, batteries, tyres, painting/welding/ventilation and NVOС.",
+      "urls": [
+        "https://ecoofficer.ru/blog/ekologiya-malogo-biznesa",
+        "https://berkana.spb.ru/uslugi/ekologiya/"
+      ]
+    },
+    {
+      "entity": "IND-CARWASH",
+      "signal": "industry_fit",
+      "evidence": "Automotive washing has a distinct water/waste/environmental compliance problem suitable for an industry landing.",
+      "urls": [
+        "https://www.ekologiya.net/?q=node%2F38536"
+      ]
+    },
+    {
+      "entity": "SMB-SALON",
+      "signal": "industry_fit",
+      "evidence": "Hairdressing/beauty activities have identifiable waste streams; suitable for a simple-business diagnostic page, but live search demand still unverified.",
+      "urls": [
+        "https://gkset.ru/",
+        "https://normadocs.ru/gost_r_72521-2026"
+      ]
+    }
+  ]
+}
