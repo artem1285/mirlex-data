@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-03",
+  "updated_on": "2026-10-04",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -159,13 +159,30 @@
   "radar_phase": {
     "status": "SATURATION",
     "mode": "REDUCED_SPEED_CONTINUOUS_MONITORING",
-    "main_priority": "BUILD_MIRLEX_INDUSTRY_AND_SERVICE_CARDS",
+    "main_priority": "BUILD_MIRLEX_ENGINE_AND_DERIVE_INDUSTRY_INTAKE/CARDS",
     "reopen_deep_scan_on": [
       "new law/regulation",
       "new standalone pattern",
       "new technology/process risk",
       "new RED FLAG",
       "material evidence changing a decision tree"
+    ]
+  },
+  "engine": {
+    "status": "MVP_CORE_V1",
+    "created_on": "2026-10-04",
+    "root": "engine/",
+    "architecture": "RADAR_REGISTRY -> ENGINE_RULES -> CLIENT_INTAKE -> INTERNAL_DIAGNOSTIC -> ACTIONS -> SERVICE_SCOPE -> QUOTE_INPUTS",
+    "first_industry": "CARWASH",
+    "learning_mode": "CONTROLLED_REVIEW_ONLY",
+    "client_data_policy": "DO_NOT_COMMIT_CLIENT_DATA_OR_DOCUMENTS_TO_REPOSITORY",
+    "required_quality_gates": [
+      "PROVENANCE",
+      "UNKNOWN_STATE",
+      "NO_UNSUPPORTED_CONCLUSIONS",
+      "VERSIONING",
+      "REGRESSION_TESTS",
+      "READ_BACK"
     ]
   }
 }
