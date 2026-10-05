@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-04",
+  "updated_on": "2026-10-05",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -76,6 +76,11 @@
       "path": "research/registry/radar-2026-10-03-final-saturation.json",
       "cards": 4,
       "status": "SATURATION_VERIFIED_CURRENT_ADDITIONAL_EVIDENCE"
+    },
+    {
+      "path": "research/registry/radar-2026-10-05-recovery.json",
+      "cards": 6,
+      "status": "READ_BACK_VERIFIED"
     }
   ],
   "permanent_id_policy": {
@@ -112,7 +117,8 @@
     "GitHub research registry existed before this recovery; earlier conclusion that all radar data remained only in chat was incorrect.",
     "Post-30.09 findings were not consistently persisted. recovered-current-2026-10-01.json closes the known gap from active context.",
     "Chat ID collision detected: IND-ENERGY-001 had been reused for SAKV and bird-protection. Registry preserves IND-ENERGY-001 for SAKV and migrates bird-protection to IND-BIODIV-002 with migration metadata.",
-    "Never invent missing source URLs. Records marked source re-link/revalidation required must be revalidated before publication/automation."
+    "Never invent missing source URLs. Records marked source re-link/revalidation required must be revalidated before publication/automation.",
+    "2026-10-05: recovered six radar records previously left WRITE_PENDING; GitHub connector permissions verified admin/push=true; dedicated file write and read-back succeeded."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
