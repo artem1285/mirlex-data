@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-10-05",
+  "purpose": "Defines the single MIRLEX Engine source packages consumed by expert interfaces. Expert interfaces do not own independent rule copies.",
+  "source_of_truth": "GitHub artem1285/mirlex-data/engine",
+  "packages": {
+    "ECO_EXPERT": {
+      "status": "INTERNAL_BUILD",
+      "modules": [
+        "engine/rules/universal/universal-gates.v1.json",
+        "engine/rules/industry/*.json"
+      ],
+      "include": [
+        "CORE",
+        "ECO",
+        "INDUSTRY",
+        "QUOTE_INPUTS"
+      ],
+      "exclude": [
+        "ROP-only rules unless cross-contour trigger explicitly links them"
+      ]
+    },
+    "ROP_EXPERT": {
+      "status": "INTERNAL_BUILD",
+      "modules": [
+        "engine/rules/rop/rop-core.v1.json"
+      ],
+      "include": [
+        "ROP",
+        "QUOTE_INPUTS"
+      ],
+      "shared_guardrails": [
+        "UNKNOWN_STATE",
+        "PROVENANCE",
+        "NO_UNSUPPORTED_CONCLUSIONS",
+        "CURRENT_LAW_GATE"
+      ]
+    }
+  },
+  "retrieval_contract": {
+    "query_inputs": [
+      "client_facts",
+      "active_industry",
+      "active_contours",
+      "current_question",
+      "known_documents"
+    ],
+    "retrieve_by": [
+      "rule_id",
+      "industry",
+      "contour",
+      "trigger",
+      "radar_id"
+    ],
+    "response_logic": "Retrieve only relevant rules; ask only questions that can change route, legal branch, internal risk, scope, price, timing, laboratory/site visit need or quote inputs.",
+    "future_delivery": "The repository remains canonical. Expert connection may use API retrieval/file search/vector store or another connector layer; do not manually fork rule logic into separate expert knowledge bases."
+  },
+  "release_gate": [
+    "rule schema valid",
+    "provenance retained",
+    "legal revalidation state respected",
+    "regression test exists for material branching",
+    "GitHub read-back succeeds"
+  ]
+}
