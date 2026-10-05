@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-05",
+  "status": "INDEX_UPDATE_PENDING",
+  "target_master": "research/registry/master-index.json",
+  "operations": [
+    {
+      "registry_path": "research/registry/radar-2026-10-05-run-12.json",
+      "card_ids": [
+        "IND-CONSTRUCTION-003"
+      ],
+      "registry_read_back_sha": "baeea45eec2e702dc5c0f198ed0aa5d970f7c223",
+      "action": "INDEX_AND_INCREMENT_NEW_INDUSTRY_ID"
+    },
+    {
+      "registry_path": "research/registry/radar-2026-10-05-run-16.json",
+      "card_ids": [
+        "IND-SNOW-001"
+      ],
+      "registry_read_back_sha": "511ca887e8ce053cf48d5018f53658c4c0963144",
+      "action": "INDEX_ADDITIONAL_EVIDENCE"
+    },
+    {
+      "registry_path": "research/registry/radar-2026-10-05-run-17.json",
+      "card_ids": [
+        "IND-AQUA-001"
+      ],
+      "registry_read_back_sha": "7d6bcb9e436bdc28dc9050af60b95c60bb5edf38",
+      "action": "INDEX_ADDITIONAL_EVIDENCE_SOURCE_RELINK"
+    }
+  ],
+  "note": "Dedicated registry writes/read-backs are verified. Master-index mutation was blocked by safety layer before GitHub API execution; this recoverable control file preserves exact indexing operations for retry."
+}
