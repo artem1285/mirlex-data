@@ -1,0 +1,22 @@
+{
+  "schema_version":"1.0",
+  "date":"2026-10-05",
+  "status":"PERSISTED_PENDING_READ_BACK",
+  "cards":[{
+    "id":"IND-CONSTRUCTION-003",
+    "date":"2026-10-05",
+    "type":"NEW_SUBSTANTIVE_PATTERN",
+    "industry_contour":"road construction -> excavated ground -> placement -> soil",
+    "actuality_status":"VERIFIED_CURRENT",
+    "primary_source":"Krasnoyarsk Environmental Prosecutor Office, 2026-10-02, https://epp.genproc.gov.ru/ru/proc_24/mass-media/news/regional/e8673040/",
+    "current_npa":["Land Code RF arts.12-13","Federal Law 7-FZ arts.77-78","Minprirody Order 08.07.2010 No.238 ed.18.11.2021"],
+    "factual_pattern":"EARTHWORKS -> EXCAVATED GROUND -> DESIGN ROUTE -> ACTUAL PLACEMENT -> LAND STATUS -> FERTILE SOIL -> SOIL DAMAGE",
+    "risk":"Placement of excavated or unsuitable ground outside the design route can damage soil independently of the material waste-status question.",
+    "evidence_court_practice":"Official prosecutor report: placement contrary to design decisions on agricultural land; over 20,000 m2 affected; cover height 2-40 m; estimated soil damage over RUB 73m. Proceedings are ongoing; no final judgment claimed.",
+    "mirlex_checks":["generated ground/material streams","project route for each stream","actual transport and placement route","land category and right holder","fertile-layer protection","area/depth of placement","material legal status","volume balance","restoration obligations"],
+    "decision_markers":["EARTHWORKS_GENERATE_GROUND","GROUND_ROUTE_MATCHES_PROJECT","PLACEMENT_ON_OPEN_SOIL","FERTILE_LAYER_PROTECTED"],
+    "impact":"Add earthworks/ground-route diagnostic to ECO Expert and construction/road intake; feed number of streams/sites and project-vs-fact verification into QUOTE.",
+    "red_flag":"Excavated ground exists and actual placement route is unknown or differs from design, especially on open/agricultural soil without evidence of fertile-layer protection.",
+    "update_needed":["ENG-CONSTRUCTION-GROUND-001","EARTHWORKS -> GROUND_ROUTE -> PROJECT_MATCH -> LAND_STATUS -> FERTILE_LAYER -> SOIL_DAMAGE","QUOTE inputs for streams/sites/project-vs-fact and field verification"]
+  }]
+}
