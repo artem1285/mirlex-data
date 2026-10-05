@@ -1,0 +1,90 @@
+{
+  "schema": "MIRLEX_HARD_RADAR_REGISTRY",
+  "date": "2026-10-05",
+  "status": "COMPLETE",
+  "records": [
+    {
+      "id": "IND-ACCIDENT-001",
+      "type": "additional_evidence",
+      "date": "2026-10-05",
+      "contour": "wastewater -> soil -> surface water",
+      "status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE",
+      "source": "Rosprirodnadzor 2026-10-02; appellate case re LLC Energetik; damage >19.6m RUB",
+      "pattern": "sewer infrastructure -> wastewater escape -> soil -> migration -> water body -> evidence -> damage",
+      "risk": "single incident can create soil and water damage contours",
+      "mirlex_check": "operator/owner; outlet; physical route; soil contact; migration; lab/inspection evidence; alternative sources; emergency logs; remediation",
+      "red_flag": "wastewater reaches terrain/soil and has physical route to water body",
+      "update": "SOIL_TO_WATER_MIGRATION + INFRASTRUCTURE_OPERATOR + ALTERNATIVE_CAUSE_EVIDENCE"
+    },
+    {
+      "id": "IND-MINING-003",
+      "type": "new_pattern",
+      "date": "2026-10-05",
+      "contour": "mining -> auxiliary domestic wastewater -> septic tank -> terrain -> soil",
+      "status": "VERIFIED_CURRENT",
+      "source": "Rosprirodnadzor 2026-10-01; Kaa-Khem deposit; soil damage 3,426,508 RUB",
+      "npa": "Order Minprirody Russia 08.07.2010 No.238, as amended",
+      "pattern": "mining site -> domestic wastewater -> septic/storage -> capacity/tightness -> pumping -> actual route -> overflow/discharge -> soil -> evidence -> damage",
+      "risk": "auxiliary sanitation infrastructure can independently create material soil-damage liability",
+      "mirlex_check": "sanitary infrastructure; people/water use; wastewater volume; septic capacity/tightness; pumping frequency; hauled volume; carrier; receiver; balance; overflow route",
+      "red_flag": "septic exists but wastewater balance and final receipt cannot be proven, or overflow reaches terrain",
+      "update": "ENG-MINING-AUX-WW-001; link SOIL and ACCIDENT"
+    },
+    {
+      "id": "IND-AIR-002",
+      "type": "new_pattern",
+      "date": "2026-10-05",
+      "contour": "air -> adverse meteorological conditions (NMU)",
+      "status": "VERIFIED_CURRENT",
+      "source": "official publication / environmental prosecutor explanations",
+      "npa": "Federal Law No.96-FZ; Minprirody Orders No.662 of 28.11.2025, No.651 and No.652 of 26.11.2025; effective 01.03.2026",
+      "pattern": "I/II/III category + stationary sources -> NMU applicability -> current agreed plan -> forecast -> NMU degree -> emission-reduction measures -> execution evidence",
+      "risk": "legacy NMU plan may not satisfy rules effective 01.03.2026",
+      "mirlex_check": "category; stationary sources; plan date/legal basis; approval; forecast source; measures; operational launch; reduction substantiation; logs/notices",
+      "red_flag": "old NMU plan after 01.03.2026 or no proof of forecast receipt/execution",
+      "update": "ENG-UNI-AIR-NMU-001; NMU gate; regression OLD_PLAN_AFTER_01.03.2026 -> UPDATE_REQUIRED"
+    },
+    {
+      "id": "IND-TKO-001",
+      "type": "additional_evidence",
+      "date": "2026-10-05",
+      "contour": "MSW -> transfer facility -> weighing -> FGIS UTKO",
+      "status": "VERIFIED_CURRENT_ADDITIONAL_EVIDENCE",
+      "source": "Prosecutor's Office of Sovetsky District, Lipetsk, 03.06.2026",
+      "npa": "Federal Law No.89-FZ; Government Resolution No.671 of 24.05.2024 as amended 07.03.2025; related Resolution No.1657",
+      "pattern": "MSW facility -> vehicle/batch -> weighing -> mass/time -> internal accounting -> transmission -> FGIS record -> gap control -> reconciliation",
+      "risk": "working scales/internal accounting do not prove successful state-system reporting",
+      "mirlex_check": "facility; weighing obligation; instrument/verification; vehicle/batch; mass/time; internal log; transmission; errors; FGIS acceptance; gaps; reconciliation",
+      "red_flag": "weighing and internal records exist but FGIS acceptance cannot be proven or masses diverge",
+      "update": "split WEIGHING -> INTERNAL_RECORD -> TRANSMISSION -> FGIS_ACCEPTANCE -> RECONCILIATION; link IND-WASTEOPS-001"
+    },
+    {
+      "id": "IND-AIR-003",
+      "type": "new_pattern",
+      "date": "2026-10-05",
+      "contour": "air -> federal statistical reporting 2-TP (air)",
+      "status": "VERIFIED_CURRENT",
+      "source": "Rosprirodnadzor 02.10.2026",
+      "npa": "Rosstat Order 02.10.2026 No.589 (form applies from reporting for 2026; detailed order text requires source-level archival verification)",
+      "pattern": "stationary sources -> respondent criteria -> sources/pollutants -> new 2-TP air form -> reconciliation with inventory/PEC/measurements -> report",
+      "risk": "2025 template/respondent logic cannot be carried forward mechanically",
+      "mirlex_check": "respondent applicability; stationary sources; pollutants; inventory; PEC; measurements; 2-TP consistency",
+      "red_flag": "2026 report prepared on old template or non-filer decision based on old criteria",
+      "update": "ENG-UNI-AIR-REPORTING-001; reporting calendar/template/AIR intake/respondent gate"
+    },
+    {
+      "id": "IND-OIL-002",
+      "type": "new_pattern",
+      "date": "2026-10-05",
+      "contour": "oil & gas -> APG -> flare/dispersion -> air -> environmental fee",
+      "status": "VERIFIED_CURRENT",
+      "source": "Rosprirodnadzor 29.09.2026",
+      "npa": "Government Resolution No.710 of 22.05.2025 as amended by No.1221 of 23.09.2026",
+      "pattern": "APG produced -> burned/dispersed -> actual share -> period threshold -> exceptions -> coefficient 25 if applicable -> environmental fee",
+      "risk": "errors in produced/burned APG volumes or threshold/exceptions can change fee materially; 2026 temporal application requires separate legal-practice check",
+      "mirlex_check": "APG production; burned/dispersed volume; primary accounting; percentage; annual threshold; exceptions; K=25; declaration/payment reconciliation",
+      "red_flag": "APG is burned/dispersed but no traceable produced -> burned -> % -> threshold -> exception/K=25 -> fee calculation",
+      "update": "ENG-OIL-APG-NVOS-001; thresholds 18/13/9/5%; K=25/exceptions; 2026 temporal flag"
+    }
+  ]
+}
