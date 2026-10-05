@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "suite": "ROP_CORE_REGRESSION",
+  "version": "1.0.0",
+  "generated_on": "2026-10-05",
+  "cases": [
+    {
+      "case_id": "ROP-T01-CONTRACT-MANUFACTURING",
+      "input": {
+        "company_role_claimed": "brand_owner/seller",
+        "contract_manufacturing_exists": true,
+        "actual_manufacturer": "other_entity"
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-ROLE-001"
+        ],
+        "state_contains": [
+          "NEEDS_DATA"
+        ],
+        "must_not_conclude": [
+          "automatic_ecofee_debt"
+        ],
+        "ask_contains": [
+          "actual_manufacturer"
+        ]
+      }
+    },
+    {
+      "case_id": "ROP-T02-RECYCLER-ACT-ONLY",
+      "input": {
+        "claims_recycling_fulfillment": true,
+        "act_available": true,
+        "recycler_registry_status": "UNKNOWN"
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-RECYCLER-001"
+        ],
+        "state_contains": [
+          "NEEDS_DATA"
+        ],
+        "must_check": [
+          "register_status_for_period",
+          "operation_group",
+          "capacity",
+          "factual_recycling"
+        ],
+        "must_not_conclude": [
+          "fulfillment_confirmed_from_act_alone"
+        ]
+      }
+    },
+    {
+      "case_id": "ROP-T03-MASS-MISMATCH",
+      "input": {
+        "manufacturer_or_importer": true,
+        "goods_mass_source": 100,
+        "reported_mass": 70
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-SCOPE-MASS-001",
+          "ENG-ROP-FORMS-001"
+        ],
+        "state_contains": [
+          "CONTRADICTION"
+        ],
+        "must_check": [
+          "mass_reconciliation"
+        ]
+      }
+    },
+    {
+      "case_id": "ROP-T04-COEFFICIENT-DOUBLE-COUNT",
+      "input": {
+        "coefficient_claimed": true,
+        "secondary_raw_material_mass": 20,
+        "same_mass_used_for_other_ROP_fulfillment": true
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-COEFFICIENT-001"
+        ],
+        "state_contains": [
+          "RED_FLAG",
+          "LEGAL_REVALIDATION_REQUIRED"
+        ],
+        "must_not_conclude": [
+          "coefficient_allowed"
+        ]
+      }
+    }
+  ]
+}
