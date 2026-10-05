@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "state": "READY",
+  "total": 9435,
+  "by_entity_type": {
+    "industry": 7434,
+    "material": 1749,
+    "service": 252
+  },
+  "outputs": [
+    "generated-hypotheses.json",
+    "generated-hypotheses.csv",
+    "wordstat-free-batches.txt"
+  ]
+}
