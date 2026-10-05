@@ -26,7 +26,14 @@ def guess_intent(q, rules):
     if hit(rules.get("informational",[])): return "informational"
     return "mixed"
 
-def add(rows, seen, query, entity_type, entity_id, entity_name, family, source, pain_node=None):
+def node_type(x, axes):
+    s=(x or "").lower()
+    for typ, keys in axes.get("node_type_keywords",{}).items():
+        if any(k.lower() in s for k in keys):
+            return typ
+    return "general"
+
+def add(rows, seen, query, entity_type, entity_id, entity_name, family, source, pain_node=None, pain_type=None):
     q=norm(query)
     if not q or len(q.split())>12:
         return
@@ -41,7 +48,8 @@ def add(rows, seen, query, entity_type, entity_id, entity_name, family, source, 
         "entity_name":entity_name,
         "family":family,
         "source":source,
-        "pain_node":pain_node
+        "pain_node":pain_node,
+        "pain_type":pain_type
     })
 
 def run():
@@ -75,16 +83,22 @@ def run():
         # 3. Radar/mind-map pain nodes x human language x industry.
         pains=pain_map.get(name,[])
         for x in pains:
-            for tmpl in axes.get("action_phrases",[]):
-                add(rows,seen,tmpl.replace("{x}",x),"industry",ind["id"],name,"PAIN_ACTION","pain_action",x)
+            typ=node_type(x,axes)
+            templates=axes.get("type_templates",{}).get(typ,axes.get("type_templates",{}).get("general",[]))
+            for tmpl in templates:
+                add(rows,seen,tmpl.replace("{x}",x),"industry",ind["id"],name,
+                    "PAIN_ACTION","pain_action",x,typ)
             for tmpl in axes.get("pain_plus_industry_patterns",[]):
                 add(rows,seen,tmpl.replace("{x}",x).replace("{industry}",iname),
-                    "industry",ind["id"],name,"PAIN_X_INDUSTRY","pain_x_industry",x)
+                    "industry",ind["id"],name,"PAIN_X_INDUSTRY","pain_x_industry",x,typ)
 
     # 4. Material-first discovery — can later map to multiple industries/services.
     for x in material_nodes:
-        for tmpl in axes.get("action_phrases",[]):
-            add(rows,seen,tmpl.replace("{x}",x),"material",x,x,"MATERIAL_DISCOVERY","material_action",x)
+        typ=node_type(x,axes)
+        templates=axes.get("type_templates",{}).get(typ,axes.get("type_templates",{}).get("general",[]))
+        for tmpl in templates:
+            add(rows,seen,tmpl.replace("{x}",x),"material",x,x,
+                "MATERIAL_DISCOVERY","material_action",x,typ)
 
     for r in rows:
         r["intent_guess"]=guess_intent(r["query"],rules)
@@ -120,7 +134,7 @@ def run():
     # CSV for filtering/review
     csv_path=OUT/"generated-hypotheses.csv"
     with csv_path.open("w",encoding="utf-8-sig",newline="") as f:
-        fields=["query","entity_type","entity_id","entity_name","family","pain_node","intent_guess","landing_hint","source","word_count"]
+        fields=["query","entity_type","entity_id","entity_name","family","pain_node","pain_type","intent_guess","landing_hint","source","word_count"]
         w=csv.DictWriter(f,fieldnames=fields)
         w.writeheader(); w.writerows(rows)
 
