@@ -118,7 +118,8 @@
     "Post-30.09 findings were not consistently persisted. recovered-current-2026-10-01.json closes the known gap from active context.",
     "Chat ID collision detected: IND-ENERGY-001 had been reused for SAKV and bird-protection. Registry preserves IND-ENERGY-001 for SAKV and migrates bird-protection to IND-BIODIV-002 with migration metadata.",
     "Never invent missing source URLs. Records marked source re-link/revalidation required must be revalidated before publication/automation.",
-    "2026-10-05: recovered six radar records previously left WRITE_PENDING; GitHub connector permissions verified admin/push=true; dedicated file write and read-back succeeded."
+    "2026-10-05: recovered six radar records previously left WRITE_PENDING; GitHub connector permissions verified admin/push=true; dedicated file write and read-back succeeded.",
+    "2026-10-05: ROP Core v1 materialized at engine/rules/rop/rop-core.v1.json with regression suite and read-back; prior ENG-ROP-GISMT-002 backlog absorbed into ENG-ROP-ROLE-001."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
@@ -175,7 +176,7 @@
     ]
   },
   "engine": {
-    "status": "MVP_CORE_V1",
+    "status": "MVP_CORE_V1_ROP_CORE_MATERIALIZED",
     "created_on": "2026-10-04",
     "root": "engine/",
     "architecture": "RADAR_REGISTRY -> ENGINE_RULES -> CLIENT_INTAKE -> INTERNAL_DIAGNOSTIC -> ACTIONS -> SERVICE_SCOPE -> QUOTE_INPUTS",
@@ -203,29 +204,22 @@
       ],
       "failure_policy": "If dedicated write fails, persist the complete recoverable rule payload/status in an existing indexed GitHub control file before continuing; retry dedicated materialization later.",
       "source_preservation": "Radar remains immutable evidence memory; Engine is derivative logic; Expert packages are generated from Engine."
-    }
+    },
+    "expert_packages": "engine/expert-packages.v1.json",
+    "modules": {
+      "universal": "engine/rules/universal/universal-gates.v1.json",
+      "industry_seed": "engine/rules/industry/carwash.v1.json",
+      "rop": "engine/rules/rop/rop-core.v1.json",
+      "rop_regression": "engine/tests/rop-core-regression.v1.json"
+    },
+    "delivery_strategy": "ONE_CANONICAL_ENGINE -> package-specific retrieval for ECO_EXPERT and ROP_EXPERT; no duplicated expert-owned rule bases.",
+    "next_build": [
+      "expand CORE universal rules from conversion backlog",
+      "convert mature industry clusters incrementally",
+      "build explicit QUOTE rule layer",
+      "run end-to-end carwash and ROP regression cases",
+      "connect expert interfaces to canonical Engine retrieval"
+    ]
   },
-  "pending_engine_rules": [
-    {
-      "rule_id": "ENG-ROP-GISMT-002",
-      "version": "1.0.0",
-      "status": "PERSISTED_PENDING_DEDICATED_RULE_FILE",
-      "date": "2026-10-04",
-      "radar_ids": [
-        "ROP-002",
-        "ROP-003",
-        "ROP-011"
-      ],
-      "topic": "GIS MT / Chestny ZNAK as ROP interagency control signal",
-      "core_chain": "GIS_MT_ROLE -> FACTUAL_PRODUCER_OR_IMPORTER -> CONTRACT_MANUFACTURING -> PP_2414_GOODS_AND_PACKAGING -> MASS -> INTERAGENCY_RECONCILIATION -> OBLIGATION_OR_CONTRADICTION -> ACTION",
-      "guardrail": "GIS MT producer status is a control signal, not by itself proof of ecofee debt; establish factual and legal producer/importer status.",
-      "red_flags": [
-        "GIS MT says producer while company says seller/brand owner",
-        "actual manufacturer differs from ROP reporting entity",
-        "ROP mass differs materially from interagency data",
-        "regulator notice exists but factual role is unresolved"
-      ],
-      "next_action": "Materialize as dedicated engine/rules/rop rule and add regression tests."
-    }
-  ]
+  "pending_engine_rules": []
 }
