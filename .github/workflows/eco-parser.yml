@@ -2,6 +2,10 @@ name: MIRLEX ECO PARSER
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "eco-parser/**"
+      - "research/registry/**"
   schedule:
     - cron: "17 3 * * 1,4"
 
