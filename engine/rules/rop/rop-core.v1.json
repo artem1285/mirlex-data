@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.0",
+  "module": "ROP_CORE",
+  "version": "1.0.0",
+  "status": "ACTIVE_INTERNAL_WITH_LEGAL_GATES",
+  "generated_on": "2026-10-05",
+  "purpose": "Shared ROP diagnostic core for MIRLEX ROP Expert. Converts preserved radar patterns into questions/checks without treating unrevalidated historic records as current legal conclusions.",
+  "execution_policy": {
+    "role": "FACT_FINDING_AND_ROUTING",
+    "legal_gate": "Any rule whose provenance status is PRESERVED_REVALIDATION_REQUIRED may activate questions, evidence requests, contradictions and scope, but may not issue an automated legal debt/violation conclusion until current primary-source revalidation.",
+    "output_states": [
+      "CONFIRMED_FACT",
+      "NEEDS_DATA",
+      "CONTRADICTION",
+      "RED_FLAG",
+      "LEGAL_REVALIDATION_REQUIRED",
+      "NOT_APPLICABLE"
+    ],
+    "external_language": "Calm client-facing wording; internal RED_FLAG remains hidden."
+  },
+  "rules": [
+    {
+      "rule_id": "ENG-ROP-ROLE-001",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "radar_ids": [
+        "ROP-001",
+        "ROP-002",
+        "ROP-003",
+        "ROP-008"
+      ],
+      "trigger": "ROP diagnostic starts or company role is unclear",
+      "chain": "COMPANY → FACTUAL_ROLE → MANUFACTURER/IMPORTER/CONTRACT_MANUFACTURING/SELLER → EAEU_OR_NON_EAEU → GOODS/PACKAGING → RELEASE/IMPORT_FACT → CONTROL_DATA_RECONCILIATION",
+      "ask": [
+        "company_role_claimed",
+        "manufactures_goods",
+        "imports_goods",
+        "import_origin_eaeu_or_non_eaeu",
+        "contract_manufacturing_exists",
+        "brand_owner",
+        "actual_manufacturer",
+        "goods_and_packaging",
+        "reporting_period"
+      ],
+      "evidence_requests": [
+        "production_documents",
+        "contracts_for_contract_manufacturing",
+        "customs_or_shipping_documents_where_applicable",
+        "available_GIS_MT_or_marking_data",
+        "prior_ROP_forms_and_notices"
+      ],
+      "checks": [
+        "establish factual role before obligation route",
+        "compare claimed role with production/import evidence",
+        "flag mismatch between factual manufacturer and reporting entity",
+        "use interagency/GIS MT signals as reconciliation evidence, not standalone proof of debt"
+      ],
+      "red_flags": [
+        "claimed seller/brand owner but evidence indicates factual production/import",
+        "actual manufacturer differs from ROP reporting entity",
+        "import exists but origin/customs route unresolved",
+        "regulator notice exists while factual role remains unresolved"
+      ],
+      "services": [
+        "ROP_ROLE_DIAGNOSTIC",
+        "ROP_DATA_RECONCILIATION"
+      ],
+      "quote_inputs": [
+        "number_of_legal_entities",
+        "number_of_roles",
+        "number_of_contract_manufacturers",
+        "number_of_import_flows",
+        "periods_to_reconcile"
+      ],
+      "legal_mode": "REVALIDATE_BEFORE_AUTOMATED_LEGAL_CONCLUSION"
+    },
+    {
+      "rule_id": "ENG-ROP-SCOPE-MASS-001",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "radar_ids": [
+        "ROP-001",
+        "ROP-008",
+        "ROP-021",
+        "ROP-023"
+      ],
+      "trigger": "manufacturer/importer route remains possible after role check",
+      "chain": "ROLE → GOODS/PACKAGING → CODES → PP_2414_SCOPE → MASS → PERIOD → REPORTING_CHAIN → ECOFEE_INPUT",
+      "ask": [
+        "goods_list",
+        "packaging_list",
+        "okpd2_tnved_codes",
+        "mass_by_period",
+        "mass_source_documents",
+        "eaeu_status",
+        "existing_mass_report_or_declaration"
+      ],
+      "evidence_requests": [
+        "goods_register",
+        "packaging_register",
+        "customs_shipping_documents",
+        "production_release_data",
+        "current_ROP_forms"
+      ],
+      "checks": [
+        "separate goods from packaging",
+        "preserve code-level provenance",
+        "reconcile mass across source documents and reporting forms",
+        "do not assume transition dates without current-source revalidation"
+      ],
+      "red_flags": [
+        "mass cannot be reconciled",
+        "goods and packaging mixed without allocation",
+        "codes missing or ambiguous",
+        "different forms use incompatible mass"
+      ],
+      "services": [
+        "ROP_SCOPE_CLASSIFICATION",
+        "ROP_MASS_RECONCILIATION"
+      ],
+      "quote_inputs": [
+        "number_of_sku",
+        "number_of_codes",
+        "number_of_periods",
+        "source_file_count",
+        "manual_classification_needed"
+      ],
+      "legal_mode": "CURRENT_DATASET_AND_FORM_VERSION_REQUIRED"
+    },
+    {
+      "rule_id": "ENG-ROP-RECYCLER-001",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "radar_ids": [
+        "ROP-004",
+        "ROP-005",
+        "ROP-009",
+        "ROP-010",
+        "ROP-014",
+        "ROP-015",
+        "ROP-016",
+        "ROP-018",
+        "ROP-019",
+        "ROP-024",
+        "ROP-025",
+        "ROP-026"
+      ],
+      "trigger": "client claims fulfillment through recycler or own recycling",
+      "chain": "OBLIGATION_VOLUME → RECYCLER → REGISTER_STATUS_BY_PERIOD → OPERATION/GROUP → CAPACITY → WASTE_INPUT → TECHNOLOGY → PRODUCT/SECONDARY_OUTPUT → ACT → RECYCLER_REPORTING → ELIGIBLE_CONFIRMED_VOLUME",
+      "ask": [
+        "recycler_name",
+        "recycler_registry_status",
+        "recycling_period",
+        "waste_or_group",
+        "operation",
+        "claimed_volume",
+        "act_available",
+        "final_recycler",
+        "technology_and_output_if_known"
+      ],
+      "evidence_requests": [
+        "recycler_contract",
+        "recycling_act",
+        "registry_extract_for_relevant_period",
+        "acceptance_transfer_documents",
+        "technology_or_output_evidence_if_disputed",
+        "recycler_reporting_confirmation_if_available"
+      ],
+      "checks": [
+        "contract alone does not close verification",
+        "act alone does not close factual recycling check",
+        "check register status for relevant period",
+        "check operation/group correspondence",
+        "compare claimed volume with confirmed capacity",
+        "trace final recycler where intermediary chain exists",
+        "cross-check act with recycler reporting where available",
+        "version waste-to-product mapping by effective period"
+      ],
+      "red_flags": [
+        "recycler not traceable for relevant period",
+        "operation/group mismatch",
+        "claimed volume exceeds confirmed capacity",
+        "act exists but factual recycling/output is not traceable",
+        "intermediary exists but final recycler unresolved"
+      ],
+      "services": [
+        "ROP_RECYCLER_DUE_DILIGENCE",
+        "ROP_RECYCLING_EVIDENCE_AUDIT"
+      ],
+      "quote_inputs": [
+        "recycler_count",
+        "act_count",
+        "period_count",
+        "waste_group_count",
+        "intermediary_chain_depth",
+        "need_for_capacity_or_technology_review"
+      ],
+      "legal_mode": "REVALIDATE_EXACT_CURRENT_EFFECTS_BEFORE_DEBT_OR_INVALIDITY_CONCLUSION"
+    },
+    {
+      "rule_id": "ENG-ROP-FORMS-001",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "radar_ids": [
+        "ROP-021"
+      ],
+      "trigger": "ROP reporting/calculation is being prepared or audited",
+      "chain": "SOURCE_MASS → MASS_REPORT/DECLARATION → RECYCLING_FULFILLMENT → ECOFEE_CALCULATION → CROSS_FORM_RECONCILIATION",
+      "ask": [
+        "which_forms_prepared",
+        "reporting_period",
+        "source_mass",
+        "fulfilled_recycling_volume",
+        "ecofee_calculation_exists"
+      ],
+      "evidence_requests": [
+        "current_forms",
+        "source_mass_files",
+        "recycling_evidence",
+        "ecofee_calculation"
+      ],
+      "checks": [
+        "treat forms as dependent calculation chain",
+        "reconcile shared quantities between forms",
+        "trace every calculated value to source mass/evidence"
+      ],
+      "red_flags": [
+        "same quantity differs between dependent forms",
+        "calculation has no traceable source",
+        "recycling volume exceeds reconciled eligible volume"
+      ],
+      "services": [
+        "ROP_REPORTING_PREPARATION",
+        "ROP_REPORTING_AUDIT"
+      ],
+      "quote_inputs": [
+        "form_count",
+        "period_count",
+        "source_file_count",
+        "correction_needed"
+      ],
+      "legal_mode": "CURRENT_FORM_VERSION_REQUIRED"
+    },
+    {
+      "rule_id": "ENG-ROP-COEFFICIENT-001",
+      "version": "1.0.0",
+      "status": "LEGAL_REVALIDATION_REQUIRED",
+      "radar_ids": [
+        "ROP-022"
+      ],
+      "trigger": "producer claims reduction coefficient/secondary raw material benefit",
+      "chain": "PRODUCT → SECONDARY_RAW_MATERIAL → ORIGIN/ELIGIBILITY → TECHNOLOGICAL_CONFIRMATION → FACTUAL_PRODUCTION → MASS → ANTI_DOUBLE_COUNT → COEFFICIENT_INPUT",
+      "ask": [
+        "coefficient_claimed",
+        "secondary_raw_material_used",
+        "mass",
+        "origin",
+        "product",
+        "same_mass_used_for_other_ROP_fulfillment"
+      ],
+      "evidence_requests": [
+        "raw_material_documents",
+        "production_documents",
+        "required_confirmation_documents",
+        "calculation"
+      ],
+      "checks": [
+        "detect possible double counting",
+        "separate factual production evidence from declaration",
+        "route exact eligibility to current-law verification"
+      ],
+      "red_flags": [
+        "same mass appears in multiple benefit/fulfillment routes",
+        "production fact not supported",
+        "confirmation route missing"
+      ],
+      "services": [
+        "ROP_COEFFICIENT_DIAGNOSTIC"
+      ],
+      "quote_inputs": [
+        "product_count",
+        "secondary_material_types",
+        "periods",
+        "document_count"
+      ],
+      "legal_mode": "MANDATORY_PRIMARY_SOURCE_REVALIDATION_BEFORE_APPLICATION"
+    }
+  ],
+  "package_mapping": {
+    "ROP_EXPERT": [
+      "ENG-ROP-ROLE-001",
+      "ENG-ROP-SCOPE-MASS-001",
+      "ENG-ROP-RECYCLER-001",
+      "ENG-ROP-FORMS-001",
+      "ENG-ROP-COEFFICIENT-001"
+    ],
+    "ECO_EXPERT": []
+  }
+}
