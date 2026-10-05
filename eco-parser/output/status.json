@@ -1,7 +1,11 @@
 {
   "version": "1.0.0",
-  "state": "BOOTSTRAPPED",
+  "state": "WAITING_FOR_WORDSTAT_CREDENTIALS",
   "live_wordstat": false,
   "live_direct": false,
-  "note": "Parser structure created. Live demand requires Yandex Search API Wordstat credentials."
+  "required_secrets": [
+    "YANDEX_SEARCH_API_KEY",
+    "YANDEX_FOLDER_ID"
+  ],
+  "jobs_total": 5101
 }
