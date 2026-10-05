@@ -52,3 +52,23 @@ GitHub Secrets:
 - `output/wordstat-state.json` — курсор пакетного обхода
 
 Финальный A/B/C/D рейтинг не генерируется, пока не заполнены остальные доказательные модули.
+
+
+## Бесплатный режим рекламы
+
+До подключения API парсер работает как semantic combinator:
+
+- берет отрасли, услуги и pain-nodes из radar/mind-map;
+- генерирует редкие и обычные человеческие формулировки;
+- сохраняет их как гипотезы, а не как подтвержденный спрос;
+- готовит пакеты для ручной проверки в Wordstat / Direct Commander.
+
+Файлы:
+- `output/generated-hypotheses.json`
+- `output/generated-hypotheses.csv`
+- `output/wordstat-free-batches.txt`
+- `output/combinator-status.json`
+
+Принцип: broad generation -> deduplication -> Wordstat validation -> ad test -> real Direct queries -> leads -> contracts.
+
+Широкие и редкие запросы не отбрасываются заранее только потому, что выглядят странно или имеют низкую предполагаемую частоту.
