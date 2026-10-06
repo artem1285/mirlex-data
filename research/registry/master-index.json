@@ -96,6 +96,11 @@
       "path": "research/registry/radar-2026-10-05-run-17.json",
       "cards": 1,
       "status": "READ_BACK_VERIFIED_ADDITIONAL_EVIDENCE_SOURCE_RELINK_INDEXED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-06-marking-rop-01.json",
+      "cards": 2,
+      "status": "READ_BACK_VERIFIED_ADDITIONAL_EVIDENCE_INDEXED"
     }
   ],
   "permanent_id_policy": {
@@ -136,14 +141,16 @@
     "2026-10-05: recovered six radar records previously left WRITE_PENDING; GitHub connector permissions verified admin/push=true; dedicated file write and read-back succeeded.",
     "2026-10-05: ROP Core v1 materialized at engine/rules/rop/rop-core.v1.json with regression suite and read-back; prior ENG-ROP-GISMT-002 backlog absorbed into ENG-ROP-ROLE-001.",
     "2026-10-06: closed pending indexing for IND-CONSTRUCTION-003 (new permanent ID), IND-SNOW-001 (additional evidence/NPA update), and IND-AQUA-001 (additional evidence/source relink); all three dedicated registry files had prior successful read-back.",
-    "CONTINUITY RULE: MIRLEX Radar must not be stopped because an individual persistence/index operation fails. Failed item remains WRITE_PENDING/INDEX_PENDING and is retried; monitoring continues. Radar may be disabled/stopped only on explicit user command."
+    "CONTINUITY RULE: MIRLEX Radar must not be stopped because an individual persistence/index operation fails. Failed item remains WRITE_PENDING/INDEX_PENDING and is retried; monitoring continues. Radar may be disabled/stopped only on explicit user command.",
+    "2026-10-06: ROP-002 expanded with permanent MARKING↔ROP cross-system reconciliation layer; ROP-003 strengthened for contract manufacturing. Dedicated registry write/read-back verified."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
     "SANITARY_HYGIENE"
   ],
   "radar_rules": [
-    "For every industry, independently identify substances/mixtures actually used or generated and test chemical, physical and biological factors against current SanPiN/SP requirements and Rospotrebnadzor checklists; do not wait for industry-specific sources to mention them."
+    "For every industry, independently identify substances/mixtures actually used or generated and test chemical, physical and biological factors against current SanPiN/SP requirements and Rospotrebnadzor checklists; do not wait for industry-specific sources to mention them.",
+    "MANDATORY MARKING↔ROP LAYER: for every goods/product industry, check whether mandatory marking applies for the relevant period; if yes, reconcile GIS MT roles/product/introduction data with factual manufacturer/importer, PP RF No.2414 ROP scope, obligated entity and ROP mass/reporting. Marking does not itself create ROP obligation; it is an independent control/evidence source."
   ],
   "radar_source_contours": [
     "Rospotrebnadzor: sanitary rules, complaints, enforcement, checklists, laboratory measurements",
