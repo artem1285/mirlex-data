@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-05",
+  "updated_on": "2026-10-06",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -81,6 +81,21 @@
       "path": "research/registry/radar-2026-10-05-recovery.json",
       "cards": 6,
       "status": "READ_BACK_VERIFIED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-05-run-12.json",
+      "cards": 1,
+      "status": "READ_BACK_VERIFIED_INDEXED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-05-run-16.json",
+      "cards": 1,
+      "status": "READ_BACK_VERIFIED_ADDITIONAL_EVIDENCE_INDEXED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-05-run-17.json",
+      "cards": 1,
+      "status": "READ_BACK_VERIFIED_ADDITIONAL_EVIDENCE_SOURCE_RELINK_INDEXED"
     }
   ],
   "permanent_id_policy": {
@@ -105,7 +120,7 @@
   },
   "current_counts": {
     "rop_ids": 26,
-    "known_industry_ids": 61,
+    "known_industry_ids": 62,
     "universal_ids": 4
   },
   "next_priority": [
@@ -119,7 +134,9 @@
     "Chat ID collision detected: IND-ENERGY-001 had been reused for SAKV and bird-protection. Registry preserves IND-ENERGY-001 for SAKV and migrates bird-protection to IND-BIODIV-002 with migration metadata.",
     "Never invent missing source URLs. Records marked source re-link/revalidation required must be revalidated before publication/automation.",
     "2026-10-05: recovered six radar records previously left WRITE_PENDING; GitHub connector permissions verified admin/push=true; dedicated file write and read-back succeeded.",
-    "2026-10-05: ROP Core v1 materialized at engine/rules/rop/rop-core.v1.json with regression suite and read-back; prior ENG-ROP-GISMT-002 backlog absorbed into ENG-ROP-ROLE-001."
+    "2026-10-05: ROP Core v1 materialized at engine/rules/rop/rop-core.v1.json with regression suite and read-back; prior ENG-ROP-GISMT-002 backlog absorbed into ENG-ROP-ROLE-001.",
+    "2026-10-06: closed pending indexing for IND-CONSTRUCTION-003 (new permanent ID), IND-SNOW-001 (additional evidence/NPA update), and IND-AQUA-001 (additional evidence/source relink); all three dedicated registry files had prior successful read-back.",
+    "CONTINUITY RULE: MIRLEX Radar must not be stopped because an individual persistence/index operation fails. Failed item remains WRITE_PENDING/INDEX_PENDING and is retried; monitoring continues. Radar may be disabled/stopped only on explicit user command."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
@@ -173,7 +190,9 @@
       "new technology/process risk",
       "new RED FLAG",
       "material evidence changing a decision tree"
-    ]
+    ],
+    "stop_policy": "NEVER_STOP_WITHOUT_EXPLICIT_USER_COMMAND",
+    "persistence_failure_policy": "KEEP_ITEM_PENDING_AND_RETRY; DO_NOT_STOP_RADAR"
   },
   "engine": {
     "status": "MVP_CORE_V1_ROP_CORE_MATERIALIZED",
