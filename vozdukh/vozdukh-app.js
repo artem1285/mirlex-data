@@ -16,6 +16,7 @@
 
 (function(){
   const BASE='https://artem1285.github.io/mirlex-data/vozdukh/';
+  const METRIKA_COUNTER=113440268;
   const root=document.getElementById('mirlex-vozdukh-root');
   if(!root) return;
 
@@ -27,12 +28,20 @@
     factIndex:0,
     docRoute:[],
     docIndex:0,
-    startedAt:null
+    startedAt:null,
+    metrics:{start:false,result:false}
   };
 
   let cfg=null,processes=null,rules=null,docs=null;
 
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+
+  function reachGoalOnce(key,target){
+    if(state.metrics[key]) return;
+    if(typeof window.ym!=='function') return;
+    window.ym(METRIKA_COUNTER,'reachGoal',target);
+    state.metrics[key]=true;
+  }
 
   async function loadData(){
     if(cfg) return;
@@ -141,7 +150,11 @@
       '<p>Чтобы точно понять деятельность, зададим несколько вопросов о площадке, оборудовании и производственных процессах.</p>'+
       '<p class="mvx-muted"><strong>Около 5 минут.</strong> Экологические термины знать не нужно — просто отмечайте, как всё устроено у вас.</p>'+
       '<div class="mvx-actions"><span></span><button class="mvx-btn mvx-btn-primary" id="mvx-start">Начать диагностику</button></div>');
-    root.querySelector('#mvx-start').onclick=()=>{state.startedAt=Date.now();renderProcesses();};
+    root.querySelector('#mvx-start').onclick=()=>{
+      state.startedAt=Date.now();
+      reachGoalOnce('start','vozdukh_diagnostic_start');
+      renderProcesses();
+    };
   }
 
   function renderProcesses(){
@@ -476,6 +489,7 @@
 
   function renderResult(){
     state.phase='result';
+    reachGoalOnce('result','vozdukh_diagnostic_result');
     const s=summaryFacts();
     const docsA=Array.isArray(state.answers.documents_present)?state.answers.documents_present:[];
     const flags=diagnosticFlags();
