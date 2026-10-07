@@ -9,6 +9,7 @@ function currentScriptBase(){
   return 'https://artem1285.github.io/mirlex-data/voda/';
 }
 const BASE=currentScriptBase();
+const METRIKA_COUNTER=113440268;
 
 const state={
   selectedGroups:[],
@@ -17,11 +18,19 @@ const state={
   index:0,
   currentSection:'',
   startedAt:null,
+  metrics:{start:false,result:false},
   cfg:null, processes:null, rules:null, docs:null
 };
 
 const $=(sel,ctx=document)=>ctx.querySelector(sel);
 const esc=(s)=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+
+function reachGoalOnce(key,target){
+  if(state.metrics[key]) return;
+  if(typeof window.ym!=='function') return;
+  window.ym(METRIKA_COUNTER,'reachGoal',target);
+  state.metrics[key]=true;
+}
 
 function arr(v){ return Array.isArray(v)?v:(v===undefined||v===null?[]:[v]); }
 function includesAnswer(id, value){ return arr(state.answers[id]).includes(value); }
@@ -219,6 +228,7 @@ function renderIntro(){
   `);
   $('#mv-start',root()).onclick=()=>{
     state.startedAt=Date.now();
+    reachGoalOnce('start','voda_diagnostic_start');
     state.phase='groups';
     renderGroups();
   };
@@ -359,6 +369,7 @@ function docsSelected(){
 
 function renderResult(){
   state.phase='result';
+  reachGoalOnce('result','voda_diagnostic_result');
   const checks=diagnosticChecks();
   const groups=selectedGroupNames();
   const docs=docsSelected();
