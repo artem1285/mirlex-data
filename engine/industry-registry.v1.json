@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "MIRLEX-INDUSTRY-REGISTRY",
+  "updated_on": "2026-10-08",
+  "purpose": "Index of industry rule packs physically present in GitHub, not an inventory of completed MIRLEX research.",
+  "source_of_truth": "artem1285/mirlex-data",
+  "entries": [
+    {
+      "slug": "carwash",
+      "file": "engine/rules/industry/carwash.v1.json",
+      "status": "ACTIVE_INTERNAL",
+      "retrieval": "MCP_EXPOSED"
+    },
+    {
+      "slug": "construction",
+      "file": "engine/rules/industry/construction-waste.v1.json",
+      "status": "DRAFT_REQUIRES_NPA_VERIFICATION",
+      "retrieval": "GITHUB_ONLY"
+    }
+  ],
+  "research_backlog": {
+    "claimed_researched_industries": 58,
+    "verified_source_catalog": false,
+    "import_status": "NOT_IMPORTED",
+    "instruction": "Do not equate absence of JSON with absence of research. Import from original 58-industry study with provenance and stable IDs; do not invent missing industries."
+  },
+  "delivery_gap": "Current deployed Cloudflare Worker has a hardcoded carwash file in get_eco_expert_package and no generic industry retrieval tool. Updating this registry alone does not expose construction to expert via MCP.",
+  "release_gate": [
+    "source-backed finding",
+    "legal verification",
+    "regression tests",
+    "worker dynamic retrieval",
+    "end-to-end tool call"
+  ]
+}
