@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "cards": [
+    {
+      "id": "IND-LIVESTOCK-001",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "primary_source": "https://epp.genproc.gov.ru/ru/abpp/mass-media/news/main/e8622256/",
+      "status": "REVIEW_REQUIRED"
+    }
+  ]
+}
