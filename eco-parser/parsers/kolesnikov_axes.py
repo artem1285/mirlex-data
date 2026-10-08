@@ -17,12 +17,10 @@ INTENT = {
 TEMPLATES = {
     "waste": ["куда сдать {what}", "вывоз {what}", "документы на {what}",
               "утилизация {what}", "сколько стоит вывоз {what}"],
-    "water": ["куда отводить {what}", "очистка {what}", "документы на {what}",
-              "что делать с {what}"],
+    "water": ["{what}", "куда отводить {what}", "документы на {what}"],
     "air": ["выбросы от {what}", "инвентаризация выбросов {what}",
-            "пыль от {what}", "как снизить выбросы {what}"],
-    "general": ["что делать с {what}", "как оформить {what}",
-                "документы на {what}", "стоимость вывоза {what}"],
+            "{what} предприятие"],
+    "general": ["{what}", "документы на {what}", "утилизация {what}"],
 }
 
 # Low-risk semantic routing, not classification of regulated wastes.
