@@ -1,31 +1,18 @@
-"""Regression checks for the additive industry query expansion."""
 import unittest
-from parsers.kolesnikov_axes import build, axis_kind
+from parsers.kolesnikov_axes import build_from_engine
 
-class IndustryAxesTests(unittest.TestCase):
-    def test_automoyka_has_stocks_and_nonwater_pains(self):
-        result = list(build("Автомойки", ["сточные воды", "шлам автомойки", "нефтеловушка"]))
-        queries = [x[0] for x in result]
-        self.assertIn("сточные воды автомойки", queries)
-        self.assertIn("вывоз шлам автомойки", queries)
-        self.assertIn("нефтеловушка автомойки", queries)
-
-    def test_distinct_de_dup(self):
-        q = list(build("СТО", ["шины", "шины", "отходы масел"]))
-        self.assertEqual(len({r[0].lower() for r in q}), len(q))
-
-    def test_upper_bound(self):
-        q = list(build("СТО", ["масло"] * 40))
-        self.assertLessEqual(len(q), 7)
-
-    def test_axes_routing(self):
-        self.assertEqual(axis_kind("ливневые воды"), "water")
-        self.assertEqual(axis_kind("пыль"), "air")
-        self.assertEqual(axis_kind("аккумуляторы"), "waste")
-
+class CoreEvidenceTests(unittest.TestCase):
+    def test_carwash(self):
+        rows = list(build_from_engine("IND-001"))
+        self.assertTrue(any(x[2] == "ENG-CARWASH-WW-TANK-001" for x in rows))
+    def test_construction(self):
+        rows = list(build_from_engine("IND-018"))
+        self.assertTrue(any(x[2] == "IND-CONSTRUCTION-002" for x in rows))
+    def test_no_unsupported_sector(self):
+        self.assertEqual(list(build_from_engine("IND-057")), [])
     def test_no_rop(self):
-        q = list(build("Автомойки", ["сточные воды", "шлам"]))
-        self.assertFalse(any("РОП" in s[0] for s in q))
+        for industry in ("IND-001", "IND-018", "IND-057"):
+            self.assertFalse(any("роп" in x[0].lower() for x in build_from_engine(industry)))
 
 if __name__ == "__main__":
     unittest.main()
