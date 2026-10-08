@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "module": "CONSTRUCTION_WASTE",
+  "version": "0.1.0",
+  "status": "DRAFT_REQUIRES_NPA_VERIFICATION",
+  "industry": [
+    "construction",
+    "demolition",
+    "earthworks"
+  ],
+  "purpose": "Evidence-first cross-contour diagnostic rules. Not legal conclusions.",
+  "rules": [
+    {
+      "id": "IND-CONSTR-001",
+      "contours": [
+        "WASTE",
+        "SOIL",
+        "LAND"
+      ],
+      "trigger": "Construction debris or excavated material is used to fill, level or improve a site.",
+      "physical_chain": [
+        "origin and composition",
+        "actual waste/byproduct status",
+        "transfer",
+        "placement site",
+        "ground contact",
+        "runoff"
+      ],
+      "questions": [
+        "What material and from which operation?",
+        "Who owns or uses the receiving plot?",
+        "What is the actual destination and purpose?",
+        "Is the material documented and physically traceable?"
+      ],
+      "red_flag": "Calling debris useful fill without evidence of lawful material status and actual handling.",
+      "legal_basis_status": "VERIFY_CURRENT_NPA",
+      "source_provenance": "MIRLEX radar established finding IND-CONSTR-001",
+      "result": "NEEDS_FACTS_NOT_AUTOMATIC_VIOLATION"
+    },
+    {
+      "id": "IND-EARTH-001",
+      "contours": [
+        "SOIL",
+        "LAND"
+      ],
+      "trigger": "Removal or relocation of fertile soil layer.",
+      "questions": [
+        "Was fertile soil removed?",
+        "Where was it temporarily stored?",
+        "Where and how was it reused?",
+        "Are there project/site records and physical traces?"
+      ],
+      "red_flag": "Earthworks documents omit separate accounting for fertile soil layer.",
+      "legal_basis_status": "VERIFY_CURRENT_NPA",
+      "source_provenance": "MIRLEX radar established finding IND-EARTH-001",
+      "result": "NEEDS_FACTS_NOT_AUTOMATIC_VIOLATION"
+    },
+    {
+      "id": "IND-DECOM-001",
+      "contours": [
+        "WASTE",
+        "WATER",
+        "SOIL",
+        "ACCIDENT"
+      ],
+      "trigger": "Equipment, structures or vessels are dismantled, cut or demolished.",
+      "physical_chain": [
+        "previous use",
+        "residual fluids/chemicals",
+        "draining/cleaning",
+        "dismantling",
+        "spill and runoff route",
+        "waste destination"
+      ],
+      "questions": [
+        "What remains inside before dismantling?",
+        "Is draining and cleaning documented?",
+        "Where could releases reach soil, stormwater or water?",
+        "Who controls the site and contractor?"
+      ],
+      "red_flag": "Assuming an idle asset contains no environmental hazards.",
+      "legal_basis_status": "VERIFY_CURRENT_NPA",
+      "source_provenance": "MIRLEX radar established finding IND-DECOM-001",
+      "result": "NEEDS_FACTS_NOT_AUTOMATIC_VIOLATION"
+    }
+  ],
+  "notes": "Existing permanent radar IDs reused; no new radar IDs created. Source documents and current NPA must be checked before ACTIVE."
+}
