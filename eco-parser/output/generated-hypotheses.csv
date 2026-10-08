@@ -24,15 +24,15 @@
 документы на пары бензина,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,пары бензина,air,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на разлив топлива,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,разлив топлива,incident,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на сорбент,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,сорбент,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить пары бензина,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,пары бензина,air,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать нефтешлам,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,нефтешлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать сорбент,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,сорбент,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-очистка нефтесодержащие стоки,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,нефтесодержащие стоки,water,mixed,Отраслевая карточка,kolesnikov_axes,3
+нефтесодержащие стоки,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,нефтесодержащие стоки,water,mixed,Отраслевая карточка,kolesnikov_axes,2
+пары бензина,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,пары бензина,air,mixed,Отраслевая карточка,kolesnikov_axes,2
+разлив топлива,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,разлив топлива,incident,mixed,Отраслевая карточка,kolesnikov_axes,2
 сколько стоит вывоз нефтешлам,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,нефтешлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз сорбент,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,сорбент,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза пары бензина,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,пары бензина,air,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза разлив топлива,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,разлив топлива,incident,commercial,Отраслевая карточка,kolesnikov_axes,4
-что делать с разлив топлива,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,разлив топлива,incident,diagnostic,Отраслевая карточка,kolesnikov_axes,5
+утилизация пары бензина,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,пары бензина,air,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация разлив топлива,industry,IND-004,АЗС,KOLESNIKOV_WHAT_ACTION,разлив топлива,incident,commercial,Отраслевая карточка,kolesnikov_axes,3
 анализ нефтесодержащие стоки,industry,IND-004,АЗС,PAIN_ACTION,нефтесодержащие стоки,water,mixed,Отраслевая карточка,pain_action,3
 вывоз нефтешлам,industry,IND-004,АЗС,PAIN_ACTION,нефтешлам,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз сорбент,industry,IND-004,АЗС,PAIN_ACTION,сорбент,waste,commercial,Отраслевая карточка,pain_action,2
@@ -199,18 +199,17 @@
 документы на песок из отстойника,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,песок из отстойника,general,mixed,Отраслевая карточка,kolesnikov_axes,5
 документы на сточные воды,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на шлам автомойки,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,шлам автомойки,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
-как оформить моющие средства,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,моющие средства,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить нефтеловушка,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,нефтеловушка,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить песок из отстойника,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,песок из отстойника,general,commercial,Отраслевая карточка,kolesnikov_axes,5
 куда отводить осадок очистных,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,diagnostic,Вода,kolesnikov_axes,4
 куда сдать шлам автомойки,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,шлам автомойки,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка осадок очистных,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,3
-очистка сточные воды,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
+моющие средства,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,моющие средства,general,mixed,Отраслевая карточка,kolesnikov_axes,2
+нефтеловушка,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,нефтеловушка,equipment,mixed,Отраслевая карточка,kolesnikov_axes,1
+осадок очистных,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,2
+песок из отстойника,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,песок из отстойника,general,mixed,Отраслевая карточка,kolesnikov_axes,3
 сколько стоит вывоз шлам автомойки,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,шлам автомойки,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза моющие средства,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,моющие средства,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза нефтеловушка,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,нефтеловушка,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза песок из отстойника,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,песок из отстойника,general,commercial,Отраслевая карточка,kolesnikov_axes,5
-что делать с нефтеловушка,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,нефтеловушка,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+утилизация моющие средства,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,моющие средства,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация нефтеловушка,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,нефтеловушка,equipment,commercial,Отраслевая карточка,kolesnikov_axes,2
+утилизация песок из отстойника,industry,IND-001,Автомойки,KOLESNIKOV_WHAT_ACTION,песок из отстойника,general,commercial,Отраслевая карточка,kolesnikov_axes,4
 анализ сточные воды,industry,IND-001,Автомойки,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз осадок очистных,industry,IND-001,Автомойки,PAIN_ACTION,осадок очистных,waste,commercial,Вода,pain_action,3
 вывоз шлам автомойки,industry,IND-001,Автомойки,PAIN_ACTION,шлам автомойки,waste,commercial,Отраслевая карточка,pain_action,3
@@ -384,6 +383,8 @@
 что нужно по экологии автосервисы / сто / шиномонтаж,industry,IND-002,Автосервисы / СТО / шиномонтаж,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,9
 что сдавать по экологии автосервисы / сто / шиномонтаж,industry,IND-002,Автосервисы / СТО / шиномонтаж,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,9
 штраф экология автосервисы / сто / шиномонтаж,industry,IND-002,Автосервисы / СТО / шиномонтаж,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,7
+СОЖ,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+антифриз,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,антифриз,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 документы на СОЖ,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на аккумуляторы,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,аккумуляторы,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на антифриз,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,антифриз,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
@@ -392,23 +393,18 @@
 документы на отработанное масло,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,отработанное масло,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на покрасочная камера,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,покрасочная камера,equipment,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на шины,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,шины,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить СОЖ,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить антифриз,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,антифриз,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить покрасочная камера,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,покрасочная камера,equipment,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать аккумуляторы,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,аккумуляторы,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать ветошь,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,ветошь,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать масляные фильтры,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,масляные фильтры,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать отработанное масло,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,отработанное масло,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать шины,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,шины,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+покрасочная камера,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,покрасочная камера,equipment,mixed,Отраслевая карточка,kolesnikov_axes,2
 сколько стоит вывоз аккумуляторы,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,аккумуляторы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз ветошь,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,ветошь,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз масляные фильтры,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,масляные фильтры,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз отработанное масло,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,отработанное масло,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз шины,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,шины,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза СОЖ,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза антифриз,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,антифриз,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза покрасочная камера,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,покрасочная камера,equipment,commercial,Отраслевая карточка,kolesnikov_axes,4
-что делать с покрасочная камера,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,покрасочная камера,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,5
+утилизация покрасочная камера,industry,IND-002,Автосервисы / СТО / шиномонтаж,KOLESNIKOV_WHAT_ACTION,покрасочная камера,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
 вывоз СОЖ,industry,IND-002,Автосервисы / СТО / шиномонтаж,PAIN_ACTION,СОЖ,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз аккумуляторы,industry,IND-002,Автосервисы / СТО / шиномонтаж,PAIN_ACTION,аккумуляторы,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз антифриз,industry,IND-002,Автосервисы / СТО / шиномонтаж,PAIN_ACTION,антифриз,waste,commercial,Отраслевая карточка,pain_action,2
@@ -722,24 +718,21 @@
 что нужно по экологии асфальтобетонные заводы,industry,IND-020,Асфальтобетонные заводы,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 что сдавать по экологии асфальтобетонные заводы,industry,IND-020,Асфальтобетонные заводы,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 штраф экология асфальтобетонные заводы,industry,IND-020,Асфальтобетонные заводы,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,4
+битум,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,битум,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 выбросы от выбросы,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,выбросы,air,mixed,Воздух,kolesnikov_axes,3
 выбросы от запах,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
 выбросы от минеральная пыль,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,минеральная пыль,air,mixed,Воздух,kolesnikov_axes,4
+выбросы предприятие,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,выбросы,air,mixed,Воздух,kolesnikov_axes,2
 документы на асфальтовый лом,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,асфальтовый лом,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на битум,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,битум,general,mixed,Отраслевая карточка,kolesnikov_axes,3
+запах предприятие,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,2
 инвентаризация выбросов выбросы,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,выбросы,air,mixed,Воздух,kolesnikov_axes,3
 инвентаризация выбросов запах,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
 инвентаризация выбросов минеральная пыль,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,минеральная пыль,air,mixed,Воздух,kolesnikov_axes,4
-как оформить битум,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,битум,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы выбросы,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,выбросы,air,mixed,Воздух,kolesnikov_axes,4
-как снизить выбросы запах,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,4
-как снизить выбросы минеральная пыль,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,минеральная пыль,air,mixed,Воздух,kolesnikov_axes,5
 куда сдать асфальтовый лом,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,асфальтовый лом,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-пыль от выбросы,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,выбросы,air,mixed,Воздух,kolesnikov_axes,3
-пыль от запах,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
-пыль от минеральная пыль,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,минеральная пыль,air,mixed,Воздух,kolesnikov_axes,4
+минеральная пыль предприятие,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,минеральная пыль,air,mixed,Воздух,kolesnikov_axes,3
 сколько стоит вывоз асфальтовый лом,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,асфальтовый лом,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза битум,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,битум,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация битум,industry,IND-020,Асфальтобетонные заводы,KOLESNIKOV_WHAT_ACTION,битум,general,commercial,Отраслевая карточка,kolesnikov_axes,2
 вывоз асфальтовый лом,industry,IND-020,Асфальтобетонные заводы,PAIN_ACTION,асфальтовый лом,waste,commercial,Отраслевая карточка,pain_action,3
 жалобы на выбросы,industry,IND-020,Асфальтобетонные заводы,PAIN_ACTION,выбросы,air,mixed,Воздух,pain_action,3
 жалобы на запах,industry,IND-020,Асфальтобетонные заводы,PAIN_ACTION,запах,air,mixed,Воздух,pain_action,3
@@ -924,15 +917,15 @@
 документы на промывные воды,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,промывные воды,water,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на тяжелые металлы,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,тяжелые металлы,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на щелочи,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,щелочи,general,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить кислоты,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,кислоты,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить тяжелые металлы,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,тяжелые металлы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить щелочи,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,щелочи,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+кислоты,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,кислоты,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 куда сдать гальванический шлам,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,гальванический шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка промывные воды,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,промывные воды,water,mixed,Отраслевая карточка,kolesnikov_axes,3
+промывные воды,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,промывные воды,water,mixed,Отраслевая карточка,kolesnikov_axes,2
 сколько стоит вывоз гальванический шлам,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,гальванический шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза кислоты,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,кислоты,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза тяжелые металлы,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,тяжелые металлы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза щелочи,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,щелочи,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+тяжелые металлы,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,тяжелые металлы,general,mixed,Отраслевая карточка,kolesnikov_axes,2
+утилизация кислоты,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,кислоты,general,commercial,Отраслевая карточка,kolesnikov_axes,2
+утилизация тяжелые металлы,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,тяжелые металлы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация щелочи,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,щелочи,general,commercial,Отраслевая карточка,kolesnikov_axes,2
+щелочи,industry,IND-037,Гальванические производства,KOLESNIKOV_WHAT_ACTION,щелочи,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 анализ промывные воды,industry,IND-037,Гальванические производства,PAIN_ACTION,промывные воды,water,mixed,Отраслевая карточка,pain_action,3
 вывоз гальванический шлам,industry,IND-037,Гальванические производства,PAIN_ACTION,гальванический шлам,waste,commercial,Отраслевая карточка,pain_action,3
 как накапливать гальванический шлам,industry,IND-037,Гальванические производства,PAIN_ACTION,гальванический шлам,waste,mixed,Отраслевая карточка,pain_action,4
@@ -1107,6 +1100,8 @@
 что нужно по экологии деревообработка / мебельные производства,industry,IND-025,Деревообработка / мебельные производства,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,8
 что сдавать по экологии деревообработка / мебельные производства,industry,IND-025,Деревообработка / мебельные производства,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,8
 штраф экология деревообработка / мебельные производства,industry,IND-025,Деревообработка / мебельные производства,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,6
+ДСП,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,ДСП,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+МДФ,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,МДФ,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 выбросы от пыль,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
 вывоз лакокрасочные отходы,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,лакокрасочные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
 документы на ДСП,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,ДСП,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
@@ -1115,18 +1110,11 @@
 документы на опилки,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,опилки,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на стружка,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,стружка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 инвентаризация выбросов пыль,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
-как оформить ДСП,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,ДСП,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить МДФ,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,МДФ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить опилки,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,опилки,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить стружка,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,стружка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы пыль,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,4
 куда сдать лакокрасочные отходы,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,лакокрасочные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-пыль от пыль,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
+опилки,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,опилки,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+пыль предприятие,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,2
 сколько стоит вывоз лакокрасочные отходы,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,лакокрасочные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза ДСП,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,ДСП,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза МДФ,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,МДФ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза опилки,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,опилки,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза стружка,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,стружка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+стружка,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,стружка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 утилизация лакокрасочные отходы,industry,IND-025,Деревообработка / мебельные производства,KOLESNIKOV_WHAT_ACTION,лакокрасочные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
 вывоз ДСП,industry,IND-025,Деревообработка / мебельные производства,PAIN_ACTION,ДСП,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз МДФ,industry,IND-025,Деревообработка / мебельные производства,PAIN_ACTION,МДФ,waste,commercial,Отраслевая карточка,pain_action,2
@@ -1352,21 +1340,18 @@
 что нужно по экологии карьеры / добыча нерудных материалов,industry,IND-023,Карьеры / добыча нерудных материалов,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,9
 что сдавать по экологии карьеры / добыча нерудных материалов,industry,IND-023,Карьеры / добыча нерудных материалов,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,9
 штраф экология карьеры / добыча нерудных материалов,industry,IND-023,Карьеры / добыча нерудных материалов,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,7
+вскрышные породы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,вскрышные породы,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
 выбросы от пыль,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
 документы на вскрышные породы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,вскрышные породы,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на дренажные воды,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,дренажные воды,water,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на отвалы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,отвалы,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на шум,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,шум,general,mixed,Отраслевая карточка,kolesnikov_axes,3
+дренажные воды,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,дренажные воды,water,mixed,Отраслевая карточка,kolesnikov_axes,2
 инвентаризация выбросов пыль,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
-как оформить вскрышные породы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,вскрышные породы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить отвалы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,отвалы,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить шум,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,шум,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы пыль,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,4
-очистка дренажные воды,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,дренажные воды,water,mixed,Отраслевая карточка,kolesnikov_axes,3
-пыль от пыль,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
-стоимость вывоза вскрышные породы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,вскрышные породы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза отвалы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,отвалы,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза шум,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,шум,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+отвалы,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,отвалы,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+пыль предприятие,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,2
+утилизация шум,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,шум,general,commercial,Отраслевая карточка,kolesnikov_axes,2
+шум,industry,IND-023,Карьеры / добыча нерудных материалов,KOLESNIKOV_WHAT_ACTION,шум,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 анализ дренажные воды,industry,IND-023,Карьеры / добыча нерудных материалов,PAIN_ACTION,дренажные воды,water,mixed,Отраслевая карточка,pain_action,3
 вывоз вскрышные породы,industry,IND-023,Карьеры / добыча нерудных материалов,PAIN_ACTION,вскрышные породы,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз отвалы,industry,IND-023,Карьеры / добыча нерудных материалов,PAIN_ACTION,отвалы,waste,commercial,Отраслевая карточка,pain_action,2
@@ -1564,22 +1549,19 @@
 что нужно по экологии лакокрасочные производства,industry,IND-031,Лакокрасочные производства,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 что сдавать по экологии лакокрасочные производства,industry,IND-031,Лакокрасочные производства,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 штраф экология лакокрасочные производства,industry,IND-031,Лакокрасочные производства,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,4
+выбросы ЛОС предприятие,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,выбросы ЛОС,air,mixed,Воздух,kolesnikov_axes,3
 выбросы от выбросы ЛОС,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,выбросы ЛОС,air,mixed,Воздух,kolesnikov_axes,4
 документы на краски,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,краски,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на растворители,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,растворители,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на тара,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,тара,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на шлам,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,шлам,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 инвентаризация выбросов выбросы ЛОС,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,выбросы ЛОС,air,mixed,Воздух,kolesnikov_axes,4
-как оформить краски,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,краски,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить растворители,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,растворители,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы выбросы ЛОС,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,выбросы ЛОС,air,mixed,Воздух,kolesnikov_axes,5
+краски,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,краски,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 куда сдать тара,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,тара,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать шлам,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-пыль от выбросы ЛОС,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,выбросы ЛОС,air,mixed,Воздух,kolesnikov_axes,4
+растворители,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,растворители,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 сколько стоит вывоз тара,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,тара,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз шлам,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза краски,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,краски,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза растворители,industry,IND-031,Лакокрасочные производства,KOLESNIKOV_WHAT_ACTION,растворители,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 вывоз краски,industry,IND-031,Лакокрасочные производства,PAIN_ACTION,краски,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз растворители,industry,IND-031,Лакокрасочные производства,PAIN_ACTION,растворители,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз тара,industry,IND-031,Лакокрасочные производства,PAIN_ACTION,тара,waste,commercial,Отраслевая карточка,pain_action,2
@@ -1767,22 +1749,19 @@
 что сдавать по экологии литейные производства,industry,IND-038,Литейные производства,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 штраф экология литейные производства,industry,IND-038,Литейные производства,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,4
 выбросы от пыль,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
+газоочистка,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,газоочистка,equipment,mixed,Отраслевая карточка,kolesnikov_axes,1
 документы на газоочистка,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,газоочистка,equipment,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на металлический лом,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,металлический лом,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на формовочные смеси,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,формовочные смеси,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на шлак,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,шлак,general,mixed,Отраслевая карточка,kolesnikov_axes,3
 инвентаризация выбросов пыль,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
-как оформить газоочистка,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,газоочистка,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить формовочные смеси,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,формовочные смеси,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить шлак,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,шлак,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы пыль,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,4
 куда сдать металлический лом,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,металлический лом,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-пыль от пыль,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,3
+пыль предприятие,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,пыль,air,mixed,Воздух,kolesnikov_axes,2
 сколько стоит вывоз металлический лом,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,металлический лом,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза газоочистка,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,газоочистка,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза формовочные смеси,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,формовочные смеси,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза шлак,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,шлак,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-что делать с газоочистка,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,газоочистка,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,4
+утилизация газоочистка,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,газоочистка,equipment,commercial,Отраслевая карточка,kolesnikov_axes,2
+утилизация шлак,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,шлак,general,commercial,Отраслевая карточка,kolesnikov_axes,2
+формовочные смеси,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,формовочные смеси,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
+шлак,industry,IND-038,Литейные производства,KOLESNIKOV_WHAT_ACTION,шлак,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 вывоз металлический лом,industry,IND-038,Литейные производства,PAIN_ACTION,металлический лом,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз формовочные смеси,industry,IND-038,Литейные производства,PAIN_ACTION,формовочные смеси,waste,commercial,Отраслевая карточка,pain_action,3
 жалобы на пыль,industry,IND-038,Литейные производства,PAIN_ACTION,пыль,air,mixed,Воздух,pain_action,3
@@ -1937,20 +1916,19 @@
 что сдавать по экологии медицинские организации,industry,IND-045,Медицинские организации,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 штраф экология медицинские организации,industry,IND-045,Медицинские организации,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,4
 вывоз лекарственные отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,лекарственные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+дезсредства,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,дезсредства,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 документы на дезсредства,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,дезсредства,general,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на лекарственные отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,лекарственные отходы,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на медицинские отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,медицинские отходы,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на ртутные лампы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,ртутные лампы,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на сточные воды,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
-как оформить дезсредства,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,дезсредства,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить ртутные лампы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,ртутные лампы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать лекарственные отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,лекарственные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать медицинские отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,медицинские отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
+ртутные лампы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,ртутные лампы,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
 сколько стоит вывоз лекарственные отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,лекарственные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз медицинские отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,медицинские отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза дезсредства,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,дезсредства,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза ртутные лампы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,ртутные лампы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+утилизация дезсредства,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,дезсредства,general,commercial,Отраслевая карточка,kolesnikov_axes,2
 утилизация лекарственные отходы,industry,IND-045,Медицинские организации,KOLESNIKOV_WHAT_ACTION,лекарственные отходы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
 анализ сточные воды,industry,IND-045,Медицинские организации,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз медицинские отходы,industry,IND-045,Медицинские организации,PAIN_ACTION,медицинские отходы,waste,commercial,Отраслевая карточка,pain_action,3
@@ -2104,6 +2082,7 @@
 что нужно по экологии металлообработка / машиностроение,industry,IND-036,Металлообработка / машиностроение,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,7
 что сдавать по экологии металлообработка / машиностроение,industry,IND-036,Металлообработка / машиностроение,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,7
 штраф экология металлообработка / машиностроение,industry,IND-036,Металлообработка / машиностроение,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,5
+СОЖ,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 выбросы от сварочные выбросы,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,сварочные выбросы,air,mixed,Воздух,kolesnikov_axes,4
 документы на СОЖ,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на ветошь,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,ветошь,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
@@ -2111,18 +2090,14 @@
 документы на металлическая стружка,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,металлическая стружка,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на шлам,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,шлам,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 инвентаризация выбросов сварочные выбросы,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,сварочные выбросы,air,mixed,Воздух,kolesnikov_axes,4
-как оформить СОЖ,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить масла,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,масла,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить металлическая стружка,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,металлическая стружка,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как снизить выбросы сварочные выбросы,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,сварочные выбросы,air,mixed,Воздух,kolesnikov_axes,5
 куда сдать ветошь,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,ветошь,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать шлам,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-пыль от сварочные выбросы,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,сварочные выбросы,air,mixed,Воздух,kolesnikov_axes,4
+масла,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,масла,general,mixed,Отраслевая карточка,kolesnikov_axes,1
+металлическая стружка,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,металлическая стружка,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
+сварочные выбросы предприятие,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,сварочные выбросы,air,mixed,Воздух,kolesnikov_axes,3
 сколько стоит вывоз ветошь,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,ветошь,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз шлам,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза СОЖ,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,СОЖ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза масла,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,масла,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза металлическая стружка,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,металлическая стружка,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
+утилизация масла,industry,IND-036,Металлообработка / машиностроение,KOLESNIKOV_WHAT_ACTION,масла,general,commercial,Отраслевая карточка,kolesnikov_axes,2
 вывоз СОЖ,industry,IND-036,Металлообработка / машиностроение,PAIN_ACTION,СОЖ,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз ветошь,industry,IND-036,Металлообработка / машиностроение,PAIN_ACTION,ветошь,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз металлическая стружка,industry,IND-036,Металлообработка / машиностроение,PAIN_ACTION,металлическая стружка,waste,commercial,Отраслевая карточка,pain_action,3
@@ -2332,15 +2307,13 @@
 документы на сточные воды,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на сыворотка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сыворотка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на упаковка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить моющие растворы,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить сыворотка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сыворотка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить упаковка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда отводить осадок очистных,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,diagnostic,Вода,kolesnikov_axes,4
-очистка осадок очистных,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,3
-очистка сточные воды,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-стоимость вывоза моющие растворы,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза сыворотка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сыворотка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза упаковка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+моющие растворы,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,mixed,Отраслевая карточка,kolesnikov_axes,2
+осадок очистных,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,2
+сточные воды,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+сыворотка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,сыворотка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+упаковка,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+утилизация моющие растворы,industry,IND-009,Молочные производства,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
 анализ сточные воды,industry,IND-009,Молочные производства,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз осадок очистных,industry,IND-009,Молочные производства,PAIN_ACTION,осадок очистных,waste,commercial,Вода,pain_action,3
 вывоз сыворотка,industry,IND-009,Молочные производства,PAIN_ACTION,сыворотка,waste,commercial,Отраслевая карточка,pain_action,2
@@ -2517,18 +2490,15 @@
 документы на кровь,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кровь,general,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на осадок очистных,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,4
 документы на сточные воды,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
+жир,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,жир,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+запах предприятие,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,2
 инвентаризация выбросов запах,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
-как оформить жир,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,жир,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить кости,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кости,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить кровь,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кровь,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы запах,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,4
+кости,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кости,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+кровь,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кровь,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 куда отводить осадок очистных,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,diagnostic,Вода,kolesnikov_axes,4
-очистка осадок очистных,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,3
-очистка сточные воды,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-пыль от запах,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
-стоимость вывоза жир,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,жир,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза кости,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кости,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза кровь,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кровь,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+осадок очистных,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,осадок очистных,waste,mixed,Вода,kolesnikov_axes,2
+сточные воды,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+утилизация кровь,industry,IND-008,Мясопереработка,KOLESNIKOV_WHAT_ACTION,кровь,general,commercial,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-008,Мясопереработка,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз жир,industry,IND-008,Мясопереработка,PAIN_ACTION,жир,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз кости,industry,IND-008,Мясопереработка,PAIN_ACTION,кости,waste,commercial,Отраслевая карточка,pain_action,2
@@ -2746,16 +2716,15 @@
 документы на разлив нефтепродуктов,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,разлив нефтепродуктов,incident,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на резервуары,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,резервуары,equipment,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на сорбент,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,сорбент,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить резервуары,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,резервуары,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать нефтешлам,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,нефтешлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать сорбент,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,сорбент,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-очистка нефтесодержащие стоки,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,нефтесодержащие стоки,water,mixed,Отраслевая карточка,kolesnikov_axes,3
+нефтесодержащие стоки,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,нефтесодержащие стоки,water,mixed,Отраслевая карточка,kolesnikov_axes,2
+разлив нефтепродуктов,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,разлив нефтепродуктов,incident,mixed,Отраслевая карточка,kolesnikov_axes,2
+резервуары,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,резервуары,equipment,mixed,Отраслевая карточка,kolesnikov_axes,1
 сколько стоит вывоз нефтешлам,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,нефтешлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз сорбент,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,сорбент,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза разлив нефтепродуктов,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,разлив нефтепродуктов,incident,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза резервуары,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,резервуары,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-что делать с разлив нефтепродуктов,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,разлив нефтепродуктов,incident,diagnostic,Отраслевая карточка,kolesnikov_axes,5
-что делать с резервуары,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,резервуары,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,4
+утилизация разлив нефтепродуктов,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,разлив нефтепродуктов,incident,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация резервуары,industry,IND-005,Нефтебазы / склады ГСМ,KOLESNIKOV_WHAT_ACTION,резервуары,equipment,commercial,Отраслевая карточка,kolesnikov_axes,2
 анализ нефтесодержащие стоки,industry,IND-005,Нефтебазы / склады ГСМ,PAIN_ACTION,нефтесодержащие стоки,water,mixed,Отраслевая карточка,pain_action,3
 вывоз нефтешлам,industry,IND-005,Нефтебазы / склады ГСМ,PAIN_ACTION,нефтешлам,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз сорбент,industry,IND-005,Нефтебазы / склады ГСМ,PAIN_ACTION,сорбент,waste,commercial,Отраслевая карточка,pain_action,2
@@ -2940,16 +2909,14 @@
 документы на сточные воды,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на упаковка,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на фритюрное масло,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,фритюрное масло,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
-как оформить жироуловитель,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить упаковка,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+жироуловитель,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,mixed,Отраслевая карточка,kolesnikov_axes,1
 куда сдать пищевые отходы,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать фритюрное масло,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,фритюрное масло,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
 сколько стоит вывоз пищевые отходы,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз фритюрное масло,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,фритюрное масло,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза жироуловитель,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза упаковка,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-что делать с жироуловитель,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+упаковка,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+утилизация жироуловитель,industry,IND-012,Общественное питание / фабрики-кухни,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,commercial,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-012,Общественное питание / фабрики-кухни,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз пищевые отходы,industry,IND-012,Общественное питание / фабрики-кухни,PAIN_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз упаковка,industry,IND-012,Общественное питание / фабрики-кухни,PAIN_ACTION,упаковка,waste,commercial,Отраслевая карточка,pain_action,2
@@ -3163,17 +3130,14 @@
 что нужно по экологии парикмахерские,industry,IND-051,Парикмахерские,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,5
 что сдавать по экологии парикмахерские,industry,IND-051,Парикмахерские,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,5
 штраф экология парикмахерские,industry,IND-051,Парикмахерские,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,3
+ватные материалы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,ватные материалы,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
+волосы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,волосы,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 документы на ватные материалы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,ватные материалы,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на волосы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,волосы,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на сточные воды,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на упаковка косметики,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
-как оформить ватные материалы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,ватные материалы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить волосы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,волосы,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить упаковка косметики,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-стоимость вывоза ватные материалы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,ватные материалы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза волосы,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,волосы,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза упаковка косметики,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+упаковка косметики,industry,IND-051,Парикмахерские,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-051,Парикмахерские,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз ватные материалы,industry,IND-051,Парикмахерские,PAIN_ACTION,ватные материалы,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз волосы,industry,IND-051,Парикмахерские,PAIN_ACTION,волосы,waste,commercial,Отраслевая карточка,pain_action,2
@@ -3332,19 +3296,16 @@
 документы на пищевые отходы,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на сточные воды,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на упаковка,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
+жироуловитель,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,mixed,Отраслевая карточка,kolesnikov_axes,1
+запах предприятие,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,2
 инвентаризация выбросов запах,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
-как оформить жироуловитель,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить упаковка,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как снизить выбросы запах,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,4
 куда сдать органические отходы,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,органические отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать пищевые отходы,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-пыль от запах,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,запах,air,mixed,Воздух,kolesnikov_axes,3
 сколько стоит вывоз органические отходы,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,органические отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз пищевые отходы,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза жироуловитель,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза упаковка,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-что делать с жироуловитель,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+упаковка,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+утилизация жироуловитель,industry,IND-007,Пищевые производства,KOLESNIKOV_WHAT_ACTION,жироуловитель,equipment,commercial,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-007,Пищевые производства,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз органические отходы,industry,IND-007,Пищевые производства,PAIN_ACTION,органические отходы,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз пищевые отходы,industry,IND-007,Пищевые производства,PAIN_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,pain_action,3
@@ -3545,16 +3506,12 @@
 документы на макулатура,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,макулатура,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на пленка,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,пленка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на растворители,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,растворители,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить краски,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,краски,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить макулатура,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,макулатура,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить пленка,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,пленка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить растворители,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,растворители,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+краски,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,краски,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 куда сдать ветошь,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,ветошь,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+макулатура,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,макулатура,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+пленка,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,пленка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+растворители,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,растворители,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 сколько стоит вывоз ветошь,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,ветошь,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза краски,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,краски,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза макулатура,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,макулатура,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза пленка,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,пленка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза растворители,industry,IND-027,Полиграфия / типографии,KOLESNIKOV_WHAT_ACTION,растворители,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 вывоз ветошь,industry,IND-027,Полиграфия / типографии,PAIN_ACTION,ветошь,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз краски,industry,IND-027,Полиграфия / типографии,PAIN_ACTION,краски,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз макулатура,industry,IND-027,Полиграфия / типографии,PAIN_ACTION,макулатура,waste,commercial,Отраслевая карточка,pain_action,2
@@ -3780,15 +3737,13 @@
 документы на упаковка химии,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,упаковка химии,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на фильтры,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,фильтры,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на шлам,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,шлам,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
-как оформить растворители,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,растворители,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить упаковка химии,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,упаковка химии,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать фильтры,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,фильтры,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
 куда сдать шлам,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-очистка сточные воды,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
+растворители,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,растворители,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 сколько стоит вывоз фильтры,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,фильтры,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 сколько стоит вывоз шлам,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза растворители,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,растворители,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза упаковка химии,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,упаковка химии,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+упаковка химии,industry,IND-056,Прачечные / химчистки,KOLESNIKOV_WHAT_ACTION,упаковка химии,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-056,Прачечные / химчистки,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз растворители,industry,IND-056,Прачечные / химчистки,PAIN_ACTION,растворители,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз упаковка химии,industry,IND-056,Прачечные / химчистки,PAIN_ACTION,упаковка химии,waste,commercial,Отраслевая карточка,pain_action,3
@@ -4023,15 +3978,14 @@
 документы на мойка миксеров,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,мойка миксеров,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на сточные воды,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 инвентаризация выбросов цементная пыль,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,цементная пыль,air,mixed,Воздух,kolesnikov_axes,4
-как оформить мойка миксеров,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,мойка миксеров,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как снизить выбросы цементная пыль,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,цементная пыль,air,mixed,Воздух,kolesnikov_axes,5
 куда сдать бетонный лом,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,бетонный лом,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать бетонный шлам,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,бетонный шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-пыль от цементная пыль,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,цементная пыль,air,mixed,Воздух,kolesnikov_axes,4
+мойка миксеров,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,мойка миксеров,general,mixed,Отраслевая карточка,kolesnikov_axes,2
 сколько стоит вывоз бетонный лом,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,бетонный лом,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз бетонный шлам,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,бетонный шлам,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза мойка миксеров,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,мойка миксеров,general,commercial,Отраслевая карточка,kolesnikov_axes,4
+сточные воды,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+утилизация мойка миксеров,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,мойка миксеров,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+цементная пыль предприятие,industry,IND-019,Производство бетона / ЖБИ,KOLESNIKOV_WHAT_ACTION,цементная пыль,air,mixed,Воздух,kolesnikov_axes,3
 анализ сточные воды,industry,IND-019,Производство бетона / ЖБИ,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз бетонный лом,industry,IND-019,Производство бетона / ЖБИ,PAIN_ACTION,бетонный лом,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз бетонный шлам,industry,IND-019,Производство бетона / ЖБИ,PAIN_ACTION,бетонный шлам,waste,commercial,Отраслевая карточка,pain_action,3
@@ -4248,20 +4202,18 @@
 что нужно по экологии производство напитков,industry,IND-011,Производство напитков,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 что сдавать по экологии производство напитков,industry,IND-011,Производство напитков,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 штраф экология производство напитков,industry,IND-011,Производство напитков,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,4
+ПЭТ,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,ПЭТ,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+бой стекла,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,бой стекла,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
 документы на ПЭТ,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,ПЭТ,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на бой стекла,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,бой стекла,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на моющие растворы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на сиропы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сиропы,general,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на сточные воды,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
-как оформить ПЭТ,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,ПЭТ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить бой стекла,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,бой стекла,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить моющие растворы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить сиропы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сиропы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-очистка сточные воды,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-стоимость вывоза ПЭТ,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,ПЭТ,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза бой стекла,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,бой стекла,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза моющие растворы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза сиропы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сиропы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+моющие растворы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,mixed,Отраслевая карточка,kolesnikov_axes,2
+сиропы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сиропы,general,mixed,Отраслевая карточка,kolesnikov_axes,1
+сточные воды,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+утилизация моющие растворы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,моющие растворы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация сиропы,industry,IND-011,Производство напитков,KOLESNIKOV_WHAT_ACTION,сиропы,general,commercial,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-011,Производство напитков,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз ПЭТ,industry,IND-011,Производство напитков,PAIN_ACTION,ПЭТ,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз бой стекла,industry,IND-011,Производство напитков,PAIN_ACTION,бой стекла,waste,commercial,Отраслевая карточка,pain_action,3
@@ -4414,22 +4366,21 @@
 что нужно по экологии производство пластмасс / полимерных изделий,industry,IND-029,Производство пластмасс / полимерных изделий,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,9
 что сдавать по экологии производство пластмасс / полимерных изделий,industry,IND-029,Производство пластмасс / полимерных изделий,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,9
 штраф экология производство пластмасс / полимерных изделий,industry,IND-029,Производство пластмасс / полимерных изделий,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,7
+брак пленки,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,брак пленки,general,mixed,Отраслевая карточка,kolesnikov_axes,2
 выбросы от полимерная пыль,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,полимерная пыль,air,mixed,Воздух,kolesnikov_axes,4
+гранулы,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,гранулы,general,mixed,Отраслевая карточка,kolesnikov_axes,1
 документы на брак пленки,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,брак пленки,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на гранулы,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,гранулы,general,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на обрезки пластика,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,обрезки пластика,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на тара,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,тара,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 инвентаризация выбросов полимерная пыль,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,полимерная пыль,air,mixed,Воздух,kolesnikov_axes,4
-как оформить брак пленки,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,брак пленки,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить гранулы,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,гранулы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить обрезки пластика,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,обрезки пластика,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как снизить выбросы полимерная пыль,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,полимерная пыль,air,mixed,Воздух,kolesnikov_axes,5
 куда сдать тара,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,тара,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-пыль от полимерная пыль,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,полимерная пыль,air,mixed,Воздух,kolesnikov_axes,4
+обрезки пластика,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,обрезки пластика,general,mixed,Отраслевая карточка,kolesnikov_axes,2
+полимерная пыль предприятие,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,полимерная пыль,air,mixed,Воздух,kolesnikov_axes,3
 сколько стоит вывоз тара,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,тара,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза брак пленки,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,брак пленки,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза гранулы,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,гранулы,general,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза обрезки пластика,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,обрезки пластика,general,commercial,Отраслевая карточка,kolesnikov_axes,4
+утилизация брак пленки,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,брак пленки,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация гранулы,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,гранулы,general,commercial,Отраслевая карточка,kolesnikov_axes,2
+утилизация обрезки пластика,industry,IND-029,Производство пластмасс / полимерных изделий,KOLESNIKOV_WHAT_ACTION,обрезки пластика,general,commercial,Отраслевая карточка,kolesnikov_axes,3
 вывоз тара,industry,IND-029,Производство пластмасс / полимерных изделий,PAIN_ACTION,тара,waste,commercial,Отраслевая карточка,pain_action,2
 жалобы на полимерная пыль,industry,IND-029,Производство пластмасс / полимерных изделий,PAIN_ACTION,полимерная пыль,air,mixed,Воздух,pain_action,4
 как накапливать тара,industry,IND-029,Производство пластмасс / полимерных изделий,PAIN_ACTION,тара,waste,mixed,Отраслевая карточка,pain_action,3
@@ -4682,20 +4633,17 @@
 что нужно по экологии салоны красоты,industry,IND-052,Салоны красоты,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 что сдавать по экологии салоны красоты,industry,IND-052,Салоны красоты,INDUSTRY_DIRECT,,,mixed,Отраслевая карточка,industry_template,6
 штраф экология салоны красоты,industry,IND-052,Салоны красоты,INDUSTRY_DIRECT,,,urgent,Отраслевая карточка,industry_template,4
+ватные диски,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,ватные диски,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
 документы на ватные диски,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,ватные диски,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на одноразовые материалы,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,одноразовые материалы,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на сточные воды,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на упаковка косметики,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на химические средства,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,химические средства,general,mixed,Отраслевая карточка,kolesnikov_axes,4
-как оформить ватные диски,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,ватные диски,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить одноразовые материалы,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,одноразовые материалы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить упаковка косметики,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить химические средства,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,химические средства,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
-стоимость вывоза ватные диски,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,ватные диски,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза одноразовые материалы,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,одноразовые материалы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза упаковка косметики,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза химические средства,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,химические средства,general,commercial,Отраслевая карточка,kolesnikov_axes,4
+одноразовые материалы,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,одноразовые материалы,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
+сточные воды,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+упаковка косметики,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,упаковка косметики,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
+утилизация химические средства,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,химические средства,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+химические средства,industry,IND-052,Салоны красоты,KOLESNIKOV_WHAT_ACTION,химические средства,general,mixed,Отраслевая карточка,kolesnikov_axes,2
 анализ сточные воды,industry,IND-052,Салоны красоты,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз ватные диски,industry,IND-052,Салоны красоты,PAIN_ACTION,ватные диски,waste,commercial,Отраслевая карточка,pain_action,3
 вывоз одноразовые материалы,industry,IND-052,Салоны красоты,PAIN_ACTION,одноразовые материалы,waste,commercial,Отраслевая карточка,pain_action,3
@@ -4871,18 +4819,14 @@
 документы на поврежденный товар,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,поврежденный товар,general,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на погрузочная техника,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,погрузочная техника,equipment,mixed,Отраслевая карточка,kolesnikov_axes,4
 документы на стрейч пленка,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,стрейч пленка,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
-как оформить картон,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,картон,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить паллеты,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,паллеты,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить поврежденный товар,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,поврежденный товар,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить погрузочная техника,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,погрузочная техника,equipment,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить стрейч пленка,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,стрейч пленка,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка ливневые воды,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,ливневые воды,water,mixed,Вода,kolesnikov_axes,3
-стоимость вывоза картон,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,картон,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза паллеты,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,паллеты,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза поврежденный товар,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,поврежденный товар,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза погрузочная техника,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,погрузочная техника,equipment,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза стрейч пленка,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,стрейч пленка,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-что делать с погрузочная техника,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,погрузочная техника,equipment,diagnostic,Отраслевая карточка,kolesnikov_axes,5
+картон,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,картон,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+ливневые воды,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,ливневые воды,water,mixed,Вода,kolesnikov_axes,2
+паллеты,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,паллеты,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+поврежденный товар,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,поврежденный товар,general,mixed,Отраслевая карточка,kolesnikov_axes,2
+погрузочная техника,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,погрузочная техника,equipment,mixed,Отраслевая карточка,kolesnikov_axes,2
+стрейч пленка,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,стрейч пленка,waste,mixed,Отраслевая карточка,kolesnikov_axes,2
+утилизация поврежденный товар,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,поврежденный товар,general,commercial,Отраслевая карточка,kolesnikov_axes,3
+утилизация погрузочная техника,industry,IND-006,Склады / логистические комплексы / распределительные центры,KOLESNIKOV_WHAT_ACTION,погрузочная техника,equipment,commercial,Отраслевая карточка,kolesnikov_axes,3
 анализ ливневые воды,industry,IND-006,Склады / логистические комплексы / распределительные центры,PAIN_ACTION,ливневые воды,water,mixed,Вода,pain_action,3
 вывоз картон,industry,IND-006,Склады / логистические комплексы / распределительные центры,PAIN_ACTION,картон,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз паллеты,industry,IND-006,Склады / логистические комплексы / распределительные центры,PAIN_ACTION,паллеты,waste,commercial,Отраслевая карточка,pain_action,2
@@ -5212,17 +5156,15 @@
 документы на сточные воды,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,4
 документы на упаковка,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,3
 документы на фритюрное масло,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,фритюрное масло,waste,mixed,Отраслевая карточка,kolesnikov_axes,4
-как оформить жиры,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,жиры,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-как оформить мука просыпи,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,мука просыпи,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-как оформить упаковка,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+жиры,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,жиры,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
 куда сдать пищевые отходы,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
 куда сдать фритюрное масло,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,фритюрное масло,waste,commercial,Отраслевая карточка,kolesnikov_axes,4
-очистка сточные воды,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,3
+мука просыпи,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,мука просыпи,general,mixed,Отраслевая карточка,kolesnikov_axes,2
 сколько стоит вывоз пищевые отходы,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
 сколько стоит вывоз фритюрное масло,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,фритюрное масло,waste,commercial,Отраслевая карточка,kolesnikov_axes,5
-стоимость вывоза жиры,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,жиры,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
-стоимость вывоза мука просыпи,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,мука просыпи,general,commercial,Отраслевая карточка,kolesnikov_axes,4
-стоимость вывоза упаковка,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,commercial,Отраслевая карточка,kolesnikov_axes,3
+сточные воды,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,сточные воды,water,mixed,Вода,kolesnikov_axes,2
+упаковка,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,упаковка,waste,mixed,Отраслевая карточка,kolesnikov_axes,1
+утилизация мука просыпи,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,KOLESNIKOV_WHAT_ACTION,мука просыпи,general,commercial,Отраслевая карточка,kolesnikov_axes,3
 анализ сточные воды,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,PAIN_ACTION,сточные воды,water,mixed,Вода,pain_action,3
 вывоз жиры,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,PAIN_ACTION,жиры,waste,commercial,Отраслевая карточка,pain_action,2
 вывоз пищевые отходы,industry,IND-010,Хлебозаводы / пекарни / кондитерские производства,PAIN_ACTION,пищевые отходы,waste,commercial,Отраслевая карточка,pain_action,3
