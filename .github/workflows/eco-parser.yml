@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Verify industry query expansion
+        run: PYTHONPATH=eco-parser python -m unittest discover -s eco-parser/tests -p 'test_*.py'
+
       - name: Run ECO PARSER
         env:
           YANDEX_SEARCH_API_KEY: ${{ secrets.YANDEX_SEARCH_API_KEY }}

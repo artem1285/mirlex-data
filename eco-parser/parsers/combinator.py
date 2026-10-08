@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import csv, json, re
 from pathlib import Path
+from parsers.kolesnikov_axes import build_from_engine
 
 ROOT = Path(__file__).resolve().parents[1]
 SEEDS = ROOT / "seeds"
@@ -91,6 +92,14 @@ def run():
             for tmpl in axes.get("pain_plus_industry_patterns",[]):
                 add(rows,seen,tmpl.replace("{x}",x).replace("{industry}",iname),
                     "industry",ind["id"],name,"PAIN_X_INDUSTRY","pain_x_industry",x,typ)
+
+    # 3b. Core-led queries; source ID retained in pain_node for provenance.
+    # This does not claim that every industry has an Engine industry module.
+    for ind in industries:
+        if not ind.get("enabled"): continue
+        for q, family, evidence_id in build_from_engine(ind["id"]):
+            add(rows, seen, q, "industry", ind["id"], ind["name"],
+                family, "mirlex_engine_evidence_snapshot", evidence_id, "evidence")
 
     # 4. Material-first discovery — can later map to multiple industries/services.
     for x in material_nodes:
