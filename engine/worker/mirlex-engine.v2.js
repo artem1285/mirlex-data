@@ -6,15 +6,22 @@ const SOURCES={
   tests:"engine/tests/rop-core-regression.v1.json",
   carwash:"engine/rules/industry/carwash.v1.json",
   packages:"engine/expert-packages.v1.json",
-  registry:"engine/industry-registry.v1.json"
+  registry:"engine/industry-registry.v1.json",
+  radar_index:"research/registry/master-index.json"
 };
 const headers={"Cache-Control":"no-store","Access-Control-Allow-Origin":"*"};
 const J=(x,s=200)=>Response.json(x,{status:s,headers});
 async function read(p){if(!p||p.includes("..")||p.startsWith("/"))throw Error("Invalid path");const r=await fetch(BASE+p,{headers:{"Accept":"application/json"}});if(!r.ok)throw Error("GitHub "+r.status+" "+p);return r.json()}
 async function readText(p){if(!p||p.includes("..")||p.startsWith("/"))throw Error("Invalid path");const r=await fetch(BASE+p);if(!r.ok)throw Error("GitHub "+r.status+" "+p);return r.text()}
-async function eco(){const [core,registry,packages]=await Promise.all([read(SOURCES.core),read(SOURCES.registry),read(SOURCES.packages)]);return {ok:true,expert:"ECO_EXPERT",engine_version:"v2",core,industry_registry:registry,packages,notice:"58 industry research profiles available through get_industry_research. Executable rules are distinct."}}
-async function rop(){const [core,rop,packages]=await Promise.all([read(SOURCES.core),read(SOURCES.rop),read(SOURCES.packages)]);return {ok:true,expert:"ROP_EXPERT",engine_version:"v2",core,rop,packages}}
+async function radarIndex(){const index=await read(SOURCES.radar_index);return {ok:true,registry:index,source:SOURCES.radar_index,notes:"Radar registry is evidence; not automatically approved legal rules."}}
+async function radarBatch(path){const idx=await read(SOURCES.radar_index);if(!idx.registries.some(x=>x.path===path))return {ok:false,error:"NOT_IN_MASTER_INDEX"};return {ok:true,source:path,record:await read(path),status:idx.registries.find(x=>x.path===path).status}}
+async function radarCard(id){if(!/^(ROP-\d{3}|IND-[A-Z0-9-]+-\d{3})$/.test(id))return {ok:false,error:"INVALID_RADAR_ID"};const idx=await read(SOURCES.radar_index);const found=[];const failures=[];for(const row of idx.registries){try{const obj=await read(row.path);const walk=(x,depth=0)=>{if(depth>8||!x||typeof x!=="object")return;if(Array.isArray(x)){for(const v of x)walk(v,depth+1);return}if(x.id===id)found.push({source:row.path,status:row.status,card:x});else for(const v of Object.values(x))if(typeof v==="object")walk(v,depth+1)};walk(obj)}catch(e){failures.push({source:row.path,error:String(e.message)})}}return {ok:found.length>0,id,records:found,failures,complete:failures.length===0,note:"Do not infer absence if source read failures; duplicate confirmations must enrich same ID."}}
+async function eco(){const [core,registry,packages]=await Promise.all([read(SOURCES.core),read(SOURCES.registry),read(SOURCES.packages)]);return {ok:true,expert:"ECO_EXPERT",engine_version:"v2",core,industry_registry:registry,radar_index_path:SOURCES.radar_index,radar_tools:["get_radar_registry_index","get_radar_batch","get_radar_card"],packages,notice:"58 industry research profiles available through get_industry_research. Executable rules are distinct."}}
+async function rop(){const [core,rop,packages]=await Promise.all([read(SOURCES.core),read(SOURCES.rop),read(SOURCES.packages)]);return {ok:true,expert:"ROP_EXPERT",engine_version:"v2",core,rop,radar_index_path:SOURCES.radar_index,radar_tools:["get_radar_registry_index","get_radar_batch","get_radar_card"],packages}}
 const TOOLS=[
+{name:"get_radar_registry_index",description:"Retrieve MIRLEX Radar master index: provenance, registry batches, quality statuses and permanent ID policy. Applicable to ECO and ROP.",inputSchema:{type:"object",properties:{}}},
+{name:"get_radar_batch",description:"Read one source-verified radar registry batch by its exact master-index path; preserve full evidence.",inputSchema:{type:"object",properties:{path:{type:"string"}},required:["path"]}},
+{name:"get_radar_card",description:"Retrieve all records and additional confirmations for a permanent radar ID (ROP-### or IND-CLUSTER-###). Returns source files and incomplete status on read errors.",inputSchema:{type:"object",properties:{id:{type:"string"}},required:["id"]}},
 {name:"get_eco_expert_package",description:"Get universal ECO core and the complete 58-industry research registry.",inputSchema:{type:"object",properties:{}}},
 {name:"get_rop_expert_package",description:"Get ROP core and common rules.",inputSchema:{type:"object",properties:{}}},
 {name:"get_mirlex_core",description:"Get common MIRLEX rules.",inputSchema:{type:"object",properties:{}}},
@@ -30,6 +37,9 @@ const tool=(data)=>({content:[{type:"text",text:JSON.stringify(data)}],structure
 function section(md,id){const lines=md.split(/\r?\n/);const start=lines.findIndex(x=>new RegExp("^##\\s+"+id+"\\s+[—-]").test(x));if(start<0)return null;let end=lines.findIndex((x,i)=>i>start&&/^##\s+IND-\d{3}\s+[—-]/.test(x));if(end<0)end=lines.length;return lines.slice(start,end).join("\n").trim()}
 async function industry(id){const reg=await read(SOURCES.registry);const row=reg.industries.find(x=>x.id===id);if(!row)return {ok:false,error:"UNKNOWN_INDUSTRY"};const [passports,questions]=await Promise.all([readText(reg.research_sources.passports),readText(reg.research_sources.questions)]);return {ok:true,id,name:row.name,status:"INTERNAL_RESEARCH_NOT_LEGAL_APPROVAL",expert_passport:section(passports,id),questions:section(questions,id),provenance:{passport:reg.research_sources.passports,questions:reg.research_sources.questions},rulepack_status:row.rulepack_status}}
 async function call(name,args){switch(name){
+case "get_radar_registry_index":return radarIndex();
+case "get_radar_batch":return radarBatch(args?.path);
+case "get_radar_card":return radarCard(args?.id);
 case "get_eco_expert_package":return eco();
 case "get_rop_expert_package":return rop();
 case "get_mirlex_core":return {ok:true,data:await read(SOURCES.core)};
