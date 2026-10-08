@@ -1,0 +1,592 @@
+{
+  "version": "1.0.0",
+  "source_engine": "MIRLEX_Engine ECO_EXPERT v1 (2026-10-08 snapshot)",
+  "source_registry": "research/registry/radar-2026-10-03-final-saturation.json",
+  "notes": "The only industry-specific package exposed by Engine is CARWASH. Universal gates are not treated as evidence of an industry-specific incident. Radar and ROP not modified. Unmapped sectors remain explicit NEEDS_EVIDENCE.",
+  "universal_rules": [
+    {
+      "rule_id": "ENG-UNI-SITE-001",
+      "gate": "SITE",
+      "trigger": "every physical site",
+      "chain": "SITE → LAND_USE/RESTRICTIONS → NEIGHBORS/RECEPTORS → SZZ/WATER_PROTECTION/OTHER_ZONES",
+      "radar_ids": [
+        "IND-SITE-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-WATERINTAKE-001",
+      "gate": "WATER_SOURCE",
+      "trigger": "own well or own water intake",
+      "chain": "SOURCE → RIGHT/LICENCE_OR_EXCEPTION → CONDITIONS → EXTRACTION → METERING → REPORTING → CLOSURE",
+      "radar_ids": [
+        "IND-WATERINTAKE-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-LOS-001",
+      "gate": "TREATMENT",
+      "trigger": "treatment/separator exists",
+      "chain": "INFLUENT → TREATMENT → EFFICIENCY → EFFLUENT_ROUTE → LAB → SLUDGE → FINAL_ROUTE → FAILURE",
+      "radar_ids": [
+        "IND-LOS-001",
+        "IND-WATER-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-AIR-001",
+      "gate": "AIR",
+      "trigger": "process may create emissions",
+      "chain": "TECHNOLOGY → MATERIAL/FUEL/ADDITIVE → PROCESS → POLLUTANT → SOURCE → INVENTORY → CONTROL → MEASUREMENT",
+      "radar_ids": [
+        "IND-AIR-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-WASTE-001",
+      "gate": "WASTE",
+      "trigger": "waste/residue/by-product generated",
+      "chain": "GENERATION → STATUS → PROPERTIES → ACCUMULATION → WEATHER/SURFACE → TRANSPORT → RECIPIENT → FINAL_OPERATION → MASS_BALANCE",
+      "radar_ids": [
+        "IND-WASTESAN-002"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-SOIL-001",
+      "gate": "SOIL",
+      "trigger": "substance may contact soil",
+      "chain": "SUBSTANCE → SOIL_CONTACT → SAMPLING → STANDARD_OR_BACKGROUND → AREA/DEPTH → DAMAGE → RESTORATION",
+      "radar_ids": [
+        "IND-SOIL-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-STORM-001",
+      "gate": "STORMWATER",
+      "trigger": "open industrial/traffic/storage area",
+      "chain": "SURFACE → RAIN/MELT → COLLECTION → TREATMENT → STORAGE → CAPACITY → OVERFLOW → FINAL_ROUTE",
+      "radar_ids": [
+        "IND-STORM-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-SNOW-001",
+      "gate": "SEASONAL_SNOW",
+      "trigger": "winter snow storage/removal",
+      "chain": "SNOW → STORAGE → SURFACE/BUNDING → MELTWATER_COLLECTION → ROUTE → SOIL",
+      "radar_ids": [
+        "IND-SNOW-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-SAN-001",
+      "gate": "SANITARY_POPULATION",
+      "trigger": "process may impact population/receptors",
+      "chain": "TECHNOLOGY → FACTOR → SOURCE → MODE → RECEPTOR → CONTROL_POINT → MEASUREMENT → LIMIT → MITIGATION → RECHECK",
+      "radar_ids": [
+        "IND-SAN-001",
+        "IND-SAN-002"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-ACCIDENT-001",
+      "gate": "ACCIDENT",
+      "trigger": "credible spill/discharge/process failure",
+      "chain": "FAILURE → RELEASE → SIGNAL → BOUNDARY → SAMPLE → DAMAGE → RESPONSE → RESTORATION → CLOSURE",
+      "radar_ids": [
+        "IND-ACCIDENT-001"
+      ]
+    },
+    {
+      "rule_id": "ENG-UNI-NVOS-001",
+      "gate": "NVOS",
+      "trigger": "every object",
+      "chain": "OBJECT/ACTIVITY → CRITERIA → CATEGORY/EXCLUSION → REGISTRATION → APPLICABLE_DOCUMENTS/REPORTING",
+      "radar_ids": [
+        "IND-NVOSPAY-001"
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "industry_id": "IND-001",
+      "industry_name": "Автомойки",
+      "rule_ids": [
+        "ENG-CARWASH-WW-TANK-001",
+        "ENG-CARWASH-WATER-SOURCE-001"
+      ],
+      "evidence_nodes": [
+        {
+          "rule_id": "ENG-CARWASH-WW-TANK-001",
+          "radar_ids": [
+            "IND-CARWASH-002"
+          ],
+          "process": [
+            "WATER",
+            "WASTEWATER",
+            "SOIL",
+            "ACCIDENT"
+          ],
+          "ask": [
+            "tank_type_and_location",
+            "tank_volume_m3",
+            "water_consumption_m3_period",
+            "estimated_wastewater_m3_period",
+            "pumping_frequency",
+            "pumped_volume_m3_period",
+            "hauler",
+            "final_acceptor",
+            "overflow_route",
+            "known_leaks_or_repairs"
+          ],
+          "checks": [
+            "compare water consumption with wastewater generation",
+            "compare generated wastewater with tank capacity and pumping frequency",
+            "reconcile generated wastewater with documented pumped volume",
+            "trace wastewater to final acceptor",
+            "check overflow/leak/soil-contact scenario"
+          ],
+          "source": "MIRLEX_ENGINE"
+        },
+        {
+          "rule_id": "ENG-CARWASH-WATER-SOURCE-001",
+          "radar_ids": [
+            "IND-WATERINTAKE-001"
+          ],
+          "process": [
+            "WATER",
+            "SUBSOIL"
+          ],
+          "ask": [
+            "well_ownership",
+            "well_depth_if_known",
+            "actual_extraction_volume",
+            "license_or_claimed_exception",
+            "metering",
+            "well_documents"
+          ],
+          "checks": [
+            "activate own-well/subsoil-right chain",
+            "verify claimed exception rather than assuming volume alone creates it"
+          ],
+          "source": "MIRLEX_ENGINE"
+        }
+      ],
+      "status": "ENGINE_INDUSTRY_SEED_INTERNAL"
+    },
+    {
+      "industry_id": "IND-002",
+      "industry_name": "Автосервисы / СТО / шиномонтаж",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-003",
+      "industry_name": "Автостоянки / парковки / автотранспортные предприятия",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-004",
+      "industry_name": "АЗС",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-005",
+      "industry_name": "Нефтебазы / склады ГСМ",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-006",
+      "industry_name": "Склады / логистические комплексы / распределительные центры",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-007",
+      "industry_name": "Пищевые производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-008",
+      "industry_name": "Мясопереработка",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-009",
+      "industry_name": "Молочные производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-010",
+      "industry_name": "Хлебозаводы / пекарни / кондитерские производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-011",
+      "industry_name": "Производство напитков",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-012",
+      "industry_name": "Общественное питание / фабрики-кухни",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-013",
+      "industry_name": "Теплицы / тепличные комплексы",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-014",
+      "industry_name": "Животноводческие предприятия",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-015",
+      "industry_name": "Птицефабрики",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-016",
+      "industry_name": "Растениеводство / сельхозпредприятия",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-017",
+      "industry_name": "Рыбоводство / аквакультура",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-018",
+      "industry_name": "Строительные компании / строительные площадки",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-019",
+      "industry_name": "Производство бетона / ЖБИ",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-020",
+      "industry_name": "Асфальтобетонные заводы",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-021",
+      "industry_name": "Кирпичные / керамические производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-022",
+      "industry_name": "Производство сухих строительных смесей",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-023",
+      "industry_name": "Карьеры / добыча нерудных материалов",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-024",
+      "industry_name": "Горнодобывающие предприятия",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-025",
+      "industry_name": "Деревообработка / мебельные производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-026",
+      "industry_name": "Целлюлозно-бумажные производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-027",
+      "industry_name": "Полиграфия / типографии",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-028",
+      "industry_name": "Текстильные производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-029",
+      "industry_name": "Производство пластмасс / полимерных изделий",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-030",
+      "industry_name": "Резинотехнические производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-031",
+      "industry_name": "Лакокрасочные производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-032",
+      "industry_name": "Производство клеёв / герметиков / смол",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-033",
+      "industry_name": "Химические производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-034",
+      "industry_name": "Производство бытовой химии",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-035",
+      "industry_name": "Производство косметики",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-036",
+      "industry_name": "Металлообработка / машиностроение",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-037",
+      "industry_name": "Гальванические производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-038",
+      "industry_name": "Литейные производства",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-039",
+      "industry_name": "Энергетика / ТЭЦ / котельные",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-040",
+      "industry_name": "Водоканалы / очистные сооружения",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-041",
+      "industry_name": "Предприятия по обращению с отходами",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-042",
+      "industry_name": "Утилизаторы отходов",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-043",
+      "industry_name": "Объекты размещения отходов / полигоны",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-044",
+      "industry_name": "Операторы ТКО / сортировочные комплексы",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-045",
+      "industry_name": "Медицинские организации",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-046",
+      "industry_name": "Торговые центры / крупные торговые объекты",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-047",
+      "industry_name": "Рынки / оптово-розничные комплексы",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-048",
+      "industry_name": "Гостиницы / базы отдыха / туристические объекты",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-049",
+      "industry_name": "Порты / терминалы / перевалочные комплексы",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-050",
+      "industry_name": "Производственные предприятия общего профиля",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-051",
+      "industry_name": "Парикмахерские",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-052",
+      "industry_name": "Салоны красоты",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-053",
+      "industry_name": "Ногтевые студии",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-054",
+      "industry_name": "Косметологические кабинеты",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-055",
+      "industry_name": "Барбершопы",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-056",
+      "industry_name": "Прачечные / химчистки",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-057",
+      "industry_name": "Стоматологии / частные клиники",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    },
+    {
+      "industry_id": "IND-058",
+      "industry_name": "Небольшие мастерские / цеха",
+      "rule_ids": [],
+      "evidence_nodes": [],
+      "status": "NO_INDUSTRY_EVIDENCE_IN_CONNECTED_ENGINE"
+    }
+  ],
+  "radar_evidence": [
+    {
+      "id": "IND-CONSTRUCTION-002",
+      "industry_contour": "construction → excavated/repair materials and construction waste → actual destination → soil",
+      "factual_pattern": "CONSTRUCTION/REPAIR → MATERIAL/WASTE STATUS → TEMPORARY ACCUMULATION → TRANSPORT → ACTUAL DESTINATION → SOIL CONTACT → LAB → DAMAGE",
+      "mirlex_checks": "status of material/waste; accumulation site; carrier; recipient; final destination; mass/volume reconciliation; soil contact; lab/damage gate",
+      "primary_source_url": "https://rpn.gov.ru/press/news/v_krymu_vyyavili_nezakonnoe_razmeshchenie_stroitelnykh_otkhodov/"
+    },
+    {
+      "id": "IND-CARWASH-002",
+      "industry_contour": "car wash → buried wastewater tank → leakage/route → soil",
+      "factual_pattern": "CAR WASH → WASTEWATER → BURIED TANK → TIGHTNESS/OVERFLOW/ROUTE → SOIL → LAB → DAMAGE",
+      "mirlex_checks": "water balance; tank type/volume/tightness; pumping frequency; hauler/acceptor; volume balance; overflow/leak traces; soil sampling",
+      "primary_source_url": "https://rpn.gov.ru/press/news/rosprirodnadzor_dobilsya_vozmeshcheniya_bolee_2_1_mln_rubley_vreda_prichinennogo_pochvam_v_astrakhan/"
+    }
+  ]
+}
