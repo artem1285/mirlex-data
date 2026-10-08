@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
   "state": "READY",
-  "total": 6247,
+  "total": 6655,
   "by_entity_type": {
-    "industry": 5042,
+    "industry": 5450,
     "material": 953,
     "service": 252
   },
