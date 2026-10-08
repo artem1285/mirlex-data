@@ -8,7 +8,7 @@
 
 - **NVOS_636** — НВОС только по применимому критерию. Статус: OFFICIAL_VERIFIED. https://rpn.gov.ru/regions/29/news/novye-kriterii-otneseniya-obektov-okazyvayushchikh-negativnoe-vozdeystvie-na-okruzhayushchuyu-sredu--5999400.html
 - **WASTE_LICENSE_675** — Лицензирование конкретных операций I–IV классов. Статус: OFFICIAL_VERIFIED. https://rpn.gov.ru/regions/36/gov-services/hazard-class/
-- **ANIMAL_BYPRODUCT_1940** — Побочные продукты животноводства — специальный режим. Статус: PRIMARY_ACT_IDENTIFIED_REVALIDATE_DETAILS. https://publication.pravo.gov.ru/
+- **ANIMAL_BYPRODUCT_1940** — Побочные продукты животноводства — специальный режим. Статус: PRIMARY_LAW_ART5_VERIFIED_SECONDARY_RULES_TO_CHECK. https://www.consultant.ru/document/cons_doc_LAW_421776/
 - **MEDICAL** — Медицинские отходы — отдельный санитарный правовой режим. Статус: ACT_EDITION_NOT_YET_VERIFIED. https://www.rospotrebnadzor.ru/
 - **SUBSOIL_WATER** — Недропользование/водопользование/канализация — разные правовые основания. Статус: ACT_EDITION_NOT_YET_VERIFIED. Точный действующий первичный акт требует отдельной сверки.
 - **CONTRACTS** — Обязанности собственника и арендатора зависят от фактического оператора и договоров. Статус: FACT_DEPENDENT. Точный действующий первичный акт требует отдельной сверки.
