@@ -6,7 +6,7 @@ class IndustryAxesTests(unittest.TestCase):
     def test_automoyka_has_stocks_and_nonwater_pains(self):
         result = list(build("Автомойки", ["сточные воды", "шлам автомойки", "нефтеловушка"]))
         queries = [x[0] for x in result]
-        self.assertIn("очистка сточные воды", queries)
+        self.assertIn("сточные воды автомойки", queries)
         self.assertIn("вывоз шлам автомойки", queries)
         self.assertIn("нефтеловушка автомойки", queries)
 
