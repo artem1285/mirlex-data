@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-06",
+  "updated_on": "2026-10-09",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -101,6 +101,12 @@
       "path": "research/registry/radar-2026-10-06-marking-rop-01.json",
       "cards": 2,
       "status": "READ_BACK_VERIFIED_ADDITIONAL_EVIDENCE_INDEXED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-09-interim-recovery.json",
+      "cards": 8,
+      "unique_ids": 6,
+      "status": "PARTIAL_RECOVERY_READ_BACK_VERIFIED_FULL_SOURCE_REVALIDATION_PENDING"
     }
   ],
   "permanent_id_policy": {
@@ -142,7 +148,8 @@
     "2026-10-05: ROP Core v1 materialized at engine/rules/rop/rop-core.v1.json with regression suite and read-back; prior ENG-ROP-GISMT-002 backlog absorbed into ENG-ROP-ROLE-001.",
     "2026-10-06: closed pending indexing for IND-CONSTRUCTION-003 (new permanent ID), IND-SNOW-001 (additional evidence/NPA update), and IND-AQUA-001 (additional evidence/source relink); all three dedicated registry files had prior successful read-back.",
     "CONTINUITY RULE: MIRLEX Radar must not be stopped because an individual persistence/index operation fails. Failed item remains WRITE_PENDING/INDEX_PENDING and is retried; monitoring continues. Radar may be disabled/stopped only on explicit user command.",
-    "2026-10-06: ROP-002 expanded with permanent MARKING↔ROP cross-system reconciliation layer; ROP-003 strengthened for contract manufacturing. Dedicated registry write/read-back verified."
+    "2026-10-06: ROP-002 expanded with permanent MARKING↔ROP cross-system reconciliation layer; ROP-003 strengthened for contract manufacturing. Dedicated registry write/read-back verified.",
+    "2026-10-09: eight interim evidence records / six IDs read-back verified and indexed; original full bundle content and Engine rules remain pending; do not count as complete or active."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
