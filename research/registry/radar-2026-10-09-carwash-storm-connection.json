@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "status": "FACT_PATTERN_FROM_PRIOR_PRIMARY_SOURCE_REVIEW_CASE_DETAILS_REQUIRE_READBACK",
+  "card": {
+    "id": "IND-CARWASH-005",
+    "date": "2026-10-09",
+    "industry_contour": "Автомойки / сточные воды / ливневая сеть / водный объект",
+    "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+    "primary_source": {
+      "authority": "Тверская межрайонная природоохранная прокуратура",
+      "reported_on": "2026-06-25",
+      "locator": "Официальная публикация прокуратуры о незаконной врезке автомойки в городскую ливневую сеть",
+      "url_status": "EXACT_URL_RELINK_REQUIRED"
+    },
+    "current_npa": [
+      {
+        "act": "Федеральный закон №416-ФЗ",
+        "provision": "статья 18",
+        "verification": "Applicability to specific network requires review"
+      },
+      {
+        "act": "Водный кодекс РФ",
+        "provision": "статьи 44, 60",
+        "verification": "Applicability to specific water use/discharge requires review"
+      }
+    ],
+    "factual_pattern": "Автомойка → технологические стоки → фактическая врезка в городскую ливневую сеть → водный объект бассейна Волги",
+    "risk": "Поступление неочищенных технологических стоков в водный объект и возможные меры реагирования",
+    "evidence_court_practice": "По ранее исследованному сообщению прокуратуры суд удовлетворил требование прекратить сброс и организовать надлежащее водоотведение; реквизиты судебного акта требуют установления",
+    "diagnostic_questions": [
+      "А если схема показывает хозяйственно-бытовую сеть, но труба уходит в ливневую?",
+      "А вдруг ливневая сеть имеет выпуск непосредственно в водный объект?",
+      "А если есть очистные, но фактический обходной выпуск минует их?",
+      "А если документы о водоотведении не подтверждают приемку фактического объема?"
+    ],
+    "red_flag": "Неизвестен конечный водоприемник и нет подтверждения фактического пути технологических стоков",
+    "mirlex_checks": [
+      "обследование труб и колодцев",
+      "схема подключения и исполнительная документация",
+      "сопоставление водопотребления и стоков",
+      "конечный водоприемник",
+      "отбор проб при обоснованной необходимости"
+    ],
+    "linked_ids": [
+      "IND-CARWASH-002",
+      "IND-STORM-001",
+      "IND-WATER-001"
+    ],
+    "impact": {
+      "site": "Карточка автомоек: скрытые сбросы в ливневую сеть",
+      "assistant": "вопрос о фактическом конечном водоприемнике",
+      "services": [
+        "WASTEWATER_ROUTE_AUDIT",
+        "STORM_CONNECTION_CHECK"
+      ]
+    },
+    "update_needed": [
+      "engine/rules/industry/carwash.v1.json",
+      "engine/tests/carwash-storm-connection-regression.v1.json",
+      "engine/expert-packages.v1.json"
+    ],
+    "legal_limit": "No automatic violation conclusion until primary source and site facts confirmed"
+  }
+}
