@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "module": "LANDFILL_FILTRATE_STORM",
+  "version": "1.0.0",
+  "status": "DRAFT_FACT_FINDING_ONLY",
+  "rules": [
+    {
+      "rule_id": "ENG-LANDFILL-FILTRATE-STORM-001",
+      "radar_ids": [
+        "IND-LANDFILL-001"
+      ],
+      "trigger": "landfill_site AND (filtrate OR stormwater_inflow OR ker_unknown)",
+      "ask": [
+        "filtrate_collection",
+        "filtrate_volume",
+        "filtrate_treatment",
+        "stormwater_route",
+        "bunds_condition",
+        "project_actual_map",
+        "monitoring_results",
+        "nvos_category",
+        "ker_status"
+      ],
+      "evidence_requests": [
+        "project",
+        "drainage_map",
+        "inspection_photos",
+        "filtrate_logs",
+        "lab_results",
+        "nvos_registry_record"
+      ],
+      "red_flags": [
+        "filtrate_outside_collection",
+        "uncontrolled_runoff",
+        "bunds_missing",
+        "ker_missing_if_required"
+      ],
+      "legal_mode": "NO_AUTOMATED_VIOLATION; PP567_NOT_RETROACTIVE_TO_JUNE_2026",
+      "provenance": "research/registry/radar-2026-10-09-landfill-filtrate-evidence.json",
+      "expert_routing": {
+        "ECO_EXPERT": "FACT_FINDING",
+        "ROP_EXPERT": "REFERRAL_ONLY_NO_ROP_OBLIGATION"
+      }
+    }
+  ]
+}
