@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "module": "ENERGY_ASH_POND_WATER",
+  "version": "1.0.0",
+  "status": "DRAFT_FACT_FINDING_ONLY",
+  "rules": [
+    {
+      "rule_id": "ENG-ENERGY-ASH-WATER-001",
+      "radar_ids": [
+        "IND-ENERGY-003"
+      ],
+      "trigger": "thermal_power_plant AND (ash_pond OR wastewater_outfall)",
+      "ask": [
+        "water_intake_and_meters",
+        "outfall_locations",
+        "actual_treatment",
+        "ash_pond_map",
+        "river_crossings",
+        "upstream_downstream_samples",
+        "szz_status",
+        "seasonal_runoff"
+      ],
+      "evidence_requests": [
+        "water_balance",
+        "discharge_documents",
+        "lab_protocols",
+        "as_built_hydrology",
+        "szz_documents"
+      ],
+      "red_flags": [
+        "river_crossing_unverified",
+        "outfall_treatment_unknown",
+        "water_balance_inconsistent"
+      ],
+      "legal_mode": "NO_AUTOMATED_LEGAL_CONCLUSION",
+      "causation_limit": "Do not infer ash pond caused river contamination without attribution evidence.",
+      "provenance": "research/registry/radar-2026-10-09-energy-ashpond-hydrology.json",
+      "expert_routing": {
+        "ECO_EXPERT": "FACT_FINDING",
+        "ROP_EXPERT": "REFERRAL_ONLY_NO_ROP_OBLIGATION"
+      }
+    }
+  ]
+}
