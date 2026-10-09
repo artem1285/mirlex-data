@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "status": "SOURCE_REVALIDATION_REQUIRED",
+  "card": {
+    "id": "IND-TKO-002",
+    "date": "2026-10-09",
+    "industry_contour": "ТКО / островные территории / сезонный вывоз",
+    "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+    "primary_source": {
+      "authority": "Байкальская межрегиональная природоохранная прокуратура",
+      "date": "2026-09-30",
+      "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8669110/"
+    },
+    "current_npa": [
+      "89-ФЗ ст. 13.4: verify applicable edition",
+      "ПП РФ №293: verify applicable edition"
+    ],
+    "factual_pattern": "Ольхон → ледостав → остановка парома → сезонный разрыв вывоза ТКО → иск прокуратуры → судебное требование круглогодичного вывоза",
+    "risk": "Сезонное накопление и возможное загрязнение",
+    "evidence_court_practice": "По ранее собранной карточке прокуратура сообщила об удовлетворении иска; судебный акт и исполнение не сверены",
+    "diagnostic_questions": [
+      "А если закрыта переправа?",
+      "А вдруг отсутствует статус труднодоступной территории?",
+      "А если акты не подтверждаются GPS?"
+    ],
+    "red_flag": "Нет подтвержденного маршрута вывоза в сезон закрытия переправы",
+    "mirlex_checks": [
+      "территориальная схема",
+      "рейсы GPS",
+      "сроки накопления",
+      "конечный объект",
+      "вода и почва"
+    ],
+    "linked_ids": [
+      "IND-TKO-001",
+      "IND-WASTEOPS-001",
+      "IND-STORM-001",
+      "IND-SITE-001"
+    ],
+    "impact": {
+      "site": "ТКО сезонная логистика",
+      "ECO_EXPERT": "candidate gate",
+      "ROP_EXPERT": "cross contour only"
+    },
+    "update_needed": [
+      "engine/rules/industry/tko-seasonal-logistics.v1.json",
+      "engine/tests/tko-seasonal-logistics-regression.v1.json"
+    ],
+    "guardrails": [
+      "No automatic legal conclusion before source validation"
+    ]
+  }
+}
