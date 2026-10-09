@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "suite": "ENG-ENERGY-ASH-WATER-001",
+  "status": "SPEC_VALIDATED_NOT_EXECUTED",
+  "cases": [
+    {
+      "id": "EA-01",
+      "input": {
+        "thermal_power_plant": true,
+        "ash_pond": true,
+        "river_crossings": "UNKNOWN"
+      },
+      "ask": [
+        "river_crossings",
+        "upstream_downstream_samples"
+      ],
+      "must_not_conclude": [
+        "ash_pond_caused_pollution"
+      ]
+    },
+    {
+      "id": "EA-02",
+      "input": {
+        "thermal_power_plant": true,
+        "wastewater_outfall": true,
+        "actual_treatment": "UNKNOWN"
+      },
+      "ask": [
+        "actual_treatment"
+      ],
+      "must_not_conclude": [
+        "gas_cleaning_proves_water_compliance"
+      ]
+    },
+    {
+      "id": "EA-03",
+      "input": {
+        "thermal_power_plant": false
+      },
+      "must_not_activate": true
+    }
+  ]
+}
