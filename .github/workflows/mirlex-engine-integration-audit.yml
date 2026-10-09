@@ -1,5 +1,10 @@
 name: MIRLEX Engine integration audit
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'engine/tests/mcp_live_audit.py'
+      - '.github/workflows/mirlex-engine-integration-audit.yml'
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
