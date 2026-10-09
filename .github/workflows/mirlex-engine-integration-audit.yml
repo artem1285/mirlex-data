@@ -5,6 +5,10 @@ on:
     paths:
       - 'engine/tests/mcp_live_audit.py'
       - '.github/workflows/mirlex-engine-integration-audit.yml'
+      - 'research/registry/**'
+      - 'engine/rules/**'
+      - 'engine/industry-registry.v1.json'
+      - 'engine/expert-packages.v1.json'
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
