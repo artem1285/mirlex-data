@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09",
+  "id": "IND-STORM-001",
+  "status": "INDEX_PENDING",
+  "dedicated_path": "research/registry/radar-2026-10-09-storm-primary-relink.json",
+  "dedicated_commit": "9b5f20564aad3e81938b7d2466be8d32899b7e73",
+  "next_steps": [
+    "append dedicated_path to research/registry/master-index.json without altering permanent IDs",
+    "read index back",
+    "verify MIRLEX Engine get_radar_card IND-STORM-001 contains dedicated_path"
+  ],
+  "reason": "Existing GitHub file write verified; updating large master-index.json was rejected by tool safety checks; no COMPLETE claim."
+}
