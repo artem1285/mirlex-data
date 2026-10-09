@@ -1,36 +1,51 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-09",
-  "status": "SOURCE_REVALIDATION_REQUIRED",
+  "status": "FACT_PATTERN_PRIMARY_SOURCE_VERIFIED_LEGAL_APPLICATION_CASE_SPECIFIC",
   "card": {
     "id": "IND-TKO-002",
     "date": "2026-10-09",
     "industry_contour": "ТКО / островные территории / сезонный вывоз",
-    "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+    "actuality_status": "FACT_PATTERN_PRIMARY_SOURCE_VERIFIED_LEGAL_APPLICATION_CASE_SPECIFIC",
     "primary_source": {
       "authority": "Байкальская межрегиональная природоохранная прокуратура",
       "date": "2026-09-30",
-      "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8669110/"
+      "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8669110/",
+      "verification": "READ_PRIMARY_SOURCE_2026-10-09"
     },
     "current_npa": [
-      "89-ФЗ ст. 13.4: verify applicable edition",
-      "ПП РФ №293: verify applicable edition"
+      {
+        "act": "Федеральный закон от 24.06.1998 №89-ФЗ",
+        "provision": "ст.13.4 ч.1,3-7",
+        "verification": "consolidated text checked 2026-10-09; case-specific status/exception requires evidence",
+        "url": "https://www.consultant.ru/document/cons_doc_LAW_19109/d55297bbede0486ca81508ed6ac51828bda4d94a/"
+      },
+      {
+        "act": "Постановление Правительства РФ от 07.03.2025 №293",
+        "version": "ред. от 16.05.2026 №567",
+        "verification": "consolidated text checked 2026-10-09; do not auto-issue legal violation",
+        "url": "https://www.consultant.ru/document/cons_doc_LAW_500887/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/"
+      }
     ],
-    "factual_pattern": "Ольхон → ледостав → остановка парома → сезонный разрыв вывоза ТКО → иск прокуратуры → судебное требование круглогодичного вывоза",
+    "factual_pattern": "Зимний ледостав/отсутствие переправы → прекращение фактического вывоза ТКО → скопление отходов на площадке/образование несанкционированной свалки → очистка и спор о распределении расходов → судебное понуждение регоператора обеспечить круглогодичный вывоз",
     "risk": "Сезонное накопление и возможное загрязнение",
-    "evidence_court_practice": "По ранее собранной карточке прокуратура сообщила об удовлетворении иска; судебный акт и исполнение не сверены",
+    "evidence_court_practice": "30.09.2026 прокуратура сообщила об удовлетворении иска к региональному оператору о круглогодичном вывозе; исполнение на контроле. 03.07.2026 прокуратура сообщила о кассационном подтверждении отказа во взыскании с муниципалитета более 2,2 млн руб. расходов на ликвидацию свалки, возникшей при несвоевременном вывозе; конкретные номера судебных дел в публикации не приведены.",
     "diagnostic_questions": [
-      "А если закрыта переправа?",
-      "А вдруг отсутствует статус труднодоступной территории?",
-      "А если акты не подтверждаются GPS?"
+      "А если переправа закрыта в ледостав, есть ли подтвержденная альтернативная логистика?",
+      "А вдруг временная площадка не внесена в реестр или не рассчитана на фактический сезонный объем?",
+      "А если срок накопления продлен, доказан ли статус труднодоступной территории и законность конкретного места?",
+      "А если вывоз документально оформлен, подтверждается ли он рейсами и приемкой на конечном объекте?",
+      "А если свалку ликвидировали за чужой счет, соответствует ли распределение затрат фактической причине образования свалки?"
     ],
-    "red_flag": "Нет подтвержденного маршрута вывоза в сезон закрытия переправы",
+    "red_flag": "Закрытие переправы без проверяемого сезонного плана + рост фактического объема накопления + неподтвержденный конечный вывоз",
     "mirlex_checks": [
-      "территориальная схема",
-      "рейсы GPS",
-      "сроки накопления",
-      "конечный объект",
-      "вода и почва"
+      "терсхема и статус труднодоступной территории",
+      "реестр площадок и их покрытие/вместимость",
+      "сезонный баланс образования/накопления/вывоза",
+      "альтернативный транспорт при ледоставе",
+      "ГЛОНАСС/путевые листы/приемка полигоном",
+      "договорные зоны ответственности и судебные акты",
+      "почва, фильтрат и прилегающие водные объекты"
     ],
     "linked_ids": [
       "IND-TKO-001",
@@ -39,16 +54,51 @@
       "IND-SITE-001"
     ],
     "impact": {
-      "site": "ТКО сезонная логистика",
-      "ECO_EXPERT": "candidate gate",
-      "ROP_EXPERT": "cross contour only"
+      "site": "Отрасль IND-044: операторы ТКО, сезонная логистика и накопление",
+      "ECO_EXPERT": "Add factual gate ENG-TKO-SEASONAL-001 via industry registry",
+      "ROP_EXPERT": "No general ROP trigger: only refer to ECO when recycler/collection logistics materially intersects ROP evidence",
+      "services": [
+        "TКO_LOGISTICS_AUDIT",
+        "TКO_STORAGE_SITE_CHECK",
+        "TКO_EVIDENCE_RECONCILIATION"
+      ]
     },
     "update_needed": [
       "engine/rules/industry/tko-seasonal-logistics.v1.json",
-      "engine/tests/tko-seasonal-logistics-regression.v1.json"
+      "engine/tests/tko-seasonal-logistics-regression.v1.json",
+      "engine/industry-registry.v1.json",
+      "research/registry/master-index.json"
     ],
     "guardrails": [
       "No automatic legal conclusion before source validation"
-    ]
+    ],
+    "supervisory_evidence": [
+      {
+        "date": "2026-01-21",
+        "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8355489/",
+        "facts": "Прокуратура сообщила: площадка временного накопления в Хужире площадью 5000 м² превратилась в свалку; после судебного решения очищена; в реестре также 13 мест накопления.",
+        "stage": "ПРОКУРАТУРА_СООБЩАЕТ_ОБ_ИСПОЛНЕНИИ"
+      },
+      {
+        "date": "2026-03-04",
+        "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8409969/",
+        "facts": "Судебное требование создать площадку временного накопления в Хужире; конструкция и покрытие важны.",
+        "stage": "СУДЕБНОЕ_ТРЕБОВАНИЕ"
+      },
+      {
+        "date": "2026-07-03",
+        "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8568453/",
+        "facts": "Свалка 500 м³ после зимы 2024–2025; кассация 26.06.2026 оставила в силе отказ взыскать с муниципалитета >2,2 млн руб. расходов на вывоз.",
+        "stage": "КАССАЦИЯ_ПО_СООБЩЕНИЮ_ПРОКУРАТУРЫ"
+      },
+      {
+        "date": "2026-09-30",
+        "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8669110/",
+        "facts": "Суд удовлетворил иск о круглогодичном вывозе; исполнение на контроле.",
+        "stage": "ИСК_УДОВЛЕТВОРЕН"
+      }
+    ],
+    "link_resolution": "Existing cross-contour IDs are candidates; verify their semantics before using as automatic dependency.",
+    "legal_limit": "Law texts checked in current consolidated editions, but application to the specific territory, the court's reasoning and status of compliance require original case and territorial scheme; no automated legal conclusion."
   }
 }
