@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "status": "PARTIAL_RECOVERY_EVIDENCE_REVALIDATION_REQUIRED",
+  "warning": "Full original 7 JSON source bundles not yet transported; this is a recoverable structured interim record, not a complete validated registry or active legal rule.",
+  "cards": [
+    {
+      "id": "IND-LANDFILL-001",
+      "date": "2026-10-08",
+      "industry_contour": "LANDFILL",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://epp.genproc.gov.ru/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Полигон: тление, лабораторное загрязнение воздуха",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Полигон: тление, лабораторное загрязнение воздуха",
+      "mirlex_checks": "Проверка фактического тления, протоколов проб воздуха и процессуального статуса",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 1
+    },
+    {
+      "id": "IND-PULP-003",
+      "date": "2026-10-08",
+      "industry_contour": "PULP",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://rpn.gov.ru/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "ЦБП: отходы V класса на почве, взыскание вреда",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "ЦБП: отходы V класса на почве, взыскание вреда",
+      "mirlex_checks": "Сверка фактических площадок отходов с проектом, покрытием и вывозом",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 2
+    },
+    {
+      "id": "IND-WASTEOPS-002",
+      "date": "2026-10-08",
+      "industry_contour": "WASTEOPS",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://epp.genproc.gov.ru/ru/proc_23/mass-media/news/regional/e8637649/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Подрядчик водоканала: операции с отходами, лицензия и загрязнение почвы",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Подрядчик водоканала: операции с отходами, лицензия и загрязнение почвы",
+      "mirlex_checks": "Проверка фактического подрядчика, лицензии и конечной операции",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 3
+    },
+    {
+      "id": "IND-GREENHOUSE-001",
+      "date": "2026-10-09",
+      "industry_contour": "GREENHOUSE",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://epp.genproc.gov.ru/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Тепличные стоки на рельеф и вред почве",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Тепличные стоки на рельеф и вред почве",
+      "mirlex_checks": "Фактический маршрут технологических стоков и аварийных выпусков",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 4
+    },
+    {
+      "id": "IND-LANDFILL-001",
+      "date": "2026-10-09",
+      "industry_contour": "LANDFILL",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://rpn.gov.ru/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Полигон: проектная вместимость и фактическое заполнение",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Полигон: проектная вместимость и фактическое заполнение",
+      "mirlex_checks": "Проектная вместимость, фактическая загрузка, реконструкция и прекращение эксплуатации",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 5
+    },
+    {
+      "id": "IND-LIVESTOCK-001",
+      "date": "2026-10-09",
+      "industry_contour": "LIVESTOCK",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://epp.genproc.gov.ru/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Сельхозпредприятие: загрязнение водного объекта и гибель рыбы",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Сельхозпредприятие: загрязнение водного объекта и гибель рыбы",
+      "mirlex_checks": "Навозные стоки, поверхностный смыв, дренаж, рыбохозяйственные последствия",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 6
+    },
+    {
+      "id": "IND-WATER-001",
+      "date": "2026-10-09",
+      "industry_contour": "WATER",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://epp.genproc.gov.ru/ru/proc_57/mass-media/news/regional/e8625877/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Очистные: недостаточный контроль и уголовно-правовые последствия",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Очистные: недостаточный контроль и уголовно-правовые последствия",
+      "mirlex_checks": "Фактический контроль очистки, ответственный, аварийный маршрут, лаборатория",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 7
+    },
+    {
+      "id": "IND-LANDFILL-001",
+      "date": "2026-10-09",
+      "industry_contour": "LANDFILL",
+      "actuality_status": "SOURCE_REVALIDATION_REQUIRED",
+      "primary_source": "https://epp.genproc.gov.ru/ru/gprf/mass-media/news/regional/e8608917/",
+      "current_npa": "REVALIDATION_REQUIRED",
+      "factual_pattern": "Полигон в Энгельсском районе: тление, возбуждение уголовного дела",
+      "risk": "Potential environmental enforcement exposure; case-specific proof required",
+      "evidence_court_practice": "See original archived bundle; source verification pending",
+      "diagnostic_questions": [
+        "Совпадают ли документы с фактическим маршрутом воздействия?",
+        "Есть ли измерения, акты, договоры и доказательства конечной операции?"
+      ],
+      "red_flag": "Полигон в Энгельсском районе: тление, возбуждение уголовного дела",
+      "mirlex_checks": "Стадия дела и загрязнение воздуха; не трактовать возбуждение как виновность",
+      "linked_ids": [],
+      "impact": "Candidate for ECO_EXPERT; no automatic legal conclusion",
+      "update_needed": "Restore complete source bundle, validate law and evidence, then derive Engine rule",
+      "source_bundle": "mirlex_radar_2026-10-09_recovery_package.zip",
+      "record_sequence": 8
+    }
+  ]
+}
