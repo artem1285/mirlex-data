@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-10",
+  "status": "INDEX_PENDING_RETRY_NEXT_CYCLE",
+  "issue": "GitHub connector rejected full master-index replacement; existing master-index remains unchanged",
+  "registry_card_path": "research/registry/radar-2026-10-10-greenhouse-001-source-relink.json",
+  "existing_permanent_id": "IND-GREENHOUSE-001",
+  "new_id_created": false,
+  "card_write_commit": "590a8f9bdb7b18de413f419e193c828c7392f8af",
+  "card_readback_verified": true,
+  "required_next_steps": [
+    "Fetch handover and master-index first",
+    "Append registry path to master-index without deleting metadata",
+    "Read back master-index and verify registry path",
+    "Call MIRLEX Engine get_radar_card IND-GREENHOUSE-001 and verify source path",
+    "Check ECO and ROP packages; keep rule DRAFT_NOT_ACTIVE",
+    "Update handover after verified integration"
+  ],
+  "source_primary": "https://epp.genproc.gov.ru/ru/proc_48/mass-media/news/regional/e8604831/",
+  "workflow_audit_run_id": "UNVERIFIED",
+  "no_user_notification_until_complete": true
+}
