@@ -43,7 +43,7 @@ def run():
     require(EXPECTED <= names, f"Missing MCP tools: {sorted(EXPECTED - names)}")
     index = call("get_radar_registry_index")
     require(index.get("ok") is True, "Radar registry failed")
-    require(index.get("data", {}).get("registries"), "Radar registry has no indexed batches")
+    require(index.get("registry", {}).get("registries"), "Radar registry has no indexed batches")
     card = call("get_radar_card", {"id": "ROP-004"})
     require(card.get("ok") is True and card.get("complete") is True and card.get("records"), "ROP-004 incomplete or absent")
     industries = call("list_mirlex_industries")
