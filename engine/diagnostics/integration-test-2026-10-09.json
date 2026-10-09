@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-09",
+  "scope": "Live MIRLEX MCP and plugin configuration integration tests",
+  "status": "PARTIAL_PASS_NOT_FULL_END_TO_END",
+  "source": "Direct connected MIRLEX Engine and Plugin Creator calls",
+  "checks": [
+    {
+      "id": "ECO_PACKAGE",
+      "status": "PASS",
+      "evidence": "get_eco_expert_package ok true; expert ECO_EXPERT; engine_version v2; industry_registry.industry_count 58"
+    },
+    {
+      "id": "ROP_PACKAGE",
+      "status": "PASS",
+      "evidence": "get_rop_expert_package ok true; expert ROP_EXPERT; engine_version v2"
+    },
+    {
+      "id": "RADAR_INDEX",
+      "status": "PASS",
+      "evidence": "get_radar_registry_index ok true; registry with indexed batches"
+    },
+    {
+      "id": "ROP_004",
+      "status": "PASS_WITH_REVALIDATION",
+      "evidence": "get_radar_card ROP-004 ok true, complete true, 2 records; primary-source relinking pending"
+    },
+    {
+      "id": "IND_002",
+      "status": "PASS_RESEARCH_ONLY",
+      "evidence": "get_industry_research IND-002 ok true; rulepack_status NOT_FORMALIZED"
+    },
+    {
+      "id": "IND_001_RULEPACK",
+      "status": "PASS_INTERNAL_ONLY",
+      "evidence": "get_industry_rulepack IND-001 ok true; seed for internal validation"
+    },
+    {
+      "id": "UNKNOWN_ID",
+      "status": "PASS",
+      "evidence": "ROP-999 returns ok false, records []"
+    },
+    {
+      "id": "CORE",
+      "status": "PASS",
+      "evidence": "get_mirlex_core ok true"
+    },
+    {
+      "id": "ROP_TESTS_RETRIEVAL",
+      "status": "PASS",
+      "evidence": "get_rop_tests ok true; regression cases retrieved, not executed"
+    },
+    {
+      "id": "CARWASH_RULES",
+      "status": "PASS",
+      "evidence": "get_carwash_rules ok true"
+    },
+    {
+      "id": "INDUSTRY_LIST",
+      "status": "PASS",
+      "evidence": "list_mirlex_industries industry_count 58"
+    },
+    {
+      "id": "PLUGIN_PROTOCOL",
+      "status": "PASS_CONFIGURATION_ONLY",
+      "evidence": "ECO 0.4.6 and ROP 0.13.5 have engine-protocol and MCP URL; actual independent model conversations not invoked"
+    }
+  ],
+  "blockers": [
+    "No independent execution of model behavior inside each private plugin via available tool",
+    "No demonstrated radar finding write->index->read->rule promotion pipeline",
+    "No verified successful GitHub Actions audit run",
+    "No guarantee of automatic retrieval of every finding without relevance selection"
+  ],
+  "warning": "MCP retrieval is not model training. Never claim 100% coverage without live behavioral and write pipeline tests."
+}
