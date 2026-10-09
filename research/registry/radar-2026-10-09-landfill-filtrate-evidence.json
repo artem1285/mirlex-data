@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "cards": [
+    {
+      "id": "IND-LANDFILL-001",
+      "date": "2026-10-09",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "Полигон ТКО: фильтрат и внешний сток",
+      "actuality_status": "PRIMARY_SOURCE_VERIFIED",
+      "primary_source": "https://epp.genproc.gov.ru/ru/vmtp/mass-media/news/regional/e8523870/",
+      "current_npa": [
+        "7-ФЗ ст.31.1: КЭР при подтверждённой обязанности",
+        "ПП РФ №567 действует с 01.09.2026, без ретроактивности"
+      ],
+      "factual_pattern": "Полигон в Набережных Челнах: фильтрат вне предусмотренного места, отсутствуют защитные валы, нет КЭР.",
+      "risk": "Неконтролируемый маршрут фильтрата и стока.",
+      "evidence_court_practice": "Прокуратура 03.06.2026: штрафы по ст.6.35, 8.2, 8.47 КоАП, представление.",
+      "diagnostic_questions": [
+        "А если валы повреждены?",
+        "Куда идёт талый сток?",
+        "Есть ли КЭР и обязанность его получить?"
+      ],
+      "red_flag": "Фильтрат вне проектной зоны.",
+      "mirlex_checks": [
+        "Дренаж, валы и ёмкости",
+        "Проект против факта",
+        "КЭР и категория НВОС"
+      ],
+      "linked_ids": [
+        "IND-WATER-001",
+        "IND-ACCIDENT-001"
+      ],
+      "impact": "ECO fact-finding; ROP referral only; аудит полигона",
+      "update_needed": "ENG-LANDFILL-FILTRATE-STORM-001"
+    }
+  ]
+}
