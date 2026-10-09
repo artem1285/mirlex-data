@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "cards": [
+    {
+      "id": "IND-GREENHOUSE-001",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "primary_source": [
+        "https://epp.genproc.gov.ru/ru/proc_48/mass-media/news/regional/e8555913/",
+        "https://epp.genproc.gov.ru/ru/proc_48/mass-media/news/regional/e8604831/"
+      ],
+      "status": "SOURCE_RELINK_VERIFIED"
+    }
+  ]
+}
