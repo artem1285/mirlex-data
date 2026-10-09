@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "industry": "TKO_OPERATOR_SEASONAL_LOGISTICS",
+  "version": "1.0.0",
+  "status": "SEED_ACTIVE_FOR_INTERNAL_VALIDATION",
+  "rules": [
+    {
+      "rule_id": "ENG-TKO-SEASONAL-001",
+      "version": "1.0.0",
+      "status": "ACTIVE_INTERNAL_FACT_FINDING",
+      "scope": {
+        "industry": "TKO_OPERATOR",
+        "contours": [
+          "WASTE",
+          "SEASONAL",
+          "SOIL",
+          "WATER",
+          "SANITARY_POPULATION"
+        ]
+      },
+      "triggers": [
+        "remote_or_island_site AND seasonal_transport_closure"
+      ],
+      "ask": [
+        "closure_calendar",
+        "alternative_logistics",
+        "tko_generated_volume",
+        "storage_capacity",
+        "actual_storage_duration",
+        "territorial_scheme_status",
+        "site_registry",
+        "gps_tracks",
+        "final_facility_acceptance"
+      ],
+      "evidence_requests": [
+        "territorial_scheme",
+        "municipal_site_registry",
+        "transport_schedule",
+        "storage_design",
+        "gps_and_transport_acts",
+        "final_acceptance_documents"
+      ],
+      "checks": [
+        "seasonal route versus actual removal",
+        "generated volume versus capacity and documented removal",
+        "site legal status versus actual accumulation",
+        "paper transport acts versus GPS and final acceptance",
+        "responsibility for cause of accumulation versus cost recovery"
+      ],
+      "linked_rules": [
+        "ENG-UNI-WASTE-001",
+        "ENG-UNI-SOIL-001",
+        "ENG-UNI-STORM-001",
+        "ENG-UNI-SAN-001"
+      ],
+      "outcomes": {
+        "red_flags": [
+          "no seasonal route",
+          "volume balance contradiction",
+          "unregistered temporary site",
+          "transport acts contradict actual logistics"
+        ],
+        "obligations": [
+          "Check current 89-FZ art.13.4, PP293 and local territorial scheme before legal conclusion"
+        ],
+        "actions": [
+          "collect route and volume evidence",
+          "verify site capacity and final disposal",
+          "escalate physical contamination to universal gates"
+        ],
+        "services": [
+          "TKO_SEASONAL_LOGISTICS_DIAGNOSTIC",
+          "TKO_STORAGE_SITE_AUDIT"
+        ],
+        "quote_inputs": [
+          "site_count",
+          "months_of_closure",
+          "volume",
+          "need_for_site_visit"
+        ]
+      },
+      "provenance": {
+        "radar_ids": [
+          "IND-TKO-002"
+        ],
+        "sources": [
+          "research/registry/radar-2026-10-09-seasonal-tko.json"
+        ]
+      },
+      "legal_mode": "REVALIDATE_BEFORE_AUTOMATED_LEGAL_CONCLUSION",
+      "tests_required": true
+    }
+  ],
+  "mandatory_universal_gates": [
+    "WASTE",
+    "SOIL",
+    "STORMWATER",
+    "SANITARY_POPULATION"
+  ]
+}
