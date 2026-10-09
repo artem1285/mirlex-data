@@ -20,5 +20,33 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Check GitHub registry, both expert packages, 58 industries and ROP-004 via deployed MCP
-        run: python3 engine/tests/mcp_live_audit.py
+      - name: Verify deployed MIRLEX MCP and write execution log
+        id: audit
+        shell: bash
+        run: |
+          mkdir -p audit-logs
+          set -o pipefail
+          {
+            echo "UTC_START=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "GITHUB_RUN_ID=$GITHUB_RUN_ID"
+            echo "GITHUB_SHA=$GITHUB_SHA"
+            echo "GITHUB_EVENT_NAME=$GITHUB_EVENT_NAME"
+            python3 engine/tests/mcp_live_audit.py
+            echo "UTC_END=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } 2>&1 | tee "audit-logs/mirlex-engine-audit.log"
+      - name: Write GitHub Actions summary
+        if: always()
+        shell: bash
+        run: |
+          echo "## MIRLEX Engine integration audit" >> "$GITHUB_STEP_SUMMARY"
+          echo "Result: ${{ steps.audit.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Run: ${{ github.run_id }} | Commit: ${{ github.sha }}" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Log: artifact mirlex-engine-audit-log' >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve audit log even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mirlex-engine-audit-log
+          path: audit-logs/
+          if-no-files-found: warn
+          retention-days: 90
