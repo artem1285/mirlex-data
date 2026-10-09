@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "cards": [
+    {
+      "id": "IND-STORM-001",
+      "date": "2026-10-09",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "Industrial stormwater; storage pond overflow; wetlands and rivers",
+      "actuality_status": "PRIMARY_SOURCE_VERIFIED",
+      "primary_source": "https://epp.genproc.gov.ru/ru/vmtp/mass-media/news/regional/e8565072/ (Yaroslavl environmental prosecutor, 2026-07-02)",
+      "current_npa": [
+        "Water Code RF 74-FZ arts.11,56,60 (2026 revision)",
+        "Government Decree 18 of 2022 (current through 2027-09-01)",
+        "KoAP RF arts.7.6,8.1,8.13(4) cited by prosecutor"
+      ],
+      "factual_pattern": "Industrial stormwater -> storage ponds -> overflow -> Dudkinskoe wetland -> Dudkinsky creek -> Gorky reservoir",
+      "risk": "Undocumented physical discharge via overflow, despite no designed direct outfall",
+      "evidence_court_practice": "Prosecutor reported administrative fines totalling over RUB 60,000 and corrective representation; not a court judgment.",
+      "diagnostic_questions": [
+        "Could design rainfall or snowmelt exceed pond capacity?",
+        "Does overflow reach any ditch, wetland, creek or river?",
+        "Do operational logs and permits match actual routing?",
+        "Are capacity, sampling and emergency arrangements verified?"
+      ],
+      "red_flag": "No discharge claimed because water is stored; overflow route not assessed.",
+      "mirlex_checks": [
+        "Map catchment and surface runoff",
+        "Inspect pond capacity and overflow",
+        "Trace actual downstream hydrology",
+        "Compare permits, operating records and samples"
+      ],
+      "links": [
+        "IND-WATER-001",
+        "IND-LOS-001",
+        "IND-SNOW-001",
+        "IND-LANDFILL-001"
+      ],
+      "impact": {
+        "website": "Stormwater and overflow diagnostic",
+        "assistant": "Ask about overflow and final receiving waterbody",
+        "services": [
+          "Stormwater audit",
+          "Actual discharge route inspection"
+        ],
+        "rop": "Referral only; no ROP duty"
+      },
+      "engine_update": "ENG-UNI-STORM-001 exists; no new ACTIVE legal rule; link evidence to existing ID."
+    }
+  ]
+}
