@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "batch_date": "2026-10-09",
+  "source_type": "PRIMARY_REGULATOR_PUBLICATION",
+  "cards": [
+    {
+      "id": "ROP-004",
+      "record_type": "ADDITIONAL_EVIDENCE_PRIMARY_SOURCE_RELINK",
+      "date": "2026-10-09",
+      "industry_contour": "РОП / утилизаторы / подтверждение фактической утилизации",
+      "actuality_status": "PRIMARY_SOURCE_PUBLICATION_IDENTIFIED_RESEARCH_ONLY",
+      "primary_source": {
+        "publisher": "Росприроднадзор",
+        "publication_date": "2026-09-23",
+        "title": "Росприроднадзор запросил у утилизаторов данные о фактической утилизации и повторном использовании продукции",
+        "url": "https://rpn.gov.ru/press/news/rosprirodnadzor_zaprosil_u_utilizatorov_dannye_o_fakticheskoy_utilizatsii_i_povtornom_ispolzovanii_p/",
+        "verified_scope": "Официальная страница РПН, дата, заголовок и сообщение о направлении запросов юридическим лицам и ИП-утилизаторам; полный текст страницы не извлечён из-за HTTP 403, детали запросов не подтверждаются этим источником."
+      },
+      "factual_pattern": "Надзорный орган запросил у утилизаторов сведения о фактической утилизации и повторном использовании продукции; документальное оформление актов не является единственной точкой контроля.",
+      "risk": "Несоответствие актов реальным операциям и дальнейшему использованию продукции может потребовать дополнительного доказательного анализа; нарушение конкретного утилизатора данным сообщением не установлено.",
+      "legal_basis_to_validate": [
+        "Федеральный закон № 89-ФЗ, ст. 24.2-1 — проверить актуальную редакцию и применимость к периоду",
+        "ПП РФ № 2400 — проверить актуальную редакцию и применимость"
+      ],
+      "evidence_court_practice": "Официальное сообщение Росприроднадзора о запросах; не судебное решение и не установленный факт нарушения.",
+      "diagnostic_questions": [
+        "Чем подтверждена фактическая операция, помимо акта?",
+        "Как прослеживается полученная продукция и её повторное использование?",
+        "Совпадают ли объёмы в акте с учётом входа, выхода и мощностей?"
+      ],
+      "red_flag": "Акт имеется, но предприятие не может предъявить прослеживаемый материальный баланс и дальнейшую судьбу продукции.",
+      "mirlex_checks": "REGISTRY → OPERATION → INPUT_MASS → TECHNOLOGY → OUTPUT_PRODUCT → REUSE_TRACE → ACT_RECONCILIATION",
+      "cross_links": [
+        "ROP-004",
+        "ENG-ROP-RECYCLER-001"
+      ],
+      "impact_on_services": "Усилить диагностический блок MIRLEX РОП: запрашивать доказательства фактической утилизации и судьбы полученной продукции.",
+      "engine_update": "Enrich evidence/provenance of existing ROP-004. No automatic activation or legal upgrade of ENG-ROP-RECYCLER-001.",
+      "review_status": "SOURCE_RELINK_VERIFIED_FULL_TEXT_PENDING"
+    }
+  ]
+}
