@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-09",
+  "updated_on": "2026-10-10",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -135,6 +135,16 @@
       "path": "research/registry/radar-2026-10-09-rop004-rpn-primary-relink.json",
       "cards": 1,
       "status": "PRIMARY_SOURCE_LINKED_READ_BACK_VERIFIED_FULL_TEXT_PENDING"
+    },
+    {
+      "path": "research/registry/radar-2026-10-10-storm001-primary-evidence.json",
+      "cards": 1,
+      "status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY_READ_BACK"
+    },
+    {
+      "path": "research/registry/radar-2026-10-10-greenhouse-001-source-relink.json",
+      "cards": 1,
+      "status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY_READ_BACK"
     }
   ],
   "permanent_id_policy": {
@@ -179,7 +189,8 @@
     "2026-10-06: ROP-002 expanded with permanent MARKING↔ROP cross-system reconciliation layer; ROP-003 strengthened for contract manufacturing. Dedicated registry write/read-back verified.",
     "2026-10-09: eight interim evidence records / six IDs read-back verified and indexed; original full bundle content and Engine rules remain pending; do not count as complete or active.",
     "IND-TKO-002 persisted and indexed 2026-10-09; legal/source validation and Engine activation pending.",
-    "IND-CARWASH-005 persisted; primary source exact URL must be relinked before verified legal conclusion."
+    "IND-CARWASH-005 persisted; primary source exact URL must be relinked before verified legal conclusion.",
+    "2026-10-10: primary-source relinks for IND-STORM-001 and IND-GREENHOUSE-001 indexed; research only, not promoted to active rules."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
