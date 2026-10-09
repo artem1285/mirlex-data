@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-09",
+  "status": "INDEX_PENDING",
+  "registries": [
+    "research/registry/radar-2026-10-09-energy-decommissioning.json",
+    "research/registry/radar-2026-10-09-energy-ashpond-hydrology.json",
+    "research/registry/radar-2026-10-09-landfill-filtrate-evidence.json"
+  ],
+  "rules": [
+    "engine/rules/industry/energy-fuel-decommissioning.v1.json",
+    "engine/rules/industry/energy-ashpond-water.v1.json",
+    "engine/rules/industry/landfill-filtrate-storm.v1.json"
+  ],
+  "note": "Do not claim Engine or expert activation until master index and MCP retrieval verified."
+}
