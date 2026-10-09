@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "suite": "ENG-ENERGY-FUEL-DECOM-001",
+  "status": "SPEC_VALIDATED_NOT_EXECUTED",
+  "cases": [
+    {
+      "id": "EF-01",
+      "input": {
+        "energy_site": true,
+        "fuel_storage_change": true,
+        "cleaning_acts": "UNKNOWN"
+      },
+      "ask": [
+        "cleaning_acts"
+      ],
+      "must_not_conclude": [
+        "demolition_caused_contamination"
+      ]
+    },
+    {
+      "id": "EF-02",
+      "input": {
+        "energy_site": true,
+        "fuel_storage_change": true,
+        "waste_final_receiver": "UNKNOWN"
+      },
+      "ask": [
+        "waste_final_receiver"
+      ],
+      "must_not_conclude": [
+        "automatic_violation"
+      ]
+    },
+    {
+      "id": "EF-03",
+      "input": {
+        "energy_site": false
+      },
+      "must_not_activate": true
+    }
+  ]
+}
