@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "status": "REVIEWED",
+  "cards": [
+    {
+      "id": "IND-ENERGY-003",
+      "date": "2026-10-09",
+      "industry_contour": "ENERGY_WATER",
+      "actuality_status": "SOURCE_VERIFIED",
+      "primary_source": "https://epp.genproc.gov.ru/ru/proc_75/mass-media/news/main/e8568972/",
+      "current_npa": "Water Code 56,60; 7-FZ 39, site-specific verification required",
+      "factual_pattern": "Power plant water intake, discharges and ash pond need independent verification.",
+      "risk": "Cross-contour water monitoring",
+      "evidence_court_practice": "Prosecutor review published 2026-07-03",
+      "mirlex_checks": [
+        "actual water routes",
+        "sampling"
+      ],
+      "impact": "Energy industry diagnostic",
+      "red_flag": "Unverified actual water route",
+      "update_needed": "engine/rules/industry/energy-ash-water.v1.json"
+    }
+  ]
+}
