@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "module": "ENG-CARWASH-STORM-CONNECTION-001",
+  "status": "INTERNAL_FACT_FINDING_TESTS",
+  "tests": [
+    {
+      "id": "CW-STORM-01",
+      "facts": {
+        "storm_connection": true,
+        "final_receiver": "river"
+      },
+      "expect": {
+        "activate": true,
+        "ask": [
+          "network_connection_scheme",
+          "storm_outfall_destination"
+        ],
+        "no_automatic_legal_conclusion": true
+      }
+    },
+    {
+      "id": "CW-STORM-02",
+      "facts": {
+        "declared_route": "sewer",
+        "actual_route": "storm"
+      },
+      "expect": {
+        "red_flag": "documents contradict actual pipe route"
+      }
+    },
+    {
+      "id": "CW-STORM-03",
+      "facts": {
+        "storm_connection": false,
+        "verified_sewer": true
+      },
+      "expect": {
+        "no_false_storm_violation": true
+      }
+    },
+    {
+      "id": "CW-STORM-04",
+      "facts": {
+        "actual_route": "unknown"
+      },
+      "expect": {
+        "request_evidence": true,
+        "no_automatic_legal_conclusion": true
+      }
+    }
+  ]
+}
