@@ -112,6 +112,12 @@
       "path": "research/registry/radar-2026-10-09-seasonal-tko.json",
       "cards": 1,
       "status": "READ_BACK_VERIFIED_SOURCE_REVALIDATION_REQUIRED"
+    },
+    {
+      "path": "research/registry/radar-2026-10-09-carwash-storm-connection.json",
+      "cards": 1,
+      "status": "READ_BACK_VERIFIED_SOURCE_URL_RELINK_REQUIRED",
+      "engine_rule": "ENG-CARWASH-STORM-CONNECTION-001"
     }
   ],
   "permanent_id_policy": {
@@ -155,7 +161,8 @@
     "CONTINUITY RULE: MIRLEX Radar must not be stopped because an individual persistence/index operation fails. Failed item remains WRITE_PENDING/INDEX_PENDING and is retried; monitoring continues. Radar may be disabled/stopped only on explicit user command.",
     "2026-10-06: ROP-002 expanded with permanent MARKING↔ROP cross-system reconciliation layer; ROP-003 strengthened for contract manufacturing. Dedicated registry write/read-back verified.",
     "2026-10-09: eight interim evidence records / six IDs read-back verified and indexed; original full bundle content and Engine rules remain pending; do not count as complete or active.",
-    "IND-TKO-002 persisted and indexed 2026-10-09; legal/source validation and Engine activation pending."
+    "IND-TKO-002 persisted and indexed 2026-10-09; legal/source validation and Engine activation pending.",
+    "IND-CARWASH-005 persisted; primary source exact URL must be relinked before verified legal conclusion."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
