@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "suite": "ENG-LANDFILL-FILTRATE-STORM-001",
+  "status": "SPEC_VALIDATED_NOT_EXECUTED",
+  "cases": [
+    {
+      "id": "LF-01",
+      "input": {
+        "landfill_site": true,
+        "bunds_condition": "UNKNOWN"
+      },
+      "ask": [
+        "bunds_condition"
+      ],
+      "no_automatic_violation": true
+    },
+    {
+      "id": "LF-02",
+      "input": {
+        "landfill_site": true,
+        "nvos_category": "UNKNOWN"
+      },
+      "ask": [
+        "nvos_category"
+      ],
+      "no_automatic_ker_violation": true
+    },
+    {
+      "id": "LF-03",
+      "input": {
+        "assessment_date": "2026-06-03"
+      },
+      "no_retroactive_application": true
+    }
+  ]
+}
