@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "check": "MIRLEX_GITHUB_ENGINE_INTEGRITY",
+  "github_index_engine_index_equal": true,
+  "registry_batches": 23,
+  "rop004_records": 3,
+  "rop004_complete": true,
+  "eco_industries": 58,
+  "eco_package_available": true,
+  "rop_package_available": true,
+  "github_actions_run_id": "UNVERIFIED",
+  "github_actions_log": "UNVERIFIED",
+  "new_evidence_file": "research/registry/radar-2026-10-09-greenhouse-source-links.json",
+  "new_evidence_indexed": false,
+  "notification_allowed": false
+}
