@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "module": "ENERGY_FUEL_DECOMMISSIONING",
+  "version": "1.0.0",
+  "status": "DRAFT_FACT_FINDING_ONLY",
+  "rules": [
+    {
+      "rule_id": "ENG-ENERGY-FUEL-DECOM-001",
+      "radar_ids": [
+        "IND-ENERGY-002"
+      ],
+      "trigger": "energy_site AND fuel_storage_change",
+      "ask": [
+        "tank_inventory",
+        "cleaning_acts",
+        "residual_fuel",
+        "drainage_map",
+        "waterbody_receptors",
+        "seasonal_runoff",
+        "waste_final_receiver"
+      ],
+      "evidence_requests": [
+        "project",
+        "cleaning_acts",
+        "site_photos",
+        "waste_acceptance_acts"
+      ],
+      "red_flags": [
+        "cleaning_unverified",
+        "water_route_unknown",
+        "waste_acceptor_unknown"
+      ],
+      "legal_mode": "NO_AUTOMATED_LEGAL_CONCLUSION",
+      "provenance": "research/registry/radar-2026-10-09-energy-decommissioning.json",
+      "expert_routing": {
+        "ECO_EXPERT": "FACT_FINDING",
+        "ROP_EXPERT": "REFERRAL_ONLY_NO_ROP_OBLIGATION"
+      }
+    }
+  ]
+}
