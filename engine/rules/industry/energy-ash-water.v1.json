@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "industry": "ENERGY_TPP_ASH_WATER",
+  "version": "1.0.0",
+  "status": "ACTIVE_INTERNAL_FACT_FINDING_LEGAL_GATE",
+  "rules": [
+    {
+      "rule_id": "ENG-ENERGY-ASH-WATER-001",
+      "version": "1.0.0",
+      "status": "ACTIVE_INTERNAL_FACT_FINDING",
+      "scope": {
+        "industry": "IND-039",
+        "contours": [
+          "WATER",
+          "WASTE",
+          "SOIL",
+          "AIR",
+          "SANITARY_POPULATION",
+          "SEASONAL",
+          "EMERGENCY"
+        ]
+      },
+      "triggers": [
+        "tpp_or_boiler AND (ash_pond_exists OR wastewater_outlet_exists OR watercourse_crosses_site)"
+      ],
+      "ask": [
+        "ash_pond_exists",
+        "watercourse_crosses_ash_pond",
+        "actual_discharge_outlets",
+        "intake_volume_metered",
+        "discharge_volume_metered",
+        "wastewater_treatment_exists_and_operates",
+        "water_sampling_upstream_downstream",
+        "storm_flood_snowmelt_routes",
+        "ash_waste_storage_and_removal",
+        "szz_status"
+      ],
+      "evidence_requests": [
+        "site_water_and_ash_pond_plan",
+        "water_intake_discharge_balances",
+        "meter_seal_and_verification_records",
+        "treatment_design_operation_logs",
+        "upstream_downstream_sampling_protocols",
+        "ash_pond_hydrology_and_waste_documents",
+        "szz_documents"
+      ],
+      "checks": [
+        "trace each outlet to actual receiving water",
+        "check whether watercourse intersects ash pond",
+        "reconcile measured intake, discharge and technology water balance",
+        "compare gas cleaning claims separately from water treatment reality",
+        "test seasonally altered surface runoff and bypasses",
+        "check environmental versus sanitary receptor"
+      ],
+      "red_flags": [
+        "watercourse crosses ash pond without upstream/downstream monitoring",
+        "untreated outlet exists but documents only discuss gas cleaning",
+        "metered intake or discharge contradicts factual process",
+        "ash mixture stored on terrain with unknown runoff destination"
+      ],
+      "outcomes": {
+        "actions": [
+          "obtain factual route map",
+          "sample appropriately when evidence supports",
+          "review applicable current legal requirements before legal conclusions"
+        ],
+        "services": [
+          "ENERGY_WATER_ROUTE_AUDIT",
+          "ASH_POND_ENVIRONMENTAL_DIAGNOSTIC"
+        ],
+        "quote_inputs": [
+          "outlet_count",
+          "ash_pond_count",
+          "watercourse_crossings",
+          "sampling_points",
+          "need_for_site_visit"
+        ]
+      },
+      "provenance": {
+        "radar_ids": [
+          "IND-ENERGY-003"
+        ],
+        "sources": [
+          "research/registry/radar-2026-10-09-energy-ash-water.json",
+          "https://epp.genproc.gov.ru/ru/proc_75/mass-media/news/main/e8568972/",
+          "https://epp.genproc.gov.ru/ru/abpp/mass-media/news/regional/e8377008/"
+        ]
+      },
+      "legal_mode": "NO_AUTOMATED_VIOLATION_OR_CAUSATION_CONCLUSION",
+      "tests_required": true
+    }
+  ],
+  "mandatory_universal_gates": [
+    "WATER",
+    "WASTE",
+    "SOIL",
+    "SANITARY_POPULATION",
+    "EMERGENCY"
+  ]
+}
