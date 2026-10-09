@@ -44,8 +44,11 @@ def run():
     index = call("get_radar_registry_index")
     require(index.get("ok") is True, "Radar registry failed")
     require(index.get("registry", {}).get("registries"), "Radar registry has no indexed batches")
+    required_path = "research/registry/radar-2026-10-09-rop004-rpn-primary-relink.json"
+    require(any(row.get("path") == required_path for row in index["registry"]["registries"]), "Latest ROP-004 batch not indexed in deployed Engine")
     card = call("get_radar_card", {"id": "ROP-004"})
     require(card.get("ok") is True and card.get("complete") is True and card.get("records"), "ROP-004 incomplete or absent")
+    require(any(record.get("source") == required_path and record.get("card", {}).get("id") == "ROP-004" for record in card["records"]), "Latest ROP-004 evidence not delivered by deployed Engine")
     industries = call("list_mirlex_industries")
     registry = industries.get("data", industries)
     require(registry.get("industry_count", 0) >= 58, "Industry registry regressed below 58")
@@ -55,7 +58,7 @@ def run():
         package = call(name)
         require(package.get("ok") is True and package.get("expert") == key, f"{key} package failed")
         require(package.get("core", {}).get("rules"), f"{key} common core missing")
-    print("PASS: 11 MCP tools, radar index, ROP-004, 58+ industries, IND-002 and both expert packages")
+    print("PASS: 11 MCP tools, latest ROP-004 evidence, radar index, 58+ industries, IND-002 and both expert packages")
     print("LIMIT: this tests server retrieval, not actual model decisions, legal validation, or radar write pipeline")
 
 if __name__ == "__main__":
