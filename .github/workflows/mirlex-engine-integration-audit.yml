@@ -1,0 +1,15 @@
+name: MIRLEX Engine integration audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check GitHub registry, both expert packages, 58 industries and ROP-004 via deployed MCP
+        run: python3 engine/tests/mcp_live_audit.py
