@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-09",
+  "status": "RECOVERY_PENDING_FULL_PAYLOAD",
+  "source": "Previously generated MIRLEX radar recovery archive, not yet committed",
+  "archive_name": "mirlex_radar_2026-10-09_recovery_package.zip",
+  "expected_cards": 8,
+  "permanent_ids": [
+    "IND-LANDFILL-001",
+    "IND-WASTEOPS-002",
+    "IND-PULP-003",
+    "IND-GREENHOUSE-001",
+    "IND-LIVESTOCK-001",
+    "IND-WATER-001"
+  ],
+  "policy": "Do not activate rules or mark complete until full original evidence, sources, ID collision review and readback are committed.",
+  "reason": "Preserve recoverable backlog control in GitHub while full file transport is unresolved"
+}
