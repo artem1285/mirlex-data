@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-10-09",
+  "record_type": "EVIDENCE_APPEND_EXISTING_ID",
+  "status": "PRIMARY_SOURCE_VERIFIED_LEGAL_FRAMEWORK_CHECKED_CASE_SPECIFIC_CAUSATION_NOT_INDEPENDENTLY_REVIEWED",
+  "cards": [
+    {
+      "id": "IND-WATER-001",
+      "date": "2026-10-09",
+      "industry_contour": "IND-040 / водоканалы и централизованные системы водоотведения; физический путь аварийного сброса через почву в ручей",
+      "actuality_status": "NEW_MATERIAL_EVIDENCE_APPEND_EXISTING_ID",
+      "primary_source": {
+        "authority": "Федеральная служба по надзору в сфере природопользования",
+        "published_on": "2026-10-02",
+        "title": "Суд обязал ООО «Энергетик» возместить более 19,6 млн рублей за вред, причиненный почве и воде в Амурской области",
+        "url": "https://rpn.gov.ru/press/news/sud_obyazal_ooo_energetik_vozmestit_bolee_19_6_mln_rubley_za_vred_prichinennyy_pochve_i_vode_v_amurs/",
+        "source_status": "PRIMARY_AUTHORITY_NEWS_VERIFIED_BY_INDEXED_PAGE; court judgment not independently inspected"
+      },
+      "current_npa": [
+        {
+          "act": "Федеральный закон от 10.01.2002 №7-ФЗ",
+          "articles": [
+            "77",
+            "78",
+            "78.1"
+          ],
+          "version": "ред. от 04.08.2026, действует с 01.09.2026",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_34823/",
+          "verification": "current consolidated edition inspected 2026-10-09; Art 78.1 only if statutory factual predicates are met"
+        },
+        {
+          "act": "Водный кодекс РФ от 03.06.2006 №74-ФЗ",
+          "articles": [
+            "55",
+            "56"
+          ],
+          "version": "ред. от 04.08.2026",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_60683/",
+          "verification": "current consolidated edition inspected 2026-10-09"
+        }
+      ],
+      "factual_pattern": "Централизованная канализационная сеть → выход сточных вод из канализационного колодца в поселке Талакан → загрязнение почвы → перенос загрязняющих веществ в ручей Куруктачи → оценка вреда двум природным компонентам → взыскание вреда с эксплуатанта инфраструктуры",
+      "risk": "Одно нарушение целостности сети создает почвенный и водный контуры; возможен значительный имущественный риск при отсутствии контроля состояния сетей и доказательств причинности.",
+      "evidence_court_practice": {
+        "supervisory": "Приамурское управление Росприроднадзора зафиксировало выход стоков из канализационного колодца на почву с последующим поступлением загрязняющих веществ в ручей.",
+        "judicial": "По сообщению Росприроднадзора, Арбитражный суд Амурской области взыскал 19 686 000 руб.; Шестой арбитражный апелляционный суд оставил решение без изменения. Возражения о непричастности и деятельности других организаций отклонены как недоказанные.",
+        "stage": "APPEAL_UPHELD_PER_AUTHORITY_NEWS",
+        "court_case_number": "NOT_ESTABLISHED",
+        "limitation": "Без судебных актов нельзя утверждать точную юридическую квалификацию, методику расчета, преюдицию или универсальную ответственность владельца сети."
+      },
+      "diagnostic_questions": [
+        "А если аварийный выход произошел не на выпуске, а через канализационный колодец или КНС?",
+        "А вдруг вода попадает в ручей через почву, канаву или ливневый путь без оформленного выпуска?",
+        "А если владелец сети ссылается на абонента/третье лицо — где анализ состава, схемы, аварийные журналы и доказательства конкретного источника?",
+        "А если формально есть разрешение на сброс, покрывает ли оно аварийный путь через почву?",
+        "А если одновременно выявлен вред почве и воде — учтены ли разные природные компоненты и причинная связь?",
+        "А если предполагается применение ст. 78.1 7-ФЗ — доказаны ли условия ее применимости и распределения ответственности?"
+      ],
+      "red_flag": "Сеть/колодец/КНС теряет герметичность → стоки на рельеф → водоток; предприятие проверяет только качество штатного выпуска и не контролирует аварийный путь.",
+      "mirlex_checks": [
+        "схема фактической сети, колодцев и КНС, точки перелива",
+        "состояние и собственник/эксплуатант каждого участка",
+        "журналы аварий, телеметрия, обращения жителей, фотофиксация",
+        "маршрут стока от выхода из сети до почвы/канавы/ручья",
+        "лабораторные пробы, фон, точки отбора, причинная связь",
+        "разрешенные выпуски против фактических маршрутов",
+        "договоры с абонентами и доказательства стороннего сброса",
+        "применимость и исключения статьи 78.1 закона 7-ФЗ",
+        "судебные акты и расчет вреда — запросить при диагностике"
+      ],
+      "linked_ids": [
+        "IND-WATER-001",
+        "IND-LOS-001",
+        "IND-STORM-001",
+        "IND-ACCIDENT-001",
+        "IND-SITE-001"
+      ],
+      "linked_rules": [
+        "ENG-UNI-LOS-001",
+        "ENG-UNI-SOIL-001",
+        "ENG-UNI-STORM-001",
+        "ENG-UNI-ACCIDENT-001"
+      ],
+      "impact": {
+        "site": "Отрасль IND-040: Водоканалы / очистные сооружения — дополнить проверкой аварийного пути через колодцы, КНС и почву.",
+        "assistant": "При словах 'колодец', 'КНС', 'излив', 'запах', 'ручей', 'авария' инициировать проверку сети → почва → вода; не выводить виновность автоматически.",
+        "services": [
+          "Диагностика водоотведения и аварийных маршрутов",
+          "Аудит канализационных сетей и КНС с экологическим риском",
+          "Проверка доказательств фактического сброса и риска вреда почве/воде"
+        ],
+        "ECO_EXPERT": "Internal diagnostic gate for IND-040 and cross-industry wastewater networks.",
+        "ROP_EXPERT": "Cross-contour referral to ECO only when ROP recycler/collector operates relevant sewer or treatment infrastructure; no independent ROP obligation inferred."
+      },
+      "update_needed": [
+        "engine/rules/industry/water-network-spill.v1.json",
+        "engine/tests/water-network-spill-regression.v1.json",
+        "engine/industry-registry.v1.json",
+        "engine/expert-packages.v1.json",
+        "research/registry/master-index.json"
+      ],
+      "rule_legal_gate": "FACT_FINDING_ONLY; check Art 78.1 applicability; never automatically assign liability",
+      "novelty": "New independent proof and explicit liability/evidence branch within existing IND-WATER-001; do not allocate new ID."
+    }
+  ],
+  "source_policy": {
+    "no_unverified_legal_conclusions": true,
+    "judgment_not_fetched": true,
+    "repeat_evidence_preserves_id": true
+  }
+}
