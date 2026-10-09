@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-10",
+  "kind": "RADAR_AND_ENGINE_INTEGRITY_CHECK",
+  "handover_read": true,
+  "github_master_index_read": true,
+  "github_index_sha_at_start": "98a493fdd70e707749b5ab404e558998bcd012ae",
+  "mcp": {
+    "get_radar_registry_index": "SUCCESS_MATCHED_EXISTING_INDEX",
+    "get_radar_card_rop004": "SUCCESS_3_RECORDS",
+    "get_eco_expert_package": "SUCCESS_V2",
+    "get_rop_expert_package": "SUCCESS_V2",
+    "list_mirlex_industries": "SUCCESS_58"
+  },
+  "github_actions": {
+    "workflow_path": ".github/workflows/mirlex-engine-integration-audit.yml",
+    "workflow_configuration_read": true,
+    "run_id": "UNVERIFIED",
+    "job_log": "UNVERIFIED",
+    "note": "Connected GitHub API exposed no repository-wide workflow-run listing; commit-specific PR-only lookup returned empty and does not establish schedule-run absence."
+  },
+  "pending_research": {
+    "id": "IND-STORM-001",
+    "type": "ADDITIONAL_EVIDENCE_PRIMARY_SOURCE_RELINK",
+    "card_path": "research/registry/radar-2026-10-10-storm001-primary-evidence.json",
+    "card_write_readback": "SUCCESS",
+    "master_index_update": "WRITE_PENDING_TOOL_SAFETY_BLOCK",
+    "master_index_readback": "NO_NEW_ENTRY",
+    "engine_get_radar_card": "NOT_DELIVERED_NEW_RECORD",
+    "next_action": "Retry master-index append without changing permanent ID, read back, then confirm Engine returns source; preserve existing active rule without legal upgrade."
+  },
+  "status": "INTEGRITY_CHECK_COMPLETE_RESEARCH_DELIVERY_PENDING"
+}
