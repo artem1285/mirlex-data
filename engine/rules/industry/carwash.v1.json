@@ -162,6 +162,83 @@
         "auto_promote": false
       },
       "tests_required": true
+    },
+    {
+      "rule_id": "ENG-CARWASH-STORM-CONNECTION-001",
+      "version": "1.0.0",
+      "status": "ACTIVE_INTERNAL_FACT_FINDING",
+      "scope": {
+        "industry": "CARWASH",
+        "contours": [
+          "WASTEWATER",
+          "STORMWATER",
+          "WATER",
+          "SOIL"
+        ]
+      },
+      "triggers": [
+        "carwash wastewater discharge route unknown or storm drainage connection suspected"
+      ],
+      "ask": [
+        "process_wastewater_outlets",
+        "network_connection_scheme",
+        "actual_pipes_and_manhole_routes",
+        "storm_outfall_destination",
+        "treatment_and_bypass",
+        "wastewater_balance"
+      ],
+      "evidence_requests": [
+        "as_built_network_plan",
+        "inspection_of_manhole_routes",
+        "connection_agreements",
+        "sampling_if_needed",
+        "meter_and_haul_records"
+      ],
+      "checks": [
+        "trace every actual wastewater outlet to ultimate receiver",
+        "compare declared network with observed piping",
+        "check untreated bypass and storm outfall"
+      ],
+      "linked_rules": [
+        "ENG-UNI-LOS-001",
+        "ENG-UNI-STORM-001",
+        "ENG-UNI-SOIL-001"
+      ],
+      "outcomes": {
+        "red_flags": [
+          "process effluent routed into storm network",
+          "no verifiable final receiver",
+          "documents contradict actual pipe route"
+        ],
+        "obligations": [
+          "Revalidate applicability of 416-FZ art.18 and Water Code arts.44,60 for concrete site"
+        ],
+        "actions": [
+          "physical route inspection",
+          "request evidence",
+          "assess receiving water and soil exposure"
+        ],
+        "services": [
+          "WASTEWATER_ROUTE_AUDIT",
+          "STORM_CONNECTION_CHECK"
+        ],
+        "quote_inputs": [
+          "outlet_count",
+          "network_complexity",
+          "site_visit",
+          "sampling_need"
+        ]
+      },
+      "provenance": {
+        "radar_ids": [
+          "IND-CARWASH-005"
+        ],
+        "sources": [
+          "research/registry/radar-2026-10-09-carwash-storm-connection.json"
+        ]
+      },
+      "legal_mode": "REVALIDATE_BEFORE_AUTOMATED_LEGAL_CONCLUSION",
+      "tests_required": true
     }
   ],
   "mandatory_universal_gates": [
