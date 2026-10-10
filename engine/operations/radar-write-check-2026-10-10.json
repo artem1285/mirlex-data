@@ -1,1 +1,16 @@
-{"date":"2026-10-10","status":"WRITE_TEST"}
+{
+  "date": "2026-10-10",
+  "audit": "MIRLEX_INTEGRATION",
+  "github_index_sha": "3ab5e42a5d237261910c7c46327e2805b2b89a5d",
+  "github_registry_count": 25,
+  "engine_registry_count": 25,
+  "registry_count_match": true,
+  "rop004_records": 3,
+  "rop004_complete": true,
+  "eco_ok": true,
+  "rop_ok": true,
+  "github_actions_run": "UNVERIFIED_NO_RUN_ID",
+  "pending_card": "IND-GREENHOUSE-001",
+  "pending_reason": "SUBSTANTIVE_GITHUB_WRITE_SAFETY_BLOCK",
+  "control_write": "READ_BACK_VERIFIED"
+}
