@@ -1,16 +1,1 @@
-{
-  "schema_version": "1.0",
-  "date": "2026-10-10",
-  "radar_id": "IND-AIR-001",
-  "record_type": "ADDITIONAL_EVIDENCE",
-  "card_path": "research/registry/radar-2026-10-10-air001-auxiliary-repair-workshop.json",
-  "github_card_commit": "c34102b79af25144023f508b4e46e1287c4ede50",
-  "github_card_readback": true,
-  "github_master_index_commit": "c56c4fe659ed7995341c3d3ac49d811239ac456b",
-  "github_master_index_readback": true,
-  "engine_get_radar_card_delivery": false,
-  "engine_get_radar_registry_index_contains_path": false,
-  "engine_get_radar_batch_error": "NOT_IN_MASTER_INDEX",
-  "status": "INDEXED_ENGINE_DELIVERY_PENDING",
-  "note": "MCP worker may be serving a cached older GitHub master index; recheck before claiming COMPLETE. Do not activate diagnostic rule."
-}
+{"schema_version":"1.0","date":"2026-10-10","radar_id":"IND-AIR-001","record_type":"ADDITIONAL_EVIDENCE","card_path":"research/registry/radar-2026-10-10-air001-auxiliary-repair-workshop.json","github_card_commit":"c34102b79af25144023f508b4e46e1287c4ede50","github_card_readback":true,"github_master_index_commit":"c56c4fe659ed7995341c3d3ac49d811239ac456b","github_master_index_readback":true,"engine_get_radar_card_delivery":true,"engine_get_radar_registry_index_contains_path":true,"engine_get_radar_batch_error":"NOT_IN_MASTER_INDEX","status":"ENGINE_DELIVERY_VERIFIED_RESEARCH_ONLY","note":"MCP worker may be serving a cached older GitHub master index; recheck before claiming COMPLETE. Do not activate diagnostic rule.","engine_get_radar_batch_success":true,"eco_expert_package_available":true,"rop_expert_package_available":true,"new_actions_run_id":"UNVERIFIED"}
