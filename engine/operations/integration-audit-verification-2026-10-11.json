@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-10-11",
+  "scope": "MIRLEX Engine integration read audit and GitHub source consistency",
+  "status": "READ_DELIVERY_VERIFIED",
+  "github": {
+    "master_index": "research/registry/master-index.json",
+    "master_index_updated_on": "2026-10-11",
+    "engine_master_index_deep_equal": true,
+    "registry_entries": 29,
+    "latest_research_card": "research/registry/radar-2026-10-11-wastecontract-sochi-soil.json",
+    "latest_card_id": "IND-WASTECONTRACT-001",
+    "latest_card_engine_read": true
+  },
+  "mcp": {
+    "registry_index": true,
+    "rop004_card": true,
+    "eco_expert_package": true,
+    "rop_expert_package": true,
+    "industry_registry_count": 58
+  },
+  "actions": {
+    "workflow": ".github/workflows/mirlex-engine-integration-audit.yml",
+    "confirmed_successful_runs": [
+      {
+        "run_id": 38076870560,
+        "job_id": 114285575171,
+        "event": "push",
+        "result": "success",
+        "pass_log": true
+      },
+      {
+        "run_id": 38080853872,
+        "job_id": 114297278118,
+        "event": "push",
+        "result": "success",
+        "pass_log": true
+      },
+      {
+        "run_id": 38080914195,
+        "job_id": 114297457054,
+        "event": "push",
+        "result": "success",
+        "pass_log": true
+      }
+    ],
+    "verified_log_line": "PASS: 11 MCP tools, latest ROP-004 evidence, radar index, 58+ industries, IND-002 and both expert packages",
+    "scheduled_6h_run": "UNVERIFIED_IN_THIS_CHECK"
+  },
+  "limits": [
+    "Successful read audit does not prove unattended write/persistence of new radar discoveries.",
+    "Expert package retrieval does not prove every research card is invoked autonomously in a user-facing diagnostic.",
+    "No new radar discovery claimed in this integrity-only record."
+  ]
+}
