@@ -1,1 +1,1 @@
-{"schema_version":"1.0","cards":[],"status":"WRITE_PENDING","reason":"Full evidence card requires materialization"}
+{"schema_version":"1.0","status":"WRITE_PENDING","id":"IND-LIVESTOCK-002","date":"2026-10-10","source":"https://epp.genproc.gov.ru/ru/proc_66/mass-media/news/regional/e8582898/","fact":"Помёт→агрохимикат→поле→загрязнение почвы; суд взыскал >4,4 млн руб.","legal_gate":"248-ФЗ ППЖ ≠ агрохимикат; 109-ФЗ применять только после квалификации.","next":"Восстановить полную карточку, индекс, Engine delivery; не ACTIVE."}
