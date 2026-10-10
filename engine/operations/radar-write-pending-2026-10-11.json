@@ -1,1 +1,14 @@
-{"date":"2026-10-11","status":"WRITE_PENDING","id":"IND-WASTECONTRACT-001","source":"https://epp.genproc.gov.ru/ru/gprf/mass-media/news/regional/e8637034/","reason":"full registry write not yet verified"}
+{
+  "date": "2026-10-11",
+  "id": "IND-WASTECONTRACT-001",
+  "state": "ENGINE_DELIVERY_PENDING",
+  "source": "https://epp.genproc.gov.ru/ru/gprf/mass-media/news/regional/e8637034/",
+  "card_path": "research/registry/radar-2026-10-11-wastecontract-sochi-soil.json",
+  "master_index_path": "research/registry/master-index.json",
+  "card_readback": true,
+  "index_readback": true,
+  "engine_readback": false,
+  "reason": "MCP radar registry index still returned updated_on 2026-10-10 immediately after GitHub index commit; likely upstream raw content caching; do not mark COMPLETE until MCP returns indexed card.",
+  "retry": "Next cycle: read handover+master-index; call get_radar_registry_index then get_radar_card IND-WASTECONTRACT-001. If stale, compare raw GitHub read and investigate cache TTL without changing working Worker or plugin connections.",
+  "quality": "RESEARCH_ONLY_NOT_ACTIVE"
+}
