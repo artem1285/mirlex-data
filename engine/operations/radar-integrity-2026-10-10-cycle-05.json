@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-10",
+  "check": "GitHub -> index -> Engine",
+  "github_index_sha": "e26ce211ce1b3418a4e0a9f45b788e9b6632e358",
+  "index_match": true,
+  "github_registries": 26,
+  "engine_registries": 26,
+  "rop004_records": 3,
+  "rop004_complete": true,
+  "eco_ok": true,
+  "rop_ok": true,
+  "eco_version": "v2",
+  "rop_version": "v2",
+  "actions_run_id": 38021837741,
+  "actions_job_success": true,
+  "note": "Read-only integrity audit; does not validate live expert dialogue or autonomous radar write."
+}
