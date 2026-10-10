@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-10",
+  "id": "IND-BRICK-001",
+  "registry_path": "research/registry/radar-2026-10-10-brick-air-criminal-evidence.json",
+  "state": "ENGINE_DELIVERY_PENDING",
+  "github_card_write": "VERIFIED",
+  "github_card_readback": "VERIFIED",
+  "github_master_index_update": "VERIFIED",
+  "github_master_index_readback": "VERIFIED",
+  "engine_registry_index": "STALE_ON_FIRST_CHECK",
+  "engine_card": "NEW_EVIDENCE_NOT_YET_VISIBLE",
+  "next_action": "Retry get_radar_registry_index and get_radar_card IND-BRICK-001; only COMPLETE after both return new registry path and content; do not create duplicate ID or rule.",
+  "possible_cause": "GitHub raw content cache propagation; not yet proven",
+  "rule_activation": "NOT_ACTIVE"
+}
