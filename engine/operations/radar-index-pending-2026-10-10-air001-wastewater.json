@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-10",
+  "id": "IND-AIR-001",
+  "status": "INDEX_PENDING",
+  "source_file": "research/registry/radar-2026-10-10-air001-wastewater-treatment-air-emissions.json",
+  "source_commit": "32c148c0dc30e4bc8279fa7a505736acd628c4c3",
+  "next_step": "Append source_file to research/registry/master-index.json; read back index; verify get_radar_card IND-AIR-001; keep research only.",
+  "delivery_verified": false
+}
