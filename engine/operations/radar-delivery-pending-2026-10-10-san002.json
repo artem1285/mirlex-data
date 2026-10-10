@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "id": "IND-SAN-002",
+  "status": "DELIVERY_PENDING",
+  "card": "research/registry/radar-2026-10-10-san002-meat-szz-appeal.json",
+  "card_commit": "d6496320ad8bb364409ca2afcf618d472daa1836",
+  "index_commit": "dc4dc281fac58efe1d971db1eea85f86ea1da33b",
+  "github_readback": true,
+  "engine_readback": false,
+  "latest_verified_actions_run_id": 38021837741,
+  "actions_run_log_verified": true,
+  "actions_newer_run": "UNVERIFIED",
+  "next_action": "Retry Engine get_radar_card IND-SAN-002 and get_radar_registry_index; do not duplicate existing ID."
+}
