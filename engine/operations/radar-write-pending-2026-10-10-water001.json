@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-10",
+  "id": "IND-WATER-001",
+  "status": "INDEX_PENDING",
+  "card_path": "research/registry/radar-2026-10-10-water001-oka-judgment.json",
+  "card_git_commit": "73426a5b13e3af81e7e743ddd8f896f6645c6769",
+  "card_readback_verified": true,
+  "master_index_path": "research/registry/master-index.json",
+  "master_index_update": "PENDING_GITHUB_TOOL_SAFETY_CHECK",
+  "engine_card_delivery": "PENDING_NOT_INDEXED",
+  "next_cycle": [
+    "read handover and master index",
+    "retry index append with permanent ID unchanged",
+    "read index back",
+    "verify get_radar_card",
+    "update handover after full delivery"
+  ],
+  "do_not_promote_active_rule": true
+}
