@@ -17,7 +17,7 @@ EXPECTED = {
 
 def rpc(method, params=None):
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params or {}}).encode()
-    request = urllib.request.Request(BASE, body, {"Content-Type": "application/json", "Accept": "application/json, text/event-stream", "MCP-Protocol-Version": "2025-03-26"}, method="POST")
+    request = urllib.request.Request(BASE, body, {"Content-Type": "application/json", "Accept": "application/json, text/event-stream", "MCP-Protocol-Version": "2025-03-26", "User-Agent": "MIRLEX-Integration-Audit/1.0 (+GitHub-Actions)"}, method="POST")
     try:
         with urllib.request.urlopen(request, timeout=25) as response:
             raw = response.read().decode()
