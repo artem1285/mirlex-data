@@ -4,6 +4,8 @@ import json
 import os
 import sys
 import urllib.request
+import urllib.error
+import traceback
 
 BASE = os.environ.get("MIRLEX_MCP_URL", "https://yellow-tree-7185.camaction1285.workers.dev/mcp")
 EXPECTED = {
@@ -15,10 +17,21 @@ EXPECTED = {
 
 def rpc(method, params=None):
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params or {}}).encode()
-    request = urllib.request.Request(BASE, body, {"Content-Type": "application/json", "Accept": "application/json"}, method="POST")
-    with urllib.request.urlopen(request, timeout=25) as response:
-        raw = response.read().decode()
-    data = json.loads(raw)
+    request = urllib.request.Request(BASE, body, {"Content-Type": "application/json", "Accept": "application/json, text/event-stream", "MCP-Protocol-Version": "2025-03-26"}, method="POST")
+    try:
+        with urllib.request.urlopen(request, timeout=25) as response:
+            raw = response.read().decode()
+            content_type = response.headers.get("Content-Type", "")
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:1200]
+        raise RuntimeError(f"MCP HTTP {exc.code} method={method}: {detail}") from exc
+    if "text/event-stream" in content_type or raw.lstrip().startswith("event:") or raw.lstrip().startswith("data:"):
+        events = [line[5:].strip() for line in raw.splitlines() if line.startswith("data:")]
+        if not events:
+            raise RuntimeError(f"MCP SSE without data, method={method}: {raw[:300]}")
+        data = next((event for item in events if (event := json.loads(item)).get("id") == 1), json.loads(events[-1]))
+    else:
+        data = json.loads(raw)
     if "error" in data:
         raise AssertionError(f"MCP error {method}: {data['error']}")
     return data["result"]
@@ -65,5 +78,6 @@ if __name__ == "__main__":
     try:
         run()
     except Exception as exc:
-        print(f"FAIL: {exc}", file=sys.stderr)
+        print(f"FAIL: {type(exc).__name__}: {exc}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
         sys.exit(1)
