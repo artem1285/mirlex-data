@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-11",
+  "id": "IND-TKO-001",
+  "status": "INDEX_PENDING",
+  "source_card": "research/registry/radar-2026-10-11-tko001-fgis-legal-relink.json",
+  "source_card_read_back": "VERIFIED",
+  "master_index_path": "research/registry/master-index.json",
+  "reason": "master-index update_file and create_blob operations rejected by tool safety checks; do not claim index or Engine delivery",
+  "next_action": "Retry normal index update in next cycle; read back master-index and verify get_radar_card IND-TKO-001; no ACTIVE rule promotion",
+  "duplicate_policy": "Existing permanent ID; no new ID."
+}
