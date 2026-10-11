@@ -1,8 +1,1 @@
-{
-  "schema_version": "1.0",
-  "date": "2026-10-11",
-  "status": "WRITE_PENDING",
-  "id": "IND-LOS-001",
-  "source": "https://epp.genproc.gov.ru/ru/dvtp/mass-media/news/regional/e8502273/",
-  "note": "Primary-source evidence under review; complete card pending."
-}
+{"schema_version":"1.0","date":"2026-10-11","record_type":"ADDITIONAL_EVIDENCE","cards":[{"id":"IND-LOS-001","date":"2026-10-11","industry_contour":"ЛОС / аэропорт / противообледенительные стоки","actuality_status":"PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY","primary_source":"https://epp.genproc.gov.ru/ru/dvtp/mass-media/news/regional/e8502273/","current_npa":["ВК РФ ст.11 ч.3 п.2, ст.60 ч.6 п.1","КоАП РФ ст.7.6"],"factual_pattern":"DEICING → EFFLUENT → WWTP_PUMPS_AND_FILTERS → ACTUAL_DISCHARGE → AMUR","risk":"Очистные существуют, но фактически без насосов и фильтров; не было решения на сброс.","evidence_court_practice":"Транспортная прокуратура 19.05.2026: иск удовлетворён, штраф юрлицу 50 000 руб. по ст.7.6 КоАП.","red_flag":"Очистные есть на бумаге, но фактическая комплектность и маршрут стока не подтверждены.","diagnostic_questions":["Есть ли насосы и фильтры и работают ли они?","Куда фактически идёт сезонный сток после обработки самолётов?","Соответствует ли выпуск решению о водопользовании?"],"mirlex_checks":"Осмотр оборудования, журналы, трассировка стока, документы на сброс.","linked_ids":["IND-WATER-001","IND-STORM-001","IND-SNOW-001"],"impact":"ECO_EXPERT/услуга Вода: проверка реальной работоспособности ЛОС; ROP_EXPERT: межконтурный контекст без обязанности РОП.","update_needed":"ENG-UNI-LOS-001: только evidence enrichment; не ACTIVE без тестов.","limitations":"Не установлены реагенты, ПДК, номер судебного дела и вступление решения в силу.","duplicate_decision":"Существующий ID сохранён."}]}
