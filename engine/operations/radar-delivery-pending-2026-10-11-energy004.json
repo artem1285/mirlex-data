@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-11",
+  "id": "IND-ENERGY-004",
+  "status": "ENGINE_DELIVERY_PENDING",
+  "source_path": "research/registry/radar-2026-10-11-energy004-heatnet-soil-erosion.json",
+  "github_card_read_back": "VERIFIED",
+  "github_card_blob_sha": "bebdfdf81e6a84cdb95fb54bc76182f71bba5a5b",
+  "github_index_read_back": "VERIFIED",
+  "github_index_blob_sha": "5781e2a92d1e2e7a2fb23e21071c448e11f5cb5e",
+  "github_card_commit": "002fcf51667128a306c4d967128e17ab37a80cb4",
+  "github_index_commit": "7b6d3ae8f845a0c2bea69046da3ecc926f1b88d3",
+  "engine_registry_count_observed": 66,
+  "github_registry_count": 67,
+  "engine_get_radar_card": {
+    "ok": false,
+    "records": 0,
+    "failures": []
+  },
+  "likely_explanation": "Raw GitHub CDN/cache propagation; not proven. Verify in next cycle, do not modify working endpoints.",
+  "next_actions": [
+    "Read handover and master-index at cycle start",
+    "Check get_radar_registry_index count and IND-ENERGY-004 entry",
+    "Call get_radar_card IND-ENERGY-004 and validate source/path/id",
+    "When three reads pass, mark delivery verified; otherwise retain pending"
+  ],
+  "research_only": true
+}
