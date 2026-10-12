@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "LEG-AIR-QUOTA-001",
+  "date": "2026-10-12",
+  "industry_contour": "AIR / federal Clean Air project / emission quotas / administrative liability",
+  "actuality_status": "PROJECT_NOT_APPLICABLE; FIRST_READING_2026_CLAIM_UNVERIFIED",
+  "source_signal": {
+    "title": "Парламентская газета: Жителей городов хотят уберечь от промышленных выбросов",
+    "date": "2026-10-09",
+    "url": "https://www.pnp.ru/economics/zhiteley-gorodov-khotyat-uberech-ot-promyshlennykh-vybrosov.html"
+  },
+  "primary_source": {
+    "bill_no": "594956-8",
+    "bill_origin_date": "2024-04-05",
+    "official_bill_url": "https://sozd.duma.gov.ru/bill/594956-8",
+    "primary_text_verification": "bill number and introduced text cross-checked against legal systems; asserted first-reading stage on 2026-10-09 NOT verified on official State Duma card",
+    "minprirody_budget_signal": "https://www.akm.ru/press/v_gosdume_rassmotreli_byudzhet_minprirody_rossii_na_2027_2029_gody/"
+  },
+  "current_npa": [
+    "Federal Law 195-FZ of 2019-07-26 (emission quotas experiment); check current applicability before operational advice",
+    "Draft changes to RF Administrative Code; NOT enacted"
+  ],
+  "factual_pattern": "State enforcement emphasis on meeting individual emissions quotas, not just possession of an approved plan. Draft proposes revenue-linked liability. Reported 635 inspections / 113 businesses treated as signal pending confirmation.",
+  "risk": "For enterprises with assigned emission quotas, possible increased monetary exposure if draft becomes law and measures are not executed.",
+  "evidence_court_practice": "No court practice verified for this card.",
+  "mirlex_checks": [
+    "Is the site in a quota experiment territory and is the object subject to individual quota?",
+    "Is there an approved plan and evidence of actual completion?",
+    "Do source measurements, records, and reporting substantiate meeting quota?",
+    "Track bill 594956-8 status and final penalty thresholds before client advice."
+  ],
+  "impact": {
+    "engine": "RESEARCH_ONLY; candidate for AIR diagnostic risk gate after verified legislative update",
+    "experts": "ECO_EXPERT should differentiate draft from active law; no automatic rule deployment done",
+    "site": "Candidate for /vozdukh risk/content card once primary-stage change confirmed",
+    "services": "Emissions quota compliance audit / modernization plan control"
+  },
+  "red_flag": "Never present proposed penalties as current law or imply all factories are subject to quota requirements.",
+  "update_needed": "Verify 2026 first-reading stage on official SOZD, link decision/date/text; establish client applicability; connect verified knowledge to Engine and test expert responses; update master-index.",
+  "integration_status": "GITHUB_RESEARCH_RECORD_ONLY; NOT_DEPLOYED_TO_WORKER_OR_EXPERTS",
+  "duplicate_policy": "Append later material to LEG-AIR-QUOTA-001 instead of creating a new ID."
+}
