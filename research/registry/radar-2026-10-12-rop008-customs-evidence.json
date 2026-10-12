@@ -16,8 +16,8 @@
         "TR TS 005/2011 Annex 3",
         "PP RF 2414"
       ],
-      "factual_pattern": "Customs packaging type code does not determine material code or ROP mass.",
-      "risk": "Unsupported material mapping and mass classification.",
+      "factual_pattern": "ДТ: код 3H = пластмассовая канистра, но не конкретный полимер. ТР ТС 005/2011 определяет материал отдельно. Масса брутто минус нетто не является универсальной массой РОП-упаковки. Требуется проверка состава, компонентов, периода и группы по ПП №2414.",
+      "risk": "Автоматический маппинг таможенного типа упаковки в полимер и группу РОП может привести к ошибке классификации и массы.",
       "evidence_court_practice": "No case verified; primary normative text comparison.",
       "diagnostic_questions": [
         "Is material verified?",
