@@ -284,6 +284,71 @@
         "document_count"
       ],
       "legal_mode": "MANDATORY_PRIMARY_SOURCE_REVALIDATION_BEFORE_APPLICATION"
+    },
+    {
+      "rule_id": "ENG-ROP-CUSTOMS-PACKAGING-001",
+      "version": "1.0.0",
+      "status": "ACTIVE_FACT_FINDING",
+      "radar_ids": [
+        "ROP-001",
+        "ROP-008"
+      ],
+      "evidence_path": "research/registry/rop-customs-packaging-2026-10-12.json",
+      "trigger": "Import of packaged goods from EAEU or third countries, uncertain packaging composition/mass, customs packaging code supplied, or ROP packaging group unclear",
+      "chain": "IMPORT_ROUTE → PACKAGING_TYPE_CUSTOMS_CODE → MATERIAL_AND_COMPONENTS → WEIGHT_EVIDENCE → PP_2414_GROUP_BY_YEAR → ROP_RECONCILIATION",
+      "ask": [
+        "country_of_origin_and_eaeu_status",
+        "importer_and_responsible_party",
+        "customs_packaging_type_code",
+        "packaging_component_material_and_marking",
+        "packing_list_per_sku_and_component_mass",
+        "primary_document_support_for_weight",
+        "reporting_year_and_relevant_PP_2414_section"
+      ],
+      "evidence_requests": [
+        "customs_declaration_if_applicable",
+        "statistical_form_if_applicable",
+        "packing_list_and_supplier_packaging_specification",
+        "packaging_photos_and_TR_TS_005_2011_marking",
+        "weighing_protocol_or_reliable_supplier_mass_data",
+        "ROP_group_and_mass_reconciliation"
+      ],
+      "checks": [
+        "Never automatically map KTS_378 packaging type code to TR_TS_005_2011 material code",
+        "Distinguish packaging type, polymer/resin, component and material, packaging mass and gross/net shipping mass",
+        "Check applicable PP_RF_2414 section II or III and year, not merely customs code",
+        "Resolve missing material or mass evidence by targeted document request, not an invented number",
+        "Reconcile import evidence and ROP reporting only when roles and periods match"
+      ],
+      "red_flags": [
+        "Plastic jerrycan 3H is not automatically PET/HDPE/PP",
+        "Gross minus net weight does not automatically equal all ROP-relevant packaging",
+        "Composite/multilayer packaging cannot be reduced to a single polymer without evidence",
+        "Statistical form content and legal liability must be checked against current primary law"
+      ],
+      "sources": [
+        "https://www.consultant.ru/document/cons_doc_LAW_105110/2605359ebfbd235927612745fbf007192518205d/",
+        "https://www.consultant.ru/document/cons_doc_LAW_119326/284b443cc8c0209b92f955a2df128777497439a0/",
+        "https://www.consultant.ru/document/cons_doc_LAW_466690/eb3b02f5e4b7f5ae2a97f5f10aaf1d9c37fa6ca/"
+      ],
+      "output_states": [
+        "CONFIRMED_FACT",
+        "NEEDS_DATA",
+        "CONTRADICTION",
+        "LEGAL_REVALIDATION_REQUIRED"
+      ],
+      "legal_mode": "FACT_FINDING_ACTIVE_NO_AUTOMATED_LEGAL_DEBT_CONCLUSION",
+      "services": [
+        "ROP_IMPORT_PACKAGING_DIAGNOSTIC",
+        "ROP_IMPORT_DOCUMENT_PRECHECK"
+      ],
+      "quote_inputs": [
+        "sku_count",
+        "packaging_components_count",
+        "import_flows_count",
+        "missing_mass_evidence_count",
+        "periods_to_reconcile"
+      ]
     }
   ],
   "package_mapping": {
@@ -292,7 +357,8 @@
       "ENG-ROP-SCOPE-MASS-001",
       "ENG-ROP-RECYCLER-001",
       "ENG-ROP-FORMS-001",
-      "ENG-ROP-COEFFICIENT-001"
+      "ENG-ROP-COEFFICIENT-001",
+      "ENG-ROP-CUSTOMS-PACKAGING-001"
     ],
     "ECO_EXPERT": []
   }
