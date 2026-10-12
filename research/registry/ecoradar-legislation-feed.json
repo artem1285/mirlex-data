@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "source_radar": "Экорадар изменений",
+  "created_on": "2026-10-12",
+  "purpose": "Persist verified legislation changes, drafts, official explanations and effective dates as evidence for existing MIRLEX radar master index, ECO_EXPERT and ROP_EXPERT",
+  "records": [],
+  "record_required_fields": [
+    "event_key",
+    "source_radar",
+    "detected_on",
+    "document_type",
+    "npa_number",
+    "npa_date",
+    "primary_source_url",
+    "source_checked_on",
+    "legal_status",
+    "effective_from",
+    "affected_obligations",
+    "affected_industries",
+    "rop_relevance",
+    "eco_relevance",
+    "existing_radar_ids",
+    "changes_previous_rule",
+    "diagnostic_questions",
+    "risk",
+    "evidence",
+    "review_status"
+  ],
+  "allowed_legal_status": [
+    "DRAFT_NOT_EFFECTIVE",
+    "ADOPTED_NOT_EFFECTIVE",
+    "IN_FORCE",
+    "OFFICIAL_CLARIFICATION_NON_NORMATIVE",
+    "SIGNAL_UNVERIFIED",
+    "REPEALED"
+  ],
+  "policy": {
+    "no_automatic_active_rule": true,
+    "check_official_source_and_current_version": true,
+    "deduplicate_by": "document identity + changed provision + effective date; enrich existing record and existing ROP/IND IDs",
+    "crosslink_to": "research/registry/master-index.json and existing ROP/IND cards",
+    "do_not_replace_existing_radar": true,
+    "do_not_store_client_data": true,
+    "write_readback_index_live_mcp_required": true
+  },
+  "status": "EMPTY_INITIALIZED_NO_FINDINGS_CLAIMED"
+}
