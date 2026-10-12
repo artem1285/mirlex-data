@@ -1,0 +1,10 @@
+{
+  "id": "IND-AIR-001",
+  "status": "RESEARCH_ONLY",
+  "source": "ГОСТ Р 113.00.27-2023",
+  "tests": [
+    "weighted mass requires PDKss or permitted fallback",
+    "85 and 10 thresholds require expert review",
+    "do not infer mandatory compliance from standard"
+  ]
+}
