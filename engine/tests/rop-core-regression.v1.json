@@ -90,6 +90,85 @@
           "coefficient_allowed"
         ]
       }
+    },
+    {
+      "case_id": "ROP-T05-CUSTOMS-3H-NO-POLYMER",
+      "input": {
+        "importer": true,
+        "customs_packaging_type_code": "3H",
+        "polymer_type": "UNKNOWN",
+        "mass_source": "packing_list_missing"
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-CUSTOMS-PACKAGING-001"
+        ],
+        "state_contains": [
+          "NEEDS_DATA"
+        ],
+        "ask_contains": [
+          "packaging_component_material_and_marking",
+          "packing_list_per_sku_and_component_mass"
+        ],
+        "must_not_conclude": [
+          "polymer_from_customs_3H",
+          "automatic_ROP_group",
+          "automatic_ecofee_debt"
+        ]
+      }
+    },
+    {
+      "case_id": "ROP-T06-CUSTOMS-GROSS-NET-NOT-ROP-MASS",
+      "input": {
+        "importer": true,
+        "gross_weight_kg": 1050,
+        "net_weight_kg": 1000,
+        "packaging_component_mass": "UNKNOWN"
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-CUSTOMS-PACKAGING-001"
+        ],
+        "state_contains": [
+          "NEEDS_DATA"
+        ],
+        "must_not_conclude": [
+          "all_50kg_is_ROP_packaging_mass"
+        ],
+        "must_check": [
+          "packaging_components",
+          "material_by_component",
+          "source_document_for_mass"
+        ]
+      }
+    },
+    {
+      "case_id": "ROP-T07-CUSTOMS-EAEU-VS-THIRD-COUNTRY",
+      "input": {
+        "importer": true,
+        "flows": [
+          "EAEU",
+          "NON_EAEU"
+        ],
+        "declaration_type": "MIXED",
+        "reporting_period": 2026
+      },
+      "expect": {
+        "activate": [
+          "ENG-ROP-CUSTOMS-PACKAGING-001"
+        ],
+        "state_contains": [
+          "NEEDS_DATA"
+        ],
+        "must_check": [
+          "origin_route",
+          "customs_or_statistical_form",
+          "PP_2414_applicable_section"
+        ],
+        "must_not_conclude": [
+          "single_obligation_route_without_source_validation"
+        ]
+      }
     }
   ]
 }
