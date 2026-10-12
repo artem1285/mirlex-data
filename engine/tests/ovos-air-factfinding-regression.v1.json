@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-13",
+  "status": "RESEARCH_ONLY_TEST_SPEC_NOT_EXECUTABLE",
+  "cases": [
+    {
+      "id": "OVOS-T01-REPEALED-999",
+      "input": {
+        "ovos_procedure": "Order 999",
+        "date": "2026-10-13"
+      },
+      "expected": {
+        "state": "RED_FLAG",
+        "request": "verify PP 1644",
+        "prohibit": "automatic_GEE_violation"
+      }
+    },
+    {
+      "id": "OVOS-T02-TECH-2027",
+      "input": {
+        "new_technology": true,
+        "first_use_in_Russia": "UNKNOWN"
+      },
+      "expected": {
+        "state": "NEEDS_DATA",
+        "request": "174-FZ Art 11/12 and transition check",
+        "prohibit": "automatic_GEE_exemption"
+      }
+    },
+    {
+      "id": "AIR-T01-MARKER-CLASS-COEFF",
+      "input": {
+        "marker_mass_method": "hazard_class_coefficient"
+      },
+      "expected": {
+        "state": "RED_FLAG",
+        "request": "GOST 113.00.27-2023 clause 5.2.1 PDK/OBUV check",
+        "prohibit": "automatic_legal_violation"
+      }
+    },
+    {
+      "id": "AIR-T02-MARKER-LOW-SHARE",
+      "input": {
+        "individual_reduced_mass_share_percent": 7
+      },
+      "expected": {
+        "state": "NEEDS_DATA",
+        "request": "expert evaluation and BAT ITS",
+        "prohibit": "automatic_exclusion"
+      }
+    }
+  ]
+}
