@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14",
+  "status": "WRITE_PENDING",
+  "goal": "Index existing OVOS/PMOOS/GEE research for ECO_EXPERT and ROP_EXPERT referral; retain existing ROP-008 and IND-AIR-001",
+  "sources": [
+    "engine/knowledge/ovos-pmoos-gee-2026-10-12.md",
+    "research/registry/rop-customs-packaging-2026-10-12.json",
+    "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json"
+  ],
+  "blocker": "master-index update safety gate; do not claim expert delivery",
+  "next_action": "retry master-index and expert package updates, then read back and live verify"
+}
