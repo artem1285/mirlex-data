@@ -1,0 +1,1 @@
+2026-10-13 WRITE_PENDING: preserve existing research, retry Engine advisory integration; no ACTIVE legal conclusion.
