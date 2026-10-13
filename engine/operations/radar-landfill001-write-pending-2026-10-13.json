@@ -1,0 +1,66 @@
+{
+  "status": "WRITE_PENDING",
+  "date": "2026-10-13",
+  "target_path": "research/registry/radar-2026-10-13-landfill001-real-kstovo-primary.json",
+  "id": "IND-LANDFILL-001",
+  "record_type": "ADDITIONAL_PRIMARY_EVIDENCE",
+  "industry_contour": "Полигон ТКО / проектная вместимость / фильтрат / инвентаризация",
+  "actuality_status": "RESEARCH_ONLY",
+  "primary_source": [
+    {
+      "date": "2026-02-04",
+      "url": "https://rpn.gov.ru/press/news/na_45_sutok_priostanovlena_deyatelnost_poligona_ooo_real_kstovo_v_nizhegorodskoy_oblasti/"
+    },
+    {
+      "date": "2026-09-04",
+      "url": "https://rpn.gov.ru/regions/52/news/sud-ostavil-v-sile-postanovlenie-rosprirodnadzora-o-privlechenii-ooo-real-kstovo-k-otvetstvennosti-z-5995856.html"
+    },
+    {
+      "date": "2026-09-04",
+      "url": "https://rpn.gov.ru/press/news/sud_podtverdil_zakonnost_privlecheniya_ooo_real_kstovo_k_otvetstvennosti_za_narusheniya_na_poligone_/"
+    }
+  ],
+  "current_npa": [
+    "ФЗ 89-ФЗ ст.12: https://www.consultant.ru/document/cons_doc_LAW_19109/5074d915c513f487167b8dd8402cad9c30d22e16/",
+    "КоАП РФ ст.8.2 ч.12: проверять квалификацию по конкретному эпизоду"
+  ],
+  "factual_pattern": "Проектная вместимость и защитные сооружения → фактическое превышение объёма, отсутствие дамбы и фильтратосбора, незавершённая рекультивация → проверка → 45 суток приостановки; отдельное вступившее в силу судебное подтверждение постановления за отсутствие инвентаризации ОРО.",
+  "risk": "Фактическая эксплуатация выходит за проектные пределы; документальные и физические защитные барьеры не совпадают.",
+  "evidence_court_practice": "РПН: Кстовский городской суд — 45 суток; Канавинский районный суд — постановление по ч.12 ст.8.2 КоАП оставлено в силе. Номера дел и полные тексты не получены. Не утверждать доказанность фактического выхода фильтрата.",
+  "diagnostic_questions": [
+    "А если фактический объём уже превышает проектную вместимость?",
+    "А вдруг дамба, фильтратосбор и рекультивация существуют только в проекте?",
+    "А если инвентаризация ОРО и журналы расходятся с фактическими картами?"
+  ],
+  "red_flag": "Переполнение полигона, отсутствуют проектные сооружения и инвентаризация.",
+  "mirlex_checks": [
+    "Сверить проект и фактический баланс карт.",
+    "Проверить дамбу, фильтратосбор и рекультивацию.",
+    "Сверить инвентаризацию, журналы и разрешения."
+  ],
+  "linked_ids": [
+    "IND-LANDFILL-001",
+    "IND-STORM-001",
+    "IND-ACCIDENT-001",
+    "IND-SOIL-001"
+  ],
+  "impact": {
+    "site": "Аудит проекта и факта полигона",
+    "assistant": "ECO_EXPERT; ROP_EXPERT referral only",
+    "services": [
+      "LANDFILL_CAPACITY_AUDIT",
+      "LANDFILL_LEACHATE_ROUTE_AUDIT"
+    ],
+    "quote_inputs": [
+      "cells_count",
+      "project_capacity",
+      "actual_mass",
+      "site_visit"
+    ]
+  },
+  "update_needed": {
+    "master_index": "Index target file cards=1 existing_id IND-LANDFILL-001",
+    "engine": "RESEARCH_ONLY; verify get_radar_card after indexing"
+  },
+  "blocked_reason": "GitHub create_file to target registry rejected by tool safety checks; not indexed, not delivered"
+}
