@@ -1,0 +1,25 @@
+{
+  "id": "NVOS-ADVANCES-2026-Q3",
+  "date": "2026-10-13",
+  "status": "VERIFIED_EXISTING_LAW_RESEARCH_ONLY",
+  "law": "7-FZ art 16.4",
+  "deadline": "2026-10-20",
+  "rule": "Eligible non-SME NVOS payers pay quarterly advances for Q1-Q3 by 20th of next month; methods chosen for each impact type and declared for the following year.",
+  "exceptions": "Check payer status, SME, IV-category-only operations, commencement of activity during reporting year, and art 16.4 clauses 5.1 and 5.2.",
+  "penalty": "Late fee 1/300 key rate, capped at 0.2% per day; possible administrative liability art 8.41.",
+  "questions": [
+    "Is the enterprise an obligated non-SME NVOS payer?",
+    "Does any exception or first-year exemption apply?",
+    "Does the selected calculation method match the previous declaration and was the advance paid by 2026-10-20?"
+  ],
+  "sources": [
+    "https://rpn.gov.ru/regions/11/for_users/management/",
+    "https://www.consultant.ru/document/cons_doc_LAW_34823/a3208b67106163348fb551ad82f72f34bf5cede9/",
+    "https://www.garant.ru/products/ipo/prime/doc/414155093/"
+  ],
+  "target": [
+    "ECO_EXPERT",
+    "MIRLEX Engine radar registry"
+  ],
+  "caution": "Existing legal obligation, not a new law. Do not confuse NVOS with ROP fees. Do not activate executable rule without regression tests."
+}
