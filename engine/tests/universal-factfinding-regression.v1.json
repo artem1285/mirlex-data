@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "suite": "UNIVERSAL_FACTFINDING_REGRESSION",
+  "date": "2026-10-13",
+  "cases": [
+    {
+      "id": "AIR-M01",
+      "rule_id": "ENG-UNI-AIR-MARKERS-001",
+      "input": {
+        "marker_selection": true,
+        "method": "hazard_class_coefficients"
+      },
+      "expect": {
+        "activate": true,
+        "state": "NEEDS_DATA",
+        "prohibit": "automatic_legal_violation"
+      }
+    },
+    {
+      "id": "AIR-M02",
+      "rule_id": "ENG-UNI-AIR-MARKERS-001",
+      "input": {
+        "marker_selection": false
+      },
+      "expect": {
+        "activate": false
+      }
+    },
+    {
+      "id": "AIR-M03",
+      "rule_id": "ENG-UNI-AIR-MARKERS-001",
+      "input": {
+        "pec_marker_review": true,
+        "inventory_discrepancy": true
+      },
+      "expect": {
+        "activate": true,
+        "state": "CONTRADICTION",
+        "prohibit": "automatic_marker_by_hazard_class"
+      }
+    },
+    {
+      "id": "GEE-P01",
+      "rule_id": "ENG-UNI-PROJECT-EIA-GEE-001",
+      "input": {
+        "technology_introduction": true,
+        "first_in_russia": "UNKNOWN"
+      },
+      "expect": {
+        "activate": true,
+        "state": "NEEDS_DATA",
+        "prohibit": "gee_mandatory_from_equipment_alone"
+      }
+    },
+    {
+      "id": "GEE-P02",
+      "rule_id": "ENG-UNI-PROJECT-EIA-GEE-001",
+      "input": {
+        "planned_construction": true,
+        "old_999_referenced": true
+      },
+      "expect": {
+        "activate": true,
+        "state": "RED_FLAG",
+        "prohibit": "order_999_is_current"
+      }
+    },
+    {
+      "id": "GEE-P03",
+      "rule_id": "ENG-UNI-PROJECT-EIA-GEE-001",
+      "input": {
+        "planned_construction": false
+      },
+      "expect": {
+        "activate": false
+      }
+    },
+    {
+      "id": "GEE-P04",
+      "rule_id": "ENG-UNI-PROJECT-EIA-GEE-001",
+      "input": {
+        "recycling_technology_review": true
+      },
+      "expect": {
+        "activate": true,
+        "rop_expert": "REFERRAL_ONLY",
+        "prohibit": "automatic_rop_compliance_from_gee"
+      }
+    }
+  ]
+}
