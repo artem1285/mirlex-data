@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-13",
+  "status": "WRITE_PENDING",
+  "reason": "Update to existing expert package rejected; preserve full integration proposal.",
+  "target": "engine/expert-packages.v1.json",
+  "preserve_existing": true,
+  "eco_additions": [
+    {
+      "key": "OVOS_PMOOS_GEE",
+      "path": "engine/knowledge/ovos-pmoos-gee-2026-10-12.md",
+      "status": "RESEARCH_ONLY",
+      "red_flag": "Проектная документация противоречит фактической технологии; применён отменённый порядок",
+      "questions": [
+        "Что фактически меняется в технологии?",
+        "Какие ОВОС, ПМООС, ПТД и заключения ГЭЭ существуют?",
+        "Какой переходный режим действует на дату внедрения?"
+      ],
+      "services": [
+        "OVOS_PMOOS_GEE_PRECHECK",
+        "PROJECT_DOCUMENT_RECONCILIATION"
+      ],
+      "sources": [
+        "https://www.consultant.ru/document/cons_doc_LAW_491757/",
+        "https://www.consultant.ru/document/cons_doc_LAW_465623/b5315c892df7002ac987a311b4a242874fdcf420/",
+        "https://www.consultant.ru/document/cons_doc_LAW_546386/"
+      ]
+    },
+    {
+      "key": "AIR_MARKER_SUBSTANCES",
+      "path": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
+      "radar_id": "IND-AIR-001",
+      "status": "RESEARCH_ONLY",
+      "red_flag": "Маркерные вещества определены без приведённых масс и ИТС НДТ",
+      "questions": [
+        "Какие реальные выбросы и источники?",
+        "Какие ПДКсс/ОБУВ использованы?",
+        "Как применены пороги 85%/10% и экспертная оценка?"
+      ],
+      "services": [
+        "AIR_MARKER_SUBSTANCES_AUDIT"
+      ],
+      "sources": [
+        "https://protect.gost.ru/gost/details/28191ea9-7aa4-481a-8841-570e35b05a56",
+        "https://base.garant.ru/408216623/"
+      ]
+    }
+  ],
+  "rop_referrals": [
+    {
+      "key": "GEE_RECYCLING_TECH",
+      "path": "engine/knowledge/ovos-pmoos-gee-2026-10-12.md",
+      "status": "RESEARCH_ONLY_REFERRAL",
+      "route_to": "ECO_EXPERT",
+      "questions": [
+        "Новая ли технология?",
+        "Есть ли ПТД и ГЭЭ?",
+        "Каков режим по дате внедрения?"
+      ],
+      "red_flag": "Автоматический вывод о ГЭЭ"
+    },
+    {
+      "key": "AIR_RECYCLING",
+      "path": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
+      "status": "RESEARCH_ONLY_REFERRAL",
+      "route_to": "ECO_EXPERT",
+      "questions": [
+        "Какие фактические выбросы?",
+        "Как выбраны маркерные вещества?",
+        "Каковы данные ПЭК и ИТС НДТ?"
+      ],
+      "red_flag": "Выбросы не совпадают с документами"
+    }
+  ],
+  "already_present": {
+    "radar_id": "ROP-008",
+    "rule_id": "ENG-ROP-CUSTOMS-PACKAGING-001",
+    "test_ids": [
+      "ROP-T05-CUSTOMS-3H-NO-POLYMER",
+      "ROP-T06-CUSTOMS-GROSS-NET-NOT-ROP-MASS",
+      "ROP-T07-CUSTOMS-EAEU-VS-THIRD-COUNTRY"
+    ]
+  },
+  "required_checks": [
+    "update existing expert package without losing prior fields",
+    "GitHub read-back",
+    "live MCP get_eco_expert_package and get_rop_expert_package",
+    "regression and GitHub Actions logs"
+  ]
+}
