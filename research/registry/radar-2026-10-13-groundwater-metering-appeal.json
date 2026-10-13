@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-13",
+  "status": "PRIMARY_JUDICIAL_TEXT_VERIFIED_RESEARCH_ONLY",
+  "case_id": "А36-11834/2025",
+  "appeal": "19АП-3931/2026",
+  "court": "Девятнадцатый арбитражный апелляционный суд",
+  "decision_date": "2026-09-09",
+  "primary_judicial_text": "https://base.garant.ru/67000986/",
+  "existing_id_check": "Before assigning permanent IND ID, deduplicate with existing subsoil/water cards in master index",
+  "facts": {
+    "licensed_limit_m3_day": 480,
+    "actual_2025_06_03": 551,
+    "actual_2025_06_04": 553,
+    "meter_last_verification": "2020-11-05",
+    "meter_interval_years": 4,
+    "next_verification": "2025-10-21",
+    "unverified_period": "2024-11-05 through 2025-10-20",
+    "record_gaps": "No entries before 2025-06-02; non-daily journal",
+    "penalty_rub": 500000,
+    "appeal_outcome": "First instance upheld; appeal dismissed"
+  },
+  "legal_sources": [
+    "Law RF 2395-1 art 22,23",
+    "102-FZ art 13",
+    "KoAP 7.3 part 2"
+  ],
+  "hidden_pattern": "Licensing exists but actual daily extraction, approved test pumping schedule and verified measurement diverge; journal itself exposes violation",
+  "predictive_questions": [
+    "Does each daily extraction amount stay within the exact licence cap including test pumping?",
+    "Is meter verification currently valid and recorded in the federal verification fund?",
+    "Do daily logs, approved test-pumping schedule and project documentation reconcile?"
+  ],
+  "red_flags": [
+    "Trial pumping used as justification outside approved project dates",
+    "Meter verification expired despite apparent readings",
+    "Journal not daily and has missing dates",
+    "Daily volumes exceed licence threshold"
+  ],
+  "commercial_application": "Audit of groundwater licence compliance, well metering and monitoring; site service card",
+  "expert_targets": [
+    "ECO_EXPERT",
+    "ROP_EXPERT only where connected to recycling operations and water intake"
+  ],
+  "activation": "RESEARCH_ONLY until tested diagnostic rule; no new radar, no modification of working worker"
+}
