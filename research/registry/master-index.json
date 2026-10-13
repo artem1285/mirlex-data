@@ -223,6 +223,15 @@
       "status": "INITIALIZED_EMPTY_READY_FOR_VERIFIED_CHANGES",
       "record_kind": "legislation_changes",
       "consumer": "ECO_EXPERT_AND_ROP_EXPERT"
+    },
+    {
+      "path": "research/registry/radar-2026-10-13-groundwater-metering-appeal.json",
+      "cards": 1,
+      "status": "PRIMARY_JUDICIAL_TEXT_VERIFIED_RESEARCH_ONLY_READ_BACK",
+      "source_radar": "Жёсткий радар",
+      "case_id": "А36-11834/2025",
+      "expert_target": "ECO_EXPERT",
+      "id_status": "DEDUP_CHECK_BEFORE_PERMANENT_ID"
     }
   ],
   "permanent_id_policy": {
