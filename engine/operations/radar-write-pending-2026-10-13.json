@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-13",
+  "status": "WRITE_PENDING",
+  "targets": [
+    "engine/expert-packages.v1.json"
+  ],
+  "reason": "GitHub update_file rejected before commit",
+  "source_paths": [
+    "engine/knowledge/ovos-pmoos-gee-2026-10-12.md",
+    "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json"
+  ],
+  "next_action": "Retry research-only expert package links; verify read-back and live MCP delivery. Do not activate legal rules."
+}
