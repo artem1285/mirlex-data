@@ -1,0 +1,21 @@
+{
+  "id": "ECO-2026-ROSSTAT-546",
+  "color": "YELLOW",
+  "legal_status": "ПРИНЯТ, НО НЕ ВСТУПИЛ В СИЛУ",
+  "document": "Приказ Росстата от 11.09.2026 № 546, форма 1-ВС",
+  "published_on": "2026-09-23 (posted on Rosstat website)",
+  "effective_on": "2027-01-01",
+  "reporting_period": "2026",
+  "deadline": "С первого рабочего дня по 25 января 2027",
+  "primary_source": "https://rosstat.gov.ru/folder/12981",
+  "signal_sources": [
+    "https://www.consultant.ru/document/cons_doc_LAW_475214/594abe205483d0d58ea91c9baec305e5f097955e/",
+    "https://www.garant.ru/products/ipo/prime/doc/414862714/"
+  ],
+  "summary": "Updated annual federal statistical form 1-VS on secondary raw material generation/use/supply; added imported secondary raw materials section, revised columns and respondent coverage.",
+  "applicability": "Relevant legal entities producing/importing secondary raw materials or industrial products using them, with specified activities. SMEs recorded in unified SME registry at Dec 31 preceding reporting period are exempt; other exceptions in instructions.",
+  "client_risk": "Wrong form or missing import data for 2026 report; potential statistical-reporting liability.",
+  "mirlex_action": "Screen client respondent status; request 2026 data for import, usage, production and shipments; integrate into reporting calendar and industry diagnostics; do not conflate with ROP declarations.",
+  "integration_status": "RESEARCH_ONLY_NOT_DEPLOYED_TO_EXPERTS",
+  "dedup": "Not found in research/registry/master-index.json on 2026-10-14; append future changes to same ID."
+}
