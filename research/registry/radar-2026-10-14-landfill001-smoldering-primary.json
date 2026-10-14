@@ -1,0 +1,41 @@
+{
+  "id": "IND-LANDFILL-001",
+  "date": "2026-10-14",
+  "industry_contour": "landfill/smoldering/air/sanitary",
+  "actuality_status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY",
+  "primary_source": "https://epp.genproc.gov.ru/ru/vmtp/mass-media/news/regional/e8672326/",
+  "current_npa": [
+    "89-FZ art.12",
+    "96-FZ",
+    "KoAP 6.35(4), 8.21(2)",
+    "UK 251 (referral only)"
+  ],
+  "factual_pattern": "landfill → smoldering → airborne emissions → laboratory exceedances → enforcement",
+  "risk": "Documented waste placement does not establish air safety during smoldering.",
+  "evidence_court_practice": "Prosecutor 2026-10-09: smoldering at Engels landfill; sanitary laboratory found airborne exceedances; administrative cases initiated and materials sent for possible criminal assessment, not a conviction.",
+  "diagnostic_questions": [
+    "Are there hidden smoldering hotspots not logged?",
+    "Were air samples taken during incidents and downwind?",
+    "Was extinguishment confirmed by follow-up checks?"
+  ],
+  "red_flag": "Smoke/odor/complaints without incident logs or corresponding air samples.",
+  "mirlex_checks": [
+    "incident records",
+    "sampling protocols and meteorology",
+    "landfill environmental monitoring",
+    "remediation follow-up"
+  ],
+  "linked_ids": [
+    "IND-AIR-001",
+    "IND-ACCIDENT-001",
+    "IND-SAN-001"
+  ],
+  "impact": {
+    "site": "Landfill emissions audit",
+    "assistant": "ECO_EXPERT; ROP_EXPERT referral only",
+    "services": [
+      "LANDFILL_AUDIT"
+    ]
+  },
+  "update_needed": "Append evidence to existing ID; research only, no new active legal rule."
+}
