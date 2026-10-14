@@ -238,6 +238,22 @@
       "cards": 1,
       "existing_id": "IND-WATERINTAKE-001",
       "status": "PRIMARY_JUDICIAL_TEXT_VERIFIED_RESEARCH_ONLY_READ_BACK"
+    },
+    {
+      "path": "research/registry/radar-2026-10-14-landfill001-smoldering-primary.json",
+      "cards": 1,
+      "existing_id": "IND-LANDFILL-001",
+      "status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY_READ_BACK",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY"
+    },
+    {
+      "path": "research/registry/radar-2026-10-14-livestock001-fish-primary.json",
+      "cards": 1,
+      "existing_id": "IND-LIVESTOCK-001",
+      "status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY_READ_BACK",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY"
     }
   ],
   "permanent_id_policy": {
