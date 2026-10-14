@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-14",
+  "id": "IND-CHEM-002",
+  "status": "INDEX_PENDING",
+  "registry_path": "research/registry/radar-2026-10-14-chem002-glue-ditch-primary-relink.json",
+  "registry_read_back": "VERIFIED",
+  "primary_source": "https://epp.genproc.gov.ru/ru/proc_04/mass-media/news/regional/e8634883/",
+  "index_path": "research/registry/master-index.json",
+  "index_status": "NOT_UPDATED",
+  "failure": "GitHub update_file rejected large master-index replacement by safety checks; no success claimed",
+  "retry": "Re-read handover, master-index and card; add registry entry if absent; verify index read-back; verify live get_radar_card; preserve existing ID.",
+  "rule_status": "RESEARCH_ONLY_NO_ACTIVE_RULE",
+  "user_action_required": false
+}
