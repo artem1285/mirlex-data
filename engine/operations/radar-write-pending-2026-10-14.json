@@ -1,9 +1,13 @@
 {
   "date": "2026-10-14",
-  "status": "WRITE_PENDING",
+  "status": "INDEX_PENDING",
   "existing_id": "IND-AIR-001",
-  "target_path": "research/registry/radar-2026-10-14-air001-marker-precision.json",
+  "card_path": "research/registry/radar-2026-10-14-air001-marker-precision.json",
+  "card_sha": "834bd61fee91aceb21b2e3cf5b564c25e107d197",
+  "card_read_back": "VERIFIED",
+  "index_path": "research/registry/master-index.json",
+  "index_write": "BLOCKED_BY_TOOL_SAFETY_CHECK",
+  "engine_delivery": "NOT_YET_VERIFIED_FOR_NEW_CARD",
   "source": "https://protect.gost.ru/gost/details/28191ea9-7aa4-481a-8841-570e35b05a56",
-  "pending": "GitHub create_file rejected by tool safety check; no registry write or index update confirmed",
-  "retry_policy": "retry next cycle; do not change permanent ID; research-only"
+  "next_action": "Index existing card path without changing permanent ID; read back index; verify live get_radar_card IND-AIR-001; only then promote status."
 }
