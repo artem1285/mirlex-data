@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-14",
+  "status": "WRITE_PENDING",
+  "existing_id": "IND-AIR-001",
+  "target_path": "research/registry/radar-2026-10-14-air001-marker-precision.json",
+  "source": "https://protect.gost.ru/gost/details/28191ea9-7aa4-481a-8841-570e35b05a56",
+  "pending": "GitHub create_file rejected by tool safety check; no registry write or index update confirmed",
+  "retry_policy": "retry next cycle; do not change permanent ID; research-only"
+}
