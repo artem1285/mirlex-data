@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-14",
+  "cards": [
+    {
+      "id": "IND-WATERINTAKE-001",
+      "date": "2026-10-14",
+      "record_type": "ADDITIONAL_PRIMARY_JUDICIAL_EVIDENCE",
+      "industry_contour": "GROUNDWATER / LICENSE / DAILY_LIMIT / METER_VERIFICATION",
+      "actuality_status": "PRIMARY_JUDICIAL_TEXT_VERIFIED_RESEARCH_ONLY",
+      "primary_source": {
+        "type": "COURT_DECISION",
+        "court": "19-й арбитражный апелляционный суд",
+        "date": "2026-09-09",
+        "case": "А36-11834/2025",
+        "url": "https://base.garant.ru/67000986/"
+      },
+      "current_npa": [
+        "Закон РФ №2395-1 ст.11,22,23",
+        "102-ФЗ ст.13",
+        "КоАП РФ ч.2 ст.7.3"
+      ],
+      "factual_pattern": "Лицензия → суточный лимит 480 м3 → журнал 551/553 м3 за 03–04.06.2025 → несоответствие сроков опытной откачки проекту → неповеренный расходомер → неполный журнал → административное дело → штраф 500000 руб. оставлен в силе",
+      "risk": "Лицензия и наличие журнала не гарантируют соблюдение суточного лимита и достоверный учет.",
+      "evidence_court_practice": {
+        "case": "А36-11834/2025",
+        "outcome": "Апелляция отклонена; штраф 500000 руб. сохранен",
+        "limit_m3_day": 480,
+        "measured_m3_day": [
+          551,
+          553
+        ],
+        "meter_verification": "Последняя поверка 05.11.2020, интервал 4 года, следующая 21.10.2025"
+      },
+      "diagnostic_questions": [
+        "А если в отдельные дни объем превышает лимит лицензии?",
+        "А вдруг срок поверки расходомера истек?",
+        "А если опытная откачка не совпадает по датам и длительности с проектом?"
+      ],
+      "red_flag": "Суточный отбор выше лимита, просроченная поверка, пропуски в журнале, пробная откачка вне проектного графика.",
+      "mirlex_checks": [
+        "Лицензия и индивидуальные суточные ограничения",
+        "Журнал и фактические ежедневные показания",
+        "Сведения о поверке и межповерочный интервал",
+        "График опытно-фильтрационных работ и отчетность"
+      ],
+      "linked_ids": [
+        "IND-WATERINTAKE-001",
+        "IND-WATER-001"
+      ],
+      "impact": {
+        "site": "Аудит лицензии на скважину и водоучета",
+        "assistant": "ECO_EXPERT основной, ROP_EXPERT только межконтурная передача",
+        "services": [
+          "GROUNDWATER_LICENSE_AUDIT",
+          "WELL_METERING_AUDIT"
+        ],
+        "quote_inputs": [
+          "well_count",
+          "log_days",
+          "meter_count",
+          "project_count"
+        ]
+      },
+      "update_needed": "Append to existing IND-WATERINTAKE-001, index, verify Engine retrieval; no ACTIVE legal rule without tests.",
+      "source_research": "research/registry/radar-2026-10-13-groundwater-metering-appeal.json",
+      "legal_mode": "RESEARCH_ONLY"
+    }
+  ]
+}
