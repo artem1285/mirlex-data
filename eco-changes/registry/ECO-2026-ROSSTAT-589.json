@@ -1,0 +1,18 @@
+{
+  "id": "ECO-2026-ROSSTAT-589",
+  "color": "YELLOW",
+  "legal_status": "ПРИНЯТ (применяется к отчетности за 2026 год; дата формального вступления в силу отдельно не подтверждена)",
+  "document": "Приказ Росстата от 02.10.2026 № 589 — форма 2-ТП (воздух)",
+  "document_date": "2026-10-02",
+  "reporting_period": "2026",
+  "reporting_deadline": "2027-01-22",
+  "primary_source": "https://rpn.gov.ru/press/news/rosprirodnadzor_aktualiziroval_formu_2_tp_vozdukh_chto_izmenilos_i_kto_dolzhen_sdavat_otchetnost/",
+  "legal_text": "https://www.consultant.ru/document/cons_doc_LAW_546612/",
+  "changes": "Updated form 2-TP (air), revised respondent criteria, simplified sections, refined source data and specific pollutant lists. Replaces order 661 for 2026 reporting.",
+  "scope": "Legal entities and individual entrepreneurs meeting updated respondent criteria. Verify each NVOС object's applicability using full instructions.",
+  "risk": "Failure to submit or use correct form; inaccurate emission statistics.",
+  "mirlex_action": "Add 2026 reporting to compliance calendar; screen object categories and emissions; use official new form; do not equate date of reporting with formal legal commencement.",
+  "client_phrase": "Для отчётности за 2026 год утверждена новая форма 2-ТП (воздух). Проверьте критерии представления и подготовьте данные до 22 января 2027 года.",
+  "integration": "RESEARCH_ONLY_NOT_DEPLOYED",
+  "dedup": "Previously reported to user 2026-10-14; do not re-alert without a substantive update."
+}
