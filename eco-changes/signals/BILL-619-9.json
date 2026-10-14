@@ -1,0 +1,28 @@
+{
+  "id": "SIGNAL-2026-BILL-619-9",
+  "type": "draft_law_signal",
+  "priority": "YELLOW",
+  "legal_status": "UNCONFIRMED_PROJECT_SIGNAL",
+  "first_detected": "2026-10-14",
+  "source_date": "2026-10-06",
+  "bill_number": "619-9",
+  "topic": "ROP: proposed expansion of environmental fee spending purposes",
+  "act": "Draft federal law No. 619-9, article 8, proposing amendment to clause 15 of article 24.5 of Federal Law 89-FZ",
+  "summary": "Reported proposal to add 'и на иные цели по решению Правительства Российской Федерации' to the permissible uses of environmental fee proceeds. Does not alter producers/importers' ROP obligations or environmental fee rates in the cited provision.",
+  "primary_source_url": "https://sozd.duma.gov.ru/bill/619-9",
+  "primary_source_access": "NOT_VERIFIED: official Duma page could not be opened in this run; latest parliamentary stage unverified",
+  "secondary_sources": [
+    "https://nia.eco/2026/10/06/143854/",
+    "https://news.solidwaste.ru/2026/10/ekosbor-na-inye-tseli-chem-riskuet-finansirovanie-utilizatsii/",
+    "https://voen-pravo.ru/voennoe_pravo/documents/draft-documents/11488/"
+  ],
+  "scope": "EPR / environmental fee / state spending priorities / waste treatment infrastructure",
+  "potential_impact": "If enacted, may allow government to allocate environmental fee revenues to additional purposes, potentially affecting funds for recycling infrastructure; not an immediate new duty for payers.",
+  "deadlines": "No new deadlines for business established by this signal. Draft status/current reading require official verification.",
+  "risk": "Potential redistribution of environmental fee revenue and uncertainty for investment in recycling facilities; no current mandatory action for payers.",
+  "action_for_artem": "Check bill card and latest version of article 8 on official State Duma website, track readings and amendments; monitor implications for ROP and recycling investments. Do not present as enacted.",
+  "client_publication": "BLOCKED_PENDING_PRIMARY_SOURCE_VERIFICATION",
+  "expert_rule_deployment": "BLOCKED",
+  "dedup_checked": "Gmail eco-radar messages and GitHub eco-changes registry/signals checked on 2026-10-14; no prior entry or mail mention found",
+  "required_notice": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+}
