@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-14",
+  "check": "GitHub→master-index→MIRLEX Engine",
+  "github_index_updated_on": "2026-10-14",
+  "verified_ids": [
+    "IND-LANDFILL-001",
+    "IND-LIVESTOCK-001",
+    "ROP-004",
+    "ROP-008",
+    "IND-AIR-001"
+  ],
+  "github_readback": true,
+  "engine_index_ok": true,
+  "engine_cards_ok": true,
+  "eco_package_ok": true,
+  "rop_package_ok": true,
+  "actions_run_id": 38551524413,
+  "actions_job_id": 115810365359,
+  "actions_status": "success",
+  "limits": "READ verification only; expert autonomous use not tested; new IND-LOS-001 evidence not yet persisted"
+}
