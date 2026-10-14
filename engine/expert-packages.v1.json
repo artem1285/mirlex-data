@@ -20,7 +20,16 @@
       "exclude": [
         "ROP-only rules unless cross-contour trigger explicitly links them"
       ],
-      "radar_registry": "research/registry/master-index.json"
+      "radar_registry": "research/registry/master-index.json",
+      "knowledge_modules": [
+        {
+          "path": "engine/knowledge/ovos-pmoos-gee-2026-10-12.md",
+          "mode": "RESEARCH_ONLY",
+          "trigger": "OVOS/PMOOS/GEE or project technical documentation assessment",
+          "legal_gate": "CHECK_CURRENT_NPA_AND_EXACT_ARTICLE_11_12_OBJECT",
+          "note": "Research pointer only; no automatic conclusion or active executable rule."
+        }
+      ]
     },
     "ROP_EXPERT": {
       "status": "INTERNAL_BUILD",
@@ -44,6 +53,13 @@
           "path": "engine/rules/industry/tko-seasonal-logistics.v1.json",
           "trigger": "only when collection/recycling logistics evidence materially affects ROP; route to ECO_EXPERT",
           "mode": "REFERRAL_ONLY_NO_ROP_OBLIGATION"
+        },
+        {
+          "path": "engine/knowledge/ovos-pmoos-gee-2026-10-12.md",
+          "trigger": "recycling technology or novel technology documentation raises GEE question",
+          "mode": "REFERRAL_ONLY",
+          "target": "ECO_EXPERT",
+          "legal_gate": "NO_AUTOMATIC_GEE_OR_ROP_CONCLUSION"
         }
       ]
     }
