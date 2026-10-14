@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-12",
+  "updated_on": "2026-10-14",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -232,6 +232,12 @@
       "case_id": "А36-11834/2025",
       "expert_target": "ECO_EXPERT",
       "id_status": "DEDUP_CHECK_BEFORE_PERMANENT_ID"
+    },
+    {
+      "path": "research/registry/radar-2026-10-14-waterintake001-metering-appeal.json",
+      "cards": 1,
+      "existing_id": "IND-WATERINTAKE-001",
+      "status": "PRIMARY_JUDICIAL_TEXT_VERIFIED_RESEARCH_ONLY_READ_BACK"
     }
   ],
   "permanent_id_policy": {
