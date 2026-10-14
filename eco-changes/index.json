@@ -20,6 +20,31 @@
       "id": "ECO-2026-ROSSTAT-546",
       "path": "eco-changes/registry/ECO-2026-ROSSTAT-546.json",
       "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-GOST-72433",
+      "path": "eco-changes/registry/ECO-2026-GOST-72433.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-ROSSTAT-589",
+      "path": "eco-changes/registry/ECO-2026-ROSSTAT-589.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-PP-1320",
+      "path": "eco-changes/registry/ECO-2026-PP-1320.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-PP-1322",
+      "path": "eco-changes/registry/ECO-2026-PP-1322.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-PP-1325",
+      "path": "eco-changes/registry/ECO-2026-PP-1325.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
     }
   ]
 }
