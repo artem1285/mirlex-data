@@ -1,0 +1,40 @@
+{
+  "id": "IND-LIVESTOCK-001",
+  "date": "2026-10-14",
+  "industry_contour": "livestock/byproducts/land-water/fish mortality",
+  "actuality_status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY",
+  "primary_source": "https://epp.genproc.gov.ru/ru/abpp/mass-media/news/main/e8622256/",
+  "current_npa": [
+    "248-FZ art.5,7",
+    "PP RF 1940",
+    "KoAP 8.6(2), 8.13(4) as cited by prosecutor"
+  ],
+  "factual_pattern": "livestock land parcel → byproduct pollution → river Repyevka → measured exceedances → fish mortality → land/water/fisheries oversight",
+  "risk": "Paperwork for livestock byproducts cannot substitute verification of the physical pathway to water and fish habitat.",
+  "evidence_court_practice": "Prosecutor 2026-08-20: around 900 fish died, water pollutants exceeded standards by tens of times; administrative cases initiated; fisheries authority received separate representation for lack of cause/damage assessment; outcomes not reported.",
+  "diagnostic_questions": [
+    "Could drainage or rain/snow runoff carry material to the river?",
+    "Does documented byproduct handling match real storage, treatment and land use?",
+    "Was fisheries damage assessed separately from land/water impacts?"
+  ],
+  "red_flag": "Byproduct records exist but drainage route, receptor samples and fish mortality are absent from incident review.",
+  "mirlex_checks": [
+    "byproduct/waste legal classification and material flows",
+    "land gradient and water pathways",
+    "upstream/downstream samples and dates",
+    "fisheries assessment status"
+  ],
+  "linked_ids": [
+    "IND-WATER-001",
+    "IND-SOIL-001",
+    "IND-ACCIDENT-001"
+  ],
+  "impact": {
+    "site": "Livestock byproduct runoff and water audit",
+    "assistant": "ECO_EXPERT; ROP_EXPERT referral only",
+    "services": [
+      "LIVESTOCK_BYPRODUCT_AUDIT"
+    ]
+  },
+  "update_needed": "Append to existing ID; do not assume rain runoff proven; no active legal rule."
+}
