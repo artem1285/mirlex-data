@@ -1,0 +1,42 @@
+{
+  "id": "SIGNAL-2026-171717",
+  "observed_at": "2026-10-14",
+  "title": "Возможные изменения правил использования лесов при строительстве, реконструкции и эксплуатации линейных объектов",
+  "project_id": "171717",
+  "priority": "YELLOW",
+  "legal_status": "неподтверждённый сигнал",
+  "verification": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": [
+    {
+      "type": "professional_signal",
+      "name": "Техэксперт: Экология, обзор 09.10.2026",
+      "url": "https://t.me/s/eco_t_expert"
+    },
+    {
+      "type": "official_project_page",
+      "url": "https://regulation.gov.ru/projects/171717/",
+      "verification": "страница открывается, но текст проекта не доступен в используемом просмотре"
+    },
+    {
+      "type": "existing_law_background",
+      "name": "Приказ Минприроды России от 27.03.2026 № 170",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_535477/2ff7a8c72de3994f30496a0ccbb1ddafdaddf518/"
+    }
+  ],
+  "affected": [
+    "проектировщики линейных объектов",
+    "лесопользователи",
+    "экологическое сопровождение проектирования"
+  ],
+  "impact": "не определён до сверки полного текста проекта",
+  "deadlines": "не подтверждены",
+  "next_steps": [
+    "получить полный текст и пояснительную записку с regulation.gov.ru",
+    "сопоставить с действующим приказом №170",
+    "проверить сроки обсуждения и дату предполагаемого введения",
+    "после верификации оценить влияние на карточки MIRLEX и ПМООС"
+  ],
+  "client_publication_allowed": false,
+  "expert_deployment_allowed": false,
+  "dedup_key": "regulation-project-171717"
+}
