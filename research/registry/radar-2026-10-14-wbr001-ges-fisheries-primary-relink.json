@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "cards": [
+    {
+      "id": "IND-WBR-001",
+      "date": "2026-10-14",
+      "record_type": "ADDITIONAL_EVIDENCE",
+      "industry_contour": "ГЭС / водные биоресурсы / водосброс / причалы / аварии",
+      "actuality_status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY",
+      "primary_source": [
+        {
+          "date": "2026-09-14",
+          "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8650084/",
+          "facts": "ГЭС, Богучанское водохранилище и ручей Симаха: отсутствие согласования; решение суда 28.05.2026, апелляция оставила без изменения; штраф 100000 руб. по ч.2 ст.8.48 КоАП РФ."
+        },
+        {
+          "date": "2026-02-24",
+          "url": "https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8399787/",
+          "facts": "Причалы без согласования Росрыболовства, утечки масла, недостатки обслуживания/аварийных инструкций; штрафы 35000 руб. по 8.48,9.1,9.2 КоАП РФ; согласования получены."
+        }
+      ],
+      "current_npa": [
+        {
+          "act": "166-ФЗ ст.50",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_50799/452d8b47ce995ec88cbe6c083b610721243b71e6/"
+        },
+        {
+          "act": "ПП РФ №799 от 30.05.2025",
+          "url": "https://rostov.fish.gov.ru/activities/water-use/soglasovanie-deyatelnosti-okazyvayushhej-vozdejstv/"
+        },
+        {
+          "act": "КоАП ч.2 ст.8.48",
+          "url": "https://legalacts.ru/kodeks/KOAP-RF/razdel-ii/glava-8/statja-8.48/"
+        }
+      ],
+      "factual_pattern": "ГЭС → эксплуатация + каждый выпуск + причалы → оценка воздействия на ВБР → согласование Росрыболовства по предмету → меры → контроль; параллельно потенциальный аварийный маршрут ГСМ, без доказанного загрязнения.",
+      "risk": "Согласование отдельных работ не означает согласования иных фактических маршрутов воздействия на ВБР.",
+      "evidence_court_practice": "Прокуратура: решение Усть-Илимского горсуда 28.05.2026, апелляция без изменения; полный судебный акт не получен. Два сообщения не доказывают тождество дел/ответчиков.",
+      "diagnostic_questions": [
+        "А если согласован причал, но не эксплуатация и сбросы?",
+        "А вдруг каждый выпуск в отдельный водный объект не охвачен оценкой ВБР?",
+        "А если утечки масла создают аварийный риск, который не учтён в плане контроля?"
+      ],
+      "red_flag": "Водопользование оформлено, но нет трассировки заключений Росрыболовства по каждому виду деятельности.",
+      "mirlex_checks": [
+        "Сверить операции, водные объекты, выпуски и предмет каждого согласования.",
+        "Проверить оценку воздействия и меры по ВБР.",
+        "Отдельно проверить аварийные сценарии и получить судебные акты."
+      ],
+      "linked_ids": [
+        "IND-WBR-001",
+        "IND-ENERGY-001",
+        "IND-WATER-001",
+        "IND-ACCIDENT-001"
+      ],
+      "impact": {
+        "site": "ГЭС/ВБР и экологическое сопровождение проектирования",
+        "assistant": "ECO_EXPERT research-only; ROP_EXPERT referral-only",
+        "services": [
+          "WBR_APPROVAL_AUDIT",
+          "WATER_ROUTE_AUDIT"
+        ]
+      },
+      "update_needed": "Append to existing IND-WBR-001, index path, test get_radar_card; no active rule before legal validation and regression."
+    }
+  ]
+}
