@@ -1,0 +1,20 @@
+{
+  "id": "SIGNAL-2026-PROJECT-171513",
+  "color": "YELLOW",
+  "legal_status": "НЕПОДТВЕРЖДЁННЫЙ СИГНАЛ О ПРОЕКТЕ НПА",
+  "source_date": "2026-10-02",
+  "discovered_date": "2026-10-14",
+  "title": "Проект поправок в закон О недрах — периодическая инвентаризация запасов дефицитного сырья",
+  "proposed_change": "По сообщениям со ссылкой на Минприроды предполагается пересчёт запасов дефицитного сырья недропользователями раз в 5 лет, для северных и труднодоступных территорий раз в 7 лет, с верификацией Роснедрами. Формулировки и условия не проверены по полному официальному тексту.",
+  "primary_project_url": "https://regulation.gov.ru/projects/171513/",
+  "secondary_url": "https://www.interfax.ru/amp/1119952",
+  "verification": "Project official portal entry link found, but full text and current procedural stage not independently accessible. Ministry statement reported by Interfax, 2026-10-02.",
+  "exact_unverified_warning": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "potential_scope": "Недропользователи месторождений дефицитных полезных ископаемых",
+  "deadlines": "5/7 лет — только предполагаемая периодичность, НЕ действующий срок; дата принятия не подтверждена.",
+  "risk": "Потенциальные расходы на инвентаризацию запасов, если проект будет принят.",
+  "mirlex_action": "Получить официальный текст и перечень дефицитных полезных ископаемых; определить, кто и по каким участкам обязан проводить пересчёт; не вводить правило в экспертную диагностику.",
+  "client_phrase": "НЕ ПУБЛИКОВАТЬ ДО ПОДТВЕРЖДЕНИЯ",
+  "integration": "SIGNAL_ONLY_NOT_DEPLOYED",
+  "dedup": "First signal registration; do not re-alert without verified substantive changes."
+}
