@@ -1,1 +1,18 @@
-{"id":"SIGNAL-2026-PROJECT-171328","priority":"YELLOW","legal_status":"неподтверждённый сигнал","official_source":"https://regulation.gov.ru/projects/171328/","evidence":"https://base.garant.ru/57067275/","status":"RESEARCH_ONLY","expert_activation":false,"checked":"2026-10-15"}
+{
+  "id": "SIGNAL-2026-PROJECT-171328",
+  "priority": "YELLOW",
+  "legal_status": "неподтверждённый сигнал",
+  "title": "Проект дополнения ФККО",
+  "proposed": "Добавление новых позиций ФККО: фотоэлектрические модули, отходы обезвреживания медотходов Б/В, золы, промышленные и лабораторные отходы.",
+  "affected": "образователи отходов, паспортизация, учет и отчетность, обращение с отходами",
+  "dates": "Проект 25.09.2026; обсуждение до 10.10.2026; принятие не подтверждено.",
+  "risk": "Нельзя использовать проектные коды как действующие.",
+  "action": "Проверить утверждение и сопоставить новые коды с действующим ФККО; затем обновить паспорта, учет, отраслевые карточки.",
+  "official_source": "https://regulation.gov.ru/projects/171328/",
+  "evidence": "https://base.garant.ru/57067275/",
+  "status": "RESEARCH_ONLY",
+  "primary_source_verified": false,
+  "expert_activation": false,
+  "client_publication": false,
+  "checked": "2026-10-15"
+}
