@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-15",
+  "purpose": "Regression cases for existing unified MIRLEX Radar research-only routing; no legal decision automation",
+  "cases": [
+    {
+      "name": "ROP customs packaging classification",
+      "radar_id": "ROP-008",
+      "source": "research/registry/radar-2026-10-12-rop008-customs-packaging-crosswalk.json",
+      "expert": "ROP_EXPERT",
+      "expected_mode": "RESEARCH_ONLY",
+      "expected_checks": [
+        "customs_code_not_polymer",
+        "component_mass_not_gross_minus_net",
+        "EAEU_vs_third_country_route"
+      ]
+    },
+    {
+      "name": "Air marker substances methodology",
+      "radar_id": "IND-AIR-001",
+      "source": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
+      "expert": "ECO_EXPERT",
+      "expected_mode": "RESEARCH_ONLY",
+      "expected_checks": [
+        "PDKss_OBUV_not_hazard_coefficients",
+        "85pct_10pct_and_expert_5to10pct",
+        "ITS_NDT_source_inventory"
+      ]
+    },
+    {
+      "name": "ROP to ECO emissions referral",
+      "radar_id": "IND-AIR-001",
+      "expert": "ROP_EXPERT",
+      "expected_mode": "REFERRAL_ONLY",
+      "expected_target": "ECO_EXPERT"
+    },
+    {
+      "name": "Landfill fire evidence",
+      "radar_id": "IND-LANDFILL-001",
+      "source": "research/registry/radar-2026-10-14-landfill001-smoldering-primary.json",
+      "expected_mode": "RESEARCH_ONLY"
+    },
+    {
+      "name": "Livestock water/fish evidence",
+      "radar_id": "IND-LIVESTOCK-001",
+      "source": "research/registry/radar-2026-10-14-livestock001-fish-primary.json",
+      "expected_mode": "RESEARCH_ONLY"
+    }
+  ],
+  "pass_conditions": [
+    "source indexed in master-index",
+    "get_radar_card includes canonical source and permanent ID",
+    "expert package exposes research pointer with correct legal mode",
+    "no new permanent ID",
+    "no automatic legal violation conclusion"
+  ]
+}
