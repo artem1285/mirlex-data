@@ -53,6 +53,101 @@
       "source_type": "existing statutory transitional obligation, 2026-10-12 reminder",
       "official_published_on": "2026-10-12",
       "application_url": "https://www.gosuslugi.ru/624943/1"
+    },
+    {
+      "event_key": "PP-RF-2026-10-09-1325-TKO-SPECIAL-REGIONS-2030",
+      "source_radar": "Экорадар изменений",
+      "detected_on": "2026-10-15",
+      "document_type": "ADOPTED_REGULATION_IN_FORCE",
+      "npa_number": "Постановление Правительства РФ от 09.10.2026 № 1325 (изменения к ПП РФ от 26.08.2023 № 1390)",
+      "npa_date": "2026-10-09",
+      "primary_source_url": "https://publication.pravo.gov.ru/document/0001202610090026",
+      "official_publication_id": "0001202610090026",
+      "source_checked_on": "2026-10-15",
+      "legal_status": "IN_FORCE",
+      "effective_from": "2026-10-09",
+      "priority": "GREEN",
+      "affected_obligations": "Для субъектов РФ, на территориях которых введен максимальный или средний уровень реагирования по Указу Президента РФ № 757, продлен предельный срок применения ранее установленных нормативов накопления ТКО и нормативов, установленных по разделу VII Правил, до 01.07.2030 либо до установления новых нормативов по соответствующему порядку (что наступит ранее). В остальных регионах общий предельный срок не изменен.",
+      "affected_industries": [
+        "региональные органы регулирования ТКО",
+        "региональные операторы ТКО",
+        "юридические лица и ИП с расчетами по нормативам накопления ТКО в затронутых регионах"
+      ],
+      "rop_relevance": "Отдельно от РОП; не меняет нормативы утилизации, экологический сбор или сроки РОП.",
+      "eco_relevance": "Проверка действующего регионального норматива накопления ТКО и применимости переходного периода по режиму реагирования",
+      "existing_radar_ids": [],
+      "changes_previous_rule": true,
+      "diagnostic_questions": [
+        "Введен ли на территории субъекта максимальный/средний уровень реагирования по Указу № 757?",
+        "Каким актом и когда утвержден действующий норматив ТКО?",
+        "Не принят ли новый норматив по разделам I-VI Правил № 1390 до 01.07.2030?"
+      ],
+      "risk": "Неправильное применение общего срока 01.07.2027 к исключениям либо автоматическое распространение исключения на все регионы.",
+      "evidence": [
+        "https://publication.pravo.gov.ru/document/0001202610090026",
+        "https://base.garant.ru/415044565/",
+        "https://legalacts.ru/doc/postanovlenie-pravitelstva-rf-ot-09102026-n-1325-o-vnesenii/",
+        "https://www.ecoindustry.ru/NEWS/1.html"
+      ],
+      "review_status": "FULL_TEXT_CROSSCHECKED_OFFICIAL_PUBLICATION_IDENTIFIER_CONFIRMED_OFFICIAL_PORTAL_FETCH_UNAVAILABLE_RESEARCH_ONLY",
+      "red_flags": [
+        "Регион не подпадает под Указ № 757, но применяет срок 2030",
+        "Срок 2030 применяется после принятия новых нормативов"
+      ],
+      "crosslinks": [
+        "ECO_EXPERT",
+        "TKO",
+        "regional waste management"
+      ],
+      "source_type": "adopted federal regulation"
+    },
+    {
+      "event_key": "PP-RF-2026-10-09-1322-SUBSOIL-ONEOFF-NONAUCTION",
+      "source_radar": "Экорадар изменений",
+      "detected_on": "2026-10-15",
+      "document_type": "ADOPTED_REGULATION_NOT_YET_EFFECTIVE",
+      "npa_number": "Постановление Правительства РФ от 09.10.2026 № 1322 (изменения к ПП РФ от 28.12.2021 № 2498)",
+      "npa_date": "2026-10-09",
+      "primary_source_url": "https://publication.pravo.gov.ru/document/0001202610090034",
+      "source_checked_on": "2026-10-15",
+      "legal_status": "ADOPTED_NOT_EFFECTIVE",
+      "effective_from": "2026-10-17",
+      "priority": "YELLOW",
+      "affected_obligations": "С 17.10.2026 меняется порядок определения разовых платежей за пользование участками недр, предоставляемыми без аукциона: уточнены основания и формулы, расчет НДПИ, мощности добычи, учет запасов и ресурсов, коэффициент для россыпного золота 1,2, региональные коэффициенты подтверждаемости ресурсов D0.",
+      "affected_industries": [
+        "недропользователи",
+        "заявители на предоставление участков недр без аукциона",
+        "организации, оценивающие финансовую модель проектов недропользования"
+      ],
+      "rop_relevance": "Прямой связи с РОП нет.",
+      "eco_relevance": "Лицензирование недропользования и расчет обязательных разовых платежей; проверить применимость к участкам подземных вод и иным ресурсам.",
+      "existing_radar_ids": [],
+      "changes_previous_rule": true,
+      "diagnostic_questions": [
+        "Предоставляется ли участок недр без аукциона?",
+        "На какую дату принимается решение о предоставлении права?",
+        "Какие виды запасов и коэффициенты применимы к участку по новой редакции?",
+        "Подпадает ли участок под специальные правила для подземных вод или россыпного золота?"
+      ],
+      "risk": "Применение прежних формул к решениям после 17.10.2026 может привести к неверному расчету разового платежа.",
+      "evidence": [
+        "https://publication.pravo.gov.ru/document/0001202610090034",
+        "https://www.kontur-extern.ru/info/normativ/document/1/508719-postanovlenie-pravitelstva-rf-ot-09-10-2026-n-1322",
+        "https://www.consultant.ru/document/cons_doc_LAW_546447/",
+        "https://www.ecoindustry.ru/news/view/66737.html"
+      ],
+      "review_status": "FULL_TEXT_CROSSCHECKED_EFFECTIVE_DATE_CONFIRMED_SECONDARY_SOURCES_OFFICIAL_PORTAL_FETCH_UNAVAILABLE_RESEARCH_ONLY",
+      "red_flags": [
+        "Для нового решения применяется старая редакция правил № 2498",
+        "Россыпное золото без коэффициента 1,2",
+        "Смешение с правилами стартового платежа при аукционе"
+      ],
+      "crosslinks": [
+        "ECO_EXPERT",
+        "subsoil licensing",
+        "financial modelling"
+      ],
+      "source_type": "adopted federal regulation pending effective date"
     }
   ],
   "record_required_fields": [
@@ -94,5 +189,6 @@
     "do_not_store_client_data": true,
     "write_readback_index_live_mcp_required": true
   },
-  "status": "VERIFIED_LEGAL_RECORDS_PRESENT"
+  "status": "VERIFIED_LEGAL_RECORDS_PRESENT",
+  "last_checked_on": "2026-10-15"
 }
