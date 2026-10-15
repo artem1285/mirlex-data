@@ -28,6 +28,14 @@
           "trigger": "OVOS/PMOOS/GEE or project technical documentation assessment",
           "legal_gate": "CHECK_CURRENT_NPA_AND_EXACT_ARTICLE_11_12_OBJECT",
           "note": "Research pointer only; no automatic conclusion or active executable rule."
+        },
+        {
+          "path": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
+          "radar_id": "IND-AIR-001",
+          "mode": "RESEARCH_ONLY",
+          "trigger": "air marker substances / BAT / KER",
+          "legal_gate": "VERIFY_CURRENT_STANDARD_AND_INDUSTRY_ITS_NDT",
+          "note": "No automatic violation conclusion"
         }
       ]
     },
@@ -60,6 +68,22 @@
           "mode": "REFERRAL_ONLY",
           "target": "ECO_EXPERT",
           "legal_gate": "NO_AUTOMATIC_GEE_OR_ROP_CONCLUSION"
+        },
+        {
+          "path": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
+          "radar_id": "IND-AIR-001",
+          "mode": "REFERRAL_ONLY",
+          "target": "ECO_EXPERT",
+          "trigger": "recycling process has atmospheric emissions"
+        }
+      ],
+      "knowledge_modules": [
+        {
+          "path": "research/registry/radar-2026-10-12-rop008-customs-packaging-crosswalk.json",
+          "radar_id": "ROP-008",
+          "mode": "RESEARCH_ONLY",
+          "rule_id": "ENG-ROP-CUSTOMS-PACKAGING-001",
+          "legal_gate": "NO_AUTOMATIC_CUSTOMS_TO_MATERIAL_MAPPING"
         }
       ]
     }
@@ -109,6 +133,16 @@
       "path": "research/registry/rop-customs-packaging-2026-10-12.json",
       "rule_id": "ENG-ROP-CUSTOMS-PACKAGING-001",
       "mode": "ACTIVE_FACT_FINDING"
+    },
+    {
+      "id": "ROP-008",
+      "path": "research/registry/radar-2026-10-12-rop008-customs-packaging-crosswalk.json",
+      "mode": "RESEARCH_ONLY"
+    },
+    {
+      "id": "IND-AIR-001",
+      "path": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
+      "mode": "RESEARCH_ONLY"
     }
   ]
 }
