@@ -3,7 +3,58 @@
   "source_radar": "Экорадар изменений",
   "created_on": "2026-10-12",
   "purpose": "Persist verified legislation changes, drafts, official explanations and effective dates as evidence for existing MIRLEX radar master index, ECO_EXPERT and ROP_EXPERT",
-  "records": [],
+  "records": [
+    {
+      "event_key": "RPN-2026-10-12-WASTE-LICENSE-EQUIPMENT-2027",
+      "source_radar": "Экорадар изменений",
+      "detected_on": "2026-10-15",
+      "document_type": "OFFICIAL_AGENCY_CLARIFICATION_OF_IN_FORCE_TRANSITION",
+      "npa_number": "Федеральный закон 451-ФЗ от 04.08.2023; ПП РФ 675 от 02.06.2026",
+      "npa_date": "2023-08-04; 2026-06-02",
+      "primary_source_url": "https://rpn.gov.ru/press/news/rosprirodnadzor_napominaet_litsenziatam_svedeniya_ob_oborudovanii_i_ustanovkakh_kotorye_ispolzuyutsya/",
+      "source_checked_on": "2026-10-15",
+      "legal_status": "IN_FORCE",
+      "effective_from": "2025-12-31; current licensing regulation effective 2026-09-01; transitional completion before 2027-01-01",
+      "affected_obligations": "Existing licensees conducting processing, recycling or neutralization of class I-IV waste must ensure equipment/installation and annual capacity details are present in licence register; if absent add by 2027-01-01 via license-register amendment application on Gosuslugi. Report ownership/legal-use basis, equipment name, ordinal number, commissioning date, quantity, annual capacity in t/year, addresses; by item or technology line where appropriate. RPN does not insert details automatically.",
+      "affected_industries": [
+        "waste management",
+        "waste recycling",
+        "industrial waste processing"
+      ],
+      "rop_relevance": "Verify recycler's waste licence, listed equipment and registered t/year capacity against actual technology and ROP claimed recycling volumes; do not assume waste licence alone proves ROP eligibility.",
+      "eco_relevance": "Licence register completeness and consistency audit",
+      "existing_radar_ids": [],
+      "changes_previous_rule": false,
+      "diagnostic_questions": [
+        "Are processing/recycling/neutralization equipment and t/year capacity actually present in the official licence register for each site?",
+        "Do equipment names, counts, commissioning dates, legal possession documents, capacities and site addresses match reality?",
+        "For ROP recycler, do actual recycling volumes and product outputs reconcile with installed registered capacity and independent ROP-specific requirements?"
+      ],
+      "risk": "Missing equipment/capacity or mismatch with actual equipment may trigger licence compliance and inspection risks; do not assert automatic suspension or fine without case-specific legal basis.",
+      "evidence": [
+        "https://rpn.gov.ru/press/news/rosprirodnadzor_napominaet_litsenziatam_svedeniya_ob_oborudovanii_i_ustanovkakh_kotorye_ispolzuyutsya/",
+        "https://base.garant.ru/414326519/",
+        "https://www.consultant.ru/law/hotdocs/95357.html"
+      ],
+      "review_status": "OFFICIAL_SOURCE_CHECKED_PENDING_EXPERT_DELIVERY_TEST",
+      "red_flags": [
+        "Equipment operates but is absent from licence register",
+        "Registered t/year capacity is less than documented throughput",
+        "Technology line and address differ from register",
+        "Operator assumes RPN automatically updates register",
+        "ROP recycling proof based solely on licence existence"
+      ],
+      "crosslinks": [
+        "ECO_EXPERT",
+        "ROP_EXPERT",
+        "Waste licensing service",
+        "ROP recycler due diligence"
+      ],
+      "source_type": "existing statutory transitional obligation, 2026-10-12 reminder",
+      "official_published_on": "2026-10-12",
+      "application_url": "https://www.gosuslugi.ru/624943/1"
+    }
+  ],
   "record_required_fields": [
     "event_key",
     "source_radar",
@@ -43,5 +94,5 @@
     "do_not_store_client_data": true,
     "write_readback_index_live_mcp_required": true
   },
-  "status": "EMPTY_INITIALIZED_NO_FINDINGS_CLAIMED"
+  "status": "VERIFIED_LEGAL_RECORDS_PRESENT"
 }
