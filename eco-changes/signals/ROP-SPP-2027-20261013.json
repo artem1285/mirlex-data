@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "id": "SIGNAL-2026-ROP-SPP-1013",
+  "event_key": "SPP-2026-10-13-ROP-2027-COEFFICIENTS-APPEAL",
+  "source_radar": "Экорадар изменений",
+  "detected_on": "2026-10-15",
+  "priority": "YELLOW",
+  "legal_status": "SIGNAL_UNVERIFIED",
+  "status_note": "Industry association appeal confirmed at original association website. No government adoption or draft amendment verified. Existing 2027 ROP rules remain unchanged.",
+  "source_type": "CONFIRMED_INDUSTRY_ADVOCACY_NOT_NPA",
+  "official_primary_source": "https://www.rusopp.org/pressa/novosti/spp-prosit-pravitelstvo-ne-povyshat-parametry-ekosbora-v-2027-godu.html",
+  "primary_source_published_on": "2026-10-13",
+  "secondary_sources": [
+    "https://nia.eco/2026/10/14/145511/"
+  ],
+  "current_law_sources": [
+    "https://publication.pravo.gov.ru/document/0001202603130029",
+    "https://www.kontur-extern.ru/info/normativ/document/1/505080-postanovlenie-pravitelstva-rf-ot-11-03-2026-n-258",
+    "https://base.garant.ru/12112084/c2928dbe252d70e8439ec46e6150af7f/"
+  ],
+  "existing_law": "PP RF No.1041 of 2024 as amended by PP RF No.258 of 2026 uses 2025/2026 coefficient table in 2026 and higher table starting 2027; art.24.2(4) Law 89-FZ becomes effective 2027-01-01 for recycling all packaging mass.",
+  "what_changed": "No legal change. Plastics Processors Union (SPP) published on 2026-10-13 an appeal to Deputy PM D. Patrushev seeking to keep 2027 environmental fee coefficients at 2026 levels.",
+  "affected": "Packaging producers, polymer processing industry, ROP obligated manufacturers/importers where packaging and group-specific coefficients apply.",
+  "dates": "Appeal public 2026-10-13; current statutory transition scheduled 2027-01-01. No new official deadline from the appeal.",
+  "risk": "Budget miscalculation if firms assume a future freeze is already adopted; material ROP cost exposure if planned coefficient increase remains.",
+  "industry_estimates": "SPP claims cumulative burden increase: polypropylene +122%, composite carton +108%, other plastics packaging +131.1%. These are SPP estimates, not official tariffs.",
+  "what_mirlex_should_do": "Track government response and any published draft or adopted amendment. For clients calculate 2027 ROP base-case under current law and separate unapproved lobbying scenario. Do not modify expert active rate tables or promise a freeze.",
+  "client_wording": "Отраслевой союз предложил сохранить коэффициенты экологического сбора на 2027 год на уровне 2026 года. Решение об изменении действующих правил не подтверждено; при планировании расходов следует применять действующую нормативную базу.",
+  "publishability": "Can report confirmed appeal as an industry signal with explicit no-NPA qualification. Do not report postponement as fact.",
+  "confirmation_phrase_for_unverified_legal_change": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_transfer": "RESEARCH_ONLY_DO_NOT_ACTIVATE_AS_LAW",
+  "dedup_checked": [
+    "eco-changes/index.json",
+    "research/registry/ecoradar-legislation-feed.json",
+    "GitHub repository search: SPP appeal/rusopp/2027 ecofee"
+  ],
+  "review_status": "ASSOCIATION_PRIMARY_SOURCE_VERIFIED_LEGAL_CHANGE_NOT_VERIFIED",
+  "verified_on": "2026-10-15"
+}
