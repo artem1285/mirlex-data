@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "status": "INDEX_PENDING",
+  "source_radar": "Жёсткий радар MIRLEX",
+  "id": "IND-CHEM-002",
+  "card_path": "research/registry/radar-2026-10-15-chem002-glue-roadside-primary-relink.json",
+  "card_blob_sha": "15cf71e961288204a5fbaa09a54405a92d4fe59c",
+  "card_commit": "a1834f56e58a50c5b46d5f90c7ae76e352a7780a",
+  "master_index_path": "research/registry/master-index.json",
+  "index_sha_before": "7e956ef27387fc260af988b761773a23220f1541",
+  "index_entry_to_add": {
+    "path": "research/registry/radar-2026-10-15-chem002-glue-roadside-primary-relink.json",
+    "cards": 1,
+    "existing_id": "IND-CHEM-002",
+    "status": "PRIMARY_PROSECUTOR_SOURCE_VERIFIED_RESEARCH_ONLY_READ_BACK",
+    "source_radar": "Жёсткий радар",
+    "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY"
+  },
+  "diagnostic_status": "RESEARCH_ONLY",
+  "blocker": "GitHub connector large index replacement rejected by tool safety checks; card write and read-back successful; index and Engine live retrieval not yet completed.",
+  "recovery": "Re-fetch current master-index, append exact index_entry_to_add only if absent, update updated_on, write, read-back, then call live get_radar_card IND-CHEM-002 and verify source path, check both expert packages. Never assign a new ID."
+}
