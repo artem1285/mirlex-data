@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-16",
+  "radar_id": "IND-GREENHOUSE-001",
+  "state": "INDEX_PENDING",
+  "card_path": "research/registry/radar-2026-10-15-greenhouse001-soil-damage-primary.json",
+  "card_blob_sha": "2f52b8ced388f882874fefeca3d7e8e4d790ee62",
+  "card_commit": "578256551107eb5f906850c6f5207e41727d8c9e",
+  "index_path": "research/registry/master-index.json",
+  "reason": "GitHub connector safety checks rejected full index replacement; dedicated card persisted and read back.",
+  "next_action": "Read handover and master-index; if missing, add existing card path without creating a new ID; read back and verify live get_radar_card and expert routing.",
+  "legal_mode": "RESEARCH_ONLY"
+}
