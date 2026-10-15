@@ -1,1 +1,1 @@
-{"date":"2026-10-15","id":"IND-AIR-001","status":"WRITE_PENDING","reason":"Github write blocked; source https://epp.genproc.gov.ru/ru/bmtp/mass-media/news/main/e8656300/"}
+{"id":"IND-AIR-001","date":"2026-10-15","status":"INDEX_PENDING","card":"research/registry/radar-2026-10-15-air001-automatic-control-court.json","next":"INDEX_READBACK_ENGINE"}
