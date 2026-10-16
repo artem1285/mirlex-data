@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-16",
+  "radar_id": "IND-GREENHOUSE-001",
+  "mode": "RESEARCH_ONLY",
+  "test_cases": [
+    {
+      "id": "GREENHOUSE_ROUTE_SOIL",
+      "input": {
+        "industry": "GREENHOUSE",
+        "physical_discharge": "RELIEF",
+        "documented_discharge": "UNKNOWN"
+      },
+      "expect": {
+        "route_to": "ECO_EXPERT",
+        "check": "soil and actual discharge route",
+        "legal_conclusion": "NONE_WITHOUT_PROOF"
+      }
+    },
+    {
+      "id": "GREENHOUSE_ROUTE_RIVER",
+      "input": {
+        "industry": "GREENHOUSE",
+        "physical_discharge": "RIVER",
+        "quality_data": "9 indicators exceeded"
+      },
+      "expect": {
+        "route_to": "ECO_EXPERT",
+        "check": "river discharge separate from soil episode",
+        "same_outlet_assumption": false
+      }
+    },
+    {
+      "id": "GREENHOUSE_ROP_REFERRAL",
+      "input": {
+        "expert": "ROP_EXPERT",
+        "industry": "GREENHOUSE",
+        "issue": "wastewater"
+      },
+      "expect": {
+        "mode": "REFERRAL_ONLY",
+        "target": "ECO_EXPERT",
+        "create_rop_obligation": false
+      }
+    }
+  ],
+  "verification": {
+    "github_card": true,
+    "github_index": true,
+    "live_get_radar_card": true,
+    "eco_package_route": false,
+    "rop_package_route": false,
+    "tests_executed": false,
+    "status": "PENDING_EXPERT_PACKAGE_WRITE_AND_RUNTIME_REGRESSION"
+  }
+}
