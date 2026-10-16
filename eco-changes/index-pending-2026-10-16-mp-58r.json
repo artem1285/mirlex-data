@@ -1,0 +1,11 @@
+{
+  "updated": "2026-10-16",
+  "purpose": "Durable pending index entry; primary index update blocked; not an active expert rule",
+  "entries": [
+    {
+      "id": "SIGNAL-2026-MP-58R-I-II-WASTE-1016",
+      "path": "eco-changes/signals/MP-58R-I-II-WASTE-20261016.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    }
+  ]
+}
