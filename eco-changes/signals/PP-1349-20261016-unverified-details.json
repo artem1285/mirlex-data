@@ -1,0 +1,38 @@
+{
+  "id": "SIGNAL-2026-PP-1349-1016",
+  "detected_at": "2026-10-16",
+  "priority": "YELLOW",
+  "priority_reason": "Newly published government act; material effect and action priority not yet verified",
+  "legal_status": "ADOPTED_PUBLICATION_CONFIRMED_EFFECTIVE_DATE_UNVERIFIED",
+  "verification": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "act": {
+    "type": "Постановление Правительства РФ",
+    "number": "1349",
+    "date": "2026-10-15",
+    "published": "2026-10-15",
+    "publication_number": "0001202610150035",
+    "title": "О внесении изменений в постановление Правительства Российской Федерации от 12 июня 2008 г. № 450",
+    "amended_act_subject": "Положение о Министерстве сельского хозяйства Российской Федерации"
+  },
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610150035",
+  "secondary_signal": "https://t.me/s/eco_t_expert",
+  "verified": {
+    "publication_metadata": true,
+    "full_text": false,
+    "specific_amendments": false,
+    "effective_date": false,
+    "affected_entities": false
+  },
+  "affected_contours": [
+    "земли сельскохозяйственного назначения — возможная связь, требует проверки"
+  ],
+  "impact_on_business": "UNKNOWN",
+  "risks": "UNKNOWN",
+  "deadline": "UNKNOWN",
+  "action_for_mirlex": "Obtain complete primary text, identify amended powers and any impact on land protection, agriculture and MIRLEX industry cards. Do not issue client alert until materiality verified.",
+  "client_publication_allowed": false,
+  "expert_deployment_allowed": false,
+  "engine_status": "RESEARCH_ONLY_NO_ACTIVE_RULE",
+  "dedup_key": "PP-RF-2026-10-15-1349",
+  "notes": "Professional feed labels as land protection; amended underlying act is MinSelKhoz regulation. Do not infer new obligations from title."
+}
