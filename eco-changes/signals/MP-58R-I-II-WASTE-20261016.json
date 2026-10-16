@@ -1,0 +1,44 @@
+{
+  "id": "SIGNAL-2026-MP-58R-I-II-WASTE-1016",
+  "event_key": "MINPRIRODY-2026-09-25-58R-I-II-WASTE-SPECIAL-MUNICIPALITIES",
+  "source_radar": "Экорадар изменений",
+  "detected_on": "2026-10-16",
+  "priority": "YELLOW",
+  "priority_meaning": "Significant waste management signal requiring primary-text verification and applicability checks, not an automatic critical-risk alert",
+  "legal_status": "SIGNAL_UNVERIFIED",
+  "legal_status_display": "неподтверждённый сигнал",
+  "source_claimed_document": "Распоряжение Минприроды России от 25.09.2026 № 58-р",
+  "summary": "ФГУП ФЭО 14.10.2026 сообщило о перечне муниципальных образований и отдельных отходов I–II классов опасности, для которых предусмотрено накопление до 24 месяцев и хранение более 24 месяцев. Полный текст распоряжения и его перечни в этой проверке не получены.",
+  "affected_parties": "Образователи и участники обращения с отдельными отходами I–II классов в указанных муниципальных образованиях; точная применимость требует сверки приложений",
+  "deadlines": "Дата начала применения не подтверждена чтением первоисточника. 24 месяца — сообщённый ФЭО специальный предел накопления, не универсальный срок для всех отходов.",
+  "risk": "Ошибочное распространение исключения на неподходящие отходы или территории; возможное несоответствие требованиям при накоплении/хранении",
+  "what_to_do": "Получить полный текст и приложения распоряжения № 58-р; проверить официальную публикацию/юридический статус, точные муниципалитеты, коды ФККО, дату действия и соотношение с ФЗ № 89-ФЗ и правилами ФГИС ОПВК; после проверки связать с диагностикой отходов I–II классов.",
+  "client_text": "НЕ ПУБЛИКОВАТЬ ДО ПРОВЕРКИ ПЕРВОИСТОЧНИКА",
+  "verification": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "official_agency_news": "https://www.rosfeo.ru/press-czentr/novosti-fgup-feo/2026/oktyabr/vazhnyie-izmeneniya-v-chasti-nakopleniya-i-xraneniya-otxodov-i-i-ii-klassov-opasnosti.html",
+  "attempted_primary_pdf": "https://www.rosfeo.ru/press-czentr/novosti-fgup-feo/2026/oktyabr/assets/lib/1372/MP_Order_N58_20260925.pdf",
+  "primary_text_status": "NOT_RETRIEVED_LINK_404",
+  "secondary_source": "https://cntd.ru/news/read/vaznye-izmeneniia-v-casti-nakopleniia-i-xraneniia-otxodov-i-i-ii-klassov-opasnosti",
+  "source_publication_date": "2026-10-14",
+  "expert_deployment_allowed": false,
+  "active_rule": false,
+  "status": "RESEARCH_SIGNAL_NOT_ACTIVE",
+  "links_to_engine": [
+    "ECO_EXPERT",
+    "I-II hazardous waste",
+    "waste accumulation/storage"
+  ],
+  "dedup_checked": [
+    "eco-changes/index.json",
+    "research/registry/ecoradar-legislation-feed.json",
+    "research/registry/master-index.json"
+  ],
+  "review_needed": [
+    "FULL_NPA_TEXT",
+    "OFFICIAL_LEGAL_STATUS",
+    "MUNICIPALITIES",
+    "WASTE_CODES",
+    "EFFECTIVE_DATE",
+    "ENGINE_LINK_AFTER_VERIFICATION"
+  ]
+}
