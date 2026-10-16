@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-16",
+  "id": "IND-GREENHOUSE-001",
+  "state": "EXPERT_PACKAGE_WRITE_PENDING",
+  "card_path": "research/registry/radar-2026-10-15-greenhouse001-soil-damage-primary.json",
+  "index_path": "research/registry/master-index.json",
+  "card_readback": true,
+  "index_readback": true,
+  "live_get_radar_card": true,
+  "expert_package_write": false,
+  "requested_change": {
+    "ECO_EXPERT": "RESEARCH_ONLY",
+    "ROP_EXPERT": "REFERRAL_ONLY"
+  },
+  "note": "No ACTIVE rule; repeat expert-package write and regression tests next cycle. Existing card index_status field is stale, authoritative index and Engine readbacks succeeded."
+}
