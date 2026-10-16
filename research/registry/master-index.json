@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-10-14",
+  "updated_on": "2026-10-16",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -263,6 +263,19 @@
       "status": "PRIMARY_PROSECUTOR_SOURCES_VERIFIED_RESEARCH_ONLY_READ_BACK",
       "source_radar": "Жёсткий радар",
       "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY"
+    },
+    {
+      "path": "research/registry/radar-2026-10-15-greenhouse001-soil-damage-primary.json",
+      "cards": 1,
+      "existing_id": "IND-GREENHOUSE-001",
+      "status": "PRIMARY_PROSECUTOR_SOURCES_VERIFIED_RESEARCH_ONLY_READ_BACK",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "primary_dates": [
+        "2026-03-10",
+        "2026-06-25",
+        "2026-08-05"
+      ]
     }
   ],
   "permanent_id_policy": {
@@ -312,7 +325,8 @@
     "2026-10-10: IND-SAN-002 additional verified appellate evidence on outdated SZZ after meat-plant expansion (17→34 sources; 22→33 substances); research only, no active rule promotion.",
     "2026-10-11: IND-WASTECONTRACT-001 Sochi waste contractor / soil contamination / court claim; research-only, full judgment pending.",
     "2026-10-11: IND-AQUA-002 aquaculture connected ponds / land-water title risk primary prosecutor evidence indexed; full judicial act pending; research-only.",
-    "2026-10-11: IND-ENERGY-004 heat-network discharge → mechanical soil damage (131.34 m2) → river; prosecutor evidence; research-only, active rule not approved."
+    "2026-10-11: IND-ENERGY-004 heat-network discharge → mechanical soil damage (131.34 m2) → river; prosecutor evidence; research-only, active rule not approved.",
+    "2026-10-16: IND-GREENHOUSE-001 additional prosecutor evidence: 10.03 soil-damage claim, 25.06 prosecutor reports claim upheld, 05.08 separate river-discharge penalty. Separate discharge routes; case number/finality/execution unverified. RESEARCH_ONLY."
   ],
   "workflow_gate": "A substantive radar finding is not complete until GitHub write succeeds and read-back verifies the permanent ID and card.",
   "radar_mandatory_layers": [
