@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-17",
+  "status": "INDEX_PENDING",
+  "radar_id": "IND-CONSTRUCTION-003",
+  "card_path": "research/registry/radar-2026-10-16-construction003-class5-soil-primary.json",
+  "card_read_back": "VERIFIED",
+  "primary_source": "https://epp.genproc.gov.ru/ru/gprf/mass-media/news/regional/e8685154/",
+  "index_update": "BLOCKED_BY_TOOL_SAFETY_CHECK",
+  "engine_live_retrieval": "NOT_YET_INDEXED",
+  "audit_run_id": 38968158135,
+  "audit_job_id": 117199672683,
+  "audit_result": "READ_ONLY_SUCCESS",
+  "next_action": "Retry index update with original card path, then GitHub readback, live get_radar_card and expert packages. Do not duplicate ID."
+}
