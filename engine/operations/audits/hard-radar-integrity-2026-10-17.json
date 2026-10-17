@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17",
+  "radar": "HARD_RADAR",
+  "github_index": {
+    "path": "research/registry/master-index.json",
+    "updated_on": "2026-10-17",
+    "construction003_indexed": true,
+    "commit": "d4ff55012576289b4f6f8ee3c5ae3d2a77d4960d",
+    "read_back": "PASS"
+  },
+  "card": {
+    "id": "IND-CONSTRUCTION-003",
+    "path": "research/registry/radar-2026-10-16-construction003-class5-soil-primary.json",
+    "read_back": "PASS",
+    "primary_source_checked": "2026-10-17",
+    "research_only": true
+  },
+  "engine": {
+    "index_last_seen": "2026-10-16",
+    "construction003_new_evidence_delivered": false,
+    "status": "LIVE_PENDING"
+  },
+  "github_actions": {
+    "run_id": 39003095870,
+    "job_id": 117309952185,
+    "event": "schedule",
+    "conclusion": "success",
+    "log": "PASS 11 MCP tools; READ only, not radar WRITE proof"
+  },
+  "next": "Recheck live Engine index and get_radar_card, then both packages. Do not claim COMPLETE before live delivery."
+}
