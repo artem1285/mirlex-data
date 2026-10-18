@@ -1,12 +1,1 @@
-{
-  "id": "ECO-2026-MPR-227-WASTE-ACCOUNTING",
-  "priority": "YELLOW",
-  "legal_status": "IN_FORCE",
-  "effective_date": "2026-09-01",
-  "act": "Приказ Минприроды России №227 от 16.04.2026",
-  "official_source": "https://publication.pravo.gov.ru/document/0001202605300010",
-  "agency_source": "https://rpn.gov.ru/regions/34/news/uchet-otkhodov-po-novym-pravilam-s-sentyabrya-2026-goda--5989197.html",
-  "finding": "Новый порядок учета отходов действует с 1 сентября 2026 года, прежний приказ №1028 утратил силу.",
-  "client_risk": "Неактуальные учетные процедуры и документы.",
-  "engine_status": "RESEARCH_ONLY_PENDING_TESTS"
-}
+{"id":"ECO-2026-MPR-227-WASTE-ACCOUNTING","priority":"YELLOW","legal_status":"IN_FORCE","effective_date":"2026-09-01","act":"Приказ Минприроды России №227 от 16.04.2026","official_source":"https://publication.pravo.gov.ru/document/0001202605300010","agency_source":"https://rpn.gov.ru/regions/34/news/uchet-otkhodov-po-novym-pravilam-s-sentyabrya-2026-goda--5989197.html","finding":"Новый порядок учета отходов действует с 1 сентября 2026 года, прежний приказ №1028 утратил силу.","client_risk":"Неактуальные учетные процедуры и документы.","engine_status":"RESEARCH_ONLY_PENDING_TESTS","professional_signal_date":"2026-10-15","affected":"Юрлица и ИП, ведущие учет отходов","deadline":"С 01.09.2026 по 01.09.2032","mirlex_checks":["Актуальность регистров","Сроки внесения операций","Первичные документы","Согласованность с ПЭК и НВОС"],"client_wording":"С 1 сентября 2026 года действует новый порядок учета отходов по приказу №227. Проверьте применяемые формы, сроки и первичные документы."}
