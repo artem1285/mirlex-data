@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "effective_date": "2026-10-18",
+  "id": "MIRLEX-ENGINE-RADAR-NONINTERFERENCE-001",
+  "principle": "Hard Radar and EcoRadar must never degrade or silently overwrite each other or the working MIRLEX Engine. Both feed one knowledge core through independent source registries and a validation/promotion gate.",
+  "source_registries": {
+    "hard_radar": "research/registry/master-index.json",
+    "eco_radar": "eco-changes/index.json"
+  },
+  "guards": {
+    "separate_source_storage": true,
+    "shared_knowledge_core": "engine/knowledge/",
+    "executable_rules": "engine/rules/",
+    "no_direct_radar_writes_to_active_rules": true,
+    "stable_ids": "Do not rename/reuse hard radar IDs; amend existing records with new evidence.",
+    "cross_radar_dedup": "Before announcing or ingesting a new finding, compare both radar indexes, existing engine knowledge, canonical act identifier, factual pattern and permanent IDs.",
+    "provenance": "Preserve primary-source URLs, document versions, original source IDs, verification status and commit SHA; never delete historical evidence to reconcile a conflict.",
+    "legal_time_gate": "Distinguish draft, approved future, in-force, repealed, guidance, unconfirmed. Never promote a draft or unverified claim as current obligation.",
+    "conflicts": "Conflicting rules/source dates enter HOLD_FOR_REVIEW; preserve last verified working rule until resolution and successful tests. A verified repeal/supersession must flag affected old rules for revalidation, not silently leave obsolete rules active.",
+    "promotion_gate": [
+      "validate current primary law and effective dates",
+      "resolve same-topic records and references across radars",
+      "determine affected industries and existing Engine rule IDs",
+      "check schema and dependency links",
+      "run regression and cross-expert routing tests",
+      "preserve last known good working version and rollback reference",
+      "commit new candidate and re-read from GitHub",
+      "activate only after all gates pass"
+    ],
+    "rollback": "If any gate fails, keep the last known good ACTIVE rule unchanged and store the finding as RESEARCH_ONLY or BLOCKED_PENDING with a durable pointer.",
+    "expert_visibility": "ECO_EXPERT and ROP_EXPERT may read verified active rules; research signals may inform questions only when clearly flagged and must not create legal obligations.",
+    "independent_operation": "Failure of one radar, external source, or indexing must not stop the other radar or corrupt Engine; queue retryable pending items and report only validated operational states.",
+    "integrity_checks": [
+      "index entries resolve to existing paths",
+      "no duplicate permanent ID mappings",
+      "source status and effective date match live rule provenance",
+      "no active rules based solely on unconfirmed/draft signals",
+      "tests pass before promotion",
+      "record write/read-back succeeded"
+    ]
+  },
+  "scope": "Governance contract only. Does not implement runtime enforcement until verified through tests and deployment."
+}
