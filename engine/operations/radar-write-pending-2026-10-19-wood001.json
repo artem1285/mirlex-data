@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "radar_id": "IND-WOOD-001",
+  "status": "EXPERT_PACKAGE_WRITE_PENDING",
+  "source": "research/registry/radar-2026-10-18-wood001-sawmill-open-storage-soil-primary.json",
+  "verified": {
+    "github_card": true,
+    "master_index": true,
+    "live_get_radar_card": true,
+    "live_eco_package": true,
+    "live_rop_package": true
+  },
+  "missing": "explicit research-only ECO_EXPERT and referral-only ROP_EXPERT pointer in engine/expert-packages.v1.json; live package does not include wood card yet",
+  "retry": "Update existing engine/expert-packages.v1.json, then GitHub readback, live package retrieval, regression checks. No ACTIVE legal rule."
+}
