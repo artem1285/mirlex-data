@@ -1,0 +1,1 @@
+{"id":"ECO-2026-MPR-227-WASTE-ACCOUNTING","source":"eco-changes/registry/ECO-2026-MPR-227-WASTE-ACCOUNTING.json","legal_status":"IN_FORCE","mode":"RESEARCH_ONLY","trigger":"учет отходов; журнал отходов; ПЭК; НВОС","target":"ECO_EXPERT","gate":"REVIEW_EXACT_PARAGRAPHS_AND_TEST_BEFORE_ACTIVE_RULE","cross_contours":["WASTE","PEC","NVOS"]}
