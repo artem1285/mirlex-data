@@ -1,1 +1,55 @@
-{"date":"2026-10-17","status":"WRITE_PENDING","id":"ROP-002","source":"https://rpn.gov.ru/press/news/rosprirodnadzor_provedet_seriyu_vebinarov_po_rop_i_ekosboru/","published":"2026-10-07","finding":"Rosprirodnadzor targeted outreach to 2025 producers identified using CRPT operator data with absent ROP reports and eco-fee; individual violations not established.","legal_review":"89-FZ articles 24.2,24.2-1,24.2-4,24.5; PP 2414, applicability per product/year must be checked.","red_flag":"GIS MT production data not reconciled to ROP reporting and obligated entity.","questions":["Who produced the goods in 2025, including contract production?","Do GIS MT records and PP2414 scope match goods, mass and ROP role?","Are ROP reports and fee or recycling proof documented?"],"links":["ROP-003","ROP-008"],"expert_route":"ROP_EXPERT research only; ECO_EXPERT referral only","service":"MARKING_ROP_CROSS_SYSTEM_AUDIT","limits":"Official site search-index snippet verified; direct HTTP 403. No individual decisions or sanctions confirmed."}
+{
+  "date": "2026-10-17",
+  "status": "PRIMARY_SOURCE_VERIFIED_RESEARCH_ONLY",
+  "id": "ROP-002",
+  "source": "https://rpn.gov.ru/press/news/predstaviteli_biznesa_prinyali_uchastie_v_vebinarakh_po_rop/",
+  "published": "2026-10-16",
+  "finding": "Новое официальное подтверждение к существующему ROP-002: ЦРПТ/ГИС МТ используются для адресного выявления производителей, не отчитавшихся по РОП за 2025 год, и направления требований. Это надзорная практика, а не новый НПА.",
+  "legal_review": "89-FZ articles 24.2,24.2-1,24.2-4,24.5; PP 2414, applicability per product/year must be checked.",
+  "red_flag": "GIS MT production data not reconciled to ROP reporting and obligated entity.",
+  "questions": [
+    "Производилось ли в 2025 году то, что отражено в ГИС МТ, и кто фактический изготовитель?",
+    "Входит ли товар или упаковка в перечни РОП для 2025 года?",
+    "Совпадает ли обязанное лицо в расчёте РОП с фактическим производителем, включая контрактное производство?",
+    "Согласуются ли масса товаров/упаковки, выпуск и сведения ГИС МТ с отчётностью и расчетом экосбора?",
+    "Поданы ли отчётность и расчёт и исполнена ли обязанность уплатой либо подтверждённой утилизацией?",
+    "Приходили ли требования РПН и каким комплектом доказательств обоснован ответ?"
+  ],
+  "links": [
+    "ROP-003",
+    "ROP-008"
+  ],
+  "expert_route": "ROP_EXPERT research only; ECO_EXPERT referral only",
+  "service": "MARKING_ROP_CROSS_SYSTEM_AUDIT",
+  "limits": "Официальное сообщение подтверждено, но не заменяет индивидуальные акты надзора, тексты правовых норм и проверку конкретной компании.",
+  "updated_on": "2026-10-18",
+  "primary_source_evidence": {
+    "agency": "Росприроднадзор",
+    "publication_date": "2026-10-16",
+    "published_at": "15:06",
+    "title": "Представители бизнеса приняли участие в вебинарах по РОП",
+    "url": "https://rpn.gov.ru/press/news/predstaviteli_biznesa_prinyali_uchastie_v_vebinarakh_po_rop/",
+    "facts": [
+      "Более 3000 участников серии вебинаров по РОП",
+      "По данным ООО Оператор-ЦРПТ выявлены производители 2025 года, идентифицировавшие себя в ГИС МТ, без отчётности и уплаты экосбора",
+      "Доли выявленных случаев: ЦФО 42%, ПФО 15%, ЮФО 11%, ДФО 2%",
+      "Росприроднадзор сообщил о направлении организациям требований об устранении нарушений и уплате сбора"
+    ],
+    "source_type": "OFFICIAL_ENFORCEMENT_NEWS_NOT_NEW_NPA"
+  },
+  "risk": "Сопоставление статуса производителя и оборота товаров в ГИС МТ с объёмами, обязанным лицом, отчётностью и уплатой экосбора позволяет выявлять пропуски. Статус в ГИС МТ сам по себе не доказывает обязанность по РОП или нарушение.",
+  "diagnostic_rule_candidate": {
+    "id": "ENG-ROP-MARKING-CROSSCHECK-002",
+    "mode": "RESEARCH_ONLY_NOT_ACTIVE",
+    "trigger": "Маркируемый товар/контрактное производство/расхождение данных ГИС МТ и РОП",
+    "action": "REQUEST_EVIDENCE_AND_RECONCILE",
+    "conclusion_guard": "Нельзя заключать о нарушении только по данным маркировки; обязательно проверить перечень и субъект РОП, период, массу и исполнение.",
+    "route": "ROP_EXPERT",
+    "cross_links": [
+      "ROP-002",
+      "ROP-003",
+      "ROP-008"
+    ]
+  },
+  "client_wording": "Росприроднадзор подтверждает использование сведений маркировки для выявления производителей, не исполнивших обязанности по РОП. Проверьте согласованность данных ГИС МТ, выпуска продукции и РОП-отчётности."
+}
