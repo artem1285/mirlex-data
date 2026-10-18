@@ -50,3 +50,9 @@ CASE → unexpected fact/contradiction → NEW_PATTERN_CANDIDATE → research/va
 ## Initial implementation
 
 The first seed is CARWASH because it already has a strong radar chain and can validate the architecture before mass conversion of all industries.
+
+## Non-interference contract for both radars (2026-10-18)
+
+Hard Radar (`research/registry/master-index.json`) and EcoRadar (`eco-changes/index.json`) have separate intake/storage but contribute to one Engine knowledge core. Neither radar can directly replace active expert rules. Cross-radar deduplication, legal effective-date verification, provenance, regression tests and rollback to the last verified working rule are mandatory before promotion. Conflicts are held for review rather than silently resolved. If indexing or verification fails, preserve the candidate as research/pending, keep the live rule unchanged, and continue both radars independently.
+
+Canonical machine-readable contract: [`engine/governance/radar-noninterference.v1.json`](governance/radar-noninterference.v1.json). This is a governance contract, not proof of automated runtime enforcement.
