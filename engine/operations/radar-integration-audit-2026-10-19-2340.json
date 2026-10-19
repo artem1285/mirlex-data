@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-19",
+  "source_of_truth": "artem1285/mirlex-data",
+  "read_audit": {
+    "latest": {
+      "run_id": 39304615521,
+      "job_id": 118238322794,
+      "event": "push",
+      "conclusion": "success",
+      "utc": "2026-10-19T18:41:44Z"
+    },
+    "scheduled": {
+      "run_id": 39260203598,
+      "job_id": 118085549919,
+      "event": "schedule",
+      "conclusion": "success",
+      "utc": "2026-10-19T13:26:55Z"
+    },
+    "verified": "11 MCP tools, ROP-004, registry, 58+ industries, IND-002, ECO and ROP packages",
+    "scope": "READ_ONLY"
+  },
+  "wood_recovery": {
+    "id": "IND-WOOD-001",
+    "path": "research/registry/radar-2026-10-19-wood001-kansk-air-soil-crosscontour.json",
+    "commit": "bf550f494e31669c062a9a1e6e0adda16e83562a",
+    "github_readback": true,
+    "already_indexed": true,
+    "live_get_radar_card": true,
+    "autonomous_expert_use": "UNVERIFIED"
+  },
+  "pending": {
+    "id": "IND-CONSTRUCTION-003",
+    "path": "research/registry/radar-2026-10-19-construction003-liquid-waste-relief-paid.json",
+    "status": "WRITE_PENDING",
+    "github_write": "BLOCKED",
+    "index_write": "NOT_ATTEMPTED",
+    "live_delivery": "NOT_CLAIMED"
+  }
+}
