@@ -1,1 +1,142 @@
-{"schema_version":"1.0","updated":"2026-10-18","purpose":"Eco-radar of legislative and regulatory changes, separate from hard radar research registry.","rules":{"classification":"RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning","legal_status":"independent from priority color","source":"primary source verification required","dedup":"same act/update does not create duplicate ID","projects":"not active law","deployment":"expert rules only after current-law verification and tests"},"entries":[{"id":"ECO-2026-RPN-502","path":"eco-changes/registry/ECO-2026-RPN-502.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-ROSSTAT-546","path":"eco-changes/registry/ECO-2026-ROSSTAT-546.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-GOST-72433","path":"eco-changes/registry/ECO-2026-GOST-72433.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-ROSSTAT-589","path":"eco-changes/registry/ECO-2026-ROSSTAT-589.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-PP-1320","path":"eco-changes/registry/ECO-2026-PP-1320.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-PP-1322","path":"eco-changes/registry/ECO-2026-PP-1322.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-PP-1325","path":"eco-changes/registry/ECO-2026-PP-1325.json","status":"VERIFIED_RESEARCH_ONLY"},{"id":"ECO-2026-MSK-2532-PP","path":"eco-changes/registry/ECO-2026-MSK-2532-PP.json","status":"IN_FORCE"},{"id":"ECO-2026-PP-1342","path":"eco-changes/registry/ECO-2026-PP-1342.json","status":"ПРИНЯТ И ОФИЦИАЛЬНО ОПУБЛИКОВАН; дата вступления в силу не подтверждена чтением полного первоисточника"},{"id":"ECO-2026-PP-1344","path":"eco-changes/registry/ECO-2026-PP-1344.json","status":"RESEARCH_ONLY_NOT_DEPLOYED"},{"id":"ECO-2026-PP-946-DRONE-CONTROL","path":"eco-changes/registry/ECO-2026-PP-946-DRONE-CONTROL.json","status":"IN_FORCE"},{"id":"SIGNAL-2026-BILL-619-9","path":"eco-changes/signals/BILL-619-9.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-PROJECT-171328","path":"eco-changes/signals/PROJECT-171328.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-PROJECT-171335","path":"eco-changes/signals/PROJECT-171335.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-PROJECT-171513","path":"eco-changes/signals/PROJECT-171513.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-171717","path":"eco-changes/signals/PROJECT-171717.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-171816","path":"eco-changes/signals/PROJECT-171816.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-ROP-METAL-PACKAGING-1015","path":"eco-changes/signals/ROP-METAL-PACKAGING-20261015.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-ROP-SPP-1013","path":"eco-changes/signals/ROP-SPP-2027-20261013.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"ROSSTAT-589-20261015-details","path":"eco-changes/signals/ROSSTAT-589-20261015-details.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"ROSSTAT-589-20261015","path":"eco-changes/signals/ROSSTAT-589-20261015.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"RPN-GEE-20261015","path":"eco-changes/signals/RPN-GEE-20261015.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"SIGNAL-2026-SPB-WASTE-LAND-1014","path":"eco-changes/signals/SPB-LAND-WASTE-20261014.json","status":"RESEARCH_SIGNAL_NOT_ACTIVE"},{"id":"ECO-2026-MPR-227-WASTE-ACCOUNTING","path":"eco-changes/registry/ECO-2026-MPR-227-WASTE-ACCOUNTING.json","status":"RESEARCH_ONLY_PENDING_TESTS"}],"index_repair_note":"Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."}
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-19",
+  "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
+  "rules": {
+    "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
+    "legal_status": "independent from priority color",
+    "source": "primary source verification required",
+    "dedup": "same act/update does not create duplicate ID",
+    "projects": "not active law",
+    "deployment": "expert rules only after current-law verification and tests"
+  },
+  "entries": [
+    {
+      "id": "ECO-2026-RPN-502",
+      "path": "eco-changes/registry/ECO-2026-RPN-502.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-ROSSTAT-546",
+      "path": "eco-changes/registry/ECO-2026-ROSSTAT-546.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-GOST-72433",
+      "path": "eco-changes/registry/ECO-2026-GOST-72433.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-ROSSTAT-589",
+      "path": "eco-changes/registry/ECO-2026-ROSSTAT-589.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-PP-1320",
+      "path": "eco-changes/registry/ECO-2026-PP-1320.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-PP-1322",
+      "path": "eco-changes/registry/ECO-2026-PP-1322.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-PP-1325",
+      "path": "eco-changes/registry/ECO-2026-PP-1325.json",
+      "status": "VERIFIED_RESEARCH_ONLY"
+    },
+    {
+      "id": "ECO-2026-MSK-2532-PP",
+      "path": "eco-changes/registry/ECO-2026-MSK-2532-PP.json",
+      "status": "IN_FORCE"
+    },
+    {
+      "id": "ECO-2026-PP-1342",
+      "path": "eco-changes/registry/ECO-2026-PP-1342.json",
+      "status": "ПРИНЯТ И ОФИЦИАЛЬНО ОПУБЛИКОВАН; дата вступления в силу не подтверждена чтением полного первоисточника"
+    },
+    {
+      "id": "ECO-2026-PP-1344",
+      "path": "eco-changes/registry/ECO-2026-PP-1344.json",
+      "status": "RESEARCH_ONLY_NOT_DEPLOYED"
+    },
+    {
+      "id": "ECO-2026-PP-946-DRONE-CONTROL",
+      "path": "eco-changes/registry/ECO-2026-PP-946-DRONE-CONTROL.json",
+      "status": "IN_FORCE"
+    },
+    {
+      "id": "SIGNAL-2026-BILL-619-9",
+      "path": "eco-changes/signals/BILL-619-9.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-PROJECT-171328",
+      "path": "eco-changes/signals/PROJECT-171328.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-PROJECT-171335",
+      "path": "eco-changes/signals/PROJECT-171335.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-PROJECT-171513",
+      "path": "eco-changes/signals/PROJECT-171513.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-171717",
+      "path": "eco-changes/signals/PROJECT-171717.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-171816",
+      "path": "eco-changes/signals/PROJECT-171816.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-ROP-METAL-PACKAGING-1015",
+      "path": "eco-changes/signals/ROP-METAL-PACKAGING-20261015.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-ROP-SPP-1013",
+      "path": "eco-changes/signals/ROP-SPP-2027-20261013.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "ROSSTAT-589-20261015-details",
+      "path": "eco-changes/signals/ROSSTAT-589-20261015-details.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "ROSSTAT-589-20261015",
+      "path": "eco-changes/signals/ROSSTAT-589-20261015.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "RPN-GEE-20261015",
+      "path": "eco-changes/signals/RPN-GEE-20261015.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "SIGNAL-2026-SPB-WASTE-LAND-1014",
+      "path": "eco-changes/signals/SPB-LAND-WASTE-20261014.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE"
+    },
+    {
+      "id": "ECO-2026-MPR-227-WASTE-ACCOUNTING",
+      "path": "eco-changes/registry/ECO-2026-MPR-227-WASTE-ACCOUNTING.json",
+      "status": "RESEARCH_ONLY_PENDING_TESTS"
+    },
+    {
+      "id": "ECO-2026-PP-1349-AGRI-SOIL",
+      "path": "eco-changes/registry/ECO-2026-PP-1349-AGRI-SOIL.json",
+      "status": "RESEARCH_ONLY_NOT_ACTIVE",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1349-agri-soil.json"
+    }
+  ],
+  "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
+}
