@@ -1,0 +1,13 @@
+{
+  "id": "ECO-2026-MINTRUD-319N",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_NOT_IN_FORCE",
+  "act": "Приказ Минтруда от 27.07.2026 № 319н",
+  "topic": "Профстандарт разработчика экологической документации",
+  "effective_date": "2027-03-01",
+  "valid_until": "2033-03-01",
+  "source": "https://mintrud.gov.ru/docs/mintrud/orders/3263",
+  "scope": "Water, air, waste, land documentation, plans, environmental fees, management and quality control.",
+  "action": "Review MIRLEX services and specialist qualifications. Check Art 195.3 Labour Code for mandatory application.",
+  "engine_status": "RESEARCH_ONLY"
+}
