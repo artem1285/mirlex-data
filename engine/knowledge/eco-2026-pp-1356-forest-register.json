@@ -1,0 +1,19 @@
+{
+  "id": "ECO-2026-PP-1356-FOREST-REGISTER",
+  "source": "eco-changes/registry/ECO-2026-PP-1356-FOREST-REGISTER.json",
+  "status": "INGESTED_RESEARCH_ONLY",
+  "legal_status": "ADOPTED_NOT_YET_EFFECTIVE",
+  "effective_date": "2027-03-01",
+  "topics": [
+    "FORESTRY",
+    "FOREST_REGISTER",
+    "FOREST_DECLARATIONS"
+  ],
+  "checks": [
+    "Review forest patrol and administrative inspection acts for register updates",
+    "Check annual harvest allowances including previous three years unused allowances",
+    "Do not activate before 2027-03-01"
+  ],
+  "expert_mode": "RESEARCH_ONLY_UNTIL_TESTED",
+  "official_url": "https://publication.pravo.gov.ru/document/0001202610160047"
+}
