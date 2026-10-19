@@ -1,0 +1,29 @@
+{
+  "id": "ECO-2026-MINTRUD-365N",
+  "source_radar": "ECO_RADAR",
+  "source_card": "eco-changes/registry/ECO-2026-MINTRUD-365N.json",
+  "official_source": "https://mintrud.gov.ru/docs/mintrud/orders/3261",
+  "legal_act": "Приказ Минтруда от 24.08.2026 №365н",
+  "topic": "Специалист в области охраны окружающей среды и обеспечения экологической безопасности",
+  "legal_status": "ADOPTED_NOT_IN_FORCE",
+  "effective_date": "2027-03-01",
+  "expires": "2033-03-01",
+  "knowledge_state": "RESEARCH_ONLY_NOT_ACTIVE",
+  "priority": "YELLOW",
+  "applicability": "Check labour law art.195.3 before treating qualification requirements as mandatory; use for supplier vetting and MIRLEX service scope.",
+  "expert_routing": {
+    "ECO_EXPERT": "RESEARCH_ONLY",
+    "ROP_EXPERT": "NO_AUTOMATIC_APPLICATION"
+  },
+  "safety": {
+    "preserve_hard_radar": true,
+    "do_not_modify_active_rules": true,
+    "do_not_create_duplicate_ids": true,
+    "activation_gate": [
+      "verify complete official appendix",
+      "compare existing Hard Radar and Engine knowledge",
+      "applicability review",
+      "regression tests"
+    ]
+  }
+}
