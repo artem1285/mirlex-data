@@ -100,5 +100,9 @@
       },
       "source_radar": "Жёсткий радар"
     }
-  ]
+  ],
+  "index_status": "INDEXED",
+  "engine_delivery_status": "LIVE_VERIFIED_2026-10-19",
+  "expert_application_status": "NOT_AUTONOMOUSLY_TESTED",
+  "verification_note": "get_radar_card IND-WOOD-001 returned four records, including this exact path; both expert packages are retrievable, but no specific wood pointer yet confirmed in their packages. RESEARCH_ONLY."
 }
