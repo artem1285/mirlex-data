@@ -1,0 +1,49 @@
+{
+  "id": "SIGNAL-2026-MP-58R-I-II-WASTE-1016",
+  "event_key": "MINPRIRODY-2026-09-25-58R-I-II-WASTE-SPECIAL-MUNICIPALITIES",
+  "source_radar": "ECO_RADAR",
+  "source_card": "eco-changes/signals/MP-58R-I-II-WASTE-20261016.json",
+  "first_detected": "2026-10-16",
+  "indexed_and_ingested": "2026-10-19",
+  "priority": "YELLOW",
+  "legal_status": "UNVERIFIED_SIGNAL_OF_ISSUED_ORDER",
+  "knowledge_state": "INGESTED_RESEARCH_ONLY",
+  "legal_basis": {
+    "claim": "Распоряжение Минприроды России от 25.09.2026 № 58-р — перечни муниципальных образований и видов отходов I/II классов для особого режима накопления и хранения",
+    "implementing_context": "ПП РФ от 24.07.2025 № 1093, изменившее ПП РФ № 1305 и предусматривающее перечни в составе федеральной схемы",
+    "source_feo": "https://www.rosfeo.ru/press-czentr/novosti-fgup-feo/2026/oktyabr/vazhnyie-izmeneniya-v-chasti-nakopleniya-i-xraneniya-otxodov-i-i-ii-klassov-opasnosti.html",
+    "professional_confirmations": [
+      "https://infocenter.cntd.ru/news/read/vaznye-izmeneniia-v-casti-nakopleniia-i-xraneniia-otxodov-i-i-ii-klassov-opasnosti/novosti-ekologii",
+      "https://kodeks.ru/news/read/vaznye-izmeneniia-v-casti-nakopleniia-i-xraneniia-otxodov-i-i-ii-klassov-opasnosti"
+    ]
+  },
+  "scope": "Only types of I–II hazardous waste and municipalities expressly on the lists; do not generalize to all territories or waste classes.",
+  "diagnostic_checks": [
+    "municipality and official OKTMO identifier must be on official list",
+    "FKKO code and I–II class must be on list",
+    "verify contract with federal operator where required",
+    "verify 24-month accumulation ceiling and separately storage requirements",
+    "check exact effective date, full annexes and amended federal scheme",
+    "do not grant special storage rights by analogy"
+  ],
+  "related_contours": [
+    "WASTE_I_II",
+    "FEDERAL_WASTE_OPERATOR",
+    "FGIS_OPVK",
+    "HAZARDOUS_WASTE_ACCUMULATION_AND_STORAGE"
+  ],
+  "hard_radar_ids": "TO_RESOLVE_NO_DUPLICATE_IDS",
+  "expert_routing": {
+    "ECO_EXPERT": "RESEARCH_ONLY_NO_ACTIVE_RULE",
+    "ROP_EXPERT": "NONE_UNLESS_RECYCLER_CHECK_RELEVANT"
+  },
+  "promotion_gate": [
+    "obtain authentic complete order with annexes and entry-into-force",
+    "extract complete municipalities and FKKO IDs",
+    "cross-compare Hard Radar source records and Engine current rules",
+    "regression test applicability including nonlisted municipality/waste",
+    "promote only verified requirements without overwriting other rules"
+  ],
+  "verification": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "publication_allowed_as_confirmed_legal_change": false
+}
