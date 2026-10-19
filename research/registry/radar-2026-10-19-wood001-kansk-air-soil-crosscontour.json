@@ -87,6 +87,7 @@
     }
   ],
   "source_radar": "Жёсткий радар",
-  "index_status": "WRITE_PENDING",
-  "engine_delivery_status": "UNVERIFIED"
+  "index_status": "INDEXED",
+  "engine_delivery_status": "LIVE_VERIFIED",
+  "delivery_scope": "LIVE_GET_RADAR_CARD_READ_ONLY; NOT_AUTONOMOUS_EXPERT_APPLICATION"
 }
