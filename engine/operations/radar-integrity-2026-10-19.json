@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19",
+  "type": "MIRLEX_RADAR_READ_INTEGRITY",
+  "id": "IND-WOOD-001",
+  "status": "LIVE_VERIFIED_RESEARCH_ONLY",
+  "github_card": "research/registry/radar-2026-10-18-wood001-sawmill-open-storage-soil-primary.json",
+  "github_master_index": "research/registry/master-index.json",
+  "readback": {
+    "github_card": true,
+    "index": true,
+    "engine_card": true,
+    "eco_package": true,
+    "rop_package": true
+  },
+  "github_actions": {
+    "run_id": 39165095021,
+    "job_id": 117786255984,
+    "conclusion": "success",
+    "scope": "READ_ONLY"
+  },
+  "autonomous_expert_use": "UNVERIFIED",
+  "write_pipeline": "NOT_TESTED",
+  "legal_activation": "NOT_ACTIVE"
+}
