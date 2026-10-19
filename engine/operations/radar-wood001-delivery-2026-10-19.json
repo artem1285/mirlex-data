@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-19",
+  "radar": "Жёсткий радар",
+  "id": "IND-WOOD-001",
+  "source_card": "research/registry/radar-2026-10-18-wood001-sawmill-open-storage-soil-primary.json",
+  "github_card_read": true,
+  "indexed": true,
+  "live_get_radar_card": true,
+  "eco_expert_package_read": true,
+  "rop_expert_package_read": true,
+  "autonomous_expert_use": "UNVERIFIED",
+  "active_rule": false,
+  "source_verified": "https://epp.genproc.gov.ru/ru/proc_24/mass-media/news/regional/e8652388/",
+  "actions": {
+    "run_id": 39201309218,
+    "job_id": 117894665716,
+    "result": "SUCCESS_READ_ONLY"
+  },
+  "index_status_sync": "WRITE_PENDING"
+}
