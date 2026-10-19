@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "radar_id": "IND-WOOD-001",
+  "source": "research/registry/radar-2026-10-18-wood001-sawmill-open-storage-soil-primary.json",
+  "github_readback": true,
+  "indexed": true,
+  "engine_get_radar_card_records": 4,
+  "engine_read_ok": true,
+  "eco_package_available": true,
+  "rop_package_available": true,
+  "expert_specific_routing": "UNVERIFIED",
+  "status": "RESEARCH_ONLY_ENGINE_READ_VERIFIED"
+}
