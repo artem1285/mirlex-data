@@ -136,6 +136,12 @@
       "path": "eco-changes/registry/ECO-2026-PP-1349-AGRI-SOIL.json",
       "status": "RESEARCH_ONLY_NOT_ACTIVE",
       "engine_knowledge": "engine/knowledge/eco-2026-pp-1349-agri-soil.json"
+    },
+    {
+      "id": "SIGNAL-2026-MP-58R-I-II-WASTE-1016",
+      "path": "eco-changes/signals/MP-58R-I-II-WASTE-20261016.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE",
+      "engine_knowledge": "engine/knowledge/eco-2026-mp-58r-i-ii-waste.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
