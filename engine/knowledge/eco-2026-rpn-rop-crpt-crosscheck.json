@@ -1,0 +1,13 @@
+{
+  "id": "ECO-2026-RPN-ROP-CRPT-CROSSCHECK-1016",
+  "source": "eco-changes/registry/ECO-2026-RPN-ROP-CRPT-CROSSCHECK-1016.json",
+  "mode": "RESEARCH_ONLY",
+  "active": false,
+  "topic": "ROP GIS MT cross-check",
+  "checks": [
+    "ROP applicability",
+    "reporting completeness",
+    "supporting documents"
+  ],
+  "legal_status": "OFFICIAL_COMMUNICATION"
+}
