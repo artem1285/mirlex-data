@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-19",
+  "kind": "UNIFIED_RADAR_OPERATING_PROTOCOL",
+  "source_of_truth": "research/registry/master-index.json",
+  "existing_hourly_task": "6abb65dfe21881919a546786050be0ad",
+  "no_new_radar_or_ids": true,
+  "priority_score": {
+    "rarity": 25,
+    "enterprise_risk": 25,
+    "repeatability": 20,
+    "diagnostic_commercial_value": 20,
+    "novelty_to_core": 10
+  },
+  "pipeline": [
+    "trace",
+    "investigate_primary_sources",
+    "find_repeats",
+    "establish_pattern",
+    "deduplicate_existing_id",
+    "write_research_card",
+    "index_and_readback",
+    "live_mcp_retrieval",
+    "review_rule_with_regressions",
+    "expert_application_test",
+    "derive_next_hypotheses"
+  ],
+  "required_hunt_fields": [
+    "score_components",
+    "score_total",
+    "confirmed_facts",
+    "uncertainties",
+    "three_diagnostic_questions",
+    "red_flag",
+    "related_ids",
+    "services",
+    "next_hypotheses",
+    "source_urls",
+    "legal_validity_gate"
+  ],
+  "expert_feedback": {
+    "intake": "new contradiction, missing knowledge, repeated risk, unusual client evidence",
+    "status": "HYPOTHESIS_UNVERIFIED",
+    "promotion": "PRIMARY_SOURCE_REVIEW_AND_DEDUP_REQUIRED",
+    "client_data": "DO_NOT_COMMIT"
+  },
+  "release_gates": [
+    "GITHUB_CARD_READBACK",
+    "MASTER_INDEX_READBACK",
+    "LIVE_GET_RADAR_CARD",
+    "LEGAL_VALIDITY_CHECK",
+    "REGRESSION_TEST_BEFORE_ACTIVE",
+    "AUTONOMOUS_EXPERT_USE_SEPARATELY_TESTED"
+  ],
+  "expert_routing": {
+    "ECO_EXPERT": "industry, physical route, water, air, soil, waste, sanitary, documents",
+    "ROP_EXPERT": "ROP primary; other contours referral only"
+  },
+  "example_hunt": {
+    "existing_id": "IND-CONSTRUCTION-003",
+    "primary_source": "https://epp.genproc.gov.ru/ru/gprf/mass-media/news/regional/e8685154/",
+    "follow_up_primary_source": "https://epp.genproc.gov.ru/ru/mmtp/mass-media/news/regional/e8616177/",
+    "hypothesis": "V class waste and open soil storage may create liability independent of waste hazard class; compare separate soil samples and routes",
+    "hypothesis_status": "NOT_NEW_ID_NOT_ACTIVE_RULE",
+    "next_questions": [
+      "Where does material actually end up?",
+      "Is soil separately sampled?",
+      "Is surface runoff connected to receptors?"
+    ]
+  }
+}
