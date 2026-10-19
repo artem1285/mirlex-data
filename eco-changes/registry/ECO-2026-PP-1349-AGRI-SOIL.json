@@ -1,0 +1,22 @@
+{
+  "id": "ECO-2026-PP-1349-AGRI-SOIL",
+  "date_checked": "2026-10-19",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_NOT_YET_EFFECTIVE_RECHECK_CLAUSE_BY_CLAUSE",
+  "act": "Постановление Правительства РФ от 15.10.2026 № 1349",
+  "official_source": "https://publication.pravo.gov.ru/document/0001202610150035",
+  "secondary_source": "https://www.consultant.ru/document/cons_doc_LAW_546912/c59a7ebe4defc93d14040f7f45c2b3195f2aa30a/",
+  "changes": "Расширены полномочия Минсельхоза по порядку предоставления результатов обследования сельскохозяйственных земель, методике расчета вреда сельхозземлям, планированию обследований, требованиям к планам воспроизводства плодородия и документации сельского туризма.",
+  "effective_date": "По предварительному анализу отдельные положения вступают в силу 01.09.2027; сроки других положений сверять с официальным текстом.",
+  "affected": "Правообладатели сельхозземель, агропредприятия, обследующие организации, разработчики землеустроительной документации.",
+  "risk": "Не применять будущие полномочия как уже принятые практические процедуры и не пропустить отдельные подзаконные приказы.",
+  "what_mirlex_checks": [
+    "точный пункт постановления и дату вступления в силу",
+    "появление приказов Минсельхоза и действующих методик",
+    "соотнесение с уже накопленными исследованиями ущерба почвам и сельхозземлям"
+  ],
+  "client_wording": "Правительство расширило полномочия Минсельхоза в отношении обследования сельскохозяйственных земель и оценки причинённого им вреда. Практическую применимость отдельных процедур необходимо сверять по будущим нормативным актам.",
+  "engine_mode": "RESEARCH_ONLY_NOT_ACTIVE",
+  "cross_radar_policy": "Do not create duplicate Hard Radar ID; reconcile by act+topic; preserve existing active rules until legal verification, regression and read-back.",
+  "source_provenance": "Recovered from EcoRadar user-visible finding and backup content; primary source URL retained; detailed legal provisions require paragraph-level validation."
+}
