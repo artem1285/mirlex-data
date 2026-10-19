@@ -1,0 +1,20 @@
+{
+  "id": "ECO-2026-RP-2887-NVOS",
+  "source": "eco-changes/registry/ECO-2026-RP-2887-NVOS.json",
+  "status": "INGESTED_RESEARCH_ONLY",
+  "legal_status": "IN_FORCE",
+  "topics": [
+    "NVOS_FEES",
+    "EMISSIONS",
+    "DISCHARGES",
+    "KFH",
+    "SEWERAGE"
+  ],
+  "checks": [
+    "Check 2026-2030 rate table changes for ash, inorganic dust, vanadium, phosphate and fluoride",
+    "Apply newly added sections IV-VII only to relevant facility categories",
+    "For phosphate verify phosphorus mass and 2027-2030 coefficient 3.066"
+  ],
+  "expert_mode": "RESEARCH_ONLY_UNTIL_TESTED",
+  "official_url": "https://publication.pravo.gov.ru/document/0001202610160014"
+}
