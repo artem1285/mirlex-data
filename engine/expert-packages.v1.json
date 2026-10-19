@@ -144,5 +144,12 @@
       "path": "research/registry/radar-2026-10-12-air001-marker-substances-methodology.json",
       "mode": "RESEARCH_ONLY"
     }
-  ]
+  ],
+  "unified_radar_intelligence": {
+    "protocol_path": "engine/operations/radar-intelligence-hunt.v1.json",
+    "research_status": "RESEARCH_ONLY",
+    "ECO_EXPERT": "use scored verified patterns to trigger factual questions; no legal conclusion without review",
+    "ROP_EXPERT": "use ROP-specific patterns; cross-contour referral only",
+    "feedback": "new expert uncertainty enters unverified hypothesis queue, never auto-promoted"
+  }
 }
