@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-19",
+  "id": "IND-WOOD-001",
+  "supersedes": "radar-integrity-2026-10-19.json",
+  "engine_card": "LIVE_VERIFIED",
+  "expert_packages": "RETRIEVABLE_ONLY",
+  "expert_specific_routing": "UNVERIFIED",
+  "autonomous_expert_use": "UNVERIFIED",
+  "master_index_status": "PENDING_UPDATE",
+  "github_actions_run": 39165095021,
+  "github_actions_job": 117786255984
+}
