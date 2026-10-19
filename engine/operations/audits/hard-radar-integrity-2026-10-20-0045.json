@@ -1,1 +1,42 @@
-{"date":"2026-10-20","status":"INDEXED_ENGINE_DELIVERY_PENDING","finding_id":"IND-CONSTRUCTION-003","research_path":"research/registry/radar-2026-10-19-construction003-liquid-waste-relief-paid.json","card_commit":"85af57ca6133ff0d45a83c92a0327a7c114c3535","index_commit":"d59509ffbca78346ca8226c4dbb6cff3315c9250","card_readback":true,"index_readback":true,"index_entry_count":1,"live_engine_index_updated_on":"2026-10-19","live_engine_card_records":2,"live_engine_new_path":false,"eco_package_read":true,"rop_package_read":true,"actions":{"run_id":39313256915,"job_id":118268062703,"conclusion":"success","log_result":"PASS 11 MCP tools; READ AUDIT ONLY"},"pending":"Retry live get_radar_registry_index and get_radar_card; reconcile card status to INDEXED/LIVE_VERIFIED only after success. Do not claim COMPLETE or ACTIVE.","notes":"GitHub raw index already contains new path. Live Engine index is stale, likely retrieval propagation; cause not yet verified. GitHub update_file to change card status rejected by safety checks."}
+{
+  "date": "2026-10-20",
+  "status": "ENGINE_READ_DELIVERY_VERIFIED",
+  "finding_id": "IND-CONSTRUCTION-003",
+  "research_path": "research/registry/radar-2026-10-19-construction003-liquid-waste-relief-paid.json",
+  "card_commit": "85af57ca6133ff0d45a83c92a0327a7c114c3535",
+  "index_commit": "d59509ffbca78346ca8226c4dbb6cff3315c9250",
+  "card_readback": true,
+  "index_readback": true,
+  "index_entry_count": 1,
+  "live_engine_index_updated_on": "2026-10-19",
+  "live_engine_card_records": 2,
+  "live_engine_new_path": false,
+  "eco_package_read": true,
+  "rop_package_read": true,
+  "actions": {
+    "run_id": 39313256915,
+    "job_id": 118268062703,
+    "conclusion": "success",
+    "log_result": "PASS 11 MCP tools; READ AUDIT ONLY"
+  },
+  "pending": "No delivery recovery pending. Autonomous expert application and legal regression remain separate unverified gates.",
+  "notes": "GitHub raw index already contains new path. Live Engine index is stale, likely retrieval propagation; cause not yet verified. GitHub update_file to change card status rejected by safety checks.",
+  "resolution": {
+    "verified_on": "2026-10-20",
+    "github_card_index_status": "INDEXED",
+    "github_card_engine_delivery_status": "LIVE_VERIFIED",
+    "github_card_readback": true,
+    "github_index_updated_on": "2026-10-20",
+    "github_index_single_path": true,
+    "engine_index_updated_on": "2026-10-20",
+    "engine_index_contains_path": true,
+    "engine_card_records": 3,
+    "engine_card_contains_path": true,
+    "eco_package_live": true,
+    "rop_package_live": true,
+    "autonomous_expert_application": "NOT_TESTED",
+    "legal_rule_status": "RESEARCH_ONLY",
+    "actions_new_run": "UNVERIFIED_NOT_CHECKED_THIS_RECOVERY",
+    "scope": "READ_DELIVERY_ONLY"
+  }
+}
