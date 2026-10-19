@@ -1,0 +1,37 @@
+{
+  "id": "ECO-2026-PP-1349-AGRI-SOIL",
+  "source": "eco-changes/registry/ECO-2026-PP-1349-AGRI-SOIL.json",
+  "source_radar": "ECO_RADAR",
+  "ingestion_status": "INGESTED_RESEARCH_ONLY",
+  "legal_status": "ADOPTED_NOT_YET_EFFECTIVE_RECHECK_CLAUSE_BY_CLAUSE",
+  "topic": [
+    "AGRICULTURAL_LAND",
+    "SOIL_DAMAGE",
+    "SOIL_SURVEY",
+    "FERTILITY"
+  ],
+  "change": "Government resolution grants Minagriculture rulemaking powers; do not imply that the corresponding implementing rules or methodologies are already in effect.",
+  "potential_impact": "Potential update to soil and land diagnostics, survey documentation checks and damage-assessment methods after follow-up acts are promulgated.",
+  "hard_radar_crosscheck": {
+    "required": true,
+    "related_contour": "SOIL_LAND",
+    "canonical_hard_radar_id": "TO_RESOLVE",
+    "do_not_overwrite_existing_rules": true
+  },
+  "expert_routing": {
+    "ECO_EXPERT": "RESEARCH_ONLY_NOT_ACTIVE",
+    "ROP_EXPERT": "NO_AUTOMATIC_APPLICATION"
+  },
+  "activation_gate": [
+    "verify exact resolution clauses and effective dates against official source",
+    "identify any subsequently enacted implementing measures",
+    "cross-reference Hard Radar soil/land findings without duplicating IDs",
+    "update only impacted rule candidates and run regression tests",
+    "promote by deliberate approved workflow"
+  ],
+  "provenance": {
+    "official_source": "https://publication.pravo.gov.ru/document/0001202610150035",
+    "card_path": "eco-changes/registry/ECO-2026-PP-1349-AGRI-SOIL.json"
+  },
+  "write_date": "2026-10-19"
+}
