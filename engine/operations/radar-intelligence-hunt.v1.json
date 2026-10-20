@@ -67,5 +67,30 @@
       "Is soil separately sampled?",
       "Is surface runoff connected to receptors?"
     ]
-  }
+  },
+  "field_signals": [
+    {
+      "key": "COFFEE_SHOP_WASTE_PASSPORT_INQUIRY_2026_10_20",
+      "date": "2026-10-20",
+      "status": "HYPOTHESIS_UNVERIFIED",
+      "origin": "First-hand MIRLEX inbound lead; cafe/coffee shop requests waste passports; regulatory inspection NOT confirmed",
+      "hypothesis": "Waste passport demand may extend beyond previously observed hair salons to small food-service businesses; determine whether inspection, landlord, waste contractor, or internal compliance prompted request",
+      "legal_basis": "89-FZ article 14; Minprirody Order 286 of 2026 (verify effective date and applicability)",
+      "diagnostic_questions": [
+        "Which specific waste streams I-IV class arise at the coffee shop?",
+        "Who requested the passports and was there an inspection or written requirement?",
+        "Are waste classification, actual generation sites, and contractor documents consistent?"
+      ],
+      "related_business_services": [
+        "WASTE_PASSPORTS",
+        "SMALL_BUSINESS_WASTE_DIAGNOSTICS"
+      ],
+      "next_hunt": [
+        "Seek official inspection or court cases involving cafes and food-service businesses",
+        "Compare reasons for demand with hair salons without asserting an inspection trend"
+      ],
+      "not_a_new_radar_id": true,
+      "do_not_treat_as_verified_enforcement": true
+    }
+  ]
 }
