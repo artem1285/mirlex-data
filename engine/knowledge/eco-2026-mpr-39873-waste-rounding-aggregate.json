@@ -1,0 +1,17 @@
+{
+  "id": "ECO-2026-MPR-39873-WASTE-ROUNDING-AGGREGATE",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-39873-WASTE-ROUNDING-AGGREGATE.json",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_546380/",
+  "status": "VERIFIED_RESEARCH_ONLY_NOT_ACTIVE",
+  "principle": "Суммировать исходные значения массы отходов без округления; округлять только итог отчетного периода.",
+  "linked_ids": [
+    "ECO-2026-MPR-227-WASTE-ACCOUNTING",
+    "ECO-2026-MPR-38344-WASTE-ROUNDING"
+  ],
+  "diagnostic_checks": [
+    "Суммирование исходных значений без промежуточного округления",
+    "Нарастающий итог отчетных периодов",
+    "Округление итогового значения"
+  ],
+  "expert_deployment": "Only after tests and legal verification"
+}
