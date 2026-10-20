@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "id": "IND-STORM-001",
+  "status": "INDEX_PENDING",
+  "research_path": "research/registry/radar-2026-10-20-storm001-bogorodsk-collector-causation.json",
+  "research_readback": true,
+  "master_index_entry": false,
+  "engine_get_radar_card_records": 2,
+  "engine_new_path_visible": false,
+  "expert_packages_live": true,
+  "write_attempts": [
+    "master-index.json update_file blocked by OpenAI safety checks",
+    "research card status update_file blocked by OpenAI safety checks"
+  ],
+  "no_duplicate_id": true,
+  "legal_status": "RESEARCH_ONLY",
+  "next_cycle": "Fetch handover/index/protocol; fetch existing storm card; retry ordinary master-index update if path still absent; readback; live retrieval; never recreate card."
+}
