@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "permanent_id": "IND-FOODSERVICE-001",
+  "date": "2026-10-20",
+  "status": "RESEARCH_ONLY",
+  "industry": "Small foodservice: cafes, coffee shops, restaurants",
+  "contours": [
+    "WASTE",
+    "SMALL_BUSINESS",
+    "DOCUMENTS_VS_ACTUAL_WASTE"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://epp.genproc.gov.ru/ru/proc_zo/mass-media/news/regional/e8539170/",
+      "date": "2026-06-15",
+      "issuer": "Prosecutor's Office of Zaporozhye Region",
+      "facts": "Enerhodar cafe sole proprietor inspected; kitchen food waste, fryer and used vegetable oils reported; after prosecutor intervention waste passports developed and approved"
+    },
+    {
+      "url": "https://rpn.gov.ru/regions/66/gov-services/approve-hazard-class/",
+      "issuer": "Rosprirodnadzor",
+      "facts": "Article 14 of 89-FZ and 2026 Order 286 passporting for classes I-IV"
+    }
+  ],
+  "legal_basis": [
+    {
+      "law": "89-FZ",
+      "article": "14",
+      "status": "IN_FORCE",
+      "application": "passporting only for wastes of hazard classes I-IV, classify each waste separately"
+    },
+    {
+      "law": "Minprirody Order 286 dated 2026-05-15",
+      "status": "IN_FORCE_FROM_2026-09-01",
+      "application": "current passporting procedure; not retroactive to June case"
+    }
+  ],
+  "physical_chain": "Cafe kitchen and food preparation -> food scraps, used fryer oil and other streams -> separate classification -> actual accumulation and transfer -> passports only where class I-IV applies",
+  "verified_evidence": "Official prosecutor news dated 2026-06-15 documents completed remediation after inspection",
+  "limits": "No proof the user's cafe was inspected; not all listed waste streams automatically require passports; exact codes/classes, inspection documents and sanctions for this case not established",
+  "risk": "Small foodservice businesses may have unclassified I-IV waste streams despite considering themselves only TKO generators",
+  "red_flag": "The business has a TKO collection contract but has not inventoried used cooking oil and other separately generated wastes",
+  "diagnostic_questions": [
+    "Which distinct wastes arise from cooking, fryer use, maintenance and cleaning, and what are their verified FKKO codes and classes?",
+    "Does the actual accumulation and handover of each stream match the contracts and passport inventory?",
+    "Was the documentation requested by a regulator, landlord, contractor or initiated voluntarily?"
+  ],
+  "mirlex_checks": [
+    "physical waste inventory",
+    "FKKO and class evidence",
+    "passports for confirmed I-IV streams",
+    "waste transfer contracts and acts",
+    "separation of TKO and non-TKO streams"
+  ],
+  "related_ids": [],
+  "related_existing_lead": "COFFEE_SHOP_WASTE_PASSPORT_INQUIRY_2026_10_20",
+  "services": [
+    "WASTE_PASSPORTS",
+    "SMALL_BUSINESS_WASTE_DIAGNOSTICS"
+  ],
+  "site": "Waste card: add small foodservice as example only after source-verified classification",
+  "assistant": "Ask process-first diagnostic questions; do not assume every cafe waste needs a passport",
+  "expert_routing": {
+    "ECO_EXPERT": "RESEARCH_ONLY",
+    "ROP_EXPERT": "NO_DIRECT_ROP_OBLIGATION; REFERRAL_ONLY_IF_PACKAGING_PRODUCER_IMPORTER_FACTS"
+  },
+  "score": {
+    "rarity": 16,
+    "enterprise_risk": 19,
+    "repeatability": 14,
+    "commercial_diagnostics": 19,
+    "novelty": 9,
+    "total": 77
+  },
+  "hypotheses": [
+    {
+      "status": "HYPOTHESIS_UNVERIFIED",
+      "question": "Are salons, cafes, bakeries and small food shops receiving more passport requests because of inspections, landlord audits or contractors?"
+    }
+  ],
+  "rule_activation": "NOT_ACTIVE_PENDING_LEGAL_AND_REGRESSION_REVIEW"
+}
