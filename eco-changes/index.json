@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -142,6 +142,18 @@
       "path": "eco-changes/signals/MP-58R-I-II-WASTE-20261016.json",
       "status": "RESEARCH_SIGNAL_NOT_ACTIVE",
       "engine_knowledge": "engine/knowledge/eco-2026-mp-58r-i-ii-waste.json"
+    },
+    {
+      "id": "ECO-2026-RPN-44548-GEE-WASTE-V",
+      "path": "eco-changes/registry/ECO-2026-RPN-44548-GEE-WASTE-V.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rpn-44548-gee-waste-v.json"
+    },
+    {
+      "id": "ECO-2026-MPR-39873-WASTE-ROUNDING-AGGREGATE",
+      "path": "eco-changes/registry/ECO-2026-MPR-39873-WASTE-ROUNDING-AGGREGATE.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-mpr-39873-waste-rounding-aggregate.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
