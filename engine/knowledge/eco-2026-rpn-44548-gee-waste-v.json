@@ -1,0 +1,27 @@
+{
+  "id": "ECO-2026-RPN-44548-GEE-WASTE-V",
+  "registry": "eco-changes/registry/ECO-2026-RPN-44548-GEE-WASTE-V.json",
+  "topic": "ГЭЭ новой техники и технологии при утилизации отходов V класса",
+  "legal_status": "OFFICIAL_CLARIFICATION",
+  "priority": "YELLOW",
+  "primary_source": "https://www.consultant.ru/document/cons_doc_LAW_546386/",
+  "links": [
+    "ФЗ №174-ФЗ, ст.11 п.1 пп.12",
+    "ФЗ №673-ФЗ, ст.9 ч.4,5,8,9"
+  ],
+  "diagnostic_questions": [
+    "Применяется ли впервые в РФ новая техника/технология, способная воздействовать на среду?",
+    "Есть ли положительное заключение ГЭЭ именно на применяемую техническую документацию?",
+    "Есть ли отклонения от проекта/изменения технологии?",
+    "Какая редакция правил и переходные положения применимы на дату внедрения?"
+  ],
+  "guard": "RESEARCH_ONLY; no expert rule changes before regression tests",
+  "related": [
+    "ГЭЭ",
+    "утилизация V класса",
+    "новые технологии",
+    "проектирование"
+  ],
+  "mode": "VERIFIED_RESEARCH_ONLY_NOT_ACTIVE",
+  "recorded_at": "2026-10-20"
+}
