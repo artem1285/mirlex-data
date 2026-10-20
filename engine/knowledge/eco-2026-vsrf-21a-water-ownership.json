@@ -1,0 +1,31 @@
+{
+  "id": "ECO-2026-VSRF-21A-WATER-OWNERSHIP",
+  "source_radar": "ECO_RADAR",
+  "source_card": "eco-changes/registry/ECO-2026-VSRF-21A-WATER-OWNERSHIP.json",
+  "ingestion_status": "INGESTED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_COURT_PRACTICE_REVIEW_NOT_NPA",
+  "official_source": "https://vsrf.ru/documents/all/37961/",
+  "review": "Обзор судебной практики ВС РФ № 3 (2026), пункт 14, № 21А/2026",
+  "underlying_case": "305-ЭС25-13598",
+  "knowledge": "Искусственный изолированный пруд или обводнённый карьер может находиться в частной собственности в составе земельного участка. Наличие гидравлической связи с федеральным водотоком требует иного правового анализа.",
+  "scope": [
+    "WATER",
+    "LAND",
+    "PROPERTY_RIGHTS"
+  ],
+  "diagnostic_questions": [
+    "Есть ли гидравлическая связь с другими водными объектами?",
+    "Является ли водоём искусственным и обособленным?",
+    "Какие сведения в государственном водном реестре и ЕГРН?"
+  ],
+  "expert_routing": {
+    "ECO_EXPERT": "RESEARCH_ONLY_NOT_ACTIVE",
+    "ROP_EXPERT": "NOT_APPLICABLE"
+  },
+  "activation_gate": [
+    "Проверить применимость к объекту и действующую редакцию ВК/ЗК",
+    "Сверить с Жёстким радаром без дублирования",
+    "Пройти регрессионные тесты"
+  ],
+  "write_date": "2026-10-20"
+}
