@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "finding_id": "IND-STORM-001",
+  "card_path": "research/registry/radar-2026-10-20-storm001-bogorodsk-collector-causation.json",
+  "github_card_readback": true,
+  "card_sha": "f1f5cef2174553e89a0efbe1172778bfc6632fce",
+  "master_index_entry_count": 0,
+  "github_index_write": "BLOCKED_BY_SAFETY_CHECKS",
+  "status": "INDEX_PENDING",
+  "engine_live": "OLD_RECORDS_ONLY",
+  "expert_packages": "LIVE_READ_OK",
+  "legal_status": "RESEARCH_ONLY",
+  "action": "Retry normal master-index update next hourly cycle; do not create card or ID again; no safety-check bypass.",
+  "actions_latest": "UNVERIFIED"
+}
