@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-20",
+  "record_type": "ADDITIONAL_PRIMARY_JUDICIAL_EVIDENCE",
+  "source_radar": "Жёсткий радар",
+  "cards": [
+    {
+      "id": "IND-STORM-001",
+      "date": "2026-10-20",
+      "industry_contour": "UNIVERSAL / sewer infrastructure / tannery effluent / storm-snowmelt / soil / municipal utilities",
+      "actuality_status": "RESEARCH_ONLY",
+      "primary_sources": [
+        {
+          "type": "APPELLATE_COURT_TEXT_REPRINT",
+          "url": "https://base.garant.ru/66978930/",
+          "date": "2026-08-17",
+          "case": "А43-26632/2023",
+          "appeal": "01АП-3576/26",
+          "verification": "FULL_TEXT_INDEXED_BY_SEARCH_2026-10-20; ORIGINAL_COURT_HOST_NOT_CHECKED"
+        },
+        {
+          "type": "PROCEDURAL_COURT_DOCUMENT",
+          "url": "https://sudact.ru/arbitral/doc/ZqNEgGdLHNYG/",
+          "date": "2026-02-02",
+          "verification": "DIRECT_TEXT_READ_2026-10-20; confirms defendants, expert examination and 72,994,244.40 RUB claim"
+        },
+        {
+          "type": "INDEPENDENT_REGULATOR_ANALOG",
+          "url": "https://rpn.gov.ru/press/news/sud_obyazal_astrvodokanal_vozmestit_vred_pochvam_na_summu_bolee_4_8_mln_rubley/",
+          "date": "2026-02-02",
+          "verification": "OFFICIAL_RPN_SEARCH_INDEX_2026-10-20; separate Astrakhan case, not identical cause"
+        }
+      ],
+      "confirmed_facts": [
+        "Bogorodsk: soil contamination from wastewater spill; claimant initially calculated 72,994,244.40 RUB for 3434.70 m2.",
+        "Court of first instance 2026-05-05 recovered 4,715,367 RUB from municipal sewer operator MUP, rejected claim against ООО Караван-СК; appellate court 2026-08-17 upheld.",
+        "Court-appointed experts traced spill to overflowing inspection manhole on 1000 mm municipal collector with insufficient capacity and possible blockage during spring snowmelt; causation was not established against nearby tannery merely by markers and proximity.",
+        "Independent RPN case 2026-02-02: Astrvodokanal wastewater-network rupture and discharge onto soil, damages >4.8m RUB awarded (execution unknown)."
+      ],
+      "physical_chain": "Mixed effluent / thaw water → industrial connection and municipal collector (1000 mm) → hydraulic overload / possible blockage during snowmelt → inspection manhole overflow → surface soil contamination; determine operator/owner at each node.",
+      "factual_pattern": "A visible industrial outlet, characteristic marker substances and geographic proximity do not alone prove which operator caused a mixed-network overflow; forensic hydraulic route and asset responsibility may determine causation.",
+      "current_npa": [
+        {
+          "act": "Федеральный закон 7-ФЗ",
+          "articles": [
+            "51",
+            "77",
+            "78"
+          ],
+          "status": "CITED_IN_2026_APPELLATE_DECISION; CURRENT_CONSOLIDATED_TEXT_REVIEW_PENDING"
+        },
+        {
+          "act": "Земельный кодекс РФ",
+          "articles": [
+            "12",
+            "13",
+            "42"
+          ],
+          "status": "CITED_IN_2026_APPELLATE_DECISION; CURRENT_CONSOLIDATED_TEXT_REVIEW_PENDING"
+        },
+        {
+          "act": "ГК РФ",
+          "articles": [
+            "210",
+            "1064"
+          ],
+          "status": "CITED_IN_2026_APPELLATE_DECISION; CURRENT_CONSOLIDATED_TEXT_REVIEW_PENDING"
+        },
+        {
+          "act": "Постановление Пленума ВС РФ 30.11.2017 №49",
+          "part": "п.7 causation evidence",
+          "status": "CITED_IN_APPELLATE_DECISION; CURRENT_VALIDITY_REVIEW_PENDING"
+        }
+      ],
+      "risk": "Soil remediation claims and misallocated liability when wastewater flows cross ownership boundaries; seasonal collector overflow despite seemingly normal wastewater documents.",
+      "evidence_court_practice": "Appeal 01АП-3576/26 dated 17.08.2026 in case А43-26632/2023 upheld first-instance partial award against MUP only. Expert opinion 52-321Э dated 07.11.2025 was not rebutted in the appeal.",
+      "evidence_limits": [
+        "Official court-domain copy and any cassation not checked.",
+        "No evidence of actual payment or final enforcement.",
+        "Possible blockage is expert explanation, not proof of identified obstruction.",
+        "Tannery source not established as liable in this case; avoid generalizing to all mixed sewers.",
+        "Independent RPN analog confirms soil-discharge liability but not same hydraulic cause."
+      ],
+      "red_flag": "По соседству кожевенное производство и найдены маркерные вещества, значит именно оно виновно — ошибочная атрибуция без гидравлики, схем и границ ответственности.",
+      "diagnostic_questions": [
+        "Кому принадлежит и кем эксплуатируется каждый колодец, подключение и участок коллектора по фактической и договорной схеме?",
+        "Где происходит перелив при снеготаянии, ливне или засоре и как это подтверждается гидравликой и осмотром?",
+        "Доказана ли причинная связь конкретного лица с загрязнением пробами, фоном, видеозаписями, схемой и независимой экспертизой?"
+      ],
+      "mirlex_checks": [
+        "Сверить исполнительные схемы сети, фактические выпуски, договоры, акты разграничения балансовой принадлежности и эксплуатационной ответственности.",
+        "Проверить режимы снеготаяния/ливней, пропускную способность, аварийные переливы, журналы засоров и ремонтов.",
+        "Сопоставить почвенные пробы и фон, маркерные вещества, направление потоков, видео и экспертное заключение.",
+        "Проверить судебные стадии, кассацию, исполнение, достоверность методики оценки вреда и актуальные редакции НПА."
+      ],
+      "linked_ids": [
+        "IND-LOS-001",
+        "IND-SOIL-001",
+        "IND-WATER-001",
+        "IND-CONSTRUCTION-003"
+      ],
+      "score_components": {
+        "rarity": 22,
+        "enterprise_risk": 25,
+        "repeatability": 16,
+        "diagnostic_commercial_value": 18,
+        "novelty_to_core": 9
+      },
+      "score_total": 90,
+      "services": [
+        "SEWER_OVERFLOW_CAUSATION_AUDIT",
+        "INDUSTRIAL_EFFLUENT_ROUTE_SOIL_RISK_AUDIT"
+      ],
+      "impact": {
+        "site": "Diagnostic card: hidden liability at mixed sewer/municipal connection, not standalone new service before demand validation",
+        "assistant": "ECO_EXPERT: conditional fact-finding prompts; no automatic legal liability attribution",
+        "eco_expert": "RESEARCH_ONLY",
+        "rop_expert": "REFERRAL_ONLY",
+        "engine": "Enrich existing IND-STORM-001 evidence; no ACTIVE legal rule before NPA verification and regression tests"
+      },
+      "next_hypotheses": [
+        {
+          "hypothesis": "Mixed stormwater and sanitary sewers increase seasonal backflow and misattribution risks",
+          "status": "HYPOTHESIS_UNVERIFIED"
+        },
+        {
+          "hypothesis": "Marker-substance attribution may fail in shared municipal collectors without source-specific hydraulic evidence",
+          "status": "HYPOTHESIS_UNVERIFIED"
+        }
+      ]
+    }
+  ],
+  "index_status": "WRITE_PENDING",
+  "engine_delivery_status": "UNVERIFIED",
+  "delivery_scope": "NOT_ACTIVE_NOT_AUTONOMOUS"
+}
