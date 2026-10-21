@@ -1,0 +1,24 @@
+{
+  "id": "ECO-2026-MCHS-AM5-ILLEGAL-DUMPS",
+  "source_registry": "eco-changes/registry/ECO-2026-MCHS-AM5-ILLEGAL-DUMPS.json",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_EXPLANATION_NOT_NPA",
+  "priority": "GREEN",
+  "official_source": "https://mchs.gov.ru/dokumenty/vse-dokumenty/8401",
+  "document": "Информационное письмо МЧС России от 28.09.2026 № АМ-5",
+  "facts": [
+    "Наличие несанкционированной свалки само по себе не доказывает нарушение пожарной безопасности конкретным органом местного самоуправления.",
+    "Необходимо установить обязанность, правообладателя участка, основания ответственности и доказательства.",
+    "Обязанности по противопожарной защите населённых пунктов и содержание принадлежащих муниципалитету земель сохраняются при наличии правового основания."
+  ],
+  "applies_to": [
+    "municipalities",
+    "waste management",
+    "land ownership",
+    "fire supervision"
+  ],
+  "legal_guard": "Разъяснение не является НПА; не освобождает автоматически от экологических, земельных и противопожарных обязанностей.",
+  "expert_activation": "PROHIBITED_UNTIL_APPLICABILITY_REVIEW_AND_REGRESSION_TESTS",
+  "hard_radar": "DO_NOT_MODIFY",
+  "checked_at": "2026-10-21"
+}
