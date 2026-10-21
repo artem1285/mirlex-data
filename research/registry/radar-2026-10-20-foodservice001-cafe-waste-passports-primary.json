@@ -78,5 +78,6 @@
       "question": "Are salons, cafes, bakeries and small food shops receiving more passport requests because of inspections, landlord audits or contractors?"
     }
   ],
-  "rule_activation": "NOT_ACTIVE_PENDING_LEGAL_AND_REGRESSION_REVIEW"
+  "rule_activation": "NOT_ACTIVE_PENDING_LEGAL_AND_REGRESSION_REVIEW",
+  "id": "IND-FOODSERVICE-001"
 }
