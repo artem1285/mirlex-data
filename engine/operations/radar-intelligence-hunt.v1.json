@@ -92,5 +92,24 @@
       "not_a_new_radar_id": true,
       "do_not_treat_as_verified_enforcement": true
     }
+  ],
+  "monitored_official_sources": [
+    {
+      "name": "Росприроднадзор — Дзен",
+      "url": "https://dzen.ru/id/68fd2712b26a380a80cf8a09",
+      "source_type": "OFFICIAL_AGENCY_EXPLANATIONS",
+      "verification": "LINK_PUBLISHED_BY_RPN_RUTUBE",
+      "cadence": "CHECK_DURING_EXISTING_HOURLY_CYCLE",
+      "topics": [
+        "КЭР",
+        "НВОС",
+        "САКВ",
+        "СИТЕС",
+        "профилактические визиты",
+        "РОП",
+        "отчетность ПП 741"
+      ],
+      "processing": "Deduplicate against existing permanent IDs; compare primary legal texts and effective dates; agency explanations are not normative acts; RESEARCH_ONLY pending legal and regression checks; no separate radar task"
+    }
   ]
 }
