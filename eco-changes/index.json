@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -154,6 +154,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-39873-WASTE-ROUNDING-AGGREGATE.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-39873-waste-rounding-aggregate.json"
+    },
+    {
+      "id": "ECO-2026-PP-1340-WATER-SECURITY",
+      "path": "eco-changes/registry/ECO-2026-PP-1340-WATER-SECURITY.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1340-water-security.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
