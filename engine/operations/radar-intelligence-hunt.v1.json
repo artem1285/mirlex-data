@@ -109,7 +109,18 @@
         "РОП",
         "отчетность ПП 741"
       ],
-      "processing": "Deduplicate against existing permanent IDs; compare primary legal texts and effective dates; agency explanations are not normative acts; RESEARCH_ONLY pending legal and regression checks; no separate radar task"
+      "processing": "Deduplicate against existing permanent IDs; compare primary legal texts and effective dates; agency explanations are not normative acts; RESEARCH_ONLY pending legal and regression checks; no separate radar task",
+      "priority_materials": [
+        {
+          "key": "PP741_APPENDIX1_LKP_VIDEO",
+          "title": "Как заполнить отчет о массе товаров в ЛКП — Цифровой Росприроднадзор",
+          "status": "VIDEO_FULL_CONTENT_NOT_YET_VERIFIED",
+          "action": "Find and review full official Dzen video, capture every screen/field/button and submission/receipt steps verbatim where feasible; cross-check against current PP RF 741 appendix 1 and official RPN LKP instructions; add evidence to existing ROP ID only after dedup; no assumptions from video title",
+          "official_reference": "https://rpn.gov.ru/activity/rop/",
+          "legal_reference": "ПП РФ 31.05.2024 №741 приложение 1",
+          "service": "MIRLEX ROP reporting diagnostics and Assistant"
+        }
+      ]
     }
   ]
 }
