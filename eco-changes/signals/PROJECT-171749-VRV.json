@@ -1,0 +1,31 @@
+{
+  "id": "SIGNAL-2026-PROJECT-171749",
+  "record_type": "REGULATORY_DRAFT_SIGNAL",
+  "priority": "YELLOW",
+  "legal_status": "ПРОЕКТ",
+  "research_status": "RESEARCH_ONLY",
+  "act": "Проект постановления Правительства РФ «Об утверждении Правил выдачи разрешений на временные выбросы»",
+  "project_id": "02/07/10-26/00171749",
+  "project_number": "171749",
+  "published_at": "2026-10-16",
+  "discovered_at": "2026-10-22",
+  "consultation_deadline_reported": "2026-10-30",
+  "planned_effective_date_reported": "2027-09-01",
+  "source_primary": "https://regulation.gov.ru/projects/171749/",
+  "source_secondary": [
+    "https://www.ecoindustry.ru/news/view/66745.html",
+    "https://centrkodeks.cntd.ru/news/read/minprirody-rossii-predlozilo-prolongirovat-mexanizm-poluceniia-razresenii-na-vremennye-vybrosy/novosti-ekologii"
+  ],
+  "source_verification": "Official project URL resolved and portal opened, but the project's text is client-rendered and was not readable in this verification. Details of proposed provisions and dates are reported by two independent industry sources and require primary-text confirmation before expert activation.",
+  "reported_changes": [
+    "Replaces expiring PP RF No. 828 of 31.05.2021 governing temporary emissions permits.",
+    "Industry reports describe continuation of permit issue, extension and reissuance procedure; possible clarification of 'environmental measures plan' vs 'draft plan'."
+  ],
+  "affected": "Operators of category II and III NVOS sites seeking temporary emission permits; air emissions documentation consultants.",
+  "risk": "Continuity of temporary emissions permit mechanism after 01.09.2027; possibility of applying proposed provisions as effective law.",
+  "action_mirlex": "Track consultation and full official text; compare with PP 828; no changes to active expert rules before primary verification, applicability review and regression tests.",
+  "client_wording": "Опубликован проект новых Правил выдачи разрешений на временные выбросы. До принятия документа действуют текущие правила; предприятиям с ВРВ следует отслеживать результат обсуждения.",
+  "unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "engine_knowledge": "engine/knowledge/eco-2026-project-171749-vrv.json",
+  "do_not_deploy": true
+}
