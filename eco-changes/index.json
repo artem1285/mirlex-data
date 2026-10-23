@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -172,6 +172,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-PPS-LICENSE-20261020.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-pps-license-20261020.json"
+    },
+    {
+      "id": "ECO-2026-MPR-41127-MEDICAL-WASTE",
+      "path": "eco-changes/registry/ECO-2026-MPR-41127-MEDICAL-WASTE.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-mpr-41127-medical-waste.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
