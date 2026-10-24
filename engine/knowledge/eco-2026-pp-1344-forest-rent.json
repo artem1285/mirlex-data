@@ -1,0 +1,26 @@
+{
+  "id": "ECO-2026-PP-1344",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1344.json",
+  "act": "Постановление Правительства РФ от 14.10.2026 № 1344",
+  "priority": "YELLOW",
+  "legal_status": "Действует с 22.10.2026 (сверено по правовым базам, официальный первоисточник напрямую не прочитан)",
+  "effective_date": "2026-10-22",
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610140033",
+  "secondary_full_text_sources": [
+    "https://base.garant.ru/415070391/",
+    "https://legalacts.ru/doc/postanovlenie-pravitelstva-rf-ot-14102026-n-1344-o-vnesenii/",
+    "https://ppt.ru/obzory/vstupaet-v-silu/postanovlenie-pravitelstva-rf-14-10-2026-1344"
+  ],
+  "source_verification": "PRIMARY_DIRECT_READ_PENDING",
+  "finding": "По опубликованным копиям ПП №1344 вступило в силу 22.10.2026; добавлены примечания 12–15 к ставкам платы за лесные ресурсы и аренду лесных участков по приоритетным инвестпроектам с правоотношениями до 01.01.2024; применение по 31.12.2027.",
+  "affected": "Лесопользователи с приоритетными инвестиционными проектами, правоотношения по которым возникли до 01.01.2024.",
+  "risk": "Неверный расчет арендной платы по специальным ставкам и коэффициентам.",
+  "mirlex_action": "Проверить оригинал и условия применимости; сопоставить договоры аренды и расчеты без изменения действующих экспертных правил.",
+  "client_wording_draft_not_for_publication": "Для отдельных приоритетных инвестпроектов лесного комплекса изменены правила расчета арендной платы.",
+  "engine_mode": "RESEARCH_ONLY",
+  "expert_deployment_allowed": false,
+  "regression_tests_run": false,
+  "hard_radar_modified": false,
+  "checked_at": "2026-10-24",
+  "signal_gate": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+}
