@@ -1,0 +1,22 @@
+{
+  "id": "ECO-2026-PROJECT-171749-TEMP-EMISSIONS",
+  "radar_card": "eco-changes/registry/ECO-2026-PROJECT-171749-TEMP-EMISSIONS.json",
+  "radar_id": "ECO-2026-PROJECT-171749-TEMP-EMISSIONS",
+  "topic": [
+    "AIR",
+    "TEMPORARY_EMISSIONS",
+    "NVOS_II_III",
+    "DRAFT_LAW"
+  ],
+  "status": "RESEARCH_ONLY_PRIMARY_TEXT_UNREAD",
+  "legal_status": "UNCONFIRMED_DRAFT_SIGNAL",
+  "official_project_page": "https://regulation.gov.ru/projects/171749/",
+  "primary_full_text_read": false,
+  "source_review": "https://cntd.ru/news/read/minprirody-rossii-predlozilo-prolongirovat-mexanizm-poluceniia-razresenii-na-vremennye-vybrosy",
+  "source_review_date": "2026-10-21",
+  "reported_public_comment_deadline": "2026-10-30",
+  "research_task": "Read original draft and OРВ materials, compare with PP 828, confirm legal status and dates; do not activate diagnostic rules.",
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false
+}
