@@ -264,6 +264,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-GEOPORTAL-CROSSCHECK-20261022.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-geoportal-crosscheck-20261022.json"
+    },
+    {
+      "id": "ECO-2026-RSHN-SATURN-WRITEOFF-20261019",
+      "path": "eco-changes/registry/ECO-2026-RSHN-SATURN-WRITEOFF-20261019.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rshn-saturn-writeoff-20261019.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
