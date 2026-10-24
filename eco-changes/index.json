@@ -178,6 +178,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-41127-MEDICAL-WASTE.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-41127-medical-waste.json"
+    },
+    {
+      "id": "ECO-2026-SP-320-1325800-TKO",
+      "path": "eco-changes/registry/ECO-2026-SP-320-1325800-TKO.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-sp-320-1325800-tko.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
