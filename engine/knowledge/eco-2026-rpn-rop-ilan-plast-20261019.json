@@ -1,0 +1,16 @@
+{
+  "id": "eco-2026-rpn-rop-ilan-plast-20261019",
+  "source_radar_card": "eco-changes/registry/ECO-2026-RPN-ROP-ILAN-PLAST-20261019.json",
+  "source_radar_id": "ECO-2026-RPN-ROP-ILAN-PLAST-20261019",
+  "domain": "ROP",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_INFORMATION_ON_ENFORCEMENT_NOT_NPA",
+  "priority": "YELLOW",
+  "verified_on": "2026-10-24",
+  "official_primary_source": "https://rpn.gov.ru/regions/36/news/arbitrazhnyy-sud-voronezhskoy-oblasti-udovletvoril-iskovye-trebovaniya-tsentralno-chernozemnogo-upra-6002746.html",
+  "knowledge": "Росприроднадзор 19.10.2026 сообщил о вступившем в силу решении Арбитражного суда Воронежской области о взыскании с ООО «Илан-Пласт» 697 582 руб. экосбора за 2022 год. Ведомство указало на неправомерное применение понижающего коэффициента по вторичному сырью. Это факт официального сообщения о правоприменении, а не новая норма и не доказательство применимости коэффициентов 2022 года к 2026 году.",
+  "actionable_research": "Проверять правовые основания и доказательства каждого понижающего коэффициента, период нормы, сведения о вторсырье и расчет. Получить судебный акт и номер дела перед использованием мотивировки суда в экспертизе.",
+  "expert_rules_modified": false,
+  "hard_radar_modified": false,
+  "source_limit": "RPN official primary content accessible via indexed search; direct site returned 403. Court decision text and case number not established."
+}
