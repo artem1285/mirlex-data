@@ -60,7 +60,8 @@
     {
       "id": "ECO-2026-PP-1344",
       "path": "eco-changes/registry/ECO-2026-PP-1344.json",
-      "status": "RESEARCH_ONLY_NOT_DEPLOYED"
+      "status": "RESEARCH_ONLY_PRIMARY_DIRECT_READ_PENDING",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1344-forest-rent.json"
     },
     {
       "id": "ECO-2026-PP-946-DRONE-CONTROL",
