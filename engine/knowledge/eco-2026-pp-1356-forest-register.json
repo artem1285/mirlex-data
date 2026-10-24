@@ -2,7 +2,7 @@
   "id": "ECO-2026-PP-1356-FOREST-REGISTER",
   "source": "eco-changes/registry/ECO-2026-PP-1356-FOREST-REGISTER.json",
   "status": "INGESTED_RESEARCH_ONLY",
-  "legal_status": "ADOPTED_NOT_YET_EFFECTIVE",
+  "legal_status": "ADOPTED_NOT_IN_FORCE",
   "effective_date": "2027-03-01",
   "topics": [
     "FORESTRY",
@@ -15,5 +15,27 @@
     "Do not activate before 2027-03-01"
   ],
   "expert_mode": "RESEARCH_ONLY_UNTIL_TESTED",
-  "official_url": "https://publication.pravo.gov.ru/document/0001202610160047"
+  "official_url": "https://publication.pravo.gov.ru/document/0001202610160047",
+  "radar_id": "ECO-2026-PP-1356-FOREST-REGISTER",
+  "radar_card": "eco-changes/registry/ECO-2026-PP-1356-FOREST-REGISTER.json",
+  "act": "Постановление Правительства РФ от 15.10.2026 № 1356",
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610160047",
+  "priority": "YELLOW",
+  "change": "Ведение государственного лесного реестра: акты патрулирования и административного обследования лесов становятся основаниями изменения сведений о лесотаксационных выделах; уточнены допустимые погрешности координат и автоматические отказы при лесных декларациях с учетом неиспользованного объема изъятия древесины за предыдущие 3 года.",
+  "affected": "Лесопользователи, арендаторы лесных участков, лесозаготовители, лесоустроительные и проектные организации.",
+  "risk": "Неверные сведения в лесных декларациях и реестре, автоматические отказы при формировании документов после вступления изменений в силу.",
+  "mirlex_action": "Добавить в исследовательский контур Лес/Земли/Проектирование проверку новых оснований корректировки реестра и порядка сверки деклараций; не изменять экспертные правила без тестов.",
+  "client_wording": "С 1 марта 2027 года меняются правила ведения государственного лесного реестра: появятся дополнительные основания корректировки сведений и уточнения проверки лесных деклараций.",
+  "source_verification": {
+    "official_publication_number": "0001202610160047",
+    "official_portal_direct_read": "unavailable",
+    "full_text_crosschecks": [
+      "https://base.garant.ru/415085159/",
+      "https://www.consultant.ru/document/cons_doc_LAW_547025/"
+    ],
+    "checked_at": "2026-10-24"
+  },
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false
 }
