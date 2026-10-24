@@ -54,7 +54,8 @@
     {
       "id": "ECO-2026-PP-1342",
       "path": "eco-changes/registry/ECO-2026-PP-1342.json",
-      "status": "ПРИНЯТ И ОФИЦИАЛЬНО ОПУБЛИКОВАН; дата вступления в силу не подтверждена чтением полного первоисточника"
+      "status": "RESEARCH_ONLY_PRIMARY_DIRECT_READ_PENDING",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1342-water-use.json"
     },
     {
       "id": "ECO-2026-PP-1344",
