@@ -184,6 +184,18 @@
       "path": "eco-changes/registry/ECO-2026-SP-320-1325800-TKO.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-sp-320-1325800-tko.json"
+    },
+    {
+      "id": "ECO-2026-RSHN-1260-RECLAMATION",
+      "path": "eco-changes/registry/ECO-2026-RSHN-1260-RECLAMATION.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rshn-1260-reclamation.json"
+    },
+    {
+      "id": "ECO-2026-PP-1398-HYDROMET-LICENSING",
+      "path": "eco-changes/registry/ECO-2026-PP-1398-HYDROMET-LICENSING.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1398-hydromet-licensing.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
