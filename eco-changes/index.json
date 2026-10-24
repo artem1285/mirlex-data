@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -258,6 +258,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-ROP-ILAN-PLAST-20261019.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-rop-ilan-plast-20261019.json"
+    },
+    {
+      "id": "ECO-2026-RPN-GEOPORTAL-CROSSCHECK-20261022",
+      "path": "eco-changes/registry/ECO-2026-RPN-GEOPORTAL-CROSSCHECK-20261022.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rpn-geoportal-crosscheck-20261022.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
