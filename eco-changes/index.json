@@ -220,6 +220,12 @@
       "path": "eco-changes/signals/BILL-16886-9-20261023.json",
       "status": "RESEARCH_SIGNAL_NOT_ACTIVE",
       "engine_knowledge": "engine/knowledge/eco-2026-bill-16886-9-koap-8-2.json"
+    },
+    {
+      "id": "ECO-2026-SP-127-13330-INDUSTRIAL-WASTE",
+      "path": "eco-changes/registry/ECO-2026-SP-127-13330-INDUSTRIAL-WASTE.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-sp-127-13330-industrial-waste.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
