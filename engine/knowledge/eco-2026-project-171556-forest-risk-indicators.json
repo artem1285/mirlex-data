@@ -1,0 +1,22 @@
+{
+  "id": "ECO-2026-PROJECT-171556-FOREST-RISK-INDICATORS",
+  "radar_card": "eco-changes/registry/ECO-2026-PROJECT-171556-FOREST-RISK-INDICATORS.json",
+  "radar_id": "ECO-2026-PROJECT-171556-FOREST-RISK-INDICATORS",
+  "topic": [
+    "FOREST",
+    "CONTROL",
+    "RISK_INDICATORS",
+    "DRAFT_LAW"
+  ],
+  "status": "RESEARCH_ONLY_PRIMARY_TEXT_UNREAD",
+  "legal_status": "UNCONFIRMED_DRAFT_SIGNAL",
+  "project_id": "171556",
+  "official_project_page_candidate": "https://regulation.gov.ru/projects/171556/",
+  "primary_full_text_read": false,
+  "secondary_source": "https://www.garant.ru/news/2275722/",
+  "source_review_date": "2026-10-22",
+  "research_task": "Read official draft and explanatory documents, verify stage, compare changes to Order 907, check applicability and tests before any expert deployment.",
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false
+}
