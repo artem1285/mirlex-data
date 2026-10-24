@@ -214,6 +214,12 @@
       "path": "eco-changes/registry/ECO-2026-PP-1356-FOREST-REGISTER.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-pp-1356-forest-register.json"
+    },
+    {
+      "id": "SIGNAL-2026-BILL-16886-9",
+      "path": "eco-changes/signals/BILL-16886-9-20261023.json",
+      "status": "RESEARCH_SIGNAL_NOT_ACTIVE",
+      "engine_knowledge": "engine/knowledge/eco-2026-bill-16886-9-koap-8-2.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
