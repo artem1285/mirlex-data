@@ -1,0 +1,26 @@
+{
+  "id": "eco-2026-mpr-483-observation",
+  "radar_id": "ECO-2026-MPR-483-OBSERVATION",
+  "radar_card": "eco-changes/registry/ECO-2026-MPR-483-OBSERVATION.json",
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610200014",
+  "act": "Приказ Минприроды России от 16.09.2026 № 483",
+  "legal_status": "ADOPTED_NOT_IN_FORCE",
+  "priority": "YELLOW",
+  "change": "Продлён срок действия требований к проведению наблюдений за состоянием окружающей среды и её загрязнением с 01.01.2027 до 01.09.2027; содержание требований не изменено.",
+  "effective_date": "2026-10-31",
+  "new_expiry": "2027-09-01",
+  "affected": "Организации и специалисты, проводящие наблюдения за состоянием окружающей среды и её загрязнением в рамках применимости приказа № 524.",
+  "mirlex_action": "Актуализировать дату окончания действия приказа № 524 в исследовательских материалах по экологическому мониторингу; не переносить автоматически на все программы ПЭК без проверки применимости.",
+  "source_verification": {
+    "primary_publication_reference": "Официальный номер опубликования подтвержден правовым дайджестом 20.10.2026; прямой просмотр официального портала не удался",
+    "full_text_crosschecks": [
+      "https://www.consultant.ru/document/cons_doc_LAW_547234/",
+      "https://www.garant.ru/products/ipo/prime/doc/415021073/"
+    ],
+    "effective_date_secondary": "https://www.ecoindustry.ru/news/view/66752.html",
+    "checked_at": "2026-10-24"
+  },
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false
+}
