@@ -1,0 +1,26 @@
+{
+  "id": "ECO-2026-PP-1342",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1342.json",
+  "act": "Постановление Правительства РФ от 13.10.2026 № 1342",
+  "priority": "YELLOW",
+  "legal_status": "Действует с 22.10.2026 (сверено по правовым базам, официальный первоисточник напрямую не прочитан)",
+  "effective_date": "2026-10-22",
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610140030",
+  "secondary_full_text_sources": [
+    "https://base.garant.ru/415070401/",
+    "https://legalacts.ru/doc/postanovlenie-pravitelstva-rf-ot-13102026-n-1342-o-vnesenii/",
+    "https://www.kontur-extern.ru/info/normativ/document/1/508772-postanovlenie-pravitelstva-rf-ot-13-10-2026-n-1342"
+  ],
+  "source_verification": "PRIMARY_DIRECT_READ_PENDING",
+  "finding": "В опубликованных копиях ПП №1342 установлена дата вступления в силу 22.10.2026; введены электронные каналы подачи через ЕПГУ/ГИС «Водные данные», срок рассмотрения заявления сокращен с 15 до 10 рабочих дней; решение регистрируется в водном реестре за 2 рабочих дня; уточнены аукционы и договоры водопользования.",
+  "affected": "Водопользователи и заявители, организации и ИП, участники аукционов",
+  "risk": "Применение прежней процедуры подачи и сроков может вызвать задержку оформления прав водопользования.",
+  "mirlex_action": "Проверить оригинал на официальном портале и применимость к виду водопользования; не менять действующие экспертные правила до регрессионных тестов.",
+  "client_wording_draft_not_for_publication": "С 22 октября 2026 года изменены процедуры оформления водопользования, включая электронную подачу документов и сроки рассмотрения.",
+  "engine_mode": "RESEARCH_ONLY",
+  "expert_deployment_allowed": false,
+  "regression_tests_run": false,
+  "hard_radar_modified": false,
+  "checked_at": "2026-10-24",
+  "signal_gate": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+}
