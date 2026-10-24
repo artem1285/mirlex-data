@@ -1,0 +1,32 @@
+{
+  "id": "ECO-2026-RPN-ROP-MASS-REPORT-VIDEO-20261022",
+  "source_id": "ECO-2026-RPN-ROP-MASS-REPORT-VIDEO-20261022",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-ROP-MASS-REPORT-VIDEO-20261022.json",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_GUIDANCE_NOT_NPA",
+  "priority": "GREEN",
+  "published_at": "2026-10-22",
+  "checked_at": "2026-10-24",
+  "topic": "РОП: официальная видеоинструкция Росприроднадзора по отчетности о массе товаров и упаковки",
+  "summary": "22.10.2026 Росприроднадзор сообщил о видеоинструкции по заполнению и отправке отчета о массе товаров и упаковки через Личный кабинет природопользователя; видеоматериал опубликован на официальном RUTUBE-канале 19.10.2026. Нормативные обязанности и сроки не изменяются.",
+  "practical_checks": [
+    "Сохранить ссылку на официальное видео как первичный обучающий материал для специалистов по РОП.",
+    "Проверить применимость ПП РФ № 741 и статьи 24.2 Закона № 89-ФЗ к конкретному производителю или импортеру.",
+    "Не воспроизводить пошаговые экранные действия, пока видеоряд не просмотрен и не сопоставлен с действующим интерфейсом ЛКП.",
+    "Не считать публикацию видео изменением обязательной формы отчетности или срока ее сдачи."
+  ],
+  "risks": "Ошибки при заполнении и направлении отчетности; недопустимость подмены нормативного текста учебным видео.",
+  "mirlex_action": "Добавить в базу исследовательских источников РОП и очередь проверки UX/инструкции. Публикация самостоятельной подробной инструкции MIRLEX только после просмотра видео, сверки с актуальным ЛКП и НПА.",
+  "client_wording": "Росприроднадзор опубликовал официальную видеоинструкцию по заполнению отчета о массе товаров и упаковки в Личном кабинете природопользователя. Новых требований она не вводит.",
+  "sources": {
+    "official_announcement": "https://rpn.gov.ru/press/news/kak_zapolnit_otchet_o_masse_tovarov_v_lichnom_kabinete_prirodopolzovatelya/",
+    "official_video": "https://rutube.ru/video/bcff2f14ea50975008a06ffff6969344/"
+  },
+  "verification": {
+    "official_announcement_search_excerpt_verified": true,
+    "official_video_page_metadata_verified": true,
+    "video_content_not_transcribed": true
+  },
+  "activation_guard": "NO_ACTIVE_EXPERT_RULE_CHANGE; primary legal applicability, full video review, regression and compatibility tests required before operational instructions",
+  "dedup_key": "RPN-ROP-MASS-REPORT-VIDEO-2026-10-22"
+}
