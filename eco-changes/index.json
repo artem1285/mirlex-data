@@ -202,6 +202,18 @@
       "path": "eco-changes/registry/ECO-2026-MPR-483-OBSERVATION.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-483-observation.json"
+    },
+    {
+      "id": "ECO-2026-RP-2887R-NVOS-RATES",
+      "path": "eco-changes/registry/ECO-2026-RP-2887R-NVOS-RATES.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rp-2887r-nvos-rates.json"
+    },
+    {
+      "id": "ECO-2026-PP-1356-FOREST-REGISTER",
+      "path": "eco-changes/registry/ECO-2026-PP-1356-FOREST-REGISTER.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1356-forest-register.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
