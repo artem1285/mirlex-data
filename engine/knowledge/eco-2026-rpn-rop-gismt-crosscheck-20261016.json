@@ -1,0 +1,16 @@
+{
+  "id": "eco-2026-rpn-rop-gismt-crosscheck-20261016",
+  "source_radar_card": "eco-changes/registry/ECO-2026-RPN-ROP-GISMT-CROSSCHECK-20261016.json",
+  "source_radar_id": "ECO-2026-RPN-ROP-GISMT-CROSSCHECK-20261016",
+  "domain": "ROP",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_INFORMATION_NOT_NPA",
+  "priority": "YELLOW",
+  "verified_on": "2026-10-24",
+  "official_primary_source": "https://rpn.gov.ru/press/news/predstaviteli_biznesa_prinyali_uchastie_v_vebinarakh_po_rop/",
+  "knowledge": "Росприроднадзор сообщил о фактическом сопоставлении данных ГИС МТ (Оператор-ЦРПТ) с исполнением РОП за 2025 год и направлении требований выявленным организациям. Важна проверка данных по товарам, упаковке, экспорту, передаче товаров как сырья; сама запись ГИС МТ не является автоматическим доказательством нарушения.",
+  "actionable_research": "Разработать исследовательскую проверку сверки маркированной продукции и РОП. Перед активацией — проверить правовые основания, исключения, применимость и регрессионные тесты.",
+  "expert_rules_modified": false,
+  "hard_radar_modified": false,
+  "source_limit": "Official RPN page indexed with full relevant excerpts; direct page open 403."
+}
