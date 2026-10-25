@@ -1,0 +1,16 @@
+{
+  "id": "eco-2026-rpn-soil-dtp-nekhaevsky-20261023",
+  "source_radar_card": "eco-changes/registry/ECO-2026-RPN-SOIL-DTP-NEKHAEVSKY-20261023.json",
+  "source_radar_id": "ECO-2026-RPN-SOIL-DTP-NEKHAEVSKY-20261023",
+  "domain": "SOIL_POLLUTION_ENFORCEMENT",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_INFORMATION_ON_ENFORCEMENT_NOT_NPA",
+  "priority": "YELLOW",
+  "verified_on": "2026-10-25",
+  "official_primary_source": "https://rpn.gov.ru/press/news/sud_obyazal_vinovnika_dtp_v_volgogradskoy_oblasti_vozmestit_bolee_2_6_mln_rubley_za_ushcherb_pochvam/",
+  "knowledge": "Официальное сообщение Росприроднадзора 23.10.2026: Нехаевский районный суд удовлетворил иск о возмещении 2 645 697 руб. вреда почвам после ДТП с разливом нефтепродуктов в станице Усть-Бузулукской. Площадь загрязнения 240 м², проводились лабораторные пробы. Это правоприменительный случай, не новая норма. Текст судебного акта и номер дела пока не получены, вступление решения в силу не подтверждено.",
+  "actionable_research": "Найти судебный акт, проверить методику расчета вреда почвам, основание ответственности и обстоятельства ДТП. Сформировать исследовательский сценарий для аварийных разливов, не менять активные правила.",
+  "expert_rules_modified": false,
+  "hard_radar_modified": false,
+  "source_limit": "Официальный текст Росприроднадзора доступен в индексированном поиске; прямое открытие 403. Судебный акт не прочитан."
+}
