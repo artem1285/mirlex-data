@@ -1,0 +1,27 @@
+{
+  "id": "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-NVOS-636-CORRECTION-DEC01.json",
+  "record_type": "ECO_LEGAL_RESEARCH",
+  "status": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_CLARIFICATION_OF_EXISTING_IN_FORCE_REQUIREMENTS",
+  "priority": "YELLOW",
+  "subject": "Корректировка категорий объектов НВОС по ПП РФ № 636: этап уведомлений после 01.12.2026",
+  "official_source": "https://rpn.gov.ru/press/news/s_1_sentyabrya_nuzhno_podat_zayavlenie_o_korrektirovke_svedeniy_ob_obektakh_nvos/",
+  "explanation_20261013": "https://rpn.gov.ru/press/news/nvos_kto_obyazan_vstat_na_uchet_i_kak_eto_sdelat/",
+  "regulation": [
+    "ФЗ от 10.01.2002 № 7-ФЗ, ст. 69.2",
+    "ПП РФ от 07.05.2022 № 830, пп. 44–45",
+    "ПП РФ от 29.05.2026 № 636"
+  ],
+  "research_findings": {
+    "criteria_effective": "2026-09-01",
+    "official_explainer": "2026-10-13",
+    "notice_threshold": "После 2026-12-01, если заявление о корректировке не подано в течение 3 месяцев со вступления критериев",
+    "authority_correction": "По истечении 3 месяцев с даты направления уведомления при отсутствии корректировки",
+    "important": "01.12.2026 — порог для направления уведомлений по п. 45 Правил № 830, не самостоятельная дата автоматического штрафа."
+  },
+  "diagnostic_candidate": "Для QZ101F и ECO-пакетов: наличие объекта в госреестре, соответствие критерию № 636, документы-основания, статус заявления о корректировке или актуализации, наличие уведомления и срок 3 месяца от него.",
+  "activation": "RESEARCH_ONLY. No active diagnostic rules or Hard Radar changes; activation only after clause-level source verification and regression tests.",
+  "dedup_key": "NVOS-636-REGISTRY-CORRECTION-DEC01-2026",
+  "verified_at": "2026-10-25"
+}
