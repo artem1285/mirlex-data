@@ -1,0 +1,16 @@
+{
+  "id": "ECO-2026-RPN-AIR-MONITOR-2027-ARKH-VOLOGDA-20261023",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-AIR-MONITOR-2027-ARKH-VOLOGDA-20261023.json",
+  "record_type": "ECO_LEGAL_RESEARCH",
+  "status": "VERIFIED_RESEARCH_ONLY_PRIMARY_ATTACHMENT_UNREAD",
+  "legal_status": "OFFICIAL_PUBLICATION_OF_REGIONAL_MONITORING_LISTS_NOT_NEW_NPA",
+  "priority": "YELLOW",
+  "subject": "Перечни мониторинга атмосферного воздуха на 2027 год — Архангельская и Вологодская области",
+  "official_source": "https://rpn.gov.ru/regions/29/for_users/otchety-prirodopolzovatelya/",
+  "legal_basis": "Федеральный закон от 04.05.1999 № 96-ФЗ «Об охране атмосферного воздуха», ст. 23 п. 3 (территориальные органы природоохранного ведомства совместно с Росгидрометом устанавливают и пересматривают перечень объектов).",
+  "verification": "Публикация и метаданные двух XLSX подтверждены индексированным текстом официальной страницы Росприроднадзора (обход от 24.10.2026). Прямое открытие rpn.gov.ru завершилось DisabledError; вложенные XLSX не загружены и не сопоставлены. Ст. 23 п. 3 ФЗ № 96-ФЗ проверена по тексту КонсультантПлюс. Не делать выводов о конкретных предприятиях до чтения файлов.",
+  "diagnostic_candidate": "Проверка вхождения объекта НВОС в региональный перечень 2027 года и актуальности плана-графика наблюдений ПЭК; предварительно загрузить оба XLSX и сравнить с перечнями 2026 года.",
+  "activation": "RESEARCH_ONLY; никаких изменений действующих правил и Жёсткого радара без проверки первичных XLSX и регрессионных тестов.",
+  "dedup_key": "RPN-REGIONAL-AIR-MONITORING-LISTS-2027-ARKHANGELSK-VOLOGDA-PUBLISHED-20261023",
+  "verified_at": "2026-10-25"
+}
