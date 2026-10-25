@@ -336,6 +336,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-KOMSOMOLSKNEFT-SOIL-WELLS-20261022.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-komsomolskneft-soil-wells-20261022.json"
+    },
+    {
+      "id": "ECO-2026-RPN-645-GRORO-EXCLUSIONS-20261013",
+      "path": "eco-changes/registry/ECO-2026-RPN-645-GRORO-EXCLUSIONS-20261013.json",
+      "status": "VERIFIED_RESEARCH_ONLY_SOURCE_REPRINT",
+      "engine_knowledge": "engine/knowledge/eco-2026-rpn-645-groro-exclusions-20261013.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
