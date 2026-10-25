@@ -1,0 +1,22 @@
+{
+  "id": "ECO-2026-PROJECT-172035-COMPLIANCE-AGREEMENTS",
+  "radar_card": "eco-changes/registry/ECO-2026-PROJECT-172035-COMPLIANCE-AGREEMENTS.json",
+  "radar_id": "ECO-2026-PROJECT-172035-COMPLIANCE-AGREEMENTS",
+  "topic": [
+    "REGIONAL_ECO_CONTROL",
+    "SUPERVISION",
+    "REMEDIATION_AGREEMENTS",
+    "DRAFT_LAW"
+  ],
+  "status": "RESEARCH_ONLY_PRIMARY_TEXT_UNREAD",
+  "legal_status": "UNCONFIRMED_DRAFT_SIGNAL",
+  "official_project_page": "https://regulation.gov.ru/projects/172035/",
+  "primary_full_text_read": false,
+  "source_review": "https://www.consultant.ru/legalnews/32877/",
+  "source_review_date": "2026-10-23",
+  "reported_public_comment_deadline": "2026-11-03",
+  "research_task": "Read official project 172035, explanatory note and impact analysis; compare to current PP 829, verify applicability and dates; no expert rule activation.",
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false
+}
