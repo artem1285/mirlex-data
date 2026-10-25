@@ -276,6 +276,12 @@
       "path": "eco-changes/registry/ECO-2026-GOST-R-58092-4-200-GHG-STORAGE.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-gost-r-58092-4-200-ghg-storage.json"
+    },
+    {
+      "id": "ECO-2026-PROJECT-172035-COMPLIANCE-AGREEMENTS",
+      "path": "eco-changes/registry/ECO-2026-PROJECT-172035-COMPLIANCE-AGREEMENTS.json",
+      "status": "RESEARCH_ONLY_PRIMARY_TEXT_UNREAD",
+      "engine_knowledge": "engine/knowledge/eco-2026-project-172035-compliance-agreements.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
