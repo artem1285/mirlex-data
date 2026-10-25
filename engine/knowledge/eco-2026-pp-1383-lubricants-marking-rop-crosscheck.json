@@ -1,0 +1,34 @@
+{
+  "id": "ECO-2026-PP-1383-LUBRICANTS-MARKING-ROP-CROSSCHECK",
+  "source_id": "ECO-2026-PP-1383-LUBRICANTS-MARKING-ROP-CROSSCHECK",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1383-LUBRICANTS-MARKING-ROP-CROSSCHECK.json",
+  "mode": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+  "priority": "YELLOW",
+  "legal_status": "PARTIALLY_IN_FORCE_ADOPTED_WITH_FUTURE_PROVISIONS",
+  "topic": "РОП / смежные цифровые реестры: маркировка смазочных материалов по ПП № 1383",
+  "summary": "ПП РФ № 1383 меняет правила ГИС МТ для смазочных материалов и специальных автомобильных жидкостей: некоторые пункты с 23.10.2026, основная часть с 01.03.2027. Исключения маркировки не означают исключения из РОП.",
+  "practical_checks": [
+    "Непосредственно сверить официальный опубликованный текст ПП РФ № 1383 и даты по пунктам.",
+    "Проверить список товаров по ПП № 1683 и отдельно соответствие товаров/упаковки ПП № 2414.",
+    "Не использовать исключение маркировки <=30 г/мл для исключения РОП.",
+    "У производителей проверить КПП и уникальный номер адреса (ГАР), представляемые в ГИС МТ до 01.04.2027, с учетом применимости.",
+    "Проверить регрессионными тестами перед изменением экспертных пакетов."
+  ],
+  "risks": "Ошибочное распространение исключений маркировки на обязанности по РОП; несогласованность номенклатуры и данных ГИС МТ; пропуск дополнительных сведений производителя в ГИС МТ до 01.04.2027.",
+  "sources": {
+    "act_full_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547596/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/",
+    "amendments_full_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547596/da1ca42c3dfb31f24b0bb9a014bc3dcf6dd7dd7b/",
+    "consultant_review": "https://www.consultant.ru/law/hotdocs/96062.html",
+    "official_primary_publication": null
+  },
+  "verification": {
+    "act_text_read_from_consultant": true,
+    "amendments_text_read_from_consultant": true,
+    "exact_official_publication_url_verified": false,
+    "official_primary_text_directly_read": false,
+    "consultant_notes_early_provisions": true,
+    "do_not_notify_until_primary_verified": true
+  },
+  "dedup_key": "PP-RF-1383-20261021-LUBRICANTS-MARKING",
+  "activation_guard": "RESEARCH_ONLY; NO_ACTIVE_RULE_CHANGES; NO_HARD_RADAR_CHANGES; OFFICIAL_PRIMARY_REQUIRED"
+}
