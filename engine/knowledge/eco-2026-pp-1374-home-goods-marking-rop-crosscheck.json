@@ -1,0 +1,32 @@
+{
+  "id": "ECO-2026-PP-1374-HOME-GOODS-MARKING-ROP-CROSSCHECK",
+  "source_id": "ECO-2026-PP-1374-HOME-GOODS-MARKING-ROP-CROSSCHECK",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1374-HOME-GOODS-MARKING-ROP-CROSSCHECK.json",
+  "mode": "RESEARCH_ONLY_PRIMARY_DIRECT_READ_PENDING",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_NOT_YET_IN_FORCE",
+  "topic": "Связка РОП с ГИС маркировки: товары для дома и интерьера, ПП РФ № 1374",
+  "summary": "ПП РФ № 1374 от 21.10.2026 вводит правила маркировки отдельных товаров для дома и интерьера с 01.03.2027 (по КонсультантПлюс). Это смежная система товарного учета, не поправка к РОП.",
+  "practical_checks": [
+    "Прочитать официальный текст ПП № 1374 и приложение, установить конкретные товары, коды и переходные даты.",
+    "Сопоставить группы маркировки с ПП № 2414 по ТН ВЭД/ОКПД2 только после проверки совпадения предмета и исключений.",
+    "Не подменять данные массы товаров/упаковки по РОП сведениями ГИС МТ без самостоятельного нормативного основания.",
+    "Не изменять активные экспертные пакеты до проверки первоисточника, применимости, регрессионных тестов и совместимости."
+  ],
+  "risks": "Неправильное отождествление обязанностей маркировки и РОП; пропуск сроков внедрения маркировки.",
+  "sources": {
+    "official_publication": "https://publication.pravo.gov.ru/document/0001202610230044",
+    "consultant_overview": "https://www.consultant.ru/law/hotdocs/96061.html",
+    "consultant_act": "https://www.consultant.ru/document/cons_doc_LAW_547597/"
+  },
+  "verification": {
+    "legal_act_and_status_confirmed_by_consultant": true,
+    "official_publication_number_confirmed_by_secondary_registry": true,
+    "official_primary_text_directly_read": false,
+    "reason": "publication.pravo.gov.ru returned inaccessible in web tool; no PDF obtained",
+    "complete_appendix_and_exact_stages_checked": false,
+    "no_claim_of_rop_rule_change": true
+  },
+  "activation_guard": "NO_ACTIVE_RULE_CHANGES; NO_HARD_RADAR_CHANGES; PRIMARY_TEXT_REQUIRED",
+  "dedup_key": "PP-RF-1374-20261021-HOME-GOODS-MARKING"
+}
