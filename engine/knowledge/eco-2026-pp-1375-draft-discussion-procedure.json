@@ -1,0 +1,16 @@
+{
+  "id": "ECO-2026-PP-1375-DRAFT-DISCUSSION-PROCEDURE",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1375-DRAFT-DISCUSSION-PROCEDURE.json",
+  "mode": "RESEARCH_ONLY_PRIMARY_DIRECT_READ_PENDING",
+  "priority": "YELLOW",
+  "topic": "Постановление Правительства РФ № 1375 от 21.10.2026: сроки обсуждения проектов НПА",
+  "summary": "Вторичный опубликованный текст устанавливает минимум 12 рабочих дней для обсуждения проекта или уведомления, переходное правило для ранее размещенных проектов и другие изменения сроков.",
+  "practical_checks": [
+    "Прямо проверить текст официального опубликования.",
+    "Пересчитать сроки для новых проектов экологических НПА после проверки.",
+    "Не изменять действующие правила MIRLEX до тестов."
+  ],
+  "official_source": "https://publication.pravo.gov.ru/document/0001202610220056",
+  "primary_direct_read": false,
+  "client_publication_allowed": false
+}
