@@ -288,6 +288,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-SOIL-DTP-NEKHAEVSKY-20261023.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-soil-dtp-nekhaevsky-20261023.json"
+    },
+    {
+      "id": "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01",
+      "path": "eco-changes/registry/ECO-2026-RPN-NVOS-636-CORRECTION-DEC01.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rpn-nvos-636-correction-dec01.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
