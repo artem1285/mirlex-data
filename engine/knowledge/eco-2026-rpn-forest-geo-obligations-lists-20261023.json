@@ -1,0 +1,27 @@
+{
+  "id": "ECO-2026-RPN-FOREST-GEO-OBLIGATIONS-LISTS-20261023",
+  "record_type": "ECO_LEGAL_RESEARCH",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-FOREST-GEO-OBLIGATIONS-LISTS-20261023.json",
+  "status": "RESEARCH_ONLY_PRIMARY_ORIGIN_PENDING",
+  "legal_status": "OFFICIAL_NON_NORMATIVE_COMPLIANCE_REFERENCE_LISTS",
+  "priority": "GREEN",
+  "subject": "Обновлены перечни НПА, содержащих обязательные требования, для федерального государственного геологического и лесного контроля (надзора)",
+  "legal_caution": "Перечни сами по себе не являются новым НПА и не создают самостоятельных обязанностей.",
+  "references": [
+    {
+      "name": "Перечень нормативных правовых актов (их отдельных положений), содержащих обязательные требования. Федеральный государственный геологический контроль (надзор)",
+      "reproduced_signed_document": "https://www.consultant.ru/document/cons_doc_LAW_547564/"
+    },
+    {
+      "name": "Перечень нормативных правовых актов (их отдельных положений), содержащих обязательные требования. Федеральный государственный лесной контроль (надзор)",
+      "reproduced_signed_document": "https://www.consultant.ru/document/cons_doc_LAW_547563/"
+    }
+  ],
+  "research_use": [
+    "Карта обязательных требований для недропользования (контроль действующих редакций НПА)",
+    "Карта обязательных требований для лесопользования (контроль действующих редакций НПА)",
+    "Сопоставление структурных единиц НПА, субъектов, ОКВЭД и ответственности"
+  ],
+  "activation": "No active rule changes. Primary agency publication and applicability checks required before deployment.",
+  "checked_at": "2026-10-25"
+}
