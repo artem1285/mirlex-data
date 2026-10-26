@@ -1,0 +1,28 @@
+{
+  "id": "KNOW-2026-VSRF-PRIVATE-POND-305-ES25-13598",
+  "source_eco_card": "eco-changes/registry/ECO-2026-VSRF-REVIEW3-2026-PRIVATE-POND.json",
+  "source_eco_id": "ECO-2026-VSRF-REVIEW3-2026-PRIVATE-POND",
+  "primary_source": "https://www.vsrf.ru/media-proxy/upload/iblock/e2f/kce3szabx3frxun8zj3pfihem42swh2v.pdf",
+  "source_case": "305-ЭС25-13598",
+  "date": "2026-10-26",
+  "research_mode": "VERIFIED_RESEARCH_ONLY",
+  "juridical_kind": "OFFICIAL_JUDICIAL_PRACTICE_NOT_NPA",
+  "domain": [
+    "water",
+    "land",
+    "land-use",
+    "project-design"
+  ],
+  "principle": "Искусственные обособленные водные объекты могут находиться в частной собственности только при доказанной изолированности и отсутствии гидравлической связи с федеральными водотоками; требуется исследовать обстоятельства объекта.",
+  "application_gate": "Не выводить из обзора универсальное право на засыпку, приватизацию или хозяйственное преобразование водоема. Нужна проверка права собственности на землю, истории создания пруда, гидрологии и действующих норм.",
+  "suggested_research_check": [
+    "Искусственное или естественное происхождение",
+    "Наличие гидравлической связи с другими водными объектами",
+    "Государственный водный реестр",
+    "Документы и история приватизации земельного участка",
+    "Сопоставление с п.14 обзора и определением №305-ЭС25-13598"
+  ],
+  "activation": "NOT_ACTIVATED_PENDING_APPLICABILITY_AND_REGRESSION_TESTS",
+  "expert_rules_modified": false,
+  "hard_radar_modified": false
+}
