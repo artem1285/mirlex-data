@@ -1,0 +1,53 @@
+{
+  "id": "ECO-2026-COURT-A08-9455-2019-WATER-DAMAGE-COSTS",
+  "dedup_key": "ARBITRAZH-2026-10-02-F10-2633-26-A08-9455-2019-WATER-DAMAGE-METHOD87-CLAUSE14",
+  "checked_at": "2026-10-26",
+  "review_publication_date": "2026-10-26",
+  "judgment_date": "2026-10-02",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "JUDICIAL_PRACTICE_NOT_NPA",
+  "status": "RESEARCH_ONLY_COURT_ACT_REPRINT_OFFICIAL_ORIGINAL_UNREAD",
+  "document": "Постановление Арбитражного суда Центрального округа от 02.10.2026 № Ф10-2633/26 по делу № А08-9455/2019",
+  "domain": "Водопользование / сверхнормативные сбросы / возмещение вреда водному объекту / зачет природоохранных затрат",
+  "what_changed": "26.10.2026 опубликован обзор судебного акта от 02.10.2026. Кассация оставила без удовлетворения жалобу Росприроднадзора о взыскании 7 166 225 руб. с водоканала за загрязнение р. Оскол: факт превышения нормативов и доказательства вреда суд признал, но согласился с учетом документально подтвержденных затрат на разработку проектно-сметной документации по реконструкции очистных сооружений при определении размера вреда по п.14 Методики №87. Судебный акт не меняет законодательство и не освобождает от соблюдения нормативов сброса.",
+  "dates": {
+    "incident": "2019-06",
+    "first_instance": "2025-12-12",
+    "appeal": "2026-06-04",
+    "cassation": "2026-10-02",
+    "news": "2026-10-26",
+    "new_normative_deadline": null
+  },
+  "scope": "Предприятия, осуществляющие сброс сточных вод в водные объекты и участвующие в спорах о возмещении вреда по Методике №87. Применимость зависит от редакции методики, расчетного периода, вида расходов, доказательств и связи с предупреждением загрязнения.",
+  "case_specific_amounts": {
+    "claim_rub": 7166225,
+    "project_design_costs_rub": 7852828,
+    "penalty_rub": 80000
+  },
+  "risk": "Пропуск допустимых законом вычетов при оспаривании расчета вреда либо обратная ошибка — необоснованное предположение, что любые природоохранные расходы автоматически гасят вред. Суд признал факт нарушения и достоверность проб, а не отсутствие экологического вреда.",
+  "mirlex_action": "RESEARCH_ONLY: проверить судебный акт в официальной Картотеке арбитражных дел; сверить действующую редакцию п.14 Методики №87 и судебную практику по зачету затрат, выделить виды расходов, периоды и доказательства; только затем тестировать диагностическую проверку расчета вреда водным объектам. Не переносить вывод на вред почвам, сверхлимитное размещение отходов или 25-кратную плату.",
+  "client_wording": "В деле № А08-9455/2019 кассационный суд поддержал учет документально подтвержденных затрат на проектирование реконструкции очистных сооружений при расчете вреда водному объекту по Методике №87. Вывод применим с учетом обстоятельств дела и не означает освобождения от ответственности за сверхнормативные сбросы. Публикация только после проверки официального текста судебного акта.",
+  "sources": {
+    "court_official_search": "https://kad.arbitr.ru/",
+    "court_act_full_text_reprint": "https://base.garant.ru/40332270/",
+    "court_appeal_reprint": "https://base.garant.ru/66895758/",
+    "professional_review": "https://cntd.ru/news/read/sud-podtverdil-zatraty-na-proektirovanie-rekonstrukcii-ocistnyx-sooruzenii-zacityvaiutsia-v-scet-vozmeshheniia-vreda-vodnomu-obieektu"
+  },
+  "verification": {
+    "court_act_identified": true,
+    "case_number_verified_by_two_sources": true,
+    "full_court_text_indexed_in_legal_system": true,
+    "official_court_original_directly_read": false,
+    "current_method_87_revision_compared": false,
+    "client_publication_allowed": false,
+    "unconfirmed_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "related_records": [
+    "ECO-2026-ROSVOD-14713-WATER-DISCHARGE-PROTOCOLS",
+    "ECO-2026-RPN-SEWAGE-SOIL-30469743-20261020"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-court-a08-9455-2019-water-damage-costs.json",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false
+}
