@@ -384,6 +384,12 @@
       "path": "eco-changes/registry/ECO-2026-ROSVOD-14713-WATER-DISCHARGE-PROTOCOLS.json",
       "status": "RESEARCH_ONLY_SOURCE_REPRINT_PRIMARY_ORIGINAL_UNREAD",
       "engine_knowledge": "engine/knowledge/eco-2026-rosvod-14713-water-discharge-protocols.json"
+    },
+    {
+      "id": "ECO-2026-COURT-A08-9455-2019-WATER-DAMAGE-COSTS",
+      "path": "eco-changes/registry/ECO-2026-COURT-A08-9455-2019-WATER-DAMAGE-COSTS.json",
+      "status": "RESEARCH_ONLY_COURT_ACT_REPRINT_OFFICIAL_ORIGINAL_UNREAD",
+      "engine_knowledge": "engine/knowledge/eco-2026-court-a08-9455-2019-water-damage-costs.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
