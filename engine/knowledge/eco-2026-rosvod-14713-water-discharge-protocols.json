@@ -1,0 +1,29 @@
+{
+  "id": "ECO-2026-ROSVOD-14713-WATER-DISCHARGE-PROTOCOLS",
+  "source_card": "eco-changes/registry/ECO-2026-ROSVOD-14713-WATER-DISCHARGE-PROTOCOLS.json",
+  "eco_radar_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_SOURCE_REPRINT_PRIMARY_ORIGINAL_UNREAD",
+  "legal_status": "OFFICIAL_CLARIFICATION_NOT_NPA",
+  "priority": "YELLOW",
+  "source": "https://base.garant.ru/415037454/",
+  "original_document": "Письмо Росводресурсов от 23.09.2026 № ВН-02-28/14713",
+  "principle": "Письмо разъясняет отсутствие обязательности протоколов исследования состава/свойств сточных вод в комплекте документов на решение о водопользовании для сброса; обязанность соблюдать качество сброса после получения решения сохраняется. Разъяснение не НПА.",
+  "linked_ids": [
+    "ECO-2026-PP-1342"
+  ],
+  "diagnostic_checks": [
+    "Проверить исчерпывающий комплект по пунктам 9,10,14 действующих Правил №18",
+    "Проверить запрет требования лишних документов по п.21",
+    "Проверить объемные параметры и основания отказа по пп.23,26",
+    "Разделять стадию получения решения и нормативы качества сброса после его получения",
+    "Сопоставить с изменениями постановления №1342 с 22.10.2026"
+  ],
+  "verification": {
+    "reprint_read": true,
+    "original_official_scan_read": false,
+    "rule_21_current_read": true,
+    "expert_deployment_allowed": false,
+    "client_publication_allowed": false
+  },
+  "cross_radar_guard": "Жёсткий радар и действующие экспертные пакеты не менять без прямой проверки первоисточника, применимости, регрессионных тестов."
+}
