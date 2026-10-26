@@ -1,0 +1,43 @@
+{
+  "id": "ECO-2026-RPN-649-PREVENTIVE-VISITS-20261014",
+  "first_discovered_at": "2026-10-26",
+  "checked_at": "2026-10-26",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "NON_NORMATIVE_INDIVIDUAL_AGENCY_ORDER_AMENDING_PREVENTIVE_VISIT_PLANS",
+  "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_AND_ATTACHMENTS_PENDING",
+  "document": "Приказ Росприроднадзора от 14.10.2026 № 649 «О внесении изменений в приказ Росприроднадзора от 23.12.2025 № 828»",
+  "document_date": "2026-10-14",
+  "publication_in_secondary_legal_system": "2026-10-21",
+  "domain": "Экологический надзор / профилактические визиты / геологический, земельный, лесной контроль и обращение с животными",
+  "what_changed": "По тексту приказа, воспроизведённому в КонсультантПлюс и Гарант, изложены в новой редакции приложения с планами профилактических визитов на 2026 год по пяти видам контроля: геологический, земельный, лесной, в области обращения с животными, федеральный экологический. Точные изменения перечня объектов, дат и организаций относительно предыдущей редакции не установлены: приложения содержат таблицы, часть которых доступна только в файлах Word.",
+  "scope": "Контролируемые лица и объекты, включенные в обновленные планы профилактических визитов по соответствующим видам федерального надзора. Сам приказ не устанавливает новых универсальных экологических обязанностей.",
+  "dates": {
+    "signed": "2026-10-14",
+    "year_of_visits": "2026",
+    "new_universal_compliance_deadline": "Не установлен",
+    "official_publication_and_effective_date": "Не подтверждены по официальному подписанному экземпляру"
+  },
+  "risk": "Ошибочно считать приказ новым НПА либо объявлять визит конкретному предприятию без прочтения приложений и сопоставления с официальным планом.",
+  "mirlex_action": "Получить оригинальный приказ Росприроднадзора и все пять приложений в машиночитаемом виде, сверить с прежней редакцией приказа № 828 и официальными сведениями о профилактических визитах; выделить только будущие даты и конкретные организации. В действующие правила не переносить без проверки и регрессионных тестов.",
+  "client_wording": "Публикацию отложить до проверки официального оригинала и планов визитов.",
+  "sources": {
+    "full_order_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547018/2ff7a8c72de3994f30496a0ccbb1ddafdaddf518/",
+    "appendices_index": "https://www.consultant.ru/document/cons_doc_LAW_547018/",
+    "ecological_visits_appendix": "https://www.consultant.ru/document/cons_doc_LAW_547018/5fed8a38414b1bda59c39053e7fa056e594fdcc2/",
+    "secondary_reprint": "https://base.garant.ru/415090611/"
+  },
+  "verification": {
+    "reproduced_order_read": true,
+    "all_five_appendices_read": false,
+    "official_signed_primary_read": false,
+    "comparison_previous_version": false,
+    "original_rpn_url_found": false,
+    "decision": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "dedup_key": "RPN-ORDER-649-20261014-PREVENTIVE-VISITS",
+  "engine_knowledge": "engine/knowledge/eco-2026-rpn-649-preventive-visits.json",
+  "notify": false,
+  "expert_rules_changed": false,
+  "hard_radar_changed": false
+}
