@@ -372,6 +372,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-649-PREVENTIVE-VISITS-20261014.json",
       "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_AND_ATTACHMENTS_PENDING",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-649-preventive-visits.json"
+    },
+    {
+      "id": "ECO-2026-VSRF-REVIEW3-2026-PRIVATE-POND",
+      "path": "eco-changes/registry/ECO-2026-VSRF-REVIEW3-2026-PRIVATE-POND.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-vsrf-review3-private-pond-305-es25-13598.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
