@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "id": "ECO-2026-ROSPOTREB-MR-0432-26-RADIATION-BUILDINGS",
+  "checked_at": "2026-10-27",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "APPROVED_METHODICAL_RECOMMENDATIONS_NOT_YET_EFFECTIVE; NOT_NPA",
+  "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_UNREAD",
+  "document": "МР 2.6.1.0432-26 «Организация радиационного обследования и санитарно-эпидемиологическая оценка жилых, общественных и производственных зданий и сооружений по показателям радиационной безопасности»; утв. Роспотребнадзором 12.10.2026",
+  "dates": {
+    "approved": "2026-10-12",
+    "reported_first_review": "2026-10-19",
+    "effective_reported": "2026-12-28",
+    "prior_methodology": "МР 2.6.1.0333-23"
+  },
+  "change": "По тексту, воспроизведенному в ГАРАНТ и КонсультантПлюс, методические рекомендации заменяют МР 2.6.1.0333-23 и описывают алгоритмы и минимальный объем радиационного обследования зданий при вводе, эксплуатации, реконструкции, капитальном ремонте и сносе; содержат методы оценки радона, гамма-излучения, локальных аномалий, радионуклидов в строительных материалах и отходах демонтажа. Не следует выдавать рекомендации за новые общеобязательные нормы: обязательные требования определяются отдельными СанПиН и законами.",
+  "scope": "Проектировщики, застройщики, собственники производственных и общественных зданий, организации по обследованию/демонтажу, испытательные лаборатории; обращение со строительными отходами при возможном радиационном загрязнении.",
+  "deadline": "28.12.2026 — дата введения новых методических рекомендаций по правовым системам, не новый обязательный срок для всех предприятий.",
+  "risk": "Риск использования устаревшей методики обследования, некорректной оценки радиационных аномалий и строительных отходов при демонтаже; нельзя автоматически предписывать обследование каждому объекту только на основании методических рекомендаций.",
+  "what_to_do": "Найти и прочитать оригинал Роспотребнадзора/официальное издание, проверить разделы IV–VII и приложения, сопоставить с СанПиН 2.6.4115-25 и МР 2.6.1.0333-23. В исследовательском контуре MIRLEX связать с проектированием, демонтажом и строительными отходами; экспертные правила не менять до проверки первоисточника и регрессионных тестов.",
+  "client_wording": "Публикацию отложить до подтверждения первоисточника. сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "primary_original": "NOT_LOCATED",
+    "secondary_full_text": "https://base.garant.ru/415081557/",
+    "secondary_full_text_alt": "https://www.consultant.ru/document/cons_doc_LAW_546899/0a42cc3f87692e72513bdac81fbd236f2db8b1a6/",
+    "review": "https://www.garant.ru/news/2279276/",
+    "review_earlier": "https://ppt.ru/obzory/vstupaet-v-silu/metodicheskie-rekomendatsii-mr-2-6-1-0432-26-12-10-2026"
+  },
+  "verification": {
+    "original_publisher_document_read": false,
+    "full_reprint_read": true,
+    "independent_secondary_sources": true,
+    "classification": "RESEARCH_ONLY",
+    "notification_allowed": false,
+    "regression_tests_run": false
+  },
+  "dedup_key": "ROSPOTREB-MR-2.6.1.0432-26-20261012",
+  "related": [
+    "ECO-2026-FMBA-107-RADIATION-CHECKLISTS"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-rospotreb-mr-0432-26-radiation-buildings.json",
+  "hard_radar": "NO_CHANGE",
+  "expert_rules": "NO_CHANGE",
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_PRIMARY_VERIFIED"
+}
