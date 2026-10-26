@@ -1,0 +1,26 @@
+{
+  "id": "eco-2026-rpn-649-preventive-visits",
+  "source_radar_id": "ECO-2026-RPN-649-PREVENTIVE-VISITS-20261014",
+  "source_radar_card": "eco-changes/registry/ECO-2026-RPN-649-PREVENTIVE-VISITS-20261014.json",
+  "source_radar_index": "eco-changes/index.json",
+  "created_at": "2026-10-26",
+  "knowledge_type": "RESEARCH_ONLY",
+  "status": "PRIMARY_ORIGINAL_AND_ATTACHMENTS_PENDING",
+  "legal_status": "NON_NORMATIVE_AGENCY_ORDER_AMENDING_2026_PREVENTIVE_VISIT_PLANS",
+  "subject": "Росприроднадзор приказ 649 от 14.10.2026: изменения планов профилактических визитов на 2026 год по пяти видам федерального надзора",
+  "verified_scope": "Воспроизведённый текст приказа устанавливает замену приложений к программе профилактики по геологическому, земельному, лесному, экологическому надзору и надзору за обращением с животными; индивидуальные планы и будущие даты не проверены.",
+  "research_tasks": [
+    "Найти оригинал приказа № 649 на rpn.gov.ru и все пять приложений.",
+    "Сопоставить редакции приказа № 828 до и после 14.10.2026, выявить только новые и будущие визиты.",
+    "Не трактовать профилактический визит как установленное нарушение или изменение общих обязательных требований.",
+    "После подтверждения провести тесты совместимости, прежде чем менять действующие диагностические пакеты."
+  ],
+  "sources": [
+    "https://www.consultant.ru/document/cons_doc_LAW_547018/",
+    "https://base.garant.ru/415090611/"
+  ],
+  "signal_policy": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "client_notification_allowed": false,
+  "expert_rules_changed": false,
+  "hard_radar_changed": false
+}
