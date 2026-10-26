@@ -1,0 +1,34 @@
+{
+  "id": "ECO-2026-COURT-A08-9455-2019-WATER-DAMAGE-COSTS",
+  "source_card": "eco-changes/registry/ECO-2026-COURT-A08-9455-2019-WATER-DAMAGE-COSTS.json",
+  "eco_radar_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_COURT_ACT_REPRINT_OFFICIAL_ORIGINAL_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "JUDICIAL_PRACTICE_NOT_NPA",
+  "document": "Постановление Арбитражного суда Центрального округа от 02.10.2026 № Ф10-2633/26 по делу № А08-9455/2019",
+  "core_rule": "В конкретном споре по Методике №87 суд признал возможность учета фактических затрат на проектирование реконструкции очистных сооружений при расчете вреда водному объекту; это не универсальное освобождение от возмещения вреда.",
+  "sources": {
+    "court_official_search": "https://kad.arbitr.ru/",
+    "court_act_full_text_reprint": "https://base.garant.ru/40332270/",
+    "court_appeal_reprint": "https://base.garant.ru/66895758/",
+    "professional_review": "https://cntd.ru/news/read/sud-podtverdil-zatraty-na-proektirovanie-rekonstrukcii-ocistnyx-sooruzenii-zacityvaiutsia-v-scet-vozmeshheniia-vreda-vodnomu-obieektu"
+  },
+  "verification": {
+    "court_act_identified": true,
+    "case_number_verified_by_two_sources": true,
+    "full_court_text_indexed_in_legal_system": true,
+    "official_court_original_directly_read": false,
+    "current_method_87_revision_compared": false,
+    "client_publication_allowed": false,
+    "unconfirmed_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "diagnostic_research_questions": [
+    "Проверить применимость п.14 Методики №87 в действующей редакции",
+    "Проверить фактические расходы, их период, доказательства оплаты и целевое назначение",
+    "Разграничить доказанный вред, штраф и денежный расчет вреда",
+    "Не переносить на почвы, отходы или 25-кратный коэффициент"
+  ],
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_guard": "Не менять Жёсткий радар, действующие диагностические правила и экспертные пакеты без проверки официального первоисточника, применимости, регрессионных тестов."
+}
