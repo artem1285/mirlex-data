@@ -1,0 +1,22 @@
+{
+  "id": "KNOWLEDGE-ECO-2026-PROJECT-172046-RADIOELECTRONICS-MARKING",
+  "eco_radar_id": "ECO-2026-PROJECT-172046-RADIOELECTRONICS-MARKING",
+  "eco_radar_card": "eco-changes/registry/ECO-2026-PROJECT-172046-RADIOELECTRONICS-MARKING.json",
+  "source_project_id": "01/01/10-26/00172046",
+  "knowledge_type": "RESEARCH_ONLY",
+  "legal_status": "DRAFT_NOT_IN_FORCE",
+  "primary_text_verified": false,
+  "summary": "Минпромторг подготовил проект добровольного эксперимента маркировки радиоэлектронной продукции на 01.12.2026–31.05.2028. Сведения из вторичных обзоров; прямое чтение проекта на regulation.gov.ru не состоялось.",
+  "rop_relevance": "Маркировка — смежный контур идентификации товаров; проект не изменяет 89-ФЗ и ПП № 2414 и не доказывает наличие новых обязанностей по РОП.",
+  "next_verification": "Получить оригинал и приложения проекта 172046, проверить этапы и коды ТН ВЭД/ОКПД2, сопоставить с перечнем № 2414 и уже имеющимися карточками РОП, провести регрессионные тесты до внедрения.",
+  "sources": {
+    "official_project_candidate": "https://regulation.gov.ru/projects/172046",
+    "consultant_projects_feed": "https://www.consultant.ru/online/lastdocs/PNPA/",
+    "consultant_review": "https://www.consultant.ru/law/hotdocs/96013.html",
+    "garant_review": "https://www.garant.ru/news/2281357/"
+  },
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "checked_at": "2026-10-27"
+}
