@@ -366,6 +366,12 @@
       "path": "eco-changes/registry/ECO-2026-MINTRUD-365N-ECO-PROFSTANDARD-2027.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-mintrud-365n-eco-profstandard-2027.json"
+    },
+    {
+      "id": "ECO-2026-RPN-649-PREVENTIVE-VISITS-20261014",
+      "path": "eco-changes/registry/ECO-2026-RPN-649-PREVENTIVE-VISITS-20261014.json",
+      "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_AND_ATTACHMENTS_PENDING",
+      "engine_knowledge": "engine/knowledge/eco-2026-rpn-649-preventive-visits.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
