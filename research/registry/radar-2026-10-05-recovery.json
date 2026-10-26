@@ -85,6 +85,77 @@
       "mirlex_check": "APG production; burned/dispersed volume; primary accounting; percentage; annual threshold; exceptions; K=25; declaration/payment reconciliation",
       "red_flag": "APG is burned/dispersed but no traceable produced -> burned -> % -> threshold -> exception/K=25 -> fee calculation",
       "update": "ENG-OIL-APG-NVOS-001; thresholds 18/13/9/5%; K=25/exceptions; 2026 temporal flag"
+    },
+    {
+      "id": "IND-ACCIDENT-001",
+      "record_type": "ADDITIONAL_PRIMARY_EVIDENCE",
+      "date": "2026-10-26",
+      "event_date": "2026-10-23",
+      "industry_contour": "TRANSPORT_ACCIDENT / FUEL_OR_OIL_SPILL / SOIL / EMERGENCY_EVIDENCE",
+      "actuality_status": "RESEARCH_ONLY_LEGAL_AND_JUDICIAL_TEXT_VERIFICATION_PENDING",
+      "primary_source_url": "https://rpn.gov.ru/press/news/sud_obyazal_vinovnika_dtp_v_volgogradskoy_oblasti_vozmestit_bolee_2_6_mln_rubley_za_ushcherb_pochvam/",
+      "primary_source_issuer": "Росприроднадзор",
+      "primary_source_date": "2026-10-23",
+      "confirmed_facts": [
+        "Нехаевский районный суд Волгоградской области, по сообщению Росприроднадзора, удовлетворил иск о возмещении 2 645 697 руб. вреда почвам после ДТП в станице Усть-Бузулукской.",
+        "Местный житель сообщил о происшествии; инспекторы и ЦЛАТИ выехали, зафиксировали следы нефтепродуктов и выгоревшую траву.",
+        "Пробы и обследование: площадь загрязнения 240 м²; добровольное возмещение не состоялось; суд удовлетворил требования ведомства."
+      ],
+      "legal_basis": [
+        {
+          "reference": "ФЗ от 10.01.2002 № 7-ФЗ, ст. 77 и 78",
+          "status": "CHECKED_TEXT_CURRENT_AS_OF_2026_10_26"
+        },
+        {
+          "reference": "Приказ Минприроды России от 08.07.2010 № 238, Методика исчисления размера вреда почвам",
+          "status": "REQUIRES_CASE_METHOD_AND_CURRENT_EDITION_VERIFICATION"
+        }
+      ],
+      "physical_chain": "ДТП → возможная разгерметизация топливной/масляной системы → нефтепродукты на поверхности → почва (240 м² по сообщению РПН) → выезд и отбор проб → расчет вреда → требование → суд",
+      "evidence_limits": [
+        "Точный номер дела, полный текст судебного акта, дата вступления в силу, ответчик, источник утечки, концентрации и примененные коэффициенты в опубликованной новости не приведены.",
+        "Сообщение РПН подтверждает заявленную позицию и сообщенный результат, но не заменяет судебный акт и расчет.",
+        "Нельзя автоматически переносить размер вреда на другие ДТП или делать вывод о виновности любого собственника транспортного средства."
+      ],
+      "risk": "Даже разовое ДТП вне производственной площадки может привести к самостоятельному требованию о возмещении вреда почвам; риск не исчерпывается оформлением ДТП и страхованием автомобиля.",
+      "red_flag": "После разлива нефтепродуктов нет протоколов первичной фиксации, границ загрязнения, проб, мер локализации, документов о сборе загрязненного грунта и проверке результата очистки.",
+      "three_diagnostic_questions": [
+        "Есть ли журнал аварий и документы о фактическом пути нефтепродуктов от транспорта/оборудования до почвы?",
+        "Зафиксированы ли место, площадь, лабораторные пробы, меры локализации и передача загрязненного грунта по документам?",
+        "Кто контролировал устранение последствий, есть ли независимая проверка очистки и доказательства для возможного спора о причинной связи и размере вреда?"
+      ],
+      "mirlex_checks": [
+        "Аварийный сценарий и границы ответственности",
+        "Маршрут загрязнения, осмотр, фото/видео и лабораторные документы",
+        "Документы о сборе, классификации и передаче загрязненного грунта при его образовании",
+        "Акт очистки, контрольные пробы, методика расчета вреда и возможные альтернативные источники загрязнения"
+      ],
+      "related_ids": [
+        "IND-OIL-001",
+        "IND-ACCIDENT-001"
+      ],
+      "services": [
+        "MIRLEX аварийная экологическая диагностика",
+        "Аудит фактических маршрутов нефтепродуктов и отходов",
+        "Экологическая документация и сопровождение возмещения вреда"
+      ],
+      "site_assistant_route": "ECO_EXPERT / ACCIDENT / SOIL; ROP_EXPERT referral only when independent ROP obligation is evidenced",
+      "score_components": {
+        "rarity": 18,
+        "enterprise_risk": 24,
+        "repeatability": 16,
+        "diagnostic_commercial_value": 18,
+        "novelty_to_core": 6
+      },
+      "score_total": 82,
+      "next_hypotheses": [
+        {
+          "status": "HYPOTHESIS_UNVERIFIED",
+          "text": "Повторяемый сигнал: ДТП и аварии транспорта становятся самостоятельным источником почвенного ущерба; сравнить с промышленными разливами и доказательствами причинной связи."
+        }
+      ],
+      "update_needed": "No active rule until case text, methodology and regression checks; existing permanent ID only",
+      "index_status": "INDEXED_PATH_EXISTING_PENDING_LIVE_COMPLETE"
     }
   ]
 }
