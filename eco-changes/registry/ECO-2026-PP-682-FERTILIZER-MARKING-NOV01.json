@@ -1,0 +1,50 @@
+{
+  "id": "ECO-2026-PP-682-FERTILIZER-MARKING-NOV01",
+  "checked_at": "2026-10-27",
+  "priority": "RED",
+  "priority_is_not_legal_status": true,
+  "legal_status": "IN_FORCE_NEXT_MANDATORY_STAGE_2026-11-01",
+  "engine_status": "RESEARCH_ONLY_PRIMARY_OFFICIAL_DIRECT_READ_PENDING",
+  "document": "Постановление Правительства РФ от 02.06.2026 № 682 «Об утверждении Правил маркировки отдельных видов удобрений в потребительской упаковке средствами идентификации…»",
+  "act_date": "2026-06-02",
+  "official_publication_date": "2026-06-02",
+  "official_publication_number": "0001202606020069",
+  "effective_date": "2026-09-01",
+  "next_mandatory_stage": "2026-11-01",
+  "discovered_by": "upcoming effective date monitoring; no new act issued in last 14 days",
+  "topic": "Агрохимикаты / удобрения в потребительской упаковке / маркировка «Честный знак»; смежно с РОП, не изменение РОП",
+  "what_changed": "С 01.11.2026 участники оборота удобрений, осуществляющие ввод в оборот продукции, одновременно относящейся к ТН ВЭД ЕАЭС 3105 и ОКПД2 20.15.6/20.15.7, должны наносить средства идентификации и передавать сведения о нанесении и вводе в оборот. Постановление уже действует с 01.09.2026; новый этап начинается 01.11.2026.",
+  "scope": "Производители, импортеры и иные участники оборота отдельных удобрений в потребительской упаковке при выполнении условий кодов и без исключений Правил. Не распространять на все удобрения и пестициды.",
+  "exceptions": "Пункт 3 Правил: товары исключительно для сельскохозяйственного производства; нетто >10 кг или объем >10 л; нетто до 5 г включительно или объем до 5 мл включительно; ряд иных исключений.",
+  "dates": {
+    "registration_from": "2026-09-01",
+    "marking_and_input_from": "2026-11-01",
+    "import_transition_to": "2026-11-30",
+    "existing_unmarked_stock_marking_to": "2027-11-01",
+    "producer_importer_supply_unmarked_old_stock_to": "2027-04-01",
+    "turnover_and_withdrawal_reporting_from": "2027-11-01"
+  },
+  "risk": "С 01.11.2026 риск ввода подпадающих товаров в оборот без маркировки и сведений ГИС МТ; обратный риск — ошибочное распространение требований на исключенные товары и неверное смешение маркировки с обязанностями по РОП.",
+  "mirlex_action": "Проверить ассортимент и коды ТН ВЭД/ОКПД2 у производителей и импортеров удобрений; отдельно проверить упаковку, массу/объем и исключение для исключительно сельхозпроизводства, регистрацию в ГИС МТ, нанесение кодов и сведения о вводе с 01.11.2026. Сопоставить с перечнем РОП №2414 только как отдельную задачу, не утверждать автоматическую связь.",
+  "client_wording": "С 1 ноября 2026 года для отдельных удобрений в потребительской упаковке начинается обязательная маркировка и передача сведений о вводе в оборот в «Честный знак». Применимость зависит от кодов и исключений Правил №682; это не новое требование РОП.",
+  "sources": {
+    "official_publication": "https://publication.pravo.gov.ru/document/0001202606020069",
+    "full_act_reprint": "https://www.consultant.ru/document/cons_doc_LAW_535843/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/",
+    "rules_section_1": "https://www.consultant.ru/document/cons_doc_LAW_535843/c6dc2aa72e6ad4047c1fcf487bc45814291f1de2/",
+    "consultant_summary": "https://www.consultant.ru/legalnews/31738/",
+    "garant_act": "https://base.garant.ru/414326565/"
+  },
+  "verification": {
+    "full_reprinted_act_read": true,
+    "scope_exceptions_read": true,
+    "official_publication_number_crosschecked": true,
+    "official_portal_direct_read": false,
+    "official_portal_error": "web tool cannot fetch official act; no direct verification of publication PDF",
+    "primary_direct_verification_required_for_notification": true,
+    "unverified_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "dedup_key": "GOV-RF-2026-06-02-PP-682-FERTILIZER-CONSUMER-PACK-MARKING-2026-11-01",
+  "engine_knowledge": "engine/knowledge/eco-2026-pp-682-fertilizer-marking-nov01.json",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false
+}
