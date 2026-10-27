@@ -1,0 +1,46 @@
+{
+  "id": "ECO-2026-PP-682-FERTILIZER-MARKING-NOV01",
+  "source_card": "eco-changes/registry/ECO-2026-PP-682-FERTILIZER-MARKING-NOV01.json",
+  "eco_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY_PRIMARY_OFFICIAL_DIRECT_READ_PENDING",
+  "domain": [
+    "агрохимикаты",
+    "удобрения",
+    "маркировка товаров"
+  ],
+  "priority": "RED",
+  "legal_status": "IN_FORCE_NEXT_MANDATORY_STAGE_2026-11-01",
+  "document": "Постановление Правительства РФ от 02.06.2026 № 682 «Об утверждении Правил маркировки отдельных видов удобрений в потребительской упаковке средствами идентификации…»",
+  "applicability": {
+    "tn_ved_eaes": "3105",
+    "okpd2": [
+      "20.15.6",
+      "20.15.7"
+    ],
+    "consumer_packaging": true,
+    "exceptions_reference": "Пункт 3 Правил №682"
+  },
+  "critical_date": "2026-11-01",
+  "rules_summary": "Маркировка и передача сведений о вводе в оборот для подпадающих удобрений с 01.11.2026; иные этапы и исключения см. карточку.",
+  "sources": {
+    "official_publication": "https://publication.pravo.gov.ru/document/0001202606020069",
+    "full_act_reprint": "https://www.consultant.ru/document/cons_doc_LAW_535843/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/",
+    "rules_section_1": "https://www.consultant.ru/document/cons_doc_LAW_535843/c6dc2aa72e6ad4047c1fcf487bc45814291f1de2/",
+    "consultant_summary": "https://www.consultant.ru/legalnews/31738/",
+    "garant_act": "https://base.garant.ru/414326565/"
+  },
+  "verification": {
+    "full_reprinted_act_read": true,
+    "scope_exceptions_read": true,
+    "official_publication_number_crosschecked": true,
+    "official_portal_direct_read": false,
+    "official_portal_error": "web tool cannot fetch official act; no direct verification of publication PDF",
+    "primary_direct_verification_required_for_notification": true,
+    "unverified_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "rop_interaction": "Не является изменением законодательства о РОП. Проверка пересечения с перечнем №2414 — отдельное исследование.",
+  "diagnostic_rules_deployment": false,
+  "expert_package_deployment": false,
+  "hard_radar_modified": false,
+  "notification_allowed": false
+}
