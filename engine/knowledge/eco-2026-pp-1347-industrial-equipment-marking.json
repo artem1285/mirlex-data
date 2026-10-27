@@ -1,0 +1,33 @@
+{
+  "id": "eco-2026-pp-1347-industrial-equipment-marking",
+  "eco_radar_id": "ECO-2026-PP-1347-INDUSTRIAL-EQUIPMENT-MARKING",
+  "eco_radar_card": "eco-changes/registry/ECO-2026-PP-1347-INDUSTRIAL-EQUIPMENT-MARKING.json",
+  "mode": "RESEARCH_ONLY",
+  "legal_status": "IN_FORCE_VOLUNTARY_EXPERIMENT_NOT_YET_STARTED",
+  "priority": "GREEN",
+  "subject": "Промышленное оборудование и компоненты; эксперимент по маркировке; смежный рынок, НЕ изменение РОП и НЕ обязательная маркировка",
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610150029",
+  "primary_original_direct_read": false,
+  "verified_secondary_full_text": [
+    "https://www.kontur-extern.ru/info/normativ/document/1/508803-postanovlenie-pravitelstva-rf-ot-14-10-2026-n-1347",
+    "https://www.garant.ru/hotlaw/federal/2274176/"
+  ],
+  "key_facts": {
+    "act_date": "2026-10-14",
+    "publication_date": "2026-10-15",
+    "effective_date": "2026-10-23",
+    "experiment_from": "2026-11-01",
+    "experiment_to": "2027-08-31",
+    "voluntary": true,
+    "affected_goods": [
+      "электрогенераторные установки с ДВС",
+      "определенные двигатели внутреннего сгорания",
+      "генераторы переменного тока",
+      "подшипники",
+      "узлы лифтового оборудования и устройства безопасности"
+    ]
+  },
+  "applicability": "Не является изменением 89-ФЗ, ПП РФ № 2414 или лицензирования обращения с отходами; не устанавливает обязательную маркировку для всех предприятий.",
+  "activation_gate": "Оригинал первоисточника, точная применимость, тесты и совместимость; до выполнения никаких изменений экспертных правил.",
+  "created_at": "2026-10-27"
+}
