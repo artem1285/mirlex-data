@@ -1,0 +1,46 @@
+{
+  "id": "ECO-2026-MPR-14069OG-NVOS-IV-PAYMENT",
+  "checked_at": "2026-10-27",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "PURPORTED_OFFICIAL_CLARIFICATION_NOT_NPA_PRIMARY_ORIGINAL_UNREAD",
+  "engine_status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_UNREAD",
+  "document": "Письмо Минприроды России от 14.10.2026 № 19-78/14069-ОГ «О плате за негативное воздействие на окружающую среду»",
+  "topic": "Плата за НВОС: объекты IV категории при наличии у одного плательщика объектов I–III категорий; объекты вне критериев категорирования",
+  "discovery_date": "2026-10-27",
+  "document_date": "2026-10-14",
+  "secondary_publication_date": "2026-10-21",
+  "what_reported": "По отраслевому обзору Минприроды разъяснило, что освобождение от платы за НВОС предусмотрено для лиц, ведущих деятельность исключительно на объектах IV категории. При одновременном наличии объектов I–III и IV категорий общий статус лица требует проверки обязанности по плате и декларации по каждому виду негативного воздействия. Нельзя автоматически утверждать, что за любой объект IV категории всегда возникает платеж: предмет платы и фактическое воздействие проверяются отдельно.",
+  "affected": "Юридические лица и ИП, эксплуатирующие несколько объектов НВОС разных категорий; экологические службы, подготавливающие декларации о плате.",
+  "dates": {
+    "letter": "2026-10-14",
+    "sector_publication": "2026-10-21",
+    "new_normative_effective_date": "NONE_OFFICIAL_LETTER_NOT_NPA",
+    "ordinary_annual_declaration": "10 марта следующего года — указано отраслевым источником, проверить по действующему акту перед использованием"
+  },
+  "risk": "Неправомерное исключение площадок IV категории из расчета платы только из-за категории; обратная ошибка — начисление платы без установления облагаемого вида негативного воздействия; смешение отсутствия обязанности учета и отсутствия обязанности по плате.",
+  "mirlex_action": "Найти и прочитать оригинал письма № 19-78/14069-ОГ, проверить ст. 16 и 16.1 ФЗ № 7-ФЗ и применимую редакцию Правил платы, отдельно проанализировать объекты вне критериев I–IV; сопоставить с QZ101F. До проверки не изменять действующие правила MIRLEX.",
+  "client_wording": "НЕ ПУБЛИКОВАТЬ: полный официальный первоисточник не прочитан.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "secondary_sector_review": "https://www.ecoindustry.ru/news2/view/66746.html",
+    "secondary_doc_reprint": "https://ecotvet.ru/",
+    "official_primary_url": null
+  },
+  "verification": {
+    "sector_review_directly_read": true,
+    "exact_number_and_date_from_sector_review": true,
+    "official_original_directly_read": false,
+    "legal_position_not_confirmed_by_original": true,
+    "notification_allowed": false
+  },
+  "dedup_key": "MPR-2026-10-14-19-78-14069-OG-NVOS-IV-PAYMENT",
+  "related": [
+    "eco-changes/registry/ECO-2026-RPN-NVOS-636-CORRECTION-DEC01.json",
+    "ПП РФ от 29.05.2026 № 636",
+    "ФЗ от 10.01.2002 № 7-ФЗ, ст. 16, 16.1"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-mpr-14069og-nvos-iv-payment.json",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false
+}
