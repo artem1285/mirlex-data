@@ -1,0 +1,24 @@
+{
+  "id": "KNOWLEDGE-ECO-2026-FSA-SM-041-10019-LAB-PT-20261007",
+  "radar_card_id": "ECO-2026-FSA-SM-041-10019-LAB-PT-20261007",
+  "source_card": "eco-changes/registry/ECO-2026-FSA-SM-041-10019-LAB-PT-20261007.json",
+  "checked_at": "2026-10-28",
+  "status": "RESEARCH_ONLY",
+  "knowledge_area": "LABORATORY_ACCREDITATION",
+  "title": "СМ 04.1-1.0019 v02.1: ПК и МСИ в лабораториях",
+  "findings": [
+    "Сверить ссылочную версию руководства при проектировании лаборатории КХА/биотестирования",
+    "Разработать риск-ориентированный план ПК/МСИ и правила обоснования доступности и уместности",
+    "Предусмотреть доказательства поиска провайдеров ПК/МСИ и компетентности организатора МСИ",
+    "Проверить официальный оригинал Росаккредитации до правового внедрения"
+  ],
+  "sources": {
+    "official_original_url": null,
+    "reproduced_full_text": "https://sudact.ru/law/sm-n-041-10019-rukovodstvo-po-akkreditatsii-ispytatelnykh_1/",
+    "consultant_overview": "https://www.consultant.ru/law/review/209856715.html",
+    "comparison_review": "https://cntd.ru/news/read/rosakkreditaciia-obnovila-rekomendacii-po-sobliudeniiu-p772-gost-isoiec-17025-2019",
+    "status_crosscheck": "https://www.normacs.ru/Doclist/doc/29LOS.html"
+  },
+  "expert_rules_modified": false,
+  "hard_radar_modified": false
+}
