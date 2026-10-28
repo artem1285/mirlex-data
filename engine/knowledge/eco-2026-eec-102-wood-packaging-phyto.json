@@ -1,0 +1,30 @@
+{
+  "id": "ECO-2026-EEC-102-WOOD-PACKAGING-PHYTO",
+  "source_id": "ECO-2026-EEC-102-WOOD-PACKAGING-PHYTO",
+  "source_card": "eco-changes/registry/ECO-2026-EEC-102-WOOD-PACKAGING-PHYTO.json",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "priority": "YELLOW",
+  "legal_status": "IN_FORCE",
+  "topic": "Карантинные фитосанитарные требования ЕАЭС к древесным упаковочным и крепёжным материалам; связь с международными поставками и упаковкой, без изменения РОП",
+  "summary": "С 28.10.2026 вступило в силу Решение Совета ЕЭК № 102 от 09.09.2026: при наличии установленной маркировки, подтверждающей обработку древесной упаковки/крепежа прогреванием по всей толще или фумигацией, фитосанитарный сертификат на эти материалы не требуется.",
+  "practical_checks": [
+    "Установить, используется ли древесная упаковка/крепёж в международных поставках через ЕАЭС.",
+    "Проверить наличие, читаемость и соответствие фитосанитарной маркировки требованиям Решения Совета ЕЭК № 157.",
+    "Проверить, подтверждает ли маркировка обработку прогреванием по всей толще древесины или фумигацией.",
+    "Не распространять освобождение на сам товар и на немаркированную тару.",
+    "Не приравнивать исключение из фитосанитарной сертификации к освобождению от обязанностей по РОП.",
+    "До изменения активных правил проверить применимость, совместимость и регрессионные тесты."
+  ],
+  "risks": "Ошибочное освобождение от документов, отсутствие маркировки; ошибочная подмена требований РОП.",
+  "sources": {
+    "official_card": "https://docs.eaeunion.org/documents/461/10943/",
+    "official_signed_pdf": "https://docs.eaeunion.org/upload/iblock/3a8/2f99an5pbjmgo9jcmmlv0q3b0ramdi6w/Reshenie-Soveta-_-102-ot-9-sentyabrya-2026-goda.pdf"
+  },
+  "verification": {
+    "official_card_direct_read": true,
+    "official_pdf_two_pages_read": true,
+    "legal_status_verified": true
+  },
+  "activation_guard": "NO_ACTIVE_RULE_CHANGES; NO_HARD_RADAR_CHANGES; RESEARCH_ONLY_UNTIL_REGRESSION_TESTS",
+  "dedup_key": "EEC-COUNCIL-102-20260909-WOOD-PACKAGING-PHYTO"
+}
