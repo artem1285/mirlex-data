@@ -504,6 +504,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-38137-WASTE-PASSPORT-OLD-PROTOCOLS.json",
       "status": "RESEARCH_ONLY_ORIGINAL_MINISTRY_LETTER_NOT_DIRECTLY_VERIFIED",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-38137-waste-passport-old-protocols.json"
+    },
+    {
+      "id": "ECO-2026-KGD-MPR-441-TKO-TERRITORIAL-SCHEME",
+      "path": "eco-changes/registry/ECO-2026-KGD-MPR-441-TKO-TERRITORIAL-SCHEME.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_TEXT_NOT_VERIFIED",
+      "engine_knowledge": "engine/knowledge/eco-2026-kgd-mpr-441-tko-territorial-scheme.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
