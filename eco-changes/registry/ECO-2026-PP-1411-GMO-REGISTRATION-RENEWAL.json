@@ -1,0 +1,41 @@
+{
+  "id": "ECO-2026-PP-1411-GMO-REGISTRATION-RENEWAL",
+  "checked_at": "2026-10-29",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ADOPTED_NOT_IN_FORCE_AS_OF_2026-10-29",
+  "engine_status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+  "document": "Постановление Правительства Российской Федерации от 27.10.2026 № 1411 «О внесении изменений в постановление Правительства Российской Федерации от 18 января 2023 г. № 35»",
+  "act_date": "2026-10-27",
+  "official_publication_date": "2026-10-27",
+  "official_publication_number": "0001202610270026",
+  "official_publication_verification": "Реквизиты публикации установлены по стороннему индексу IPBD; прямое чтение официального текста на publication.pravo.gov.ru не удалось",
+  "effective_date": "2027-10-01 (пункт 2 постановления в воспроизведенном тексте КонсультантПлюс)",
+  "topic": "Государственная регистрация ГМО, предназначенных для выпуска в окружающую среду, и продукции с использованием таких организмов: продление регистрации",
+  "what_changed": "Предусмотрена регистрация на новый срок для ранее зарегистрированных ГМО и продукции; регистрация отдельных ГМО на новый срок ограничена 10 годами; для процедуры требуются заявление и новое заключение молекулярно-генетического исследования; решения и сведения передаются через ЕПГУ, срок рассмотрения по ряду процедур сокращен с 7 до 5 рабочих дней; в реестрах появятся сведения о новом сроке.",
+  "scope": "Заявители и организации, осуществляющие регистрацию ГМО и продукции, включая корма и кормовые добавки, ветеринарные лекарственные средства, выращивание ГМ животных, растений и сельскохозяйственных микроорганизмов; косвенно агробиотехнологии и экологическая оценка. Не является изменением РОП или порядка обращения с отходами.",
+  "risk": "Применение процедуры до 01.10.2027; неверное предположение, что срок регистрации продлевается автоматически; некорректное расширение нормы на любые виды ГМО и продукты.",
+  "mirlex_action": "Вести как отдельную исследовательскую отраслевую запись; проверить прямой официальный оригинал и действующую редакцию ПП № 35, сопоставить виды целевого использования с п. 10, проверить будущие регламенты и протестировать применимость до перевода в экспертные правила.",
+  "client_wording": "До проверки официального первоисточника не публиковать как подтвержденное изменение.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "official_primary_url": "https://publication.pravo.gov.ru/document/0001202610270026",
+    "consultant_full_text": "https://www.consultant.ru/document/cons_doc_LAW_547763/",
+    "consultant_changes": "https://www.consultant.ru/document/cons_doc_LAW_547763/a9dda844058b545abb5ced33d28a3412f693720b/",
+    "consultant_overview": "https://www.consultant.ru/law/hotdocs/96089.html",
+    "secondary_official_publication_index": "https://ipbd.ru/docs/gov/pravitelstvo-rossiyskoy-federatsii/postanovleniya/"
+  },
+  "verification": {
+    "consultant_act_and_changes_directly_read": true,
+    "consultant_legal_status_directly_read": true,
+    "official_primary_direct_read": false,
+    "official_primary_fetch_error": "publication.pravo.gov.ru unavailable",
+    "dedup_index_checked": true,
+    "regression_tests_run": false
+  },
+  "dedup_key": "PP-RF-2026-1411-GMO-REGISTRATION-RENEWAL",
+  "engine_knowledge": "engine/knowledge/eco-2026-pp-1411-gmo-registration-renewal.json",
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_OFFICIAL_PRIMARY_DIRECT_VERIFIED_AND_READBACK",
+  "expert_rules_changed": false,
+  "hard_radar_changed": false
+}
