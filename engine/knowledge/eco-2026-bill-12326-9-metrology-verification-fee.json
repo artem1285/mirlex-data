@@ -1,0 +1,35 @@
+{
+  "id": "MIRLEX-RESEARCH-BILL-12326-9-METROLOGY-2026",
+  "source_eco_radar_id": "ECO-2026-BILL-12326-9-METROLOGY-VERIFICATION-FEE",
+  "source_eco_radar_card": "eco-changes/registry/ECO-2026-BILL-12326-9-METROLOGY-VERIFICATION-FEE.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_OFFICIAL_BILL_TEXT_DIRECT_READ_PENDING",
+  "legal_status": "PROJECT_NOT_ACTIVE",
+  "subject": "Проект платы за внесение сведений о поверке средств измерений в Федеральный информационный фонд",
+  "facts": [
+    "Проект № 12326-9 внесён в Государственную Думу 15.10.2026.",
+    "Проектом предложена плата для аккредитованных на поверку средств измерений юридических лиц и ИП за внесение сведений о результатах поверки в Фонд; в статье 20 закона № 102-ФЗ предлагаются части 4 и 5.",
+    "По состоянию на 28.10.2026 проект не является действующим законом.",
+    "Прямая применимость к испытательной экологической лаборатории не установлена без аккредитации именно на поверку; возможен косвенный экономический эффект через стоимость поверки."
+  ],
+  "scope": "Аккредитованные поверочные организации и ИП; косвенно заказчики услуг поверки, включая потенциальные экологические лаборатории.",
+  "risk": "Не включать проектируемую плату в действующие обязательства и не утверждать её размер.",
+  "source_urls": {
+    "official_bill_page": "https://sozd.duma.gov.ru/bill/12326-9",
+    "garant_text": "https://base.garant.ru/411685961/1cafb24d049dcd1e7707a22d98e9858f/",
+    "garant_review": "https://www.garant.ru/news/2284025/",
+    "committee_status_index": "https://bbagcoegoo6cocknvq97.containers.yandexcloud.net/stat/comgd/ce7cc6b5-badd-493d-ba27-1cbea4a85ca5/III"
+  },
+  "verification": {
+    "official_bill_direct_read": false,
+    "secondary_full_text_read": true,
+    "dedup_index_checked": true,
+    "project_not_active": true,
+    "regression_tests_run": false
+  },
+  "do_not_publish_until_primary_read": true,
+  "client_use_allowed": false,
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true,
+  "checked_at": "2026-10-28"
+}
