@@ -1,0 +1,26 @@
+{
+  "id": "eco-2026-mpr-37714-medical-bv-classification",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-37714-MEDICAL-BV-CLASSIFICATION.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_ORIGINAL_MINISTRY_LETTER_NOT_DIRECTLY_VERIFIED",
+  "category": "MEDICAL_WASTE_LEGAL_RESEARCH",
+  "recorded_at": "2026-10-28",
+  "act": "Письмо Минприроды России от 31.08.2026 № 25-78/37714 «О рассмотрении обращения»",
+  "source_full_text_reprint": "https://www.garant.ru/products/ipo/prime/doc/414975273/",
+  "primary_original_verified": false,
+  "legal_status": "DEPARTMENTAL_LETTER_NOT_OFFICIAL_CLARIFICATION_OF_MANDATORY_REQUIREMENTS",
+  "substantive_research": "По тексту перепечатки Минприроды: обеззараживание Б/В не меняет класс на А; после обезвреживания и паспортизации при необходимости — передача для утилизации или размещения, не регоператору ТКО.",
+  "related_knowledge": "engine/knowledge/eco-2026-mpr-41127-medical-waste.json",
+  "diagnostic_questions": [
+    "Каков исходный класс медицинских отходов Б/В?",
+    "Выполнено обеззараживание или обезвреживание и кем?",
+    "Требуется ли паспорт по 89-ФЗ после обезвреживания?",
+    "Кто конечный получатель и какая операция предусмотрена?",
+    "Не ошибочно ли отходы переданы регоператору ТКО как класс А?"
+  ],
+  "legal_guard": "RESEARCH_ONLY. Письмо само отрицает статус официального разъяснения обязательных требований по ст.14 247-ФЗ. Не изменять активные диагностические правила, экспертные пакеты и Жёсткий радар до проверки оригинала, применимости и регрессионных тестов.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "client_use_allowed": false,
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true
+}
