@@ -1,0 +1,38 @@
+{
+  "id": "ECO-2026-BILL-12326-9-METROLOGY-VERIFICATION-FEE",
+  "checked_at": "2026-10-28",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "PROJECT_FEDERAL_LAW_NOT_IN_FORCE",
+  "research_status": "RESEARCH_ONLY_OFFICIAL_BILL_TEXT_DIRECT_READ_PENDING",
+  "document": "Проект федерального закона № 12326-9 «О внесении изменений в статью 20 Федерального закона «Об обеспечении единства измерений»»",
+  "introduced_at": "2026-10-15",
+  "recent_review_at": "2026-10-28",
+  "what_changed": "Предложена плата за внесение в Федеральный информационный фонд по обеспечению единства измерений сведений о результатах поверки средств измерений для аккредитованных на поверку юридических лиц и ИП. Размер и порядок платы по проекту должен установить Правительство. Исключения перечислены в проекте. На 28.10.2026 это законопроект, не действующая обязанность.",
+  "scope": "Непосредственно организации и ИП, аккредитованные на проведение поверки средств измерений и передающие сведения о поверке. Экологические испытательные лаборатории не становятся плательщиками автоматически только в силу наличия аккредитации на испытания; возможен косвенный эффект на стоимость услуг поверки.",
+  "deadlines": "Дата вступления в силу не установлена действующим законом; рассмотрение проекта продолжается. Не применять плату как действующую.",
+  "risk": "Ошибочно считать законопроект вступившим в силу либо распространять обязанность на все экологические лаборатории. Возможное удорожание поверки измерительного оборудования только при последующем принятии и применимости.",
+  "mirlex_action": "Отслеживать прохождение законопроекта и возможный подзаконный акт о размере платы. При планировании аккредитованной лаборатории MIRLEX учитывать лишь как исследовательский сценарий, без изменения бюджета по неподтвержденной ставке.",
+  "client_wording": "Не публиковать как действующее требование. Проект касается прежде всего организаций, аккредитованных на поверку средств измерений, а не всех испытательных лабораторий.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "official_bill_page": "https://sozd.duma.gov.ru/bill/12326-9",
+    "full_text_reprint": "https://base.garant.ru/411685961/1cafb24d049dcd1e7707a22d98e9858f/",
+    "garant_review": "https://www.garant.ru/news/2284025/",
+    "committee_status_index": "https://bbagcoegoo6cocknvq97.containers.yandexcloud.net/stat/comgd/ce7cc6b5-badd-493d-ba27-1cbea4a85ca5/III"
+  },
+  "verification": {
+    "official_bill_page_direct_read": false,
+    "official_bill_page_error": "web open inaccessible",
+    "full_text_article_1_reprint_read": true,
+    "bill_registered_date_crosschecked": true,
+    "dedup_index_checked": true,
+    "project_not_active": true,
+    "expert_rules_tested": false
+  },
+  "dedup_key": "BILL-RF-12326-9-20261015-METROLOGY-VERIFICATION-FUND-FEE",
+  "engine_knowledge": "engine/knowledge/eco-2026-bill-12326-9-metrology-verification-fee.json",
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_OFFICIAL_PRIMARY_DIRECT_READ_AND_MEANINGFUL_APPLICABILITY_VERIFIED",
+  "hard_radar_changed": false,
+  "expert_rules_changed": false
+}
