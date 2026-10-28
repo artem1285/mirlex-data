@@ -1,0 +1,60 @@
+{
+  "id": "ECO-2026-MPR-37714-MEDICAL-BV-CLASSIFICATION",
+  "checked_at": "2026-10-28",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "DEPARTMENTAL_LETTER_NOT_OFFICIAL_CLARIFICATION_OF_MANDATORY_REQUIREMENTS",
+  "research_status": "RESEARCH_ONLY_ORIGINAL_MINISTRY_LETTER_NOT_DIRECTLY_VERIFIED",
+  "document": "Письмо Минприроды России от 31.08.2026 № 25-78/37714 «О рассмотрении обращения»",
+  "document_date": "2026-08-31",
+  "first_identified_publication": "2026-10-16",
+  "secondary_review": "2026-10-28",
+  "topic": "Медицинские отходы классов Б и В после обеззараживания: сохранение классификации и запрет передачи региональному оператору ТКО",
+  "what_changed": "В опубликованном 16.10.2026 тексте письма Минприроды изложена позиция о том, что обеззараживание медицинских отходов Б и В не превращает их в отходы класса А. После обезвреживания и паспортизации (при необходимости) предусмотрена передача соответствующим лицам для последующей утилизации или размещения. Письмо не изменяет закон и само указывает, что не является официальным разъяснением обязательных требований по ч.1 ст.14 247-ФЗ.",
+  "affected": [
+    "медицинские организации",
+    "организации обеззараживания и обезвреживания медицинских отходов",
+    "перевозчики медицинских отходов",
+    "региональные операторы ТКО",
+    "организации, принимающие отходы после обезвреживания"
+  ],
+  "dates": {
+    "letter": "2026-08-31",
+    "published_in_garant": "2026-10-16",
+    "underlying_regime_effective": "2026-09-01",
+    "new_effective_date": null
+  },
+  "legal_basis": [
+    "ст.22.1 Федерального закона №52-ФЗ",
+    "ст.49 Федерального закона №323-ФЗ",
+    "п.2 ст.2 Федерального закона №89-ФЗ",
+    "ПП РФ от 28.03.2026 №339",
+    "ПП РФ от 30.04.2026 №506"
+  ],
+  "risk": "Ошибочная передача обеззараженных отходов Б/В региональному оператору ТКО как отходов класса А; неверная классификация, договорный маршрут и паспорт при необходимости.",
+  "mirlex_action": "В исследовательской ветке медотходов отдельно проверять различие обеззараживания и обезвреживания, исходный класс Б/В, момент перехода в контур 89-ФЗ, необходимость паспортизации и допустимого получателя. Сопоставить с карточкой №25-77/41127; активные экспертные правила не менять без первоисточника и регрессионных тестов.",
+  "client_wording": "Не публиковать до проверки оригинала письма и применимости к конкретному потоку медицинских отходов.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "full_text_reprint": "https://www.garant.ru/products/ipo/prime/doc/414975273/",
+    "second_reprint": "https://base.garant.ru/415075273/",
+    "original_ministry_letter_url": null
+  },
+  "verification": {
+    "full_text_reprint_read": true,
+    "letter_original_direct_read": false,
+    "underlying_rules_direct_official_read": false,
+    "letter_disclaims_official_explanation": true,
+    "dedup_compared_with": "ECO-2026-MPR-41127-MEDICAL-WASTE",
+    "new_distinct_issue": "Классификация Б/В после обеззараживания и невозможность передачи регоператору ТКО",
+    "regression_tests_run": false
+  },
+  "dedup_key": "MPR-2026-08-31-25-78-37714-MEDICAL-BV-CLASSIFICATION",
+  "related_records": [
+    "ECO-2026-MPR-41127-MEDICAL-WASTE"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-mpr-37714-medical-bv-classification.json",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false,
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_PRIMARY_VERIFIED_AND_READBACK"
+}
