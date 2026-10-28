@@ -1,0 +1,38 @@
+{
+  "id": "ECO-2026-RPN-ROP-FAQ-DZEN-20261026",
+  "checked_at": "2026-10-28",
+  "published_at": "2026-10-26",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "OFFICIAL_PUBLICATION_ANNOUNCEMENT_NOT_NPA",
+  "engine_status": "RESEARCH_ONLY_ORIGINAL_DZEN_TEXT_UNREAD",
+  "topic": "РОП: Росприроднадзор опубликовал подборку ответов на частые вопросы производителей и импортеров",
+  "verified_fact": "26.10.2026 официальный Telegram-канал Росприроднадзора сообщил о публикации в официальном канале ведомства в Дзене ответов на частые вопросы по РОП, отчетности и уплате экологического сбора. Текст ответов получить не удалось.",
+  "what_changed": "Новая информационная публикация ведомства. Содержательные разъяснения не изучены; наличие нового правового подхода или изменения обязанностей НЕ подтверждено.",
+  "scope": "Производители и импортеры товаров и упаковки в сфере РОП; содержание применимости требует чтения исходного материала.",
+  "dates": {
+    "announcement": "2026-10-26",
+    "normative_effective_date": null
+  },
+  "risk": "Ошибочное приписывание ведомству непроверенных ответов и создание ложных правовых выводов.",
+  "mirlex_action": "Получить полный текст статьи Дзена, выделить вопросы и ответы, сопоставить с 89-ФЗ и постановлениями по РОП; проверить наличие действительно новых выводов. До этого не использовать в клиентских материалах.",
+  "client_wording": "Не публиковать до чтения полного текста официального разъяснения.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "official_announcement": "https://t.me/Rosprirodnadzor_official/3453",
+    "official_dzen_article": "https://dzen.ru/a/atnUdQ4ez2MvIczi",
+    "official_news_index": "https://rpn.gov.ru/press/news/?type=federal"
+  },
+  "verification": {
+    "official_announcement_text_read": true,
+    "dzen_original_opened": false,
+    "original_open_error": "non-retryable error",
+    "substantive_explanations_verified": false,
+    "new_legal_rule_claimed": false
+  },
+  "dedup_key": "RPN-2026-10-26-ROP-FAQ-DZEN",
+  "engine_knowledge": "engine/knowledge/eco-2026-rpn-rop-faq-dzen-20261026.json",
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_SUBSTANTIVE_PRIMARY_TEXT_VERIFIED_AND_READBACK",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false
+}
