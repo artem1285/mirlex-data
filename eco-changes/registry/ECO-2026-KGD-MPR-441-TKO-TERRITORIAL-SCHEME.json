@@ -1,0 +1,34 @@
+{
+  "id": "ECO-2026-KGD-MPR-441-TKO-TERRITORIAL-SCHEME",
+  "checked_at": "2026-10-29",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "СООБЩАЕТСЯ О ПРИНЯТИИ РЕГИОНАЛЬНОГО ПРИКАЗА; ВСТУПЛЕНИЕ В СИЛУ И ТЕКСТ НЕ ПОДТВЕРЖДЕНЫ ПРЯМЫМ ЧТЕНИЕМ ОФИЦИАЛЬНОГО ПЕРВОИСТОЧНИКА",
+  "engine_status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_TEXT_NOT_VERIFIED",
+  "document": "Приказ Министерства природных ресурсов и экологии Калининградской области от 27.10.2026 № 441 (сообщение об обновлении территориальной схемы обращения с отходами)",
+  "topic": "Региональная территориальная схема обращения с отходами на 2026–2040 годы; ТКО, потоки, мощности, объекты размещения",
+  "dates": {
+    "reported_signed": "2026-10-27",
+    "media_published": "2026-10-28",
+    "reported_effective": "со дня официального опубликования, точная дата и оригинал не проверены"
+  },
+  "what_changed": "Региональные СМИ 28.10.2026 сообщили об утверждении новой редакции терсхемы ТКО приказом № 441. В обзорах указаны планы увеличения обработки ТКО до 100% к 2030 году, изменения схем потоков и объектов; это плановые показатели, не подтвержденные непосредственно официальным текстом.",
+  "scope": "Калининградская область: региональный оператор, операторы обработки/размещения ТКО, муниципалитеты, инвесторы в инфраструктуру",
+  "risk": "Недопустимо принимать сообщение о включении полигона в альтернативную схему за доказательство действующего статуса ГРОРО, законности размещения, разрешения или лицензии. Без текста приказа нельзя подтверждать маршруты и даты.",
+  "mirlex_action": "Получить официальный опубликованный приказ № 441 и приложения; установить номер официального опубликования, дату вступления, актуальные объекты и потоки; отдельно сверить ГРОРО, лицензии и условия эксплуатации объектов. До этого не применять в клиентских рекомендациях и Жёстком радаре.",
+  "client_wording": "Не публиковать до проверки официального приказа и приложения с территориальной схемой.",
+  "primary_official_url": null,
+  "primary_direct_read": false,
+  "secondary_sources": {
+    "news_20261028": "https://www.newkaliningrad.ru/news/briefs/community/24168241-v-kaliningradskoy-oblasti-obnovili-terskhemu-obrashcheniya-s-otkhodami.html",
+    "news_mirror": "https://kaliningrad-news.ru/society/2026/10/28/107752.html",
+    "secondary_analysis": "https://kaliningrad-news.ru/society/2026/10/28/107712.html"
+  },
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "dedup_key": "KALININGRAD-MPR-20261027-441-TKO-TERRITORIAL-SCHEME",
+  "engine_knowledge": "engine/knowledge/eco-2026-kgd-mpr-441-tko-territorial-scheme.json",
+  "engine_mode": "RESEARCH_ONLY",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_OFFICIAL_PRIMARY_DIRECTLY_VERIFIED_AND_READBACK"
+}
