@@ -1,0 +1,18 @@
+{
+  "id": "ECO-2026-MINSTROY-23239-FLOOD-ZONE-LANDSCAPING",
+  "source_eco_card": "eco-changes/registry/ECO-2026-MINSTROY-23239-FLOOD-ZONE-LANDSCAPING.json",
+  "checked_at": "2026-10-28",
+  "mode": "RESEARCH_ONLY",
+  "subject": "Минстрой: благоустройство в зонах затопления/подтопления",
+  "document": "Письмо Минстроя от 02.10.2026 № 23239-ОГ/06",
+  "source_reproduction": "https://www.consultant.ru/document/cons_doc_LAW_547707/",
+  "legal_status": "Ненормативное информационное письмо; не устанавливает и не отменяет обязательные требования",
+  "evidence": "По воспроизведенному тексту письма в указанных методрекомендациях и СП нет общего запрета на элементы благоустройства в зонах затопления; применение других требований обязательно.",
+  "limitations": "Оригинал на сайте Минстроя непосредственно не прочитан. Нельзя обобщать до полного разрешения любых работ.",
+  "required_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "client_publication_allowed": false,
+  "next_validation": "Сверить оригинал письма и применимые ограничения водного, земельного, градостроительного законодательства и местные правила на конкретном участке.",
+  "deployed_to_expert_rules": false,
+  "regression_tests_run": false,
+  "hard_radar_unchanged": true
+}
