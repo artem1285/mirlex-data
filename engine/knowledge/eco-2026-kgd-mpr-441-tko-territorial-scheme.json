@@ -1,0 +1,23 @@
+{
+  "id": "eco-2026-kgd-mpr-441-tko-territorial-scheme",
+  "source_card": "eco-changes/registry/ECO-2026-KGD-MPR-441-TKO-TERRITORIAL-SCHEME.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_TEXT_NOT_VERIFIED",
+  "category": "REGIONAL_WASTE_TKO_RESEARCH",
+  "recorded_at": "2026-10-29",
+  "act": "Приказ Министерства природных ресурсов и экологии Калининградской области от 27.10.2026 № 441 (сообщение об обновлении территориальной схемы обращения с отходами)",
+  "primary_official_url": null,
+  "original_read": false,
+  "research_signal": "По публикациям от 28.10.2026 региональная терсхема Калининградской области обновлена приказом № 441 от 27.10.2026. Оригинал приказа и приложения не получены; сроки и юридические последствия не утверждать.",
+  "diagnostic_questions": [
+    "Каков номер и дата официального опубликования приказа № 441?",
+    "Какие объекты и маршруты ТКО указаны в приложениях?",
+    "Включён ли конкретный объект в актуальный ГРОРО и имеется ли необходимая лицензия?",
+    "Не смешивается ли плановая терсхема с разрешением на размещение отходов?"
+  ],
+  "legal_guard": "RESEARCH_ONLY: не применять в диагностических правилах, Жёстком радаре и экспертных пакетах без официального текста, проверки применимости и регрессионных тестов.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "client_use_allowed": false,
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true
+}
