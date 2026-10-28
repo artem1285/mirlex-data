@@ -486,6 +486,12 @@
       "path": "eco-changes/registry/ECO-2026-BILL-12326-9-METROLOGY-VERIFICATION-FEE.json",
       "status": "RESEARCH_ONLY_OFFICIAL_BILL_TEXT_DIRECT_READ_PENDING",
       "engine_knowledge": "engine/knowledge/eco-2026-bill-12326-9-metrology-verification-fee.json"
+    },
+    {
+      "id": "ECO-2026-MINSTROY-23239-FLOOD-ZONE-LANDSCAPING",
+      "path": "eco-changes/registry/ECO-2026-MINSTROY-23239-FLOOD-ZONE-LANDSCAPING.json",
+      "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_NOT_DIRECTLY_VERIFIED",
+      "engine_knowledge": "engine/knowledge/eco-2026-minstroy-23239-flood-zone-landscaping.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
