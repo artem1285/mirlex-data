@@ -1,0 +1,34 @@
+{
+  "id": "MIRLEX-RESEARCH-PP-1222-FOREST-2026",
+  "source_eco_radar_id": "ECO-2026-PP-1222-FOREST-DEADLINE-EXTENSION",
+  "source_eco_radar_card": "eco-changes/registry/ECO-2026-PP-1222-FOREST-DEADLINE-EXTENSION.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_PRIMARY_DIRECT_READ_PENDING",
+  "legal_status": "IN_FORCE_SINCE_2026-09-23_PER_PUBLISHED_TEXT",
+  "subject": "Продление сроков мероприятий по сохранению лесов для лесозаготовителей до 01.07.2027 при согласовании",
+  "facts": [
+    "Приложение № 10 к постановлению № 353 дополнено пунктом 10: для лиц, использующих леса в целях заготовки древесины, срок исполнения мероприятий по сохранению лесов, срок которых приходится на 01.01–31.12.2026 и за неисполнение которых предусмотрена неустойка, продлен до 01.07.2027 при согласовании перенесенного срока с органом, уполномоченным на госэкспертизу проектов освоения лесов. Мероприятия по охране лесов от пожаров исключены."
+  ],
+  "scope": "Лица, использующие леса для заготовки древесины, при наличии соответствующих мероприятий с исходными сроками исполнения в 2026 году; не распространяется автоматически на иных лесопользователей и противопожарные мероприятия.",
+  "risk": "Ошибочно считать перенос автоматическим либо распространять его на противопожарные мероприятия; пропустить согласование и риск неустойки.",
+  "source_urls": {
+    "official_primary_url": "https://publication.pravo.gov.ru/document/0001202609230024",
+    "published_text": "https://base.garant.ru/414956206/",
+    "consultant_full_text": "https://www.consultant.ru/document/cons_doc_LAW_545079/",
+    "consultant_overview": "https://www.consultant.ru/law/hotdocs/95729.html",
+    "recent_review": "https://www.garant.ru/news/2282586/"
+  },
+  "verification": {
+    "official_publication_number_crosschecked": true,
+    "official_portal_direct_read": false,
+    "full_text_crosschecked_in_search_results": true,
+    "consultant_and_garant_concordant": true,
+    "dedup_index_checked": true,
+    "active_rules_tested": false
+  },
+  "do_not_publish_until_primary_read": true,
+  "client_use_allowed": false,
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true,
+  "checked_at": "2026-10-28"
+}
