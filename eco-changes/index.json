@@ -510,6 +510,12 @@
       "path": "eco-changes/registry/ECO-2026-KGD-MPR-441-TKO-TERRITORIAL-SCHEME.json",
       "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_TEXT_NOT_VERIFIED",
       "engine_knowledge": "engine/knowledge/eco-2026-kgd-mpr-441-tko-territorial-scheme.json"
+    },
+    {
+      "id": "ECO-2026-PP-1411-GMO-REGISTRATION-RENEWAL",
+      "path": "eco-changes/registry/ECO-2026-PP-1411-GMO-REGISTRATION-RENEWAL.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1411-gmo-registration-renewal.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
