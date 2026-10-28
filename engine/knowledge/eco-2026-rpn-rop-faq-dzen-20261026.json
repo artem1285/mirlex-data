@@ -1,0 +1,17 @@
+{
+  "id": "eco-2026-rpn-rop-faq-dzen-20261026",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-ROP-FAQ-DZEN-20261026.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_ORIGINAL_DZEN_TEXT_UNREAD",
+  "category": "ROP_OFFICIAL_GUIDANCE_RESEARCH",
+  "observed_at": "2026-10-28",
+  "event_date": "2026-10-26",
+  "verified": "Официальный анонс подборки ответов Росприроднадзора по РОП в Дзене",
+  "unverified": "Текст ответов, содержание правовых выводов и их новизна",
+  "source_url": "https://t.me/Rosprirodnadzor_official/3453",
+  "original_url": "https://dzen.ru/a/atnUdQ4ez2MvIczi",
+  "next_research_step": "Получить полный текст, проверить ссылки на действующие НПА и применимость, провести дедупликацию содержания.",
+  "client_use_allowed": false,
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true
+}
