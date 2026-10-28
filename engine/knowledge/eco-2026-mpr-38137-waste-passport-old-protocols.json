@@ -1,0 +1,25 @@
+{
+  "id": "eco-2026-mpr-38137-waste-passport-old-protocols",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-38137-WASTE-PASSPORT-OLD-PROTOCOLS.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_ORIGINAL_MINISTRY_LETTER_NOT_DIRECTLY_VERIFIED",
+  "category": "WASTE_PASSPORTS_LEGAL_RESEARCH",
+  "recorded_at": "2026-10-29",
+  "act": "Письмо Минприроды России от 02.09.2026 № 25-47/38137 «О рассмотрении обращения»",
+  "legal_status": "DEPARTMENTAL_POSITION_NOT_NPA",
+  "source_full_text_reprint": "https://www.consultant.ru/document/cons_doc_LAW_544137/",
+  "original_ministry_direct_read": false,
+  "substantive_research": "При техническом переоформлении паспорта отхода I–IV классов из ФККО по основаниям п.9 приказа Минприроды № 286 возможно использовать прежние протоколы КХА/компонентного состава только при неизменности технологии образования отхода и сырьевой базы. Письмо не создает нового обязательного требования.",
+  "diagnostic_questions": [
+    "Отход включён в ФККО и паспорт переоформляется по п.9 Порядка № 286?",
+    "Что стало причиной переоформления: реквизиты или изменения характеристик отхода?",
+    "Есть документальное подтверждение неизменности технологического процесса и сырья?",
+    "Прежние протоколы относятся к тому же отходу и сохраняют доказательственную силу?"
+  ],
+  "legal_guard": "Не переносить в действующие правила и экспертные пакеты до проверки оригинала, применимости, регрессионных тестов и совместимости. Не смешивать с Жёстким радаром.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "client_use_allowed": false,
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true,
+  "notification_policy": "DO_NOT_NOTIFY_HISTORICAL_LETTER_AND_ORIGINAL_MINISTRY_NOT_DIRECTLY_VERIFIED"
+}
