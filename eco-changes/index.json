@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -498,6 +498,12 @@
       "path": "eco-changes/registry/ECO-2026-EEC-102-WOOD-PACKAGING-PHYTO.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-eec-102-wood-packaging-phyto.json"
+    },
+    {
+      "id": "ECO-2026-MPR-38137-WASTE-PASSPORT-OLD-PROTOCOLS",
+      "path": "eco-changes/registry/ECO-2026-MPR-38137-WASTE-PASSPORT-OLD-PROTOCOLS.json",
+      "status": "RESEARCH_ONLY_ORIGINAL_MINISTRY_LETTER_NOT_DIRECTLY_VERIFIED",
+      "engine_knowledge": "engine/knowledge/eco-2026-mpr-38137-waste-passport-old-protocols.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
