@@ -1,0 +1,47 @@
+{
+  "id": "ECO-2026-PROJECT-172265-ROP-ECOFEE-OFFSET",
+  "source_id": "ECO-2026-PROJECT-172265-ROP-ECOFEE-OFFSET",
+  "source_card": "eco-changes/registry/ECO-2026-PROJECT-172265-ROP-ECOFEE-OFFSET.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "status": "RESEARCH_ONLY_PRIMARY_TEXT_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "UNCONFIRMED_DRAFT_SIGNAL_NOT_IN_FORCE",
+  "recorded_at": "2026-10-30",
+  "topic": [
+    "ROP",
+    "ECO_FEE",
+    "IMPORT",
+    "EXPORT",
+    "OFFSET",
+    "DRAFT_REGULATION"
+  ],
+  "summary": "По вторичным отраслевым публикациям 29.10.2026 проект №172265 от 27.10.2026 предлагает изменения в ПП 741/742/750/1486/1990 по зачёту экологического сбора и отчётности. Официальный полный текст недоступен, даты и механизмы не подтверждены первоисточником. Не действующая норма.",
+  "research_tasks": [
+    "Прочитать полный текст и пояснительную записку regulation.gov.ru/projects/172265/",
+    "Сравнить с проектом 163561 от 2025 года для исключения смыслового дубля",
+    "Проверить редакции 741/742/750/1486/1990, ст.24.5 ФЗ-89 и применимость к импортёрам",
+    "После официального принятия и проверки регрессионных тестов отдельно решать о внедрении; до этого ничего не менять"
+  ],
+  "sources": [
+    {
+      "url": "https://ppt.ru/amp/news/ekologicheskiy-sbor/importery-smogut-zachest-ekosbor-za-tovary-kotorye-vyvezli-ili-pustili-v-proizvodstvo",
+      "published": "2026-10-29"
+    },
+    {
+      "url": "https://news.solidwaste.ru/2026/10/minprirody-predlozhilo-izmenit-poryadok-zacheta-ekologicheskogo-sbora-i-otchetnosti-po-rop/",
+      "published": "2026-10-29"
+    },
+    {
+      "url": "https://rosutilization.ru/news-rop/?ELEMENT_ID=412",
+      "published": "2026-10-29"
+    }
+  ],
+  "official_project_url": "https://regulation.gov.ru/projects/172265/",
+  "primary_text_read": false,
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "activation_guard": "RESEARCH_ONLY; NO_CLIENT_PUBLICATION; NO_EXPERT_RULE_CHANGES; NO_HARD_RADAR_CHANGES; PRIMARY_SOURCE_AND_TESTS_REQUIRED",
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "dedup_key": "regulation-project-172265-rop-ecofee-offset-20261027"
+}
