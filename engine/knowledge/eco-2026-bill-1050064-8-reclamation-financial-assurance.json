@@ -1,0 +1,22 @@
+{
+  "id": "KNOWLEDGE-ECO-2026-BILL-1050064-8-RECLAMATION-FINANCIAL-ASSURANCE",
+  "eco_radar_id": "ECO-2026-BILL-1050064-8-RECLAMATION-FINANCIAL-ASSURANCE",
+  "eco_radar_card": "eco-changes/registry/ECO-2026-BILL-1050064-8-RECLAMATION-FINANCIAL-ASSURANCE.json",
+  "knowledge_type": "RESEARCH_ONLY",
+  "legal_status": "PROJECT_FEDERAL_LAW_NOT_IN_FORCE",
+  "primary_text_verified": false,
+  "summary": "НИА «Экология» 29.10.2026 сообщило о рекомендации профильного комитета 28.10 принять законопроект в первом чтении. Доступная карточка СОЗД подтверждает наличие проекта и движение до 26.10, но НЕ подтверждает решение 28.10; следовательно, стадия 28.10 остаётся неподтверждённым сигналом. Это не действующая норма.",
+  "scope": "Потенциально золотодобывающие предприятия и недропользователи, добывающие песок, глину, щебень и иные ОПИ, если закон будет принят в применимой редакции.",
+  "risks": "Преждевременное включение финансового обеспечения в обязательные расходы или неверное утверждение о принятии законопроекта; возможная будущая финансовая нагрузка.",
+  "next_verification": "Получить официальное решение комитета 28.10 и актуальную редакцию проекта; изучить замечания Правительства от 20.10; только после принятия оценивать требования к лицензиям, банковским гарантиям и фондам.",
+  "sources": {
+    "official_bill_url": "https://sozd.duma.gov.ru/bill/1050064-8",
+    "bill_system_mirror": "https://bbagcoegoo6cocknvq97.containers.yandexcloud.net/bill/1050064-8",
+    "media": "https://nia.eco/2026/10/29/148481/",
+    "garant_dossier": "https://base.garant.ru/412911825/"
+  },
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "checked_at": "2026-10-29"
+}
