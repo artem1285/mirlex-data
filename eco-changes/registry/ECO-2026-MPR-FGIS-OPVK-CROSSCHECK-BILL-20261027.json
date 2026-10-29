@@ -1,0 +1,36 @@
+{
+  "id": "ECO-2026-MPR-FGIS-OPVK-CROSSCHECK-BILL-20261027",
+  "checked_at": "2026-10-29",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "UNVERIFIED_BILL_PRE_GOVERNMENT_REVIEW_NOT_IN_FORCE",
+  "research_status": "RESEARCH_ONLY_NO_PRIMARY_DOCUMENT_OR_BILL_NUMBER",
+  "document": "Сообщение о подготовке Минприроды и «Росатомом» законопроекта о межведомственной сверке сведений ФГИС ОПВК",
+  "topic": "Сопоставление данных об образовании и обращении с отходами I–II классов опасности с другими государственными реестрами",
+  "what_changed": "НИА «Экология» 28.10.2026 сообщило, что министр Минприроды 27.10 заявил о направлении проекта в Правительство. Номер проекта, официальный текст и прямое подтверждение выступления не найдены. Не установлена новая действующая обязанность.",
+  "scope": "Потенциально образователи и операторы обращения с отходами I–II классов, Федеральный экологический оператор, Росприроднадзор; конкретная сфера будет известна из официального текста.",
+  "dates": {
+    "minister_statement_reported": "2026-10-27",
+    "media": "2026-10-28",
+    "bill_submission_date": "NOT_VERIFIED",
+    "effective_date": "NOT_APPLICABLE_UNVERIFIED_PROPOSAL"
+  },
+  "risk": "Ошибочно объявить новую обязанность по ФГИС ОПВК; при этом действующие обязанности по 89-ФЗ нельзя игнорировать независимо от проекта.",
+  "mirlex_action": "Установить официальный номер, получить текст и сведения о стадии Правительства; отделить предполагаемые механизмы сверки от действующих обязанностей по статьям 14.3 и 14.4 89-ФЗ; не внедрять без тестов.",
+  "client_wording": "Не публиковать до обнаружения первоисточника.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "official_primary_document": null,
+    "media": "https://nia.eco/2026/10/28/148221/"
+  },
+  "verification": {
+    "official_primary_found": false,
+    "media_direct_read": true,
+    "project_number_found": false,
+    "do_not_notify": true
+  },
+  "dedup_key": "MPR-ROSATOM-20261027-FGIS-OPVK-INTERAGENCY-CROSSCHECK-BILL-SIGNAL",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false,
+  "engine_knowledge": "engine/knowledge/eco-2026-mpr-fgis-opvk-crosscheck-bill-20261027.json"
+}
