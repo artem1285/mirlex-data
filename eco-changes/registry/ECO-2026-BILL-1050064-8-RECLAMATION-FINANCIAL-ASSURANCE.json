@@ -1,0 +1,42 @@
+{
+  "id": "ECO-2026-BILL-1050064-8-RECLAMATION-FINANCIAL-ASSURANCE",
+  "checked_at": "2026-10-29",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "PROJECT_FEDERAL_LAW_NOT_IN_FORCE",
+  "research_status": "RESEARCH_ONLY_20261028_COMMITTEE_STAGE_UNCONFIRMED",
+  "document": "Законопроект № 1050064-8 о поправках в Закон «О недрах» и Закон о банкротстве (финансовое обеспечение рекультивации)",
+  "topic": "Банковская гарантия или специальный фонд для рекультивации нарушенных земель при добыче золота и общераспространённых полезных ископаемых",
+  "what_changed": "НИА «Экология» 29.10.2026 сообщило о рекомендации профильного комитета 28.10 принять законопроект в первом чтении. Доступная карточка СОЗД подтверждает наличие проекта и движение до 26.10, но НЕ подтверждает решение 28.10; следовательно, стадия 28.10 остаётся неподтверждённым сигналом. Это не действующая норма.",
+  "scope": "Потенциально золотодобывающие предприятия и недропользователи, добывающие песок, глину, щебень и иные ОПИ, если закон будет принят в применимой редакции.",
+  "dates": {
+    "introduced": "2025-10-23",
+    "government_review_registered": "2026-10-20",
+    "latest_bill_system_event_directly_read": "2026-10-26",
+    "committee_recommendation_media_report": "2026-10-28",
+    "media": "2026-10-29",
+    "effective_date": "NOT_APPLICABLE_PROJECT"
+  },
+  "risk": "Преждевременное включение финансового обеспечения в обязательные расходы или неверное утверждение о принятии законопроекта; возможная будущая финансовая нагрузка.",
+  "mirlex_action": "Получить официальное решение комитета 28.10 и актуальную редакцию проекта; изучить замечания Правительства от 20.10; только после принятия оценивать требования к лицензиям, банковским гарантиям и фондам.",
+  "client_wording": "Не публиковать до подтверждения официального решения комитета и текста проекта.",
+  "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "sources": {
+    "official_bill_url": "https://sozd.duma.gov.ru/bill/1050064-8",
+    "bill_system_mirror": "https://bbagcoegoo6cocknvq97.containers.yandexcloud.net/bill/1050064-8",
+    "media": "https://nia.eco/2026/10/29/148481/",
+    "garant_dossier": "https://base.garant.ru/412911825/"
+  },
+  "verification": {
+    "bill_system_mirror_direct_read": true,
+    "official_bill_page_direct_read": false,
+    "committee_stage_20261028_primary_verified": false,
+    "media_direct_read": true,
+    "full_bill_text_read": false,
+    "do_not_notify": true
+  },
+  "dedup_key": "BILL-RF-1050064-8-RECLAMATION-20261028-COMMITTEE-SIGNAL",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false,
+  "engine_knowledge": "engine/knowledge/eco-2026-bill-1050064-8-reclamation-financial-assurance.json"
+}
