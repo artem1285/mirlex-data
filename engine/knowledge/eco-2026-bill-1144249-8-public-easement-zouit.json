@@ -1,0 +1,37 @@
+{
+  "id": "ECO-2026-BILL-1144249-8-PUBLIC-EASEMENT-ZOUIT",
+  "source_id": "ECO-2026-BILL-1144249-8-PUBLIC-EASEMENT-ZOUIT",
+  "source_card": "eco-changes/registry/ECO-2026-BILL-1144249-8-PUBLIC-EASEMENT-ZOUIT.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "priority": "YELLOW",
+  "legal_status": "DRAFT_FEDERAL_LAW_FIRST_READING_NOT_IN_FORCE",
+  "topic": "Земли и проектирование: изменение правил публичных сервитутов и зон с особыми условиями использования территорий",
+  "recorded_at": "2026-10-29",
+  "summary": "Проект №1144249-8 принят Госдумой в первом чтении 22.10.2026; касается публичных сервитутов, сведений ЕГРН, платы за сервитут и ЗОУИТ. Срок поправок 05.11.2026. Не действующий закон. Описанный в заключении комитета переходный механизм границ ЗОУИТ обсуждается и может быть переработан.",
+  "practical_checks": [
+    "При проектировании линейных объектов проверять действующие основания установления публичного сервитута и актуальные сведения ЕГРН.",
+    "Не считать предложенное изменение границ ЗОУИТ автоматически вступившим в силу.",
+    "После 05.11.2026 отслеживать текст поправок, второе/третье чтения и дату официального опубликования.",
+    "Перед внедрением в экспертные правила MIRLEX проверить окончательную редакцию и провести регрессионные тесты."
+  ],
+  "next_research_step": "Получить PDF текста законопроекта, принятого в первом чтении, и заключение комитета из официальной карточки; после срока поправок сопоставить редакции и уточнить правовые последствия.",
+  "sources": {
+    "official_bill_card": "https://bbagcoegoo6cocknvq97.containers.yandexcloud.net/bill/1144249-8",
+    "legislative_result": "https://www.consultant.ru/law/review/lawmaking/dd2026-10-22.html",
+    "committee_opinion_reprint": "https://base.garant.ru/411686057/",
+    "committee_opinion_note": "Комитет по энергетике описывает и критикует отдельные положения; его заключение не равно окончательному тексту закона."
+  },
+  "verification": {
+    "official_bill_card_read": true,
+    "first_reading_and_deadline_read": true,
+    "committee_opinion_text_available_in_legal_reprint": true,
+    "official_pdf_bill_text_read": false,
+    "official_committee_pdf_read": false,
+    "substantive_changes_are_proposals_only": true,
+    "regression_tests_run": false,
+    "expert_activation_permitted": false
+  },
+  "activation_guard": "RESEARCH_ONLY; NO_EXPERT_RULE_CHANGES; NO_HARD_RADAR_CHANGES; PRIMARY_PDF_AND_TESTS_REQUIRED",
+  "dedup_key": "BILL-1144249-8-20261022-FIRST-READING-PUBLIC-EASEMENTS-ZOUIT"
+}
