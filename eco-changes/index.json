@@ -528,6 +528,12 @@
       "path": "eco-changes/registry/ECO-2026-BILL-1270300-8-PESTICIDES-REGISTRATION-EXPIRY.json",
       "status": "RESEARCH_ONLY_OFFICIAL_ORIGINAL_TEXT_UNREAD",
       "engine_knowledge": "engine/knowledge/eco-2026-bill-1270300-8-pesticides-registration-expiry.json"
+    },
+    {
+      "id": "ECO-2026-BILL-1050064-8-RECLAMATION-FINANCIAL-ASSURANCE",
+      "path": "eco-changes/registry/ECO-2026-BILL-1050064-8-RECLAMATION-FINANCIAL-ASSURANCE.json",
+      "status": "RESEARCH_ONLY_20261028_COMMITTEE_STAGE_UNCONFIRMED",
+      "engine_knowledge": "engine/knowledge/eco-2026-bill-1050064-8-reclamation-financial-assurance.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
