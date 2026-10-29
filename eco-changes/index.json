@@ -546,6 +546,12 @@
       "path": "eco-changes/registry/ECO-2026-ROSLES-30759-FOREST-ROAD-TIMBER.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rosles-30759-forest-road-timber.json"
+    },
+    {
+      "id": "ECO-2026-BILL-1144249-8-PUBLIC-EASEMENT-ZOUIT",
+      "path": "eco-changes/registry/ECO-2026-BILL-1144249-8-PUBLIC-EASEMENT-ZOUIT.json",
+      "status": "RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-bill-1144249-8-public-easement-zouit.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
