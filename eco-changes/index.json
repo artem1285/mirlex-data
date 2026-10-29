@@ -540,6 +540,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-FGIS-OPVK-CROSSCHECK-BILL-20261027.json",
       "status": "RESEARCH_ONLY_NO_PRIMARY_DOCUMENT_OR_BILL_NUMBER",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-fgis-opvk-crosscheck-bill-20261027.json"
+    },
+    {
+      "id": "ECO-2026-ROSLES-30759-FOREST-ROAD-TIMBER",
+      "path": "eco-changes/registry/ECO-2026-ROSLES-30759-FOREST-ROAD-TIMBER.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rosles-30759-forest-road-timber.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
