@@ -522,6 +522,12 @@
       "path": "eco-changes/registry/ECO-2026-KRD-294R-TKO-EMERGENCY-READINESS.json",
       "status": "RESEARCH_ONLY_PRIMARY_PDF_UNREAD",
       "engine_knowledge": "engine/knowledge/eco-2026-krd-294r-tko-emergency-readiness.json"
+    },
+    {
+      "id": "ECO-2026-BILL-1270300-8-PESTICIDES-REGISTRATION-EXPIRY",
+      "path": "eco-changes/registry/ECO-2026-BILL-1270300-8-PESTICIDES-REGISTRATION-EXPIRY.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_ORIGINAL_TEXT_UNREAD",
+      "engine_knowledge": "engine/knowledge/eco-2026-bill-1270300-8-pesticides-registration-expiry.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
