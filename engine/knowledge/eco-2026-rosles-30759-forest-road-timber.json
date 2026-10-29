@@ -1,0 +1,41 @@
+{
+  "id": "ECO-2026-ROSLES-30759-FOREST-ROAD-TIMBER",
+  "source_id": "ECO-2026-ROSLES-30759-FOREST-ROAD-TIMBER",
+  "source_card": "eco-changes/registry/ECO-2026-ROSLES-30759-FOREST-ROAD-TIMBER.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "VERIFIED_RESEARCH_ONLY",
+  "priority": "YELLOW",
+  "legal_status": "OFFICIAL_CLARIFICATION_NOT_NPA",
+  "topic": "Право собственности на древесину при создании лесотранспортных дорог по сервитуту вне арендованного лесного участка",
+  "recorded_at": "2026-10-29",
+  "document": "Письмо Рослесхоза от 26.10.2026 № ИС-02-54/30759",
+  "summary": "Рослесхоз официально разъяснил, что древесина, полученная на землях лесного фонда при строительстве лесотранспортной дороги за границами арендованного для заготовки древесины участка на основании сервитута, принадлежит Российской Федерации. Отчуждение — по правилам ПП РФ №82 от 02.02.2026, через торги либо предусмотренный правилами выкуп. Письмо не является НПА.",
+  "practical_checks": [
+    "Установить вид дороги: лесотранспортная (статья 23.9 ЛК РФ) или автомобильная дорога как линейный объект.",
+    "Определить точные границы арендованного участка и территории сервитута, основания рубки, наличие пересечения прав других лесопользователей.",
+    "Отдельно установить собственника древесины для каждого участка рубки; не считать сервитут правом собственности на древесину.",
+    "Для древесины, принадлежащей Российской Федерации, проверить порядок продажи или выкупа по ПП №82 и применимые формы по приказу Росимущества №99.",
+    "Проверить документы на рубку, учет древесины, договоры и отражение прав на древесину в хозяйственных документах.",
+    "Не внедрять вывод в универсальные диагностические правила без проверки применимости и регрессионных тестов."
+  ],
+  "related_law": {
+    "forest_code": "статьи 20, 23.7, 23.9, 29 ЛК РФ",
+    "federal_law": "Федеральный закон от 07.07.2025 №205-ФЗ (с 01.09.2026)",
+    "decree": "ПП РФ от 02.02.2026 №82 (с 21.03.2026)",
+    "rosimushchestvo": "Приказ от 24.07.2026 №99 (с 09.10.2026)"
+  },
+  "risks": "Неправомерное распоряжение федеральной древесиной, ошибочное применение режима древесины, срубленной на арендованном участке, вместо режима сервитута.",
+  "sources": {
+    "original_letter_pdf": "https://rosleshoz.gov.ru/upload/iblock/1cc/t3jejfi4pice0x3gd2exit4i8q329sdj/%D0%A0%D0%B0%D0%B7%D1%8A%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D0%B2%D0%BE%D0%BC%D1%83%20%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D1%83%20%D0%B4%D1%80%D0%B5%D0%B2%D0%B5%D1%81%D0%B8%D0%BD%D1%8B%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D1%80%D0%B8%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%BB%D0%B5%D1%81%D0%BE%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%BD%D1%8B%D1%85%20%D0%B4%D0%BE%D1%80%D0%BE%D0%B3.pdf",
+    "official_announcement": "https://rosleshoz.gov.ru/news/federal/rosleskhoz-razyasnil-pravovoy-status-drevesiny-poluchennoy-pri-sozdanii-lesotransportnykh-dorog-/"
+  },
+  "verification": {
+    "original_official_letter_four_pages_read": true,
+    "first_page_date_number_visual_check": true,
+    "official_news_read": true,
+    "indexed": true,
+    "existing_rules_unchanged": true
+  },
+  "activation_guard": "RESEARCH_ONLY; NO_EXPERT_RULE_CHANGES; NO_HARD_RADAR_CHANGES; TESTS_REQUIRED_BEFORE_ACTIVATION",
+  "dedup_key": "ROSLESKHOZ-20261026-IS-02-54-30759-FOREST-TRANSPORT-ROAD-TIMBER-OWNERSHIP"
+}
