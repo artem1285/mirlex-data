@@ -570,6 +570,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-14269-WASTEWATER-RELIEF.json",
       "status": "RESEARCH_ONLY_SOURCE_REPRINT_PRIMARY_ORIGINAL_UNREAD",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-14269-wastewater-relief.json"
+    },
+    {
+      "id": "ECO-2026-MINSEL-572-SALMON-ANEMIA",
+      "path": "eco-changes/registry/ECO-2026-MINSEL-572-SALMON-ANEMIA.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+      "engine_knowledge": "engine/knowledge/eco-2026-minsel-572-salmon-anemia.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
