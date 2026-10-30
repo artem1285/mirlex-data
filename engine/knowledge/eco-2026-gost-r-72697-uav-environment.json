@@ -1,0 +1,19 @@
+{
+  "id": "eco-2026-gost-r-72697-uav-environment",
+  "source_card": "eco-changes/registry/ECO-2026-GOST-R-72697-UAV-ENVIRONMENT.json",
+  "source_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_PRIMARY_METADATA_VERIFIED_FULL_TEXT_UNREAD",
+  "category": "ENVIRONMENTAL_UAV_OPERATIONS_NATIONAL_STANDARD",
+  "effective_date": "2026-10-30",
+  "observed_at": "2026-10-31",
+  "document": "ГОСТ Р 72697-2026, приказ Росстандарта от 30.09.2026 № 1249-ст",
+  "verified": "Официальный портал Росстандарта подтверждает принятие, номер приказа, дату введения и область применения стандарта по предотвращению или минимизации экологических рисков эксплуатации БАС.",
+  "legal_boundary": "Национальный стандарт не объявлять безусловно обязательным. Применимость к конкретным проектам, договорам и нормативным отсылкам отдельно проверять. Текст стандарта в официальном реестре отсутствует.",
+  "research_application": "Экологический мониторинг с БПЛА; эксплуатация, ремонт и обслуживание БАС; проектирование природоохранных обследований. Требования конкретных разделов изучить после получения полного текста.",
+  "source_url": "https://protect.gost.ru/gost/details/43f2c719-5272-4424-bf5d-86cbd08855d1",
+  "support_url": "https://www.consultant.ru/document/cons_doc_LAW_546161/",
+  "client_use_allowed": true,
+  "client_use_condition": "Только проверенные метаданные и область применения; не публиковать неподтвержденные конкретные требования стандарта.",
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true
+}
