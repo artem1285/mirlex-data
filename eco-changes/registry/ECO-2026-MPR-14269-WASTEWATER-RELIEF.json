@@ -1,0 +1,55 @@
+{
+  "id": "ECO-2026-MPR-14269-WASTEWATER-RELIEF",
+  "dedup_key": "MPR-LETTER-2026-10-19-14-78-14269-OG-WASTEWATER-DISCHARGE-RELIEF",
+  "checked_at": "2026-10-30",
+  "document_date": "2026-10-19",
+  "first_found_publication": "2026-10-28",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "MINISTRY_EXPLANATORY_LETTER_NOT_NPA",
+  "status": "RESEARCH_ONLY_SOURCE_REPRINT_PRIMARY_ORIGINAL_UNREAD",
+  "domain": "Вода / сточные воды / сброс на рельеф / охрана земель",
+  "document": "Письмо Минприроды России от 19.10.2026 № 14-78/14269-ОГ «О возможности сброса сточных вод на рельеф местности»",
+  "what_changed": "В опубликованном 28.10.2026 тексте письма Минприроды совместно с Росводресурсами изложена позиция, что сброс сточных вод на рельеф местности (водосборную площадь) нарушает действующее законодательство и может повлечь административную ответственность. Письмо ссылается на ст.44 ВК РФ и ст.13 ЗК РФ. Это ведомственная позиция, а не новая правовая норма. Не расширять вывод автоматически на все случаи отвода поверхностных/дренажных вод без проверки фактов и специальных режимов.",
+  "affected": [
+    "предприятия, осуществляющие сброс сточных вод",
+    "водопользователи",
+    "проектировщики систем водоотведения",
+    "правообладатели земельных участков"
+  ],
+  "dates": {
+    "letter": "2026-10-19",
+    "reprint": "2026-10-28",
+    "new_normative_effective_date": null,
+    "compliance_deadline": "Нового срока письмо не устанавливает"
+  },
+  "risk": "Риск загрязнения земель и административной ответственности при сбросе сточных вод на рельеф; ошибочная универсализация ведомственного письма без проверки вида вод, схемы отвода, статуса участка и специальных требований.",
+  "mirlex_action": "В исследовательской ветке проверить маршруты сточных вод по проектной документации, наличие водного объекта/ЦСВ, характер стока, действующие требования ВК РФ, ЗК РФ и применимость специальных режимов. Найти и прочитать оригинал письма Минприроды. Не менять диагностические правила и не публиковать клиентские утверждения до проверки первоисточника, применимости и регрессионных тестов.",
+  "client_wording": "Черновик, не публиковать до проверки оригинала: Минприроды в письме от 19.10.2026 №14-78/14269-ОГ изложило позицию о недопустимости сброса сточных вод на рельеф местности. Письмо не является НПА; применимость требует оценки конкретной системы водоотведения.",
+  "sources": {
+    "full_text_reprint": "https://www.garant.ru/products/ipo/prime/doc/415059057/",
+    "official_ministry_original_url": null,
+    "related_legal_basis": [
+      "ст.44 Водного кодекса РФ",
+      "ст.13 Земельного кодекса РФ"
+    ]
+  },
+  "verification": {
+    "full_text_reprint_read": true,
+    "original_ministry_letter_read": false,
+    "original_ministry_letter_located": false,
+    "source_is_secondary_reprint": true,
+    "legal_basis_official_direct_read": false,
+    "regression_tests_run": false,
+    "unconfirmed_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "related_records": [
+    "ECO-2026-ROSVOD-14713-WATER-DISCHARGE-PROTOCOLS",
+    "ECO-2026-PP-1342"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-mpr-14269-wastewater-relief.json",
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_modified": false,
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_PRIMARY_VERIFIED_AND_READBACK"
+}
