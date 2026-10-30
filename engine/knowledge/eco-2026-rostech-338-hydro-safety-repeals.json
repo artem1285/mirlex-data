@@ -1,0 +1,33 @@
+{
+  "id": "ECO-2026-ROSTECH-338-HYDRO-SAFETY-REPEALS",
+  "source_id": "ECO-2026-ROSTECH-338-HYDRO-SAFETY-REPEALS",
+  "source_card": "eco-changes/registry/ECO-2026-ROSTECH-338-HYDRO-SAFETY-REPEALS.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "status": "RESEARCH_ONLY_PRIMARY_OFFICIAL_DIRECT_READ_PENDING",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_NOT_EFFECTIVE",
+  "recorded_at": "2026-10-30",
+  "effective_date": "2027-01-01",
+  "topic": [
+    "HYDROTECHNICAL_SAFETY",
+    "WATER",
+    "REPEAL",
+    "REGULATORY_DOCUMENTS"
+  ],
+  "summary": "Приказ Ростехнадзора от 21.09.2026 №338, зарегистрирован 23.10.2026 №88859; с 01.01.2027 отменяет приказы №463, 464, 465, 496, 523 от 2020 года по формам и процедурам безопасности ГТС. Не содержит новых форм. Полный текст прочитан в КонсультантПлюс и PPT, официальный портал публикации недоступен при прямом запросе.",
+  "research_tasks": [
+    "Проверить официальный оригинал https://publication.pravo.gov.ru/document/0001202610260007 после восстановления доступа",
+    "Установить действующие заменяющие акты, формы и переходные положения на 01.01.2027",
+    "Оценить применимость для проектирования и эксплуатации ГТС и провести регрессионные тесты перед обновлением экспертных правил"
+  ],
+  "sources": [
+    "https://publication.pravo.gov.ru/document/0001202610260007",
+    "https://www.consultant.ru/document/cons_doc_LAW_547645/",
+    "https://pravo.ppt.ru/prikaz/rostekhnadzor/n-338-358855"
+  ],
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "activation_guard": "RESEARCH_ONLY; NO_EXPERT_RULE_CHANGES; NO_HARD_RADAR_CHANGES; PRIMARY_ORIGINAL_AND_REPLACEMENT_CHECK_REQUIRED",
+  "dedup_key": "ROSTECHNADZOR-ORDER-338-20260921-HYDROTECHNICAL-REPEALS"
+}
