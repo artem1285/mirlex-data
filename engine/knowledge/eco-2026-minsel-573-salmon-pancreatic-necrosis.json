@@ -1,0 +1,26 @@
+{
+  "id": "ECO-2026-MINSEL-573-SALMON-PANCREATIC-NECROSIS",
+  "source_card": "eco-changes/registry/ECO-2026-MINSEL-573-SALMON-PANCREATIC-NECROSIS.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+  "legal_status": "ADOPTED_NOT_EFFECTIVE",
+  "primary_source": "https://publication.pravo.gov.ru/document/0001202610160008",
+  "primary_direct_read": false,
+  "verified_secondary_sources": [
+    "https://base.garant.ru/415083603/",
+    "https://pravo.ppt.ru/prikaz/minselkhoz/n-573-357931"
+  ],
+  "effective_date": "2027-03-01",
+  "expires": "2033-03-01",
+  "summary": "Новые ветеринарные правила профилактики, диагностики, карантина и отмены ограничений при инфекционном некрозе поджелудочной железы лососевых рыб; с 01.03.2027 заменяют правила 2020 года.",
+  "affected": "Владельцы и операторы хозяйств по выращиванию лососевых, ветеринарные службы, лаборатории; аквакультура, рыбоводство.",
+  "operational_checks": [
+    "Отчётность о внезапном падеже и подозрении на болезнь по пунктам 7 и 9",
+    "Ограничения вывоза рыб до результатов исследований по пункту 10",
+    "Карантин, диагностические процедуры и отмена карантина по полной редакции приказа"
+  ],
+  "activation_guard": "RESEARCH_ONLY; official primary direct read, applicability and regression tests required before expert deployment",
+  "hard_radar_modified": false,
+  "expert_rules_changed": false
+}
