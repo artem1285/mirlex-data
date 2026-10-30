@@ -1,0 +1,18 @@
+{
+  "id": "eco-2026-rpn-rop-recycler-product-demand-20261028",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-ROP-RECYCLER-PRODUCT-DEMAND-20261028.json",
+  "source_index": "eco-changes/index.json",
+  "status": "VERIFIED_RESEARCH_ONLY",
+  "category": "ROP_RECYCLER_MARKET_OUTPUT_CONTROL_PRACTICE",
+  "event_date": "2026-10-28",
+  "observed_at": "2026-10-30",
+  "verified": "Росприроднадзор официально сообщил о предложении зарегистрированным утилизаторам представить к 15.10.2026 сведения о продукции, заказчиках и востребованности; ведомство заявило, что не получило ни одного ответа.",
+  "legal_boundary": "Информационная публикация не устанавливает новой нормативной формы отчетности или подтвержденной санкции. Текст запроса и правовое основание его обязательности не прочитаны.",
+  "practical_research": "Для группы 10 проверить материальный баланс, выпускаемое вторичное сырьё/продукцию, документы реализации, наличие спроса и полученный адресный запрос. Не выдавать публичное сообщение за установленную обязанность.",
+  "source_url": "https://t.me/Rosprirodnadzor_official/3461",
+  "industry_reprint": "https://rosutilization.ru/press-center/410/",
+  "client_use_allowed": true,
+  "client_use_condition": "Только точное цитирование факта официального сообщения, без утверждения о новой обязанности",
+  "expert_rule_activation_allowed": false,
+  "hard_radar_unchanged": true
+}
