@@ -582,6 +582,12 @@
       "path": "eco-changes/registry/ECO-2026-MINSEL-573-SALMON-PANCREATIC-NECROSIS.json",
       "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
       "engine_knowledge": "engine/knowledge/eco-2026-minsel-573-salmon-pancreatic-necrosis.json"
+    },
+    {
+      "id": "ECO-2026-RPN-ROP-RECYCLER-PRODUCT-DEMAND-20261028",
+      "path": "eco-changes/registry/ECO-2026-RPN-ROP-RECYCLER-PRODUCT-DEMAND-20261028.json",
+      "status": "VERIFIED_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-rpn-rop-recycler-product-demand-20261028.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
