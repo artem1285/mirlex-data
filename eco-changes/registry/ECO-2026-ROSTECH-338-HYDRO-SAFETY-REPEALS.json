@@ -1,0 +1,73 @@
+{
+  "id": "ECO-2026-ROSTECH-338-HYDRO-SAFETY-REPEALS",
+  "checked_at": "2026-10-30",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ADOPTED_NOT_EFFECTIVE",
+  "document": "Приказ Ростехнадзора от 21.09.2026 № 338 «О признании утратившими силу отдельных приказов ... по вопросам безопасности гидротехнических сооружений»",
+  "minjust_registration": "23.10.2026 № 88859",
+  "official_publication_url": "https://publication.pravo.gov.ru/document/0001202610260007",
+  "official_publication_date": "2026-10-26",
+  "effective_date": "2027-01-01",
+  "repeals": [
+    {
+      "date": "2020-11-26",
+      "number": "463",
+      "subject": "типовая форма решения о консервации и (или) ликвидации ГТС"
+    },
+    {
+      "date": "2020-11-26",
+      "number": "464",
+      "subject": "порядок предложений органов власти по бесхозяйным ГТС"
+    },
+    {
+      "date": "2020-11-26",
+      "number": "465",
+      "subject": "форма акта обследования ГТС после консервации и (или) ликвидации"
+    },
+    {
+      "date": "2020-12-04",
+      "number": "496",
+      "subject": "согласование плана безопасности бесхозяйного ГТС"
+    },
+    {
+      "date": "2020-12-14",
+      "number": "523",
+      "subject": "порядок экспертных комиссий по декларациям безопасности ГТС"
+    }
+  ],
+  "scope": "Безопасность гидротехнических сооружений, за исключением судоходных и портовых ГТС в предметах отменяемых актов",
+  "affected": "Собственники и эксплуатирующие организации ГТС, уполномоченные органы, проектировщики консервации/ликвидации ГТС, участники экспертизы деклараций безопасности",
+  "change": "С 01.01.2027 утрачивают силу пять ведомственных приказов 2020 года. Новый приказ №338 не утверждает заменяющих форм или процедур.",
+  "risk": "Использование утративших силу форм и процедур после 01.01.2027; ошибочное предположение, что отмена ведомственных форм отменяет базовые обязанности по безопасности ГТС.",
+  "mirlex_action": "Проверить наличие применимых новых актов и переходных положений, затем актуализировать консультационные чек-листы ГТС; действующие правила MIRLEX до проверки не изменять.",
+  "client_wording": "С 1 января 2027 года утратят силу пять приказов Ростехнадзора 2020 года по вопросам консервации, ликвидации и безопасности гидротехнических сооружений. Перед оформлением документов следует проверить актуальные формы и процедуры.",
+  "sources": [
+    {
+      "type": "official_publication_url_identified_from_index",
+      "url": "https://publication.pravo.gov.ru/document/0001202610260007",
+      "direct_full_text_read": false
+    },
+    {
+      "type": "full_act_text_reproduced",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_547645/",
+      "direct_full_text_read": true
+    },
+    {
+      "type": "full_act_text_crosscheck",
+      "url": "https://pravo.ppt.ru/prikaz/rostekhnadzor/n-338-358855",
+      "direct_full_text_read": true
+    },
+    {
+      "type": "official_publication_index",
+      "url": "https://ecoportal.su/news/view/134169.html",
+      "direct_full_text_read": true
+    }
+  ],
+  "verification": "Full act text compared across ConsultantPlus and PPT; official publication portal returned timeout; original official PDF not directly read. Legal status and effective date verified in full reproduced act.",
+  "engine_mode": "RESEARCH_ONLY",
+  "deployment": "NO_EXPERT_RULE_CHANGES",
+  "hard_radar_modified": false,
+  "dedup_key": "ROSTECHNADZOR-ORDER-338-20260921-HYDROTECHNICAL-REPEALS",
+  "engine_knowledge": "engine/knowledge/eco-2026-rostech-338-hydro-safety-repeals.json"
+}
