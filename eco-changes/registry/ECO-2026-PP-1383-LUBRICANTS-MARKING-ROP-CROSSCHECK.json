@@ -24,15 +24,18 @@
     "act_full_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547596/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/",
     "amendments_full_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547596/da1ca42c3dfb31f24b0bb9a014bc3dcf6dd7dd7b/",
     "consultant_review": "https://www.consultant.ru/law/hotdocs/96062.html",
-    "official_primary_publication": null
+    "official_primary_publication": "https://publication.pravo.gov.ru/document/0001202610230045",
+    "garant_full_reprint": "https://base.garant.ru/415152147/"
   },
   "verification": {
     "act_text_read_from_consultant": true,
     "amendments_text_read_from_consultant": true,
-    "exact_official_publication_url_verified": false,
+    "exact_official_publication_url_verified": true,
     "official_primary_text_directly_read": false,
     "consultant_notes_early_provisions": true,
-    "do_not_notify_until_primary_verified": true
+    "do_not_notify_until_primary_verified": true,
+    "exact_official_publication_url_provenance": "ГАРАНТ: текст ПП РФ № 1383 и номер официального опубликования 0001202610230045",
+    "last_source_check_at": "2026-10-31"
   },
   "dedup_key": "PP-RF-1383-20261021-LUBRICANTS-MARKING",
   "notification_policy": "DO_NOT_NOTIFY_UNTIL_OFFICIAL_PRIMARY_DIRECT_VERIFIED",
