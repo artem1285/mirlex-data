@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -588,6 +588,12 @@
       "path": "eco-changes/registry/ECO-2026-RPN-ROP-RECYCLER-PRODUCT-DEMAND-20261028.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-rpn-rop-recycler-product-demand-20261028.json"
+    },
+    {
+      "id": "ECO-2026-GOST-R-72697-UAV-ENVIRONMENT",
+      "path": "eco-changes/registry/ECO-2026-GOST-R-72697-UAV-ENVIRONMENT.json",
+      "status": "RESEARCH_ONLY_PRIMARY_METADATA_VERIFIED_FULL_TEXT_UNREAD",
+      "engine_knowledge": "engine/knowledge/eco-2026-gost-r-72697-uav-environment.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
