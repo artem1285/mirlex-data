@@ -1,0 +1,30 @@
+{
+  "id": "ECO-2026-MPR-14269-WASTEWATER-RELIEF",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-14269-WASTEWATER-RELIEF.json",
+  "eco_radar_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_SOURCE_REPRINT_PRIMARY_ORIGINAL_UNREAD",
+  "legal_status": "MINISTRY_EXPLANATORY_LETTER_NOT_NPA",
+  "priority": "YELLOW",
+  "original_document": "Письмо Минприроды России от 19.10.2026 № 14-78/14269-ОГ «О возможности сброса сточных вод на рельеф местности»",
+  "source": "https://www.garant.ru/products/ipo/prime/doc/415059057/",
+  "principle": "Минприроды в письме излагает позицию о нарушении законодательства при сбросе сточных вод на рельеф; письмо не является нормативным актом. Оригинал письма не прочитан, выводы требуют проверки применимости.",
+  "linked_ids": [
+    "ECO-2026-ROSVOD-14713-WATER-DISCHARGE-PROTOCOLS",
+    "ECO-2026-PP-1342"
+  ],
+  "diagnostic_checks": [
+    "Разделить сточные, дренажные, поверхностные воды и фактическую схему отвода",
+    "Проверить водный объект/ЦСВ и наличие разрешительной документации",
+    "Сверить ст.44 ВК РФ и ст.13 ЗК РФ в актуальной редакции",
+    "Проверить специальные режимы и судебную практику для конкретного случая",
+    "Сверить оригинал письма и статус ведомственного разъяснения"
+  ],
+  "verification": {
+    "full_text_reprint_read": true,
+    "original_official_letter_read": false,
+    "expert_deployment_allowed": false,
+    "client_publication_allowed": false,
+    "regression_tests_run": false
+  },
+  "cross_radar_guard": "Не менять Жёсткий радар, действующие диагностические правила и экспертные пакеты без официального первоисточника и регрессионных тестов."
+}
