@@ -642,6 +642,12 @@
       "path": "eco-changes/registry/ECO-2026-PP-1425-WATER-DAMAGE-METHODOLOGY-AUTHORITY.json",
       "status": "RESEARCH_ONLY_OFFICIAL_PUBLICATION_NOT_DIRECTLY_READ",
       "engine_knowledge": "engine/knowledge/eco-2026-pp-1425-water-damage-methodology-authority.json"
+    },
+    {
+      "id": "ECO-2026-PP-1422-PLANT-QUARANTINE-ZONE-NOTIFICATION",
+      "path": "eco-changes/registry/ECO-2026-PP-1422-PLANT-QUARANTINE-ZONE-NOTIFICATION.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PUBLICATION_NOT_DIRECTLY_READ",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1422-plant-quarantine-zone-notification.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
