@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -636,6 +636,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-43587-DVOS-ORO-25X.json",
       "status": "RESEARCH_ONLY_FULL_LETTER_REPRINT_READ_MINISTRY_ORIGINAL_NOT_OBTAINED",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-43587-dvos-oro-25x.json"
+    },
+    {
+      "id": "ECO-2026-PP-1425-WATER-DAMAGE-METHODOLOGY-AUTHORITY",
+      "path": "eco-changes/registry/ECO-2026-PP-1425-WATER-DAMAGE-METHODOLOGY-AUTHORITY.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PUBLICATION_NOT_DIRECTLY_READ",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1425-water-damage-methodology-authority.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
