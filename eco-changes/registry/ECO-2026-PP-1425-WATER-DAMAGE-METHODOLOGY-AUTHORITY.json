@@ -1,0 +1,41 @@
+{
+  "id": "ECO-2026-PP-1425-WATER-DAMAGE-METHODOLOGY-AUTHORITY",
+  "dedup_key": "PP-RF-2026-10-30-1425-MPR-WATER-NEGATIVE-IMPACT-METHODOLOGY",
+  "checked_at": "2026-11-01",
+  "document_date": "2026-10-30",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ADOPTED_NOT_YET_IN_FORCE",
+  "status": "RESEARCH_ONLY_OFFICIAL_PUBLICATION_NOT_DIRECTLY_READ",
+  "document": "Постановление Правительства РФ от 30.10.2026 № 1425 «О внесении изменения в постановление Правительства Российской Федерации от 11 ноября 2015 г. № 1219»",
+  "what_changed": "Положение о Минприроды дополнено полномочием утверждать методику определения вреда от негативного воздействия вод, причиненного территориям и объектам, и оценки эффективности мероприятий по предотвращению такого воздействия и ликвидации его последствий. Постановление не утверждает саму методику и не вводит самостоятельных расчетных обязанностей для предприятий.",
+  "affected": [
+    "Минприроды России",
+    "разработчики мер инженерной защиты от негативного воздействия вод",
+    "проектировщики и заказчики мероприятий по защите от затопления при последующем принятии методики"
+  ],
+  "dates": {
+    "effective": "2027-01-01",
+    "deadline_for_business": null
+  },
+  "risk": "Риск преждевременно применять не утвержденную этим постановлением методику или считать предоставление полномочия новой обязанностью природопользователя.",
+  "mirlex_action": "Отслеживать отдельный приказ Минприроды с текстом методики и его официальное опубликование; до этого не менять расчеты, диагностические правила и клиентские рекомендации. Сверить официальный текст постановления.",
+  "client_wording": "ЧЕРНОВИК, НЕ ПУБЛИКОВАТЬ: С 1 января 2027 года Минприроды получит полномочие утверждать методику оценки вреда от негативного воздействия вод и эффективности защитных мероприятий. Сама методика данным постановлением не утверждена.",
+  "sources": {
+    "full_text_reprint": "https://www.consultant.ru/document/cons_doc_LAW_548014/",
+    "review": "https://www.consultant.ru/law/review/fed/fw2026-10-31.html",
+    "official_primary_url": null
+  },
+  "verification": {
+    "full_act_text_reprint_read": true,
+    "original_official_publication_read": false,
+    "primary_source_verified": false,
+    "regression_tests_run": false,
+    "signal": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "engine_knowledge": "engine/knowledge/eco-2026-pp-1425-water-damage-methodology-authority.json",
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_modified": false,
+  "notification_policy": "NO_NOTIFICATION_UNTIL_PRIMARY_CONFIRMED_AND_READBACK"
+}
