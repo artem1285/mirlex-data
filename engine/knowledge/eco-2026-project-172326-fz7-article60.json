@@ -1,0 +1,22 @@
+{
+  "id": "ECO-2026-PROJECT-172326-FZ7-ARTICLE60",
+  "source_id": "ECO-2026-PROJECT-172326-FZ7-ARTICLE60",
+  "source_card": "eco-changes/registry/ECO-2026-PROJECT-172326-FZ7-ARTICLE60.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "status": "RESEARCH_ONLY_PRIMARY_FULL_TEXT_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "UNCONFIRMED_DRAFT_SIGNAL_NOT_IN_FORCE",
+  "recorded_at": "2026-10-31",
+  "topic": "Охрана редких и находящихся под угрозой исчезновения организмов (ст. 60 ФЗ-7); точная сфера проекта не установлена.",
+  "summary": "В отраслевом обзоре от 30.10.2026 указан проект изменения статьи 60 ФЗ-7; официальный URL проекта найден, но текст проекта, цель и предлагаемые изменения не прочитаны. Содержательная новация НЕ подтверждена.",
+  "research_tasks": [
+    "Прочитать текст и пояснительную записку проекта на regulation.gov.ru, установить содержание и стадию, проверить применимость к ООПТ, биоразнообразию и ГЭЭ."
+  ],
+  "official_project_url": "https://regulation.gov.ru/projects/172326/",
+  "primary_text_read": false,
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "dedup_key": "regulation-project-172326-202610"
+}
