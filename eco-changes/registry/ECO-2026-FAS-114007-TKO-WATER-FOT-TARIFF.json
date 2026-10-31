@@ -1,0 +1,52 @@
+{
+  "id": "ECO-2026-FAS-114007-TKO-WATER-FOT-TARIFF",
+  "checked_at": "2026-11-01",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "OFFICIAL_EXPLANATORY_LETTER_NOT_NPA",
+  "engine_status": "RESEARCH_ONLY_ORIGINAL_FAS_LETTER_NOT_DIRECTLY_VERIFIED",
+  "document": "Письмо ФАС России от 27.10.2026 № СП/114007/26 «О направлении информационного письма»",
+  "document_date": "2026-10-27",
+  "first_found_publication": "2026-10-31",
+  "new_normative_effective_date": null,
+  "topic": "Тарифное регулирование в сфере обращения с ТКО, водоснабжения, водоотведения и теплоснабжения: учет расходов на оплату труда",
+  "what_changed": "ФАС разъяснила применение ранее принятого постановления Правительства РФ от 20.11.2025 №1834: однократный пересмотр расходов на оплату труда и страховые взносы в регулируемых тарифах; подтверждающие документы, статистические показатели, порядок корректировки базового уровня операционных расходов, особенности концессий и инициативного пересмотра тарифов. Письмо не устанавливает новых нормативных обязанностей.",
+  "scope": "Региональные операторы и другие регулируемые организации в сфере обращения с ТКО, водоканалы и организации теплоснабжения, региональные тарифные органы и концессионеры. Не относится к экологическому сбору и не изменяет РОП.",
+  "dates": {
+    "letter": "2026-10-27",
+    "reprint_discovered": "2026-10-31",
+    "application": "Разъясняет действующие нормы о корректировке тарифов 2026–2028 годов",
+    "deadline_for_2028_tariff_application": "2027-09-01",
+    "past_deadlines": [
+      "2025-12-01 (на 2026 год)",
+      "2026-09-01 (на 2027 год)"
+    ]
+  },
+  "risk": "Регулируемая организация может пропустить установленный срок обращения, неправильно подтвердить ФОТ и численность, ошибочно считать допустимым повторное обращение после отказа или некорректно пересмотреть параметры концессии. Разъяснение само по себе не гарантирует увеличение тарифа.",
+  "mirlex_action": "Для клиентов из сферы ТКО и водоснабжения проверять факт ранее поданного заявления, основания однократного пересмотра, отчетность П-4/ПМ, расчеты численности и ФОТ, применимость к конкретному периоду и срок до 01.09.2027 для тарифов 2028 года. До проверки оригинала ФАС, актуальных редакций ПП №1834/№484/№406 и регрессионных тестов — только исследовательский контур.",
+  "client_wording": "НЕ ПУБЛИКОВАТЬ ДО ПОДТВЕРЖДЕНИЯ ОРИГИНАЛА: ФАС пояснила порядок учета расходов на оплату труда при пересмотре регулируемых тарифов на обращение с ТКО и водоснабжение; для корректировки тарифов 2028 года в разъяснении указан срок обращения до 1 сентября 2027 года.",
+  "sources": {
+    "full_letter_text_reprint": "https://www.consultant.ru/document/cons_doc_LAW_548007/",
+    "original_fas_letter_url": null,
+    "underlying_pp1834": "https://www.consultant.ru/document/cons_doc_LAW_548007/"
+  },
+  "verification": {
+    "consultant_full_text_read": true,
+    "fas_original_direct_read": false,
+    "fas_original_located": false,
+    "underlying_pp1834_primary_direct_read": false,
+    "dedup_index_checked": true,
+    "github_code_search_no_exact_match": true,
+    "regression_tests_run": false,
+    "unconfirmed_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "dedup_key": "FAS-LETTER-2026-10-27-SP-114007-26-TKO-WATER-HEAT-FOT-TARIFF",
+  "related_records": [
+    "ECO-2026-PP-1401-TKO-TARIFF-FAS"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-fas-114007-tko-water-fot-tariff.json",
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_modified": false,
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_ORIGINAL_FAS_SOURCE_CONFIRMED_AND_READBACK"
+}
