@@ -1,0 +1,32 @@
+{
+  "id": "ECO-2026-MPR-43587-DVOS-ORO-25X",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-43587-DVOS-ORO-25X.json",
+  "eco_radar_index": "eco-changes/index.json",
+  "status": "RESEARCH_ONLY_FULL_LETTER_REPRINT_READ_MINISTRY_ORIGINAL_NOT_OBTAINED",
+  "priority": "RED",
+  "legal_status": "OFFICIAL_EXPLANATORY_LETTER_NOT_NPA",
+  "original_document": "Письмо Минприроды России от 08.10.2026 № 12-47/43587",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_547971/",
+  "principle": "Смена ОРО и неактуализированная ДВОС: ведомство указывает на риск применения п.32 Правил №881 (Ксл=25) при недостоверности ДВОС, но отдельно определяет Mслj для объектов II категории как разницу фактической массы размещения и массы, указанной в ДВОС. Письмо не является НПА. Применение к отчетности за 2025 год требует проверки редакций, обстоятельств и расчета.",
+  "related_source": "https://www.consultant.ru/document/cons_doc_LAW_543068/",
+  "linked_ids": [
+    "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01"
+  ],
+  "diagnostic_checks": [
+    "Установить правовой статус ДВОС и изменения, требующие актуализации по ст.31.2 ФЗ №7",
+    "Сверить на 2025 год действующую редакцию п.32 Правил №881 и расчет по каждому ОРО",
+    "Сопоставить массу отходов по классу опасности в ДВОС и фактическую массу размещения",
+    "Проверить договор с новым ОРО, его ГРОРО-статус и документы учета движения отходов",
+    "Отделить нарушение порядка актуализации ДВОС от самостоятельного основания считать всю массу сверхлимитной",
+    "Получить и проверить оригинал письма Минприроды №12-47/43587 и письмо №12-77/36444"
+  ],
+  "verification": {
+    "full_text_reprint_read": true,
+    "original_ministry_letter_read": false,
+    "legal_norm_pp881_read": true,
+    "regression_tests_run": false,
+    "expert_deployment_allowed": false,
+    "client_publication_allowed": false
+  },
+  "cross_radar_guard": "Не менять Жёсткий радар и действующие экспертные правила; сведения только для исследовательского анализа до подтверждения оригинала и регрессионных тестов."
+}
