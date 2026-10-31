@@ -1,0 +1,36 @@
+{
+  "id": "ECO-2026-PROJECT-172256-FOREST-LAND-TRANSFER",
+  "source_id": "ECO-2026-PROJECT-172256-FOREST-LAND-TRANSFER",
+  "source_card": "eco-changes/registry/ECO-2026-PROJECT-172256-FOREST-LAND-TRANSFER.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "status": "RESEARCH_ONLY_PRIMARY_FULL_TEXT_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "UNCONFIRMED_DRAFT_SIGNAL_NOT_IN_FORCE",
+  "recorded_at": "2026-10-31",
+  "topic": [
+    "FOREST",
+    "LAND_TRANSFER",
+    "ADMINISTRATIVE_PROCEDURE",
+    "DRAFT_REGULATION"
+  ],
+  "summary": "Вторичный обзор от 28.10.2026 сообщает о проекте Рослесхоза №172256 по рассмотрению ходатайств о переводе лесных земель. Официальный текст не прочитан; сроки, каналы подачи и содержание проекта не подтверждены первоисточником. Не действующая норма.",
+  "research_tasks": [
+    "Прочитать полный текст и пояснительную записку regulation.gov.ru/projects/172256/",
+    "Проверить сроки обсуждения, регламент и действующие процедуры перевода лесных земель",
+    "Оценить применимость к MIRLEX проектированию и ООПТ; не внедрять без подтверждения и тестов"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ecoindustry.ru/news/view/66760.html",
+      "published": "2026-10-28"
+    }
+  ],
+  "official_project_url": "https://regulation.gov.ru/projects/172256/",
+  "primary_text_read": false,
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "activation_guard": "RESEARCH_ONLY; NO_CLIENT_PUBLICATION; NO_EXPERT_RULE_CHANGES; NO_HARD_RADAR_CHANGES",
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "dedup_key": "regulation-project-172256-forest-land-transfer-20261027"
+}
