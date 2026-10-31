@@ -1,0 +1,54 @@
+{
+  "id": "ECO-2026-MPR-43587-DVOS-ORO-25X",
+  "dedup_key": "MPR-LETTER-2026-10-08-12-47-43587-DVOS-ORO-25X",
+  "checked_at": "2026-10-31",
+  "document_date": "2026-10-08",
+  "first_found_publication": "2026-10-31",
+  "priority": "RED",
+  "priority_is_not_legal_status": true,
+  "legal_status": "OFFICIAL_EXPLANATORY_LETTER_NOT_NPA",
+  "status": "RESEARCH_ONLY_FULL_LETTER_REPRINT_READ_MINISTRY_ORIGINAL_NOT_OBTAINED",
+  "domain": "ДВОС / плата за НВОС / смена ОРО / коэффициент 25",
+  "document": "Письмо Минприроды России от 08.10.2026 № 12-47/43587 «О внесении изменений в ДВОС и актуализации сведений об объекте НВОС»",
+  "what_changed": "В обзоре КонсультантПлюс от 31.10.2026 опубликован полный текст письма Минприроды от 08.10.2026. Министерство поясняет: при смене ОРО к декларации о плате прикладывают договор с новым ОРО/допсоглашение и данные учета отходов. При непредставлении ДВОС или недостоверных сведениях в ней размещение на неуказанном ОРО, по позиции ведомства, ведет к расчету по п.32 Правил №881 с Ксл=25. Однако для объектов II категории Mслj определяется разницей фактически размещенной массы и массы, указанной в ДВОС. Это не новая норма; письмо само отрицает общеобязательную силу разъяснений.",
+  "affected": [
+    "природопользователи с объектами II категории НВОС",
+    "предприятия, меняющие полигон/ОРО",
+    "экологи и бухгалтеры, рассчитывающие плату за размещение отходов",
+    "организации, готовящие возражения по начислению Ксл=25"
+  ],
+  "dates": {
+    "letter": "2026-10-08",
+    "discovered_in_review": "2026-10-31",
+    "new_effective_date": null,
+    "deadline": "Новых сроков письмо не устанавливает"
+  },
+  "risk": "Существенный риск 25-кратного коэффициента при квалификации сведений ДВОС как недостоверных. Одновременно буквальная формула п.32 №881 связывает Mслj с превышением массы по классу опасности, а не с самой сменой ОРО. При массе в пределах ДВОС необходимо отдельно проверить метод расчета по каждому ОРО, доказательства и применимую редакцию на отчетный год. Нельзя автоматически утверждать нулевую доплату без юридической проверки.",
+  "mirlex_action": "Сопоставить п.32 Правил №881 и ст.31.2 ФЗ №7 с письмами Минприроды 21.08.2026 №12-77/36444 и 08.10.2026 №12-47/43587; установить, является ли смена ОРО самостоятельным основанием считать всю массу сверхлимитной; проверить фактические массы, лимиты и отчетность, договор нового ОРО и данные учета; проверить применимую к 2025 году редакцию и оригинал письма. Не внедрять в правила до первоисточника и регрессионных тестов.",
+  "client_wording": "ЧЕРНОВИК, НЕ ПУБЛИКОВАТЬ: Минприроды разъяснило подход к смене ОРО в ДВОС и расчету платы за размещение отходов. Письмо не является нормативным актом; расчет коэффициента 25 зависит от фактических обстоятельств и массы отходов.",
+  "sources": {
+    "full_letter_text_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547971/",
+    "publication_review": "https://www.consultant.ru/document/cons_doc_LAW_36589/f206db6fd3db393855b110a1e53032c64fc4b0f3/",
+    "previous_ministry_letter_reprint": "https://www.consultant.ru/document/cons_doc_LAW_543068/",
+    "pp881_clause32": "https://www.consultant.ru/document/cons_doc_LAW_448455/aed3a10937b9f8c79b9b9b5bdc08a8a31296c43d/",
+    "original_ministry_url": null
+  },
+  "verification": {
+    "full_letter_text_read": true,
+    "original_ministry_letter_read": false,
+    "original_ministry_letter_located": false,
+    "primary_legal_norm_pp881_read": true,
+    "legal_status_confirmed_by_letter": true,
+    "linked_prior_letter_full_text_read": true,
+    "regression_tests_run": false,
+    "unconfirmed_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "related_records": [
+    "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-mpr-43587-dvos-oro-25x.json",
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_modified": false,
+  "notification_policy": "DO_NOT_NOTIFY_UNTIL_ORIGINAL_MINISTRY_SOURCE_CONFIRMED_AND_READBACK"
+}
