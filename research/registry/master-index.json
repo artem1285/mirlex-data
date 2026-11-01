@@ -621,6 +621,17 @@
       "ids": [
         "IND-BIODIV-002"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-01-biowaste001-gemma-vet-opo-court-followup.json",
+      "cards": 1,
+      "existing_id": "IND-BIOWASTE-001",
+      "status": "PRIMARY_PROSECUTOR_AND_NPA_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-BIOWASTE-001"
+      ]
     }
   ],
   "permanent_id_policy": {
