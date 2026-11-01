@@ -643,6 +643,17 @@
       "ids": [
         "IND-AIR-004"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-02-waterintake001-yaroslavl-rubber-site-well-license.json",
+      "cards": 1,
+      "existing_id": "IND-WATERINTAKE-001",
+      "status": "PRIMARY_PROSECUTOR_AND_LAW_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-WATERINTAKE-001"
+      ]
     }
   ],
   "permanent_id_policy": {
