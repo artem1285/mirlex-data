@@ -1,7 +1,7 @@
 {
   "id": "ECO-2026-MPR-483-OBSERVATION",
   "priority": "YELLOW",
-  "legal_status": "ADOPTED_NOT_IN_FORCE",
+  "legal_status": "IN_FORCE_FROM_2026-10-31",
   "legal_act": "Приказ Минприроды России от 16.09.2026 № 483",
   "amends": "Приказ Минприроды России от 30.07.2020 № 524",
   "minjust_registration": "19.10.2026 № 88789",
@@ -22,10 +22,16 @@
       "https://www.garant.ru/products/ipo/prime/doc/415021073/"
     ],
     "effective_date_secondary": "https://www.ecoindustry.ru/news/view/66752.html",
-    "checked_at": "2026-10-24"
+    "checked_at": "2026-11-01",
+    "effective_date_crosschecks": [
+      "https://base.garant.ru/415121073/",
+      "https://www.consultant.ru/document/cons_doc_LAW_370970/2ff7a8c72de3994f30496a0ccbb1ddafdaddf518/"
+    ],
+    "primary_full_text_directly_read": false
   },
   "dedup_key": "MINPRIRODY-483-2026-AMENDS-524",
   "engine_mode": "VERIFIED_RESEARCH_ONLY",
   "expert_rules_deployed": false,
-  "hard_radar_modified": false
+  "hard_radar_modified": false,
+  "status_checked_at": "2026-11-01"
 }
