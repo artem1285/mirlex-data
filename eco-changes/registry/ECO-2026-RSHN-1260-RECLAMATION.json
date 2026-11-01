@@ -2,7 +2,7 @@
   "id": "ECO-2026-RSHN-1260-RECLAMATION",
   "checked_at": "2026-10-24",
   "priority": "YELLOW",
-  "legal_status": "ADOPTED_NOT_IN_FORCE",
+  "legal_status": "IN_FORCE",
   "act": "Приказ Россельхознадзора от 05.10.2026 № 1260",
   "registration": "Минюст 20.10.2026 № 88812",
   "official_publication_date": "2026-10-21",
@@ -24,5 +24,12 @@
     "Приказ Россельхознадзора 18.05.2026 № 615",
     "Постановление Правительства РФ 29.05.2025 № 781"
   ],
-  "expert_rules_changed": false
+  "expert_rules_changed": false,
+  "legal_status_checked_at": "2026-11-01",
+  "legal_status_evidence": [
+    "https://www.consultant.ru/document/cons_doc_LAW_547313/",
+    "https://base.garant.ru/415128173/",
+    "https://publication.pravo.gov.ru/document/0001202610210006"
+  ],
+  "legal_status_note": "Дата вступления в силу 01.11.2026 подтверждена КонсультантПлюс и ГАРАНТ; прямое чтение официального портала недоступно. Исследовательский режим сохраняется; действующие экспертные правила не изменяются."
 }
