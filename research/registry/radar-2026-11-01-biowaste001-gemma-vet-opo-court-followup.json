@@ -105,7 +105,7 @@
       ],
       "legal_validity_gate": "RESEARCH_ONLY_PENDING_FULL_COURT_ACT_OPO_CLASS_AND_REGRESSION",
       "engine_activation": "NOT_ACTIVE",
-      "index_status": "WRITE_PENDING"
+      "index_status": "INDEXED_ENGINE_LIVE_PENDING"
     }
   ]
 }
