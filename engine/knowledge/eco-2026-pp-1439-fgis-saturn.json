@@ -1,0 +1,26 @@
+{
+  "id": "eco-2026-pp-1439-fgis-saturn",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1439-FGIS-SATURN.json",
+  "source_index": "eco-changes/index.json",
+  "record_type": "ECO_LEGAL_RESEARCH",
+  "status": "RESEARCH_ONLY_PRIMARY_FULL_TEXT_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_OFFICIALLY_PUBLISHED_EFFECTIVE_DATE_UNVERIFIED",
+  "subject": "ПП РФ № 1439 от 31.10.2026: изменение ПП № 828 о ФГИС «Сатурн»",
+  "published_at": "2026-10-31",
+  "observed_at": "2026-11-01",
+  "official_primary": "https://publication.pravo.gov.ru/document/0001202610310008",
+  "publication_number": "0001202610310008",
+  "verified_metadata": "В двух независимых агрегаторах официальных публикаций подтверждены номер № 1439, дата 31.10.2026, заголовок о внесении изменения в ПП РФ № 828, номер и дата официального опубликования.",
+  "not_verified": [
+    "полный текст постановления № 1439",
+    "конкретный пункт ПП № 828, который изменён",
+    "дата вступления в силу и переходные положения",
+    "конкретные новые обязанности и применимость к субъектам"
+  ],
+  "research_action": "При получении официального полного текста определить пункт изменения и срок, сопоставить с действующей редакцией ПП № 828 и функциями ФГИС «Сатурн»; не активировать экспертные правила до регрессионных тестов.",
+  "client_wording": "Опубликовано постановление № 1439 о внесении изменения в ПП № 828 (ФГИС «Сатурн»). Содержание поправки и сроки применения ещё не проверены по полному официальному тексту.",
+  "unverified_notice": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "activation": "RESEARCH_ONLY; expert packages and Hard Radar unchanged",
+  "dedup_key": "PP-RF-1439-20261031-FGIS-SATURN-828"
+}
