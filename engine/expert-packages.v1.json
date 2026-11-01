@@ -36,6 +36,13 @@
           "trigger": "air marker substances / BAT / KER",
           "legal_gate": "VERIFY_CURRENT_STANDARD_AND_INDUSTRY_ITS_NDT",
           "note": "No automatic violation conclusion"
+        },
+        {
+          "path": "engine/knowledge/eco-2026-mp-58r-i-ii-waste.json",
+          "mode": "RESEARCH_ONLY",
+          "trigger": "I-II class hazardous waste accumulation/storage; special territorial exception under Article 14.2(1.1) of 89-FZ",
+          "legal_gate": "VERIFY_FULL_MUNICIPALITY_OKTMO_AND_WASTE_FKKO_ANNEXES_AND_FEDERAL_OPERATOR_CONTRACT",
+          "note": "Research evidence accessible to ECO_EXPERT. Must not infer automatic entitlement to 24-month accumulation or indefinite storage."
         }
       ]
     },
