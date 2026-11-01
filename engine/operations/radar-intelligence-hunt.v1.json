@@ -118,7 +118,11 @@
           "action": "Find and review full official Dzen video, capture every screen/field/button and submission/receipt steps verbatim where feasible; cross-check against current PP RF 741 appendix 1 and official RPN LKP instructions; add evidence to existing ROP ID only after dedup; no assumptions from video title",
           "official_reference": "https://rpn.gov.ru/activity/rop/",
           "legal_reference": "ПП РФ 31.05.2024 №741 приложение 1",
-          "service": "MIRLEX ROP reporting diagnostics and Assistant"
+          "service": "MIRLEX ROP reporting diagnostics and Assistant",
+          "official_rutube_url": "https://rutube.ru/video/bcff2f14ea50975008a06ffff6969344/",
+          "official_rutube_channel": "Росприроднадзор",
+          "official_rpn_announcement_url": "https://rpn.gov.ru/press/news/kak_zapolnit_otchet_o_masse_tovarov_v_lichnom_kabinete_prirodopolzovatelya/",
+          "verification_scope": "OFFICIAL_VIDEO_TITLE_AND_DESCRIPTION_CONFIRMED; FULL_FRAMES_AND_BUTTONS_NOT_RETRIEVED"
         }
       ]
     }
