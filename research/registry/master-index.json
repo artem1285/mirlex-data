@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-11-01",
+  "updated_on": "2026-11-02",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -631,6 +631,17 @@
       "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
       "ids": [
         "IND-BIOWASTE-001"
+      ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-02-air004-gusinoozersk-quota-plan-court.json",
+      "cards": 1,
+      "new_id": "IND-AIR-004",
+      "status": "PRIMARY_PROSECUTOR_AND_LAW_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-AIR-004"
       ]
     }
   ],
