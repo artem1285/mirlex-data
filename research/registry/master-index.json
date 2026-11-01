@@ -610,6 +610,17 @@
         "IND-CHEM-002",
         "IND-NVOSPAY-001"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-01-biodiv002-zabaykalye-birds-powerline-judgment.json",
+      "cards": 1,
+      "existing_id": "IND-BIODIV-002",
+      "status": "PRIMARY_PROSECUTOR_SOURCE_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-BIODIV-002"
+      ]
     }
   ],
   "permanent_id_policy": {
