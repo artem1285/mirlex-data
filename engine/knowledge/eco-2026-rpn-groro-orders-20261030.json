@@ -1,0 +1,17 @@
+{
+  "id": "eco-2026-rpn-groro-orders-20261030",
+  "source_radar_card": "eco-changes/signals/RPN-GRORO-ORDERS-20261030.json",
+  "source_radar_id": "ECO-2026-RPN-GRORO-ORDERS-20261030",
+  "mode": "RESEARCH_ONLY_PRIMARY_PDFS_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "INDIVIDUAL_ADMINISTRATIVE_ACTS_NOT_GENERAL_NPA",
+  "verified_on": "2026-11-02",
+  "primary_listing": "https://rpn.gov.ru/activity/regulation/kadastr/groro-docs/",
+  "knowledge": "Официальная страница Росприроднадзора перечисляет опубликованные 30.10.2026 приказы № 661, 668, 669, 677, 678, 679, 683 (16–27.10.2026) о внесении изменений в ГРОРО, включая исключение ОРО приказом № 678 и включение ОРО приказами № 679, № 683. Номера, местоположения и эксплуатанты конкретных ОРО НЕ установлены; приложения PDF не прочитаны. Нельзя утверждать изменение статуса конкретного полигона.",
+  "actionable_research": "Получить семь оригинальных PDF-приложений, сверить номер ОРО, ФККО, дату операции, эксплуатанта, текущий реестровый статус. До проверки не менять экспертные правила и не публиковать клиентские выводы.",
+  "source_limit": "Подтверждены реквизиты и названия документов в официальном ведомственном списке, но не содержание PDF и не фактические записи ГРОРО.",
+  "signal": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_modified": false,
+  "hard_radar_modified": false,
+  "notification_allowed": false
+}
