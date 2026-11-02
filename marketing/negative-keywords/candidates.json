@@ -1,0 +1,20 @@
+{
+  "global_candidates": [
+    "вакансия",
+    "резюме",
+    "реферат",
+    "курсовая"
+  ],
+  "by_service": {
+    "ewaste": [
+      "купить компьютер",
+      "ремонт компьютеров",
+      "продажа техники"
+    ],
+    "waste_passport": [
+      "скачать образец",
+      "бесплатный шаблон"
+    ]
+  },
+  "note": "Candidates only; not automatically applied. Review against each campaign's approved positives and informational strategy."
+}
