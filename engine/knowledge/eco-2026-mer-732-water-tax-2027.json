@@ -1,0 +1,27 @@
+{
+  "id": "eco-2026-mer-732-water-tax-2027",
+  "source_card": "eco-changes/registry/ECO-2026-MER-732-WATER-TAX-2027.json",
+  "source_index": "eco-changes/index.json",
+  "mode": "RESEARCH_ONLY",
+  "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_UNREAD",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_REGISTERED_PUBLISHED_NOT_IN_FORCE_AT_CHECK; EFFECTIVE_DATE_REQUIRES_OFFICIAL_PRIMARY_VERIFICATION",
+  "subject": "Приказ Минэкономразвития России от 21.10.2026 № 732 «Об установлении коэффициентов-дефляторов на 2027 год»",
+  "checked_at": "2026-11-02",
+  "summary": "Коэффициент-дефлятор 1,153 для водного налога по главе 25.2 НК РФ на 2027 год; 1,251 для сборов по главе 25.1. Полный текст доступен в репринте КонсультантПлюс, официальный первоисточник напрямую не прочитан. Не путать с договорной платой за водопользование или НВОС.",
+  "research_tasks": [
+    "Проверить официальный текст на publication.pravo.gov.ru и дату вступления в силу",
+    "Сопоставить НК РФ гл.25.1/25.2, отличить водный налог от платы по договору водопользования",
+    "Проверить применимость и тесты, затем решать о внедрении"
+  ],
+  "sources": {
+    "official_publication_candidate": "https://publication.pravo.gov.ru/document/0001202610300013",
+    "full_text_legal_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547995/",
+    "dated_legal_review": "https://www.consultant.ru/law/hotdocs/96133.html",
+    "date_secondary": "https://ppt.ru/obzory/vstupaet-v-silu/prikaz-minekonomrazvitiya-rossii-21-10-2026-n-732"
+  },
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_rules_deployed": false,
+  "hard_radar_modified": false,
+  "dedup_key": "MINECON-RF-2026-732-WATER-TAX-2027-DEFLATOR"
+}
