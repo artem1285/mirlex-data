@@ -1,0 +1,46 @@
+{
+  "id": "ECO-2026-MER-732-WATER-TAX-2027",
+  "checked_at": "2026-11-02",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ADOPTED_REGISTERED_PUBLISHED_NOT_IN_FORCE_AT_CHECK; EFFECTIVE_DATE_REQUIRES_OFFICIAL_PRIMARY_VERIFICATION",
+  "engine_status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_UNREAD",
+  "domain": "Водный налог / водопользование / налоговые коэффициенты на 2027 год; смежная финансовая норма, НЕ плата НВОС и НЕ плата по договору водопользования",
+  "document": "Приказ Минэкономразвития России от 21.10.2026 № 732 «Об установлении коэффициентов-дефляторов на 2027 год»",
+  "registration": {
+    "date": "2026-10-30",
+    "number": "88977"
+  },
+  "what_changed": "Утверждён коэффициент-дефлятор 1,153 для применения главы 25.2 НК РФ «Водный налог» в 2027 году; дополнительно коэффициент 1,251 для сборов за пользование объектами животного мира и водных биоресурсов по главе 25.1 НК РФ. Это не новое экологическое разрешение и не ставка платы НВОС.",
+  "affected": "Плательщики водного налога в случаях, предусмотренных главой 25.2 НК РФ, и плательщики сборов по главе 25.1 НК РФ; нельзя распространять на всех водопользователей без проверки основания платежа.",
+  "dates": {
+    "signed": "2026-10-21",
+    "registered": "2026-10-30",
+    "publication_reported": "2026-10-30",
+    "effective_reported_by_secondary": "2026-11-10",
+    "coefficient_period": "2027",
+    "official_publication_directly_verified": false
+  },
+  "risk": "Ошибочно применить коэффициент водного налога к плате по договору водопользования или к плате за НВОС; неверно рассчитывать обязательства на 2027 год без определения вида платежа.",
+  "mirlex_action": "Проверить официальный текст и дату вступления в силу; в исследовательском разделе MIRLEX «Вода» различить водный налог (гл.25.2 НК РФ), договорную плату за пользование водным объектом и НВОС. Не изменять действующие диагностические правила без регрессионных тестов.",
+  "client_wording_draft_not_for_publication": "Минэкономразвития утвердило коэффициент-дефлятор 1,153 для водного налога на 2027 год. Он относится к плательщикам водного налога, а не автоматически ко всем водопользователям.",
+  "sources": {
+    "official_publication_candidate": "https://publication.pravo.gov.ru/document/0001202610300013",
+    "full_text_legal_reprint": "https://www.consultant.ru/document/cons_doc_LAW_547995/",
+    "dated_legal_review": "https://www.consultant.ru/law/hotdocs/96133.html",
+    "date_secondary": "https://ppt.ru/obzory/vstupaet-v-silu/prikaz-minekonomrazvitiya-rossii-21-10-2026-n-732"
+  },
+  "verification": {
+    "legal_reprint_full_text_read": true,
+    "ministerial_registration_number_verified_by_reprint": true,
+    "official_primary_direct_read": false,
+    "official_publication_number_verified": false,
+    "effective_date_officially_verified": false
+  },
+  "publication_guard": "сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "dedup_key": "MINECON-RF-2026-732-WATER-TAX-2027-DEFLATOR",
+  "engine_knowledge": "engine/knowledge/eco-2026-mer-732-water-tax-2027.json",
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_modified": false
+}
