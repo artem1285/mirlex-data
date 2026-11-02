@@ -1,0 +1,51 @@
+{
+  "version": "0.1",
+  "publication_status": "draft",
+  "budget_spend_authorized": false,
+  "campaigns": [
+    {
+      "id": "waste_passport_b2b",
+      "service_id": "waste_passport",
+      "channel": "yandex_direct",
+      "intent": "commercial",
+      "landing_url": null,
+      "prelaunch": [
+        "landing live",
+        "quiz conversion test",
+        "legal data consent",
+        "utm tracking",
+        "keyword demand verification",
+        "negative collision review"
+      ]
+    },
+    {
+      "id": "ewaste_b2b",
+      "service_id": "ewaste",
+      "channel": "vk_ads",
+      "intent": "commercial",
+      "landing_url": null,
+      "geo_note": "Екатеринбург исключался в предыдущей настройке; проверить фактическую географию перед запуском",
+      "existing_campaign_status": "requires_account_check",
+      "prelaunch": [
+        "verify old campaign status",
+        "lead form delivery test",
+        "no sales/repair traffic",
+        "verified targeting geography",
+        "attribution"
+      ]
+    },
+    {
+      "id": "nvos_registration_b2b",
+      "service_id": "nvos_registration",
+      "channel": "yandex_direct",
+      "intent": "commercial",
+      "landing_url": null,
+      "prelaunch": [
+        "check quiz and popup",
+        "verify actual landing URL",
+        "verify attribution",
+        "negative collision review"
+      ]
+    }
+  ]
+}
