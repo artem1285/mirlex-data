@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "note": "Only verified live URLs should be entered. Route hints are not URLs.",
+  "routes": [
+    {
+      "service_id": "waste_passport",
+      "hint": "MIRLEX: паспортизация отходов",
+      "verified_url": null
+    },
+    {
+      "service_id": "ewaste",
+      "hint": "MIRLEX: утилизация электроники B2B",
+      "verified_url": null
+    },
+    {
+      "service_id": "nvos_registration",
+      "hint": "MIRLEX: учёт объектов НВОС",
+      "verified_url": null
+    },
+    {
+      "service_id": "rop_check",
+      "hint": "/rop-check",
+      "verified_url": null
+    }
+  ]
+}
