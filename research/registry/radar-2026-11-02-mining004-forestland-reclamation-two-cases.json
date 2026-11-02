@@ -102,7 +102,7 @@
       ],
       "legal_validity_gate": "RESEARCH_ONLY_PENDING_HISTORICAL_NPA_DATES_FULL_JUDGMENTS_AND_SECOND_PRIMARY_RELINK",
       "engine_activation": "NOT_ACTIVE",
-      "index_status": "WRITE_PENDING"
+      "index_status": "INDEXED_ENGINE_LIVE_PENDING"
     }
   ]
 }
