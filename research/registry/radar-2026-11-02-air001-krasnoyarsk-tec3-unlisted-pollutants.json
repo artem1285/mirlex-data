@@ -119,7 +119,7 @@
       ],
       "legal_validity_gate": "RESEARCH_ONLY_CURRENT_NPA_CHECKED_HISTORICAL_2023_EDITION_AND_FULL_JUDGMENT_PENDING",
       "engine_activation": "NOT_ACTIVE",
-      "index_status": "WRITE_PENDING"
+      "index_status": "INDEXED_ENGINE_LIVE_PENDING"
     }
   ]
 }
