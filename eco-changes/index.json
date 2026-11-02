@@ -672,6 +672,12 @@
       "path": "eco-changes/registry/ECO-2026-MINPROMTORG-3717-FERTILIZER-CODES-CONTRACT.json",
       "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_UNREAD",
       "engine_knowledge": "engine/knowledge/eco-2026-minpromtorg-3717-fertilizer-codes-contract.json"
+    },
+    {
+      "id": "ECO-2026-FZ-349-LAND-SERVITUDES-UTILITY-INFRA",
+      "path": "eco-changes/registry/ECO-2026-FZ-349-LAND-SERVITUDES-UTILITY-INFRA.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PUBLICATION_UNREAD",
+      "engine_knowledge": "engine/knowledge/eco-2026-fz-349-land-servitudes-utility-infra.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
