@@ -110,7 +110,7 @@
       ],
       "legal_validity_gate": "RESEARCH_ONLY_PRIMARY_PROSECUTOR_REPORT_AND_CURRENT_248FZ_ART66_ART91_REVIEWED; HISTORICAL_CHECK_DATE_CASE_DOCUMENTS_AND_SPECIAL_EXCEPTIONS_PENDING",
       "engine_activation": "NOT_ACTIVE",
-      "index_status": "WRITE_PENDING",
+      "index_status": "INDEXED_READBACK_VERIFIED",
       "delivery_status": "ENGINE_LIVE_PENDING",
       "update_needed": "Получить первичные документы КНМ и протестов, установить дату/исключения, выполнить регрессию до активации правила."
     }
