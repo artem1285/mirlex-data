@@ -799,6 +799,17 @@
       "ids": [
         "IND-ENERGY-001"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-03-rop006-eco-fee-deadline-sanctions-prosecutor-review.json",
+      "cards": 1,
+      "existing_id": "ROP-006",
+      "status": "PRIMARY_PROSECUTOR_AND_RPN_SOURCES_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ROP_EXPERT_PRIMARY; ECO_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "ROP-006"
+      ]
     }
   ],
   "permanent_id_policy": {
