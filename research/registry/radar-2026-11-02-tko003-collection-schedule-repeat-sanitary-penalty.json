@@ -102,7 +102,7 @@
       ],
       "legal_validity_gate": "RESEARCH_ONLY_PENDING_FULL_ADMINISTRATIVE_DECISIONS_AND_HISTORICAL_SANPIN_VALIDATION",
       "engine_activation": "NOT_ACTIVE",
-      "index_status": "WRITE_PENDING"
+      "index_status": "INDEXED_ENGINE_LIVE_PENDING"
     }
   ]
 }
