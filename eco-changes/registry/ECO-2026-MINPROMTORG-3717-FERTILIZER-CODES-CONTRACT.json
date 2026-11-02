@@ -1,0 +1,39 @@
+{
+  "id": "ECO-2026-MINPROMTORG-3717-FERTILIZER-CODES-CONTRACT",
+  "checked_at": "2026-11-02",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ПРИНЯТ, НО НЕ ВСТУПИЛ В СИЛУ (по вторичным правовым источникам); прямое чтение официальной публикации не выполнено",
+  "engine_status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_UNREAD",
+  "domain": "Удобрения в потребительской упаковке / Честный знак / смежное регулирование агрохимикатов, не РОП",
+  "document": "Приказ Минпромторга России от 28.07.2026 № 3717 об утверждении типовой формы договора на оказание услуг по предоставлению кодов маркировки участникам оборота отдельных видов удобрений в потребительской упаковке",
+  "registration": "Минюст России 28.10.2026 № 88929 (по КонсультантПлюс)",
+  "publication_reported": "2026-10-30",
+  "effective_reported": "2026-11-09",
+  "what_changed": "Утверждена типовая форма договора между Оператором-ЦРПТ и участником оборота удобрений для заказа и оплаты кодов маркировки. В воспроизведенном тексте предусмотрены заявки, оплата, УПД и акты сверки, а также процедуры оценки производителя. Это не вводит новый перечень удобрений и не меняет нормы РОП.",
+  "affected": "Участники оборота отдельных видов удобрений в потребительской упаковке, для которых применяются Правила маркировки по ПП РФ от 02.06.2026 № 682; не все удобрения, не все пестициды.",
+  "risk": "Неправильное оформление договорного взаимодействия с оператором маркировки, сроков оплаты и ЭДО; смешение требований маркировки и РОП.",
+  "mirlex_action": "Сверить оригинал приказа № 3717 и его официальную публикацию, дату вступления в силу, применимость к конкретным кодам товаров по ПП № 682; при подтверждении проверить договор и ЭДО, не изменять экологические диагностические правила.",
+  "client_wording": "НЕ ПУБЛИКОВАТЬ до проверки официального текста. Для участников маркировки отдельных удобрений утверждена типовая форма договора на предоставление кодов; по правовым обзорам применяется с 09.11.2026.",
+  "sources": {
+    "full_reprinted_text": "https://pravo.ppt.ru/prikaz/minpromtorg/n-3717-359203",
+    "consultant_full_text": "https://www.consultant.ru/document/cons_doc_LAW_547908/65e53ac03b07f3f8b2957abb9ceb02ed0607d409/",
+    "consultant_hotdocs": "https://www.consultant.ru/law/hotdocs/",
+    "secondary_effective_date": "https://ppt.ru/obzory/vstupaet-v-silu/prikaz-minpromtorga-rossii-28-07-2026-3717",
+    "official_primary_url": null
+  },
+  "verification": {
+    "full_reprinted_text_read": true,
+    "registration_and_effective_date_secondary_crosscheck": true,
+    "official_original_located": false,
+    "official_original_read": false,
+    "unverified_notice": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "dedup_key": "MINPROMTORG-2026-07-28-3717-FERTILIZER-MARKING-CODES-CONTRACT",
+  "related_record": "ECO-2026-PP-682-FERTILIZER-MARKING-NOV01",
+  "engine_knowledge": "engine/knowledge/eco-2026-minpromtorg-3717-fertilizer-codes-contract.json",
+  "expert_deployment_allowed": false,
+  "hard_radar_modified": false,
+  "client_publication_allowed": false,
+  "notification_policy": "NO_NOTIFICATION_UNTIL_OFFICIAL_PRIMARY_VERIFIED_AND_READBACK"
+}
