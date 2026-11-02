@@ -710,6 +710,17 @@
       "ids": [
         "IND-MINING-004"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-02-nvospay001-msk-vostok-arrears-penalty.json",
+      "cards": 1,
+      "existing_id": "IND-NVOSPAY-001",
+      "status": "PRIMARY_RPN_SOURCE_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-NVOSPAY-001"
+      ]
     }
   ],
   "permanent_id_policy": {
