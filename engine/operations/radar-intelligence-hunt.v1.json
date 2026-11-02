@@ -114,7 +114,7 @@
         {
           "key": "PP741_APPENDIX1_LKP_VIDEO",
           "title": "Как заполнить отчет о массе товаров в ЛКП — Цифровой Росприроднадзор",
-          "status": "VIDEO_FULL_CONTENT_NOT_YET_VERIFIED",
+          "status": "OFFICIAL_VIDEO_LINK_VERIFIED_FULL_CONTENT_NOT_YET_VERIFIED",
           "action": "Find and review full official Dzen video, capture every screen/field/button and submission/receipt steps verbatim where feasible; cross-check against current PP RF 741 appendix 1 and official RPN LKP instructions; add evidence to existing ROP ID only after dedup; no assumptions from video title",
           "official_reference": "https://rpn.gov.ru/activity/rop/",
           "legal_reference": "ПП РФ 31.05.2024 №741 приложение 1",
@@ -122,7 +122,14 @@
           "official_rutube_url": "https://rutube.ru/video/bcff2f14ea50975008a06ffff6969344/",
           "official_rutube_channel": "Росприроднадзор",
           "official_rpn_announcement_url": "https://rpn.gov.ru/press/news/kak_zapolnit_otchet_o_masse_tovarov_v_lichnom_kabinete_prirodopolzovatelya/",
-          "verification_scope": "OFFICIAL_VIDEO_TITLE_AND_DESCRIPTION_CONFIRMED; FULL_FRAMES_AND_BUTTONS_NOT_RETRIEVED"
+          "verification_scope": "OFFICIAL_VIDEO_TITLE_AND_DESCRIPTION_CONFIRMED; FULL_FRAMES_AND_BUTTONS_NOT_RETRIEVED",
+          "official_video_url": "https://rutube.ru/video/bcff2f14ea50975008a06ffff6969344/",
+          "official_video_platform": "RUTUBE channel Росприроднадзор",
+          "official_video_published_on": "2026-10-19",
+          "official_video_duration": "00:05:54",
+          "official_news_url": "https://rpn.gov.ru/press/news/kak_zapolnit_otchet_o_masse_tovarov_v_lichnom_kabinete_prirodopolzovatelya/",
+          "official_dzen_suite_url": "https://dzen.ru/suite/ba680293-ca52-4325-af63-1e731a4c0583",
+          "verification_limit": "Official video title, channel, URL and length verified; individual screen fields, button sequence and receipt have NOT been inspected. Do not claim full video instructions captured."
         }
       ]
     }
