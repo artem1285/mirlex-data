@@ -777,6 +777,17 @@
       "ids": [
         "IND-TEXTILE-002"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-02-footwear001-tutaev-waste-accumulation-sanitary-fine.json",
+      "cards": 1,
+      "new_id": "IND-FOOTWEAR-001",
+      "status": "PRIMARY_PROSECUTOR_SOURCE_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-FOOTWEAR-001"
+      ]
     }
   ],
   "permanent_id_policy": {
