@@ -1,0 +1,321 @@
+{
+  "campaign_name": "MIRLEX | Отрасли | Диагностика экологии | РСЯ",
+  "platform": "Яндекс Директ ЕПК",
+  "placement": "Только РСЯ",
+  "phase": "DRAFT - no account publication",
+  "architecture": "1 ЕПК, 9 отдельных отраслевых групп, 2 текстовых варианта на группу",
+  "targeting_note": "Сигналы поведения — формулировки для подбора в интерфейсе, не заявленные существующие категории; таргетинги внутри группы РСЯ работают по ИЛИ, аудиторию и итоговый охват нужно проверить",
+  "geo": null,
+  "weekly_budget": null,
+  "goal": "Фактически доставленная заявка с квалификацией по отрасли и задаче",
+  "landing_requirement": "Только проверенный опубликованный URL соответствующей диагностической страницы MIRLEX; не отправлять на главную",
+  "campaign_checks": [
+    "зафиксировать географию и бюджет перед стартом",
+    "проверить фактическую доступность таргетингов",
+    "проверить 18 текстов в редакторе/модерации",
+    "подобрать/загрузить релевантные изображения",
+    "проверить опубликованную посадочную страницу или квиз",
+    "тест формы, получение заявки, согласие на ПД",
+    "настроить цель Метрики и проверить срабатывание",
+    "отслеживать не клики, а квалифицированные заявки",
+    "минус-слова и нежелательные аудитории проверять по каждой группе"
+  ],
+  "ads": [
+    {
+      "id": "mirlex_rsya_coffee_1",
+      "group": "Кафе и кофейни",
+      "headline": "У кафе есть вопросы по экологии?",
+      "text": "Проверьте, какие документы по отходам могут понадобиться вашему кафе.",
+      "audience_hypothesis": "Владельцы и управляющие кофеен и кафе; интересы: открытие кофейни, оборудование для общепита, управление рестораном",
+      "behavioral_seed_hypotheses": [
+        "оборудование для кофейни",
+        "касса для кафе",
+        "открытие кофейни"
+      ],
+      "service_route": "Диагностика отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_coffee",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_coffee_2",
+      "group": "Кафе и кофейни",
+      "headline": "Открыли кофейню? Поможем с экологией",
+      "text": "MIRLEX разберёт экологические вопросы вашего заведения. Начните с проверки.",
+      "audience_hypothesis": "Владельцы и управляющие кофеен и кафе; интересы: открытие кофейни, оборудование для общепита, управление рестораном",
+      "behavioral_seed_hypotheses": [
+        "оборудование для кофейни",
+        "касса для кафе",
+        "открытие кофейни"
+      ],
+      "service_route": "Диагностика отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_coffee",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_sto_1",
+      "group": "Автосервисы",
+      "headline": "У автосервиса есть отходы?",
+      "text": "Масла, фильтры и другие отходы. Поможем разобраться с документацией.",
+      "audience_hypothesis": "Собственники СТО; интересы: оборудование автосервиса, управление автосервисом",
+      "behavioral_seed_hypotheses": [
+        "оборудование для автосервиса",
+        "подъемник для сто",
+        "открытие автосервиса"
+      ],
+      "service_route": "Диагностика отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_sto",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_sto_2",
+      "group": "Автосервисы",
+      "headline": "Автосервис: поможем с экологией",
+      "text": "Проверьте, какие документы по отходам могут потребоваться вашему СТО.",
+      "audience_hypothesis": "Собственники СТО; интересы: оборудование автосервиса, управление автосервисом",
+      "behavioral_seed_hypotheses": [
+        "оборудование для автосервиса",
+        "подъемник для сто",
+        "открытие автосервиса"
+      ],
+      "service_route": "Диагностика отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_sto",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_wash_1",
+      "group": "Автомойки",
+      "headline": "Автомойка: что с документами?",
+      "text": "Поможем разобраться с отходами и вопросами водоотведения вашей мойки.",
+      "audience_hypothesis": "Владельцы автомоек; интересы: оборудование автомоек, мойки самообслуживания",
+      "behavioral_seed_hypotheses": [
+        "оборудование для автомойки",
+        "открытие автомойки",
+        "очистные сооружения автомойки"
+      ],
+      "service_route": "Диагностика воды и отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_wash",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_wash_2",
+      "group": "Автомойки",
+      "headline": "Экология для вашей автомойки",
+      "text": "Узнайте, какие экологические вопросы стоит проверить для автомойки.",
+      "audience_hypothesis": "Владельцы автомоек; интересы: оборудование автомоек, мойки самообслуживания",
+      "behavioral_seed_hypotheses": [
+        "оборудование для автомойки",
+        "открытие автомойки",
+        "очистные сооружения автомойки"
+      ],
+      "service_route": "Диагностика воды и отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_wash",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_salon_1",
+      "group": "Парикмахерские и салоны",
+      "headline": "Салон красоты: нужна ли экология?",
+      "text": "Проверьте, какие документы по отходам могут потребоваться вашему салону.",
+      "audience_hypothesis": "Собственники парикмахерских и салонов; интересы: оборудование салона, управление салоном",
+      "behavioral_seed_hypotheses": [
+        "оборудование для парикмахерской",
+        "открытие салона красоты"
+      ],
+      "service_route": "Диагностика отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_salon",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_salon_2",
+      "group": "Парикмахерские и салоны",
+      "headline": "Поможем с документами для салона",
+      "text": "MIRLEX поможет разобраться с экологическими вопросами вашей деятельности.",
+      "audience_hypothesis": "Собственники парикмахерских и салонов; интересы: оборудование салона, управление салоном",
+      "behavioral_seed_hypotheses": [
+        "оборудование для парикмахерской",
+        "открытие салона красоты"
+      ],
+      "service_route": "Диагностика отходов",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_salon",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_furniture_1",
+      "group": "Мебельные цеха",
+      "headline": "Производите мебель? Проверьте экологию",
+      "text": "Опилки, пыль, покраска. MIRLEX поможет определить нужные документы.",
+      "audience_hypothesis": "Руководители мебельных производств; интересы: мебельное оборудование и материалы",
+      "behavioral_seed_hypotheses": [
+        "станки для мебельного цеха",
+        "покрасочная камера для мебели",
+        "оборудование мебельного производства"
+      ],
+      "service_route": "Отходы и атмосферный воздух",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_furniture",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_furniture_2",
+      "group": "Мебельные цеха",
+      "headline": "Мебельный цех: отходы и выбросы",
+      "text": "Подскажем, какие вопросы экологии актуальны для вашего производства.",
+      "audience_hypothesis": "Руководители мебельных производств; интересы: мебельное оборудование и материалы",
+      "behavioral_seed_hypotheses": [
+        "станки для мебельного цеха",
+        "покрасочная камера для мебели",
+        "оборудование мебельного производства"
+      ],
+      "service_route": "Отходы и атмосферный воздух",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_furniture",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_wood_1",
+      "group": "Деревообработка",
+      "headline": "Деревообработка и экология",
+      "text": "Поможем разобраться с документацией по отходам и возможным выбросам.",
+      "audience_hypothesis": "Руководители деревообработки; интересы: деревообрабатывающие станки",
+      "behavioral_seed_hypotheses": [
+        "деревообрабатывающие станки",
+        "аспирация деревообработка"
+      ],
+      "service_route": "Отходы и атмосферный воздух",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_wood",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_wood_2",
+      "group": "Деревообработка",
+      "headline": "Пыль и отходы производства?",
+      "text": "MIRLEX проверит экологические задачи вашего деревообрабатывающего цеха.",
+      "audience_hypothesis": "Руководители деревообработки; интересы: деревообрабатывающие станки",
+      "behavioral_seed_hypotheses": [
+        "деревообрабатывающие станки",
+        "аспирация деревообработка"
+      ],
+      "service_route": "Отходы и атмосферный воздух",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_wood",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_metal_1",
+      "group": "Металлообработка",
+      "headline": "Металлообработка: что с экологией?",
+      "text": "Стружка, масла, СОЖ. Поможем проверить экологическую документацию.",
+      "audience_hypothesis": "Руководители металлообрабатывающих цехов; интересы: станки ЧПУ, СОЖ",
+      "behavioral_seed_hypotheses": [
+        "станки чпу для металла",
+        "смазочно охлаждающая жидкость"
+      ],
+      "service_route": "Отходы, воздух и НВОС",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_metal",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_metal_2",
+      "group": "Металлообработка",
+      "headline": "Цех работает. Документы в порядке?",
+      "text": "MIRLEX поможет понять, какие экологические документы нужны вашему цеху.",
+      "audience_hypothesis": "Руководители металлообрабатывающих цехов; интересы: станки ЧПУ, СОЖ",
+      "behavioral_seed_hypotheses": [
+        "станки чпу для металла",
+        "смазочно охлаждающая жидкость"
+      ],
+      "service_route": "Отходы, воздух и НВОС",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_metal",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_food_1",
+      "group": "Пищевые производства",
+      "headline": "Пищевое производство и экология",
+      "text": "Отходы, вода, выбросы. Поможем разобраться с экологическими задачами.",
+      "audience_hypothesis": "Руководители пищевых производств; интересы: оборудование производственных линий",
+      "behavioral_seed_hypotheses": [
+        "оборудование пищевого производства",
+        "линия розлива оборудования"
+      ],
+      "service_route": "Экологическая диагностика",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_food",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_food_2",
+      "group": "Пищевые производства",
+      "headline": "Документы для пищевого производства",
+      "text": "Проверьте, какие экологические вопросы актуальны вашему производству.",
+      "audience_hypothesis": "Руководители пищевых производств; интересы: оборудование производственных линий",
+      "behavioral_seed_hypotheses": [
+        "оборудование пищевого производства",
+        "линия розлива оборудования"
+      ],
+      "service_route": "Экологическая диагностика",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_food",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_warehouse_1",
+      "group": "Склады",
+      "headline": "Экология для складского комплекса",
+      "text": "Поможем проверить экологические вопросы вашей складской деятельности.",
+      "audience_hypothesis": "Руководители складских комплексов; интересы: складская логистика, складская техника",
+      "behavioral_seed_hypotheses": [
+        "оборудование для склада",
+        "складская техника для бизнеса"
+      ],
+      "service_route": "Диагностика отходов и НВОС",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_warehouse",
+      "conversion": "qualified_application",
+      "status": "draft"
+    },
+    {
+      "id": "mirlex_rsya_warehouse_2",
+      "group": "Склады",
+      "headline": "Склад: нужны ли документы по отходам?",
+      "text": "Узнайте, какие документы по отходам могут понадобиться вашему складу.",
+      "audience_hypothesis": "Руководители складских комплексов; интересы: складская логистика, складская техника",
+      "behavioral_seed_hypotheses": [
+        "оборудование для склада",
+        "складская техника для бизнеса"
+      ],
+      "service_route": "Диагностика отходов и НВОС",
+      "landing_url": null,
+      "utm_campaign": "mirlex_industry_warehouse",
+      "conversion": "qualified_application",
+      "status": "draft"
+    }
+  ]
+}
