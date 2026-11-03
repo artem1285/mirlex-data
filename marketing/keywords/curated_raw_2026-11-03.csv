@@ -1,0 +1,9 @@
+source_id,what,purpose,quality,buy,where,raw_phrase,industry_id,service_id,source_ref
+r01,паспорта отходов,для предприятия,1–4 классов опасности,заказать,,заказать паспорта отходов 1–4 классов опасности для предприятия,cross_industry,waste_passport,marketing/dictionaries/services.json
+r02,паспортизация отходов,для кофейни,,стоимость,,стоимость паспортизации отходов для кофейни,cross_industry,waste_passport,marketing/dictionaries/services.json
+r03,паспорт отходов,для производства,,оформить,,оформить паспорт отходов для производства,cross_industry,waste_passport,marketing/dictionaries/services.json
+r04,постановка объекта НВОС на учёт,для предприятия,,заказать,,заказать постановку объекта НВОС на учёт для предприятия,cross_industry,nvos_registration,marketing/dictionaries/services.json
+r05,актуализация сведений об объекте НВОС,для предприятия,,стоимость,,стоимость актуализации сведений об объекте НВОС для предприятия,cross_industry,nvos_registration,marketing/dictionaries/services.json
+r06,заявка на учёт объекта НВОС,при вводе объекта в эксплуатацию,,оформить,,оформить заявку на учёт объекта НВОС при вводе объекта в эксплуатацию,cross_industry,nvos_registration,marketing/dictionaries/services.json
+r07,паспорт отходов,для кафе,,заказать,,заказать паспорт отходов для кафе,cross_industry,waste_passport,marketing/dictionaries/services.json
+r08,постановка объекта НВОС на учёт,для предприятия,,стоимость,,стоимость постановки объекта НВОС на учёт для предприятия,cross_industry,nvos_registration,marketing/dictionaries/services.json
