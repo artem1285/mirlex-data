@@ -1,0 +1,21 @@
+{
+  "source": "kolesnikov-industry-hypotheses-v1.csv",
+  "version": 2,
+  "rows_initial": 1536,
+  "rows_accepted": 1242,
+  "rows_removed": 294,
+  "automated_validation": [
+    "deduplicated per industry",
+    "removed nonsensical process/material templates",
+    "rewritten cost queries with genitive noun cases",
+    "excluded some grammatically invalid ordering",
+    "no made-up Wordstat frequency"
+  ],
+  "limitations": [
+    "Morphological review of all variants still required",
+    "Geography phrases are hypotheses, not confirmation of service coverage",
+    "A/B/C priority is heuristic, not probability",
+    "No paid campaign was created or launched"
+  ],
+  "status": "review_ready_hypotheses_not_platform_ready"
+}
