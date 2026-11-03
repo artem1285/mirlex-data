@@ -1,0 +1,9 @@
+source_id,clean_phrase,industry_id,intent,service_id,search_group,rsya_group,priority,landing_diagnostic,linguistic_check,semantic_check,frequency,conversion_probability,status
+r01,заказать паспорта отходов I–IV классов опасности для предприятия,cross_industry,commercial,waste_passport,SEARCH_WASTE_PASSPORT,RSYA_WASTE_COMPLIANCE,A,диагностика отходов,pass,pass,,,hypothesis
+r02,стоимость паспортизации отходов для кофейни,cafe,commercial,waste_passport,SEARCH_WASTE_CAFE,RSYA_WASTE_SMALL_BUSINESS,B,диагностика отходов,pass,pass,,,hypothesis
+r03,оформить паспорт отходов для производства,cross_industry,commercial,waste_passport,SEARCH_WASTE_PASSPORT,RSYA_WASTE_COMPLIANCE,A,диагностика отходов,pass,pass,,,hypothesis
+r04,заказать постановку объекта НВОС на учёт для предприятия,cross_industry,commercial,nvos_registration,SEARCH_NVOS_REGISTRATION,RSYA_NVOS_CHECK,A,проверка объекта НВОС,pass,pass,,,hypothesis
+r05,стоимость актуализации сведений об объекте НВОС для предприятия,cross_industry,commercial,nvos_registration,SEARCH_NVOS_UPDATE,RSYA_NVOS_CHECK,A,проверка объекта НВОС,pass,pass,,,hypothesis
+r06,оформить заявку на учёт объекта НВОС при вводе в эксплуатацию,cross_industry,commercial,nvos_registration,SEARCH_NVOS_REGISTRATION,RSYA_NVOS_CHECK,B,проверка объекта НВОС,pass,pass,,,hypothesis
+r07,заказать паспорт отходов для кафе,cafe,commercial,waste_passport,SEARCH_WASTE_CAFE,RSYA_WASTE_SMALL_BUSINESS,B,диагностика отходов,pass,pass,,,hypothesis
+r08,стоимость постановки объекта НВОС на учёт для предприятия,cross_industry,commercial,nvos_registration,SEARCH_NVOS_REGISTRATION,RSYA_NVOS_CHECK,A,проверка объекта НВОС,pass,pass,,,hypothesis
