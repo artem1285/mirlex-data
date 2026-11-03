@@ -843,6 +843,17 @@
       "ids": [
         "IND-CARWASH-001"
       ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-03-tko001-lipetsk-fgis-utko-weight-data-prosecutor-relink.json",
+      "cards": 1,
+      "existing_id": "IND-TKO-001",
+      "status": "PRIMARY_PROSECUTOR_SOURCES_RELINKED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
+      "ids": [
+        "IND-TKO-001"
+      ]
     }
   ],
   "permanent_id_policy": {
