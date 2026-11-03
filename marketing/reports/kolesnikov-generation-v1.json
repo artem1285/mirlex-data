@@ -1,0 +1,38 @@
+{
+  "method": "Пять колонок Колесникова + отрасли/процессы/материалы",
+  "scope": "Ограниченное полное декартово произведение разрешённых шаблонов, а не все возможные русские поисковые фразы",
+  "industries": 16,
+  "phrases": 1536,
+  "regions": [
+    "в Москве",
+    "в Санкт-Петербурге",
+    "в Казани",
+    "в Новосибирске"
+  ],
+  "status": "hypotheses_only",
+  "probability_note": "A/B/C are heuristic test priorities, NOT measured P(conversion) nor Wordstat frequency",
+  "wordstat_status": "not_checked",
+  "geo_status": "hypotheses_not_service_coverage",
+  "landing_status": "requires_verified_urls",
+  "campaign_separation": "Separate Search intent from RSYA latent-demand creatives",
+  "created_for": "MIRLEX",
+  "generation_patterns": [
+    "что+для_чего",
+    "продающая_добавка+что+для_чего",
+    "что+для_чего+где",
+    "продажа+что+для_чего+где",
+    "проблема+для_чего",
+    "какая+что+для_чего",
+    "что+процесс",
+    "проблема+процесс",
+    "отходы+процесс+проблема",
+    "материал+проблема",
+    "что+материал",
+    "воздействие+материал"
+  ],
+  "official_sources": [
+    "https://yandex.ru/support/direct/ru/unified-performance-campaign/about",
+    "https://yandex.ru/support/direct/ru/keywords/keywords",
+    "https://yandex.ru/support/direct/ru/products-text-image-ads/user-profile"
+  ]
+}
