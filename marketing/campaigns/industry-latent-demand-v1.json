@@ -1,0 +1,226 @@
+{
+  "version": "0.1",
+  "status": "industry_hypotheses_unverified_search_demand",
+  "objective": "Выявление скрытой потребности, а не исключительно сформированного спроса",
+  "platforms": [
+    "Yandex Search",
+    "Yandex Advertising Network"
+  ],
+  "legal_baseline": "Приказ Минприроды РФ 15.05.2026 №286 — паспортизация в отношении образующихся отходов I–IV классов; перечень обязательств для конкретного объекта проверять индивидуально",
+  "legal_source": "https://www.consultant.ru/document/cons_doc_LAW_535862/c8d8be8cc41d1dc15b6686b0942698e4bc1fd2e0/",
+  "ad_platform_sources": [
+    "https://yandex.ru/support/direct/ru/unified-performance-campaign/about",
+    "https://yandex.ru/support/direct/ru/impression-criteria/impression-criteria"
+  ],
+  "audience_rule": "B2B owner/operator/decision-maker hypotheses only; platform reach unverified",
+  "industry_groups": [
+    {
+      "industry_id": "foodservice",
+      "label": "Кафе, кофейни, рестораны",
+      "search_hypotheses": [
+        "экологические документы для кафе",
+        "какие документы по отходам нужны кофейне",
+        "отходы ресторана какие документы"
+      ],
+      "ad_concept": "Проверьте экологические требования для: кафе, кофейни, рестораны",
+      "landing_service": "Диагностика обращения с отходами",
+      "landing_url": null,
+      "impacts_to_check": [
+        "отходы от упаковки",
+        "пищевые отходы"
+      ],
+      "caution": "Не считать наличие отходов I–IV класса установленным без идентификации",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "auto_repair",
+      "label": "Автосервисы и СТО",
+      "search_hypotheses": [
+        "какие документы по отходам нужны автосервису",
+        "отработанные масла автосервис документы",
+        "экологические требования к сто"
+      ],
+      "ad_concept": "Проверьте экологические требования для: автосервисы и сто",
+      "landing_service": "Отходы и диагностика",
+      "landing_url": null,
+      "impacts_to_check": [
+        "масла",
+        "фильтры",
+        "загрязнённые материалы"
+      ],
+      "caution": "Уточнять фактические процессы и отходы",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "carwash",
+      "label": "Автомойки",
+      "search_hypotheses": [
+        "экологические требования к автомойке",
+        "документы по отходам для автомойки",
+        "документы по сточным водам автомойки"
+      ],
+      "ad_concept": "Проверьте экологические требования для: автомойки",
+      "landing_service": "Вода и отходы",
+      "landing_url": null,
+      "impacts_to_check": [
+        "сточные воды",
+        "осадки",
+        "реагенты"
+      ],
+      "caution": "Сточные воды/сбросы зависят от схемы водоотведения",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "beauty",
+      "label": "Салоны красоты",
+      "search_hypotheses": [
+        "экологические документы для салона красоты",
+        "нужен ли паспорт отходов парикмахерской"
+      ],
+      "ad_concept": "Проверьте экологические требования для: салоны красоты",
+      "landing_service": "Диагностика отходов",
+      "landing_url": null,
+      "impacts_to_check": [
+        "упаковка",
+        "использованные материалы"
+      ],
+      "caution": "Отделять косметологические/медицинские процессы и применимое регулирование",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "warehouse",
+      "label": "Складские комплексы",
+      "search_hypotheses": [
+        "нужны ли экологические документы складу",
+        "экологические требования склад"
+      ],
+      "ad_concept": "Проверьте экологические требования для: складские комплексы",
+      "landing_service": "НВОС и отходы",
+      "landing_url": null,
+      "impacts_to_check": [
+        "упаковка",
+        "тара"
+      ],
+      "caution": "Наличие объекта НВОС нельзя выводить из наличия склада",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "wood",
+      "label": "Мебель и деревообработка",
+      "search_hypotheses": [
+        "экологические документы мебельное производство",
+        "документы на опилки и древесные отходы",
+        "выбросы деревообрабатывающего производства"
+      ],
+      "ad_concept": "Проверьте экологические требования для: мебель и деревообработка",
+      "landing_service": "Воздух и отходы",
+      "landing_url": null,
+      "impacts_to_check": [
+        "опилки",
+        "пыль",
+        "лакокрасочные материалы"
+      ],
+      "caution": "Проверять оборудование и фактические выбросы",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "metal",
+      "label": "Металлообработка",
+      "search_hypotheses": [
+        "экологические документы металлообработка",
+        "отходы металлообработки документы",
+        "категория нвос металлообработка"
+      ],
+      "ad_concept": "Проверьте экологические требования для: металлообработка",
+      "landing_service": "Отходы, воздух, НВОС",
+      "landing_url": null,
+      "impacts_to_check": [
+        "стружка",
+        "СОЖ",
+        "шлам"
+      ],
+      "caution": "НВОС категорировать только по конкретным критериям и объекту",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "foodmanufacture",
+      "label": "Пищевое производство",
+      "search_hypotheses": [
+        "экологические требования пищевое производство",
+        "документы по отходам пищевое производство"
+      ],
+      "ad_concept": "Проверьте экологические требования для: пищевое производство",
+      "landing_service": "Диагностика предприятия",
+      "landing_url": null,
+      "impacts_to_check": [
+        "пищевые остатки",
+        "упаковка",
+        "сточные воды"
+      ],
+      "caution": "Проверять процессы и водоотведение",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    },
+    {
+      "industry_id": "agriculture",
+      "label": "Сельхозпредприятия",
+      "search_hypotheses": [
+        "экологические документы сельхозпредприятия",
+        "какие экологические требования к ферме"
+      ],
+      "ad_concept": "Проверьте экологические требования для: сельхозпредприятия",
+      "landing_service": "Диагностика предприятия",
+      "landing_url": null,
+      "impacts_to_check": [
+        "навоз",
+        "тара",
+        "технологические отходы"
+      ],
+      "caution": "Разделять отходы, побочные продукты животноводства и другие режимы",
+      "search_frequency": null,
+      "frequency_status": "not_checked",
+      "intent": "diagnostic",
+      "ad_network_audience_status": "hypothesis",
+      "launch_status": "draft_only"
+    }
+  ],
+  "controls": [
+    "каждая группа имеет собственную отрасль и посадочную диагностическую страницу",
+    "нет массового запуска без проверенной страницы и конверсий",
+    "исключить ложные утверждения о штрафах и универсальных обязанностях",
+    "поисковые и РСЯ кампании проверять отдельно",
+    "нулевые частотности не выдумывать",
+    "нельзя превращать гипотезы в подтверждённый спрос без Wordstat и отчетов"
+  ]
+}
