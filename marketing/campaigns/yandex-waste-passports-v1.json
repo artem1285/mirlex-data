@@ -1,0 +1,82 @@
+{
+  "campaign_id": "mirlex_search_waste_passports_v1",
+  "platform": "yandex_direct",
+  "type": "единая перфоманс-кампания",
+  "placement": "search_only_initial_proposal",
+  "publication_status": "draft_not_launched",
+  "demand_status": "hypotheses_not_wordstat_verified",
+  "landing_url": null,
+  "utm_template": "utm_source=yandex&utm_medium=cpc&utm_campaign=mirlex_waste_passports&utm_content={ad_id}&utm_term={keyword}",
+  "geography": "requires_business_confirmation",
+  "strategy": "requires_real_budget_and_metrika_goal",
+  "ads": [
+    {
+      "group": "Паспорта отходов — заказ",
+      "keys": [
+        "заказать паспорт отхода",
+        "оформить паспорт отхода",
+        "разработка паспортов отходов",
+        "паспортизация отходов заказать"
+      ],
+      "headline": "Паспорта отходов для предприятий",
+      "text": "Подготовим паспорта отходов I–IV классов. Заявка на оформление в MIRLEX.",
+      "id": "wpass_1",
+      "headline_length": 32,
+      "text_length": 72
+    },
+    {
+      "group": "Паспорт отходов — стоимость",
+      "keys": [
+        "паспорт отходов цена",
+        "стоимость паспортизации отходов",
+        "сколько стоит паспорт отхода"
+      ],
+      "headline": "Стоимость паспортизации отходов",
+      "text": "Оформление паспортов отходов для организаций. Узнайте условия в MIRLEX.",
+      "id": "wpass_2",
+      "headline_length": 31,
+      "text_length": 71
+    },
+    {
+      "group": "Паспорта отходов — отрасли",
+      "keys": [
+        "паспорт отходов для кафе",
+        "паспорт отходов для кофейни",
+        "паспорт отходов для производства"
+      ],
+      "headline": "Паспорта отходов для бизнеса",
+      "text": "Документация по отходам с учётом деятельности предприятия. Оставьте заявку.",
+      "id": "wpass_3",
+      "headline_length": 28,
+      "text_length": 75
+    }
+  ],
+  "negative_candidates": [
+    "реферат",
+    "курсовая",
+    "дипломная работа",
+    "вакансия",
+    "работа экологом",
+    "скачать образец бесплатно"
+  ],
+  "negative_status": "requires_review_against_targeted_phrases_and_autotargeting",
+  "conversion_goal": "submitted_waste_passport_quiz_application",
+  "checks": [
+    "verified live landing_url",
+    "desktop and mobile quiz test",
+    "recipient test lead",
+    "consent and personal data page",
+    "Metrika goal fires",
+    "UTM persistence",
+    "billing/geo approval",
+    "Wordstat phrase validation",
+    "negative overlap validation",
+    "autotargeting category review"
+  ],
+  "sources": [
+    "https://yandex.ru/support/direct/ru/efficiency/text-and-title",
+    "https://yandex.com/support/direct/ru/moderation/technical-restrictions",
+    "https://www.yandex.ru/support/direct/ru/keywords/negative-keywords",
+    "https://www.yandex.ru/support/direct/ru/impression-criteria/autotargeting-upc"
+  ]
+}
