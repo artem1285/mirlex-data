@@ -1,0 +1,91 @@
+{
+  "version": "2026-11-04-v1",
+  "status": "specification_only_not_published",
+  "source_files": [
+    {
+      "path": "marketing/landing-pages/registry.json",
+      "blob_sha": "3d5ec544b65af8643f009a94e3961292a466390d"
+    },
+    {
+      "path": "marketing/keywords/search-core-eight-validated-export-2026-11-04-v1.csv",
+      "blob_sha": "4ad5de7ee313478d62e93591642847d4d9931b9c"
+    },
+    {
+      "path": "marketing/campaigns/rsya-industry-launchpack-v2.json",
+      "blob_sha": "b913198403629ffaba7781fa3f6a9d9f62404de4"
+    }
+  ],
+  "method": "КОЛЕСНИКОВ: what/for_what/which/sales_addition/where inherited from source search CSV; no new phrases generated",
+  "routes": [
+    {
+      "route_id": "diagnostic_nvos_update",
+      "service_id": "nvos_update",
+      "source_phrase_ids": [
+        "r05"
+      ],
+      "search_group": "SEARCH_NVOS_UPDATE",
+      "rsya_group": "RSYA_NVOS_UPDATE",
+      "first_question": "Объект НВОС уже поставлен на государственный учёт?",
+      "answers": [
+        {
+          "label": "Да, нужно изменить сведения",
+          "next": "уточнить, какие сведения изменились"
+        },
+        {
+          "label": "Нет, первичная постановка",
+          "next": "diagnostic_nvos_registration"
+        },
+        {
+          "label": "Не знаю",
+          "next": "проверка статуса учёта"
+        }
+      ],
+      "verified_url": null,
+      "form_tested": false,
+      "metrika_goal_tested": false,
+      "priority": "A",
+      "priority_basis": "heuristic_test_order_only"
+    },
+    {
+      "route_id": "diagnostic_cafe_waste",
+      "service_id": "waste_passport",
+      "industry_id": "cafe",
+      "source_phrase_ids": [
+        "r02",
+        "r07"
+      ],
+      "search_group": "SEARCH_WASTE_CAFE",
+      "rsya_group": "RSYA_WASTE_SMALL_BUSINESS",
+      "first_question": "Какие отходы образуются при работе кафе?",
+      "answers": [
+        {
+          "label": "Упаковка и обычные отходы",
+          "next": "уточнить виды отходов и документы"
+        },
+        {
+          "label": "Пищевые отходы и масла",
+          "next": "уточнить виды отходов и порядок обращения"
+        },
+        {
+          "label": "Не знаю",
+          "next": "первичная диагностика отходов"
+        }
+      ],
+      "verified_url": null,
+      "form_tested": false,
+      "metrika_goal_tested": false,
+      "priority": "B",
+      "priority_basis": "heuristic_test_order_only"
+    }
+  ],
+  "checks": {
+    "linguistic": "questions and answers reviewed for grammatical coherence",
+    "semantic": "nvos_update distinct from nvos_registration; cafe waste not automatically equivalent to waste passport obligation",
+    "dedup": "route IDs and source phrase IDs unique within this file",
+    "source_raw_unchanged": true,
+    "source_clean_unchanged": true,
+    "wordstat": null,
+    "conversion_probability": null
+  },
+  "handoff": "Do not insert speculative URLs into registry.json; publish and test diagnostics before manual campaign activation."
+}
