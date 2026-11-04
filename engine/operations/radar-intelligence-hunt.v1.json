@@ -91,6 +91,26 @@
       ],
       "not_a_new_radar_id": true,
       "do_not_treat_as_verified_enforcement": true
+    },
+    {
+      "key": "DVOS_ORO_MINPRIRODY_2026_10_08_12_47_43587",
+      "priority": "CRITICAL_DVOS_DEFENSE",
+      "date": "2026-11-04",
+      "status": "SOURCE_VERIFIED_LEGAL_APPLICABILITY_PENDING",
+      "document": "Письмо Минприроды России от 08.10.2026 №12-47/43587",
+      "source": "https://www.consultant.ru/document/cons_doc_LAW_547971/",
+      "source_secondary": "https://base.garant.ru/415182887/",
+      "facts": "Minprirody position: if DVOS not submitted or contains unreliable information and new ORO not stated, apply PP 881 paragraph 32 and Ksl=25. For II-category object Mslj is difference between actual waste mass and mass in DVOS. Letter expressly non-normative. It refers to 21.08.2026 №12-77/36444.",
+      "case_link": "Existing DVOS defense case: II-category; DVOS submitted 27.02.2024; 55 t stated; around 50 t actual 2025; changed ORO. Do not infer zero Mslj without examining PP 881 and site-specific calculation.",
+      "required_checks": [
+        "Obtain and compare full text of Minprirody 21.08.2026 №12-77/36444",
+        "Verify 2025 effective wording of PP 881 paragraphs 9,20,32 and Federal Law 7-FZ article 31.2",
+        "Determine if changed ORO without new DVOS meets legal definition of unreliable information",
+        "Calculate Mslj under applicable formula, distinguish total waste mass from mass per ORO",
+        "Check evidence new ORO in GRORO, contract, movement records, payment and RPN demand"
+      ],
+      "expert_routing": "ECO_EXPERT priority; ROP_EXPERT not applicable",
+      "do_not_activate_legal_rule": true
     }
   ],
   "monitored_official_sources": [
