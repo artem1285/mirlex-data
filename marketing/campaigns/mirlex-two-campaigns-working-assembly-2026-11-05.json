@@ -1,0 +1,536 @@
+{
+  "title": "MIRLEX — рабочая сборка двух рекламных кампаний",
+  "prepared_at": "2026-11-05",
+  "status": "BLOCKED_FOR_IMPORT_NOT_CREATED_IN_DIRECT",
+  "source_repository": "artem1285/mirlex-data",
+  "source_branch": "feature/eco-parser-marketing-v1",
+  "safety": {
+    "account_changes_performed": false,
+    "impressions_authorized": false,
+    "spend_authorized": false,
+    "topup_authorized": false,
+    "submit_for_moderation_authorized": false
+  },
+  "format_note": "Это JSON для проверки материалов. Не является XLSX-шаблоном Яндекс Директа и не предназначен для прямой загрузки.",
+  "campaigns": [
+    {
+      "name": "MIRLEX | Поиск",
+      "placement": "search_only",
+      "desired_state": "draft_without_impressions",
+      "groups": [
+        {
+          "id": "SEARCH_WASTE_PASSPORT",
+          "name": "Паспорта отходов — предприятия",
+          "keywords": [
+            {
+              "phrase": "заказать паспорта отходов I–IV классов опасности для предприятия",
+              "source_id": "r01",
+              "semantic_check": "pass",
+              "demand_verified": false
+            },
+            {
+              "phrase": "оформить паспорт отходов для производства",
+              "source_id": "r03",
+              "semantic_check": "pass",
+              "demand_verified": false
+            }
+          ],
+          "ads": [
+            {
+              "headline": "Паспорта отходов для предприятия",
+              "text": "Не уверены, какие отходы нужно паспортизировать? Начните с проверки состава отходов и имеющихся документов.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Текст из исходного пакета РСЯ; адаптация и проверка формата Поиска не выполнены",
+              "headline_characters": 32,
+              "text_characters": 107
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "SEARCH_WASTE_CAFE",
+          "name": "Паспорта отходов — кафе",
+          "keywords": [
+            {
+              "phrase": "стоимость паспортизации отходов для кофейни",
+              "source_id": "r02",
+              "semantic_check": "pass",
+              "demand_verified": false
+            },
+            {
+              "phrase": "заказать паспорт отходов для кафе",
+              "source_id": "r07",
+              "semantic_check": "pass",
+              "demand_verified": false
+            }
+          ],
+          "ads": [
+            {
+              "headline": "Документы по отходам для кафе",
+              "text": "Проверьте, какие документы по отходам нужны именно вашему кафе. Начните с диагностики, а не с заказа лишних документов.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Текст из исходного пакета РСЯ; адаптация и проверка формата Поиска не выполнены",
+              "headline_characters": 29,
+              "text_characters": 119
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "SEARCH_NVOS_REGISTRATION",
+          "name": "Первичная постановка НВОС",
+          "keywords": [
+            {
+              "phrase": "заказать постановку объекта НВОС на учёт для предприятия",
+              "source_id": "r04",
+              "semantic_check": "pass",
+              "demand_verified": false
+            },
+            {
+              "phrase": "оформить заявку на учёт объекта НВОС при вводе в эксплуатацию",
+              "source_id": "r06",
+              "semantic_check": "pass",
+              "demand_verified": false
+            },
+            {
+              "phrase": "стоимость постановки объекта НВОС на учёт для предприятия",
+              "source_id": "r08",
+              "semantic_check": "pass",
+              "demand_verified": false
+            }
+          ],
+          "ads": [
+            {
+              "headline": "Учёт объекта НВОС",
+              "text": "Нужно разобраться с постановкой объекта на учёт? Уточните исходные данные объекта перед оформлением заявки.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Текст из исходного пакета РСЯ; адаптация и проверка формата Поиска не выполнены",
+              "headline_characters": 17,
+              "text_characters": 107
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "SEARCH_NVOS_UPDATE",
+          "name": "Актуализация сведений НВОС",
+          "keywords": [
+            {
+              "phrase": "стоимость актуализации сведений об объекте НВОС для предприятия",
+              "source_id": "r05",
+              "semantic_check": "pass",
+              "demand_verified": false
+            }
+          ],
+          "ads": [
+            {
+              "headline": "Изменились сведения об объекте НВОС?",
+              "text": "Проверьте, какие сведения об объекте требуется актуализировать и какие данные подготовить.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Текст из исходного пакета РСЯ; адаптация и проверка формата Поиска не выполнены",
+              "headline_characters": 36,
+              "text_characters": 90
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false
+        }
+      ]
+    },
+    {
+      "name": "MIRLEX | РСЯ",
+      "placement": "networks_only",
+      "desired_state": "draft_without_impressions",
+      "groups": [
+        {
+          "id": "RSYA_SERVICE_WASTE_PASSPORT",
+          "name": "Паспорта отходов — предприятия",
+          "keywords": [],
+          "ads": [
+            {
+              "headline": "Паспорта отходов для предприятия",
+              "text": "Не уверены, какие отходы нужно паспортизировать? Начните с проверки состава отходов и имеющихся документов.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Исходный текст РСЯ; проверка формата в кабинете не выполнена",
+              "headline_characters": 32,
+              "text_characters": 107
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false,
+          "audience_signals": [
+            "заказать паспорта отходов I–IV классов опасности для предприятия",
+            "оформить паспорт отходов для производства"
+          ],
+          "signals_verified": false
+        },
+        {
+          "id": "RSYA_SERVICE_WASTE_CAFE",
+          "name": "Паспорта отходов — кафе",
+          "keywords": [],
+          "ads": [
+            {
+              "headline": "Документы по отходам для кафе",
+              "text": "Проверьте, какие документы по отходам нужны именно вашему кафе. Начните с диагностики, а не с заказа лишних документов.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Исходный текст РСЯ; проверка формата в кабинете не выполнена",
+              "headline_characters": 29,
+              "text_characters": 119
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false,
+          "audience_signals": [
+            "стоимость паспортизации отходов для кофейни",
+            "заказать паспорт отходов для кафе"
+          ],
+          "signals_verified": false
+        },
+        {
+          "id": "RSYA_SERVICE_NVOS_REGISTRATION",
+          "name": "Первичная постановка НВОС",
+          "keywords": [],
+          "ads": [
+            {
+              "headline": "Учёт объекта НВОС",
+              "text": "Нужно разобраться с постановкой объекта на учёт? Уточните исходные данные объекта перед оформлением заявки.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Исходный текст РСЯ; проверка формата в кабинете не выполнена",
+              "headline_characters": 17,
+              "text_characters": 107
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false,
+          "audience_signals": [
+            "заказать постановку объекта НВОС на учёт для предприятия",
+            "оформить заявку на учёт объекта НВОС при вводе в эксплуатацию",
+            "стоимость постановки объекта НВОС на учёт для предприятия"
+          ],
+          "signals_verified": false
+        },
+        {
+          "id": "RSYA_SERVICE_NVOS_UPDATE",
+          "name": "Актуализация сведений НВОС",
+          "keywords": [],
+          "ads": [
+            {
+              "headline": "Изменились сведения об объекте НВОС?",
+              "text": "Проверьте, какие сведения об объекте требуется актуализировать и какие данные подготовить.",
+              "copy_source": "marketing/campaigns/search-rsya-core-manual-pack-2026-11-04-v1.md",
+              "note": "Исходный текст РСЯ; проверка формата в кабинете не выполнена",
+              "headline_characters": 36,
+              "text_characters": 90
+            }
+          ],
+          "landing_url": null,
+          "import_allowed": false,
+          "audience_signals": [
+            "стоимость актуализации сведений об объекте НВОС для предприятия"
+          ],
+          "signals_verified": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_01",
+          "name": "Кафе и кофейни",
+          "ads": [
+            {
+              "headline": "У кафе есть вопросы по экологии?",
+              "text": "Проверьте, какие документы по отходам могут понадобиться вашему кафе.",
+              "headline_characters": 32,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_coffee_1"
+            },
+            {
+              "headline": "Открыли кофейню? Поможем с экологией",
+              "text": "MIRLEX разберёт экологические вопросы вашего заведения. Начните с проверки.",
+              "headline_characters": 36,
+              "text_characters": 75,
+              "source_id": "mirlex_rsya_coffee_2"
+            }
+          ],
+          "audience_signals": [
+            "оборудование для кофейни",
+            "касса для кафе",
+            "открытие кофейни"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_02",
+          "name": "Автосервисы",
+          "ads": [
+            {
+              "headline": "У автосервиса есть отходы?",
+              "text": "Масла, фильтры и другие отходы. Поможем разобраться с документацией.",
+              "headline_characters": 26,
+              "text_characters": 68,
+              "source_id": "mirlex_rsya_sto_1"
+            },
+            {
+              "headline": "Автосервис: поможем с экологией",
+              "text": "Проверьте, какие документы по отходам могут потребоваться вашему СТО.",
+              "headline_characters": 31,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_sto_2"
+            }
+          ],
+          "audience_signals": [
+            "оборудование для автосервиса",
+            "подъемник для сто",
+            "открытие автосервиса"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_03",
+          "name": "Автомойки",
+          "ads": [
+            {
+              "headline": "Автомойка: что с документами?",
+              "text": "Поможем разобраться с отходами и вопросами водоотведения вашей мойки.",
+              "headline_characters": 29,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_wash_1"
+            },
+            {
+              "headline": "Экология для вашей автомойки",
+              "text": "Узнайте, какие экологические вопросы стоит проверить для автомойки.",
+              "headline_characters": 28,
+              "text_characters": 67,
+              "source_id": "mirlex_rsya_wash_2"
+            }
+          ],
+          "audience_signals": [
+            "оборудование для автомойки",
+            "открытие автомойки",
+            "очистные сооружения автомойки"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_04",
+          "name": "Парикмахерские и салоны",
+          "ads": [
+            {
+              "headline": "Салон красоты: нужна ли экология?",
+              "text": "Проверьте, какие документы по отходам могут потребоваться вашему салону.",
+              "headline_characters": 33,
+              "text_characters": 72,
+              "source_id": "mirlex_rsya_salon_1"
+            },
+            {
+              "headline": "Поможем с документами для салона",
+              "text": "MIRLEX поможет разобраться с экологическими вопросами вашей деятельности.",
+              "headline_characters": 32,
+              "text_characters": 73,
+              "source_id": "mirlex_rsya_salon_2"
+            }
+          ],
+          "audience_signals": [
+            "оборудование для парикмахерской",
+            "открытие салона красоты"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_05",
+          "name": "Мебельные цеха",
+          "ads": [
+            {
+              "headline": "Производите мебель? Проверьте экологию",
+              "text": "Опилки, пыль, покраска. MIRLEX поможет определить нужные документы.",
+              "headline_characters": 38,
+              "text_characters": 67,
+              "source_id": "mirlex_rsya_furniture_1"
+            },
+            {
+              "headline": "Мебельный цех: отходы и выбросы",
+              "text": "Подскажем, какие вопросы экологии актуальны для вашего производства.",
+              "headline_characters": 31,
+              "text_characters": 68,
+              "source_id": "mirlex_rsya_furniture_2"
+            }
+          ],
+          "audience_signals": [
+            "станки для мебельного цеха",
+            "покрасочная камера для мебели",
+            "оборудование мебельного производства"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_06",
+          "name": "Деревообработка",
+          "ads": [
+            {
+              "headline": "Деревообработка и экология",
+              "text": "Поможем разобраться с документацией по отходам и возможным выбросам.",
+              "headline_characters": 26,
+              "text_characters": 68,
+              "source_id": "mirlex_rsya_wood_1"
+            },
+            {
+              "headline": "Пыль и отходы производства?",
+              "text": "MIRLEX проверит экологические задачи вашего деревообрабатывающего цеха.",
+              "headline_characters": 27,
+              "text_characters": 71,
+              "source_id": "mirlex_rsya_wood_2"
+            }
+          ],
+          "audience_signals": [
+            "деревообрабатывающие станки",
+            "аспирация деревообработка"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_07",
+          "name": "Металлообработка",
+          "ads": [
+            {
+              "headline": "Металлообработка: что с экологией?",
+              "text": "Стружка, масла, СОЖ. Поможем проверить экологическую документацию.",
+              "headline_characters": 34,
+              "text_characters": 66,
+              "source_id": "mirlex_rsya_metal_1"
+            },
+            {
+              "headline": "Цех работает. Документы в порядке?",
+              "text": "MIRLEX поможет понять, какие экологические документы нужны вашему цеху.",
+              "headline_characters": 34,
+              "text_characters": 71,
+              "source_id": "mirlex_rsya_metal_2"
+            }
+          ],
+          "audience_signals": [
+            "станки чпу для металла",
+            "смазочно охлаждающая жидкость"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_08",
+          "name": "Пищевые производства",
+          "ads": [
+            {
+              "headline": "Пищевое производство и экология",
+              "text": "Отходы, вода, выбросы. Поможем разобраться с экологическими задачами.",
+              "headline_characters": 31,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_food_1"
+            },
+            {
+              "headline": "Документы для пищевого производства",
+              "text": "Проверьте, какие экологические вопросы актуальны вашему производству.",
+              "headline_characters": 35,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_food_2"
+            }
+          ],
+          "audience_signals": [
+            "оборудование пищевого производства",
+            "линия розлива оборудования"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        },
+        {
+          "id": "RSYA_INDUSTRY_09",
+          "name": "Склады",
+          "ads": [
+            {
+              "headline": "Экология для складского комплекса",
+              "text": "Поможем проверить экологические вопросы вашей складской деятельности.",
+              "headline_characters": 33,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_warehouse_1"
+            },
+            {
+              "headline": "Склад: нужны ли документы по отходам?",
+              "text": "Узнайте, какие документы по отходам могут понадобиться вашему складу.",
+              "headline_characters": 37,
+              "text_characters": 69,
+              "source_id": "mirlex_rsya_warehouse_2"
+            }
+          ],
+          "audience_signals": [
+            "оборудование для склада",
+            "складская техника для бизнеса"
+          ],
+          "signals_verified": false,
+          "landing_url": null,
+          "import_allowed": false
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "geo": null,
+    "strategy": null,
+    "weekly_budget": null,
+    "metrica_counter": {
+      "id": "113440268",
+      "verification": "Указан в плане 2026-11-05, в текущем кабинете не проверен"
+    },
+    "goals": [
+      {
+        "id": "671422514",
+        "event": "industry_lead_submit",
+        "verification": "По плану протестирован маршрут transport; текущая проверка не выполнена"
+      },
+      {
+        "id": "670722104",
+        "purpose": "Отходы — заявка отправлена",
+        "verification": "По плану; в кабинете и форме не проверена"
+      }
+    ],
+    "negative_candidates": {
+      "global_candidates": [
+        "вакансия",
+        "резюме",
+        "реферат",
+        "курсовая"
+      ],
+      "by_service": {
+        "ewaste": [
+          "купить компьютер",
+          "ремонт компьютеров",
+          "продажа техники"
+        ],
+        "waste_passport": [
+          "скачать образец",
+          "бесплатный шаблон"
+        ]
+      },
+      "note": "Candidates only; not automatically applied. Review against each campaign's approved positives and informational strategy."
+    },
+    "negative_overlap_note": "Отрицательные фразы не применялись автоматически. Полная проверка по правилам соответствия Яндекса не выполнена."
+  },
+  "blockers": [
+    "Шаблон direct_example(2).xlsx не открыт: среда выполнения недоступна; файл не изменён.",
+    "Все восемь фраз в экспортном источнике имеют hypothesis_manual_only; частотность и спрос не подтверждены.",
+    "Посадочные URL в исходных пакетах пустые. Получить страницы mirlex.pro/services и mirlex.pro/otrasli/transport текущим веб-инструментом не удалось; это не доказывает недоступность сайта пользователям.",
+    "Нет проверки доставки заявок, целей, географии, стратегии, бюджета и текущих кампаний в кабинете.",
+    "Формат заголовков и текстов для импорта не проверен; исходные объявления сохранены дословно.",
+    "По остальным услугам из общего плана нет подтверждённой семантики в использованном ядре; автоматически не добавлены."
+  ]
+}
