@@ -1,0 +1,46 @@
+{
+  "id": "ECO-2026-GOV-3169-SECONDARY-RAW",
+  "dedup_key": "GOV-RF-2026-10-31-3169-R-SECONDARY-RAW-MANDATORY-SHARE",
+  "checked_at": "2026-11-05",
+  "document_date": "2026-10-31",
+  "first_publication": "2026-11-03",
+  "priority": "RED",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ADOPTED_GOVERNMENT_ORDER",
+  "status": "RESEARCH_ONLY_PRIMARY_DOCUMENT_NOT_READ",
+  "domain": "Вторичное сырье / отходы / производство продукции",
+  "document": "Распоряжение Правительства РФ от 31.10.2026 № 3169-р",
+  "what_changed": "По сообщениям Минпромторга в СМИ расширен перечень продукции с обязательной долей вторичного сырья, утвержденный распоряжением №2330-р; добавлены стеклянная тара, бетонные смеси, технический текстиль, топливные пеллеты, углеродные сорбенты, гидроизоляционные материалы и другие позиции. Конкретные доли, оговорки и сроки подлежат сверке с официальным полным текстом.",
+  "affected": [
+    "производители включенных видов продукции",
+    "поставщики вторичного сырья",
+    "экологическое сопровождение предприятий"
+  ],
+  "dates": {
+    "signed": "2026-10-31",
+    "official_publication": "2026-11-03",
+    "effective_date": "REQUIRES_PRIMARY_TEXT_VERIFICATION"
+  },
+  "risk": "Пропуск изменения обязательного перечня и неверное определение доли вторичного сырья/срока применения.",
+  "mirlex_action": "Прочитать полный официальный текст и приложение; сверить позиции, доли, сноски, вступление в силу; затем провести тесты перед изменением правил.",
+  "client_wording": "Не публиковать до сверки первоисточника и дат применения.",
+  "sources": {
+    "official_publication": "https://publication.pravo.gov.ru/document/0001202611030024",
+    "official_publication_number": "0001202611030024",
+    "secondary": [
+      "https://www.interfax-russia.ru/moscow/news/ispolzovanie-vtorsyrya-stanet-obyazatelnym-pri-proizvodstve-steklyannoy-tary-tehnicheskogo-tekstilya-betonnyh-smesey-postanovlenie",
+      "https://www.consultant.ru/law/hotdocs/"
+    ]
+  },
+  "verification": {
+    "official_publication_metadata_crosschecked": true,
+    "official_full_text_read": false,
+    "precise_shares_verified": false,
+    "regression_tests_run": false,
+    "unconfirmed_signal_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт"
+  },
+  "engine_knowledge": "engine/knowledge/eco-2026-gov-3169-secondary-raw.json",
+  "expert_deployment_allowed": false,
+  "client_publication_allowed": false,
+  "hard_radar_modified": false
+}
