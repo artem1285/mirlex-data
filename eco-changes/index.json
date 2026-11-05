@@ -696,6 +696,12 @@
       "path": "eco-changes/registry/ECO-2026-GOV-3169-SECONDARY-RAW.json",
       "status": "RESEARCH_ONLY_PRIMARY_DOCUMENT_NOT_READ",
       "engine_knowledge": "engine/knowledge/eco-2026-gov-3169-secondary-raw.json"
+    },
+    {
+      "id": "ECO-2026-MPR-45747-WASTE-PASSPORTS",
+      "path": "eco-changes/registry/ECO-2026-MPR-45747-WASTE-PASSPORTS.json",
+      "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_UNREAD",
+      "engine_knowledge": "engine/knowledge/eco-2026-mpr-45747-waste-passports.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
