@@ -111,6 +111,42 @@
       ],
       "expert_routing": "ECO_EXPERT priority; ROP_EXPERT not applicable",
       "do_not_activate_legal_rule": true
+    },
+    {
+      "key": "ROP_DRAFT_172265_2026",
+      "observed_on": "2026-11-10",
+      "status": "DRAFT_UNVERIFIED_FULL_PRIMARY_TEXT",
+      "source": "https://regulation.gov.ru/projects/172265/",
+      "project_id": "02/07/10-26/00172265",
+      "developer": "Минприроды России",
+      "affected_decrees": [
+        741,
+        742,
+        750,
+        1486,
+        1990
+      ],
+      "public_discussion_until": "2026-11-12",
+      "proposed_effective_dates": {
+        "1486_1990": "2027-01-01",
+        "741_742_750": "2027-03-01"
+      },
+      "watch_items": [
+        "transition for reporting year 2026",
+        "remove Gosuslugi submission option",
+        "customs release terminology",
+        "utilization carryover formula in experiment",
+        "mass rounding and form fields",
+        "export confirmation",
+        "ecofee overpayment offset"
+      ],
+      "scope": "ROP expert; cabinet reporting forms and 2027 campaign",
+      "release_rule": "DRAFT ONLY. Do not modify active forms or assert effective law until official adoption, publication and transition review",
+      "evidence": [
+        "https://www.rosutilization.ru/press-center/412/",
+        "https://sidorets.ru/monitoring/projects/rop-reporting-ecological-fee-172265/"
+      ],
+      "next_step": "Retrieve original draft attachments and transition clauses; test ROP expert retrieval and mapping."
     }
   ],
   "monitored_official_sources": [
