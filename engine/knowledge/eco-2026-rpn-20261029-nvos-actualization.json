@@ -1,0 +1,18 @@
+{
+  "id": "ECO-2026-RPN-20261029-NVOS-ACTUALIZATION",
+  "kind": "ECO_RADAR_RESEARCH",
+  "status": "VERIFIED_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_CLARIFICATION_OF_EXISTING_IN_FORCE_REQUIREMENTS",
+  "source_card": "eco-changes/registry/ECO-2026-RPN-20261029-NVOS-ACTUALIZATION.json",
+  "topic": "NVOS object registry actualization",
+  "summary": "Разъяснены основания актуализации по п. 6 ст. 69.2 ФЗ №7-ФЗ, порядок электронной подачи, подтверждающие документы, ошибки и отличие актуализации от корректировки категории.",
+  "applicability": "Юридические лица и ИП, эксплуатирующие зарегистрированные объекты НВОС",
+  "risks": "Отказ в актуализации, расхождения реестра с разрешительной документацией, возможные споры по ДВОС, ПЭК и плате НВОС.",
+  "actions": "Проверить изменение эксплуатанта, местоположения, процессов, источников и очистного оборудования; приложить подтверждения; разграничивать актуализацию по ст.69.2 и корректировку категории по ПП №636. Не менять исполняемые правила без тестов.",
+  "source": "https://rpn.gov.ru/press/news/kogda_nuzhno_aktualizirovat_svedeniya_ob_obekte_nvos/",
+  "related": [
+    "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01"
+  ],
+  "production_rules": "UNCHANGED",
+  "requires_tests_before_promotion": true
+}
