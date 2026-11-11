@@ -1,0 +1,34 @@
+{
+  "id": "ECO-2026-RPN-20261029-NVOS-ACTUALIZATION",
+  "checked_at": "2026-11-11",
+  "priority": "YELLOW",
+  "legal_status": "OFFICIAL_CLARIFICATION_OF_EXISTING_IN_FORCE_REQUIREMENTS",
+  "status": "VERIFIED_RESEARCH_ONLY",
+  "document": "Информация Росприроднадзора от 29.10.2026 «Когда нужно актуализировать сведения об объекте НВОС?»",
+  "published_at": "2026-10-29",
+  "secondary_publication_at": "2026-11-10",
+  "change": "Разъяснены основания актуализации по п. 6 ст. 69.2 ФЗ №7-ФЗ, порядок электронной подачи, подтверждающие документы, ошибки и отличие актуализации от корректировки категории.",
+  "scope": "Юридические лица и ИП, эксплуатирующие зарегистрированные объекты НВОС",
+  "dates": {
+    "official_explainer": "2026-10-29",
+    "garant_news": "2026-11-10",
+    "service_time": "4 рабочих дня"
+  },
+  "risk": "Отказ в актуализации, расхождения реестра с разрешительной документацией, возможные споры по ДВОС, ПЭК и плате НВОС.",
+  "what_to_do": "Проверить изменение эксплуатанта, местоположения, процессов, источников и очистного оборудования; приложить подтверждения; разграничивать актуализацию по ст.69.2 и корректировку категории по ПП №636. Не менять исполняемые правила без тестов.",
+  "client_wording": "Если изменились сведения об эксплуатанте, технологии или источниках загрязнения, проверьте необходимость актуализации записи объекта НВОС; заявление подается электронно, процедура бесплатна.",
+  "sources": {
+    "official": "https://rpn.gov.ru/press/news/kogda_nuzhno_aktualizirovat_svedeniya_ob_obekte_nvos/",
+    "full_text_reprint": "https://base.garant.ru/415215647/",
+    "secondary_news": "https://www.garant.ru/news/2294834/",
+    "official_service": "https://rpn.gov.ru/activity/services/gu-news/izmeneniya-v-gosudarstvennom-uchete-obektov-nvos.html"
+  },
+  "verification": "Official RPN 29 Oct notice found and corroborated by GARANT full reproduction and RPN 27 Feb service deadline notice.",
+  "dedup_key": "RPN-20261029-NVOS-ACTUALIZATION-CLARIFICATION",
+  "related": [
+    "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01"
+  ],
+  "engine_knowledge": "engine/knowledge/eco-2026-rpn-20261029-nvos-actualization.json",
+  "hard_radar": "NO_CHANGE",
+  "expert_rules": "NO_CHANGE_UNTIL_TESTS"
+}
