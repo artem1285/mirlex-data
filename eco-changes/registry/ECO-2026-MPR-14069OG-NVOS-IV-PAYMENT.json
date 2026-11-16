@@ -19,14 +19,14 @@
     "ordinary_annual_declaration": "10 марта следующего года — указано отраслевым источником, проверить по действующему акту перед использованием"
   },
   "risk": "Неправомерное исключение площадок IV категории из расчета платы только из-за категории; обратная ошибка — начисление платы без установления облагаемого вида негативного воздействия; смешение отсутствия обязанности учета и отсутствия обязанности по плате.",
-  "mirlex_action": "Проверить применимую редакцию ст.16, 16.1, 16.4 Закона №7-ФЗ, критерии IV категории и актуальную форму декларации: письмо ссылается на приказ №1043, возможна устаревшая ссылка. До проверки и регрессионных тестов действующие экспертные правила не менять.",
+  "mirlex_action": "Приказ Минприроды №182 от 01.04.2026 ввёл с 01.09.2026 новую форму декларации; ссылка письма на приказ №1043 устарела. Проверить действующую редакцию и практику применения; действующие экспертные правила не менять без тестов.",
   "client_wording": "Минприроды в письме от 14.10.2026 № 19-78/14069-ОГ разъяснило, что лица, осуществляющие деятельность исключительно на объектах IV категории, освобождены от платы за НВОС и представления декларации. При наличии объектов I–III категорий необходимо проверять облагаемые виды воздействия на всех объектах. Письмо не является НПА.",
   "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
   "sources": {
     "secondary_sector_review": "https://www.ecoindustry.ru/news2/view/66746.html",
     "secondary_doc_reprint": "https://ecotvet.ru/",
     "official_primary_url": null,
-    "garant_full_text": "https://base.garant.ru/415191793/",
+    "garant_full_text": "https://www.garant.ru/products/ipo/prime/doc/415091793/",
     "garant_news": "https://www.garant.ru/news/2299061/",
     "consultant_chronomap": "https://www.consultant.ru/document/chronomap/2026/10/"
   },
@@ -36,7 +36,9 @@
     "official_original_directly_read": false,
     "legal_position_not_confirmed_by_original": false,
     "notification_allowed": false,
-    "full_text_published_read": true
+    "full_text_published_read": true,
+    "full_text_link_verified_2026_11_16": true,
+    "form_order_1043_outdated_as_of_2026_09_01": true
   },
   "dedup_key": "MPR-2026-10-14-19-78-14069-OG-NVOS-IV-PAYMENT",
   "related": [
