@@ -1,15 +1,15 @@
 {
   "id": "ECO-2026-MPR-14069OG-NVOS-IV-PAYMENT",
-  "checked_at": "2026-10-27",
+  "checked_at": "2026-11-16",
   "priority": "YELLOW",
   "priority_is_not_legal_status": true,
-  "legal_status": "PURPORTED_OFFICIAL_CLARIFICATION_NOT_NPA_PRIMARY_ORIGINAL_UNREAD",
-  "engine_status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_UNREAD",
+  "legal_status": "OFFICIAL_MINISTRY_CLARIFICATION_NOT_NPA_FULL_TEXT_PUBLISHED_IN_GARANT",
+  "engine_status": "VERIFIED_PUBLISHED_FULL_TEXT_RESEARCH_ONLY",
   "document": "Письмо Минприроды России от 14.10.2026 № 19-78/14069-ОГ «О плате за негативное воздействие на окружающую среду»",
   "topic": "Плата за НВОС: объекты IV категории при наличии у одного плательщика объектов I–III категорий; объекты вне критериев категорирования",
   "discovery_date": "2026-10-27",
   "document_date": "2026-10-14",
-  "secondary_publication_date": "2026-10-21",
+  "secondary_publication_date": "2026-11-02",
   "what_reported": "По отраслевому обзору Минприроды разъяснило, что освобождение от платы за НВОС предусмотрено для лиц, ведущих деятельность исключительно на объектах IV категории. При одновременном наличии объектов I–III и IV категорий общий статус лица требует проверки обязанности по плате и декларации по каждому виду негативного воздействия. Нельзя автоматически утверждать, что за любой объект IV категории всегда возникает платеж: предмет платы и фактическое воздействие проверяются отдельно.",
   "affected": "Юридические лица и ИП, эксплуатирующие несколько объектов НВОС разных категорий; экологические службы, подготавливающие декларации о плате.",
   "dates": {
@@ -19,20 +19,24 @@
     "ordinary_annual_declaration": "10 марта следующего года — указано отраслевым источником, проверить по действующему акту перед использованием"
   },
   "risk": "Неправомерное исключение площадок IV категории из расчета платы только из-за категории; обратная ошибка — начисление платы без установления облагаемого вида негативного воздействия; смешение отсутствия обязанности учета и отсутствия обязанности по плате.",
-  "mirlex_action": "Найти и прочитать оригинал письма № 19-78/14069-ОГ, проверить ст. 16 и 16.1 ФЗ № 7-ФЗ и применимую редакцию Правил платы, отдельно проанализировать объекты вне критериев I–IV; сопоставить с QZ101F. До проверки не изменять действующие правила MIRLEX.",
-  "client_wording": "НЕ ПУБЛИКОВАТЬ: полный официальный первоисточник не прочитан.",
+  "mirlex_action": "Проверить применимую редакцию ст.16, 16.1, 16.4 Закона №7-ФЗ, критерии IV категории и актуальную форму декларации: письмо ссылается на приказ №1043, возможна устаревшая ссылка. До проверки и регрессионных тестов действующие экспертные правила не менять.",
+  "client_wording": "Минприроды в письме от 14.10.2026 № 19-78/14069-ОГ разъяснило, что лица, осуществляющие деятельность исключительно на объектах IV категории, освобождены от платы за НВОС и представления декларации. При наличии объектов I–III категорий необходимо проверять облагаемые виды воздействия на всех объектах. Письмо не является НПА.",
   "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
   "sources": {
     "secondary_sector_review": "https://www.ecoindustry.ru/news2/view/66746.html",
     "secondary_doc_reprint": "https://ecotvet.ru/",
-    "official_primary_url": null
+    "official_primary_url": null,
+    "garant_full_text": "https://base.garant.ru/415191793/",
+    "garant_news": "https://www.garant.ru/news/2299061/",
+    "consultant_chronomap": "https://www.consultant.ru/document/chronomap/2026/10/"
   },
   "verification": {
     "sector_review_directly_read": true,
     "exact_number_and_date_from_sector_review": true,
     "official_original_directly_read": false,
-    "legal_position_not_confirmed_by_original": true,
-    "notification_allowed": false
+    "legal_position_not_confirmed_by_original": false,
+    "notification_allowed": false,
+    "full_text_published_read": true
   },
   "dedup_key": "MPR-2026-10-14-19-78-14069-OG-NVOS-IV-PAYMENT",
   "related": [
@@ -42,5 +46,10 @@
   ],
   "engine_knowledge": "engine/knowledge/eco-2026-mpr-14069og-nvos-iv-payment.json",
   "expert_deployment_allowed": false,
-  "hard_radar_modified": false
+  "hard_radar_modified": false,
+  "publication_dates": {
+    "sector_review": "2026-10-21",
+    "garant_full_text": "2026-11-02",
+    "garant_news": "2026-11-13"
+  }
 }
