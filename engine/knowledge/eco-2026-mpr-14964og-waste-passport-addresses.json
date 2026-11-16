@@ -1,0 +1,25 @@
+{
+  "id": "ECO-2026-MPR-14964OG-WASTE-PASSPORT-ADDRESSES",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-14964OG-WASTE-PASSPORT-ADDRESSES.json",
+  "eco_radar_index": "eco-changes/index.json",
+  "status": "VERIFIED_PUBLISHED_FULL_TEXT_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_MINISTRY_CLARIFICATION_NOT_NPA",
+  "priority": "YELLOW",
+  "original_document": "Письмо Минприроды России от 02.11.2026 №25-78/14964-ОГ «О рассмотрении обращений по вопросам паспортизации отходов»",
+  "source": "https://www.garant.ru/products/ipo/prime/doc/415150857/",
+  "principle": "Разъяснение применения приказа Минприроды №286 от 15.05.2026: само вступление приказа в силу 01.09.2026 не требует переоформления паспорта; пункт 9 содержит закрытый перечень оснований, включая формальные изменения адреса места образования. Один паспорт с несколькими адресами допустим для соответствующих отходов III-IV классов от использования товаров/упаковки и/или ТКО при соблюдении п.6; лабораторный протокол с одной площадки допустим для других только при подтверждении идентичности процессов и классификационных признаков. Для прочих отходов паспорта по каждому месту отдельно.",
+  "diagnostic_checks": [
+    "Класс опасности и вид отхода: отходы от использования товаров/упаковки, ТКО или иные",
+    "Количество адресов образования и изменения адресных реквизитов",
+    "Документы о единообразии процессов образования и идентичности классификационных признаков",
+    "Проверка пунктов 6 и 9 приказа №286 по действующей редакции"
+  ],
+  "verification": {
+    "published_full_text_directly_read": true,
+    "official_ministry_original_directly_read": false,
+    "underlying_order_full_text_checked_this_cycle": false,
+    "expert_deployment_allowed": false
+  },
+  "expert_deployment_allowed": false,
+  "cross_radar_guard": "Не изменять Жёсткий радар, рабочие формы и экспертные пакеты до сверки первичного приказа и регрессионных тестов."
+}
