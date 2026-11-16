@@ -2,12 +2,12 @@
   "id": "ECO-2026-MPR-14069OG-NVOS-IV-PAYMENT",
   "source_card": "eco-changes/registry/ECO-2026-MPR-14069OG-NVOS-IV-PAYMENT.json",
   "eco_radar_index": "eco-changes/index.json",
-  "status": "RESEARCH_ONLY_PRIMARY_ORIGINAL_UNREAD",
-  "legal_status": "PURPORTED_OFFICIAL_CLARIFICATION_NOT_NPA",
+  "status": "VERIFIED_PUBLISHED_FULL_TEXT_RESEARCH_ONLY",
+  "legal_status": "OFFICIAL_CLARIFICATION_NOT_NPA",
   "priority": "YELLOW",
-  "source": "https://www.ecoindustry.ru/news2/view/66746.html",
+  "source": "https://base.garant.ru/415191793/",
   "original_document": "Письмо Минприроды России от 14.10.2026 № 19-78/14069-ОГ",
-  "principle": "В отраслевом обзоре письму приписана позиция: освобождение от платы за НВОС касается лиц, работающих исключительно на объектах IV категории. Для организаций с объектами разных категорий вопрос платы определяется по действующим нормам и фактическим видам негативного воздействия. Оригинал письма не прочитан, трактовка не подтверждена.",
+  "principle": "Полный текст письма опубликован в ГАРАНТ 02.11.2026. Минприроды разъясняет освобождение от платы и декларации для лиц, работающих исключительно на объектах IV категории; при наличии иных категорий требуется проверка платы по всем объектам. Письмо не НПА.",
   "linked_ids": [
     "ECO-2026-RPN-NVOS-636-CORRECTION-DEC01"
   ],
@@ -17,13 +17,16 @@
     "Разделять освобождение лица от платы и наличие фактического облагаемого воздействия на отдельной площадке",
     "Проверить режим объектов, не подпадающих под критерии I–IV, отдельно от режима объектов IV категории",
     "Сверить критерии IV категории с ПП РФ № 636 и корректность учетных сведений",
-    "Перед внедрением провести регрессионные тесты QZ101F и проверить совместимость с Жёстким радаром"
+    "Перед внедрением провести регрессионные тесты QZ101F и проверить совместимость с Жёстким радаром",
+    "Проверить актуальность приказа №1043, на который ссылается письмо, и действующую форму декларации."
   ],
   "verification": {
     "sector_secondary_review_read": true,
     "original_official_letter_read": false,
     "expert_deployment_allowed": false,
-    "client_publication_allowed": false
+    "client_publication_allowed": false,
+    "full_published_text_read": true,
+    "original_ministry_site_read": false
   },
   "mandatory_unverified_phrase": "сигнал есть, подтверждение не найдено — не публиковать как факт",
   "cross_radar_guard": "Жёсткий радар и действующие экспертные пакеты не изменять до проверки первоисточника, применимости и регрессионных тестов."
