@@ -720,6 +720,12 @@
       "path": "eco-changes/registry/ECO-2026-MINZDRAV-3602-MEDWASTE-TRANSPORT.json",
       "status": "VERIFIED_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-minzdrav-3602-medwaste-transport.json"
+    },
+    {
+      "id": "ECO-2026-MPR-14964OG-WASTE-PASSPORT-ADDRESSES",
+      "path": "eco-changes/registry/ECO-2026-MPR-14964OG-WASTE-PASSPORT-ADDRESSES.json",
+      "status": "VERIFIED_PUBLISHED_FULL_TEXT_RESEARCH_ONLY",
+      "engine_knowledge": "engine/knowledge/eco-2026-mpr-14964og-waste-passport-addresses.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
