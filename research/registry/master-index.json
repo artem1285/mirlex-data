@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-11-03",
+  "updated_on": "2026-11-17",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -853,6 +853,17 @@
       "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY",
       "ids": [
         "IND-TKO-001"
+      ]
+    },
+    {
+      "path": "research/registry/radar-2026-11-17-air001-velikie-luki-dairy-air-water-lead.json",
+      "cards": 1,
+      "existing_id": "IND-AIR-001",
+      "status": "OFFICIAL_RPN_WATER_CONFIRMED_AIR_CLAIM_UNVERIFIED_RESEARCH_ONLY",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT_ONLY",
+      "ids": [
+        "IND-AIR-001"
       ]
     }
   ],
