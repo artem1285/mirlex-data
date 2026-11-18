@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "source_radar": "Жёсткий радар",
   "record_type": "ADDITIONAL_EVIDENCE_UNVERIFIED_LEAD",
   "cards": [
@@ -18,12 +18,18 @@
         {
           "fact": "По сообщению РПН, вред водному объекту оценен в 976000 руб.; требования поддержаны судами двух инстанций, сумма взыскана в марте 2026.",
           "source": "https://rpn.gov.ru/regions/78/news/szmu-rosprirodnadzora-dobilos-vozmeshcheniya-vreda-prichinyennogo-vodnomu-obektu-v-g-velikie-luki-ps-5974410.html"
+        },
+        {
+          "fact": "17.11.2026 на главной странице официального сайта Росприроднадзора опубликован заголовок: «Росприроднадзор требует от «Великолукского молочного комбината» возместить более 8,7 млн рублей за вред воздуху». Это подтверждает сам факт официального сообщения о требовании, но не окончательное взыскание и не детали расчета.",
+          "source": "https://rpn.gov.ru/",
+          "publication_date": "2026-11-17",
+          "verified_on": "2026-11-18"
         }
       ],
       "unverified_lead": {
-        "origin": "Сообщение пользователя от 17.11.2026; самостоятельное подтверждение официальной публикацией и текстом претензии не получено.",
-        "allegations": "Осенью 2026 якобы выявлены выбросы соединений азота, углерода, марганца, железа и взвешенных веществ при обязательном профилактическом визите; КЭР отсутствовал у объекта I категории; РПН якобы предъявил требование о возмещении 8,78 млн руб.",
-        "status": "HYPOTHESIS_UNVERIFIED",
+        "origin": "Сообщение пользователя и официальный заголовок Росприроднадзора от 17.11.2026",
+        "allegations": "Официальный заголовок подтверждает предъявление требования более 8,7 млн руб. за вред воздуху. Точная сумма 8,78 млн руб., детали профвизита, категория, отсутствие КЭР, химический состав и методика расчета по полному первичному тексту не проверены.",
+        "status": "PARTIALLY_VERIFIED_OFFICIAL_RPN_HEADLINE",
         "do_not_claim_as_established": true
       },
       "current_npa": [
@@ -73,7 +79,7 @@
         "novelty_to_core": 6
       },
       "score_total": 69,
-      "legal_validity_gate": "RESEARCH_ONLY: право на взыскание вреда и сумма 8,78 млн руб. НЕ ПОДТВЕРЖДЕНЫ. Не активировать юридическое правило; не утверждать автономное использование экспертами.",
+      "legal_validity_gate": "RESEARCH_ONLY: официально подтверждено сообщение РПН о требовании более 8,7 млн руб.; сумма 8,78 млн и основания расчета не проверены. Не считать взысканием или окончательным установлением вреда.",
       "next_hypotheses": [
         {
           "status": "HYPOTHESIS_UNVERIFIED",
@@ -82,7 +88,8 @@
       ],
       "source_urls": [
         "https://rpn.gov.ru/regions/78/news/szmu-rosprirodnadzora-dobilos-vozmeshcheniya-vreda-prichinyennogo-vodnomu-obektu-v-g-velikie-luki-ps-5974410.html",
-        "https://www.consultant.ru/document/cons_doc_LAW_34823/5faf81ba52595911c525ac6bbb1949e0b73e6fcc/"
+        "https://www.consultant.ru/document/cons_doc_LAW_34823/5faf81ba52595911c525ac6bbb1949e0b73e6fcc/",
+        "https://rpn.gov.ru/"
       ]
     }
   ]
