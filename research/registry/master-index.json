@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-11-19",
+  "updated_on": "2026-11-20",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -888,6 +888,16 @@
       "status": "PRIMARY_RPN_AND_APPEAL_COURT_SOURCES_VERIFIED_RESEARCH_ONLY_LIVE_CHECK_PENDING",
       "expert_target": "ECO_EXPERT_ONLY",
       "court_case": "А64-10405/2025"
+    },
+    {
+      "path": "research/registry/radar-2026-11-20-nvospay001-slk-cement-ker-2025.json",
+      "cards": 1,
+      "ids": [
+        "IND-NVOSPAY-001"
+      ],
+      "status": "PRIMARY_RPN_SOURCE_VERIFIED_RESEARCH_ONLY",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT_ONLY"
     }
   ],
   "permanent_id_policy": {
