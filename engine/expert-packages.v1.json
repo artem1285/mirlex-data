@@ -43,6 +43,15 @@
           "trigger": "I-II class hazardous waste accumulation/storage; special territorial exception under Article 14.2(1.1) of 89-FZ",
           "legal_gate": "VERIFY_FULL_MUNICIPALITY_OKTMO_AND_WASTE_FKKO_ANNEXES_AND_FEDERAL_OPERATOR_CONTRACT",
           "note": "Research evidence accessible to ECO_EXPERT. Must not infer automatic entitlement to 24-month accumulation or indefinite storage."
+        },
+        {
+          "path": "engine/operations/radar-intelligence-hunt.v1.json",
+          "section": "site_entry_micro_audit",
+          "mode": "PRELIMINARY_DIAGNOSTIC_RESEARCH_ONLY",
+          "trigger": "захожу на завод / микроаудит предприятия / первичный осмотр объекта",
+          "applies_to": "ECO_EXPERT first-visit evaluation using existing universal gates and industry evidence",
+          "legal_gate": "VERIFY_CURRENT_LAW_AND_REAL_SITE_EVIDENCE",
+          "note": "Single existing radar and expert workflow; no new task, permanent ID, or automatic legal conclusion. Avoid mixing customer private information with public GitHub."
         }
       ]
     },
