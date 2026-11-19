@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-11-18",
+  "updated_on": "2026-11-19",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -876,6 +876,18 @@
       "status": "RESEARCH_ONLY",
       "source_radar": "Жёсткий радар",
       "expert_target": "ECO_EXPERT; ROP_EXPERT_REFERRAL_ONLY"
+    },
+    {
+      "path": "research/registry/radar-2026-11-19-nvospay001-rks-tambov-plan-not-pee.json",
+      "cards": 1,
+      "existing_id": "IND-NVOSPAY-001",
+      "ids": [
+        "IND-NVOSPAY-001"
+      ],
+      "source_radar": "Жёсткий радар",
+      "status": "PRIMARY_RPN_AND_APPEAL_COURT_SOURCES_VERIFIED_RESEARCH_ONLY_LIVE_CHECK_PENDING",
+      "expert_target": "ECO_EXPERT_ONLY",
+      "court_case": "А64-10405/2025"
     }
   ],
   "permanent_id_policy": {
