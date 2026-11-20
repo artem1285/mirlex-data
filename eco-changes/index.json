@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-11-16",
+  "updated": "2026-11-20",
   "purpose": "Eco-radar of legislative and regulatory changes, separate from hard radar research registry.",
   "rules": {
     "classification": "RED urgent critical; YELLOW upcoming or review; GREEN confirmed planning",
@@ -726,6 +726,12 @@
       "path": "eco-changes/registry/ECO-2026-MPR-14964OG-WASTE-PASSPORT-ADDRESSES.json",
       "status": "VERIFIED_PUBLISHED_FULL_TEXT_RESEARCH_ONLY",
       "engine_knowledge": "engine/knowledge/eco-2026-mpr-14964og-waste-passport-addresses.json"
+    },
+    {
+      "id": "ECO-2026-PP-1525-ROP-2394",
+      "path": "eco-changes/registry/ECO-2026-PP-1525-ROP-2394.json",
+      "status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+      "engine_knowledge": "engine/knowledge/eco-2026-pp-1525-rop-2394.json"
     }
   ],
   "index_repair_note": "Index synchronized with existing eco-changes registry and signals; status does not imply legal verification or expert activation."
