@@ -918,6 +918,16 @@
       "status": "PRIMARY_RPN_SOURCE_VERIFIED_RESEARCH_ONLY",
       "source_radar": "Жёсткий радар",
       "expert_target": "ECO_EXPERT_ONLY"
+    },
+    {
+      "path": "research/registry/radar-2026-11-20-wood001-dartex-wastewater-soil-claim.json",
+      "cards": 1,
+      "ids": [
+        "IND-WOOD-001"
+      ],
+      "source_radar": "Жёсткий радар",
+      "status": "PRIMARY_PROSECUTOR_SOURCE_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "expert_target": "ECO_EXPERT_ONLY"
     }
   ],
   "permanent_id_policy": {
