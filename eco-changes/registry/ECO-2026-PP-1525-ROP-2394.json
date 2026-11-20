@@ -1,0 +1,32 @@
+{
+  "id": "ECO-2026-PP-1525-ROP-2394",
+  "checked_at": "2026-11-20",
+  "signed_at": "2026-11-16",
+  "published_at": "2026-11-18",
+  "first_detected_in_reviews": "2026-11-19",
+  "priority": "YELLOW",
+  "priority_is_not_legal_status": true,
+  "legal_status": "ADOPTED_NOT_YET_IN_FORCE",
+  "engine_status": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+  "document": "Постановление Правительства РФ от 16.11.2026 № 1525 о внесении изменений в ПП РФ от 29.12.2023 № 2394",
+  "change": "Изменён перечень отходов от использования товаров, вторичного сырья и продукции, используемых для исполнения самостоятельной утилизации по РОП; затронуты резина, пластмассы, ПЭТ-упаковка и отдельные другие группы. Детальные позиции требуют сверки официального PDF.",
+  "scope": "Утилизаторы из реестра РОП, производители и импортеры, подтверждающие самостоятельную утилизацию",
+  "effective_at": "2027-01-01",
+  "risk": "Применение устаревших соответствий ФККО—ОКПД2 в кабинете утилизатора и актах №762 после вступления поправок в силу.",
+  "mirlex_action": "Сверить полный официальный PDF, подготовить diff перечня №2394, проверить коды отходов/вторсырья/продукции и формы №762/2116; до регрессионных тестов не менять активные справочники и экспертные пакеты.",
+  "client_wording": "С 1 января 2027 года изменится перечень отходов, вторичного сырья и продукции, учитываемых при самостоятельной утилизации в рамках РОП. Перед оформлением подтверждающих документов необходимо сверить применимые коды с новой редакцией перечня.",
+  "sources": {
+    "official_publication": "https://publication.pravo.gov.ru/document/0001202611180029",
+    "consultant": "https://www.consultant.ru/document/cons_doc_LAW_549291/",
+    "full_text_reprint": "https://www.tks.ru/news/law/2026/11/19/0003/o-vnesenii-izmenenij-v-postanovlenie-pravitelstva-rossijskoj-federatsii-ot-29-dekabrya-2023-g-n-2394/"
+  },
+  "verification": {
+    "official_publication_direct_read": false,
+    "official_url_inferred_from_reprint_identifier": true,
+    "act_and_effective_date_corrobated_by_consultant": true,
+    "full_text_reprint_read": true,
+    "appendix_diff_not_complete": true
+  },
+  "dedup_key": "PP-RF-1525-20261116-ROP-2394",
+  "activation_guard": "RESEARCH_ONLY; NO_ACTIVE_RULE_CHANGES; NO_HARD_RADAR_CHANGES"
+}
