@@ -908,6 +908,16 @@
       "source_radar": "Жёсткий радар",
       "status": "PRIMARY_RPN_VERIFIED_RESEARCH_ONLY",
       "expert_target": "ECO_EXPERT_ONLY"
+    },
+    {
+      "path": "research/registry/radar-2026-11-20-los001-rks-tambov-bastionnaya-collector.json",
+      "cards": 1,
+      "ids": [
+        "IND-LOS-001"
+      ],
+      "status": "PRIMARY_RPN_SOURCE_VERIFIED_RESEARCH_ONLY",
+      "source_radar": "Жёсткий радар",
+      "expert_target": "ECO_EXPERT_ONLY"
     }
   ],
   "permanent_id_policy": {
