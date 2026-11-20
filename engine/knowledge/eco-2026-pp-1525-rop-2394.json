@@ -1,0 +1,25 @@
+{
+  "id": "ECO-2026-PP-1525-ROP-2394",
+  "source_id": "ECO-2026-PP-1525-ROP-2394",
+  "source_card": "eco-changes/registry/ECO-2026-PP-1525-ROP-2394.json",
+  "mode": "RESEARCH_ONLY_OFFICIAL_PRIMARY_DIRECT_READ_PENDING",
+  "priority": "YELLOW",
+  "legal_status": "ADOPTED_NOT_YET_IN_FORCE",
+  "topic": "РОП: изменения перечня ПП №2394 постановлением №1525 от 16.11.2026",
+  "summary": "С 01.01.2027 обновляется перечень отходов, вторсырья и продукции для самостоятельной утилизации РОП. Затронуты резина, пластмассы и упаковка ПЭТ, в том числе позиции вторсырья/продукции; официальное приложение требует прямого чтения.",
+  "practical_checks": [
+    "Получить и сверить официальный PDF и полный diff №2394",
+    "Сопоставить новые ФККО/ОКПД2 и группы РОП с кабинетами MIRLEX и актами №762",
+    "Не применять новую редакцию к периодам до 01.01.2027 без специальной переходной нормы",
+    "Проверить ROP_EXPERT, справочники, расчеты и регрессионные тесты перед любым внедрением"
+  ],
+  "sources": {
+    "official": "https://publication.pravo.gov.ru/document/0001202611180029",
+    "consultant": "https://www.consultant.ru/document/cons_doc_LAW_549291/"
+  },
+  "verification": {
+    "primary_direct_read": false,
+    "secondary_full_text_read": true
+  },
+  "activation_guard": "NO_ACTIVE_RULE_CHANGES; NO_HARD_RADAR_CHANGES"
+}
