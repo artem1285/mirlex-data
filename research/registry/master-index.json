@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-11-20",
+  "updated_on": "2026-11-21",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -928,6 +928,14 @@
       "source_radar": "Жёсткий радар",
       "status": "PRIMARY_PROSECUTOR_SOURCE_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
       "expert_target": "ECO_EXPERT_ONLY"
+    },
+    {
+      "path": "research/registry/radar-2026-11-21-oil001-kalmykia-conserved-wells-soil-recovery.json",
+      "ids": [
+        "IND-OIL-001"
+      ],
+      "status": "OFFICIAL_RPN_VIDEO_PRIMARY_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар"
     }
   ],
   "permanent_id_policy": {
