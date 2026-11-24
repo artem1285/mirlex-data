@@ -1,0 +1,16 @@
+{
+  "id": "ECO-2026-MPR-488-FOREST-RECREATION",
+  "source_card": "eco-changes/registry/ECO-2026-MPR-488-FOREST-RECREATION.json",
+  "status": "RESEARCH_ONLY",
+  "domain": "forest_recreation",
+  "effective": "2027-03-01",
+  "rule_activation": false,
+  "expert_activation": false,
+  "summary": "Из пункта 11 Правил, утвержденных приказом №140 от 17.03.2026, исключены слова «по площади».",
+  "legal_status": "принят, но не вступил в силу",
+  "sources": [
+    "https://minjust.consultant.ru/files/62626",
+    "https://publication.pravo.gov.ru/document/0001202611160003",
+    "https://www.garant.ru/news/2310406/"
+  ]
+}
