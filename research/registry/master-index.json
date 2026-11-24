@@ -964,6 +964,17 @@
       "source_radar": "Жёсткий радар",
       "status": "MINPRIRODY_LETTER_AND_NPA_PRIMARY_LINKED_RESEARCH_ONLY",
       "expert_target": "ECO_EXPERT"
+    },
+    {
+      "path": "research/registry/radar-2026-11-24-wasteops001-passport-address-minprirody-14964.json",
+      "cards": 1,
+      "existing_id": "IND-WASTEOPS-001",
+      "ids": [
+        "IND-WASTEOPS-001"
+      ],
+      "source_radar": "Жёсткий радар",
+      "status": "MINPRIRODY_LETTER_AND_ORDER_286_VERIFIED_RESEARCH_ONLY",
+      "expert_target": "ECO_EXPERT"
     }
   ],
   "permanent_id_policy": {
