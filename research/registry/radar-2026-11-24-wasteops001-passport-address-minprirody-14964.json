@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "status": "RESEARCH_ONLY",
+  "records": [
+    {
+      "id": "IND-WASTEOPS-001",
+      "type": "additional_evidence",
+      "date": "2026-11-24",
+      "industry": "multi-site waste generators, waste passport compliance",
+      "source": {
+        "issuer": "Минприроды России",
+        "document_date": "2026-11-02",
+        "publication_date": "2026-11-12",
+        "number": "25-78/14964-ОГ",
+        "url": "https://www.garant.ru/products/ipo/prime/doc/415150857/",
+        "force": "NON_NORMATIVE_LETTER"
+      },
+      "law": {
+        "name": "Приказ Минприроды России от 15.05.2026 №286, пункты 6,9,10,11",
+        "effective": "2026-09-01",
+        "official_copy": "https://rpn.gov.ru/upload/iblock/cf0/25kk9gtzegd5yqmklectenofhq0ee4mi/Prikaz-Minprirody-Rossii-ot-15.05.2026-N-286-_Ob-utverzhdenii-Poryadka-pasportizatsii-i-tipovykh-form-pasportov-otkhodov-I_IV-klassov-opasnosti_.pdf"
+      },
+      "physical_chain": "process -> waste formation at each site -> identity of waste characteristics -> laboratory evidence -> waste passport -> changed physical or formal address -> renewal",
+      "confirmed_facts": [
+        "No blanket reissuance of existing passports solely due to new Order 286 effective 2026-09-01.",
+        "Reissuance of FKKO passport within 30 calendar days after triggers in points 9-10, including formal changes of waste-generation address.",
+        "One passport covering multiple sites is possible only for stated III-IV-class end-of-use goods/packaging wastes and/or MSW subject to paragraph 6 evidence and classification criteria.",
+        "One-site test report can support several sites if documented process uniformity and classification identity at all sites; ministry interpretation is not an independent binding legal norm."
+      ],
+      "risk": "Outdated address or unsupported multi-site passport creates documentary noncompliance",
+      "red_flag": "One generic passport across multiple facilities with distinct processes, no site identity proof or formal address changed more than 30 days ago",
+      "diagnostic_questions": [
+        "Есть ли изменение адресов мест образования отходов, включая формальное переименование улиц или адресных реквизитов, и когда оно произошло?",
+        "Какие паспорта объединяют несколько площадок, соответствуют ли отходы узкой категории пункта 6 Порядка №286?",
+        "Чем подтверждены идентичность отходов и единообразие процессов по всем адресам, включая протоколы и технические документы?"
+      ],
+      "mirlex_checks": [
+        "Compare passports with current FIAS address, facility list and waste formation locations",
+        "Verify 30-calendar-day renewal triggers under points 9-10 of Order 286",
+        "Test multi-site passport applicability only under point 6, do not infer universality",
+        "Separate letter interpretation from binding regulatory text"
+      ],
+      "related_ids": [
+        "IND-WASTEOPS-001",
+        "IND-FOODSERVICE-001"
+      ],
+      "services": [
+        "Waste passport audit",
+        "Multi-site waste passport compliance review"
+      ],
+      "site": "MIRLEX waste passport quiz / ECO_EXPERT",
+      "assistant": "ECO_EXPERT_ONLY; no automatic ROP expert application",
+      "score_components": {
+        "rarity": 12,
+        "risk": 22,
+        "repeatability": 20,
+        "diagnostic": 20,
+        "novelty": 7
+      },
+      "score_total": 81,
+      "hypotheses": [
+        {
+          "status": "HYPOTHESIS_UNVERIFIED",
+          "text": "Multi-site businesses often treat one waste passport as universally applicable across sites, without paragraph 6 classification test."
+        }
+      ],
+      "legal_validity_gate": "RESEARCH_ONLY until applicability and live integration verified"
+    }
+  ]
+}
