@@ -988,6 +988,17 @@
       "expert_target": "ECO_EXPERT",
       "court_case": "А49-7745/2025",
       "publication_date": "2026-11-23"
+    },
+    {
+      "path": "research/registry/radar-2026-11-24-wasteops001-liquid-waste-vehicle-soil-cassation.json",
+      "cards": 1,
+      "existing_id": "IND-WASTEOPS-001",
+      "ids": [
+        "IND-WASTEOPS-001"
+      ],
+      "source_radar": "Жёсткий радар",
+      "status": "OFFICIAL_RPN_PRIMARY_NEWS_RESEARCH_ONLY_JUDICIAL_TEXT_PENDING",
+      "expert_target": "ECO_EXPERT"
     }
   ],
   "permanent_id_policy": {
