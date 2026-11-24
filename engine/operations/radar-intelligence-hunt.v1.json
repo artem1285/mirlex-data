@@ -409,5 +409,74 @@
       "Official RPN enforcement story may be available via regional source even if federal /press/news homepage is stale."
     ],
     "user_output": "Silence on routine sweeps. Alert only verified consequential novel findings, GitHub+Engine verified ingestion, or serious user-actionable failures."
+  },
+  "judicial_forensic_hunt": {
+    "version": "1.0",
+    "added_on": "2026-11-24",
+    "purpose": "Actively discover hard-to-notice environmental court decisions through physical pollution routes and evidence issues, even when there is no regulator news.",
+    "priority": "ALL_58_SECTORS_FOCUS_HIDDEN_DISCHARGES_AND_ACTUAL_PROCESS",
+    "discovery_sources": [
+      "kad.arbitr.ru",
+      "ras.arbitr.ru",
+      "sudact.ru arbitration originals when available",
+      "base.garant.ru complete judicial act indexed",
+      "cntd.ru/news/ and its published affiliates",
+      "consultant.ru legal practice",
+      "rpn.gov.ru",
+      "epp.genproc.gov.ru",
+      "zakon.ru"
+    ],
+    "search_query_clusters": [
+      [
+        "сброс сточных вод",
+        "рельеф местности",
+        "неустановленное место сброса",
+        "загрязнение почв"
+      ],
+      [
+        "очистные сооружения",
+        "аварийный перелив",
+        "разгерметизация",
+        "обводная линия",
+        "коллектор",
+        "застой",
+        "биопруд",
+        "канализационный колодец"
+      ],
+      [
+        "координаты выпуска",
+        "фактический выпуск",
+        "разрешенный выпуск",
+        "граница аренды",
+        "за пределами земельного участка"
+      ],
+      [
+        "отсутствует видеофиксация",
+        "фототаблица",
+        "план-схема",
+        "отбор проб",
+        "альтернативные источники загрязнения",
+        "причинно-следственная связь"
+      ],
+      [
+        "методика 238",
+        "вред почвам",
+        "статья 77 7-ФЗ",
+        "кассация",
+        "оставлено без изменения"
+      ]
+    ],
+    "rule": "Search BOTH by exact case number and by unusual failure modes; publication date may lag case date by weeks. For every high-value case: read judicial text, extract technical actual flow, documentary intended flow, measured contamination, alternative causes, evidence admissibility and precise remedy. Distinguish harm to soil/water, administrative penalties, NVOS fees. Connect to existing sector ID; do not create duplicate ID or promote isolated case to universal rule.",
+    "regression_anchor": {
+      "case_id": "А49-7745/2025",
+      "judgment": "30.10.2026 Ф06-5536/26",
+      "publication": "23.11.2026 cntd.ru",
+      "path": "research/registry/radar-2026-11-24-storm001-belinsky-water-discharge-soil-cassation.json",
+      "existing_id": "IND-STORM-001",
+      "expected_diagnostic": "Check geo coordinates of permitted vs actual discharge and spill paths beyond lease boundary; verify soil measurements and causation; avoid conflating soil harm with water harm."
+    },
+    "expert_routing": "ECO_EXPERT; ROP_EXPERT only if actual recycling obligations implicated",
+    "release": "RESEARCH_ONLY until source and historical law crosschecked, no unsupported universal rules",
+    "notification": "Only real, confirmed, user-relevant results per output rule; no monitoring status spam."
   }
 }
