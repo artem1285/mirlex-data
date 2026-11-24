@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-11-23",
+  "updated_on": "2026-11-24",
   "source_of_truth": "GitHub repository artem1285/mirlex-data",
   "archives": [
     {
@@ -944,6 +944,15 @@
       ],
       "status": "PRIMARY_RPN_SOURCE_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
       "source_radar": "Жёсткий радар"
+    },
+    {
+      "path": "research/registry/radar-2026-11-24-landfill001-altai-biy-leskhoz-forest-soil-claim.json",
+      "ids": [
+        "IND-LANDFILL-001"
+      ],
+      "status": "PRIMARY_RPN_VIDEO_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "source_radar": "Жёсткий радар",
+      "court_status": "CLAIM_FILED_NOT_A_JUDGMENT"
     }
   ],
   "permanent_id_policy": {
