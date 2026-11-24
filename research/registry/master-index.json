@@ -953,6 +953,17 @@
       "status": "PRIMARY_RPN_VIDEO_VERIFIED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
       "source_radar": "Жёсткий радар",
       "court_status": "CLAIM_FILED_NOT_A_JUDGMENT"
+    },
+    {
+      "path": "research/registry/radar-2026-11-24-accident001-waste-emergency-plans-minprirody-letter.json",
+      "cards": 1,
+      "existing_id": "IND-ACCIDENT-001",
+      "ids": [
+        "IND-ACCIDENT-001"
+      ],
+      "source_radar": "Жёсткий радар",
+      "status": "MINPRIRODY_LETTER_AND_NPA_PRIMARY_LINKED_RESEARCH_ONLY",
+      "expert_target": "ECO_EXPERT"
     }
   ],
   "permanent_id_policy": {
