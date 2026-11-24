@@ -975,6 +975,19 @@
       "source_radar": "Жёсткий радар",
       "status": "MINPRIRODY_LETTER_AND_ORDER_286_VERIFIED_RESEARCH_ONLY",
       "expert_target": "ECO_EXPERT"
+    },
+    {
+      "path": "research/registry/radar-2026-11-24-storm001-belinsky-water-discharge-soil-cassation.json",
+      "cards": 1,
+      "existing_id": "IND-STORM-001",
+      "ids": [
+        "IND-STORM-001"
+      ],
+      "source_radar": "Жёсткий радар",
+      "status": "PRIMARY_CASSATION_TEXT_INDEXED_RESEARCH_ONLY_ENGINE_LIVE_PENDING",
+      "expert_target": "ECO_EXPERT",
+      "court_case": "А49-7745/2025",
+      "publication_date": "2026-11-23"
     }
   ],
   "permanent_id_policy": {
