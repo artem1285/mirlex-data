@@ -322,5 +322,92 @@
       "Не сохранять сведения клиента, фотографии, персональные данные и коммерческие документы в публичный GitHub без явного разрешения.",
       "Не менять рабочие endpoints и исполняемые правовые правила без тестов; эта процедура является исследовательским workflow."
     ]
+  },
+  "source_gap_prevention": {
+    "version": "1.0",
+    "adopted_on": "2026-11-24",
+    "status": "OPERATING_PROTOCOL_NOT_PROOF_OF_EXECUTION",
+    "goal": "Reduce misses in legal and enforcement publications across existing EcoRadar and Hard Radar without new scheduled tasks, IDs, registry namespaces or repeated empty reports.",
+    "source_matrix": [
+      {
+        "class": "PRIMARY_NPA",
+        "sources": [
+          "publication.pravo.gov.ru",
+          "pravo.gov.ru",
+          "regulation.gov.ru",
+          "minprirody.gov.ru"
+        ],
+        "checks": [
+          "official publication date",
+          "document date",
+          "registration/entry into force",
+          "effective version",
+          "project vs enacted"
+        ]
+      },
+      {
+        "class": "PRIMARY_ENFORCEMENT",
+        "sources": [
+          "rpn.gov.ru/press/news/",
+          "rpn.gov.ru regional news",
+          "epp.genproc.gov.ru",
+          "official court judgments / kad.arbitr.ru"
+        ],
+        "checks": [
+          "reported event date",
+          "publication date",
+          "court case number",
+          "appeal status",
+          "actual payment vs claim"
+        ]
+      },
+      {
+        "class": "SECONDARY_EARLY_WARNING",
+        "sources": [
+          "consultant.ru/law/hotdocs/",
+          "consultant.ru/law/hotdocs/t11/",
+          "consultant.ru/law/hotdocs/t3191/",
+          "consultant.ru/law/review/fed/prof/",
+          "consultant.ru/law/review/fed/",
+          "garant.ru/products/ipo/prime/doc/archive/2026/11/",
+          "zakon.ru"
+        ],
+        "checks": [
+          "new and updated items",
+          "date of secondary publication distinct from date of original document",
+          "exact document number and text",
+          "mandatory cross-check primary/official text and effective edition"
+        ]
+      }
+    ],
+    "search_windows": {
+      "hourly_new_publications_days": 14,
+      "rolling_backfill_days": 60,
+      "priority_lag": "A letter dated earlier but published only now counts as new.",
+      "query_strategy": "Browse topic category pages PLUS indexed search by issuer, number, date, issue, site; if site inaccessible use searchable cached/indexed results and state coverage as limited. Preserve old material as lead until verified."
+    },
+    "coverage_quality_gate": {
+      "required_per_cycle": [
+        "record which sources were ACTUALLY checked (internal, not noisy user output)",
+        "source query + time window, extracted new IDs/letters and duplicate comparison",
+        "note explicitly when source unreachable, stale or results truncated",
+        "cross-check any consequential secondary item against law/source"
+      ],
+      "not_claim": "Do not claim 58 industries, all-source complete audit, or no missed items from one search / successful automation status.",
+      "minimum_crosscheck": "At least two independent discovery paths for critical regulatory letters (e.g. official ministry or RPN + Consultant hotdocs / Garant where available).",
+      "escalation": "If 2 or more consecutive cycles cannot access a critical discovery source, attempt alternate index and backfill. User alert only if substantial interruption requires user action."
+    },
+    "handoff": {
+      "ecoradar": "Discover official NPA and non-normative letters; preserve state distinction and publication timestamp.",
+      "hard_radar": "Trace enforcement/court/physical routes; check relevance to existing case and index; no duplicate IDs.",
+      "dedup": "Compare document number + publication + topic + case number against latest GitHub master-index and cards.",
+      "release": "GitHub readback -> index readback -> live batch and exact-ID full lookup; autonomous expert use separately tested. No pretending READ audit proves WRITE."
+    },
+    "test_cases": [
+      "Letter Minprirody 13.11.2026 No 25-77/48941 was published in Consultant hotdocs 23.11.2026, must be detected as new even though document date is 10 days older.",
+      "Letter 08.10.2026 No 12-47/43587 was later published in November and must be deduplicated.",
+      "Official RPN enforcement story may be available via regional source even if federal /press/news homepage is stale."
+    ],
+    "user_output": "Silence on routine sweeps. Alert only verified consequential novel findings, GitHub+Engine verified ingestion, or serious user-actionable failures."
   }
 }
