@@ -6,7 +6,11 @@ export function route742({origin, eventDate, reportingYear, legacyTransitionConf
  if (origin==="production_rf"||origin==="import_eaeu") return {status:"ROUTE",form:"PP742_APPENDIX_1",reason:"GENERAL"};
  if (eventDate<"2024-01-01") return bad("LEGACY_BEFORE_SCOPE");
  if (eventDate<"2026-01-01") return legacyTransitionConfirmed===true?{status:"ROUTE",form:"PP742_APPENDIX_1",reason:"CONFIRMED_TRANSITION"}:bad("LEGACY_TRANSITION_UNVERIFIED");
- if (eventDate<"2028-01-01") return bad("NON_EAEU_TRANSITION_RULE_REQUIRES_VERIFICATION");
+ if (eventDate<"2028-01-01") {
+   if (experimentStatus==="not_applicable" && legacyTransitionConfirmed===true && reportingYear>=2026 && reportingYear<=2027 && Number(eventDate.slice(0,4))===reportingYear) return {status:"ROUTE",form:"PP742_APPENDIX_1",reason:"PP650_CONFIRMED_TRANSITION"};
+   if (experimentStatus==="applicable") return {status:"BLOCKED",reason:"PP750_SPECIAL_ROUTE_REQUIRES_VERIFICATION"};
+   return bad("NON_EAEU_TRANSITION_RULE_REQUIRES_VERIFICATION");
+ }
  if (experimentStatus==="unknown") return bad("EXPERIMENT_STATUS_UNVERIFIED");
  return {status:"ROUTE",form:"PP742_APPENDIX_2",reason:"POST_SUSPENSION_REVIEW_REQUIRED",finalLegalReviewRequired:true};
 }
