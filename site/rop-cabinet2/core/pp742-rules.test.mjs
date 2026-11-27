@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {route742,check742Act} from './pp742-rules.mjs';
+let n=0;function eq(actual,expected){assert.equal(actual,expected);n++}
+const base={eventDate:"2026-06-01",reportingYear:2026};
+eq(route742({...base,origin:"production_rf"}).form,"PP742_APPENDIX_1");
+eq(route742({...base,origin:"import_eaeu"}).form,"PP742_APPENDIX_1");
+eq(route742({...base,origin:"import_non_eaeu"}).status,"BLOCKED");
+eq(route742({origin:"import_non_eaeu",eventDate:"2025-08-01",reportingYear:2025}).status,"BLOCKED");
+eq(route742({origin:"import_non_eaeu",eventDate:"2025-08-01",reportingYear:2025,legacyTransitionConfirmed:true}).form,"PP742_APPENDIX_1");
+eq(route742({origin:"import_non_eaeu",eventDate:"2028-01-01",reportingYear:2028,experimentStatus:"not_applicable"}).form,"PP742_APPENDIX_2");
+eq(route742({origin:"import_non_eaeu",eventDate:"2028-01-01",reportingYear:2028}).status,"BLOCKED");
+eq(route742({...base,origin:"other"}).status,"BLOCKED");
+eq(route742({...base,origin:"production_rf",eventDate:"2026-02-30"}).status,"BLOCKED");
+const a={periodStart:"2026-01-01",periodEnd:"2026-12-31",submissionDate:"2027-04-15",actDate:"2027-02-01",recyclingDate:"2026-11-30",external:true,contractPresent:true,actPresent:true};
+eq(check742Act(a).status,"PRELIMINARY_PASS");
+eq(check742Act({...a,contractPresent:false}).reason,"CONTRACT_REQUIRED");
+eq(check742Act({...a,actPresent:false}).reason,"ACT_REQUIRED");
+eq(check742Act({...a,actDate:"2027-04-16"}).reason,"ACT_OUTSIDE_ALLOWED_DATES");
+eq(check742Act({...a,recyclingDate:"2027-01-01"}).reason,"RECYCLING_OUTSIDE_REPORTING_YEAR");
+eq(check742Act({...a,recyclerExcludedOn:"2027-01-15"}).reason,"ACT_AFTER_RECYCLER_EXCLUSION");
+eq(check742Act({...a,external:false,contractPresent:false}).status,"PRELIMINARY_PASS");
+console.log('PP742 staging tests passed:',n);
