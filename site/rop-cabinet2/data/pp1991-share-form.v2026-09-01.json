@@ -1,0 +1,92 @@
+{
+  "status": "STAGING",
+  "effectiveFrom": "2026-09-01",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_535824/5419db4cf87e4316afe52144f7d8ed826c2f0982/",
+  "procedure": "PP1991_SECOND_RULES_ADDED_BY_681",
+  "appendix": 1,
+  "sectionII": [
+    {
+      "column": 1,
+      "field": "productName"
+    },
+    {
+      "column": 2,
+      "field": "productOkpd2"
+    },
+    {
+      "column": 3,
+      "field": "totalRawMassKg"
+    },
+    {
+      "column": 4,
+      "field": "secondaryName"
+    },
+    {
+      "column": 5,
+      "field": "secondaryOkpd2"
+    },
+    {
+      "column": 6,
+      "field": "grade"
+    },
+    {
+      "column": 7,
+      "field": "qualityCharacteristics"
+    },
+    {
+      "column": 8,
+      "field": "usedEligibleSecondaryKg"
+    },
+    {
+      "column": 9,
+      "field": "openingStockKg"
+    },
+    {
+      "column": 10,
+      "field": "suppliers"
+    },
+    {
+      "column": 11,
+      "field": "receiptDocumentsAndUpstreamRegistry"
+    },
+    {
+      "column": 12,
+      "field": "closingStockKg"
+    },
+    {
+      "column": 13,
+      "field": "secondaryShare"
+    },
+    {
+      "column": 14,
+      "field": "note"
+    }
+  ],
+  "sectionI": [
+    "organizationIdentity",
+    "okved2",
+    "okato",
+    "oktmo",
+    "contact",
+    "confirmationRegistryId",
+    "technicalConclusionReference"
+  ],
+  "extractAppendix2": [
+    "organizationName",
+    "inn",
+    "registryNumber",
+    "productOrGroupOkpd2",
+    "secondarySharePercent"
+  ],
+  "submission": "GISP_OR_GOSUSLUGI",
+  "deadlines": {
+    "initialReviewWorkingDays": 10,
+    "correctionByApplicantWorkingDays": 5,
+    "reReviewWorkingDays": 7,
+    "notificationWorkingDays": 1
+  },
+  "notes": [
+    "Separate from ROP reduction procedure; do not use extract as automatic ROP entitlement.",
+    "Deadline calculation requires verified Russian working-day calendar."
+  ]
+}
