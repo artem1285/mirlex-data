@@ -478,5 +478,15 @@
     "expert_routing": "ECO_EXPERT; ROP_EXPERT only if actual recycling obligations implicated",
     "release": "RESEARCH_ONLY until source and historical law crosschecked, no unsupported universal rules",
     "notification": "Only real, confirmed, user-relevant results per output rule; no monitoring status spam."
+  },
+  "expert_judicial_research": {
+    "protocol_path": "engine/operations/expert-judicial-research.v1.json",
+    "status": "SPECIFICATION_PENDING_IMPLEMENTATION_AND_TESTS",
+    "scope": [
+      "ECO_EXPERT",
+      "ROP_EXPERT"
+    ],
+    "trigger": "Expert request requiring judicial practice or high legal risk",
+    "constraint": "No automatic expert competence claims before full-text verification and independent regression tests"
   }
 }
