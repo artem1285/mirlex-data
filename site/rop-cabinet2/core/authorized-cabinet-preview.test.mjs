@@ -27,5 +27,5 @@ assert.equal(checks,2);
 const foreignLoad=async scope=>({authenticated:true,subjectId:"foreign",organizationId:scope.organizationId,year:scope.year,rows:[{id:"r1",organizationId:"org",year:2026}]});
 assert.equal((await authorizedCabinetPreview(request,principal,authorize,foreignLoad,resolve)).reason,"SERVER_CONTEXT_LOAD_ERROR");
 const scopedLoad=async scope=>{assert.equal(scope.subjectId,"actual");assert.deepEqual(scope.rowIds,["r1"]);return {authenticated:true,subjectId:"actual",organizationId:"org",year:2026,rows:[{id:"r1",organizationId:"org",year:2026}],rateData:{},decisions:[]};};
-assert.equal((await authorizedCabinetPreview(request,principal,authorize,scopedLoad,resolve)).reason,"SERVER_CONTEXT_REJECTED");
+assert.equal((await authorizedCabinetPreview(request,principal,authorize,scopedLoad,resolve)).status,"BLOCKED");
 console.log("Principal-bound authorization integration assertions passed");
