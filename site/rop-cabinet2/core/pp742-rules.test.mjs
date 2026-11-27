@@ -19,4 +19,8 @@ eq(check742Act({...a,actDate:"2027-04-16"}).reason,"ACT_OUTSIDE_ALLOWED_DATES");
 eq(check742Act({...a,recyclingDate:"2027-01-01"}).reason,"RECYCLING_OUTSIDE_REPORTING_YEAR");
 eq(check742Act({...a,recyclerExcludedOn:"2027-01-15"}).reason,"ACT_AFTER_RECYCLER_EXCLUSION");
 eq(check742Act({...a,external:false,contractPresent:false}).status,"PRELIMINARY_PASS");
+eq(route742({...base,origin:"import_non_eaeu",experimentStatus:"not_applicable",legacyTransitionConfirmed:true}).form,"PP742_APPENDIX_1");
+eq(route742({...base,origin:"import_non_eaeu",experimentStatus:"applicable",legacyTransitionConfirmed:true}).reason,"PP750_SPECIAL_ROUTE_REQUIRES_VERIFICATION");
+eq(route742({...base,origin:"import_non_eaeu",experimentStatus:"not_applicable"}).status,"BLOCKED");
+eq(route742({...base,origin:"import_non_eaeu",experimentStatus:"not_applicable",legacyTransitionConfirmed:true,reportingYear:2027}).status,"BLOCKED");
 console.log('PP742 staging tests passed:',n);
