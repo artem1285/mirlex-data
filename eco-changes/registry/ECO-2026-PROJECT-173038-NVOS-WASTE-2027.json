@@ -1,0 +1,22 @@
+{
+  "id": "ECO-2026-PROJECT-173038-NVOS-WASTE-2027",
+  "topic": "НВОС — дополнительный коэффициент 1,079 при размещении отходов в 2027 году",
+  "priority": "YELLOW",
+  "legal_status": "PROJECT_NOT_IN_FORCE",
+  "verification": "RESEARCH_ONLY_PRIMARY_PORTAL_CONTENT_NOT_READ",
+  "project_number": "173038",
+  "document_date": "2026-11-20",
+  "first_observed_publication": "2026-11-20",
+  "garant_publication": "2026-11-26",
+  "proposed_effective_date": "2027-01-01",
+  "changes": "Проект предлагает применять коэффициент 1,079 к ставкам пунктов 1–5 раздела III распоряжения №2409-р в 2027 году; ТКО IV класса исключены",
+  "affected": "Плательщики НВОС за размещение отходов, подпадающих под пункты 1–5 раздела III",
+  "risk": "Ошибочно применять коэффициент к плате за 2026 год или считать проект утвержденным",
+  "action": "Отслеживать принятие и официальное опубликование; не менять действующие расчеты, оценить бюджетный эффект 2027",
+  "client_text": "Минприроды предложило дополнительный коэффициент 1,079 к отдельным ставкам платы за размещение отходов на 2027 год. Пока это проект, обязательного применения нет.",
+  "primary_project_url": "https://regulation.gov.ru/projects/173038/",
+  "secondary_full_text": "https://www.garant.ru/products/ipo/prime/doc/56972507/",
+  "secondary_notice": "https://centrkodeks.cntd.ru/news/read/predlozen-dopolnitelnyi-koefficient-k-stavkam-platy-za-razmeshhenie-otxodov/novosti-ekologii",
+  "verification_gap": "Страница regulation.gov.ru доступна только как JS-оболочка; оригинальный файл проекта и стадия обсуждения не прочитаны. сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "expert_activation": false
+}
