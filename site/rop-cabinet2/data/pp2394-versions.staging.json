@@ -1,0 +1,28 @@
+{
+  "status": "STAGING_VERSION_GATE",
+  "resolution": 2394,
+  "versions": [
+    {
+      "id": "2394-pre2027",
+      "from": "2024-01-01",
+      "untilExclusive": "2027-01-01",
+      "amendments": [],
+      "datasetVerified": false
+    },
+    {
+      "id": "2394-2027",
+      "from": "2027-01-01",
+      "untilExclusive": "2030-01-01",
+      "amendments": [
+        370,
+        1525
+      ],
+      "datasetVerified": false
+    }
+  ],
+  "sources": [
+    "https://www.consultant.ru/document/cons_doc_LAW_530734/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/",
+    "https://www.consultant.ru/document/cons_doc_LAW_549291/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/"
+  ],
+  "note": "Dates of entry into force verified. Applicable legal event date must be determined independently. No verified full dataset yet."
+}
