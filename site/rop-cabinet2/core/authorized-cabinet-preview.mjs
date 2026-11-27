@@ -1,4 +1,5 @@
 import {serverCabinetPreview} from './server-cabinet-preview.mjs';
+import {principalContextLoader} from './principal-context-loader.mjs';
 // The protected transport must supply the principal from verified server session,
 // never from request JSON. This wrapper does not implement session authentication.
 const deny=reason=>({status:"BLOCKED",reason,publicationAllowed:false,officialReportAllowed:false});
@@ -11,5 +12,9 @@ export async function authorizedCabinetPreview(request,principal,authorize,loadT
   allowed=await authorize(Object.freeze({subjectId:principal.subjectId,organizationId:request.organizationId,year:request.year,permission:"rop:preview"}));
  }catch{return deny("AUTHORIZATION_CHECK_ERROR");}
  if(allowed!==true)return deny("ORGANIZATION_ACCESS_DENIED");
- return serverCabinetPreview(request,loadTrustedContext,resolveDocument);
+ // Re-authorize and bind the principal when loading trusted rows, not just at entry.
+ let scopedLoader;
+ try{scopedLoader=await principalContextLoader(principal,authorize,loadTrustedContext);}
+ catch{return deny("SERVER_PRINCIPAL_CONTEXT_REQUIRED");}
+ return serverCabinetPreview(request,scopedLoader,resolveDocument);
 }
