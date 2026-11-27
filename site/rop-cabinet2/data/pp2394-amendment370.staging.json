@@ -1,0 +1,136 @@
+{
+  "status": "STAGING_PATCH_MANIFEST",
+  "resolution": 370,
+  "effectiveFrom": "2027-01-01",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_530734/ae553ae72b414e416b31e3f37a89196a96742a1a/",
+  "patches": [
+    {
+      "point": 1,
+      "groups": [
+        7
+      ],
+      "kind": "product",
+      "operation": "replaceCode",
+      "oldCode": "20.16.10.115",
+      "newCode": "20.16.10.114",
+      "scope": "Линейный полиэтилен низкой плотности"
+    },
+    {
+      "point": 2,
+      "groups": [
+        10
+      ],
+      "kind": "product",
+      "operation": "appendHeaderFootnote",
+      "footnote": "9"
+    },
+    {
+      "point": 3,
+      "groups": [
+        11
+      ],
+      "kind": "product",
+      "operation": "replaceNamedRow",
+      "oldName": "Оксид кадмия",
+      "newCode": "20.12.19.110",
+      "newName": "Оксиды прочих металлов",
+      "footnote": "10(1)"
+    },
+    {
+      "point": 4,
+      "groups": [
+        12
+      ],
+      "kind": "product",
+      "operation": "replaceNamedRow",
+      "oldName": "Свинец и его сплавы",
+      "newCode": "24.43.11",
+      "newName": "Свинец необработанный"
+    },
+    {
+      "point": 5,
+      "groups": [
+        13
+      ],
+      "kind": "product",
+      "operation": "replaceNamedRow",
+      "oldName": "Оксид кадмия",
+      "newCode": "20.12.19.110",
+      "newName": "Оксиды прочих металлов",
+      "footnote": "10(1)"
+    },
+    {
+      "point": 6,
+      "groups": [
+        16
+      ],
+      "kind": "product",
+      "operation": "replaceCode",
+      "oldCode": "20.16.10.115",
+      "newCode": "20.16.10.114",
+      "scope": "Линейный полиэтилен низкой плотности"
+    },
+    {
+      "point": "7a",
+      "groups": [
+        17
+      ],
+      "kind": "product",
+      "operation": "replaceNamedRow",
+      "oldName": "Поддоны деревянные, включая поддоны с бортами, и прочие деревянные погрузочные щиты",
+      "newName": "Поддоны деревянные, включая поддоны с бортами",
+      "newCode": "16.24.11.110"
+    },
+    {
+      "point": "7b",
+      "groups": [
+        17
+      ],
+      "kind": "product",
+      "operation": "replaceNamedRow",
+      "newCode": "22.23.19",
+      "footnote": "16"
+    },
+    {
+      "point": 8,
+      "groups": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        48,
+        52
+      ],
+      "kind": "product",
+      "operation": "replaceNamedRow",
+      "newCode": "22.23.19",
+      "footnote": "16"
+    },
+    {
+      "point": 9,
+      "operation": "addFootnote",
+      "footnote": "10(1)",
+      "condition": "Только оксид кадмия"
+    },
+    {
+      "point": 10,
+      "operation": "addFootnote",
+      "footnote": "16",
+      "excludedCode": "22.23.19.190"
+    }
+  ],
+  "note": "Not applied to base dataset. Verify exact row anchors, full footnotes and PP1525 before release."
+}
