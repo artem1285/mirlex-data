@@ -16,8 +16,9 @@
       "production_rf": true,
       "import_eaeu": true,
       "import_non_eaeu_legacy_from": "2024-01-01",
-      "import_non_eaeu_legacy_before": "2026-01-01",
-      "legacy_requires_transition_basis": true
+      "import_non_eaeu_legacy_before": "2028-01-01",
+      "legacy_requires_transition_basis": true,
+      "non_eaeu_2026_2027_requires_experiment_not_applicable": true
     },
     "report_2": {
       "import_non_eaeu": true,
@@ -32,5 +33,10 @@
       "excluded_recycler_act_no_later_than_exclusion": true
     }
   },
-  "warning": "Routing does not establish legal duty or verify experiment/transition applicability; unresolved branches are blocked."
+  "warning": "Routing does not establish legal duty or verify experiment/transition applicability; unresolved branches are blocked.",
+  "additional_sources": [
+    "https://base.garant.ru/414321993/",
+    "https://www.consultant.ru/document/cons_doc_LAW_477760/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/",
+    "https://rpn.gov.ru/activity/rop/faq/"
+  ]
 }
