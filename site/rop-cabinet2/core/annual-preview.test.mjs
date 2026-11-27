@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {annualPreview} from './annual-preview.mjs';
+const d={years:[2026],groups:{"1":{base:{"2026":10000},table_coefficient:{"2026":1.5}}}};
+const b={route:"PP742_APP1",year:2026,priorYear:2025,group:1,requiredKg:"100000",currentKg:"50000",priorKg:"20000",identityVerified:true,priorReportVerified:true,currentMassVerified:true,evidenceVerified:true,normMassVerified:true,allocationVerified:true};
+const r=annualPreview(b,d);
+assert.equal(r.status,"STAGING_PREVIEW");
+assert.equal(r.creditedKg,"70000");
+assert.equal(r.feeMassKg,"30000");
+assert.equal(BigInt(r.grossFeeKopecks.numerator),45000000n*BigInt(r.grossFeeKopecks.denominator));
+assert.equal(r.publicationAllowed,false);
+assert.equal(r.officialReportAllowed,false);
+assert.equal(annualPreview({...b,allocationVerified:false},d).status,"BLOCKED");
+assert.equal(annualPreview({...b,priorReportVerified:false},d).status,"BLOCKED");
+assert.equal(annualPreview({...b,group:2},d).status,"BLOCKED");
+assert.equal(annualPreview({...b,route:"PP750"},d).status,"BLOCKED");
+assert.equal(annualPreview({...b,currentKg:"120000"},d).nextYearCandidateKg,"20000");
+assert.equal(annualPreview({...b,currentKg:"120000"},d).feeMassKg,"0");
+console.log("12 assertions passed");
