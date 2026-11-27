@@ -1,0 +1,58 @@
+{
+  "status": "STAGING",
+  "resolution": "1486",
+  "effectiveFrom": "2025-01-01",
+  "effectiveUntilExclusive": "2031-01-01",
+  "forms": [
+    {
+      "appendix": 1,
+      "source": "https://www.consultant.ru/document/cons_doc_LAW_489920/aaf1f62f0492d45c9d120135f3995428985adfe5/",
+      "fields": [
+        "declarationNumber",
+        "tnved",
+        "tnvedName",
+        "description",
+        "grossKg",
+        "netKg",
+        "additionalQuantity"
+      ],
+      "notes": {
+        "declarationNumber": "DT box A",
+        "description": "DT box 31"
+      }
+    },
+    {
+      "appendix": 2,
+      "source": "https://www.consultant.ru/document/cons_doc_LAW_489920/0d79ac84e8c296cb7fcae33f1534f43e94c411ed/",
+      "fields": [
+        "cn23RegistrationNumber",
+        "postalTrackingNumber",
+        "tnved",
+        "tnvedName",
+        "grossKg",
+        "netKg",
+        "additionalQuantity"
+      ],
+      "notes": {
+        "postalTrackingNumber": "13 alphanumeric characters"
+      }
+    },
+    {
+      "appendix": 3,
+      "source": "https://www.consultant.ru/document/cons_doc_LAW_489920/a199b0065d6bacce0670d2b6841ec43a7c910d1f/",
+      "fields": [
+        "statFormRegistrationNumber",
+        "tnved",
+        "tnvedName",
+        "description",
+        "netKg",
+        "additionalQuantity"
+      ],
+      "notes": {
+        "description": "Stat form box 12"
+      }
+    }
+  ],
+  "thirdPartyEvidence": "PP1486 paragraph 5: documents proving transfer to exporter",
+  "verification": "Paragraph 7 FCS confirmation requested by RPN; local document check is not FCS confirmation"
+}
