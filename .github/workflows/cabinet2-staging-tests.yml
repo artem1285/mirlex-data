@@ -1,0 +1,22 @@
+name: Cabinet 2 staging tests
+on:
+  push:
+    branches: [cabinet2-development]
+    paths:
+      - 'site/rop-cabinet2/**'
+      - '.github/workflows/cabinet2-staging-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    if: github.ref == 'refs/heads/cabinet2-development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute all existing module tests
+        working-directory: site/rop-cabinet2
+        run: node --test core/*.test.mjs
