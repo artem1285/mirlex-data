@@ -14,4 +14,15 @@ assert.equal(calculateCabinetPreview({...b,rows:[{...r,requiredKg:"1"}]},d).reas
 assert.equal(calculateCabinetPreview({...b,rows:[{...r,massInput:{...m,productKey:"other"}}]},d).reason,"MASS_SCOPE_CONFLICT");
 assert.equal(calculateCabinetPreview({...b,rows:[{...r,massInput:{...m,exportEvidenceVerified:false}}]},d).status,"BLOCKED");
 assert.equal(calculateCabinetPreview({...b,rows:[{...r,massInput:{...m,grossKg:"200001"}}]},d).reason,"MASS_ROUNDING_REVIEW");
-console.log("9 assertions passed");
+
+const sm={...m,grossKg:"100000",exportKg:"0",secondaryMode:"confirmed",secondary:{organizationId:"o",productKey:"p",year:2026,section:1,origin:"production_rf",baseMassGrams:"100000000",normPercent:50,materials:[{id:"a",kind:"primary",usedGrams:"70000000",verified:true},{id:"b",kind:"secondary",usedGrams:"30000000",verified:true,origin:"RF",alreadyCredited:false}],confirmation:{kind:"ROP_1991",reference:"test",verified:true,organizationId:"o",productKey:"p",year:2026,confirmedBaseGrams:"100000000",eligibleGrams:"30000000",totalGrams:"100000000",date:"2027-03-01"}}};
+const sr={...r,formId:"APP1_T2",secondaryReportMappingVerified:true,massInput:sm,currentKg:"10000",priorKg:"0"};
+const sp=calculateCabinetPreview({...b,rows:[sr]},d);
+assert.equal(sp.status,"STAGING_SETTLEMENT");
+assert.equal(sp.details[0].requiredKg,"35000");
+assert.equal(sp.totalPayableKopecks,"25000000");
+assert.equal(sp.massDetails[0].secondaryFields.confirmationReference,"test");
+assert.equal(calculateCabinetPreview({...b,rows:[{...sr,formId:"APP1_T1"}]},d).reason,"SECONDARY_REPORT_ROWS_REVIEW");
+assert.equal(calculateCabinetPreview({...b,rows:[{...sr,secondaryReportMappingVerified:false}]},d).status,"BLOCKED");
+
+console.log("15 assertions passed");
