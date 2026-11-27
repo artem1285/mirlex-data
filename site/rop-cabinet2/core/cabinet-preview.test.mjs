@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {calculateCabinetPreview} from './cabinet-preview.mjs';
+const d={years:[2026],groups:{"1":{base:{"2026":10000},table_coefficient:{"2026":1}}}};
+const m={organizationId:"o",productKey:"p",table:"T1",year:2026,scopeVerified:true,massEvidenceVerified:true,normVerified:true,grossKg:"200000",exportKg:"50000",componentsKg:"0",normPercent:50,exportEvidenceVerified:true,secondaryMode:"none"};
+const r={id:"a",organizationId:"o",productKey:"p",year:2026,priorYear:2025,group:1,groupScopeVerified:true,route:"PP742_APP1",formId:"APP1_T1",formRouteVerified:true,currentKg:"50000",priorKg:"20000",identityVerified:true,priorReportVerified:true,currentMassVerified:true,evidenceVerified:true,allocationVerified:true,massInput:m};
+const b={organizationId:"o",year:2026,serverEvidenceVerified:true,rows:[r],decisions:[]};
+const p=calculateCabinetPreview(b,d);
+assert.equal(p.status,"STAGING_SETTLEMENT");
+assert.equal(p.details[0].requiredKg,"75000");
+assert.equal(p.details[0].feeMassKg,"5000");
+assert.equal(p.totalPayableKopecks,"5000000");
+assert.equal(p.publicationAllowed,false);
+assert.equal(calculateCabinetPreview({...b,rows:[{...r,requiredKg:"1"}]},d).reason,"REQUIRED_MASS_CONFLICT");
+assert.equal(calculateCabinetPreview({...b,rows:[{...r,massInput:{...m,productKey:"other"}}]},d).reason,"MASS_SCOPE_CONFLICT");
+assert.equal(calculateCabinetPreview({...b,rows:[{...r,massInput:{...m,exportEvidenceVerified:false}}]},d).status,"BLOCKED");
+assert.equal(calculateCabinetPreview({...b,rows:[{...r,massInput:{...m,grossKg:"200001"}}]},d).reason,"MASS_ROUNDING_REVIEW");
+console.log("9 assertions passed");
