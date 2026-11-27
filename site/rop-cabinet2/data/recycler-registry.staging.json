@@ -1,0 +1,28 @@
+{
+  "status": "STAGING",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_466602/b4241ff8b288675ca5e201b323329218e160cd5d/",
+  "publicRegistry": "https://reestr-uoit.mnr.gov.ru/public/lists/equipment_analytics",
+  "operator": "https://reo.ru/fgisuoit",
+  "fields": [
+    "registryNumber",
+    "inn",
+    "ogrnOrOgrnip",
+    "name",
+    "licenseDetails",
+    "siteAddress",
+    "oktmo",
+    "cadastralNumberIfAvailable",
+    "equipment",
+    "capacity",
+    "commissioningDate",
+    "wasteCodes",
+    "secondaryCodes",
+    "productCodes",
+    "status"
+  ],
+  "basis": "PP2400 paragraphs 4,16,31–33,35–37",
+  "extractWorkingDays": 3,
+  "refreshDaysTechnicalPolicy": 1,
+  "apiVerified": false,
+  "notes": "Historical coverage and normalized operation relationships require authoritative evidence, not inferred from independent code lists. Excluded status requires legal review, not automatic rejection of historical acts."
+}
