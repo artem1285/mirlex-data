@@ -1,0 +1,290 @@
+{
+  "status": "STAGING_LEGAL_DATE_REVIEW",
+  "sourceOriginal": "https://www.consultant.ru/document/cons_doc_LAW_484973/7fd705c62bbc0cedcb98b7378cb088383c3204f2/",
+  "sourceAmendment": "https://base.garant.ru/415219095/",
+  "amendmentDate": "2026-10-31",
+  "effectiveDateVerified": false,
+  "notes": "Short descriptions are not legal classification. All product scope and temporal applicability must be verified upstream. Separate from ROP reduction.",
+  "rows": [
+    {
+      "id": 1,
+      "name": "Общестроительные цементы",
+      "minPercent": 6,
+      "codes": [
+        "23.51"
+      ],
+      "footnotes": [
+        3
+      ],
+      "scope": "Не ЦЕМ 0/ЦЕМ I; виды сырья по позиции 1",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 2,
+      "name": "Гофрокоробки",
+      "minPercent": 30,
+      "codes": [
+        "17.21.13"
+      ],
+      "footnotes": [
+        4
+      ],
+      "scope": "Гофрированная бумага/картон",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 3,
+      "name": "Древесные пеллеты и брикеты",
+      "minPercent": 95,
+      "codes": [
+        "16.29.14.192",
+        "16.29.14.193"
+      ],
+      "footnotes": [],
+      "scope": "Древесные обрезки, щепа, стружка и/или вторсырьё",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 4,
+      "name": "Древесная мука",
+      "minPercent": 98,
+      "codes": [
+        "16.10.22.120"
+      ],
+      "footnotes": [],
+      "scope": "Опилки, стружка, обрезки и/или вторсырьё",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 5,
+      "name": "ДСП",
+      "minPercent": 3,
+      "codes": [
+        "16.21.13"
+      ],
+      "footnotes": [],
+      "scope": "Вторсырьё из древесных отходов и/или иное вторсырьё",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 6,
+      "name": "Неформованные РТИ",
+      "minPercent": 80,
+      "codes": [
+        "22.19.73.110",
+        "22.19.73.119",
+        "22.19.73.130"
+      ],
+      "footnotes": [],
+      "scope": "Неформованные изделия",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 7,
+      "name": "Резиновая плитка и покрытия",
+      "minPercent": 80,
+      "codes": [
+        "22.19.73.140"
+      ],
+      "footnotes": [],
+      "scope": "Резиновая крошка",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 8,
+      "name": "Изделия из полиэтилена",
+      "minPercent": 5,
+      "codes": [
+        "22.22.11"
+      ],
+      "footnotes": [
+        4
+      ],
+      "scope": "Мешки и сумки из полимеров этилена",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 9,
+      "name": "ПЭТ изделия",
+      "minPercent": 8,
+      "codes": [
+        "22.22.14.120",
+        "22.22.14.121",
+        "22.22.14.122",
+        "22.22.14.123",
+        "22.22.14.124",
+        "22.22.14.125",
+        "22.22.14.126",
+        "22.22.14.127",
+        "22.22.14.128",
+        "22.22.14.129",
+        "22.22.14.130",
+        "22.22.14.131",
+        "22.22.14.132",
+        "22.22.14.133",
+        "22.22.14.134",
+        "22.22.14.135",
+        "22.22.14.136",
+        "22.22.14.137",
+        "22.22.14.138",
+        "22.22.14.139"
+      ],
+      "footnotes": [
+        4
+      ],
+      "scope": "Преформы и изделия, исключение изделий из преформ по второй строке",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 10,
+      "name": "Почвогрунты",
+      "minPercent": 10,
+      "codes": [
+        "20.15.80.190",
+        "23.99.19.190"
+      ],
+      "footnotes": [],
+      "scope": "Состав, назначение и исключение минеральной ваты по позиции 10",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 11,
+      "name": "Известково-шлаковый/зольный кирпич",
+      "minPercent": 10,
+      "codes": [
+        "23.61.11.131"
+      ],
+      "footnotes": [],
+      "scope": "Тип кирпича",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 12,
+      "name": "Химические мелиоранты",
+      "minPercent": 100,
+      "codes": [
+        "23.99.19.190"
+      ],
+      "footnotes": [
+        5
+      ],
+      "scope": "Фосфоритование и гипсование",
+      "requiresVerifiedProductScope": true,
+      "amendment": null
+    },
+    {
+      "id": 13,
+      "name": "Стеклянная тара",
+      "minPercent": 15,
+      "codes": [
+        "23.13.11"
+      ],
+      "footnotes": [
+        4
+      ],
+      "scope": "Бутылки, банки; стеклобой или иное вторсырьё",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 14,
+      "name": "Бетонные смеси",
+      "minPercent": 2,
+      "codes": [
+        "23.63.1"
+      ],
+      "footnotes": [
+        6
+      ],
+      "scope": "F125/F135/F150/F175; золошлаковые смеси или микрокремнезем",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 15,
+      "name": "Искусственные пористые заполнители",
+      "minPercent": 10,
+      "codes": [
+        "08.12.13"
+      ],
+      "footnotes": [
+        6
+      ],
+      "scope": "Шлаки черной металлургии, золошлаковые смеси, отходы углеобогащения",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 16,
+      "name": "Гипсовые вяжущие",
+      "minPercent": 15,
+      "codes": [
+        "23.52.20"
+      ],
+      "footnotes": [],
+      "scope": "Фосфогипс",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 17,
+      "name": "Технический текстиль",
+      "minPercent": 10,
+      "codes": [
+        "13.96"
+      ],
+      "footnotes": [],
+      "scope": "Вторсырьё из текстильного корда отработанных шин",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 18,
+      "name": "Угольные брикеты и пеллеты",
+      "minPercent": 40,
+      "codes": [
+        "19.30.11.130",
+        "19.30.12.120"
+      ],
+      "footnotes": [],
+      "scope": "Угольные шламы и отсевы",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 19,
+      "name": "Углеродные сорбенты",
+      "minPercent": 70,
+      "codes": [
+        "20.59.59"
+      ],
+      "footnotes": [],
+      "scope": "Вторсырьё из отходов углеобогащения",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    },
+    {
+      "id": 20,
+      "name": "Мягкая кровля и гидроизоляция",
+      "minPercent": 5,
+      "codes": [
+        "23.99.12.110"
+      ],
+      "footnotes": [],
+      "scope": "Соответствие виду продукции",
+      "requiresVerifiedProductScope": true,
+      "amendment": "3169-r"
+    }
+  ]
+}
