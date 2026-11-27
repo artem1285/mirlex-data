@@ -26,3 +26,11 @@ assert.equal(calculateCabinetPreview({...b,rows:[{...sr,formId:"APP1_T1"}]},d).r
 assert.equal(calculateCabinetPreview({...b,rows:[{...sr,secondaryReportMappingVerified:false}]},d).status,"BLOCKED");
 
 console.log("15 assertions passed");
+
+const pm={...sm,normPercent:75,secondary:{...sm.secondary,section:2,normPercent:75}};
+const pp=calculateCabinetPreview({...b,rows:[{...sr,massInput:pm}]},d);
+assert.equal(pp.status,"STAGING_SETTLEMENT");
+assert.equal(pp.details[0].requiredKg,"52500");
+assert.equal(pp.totalPayableKopecks,"42500000");
+assert.equal(pp.massDetails[0].secondaryFields.section,2);
+assert.equal(calculateCabinetPreview({...b,rows:[{...sr,massInput:{...pm,normPercent:50,secondary:{...pm.secondary,normPercent:50}}}]},d).status,"BLOCKED");
