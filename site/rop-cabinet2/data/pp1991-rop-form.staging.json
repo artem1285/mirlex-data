@@ -1,0 +1,78 @@
+{
+  "status": "STAGING_EDITION_REVIEW",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_495351/89e999b92eebdeae977f3dcc1f1678541d060e91/",
+  "procedure": "ROP_1991",
+  "appendix": 1,
+  "sectionII": [
+    {
+      "column": 1,
+      "field": "productName"
+    },
+    {
+      "column": 2,
+      "field": "productOkpd2"
+    },
+    {
+      "column": 3,
+      "field": "ropBaseMassKg"
+    },
+    {
+      "column": 4,
+      "field": "totalRawMassKg"
+    },
+    {
+      "column": 5,
+      "field": "secondaryName"
+    },
+    {
+      "column": 6,
+      "field": "secondaryOkpd2"
+    },
+    {
+      "column": 7,
+      "field": "grade"
+    },
+    {
+      "column": 8,
+      "field": "qualityCharacteristics"
+    },
+    {
+      "column": 9,
+      "field": "totalUsedSecondaryKg"
+    },
+    {
+      "column": 10,
+      "field": "eligibleUsedSecondaryKg"
+    },
+    {
+      "column": 11,
+      "field": "openingStockKg"
+    },
+    {
+      "column": 12,
+      "field": "suppliers"
+    },
+    {
+      "column": 13,
+      "field": "receiptDocumentsAndUpstreamConfirmation"
+    },
+    {
+      "column": 14,
+      "field": "closingStockKg"
+    },
+    {
+      "column": 15,
+      "field": "secondaryShareRatio"
+    },
+    {
+      "column": 16,
+      "field": "note"
+    }
+  ],
+  "annualApplicationDeadline": "03-15 following production year; verify effective edition and calendar treatment",
+  "notes": [
+    "Do not use separate share confirmation as ROP entitlement.",
+    "Source footnotes contain apparent column cross-reference inconsistencies; reconcile against official signed text before export.",
+    "Separate total used secondary mass from eligible mass."
+  ]
+}
