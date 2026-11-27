@@ -1,0 +1,67 @@
+{
+  "status": "STAGING",
+  "source": "https://base.garant.ru/414326567/",
+  "procedure": "PP1991_SECOND_RULES",
+  "basis": "paragraphs 5–16",
+  "fields": [
+    "siteAddress",
+    "oktmo",
+    "cadastralNumberIfAvailable",
+    "equipmentByOperation",
+    "equipmentCapacity",
+    "commissioningDate",
+    "secondaryNameAndOkpd2",
+    "productNameAndOkpd2",
+    "recyclerRegistryNumberIfAvailable",
+    "licenseRegistryNumbersIfRequired",
+    "assessmentMode",
+    "remoteAssessmentCapability"
+  ],
+  "attachments": [
+    "equipmentTechnicalDocuments",
+    "equipmentRightsIfAvailable",
+    "processDocumentation",
+    "licensesIfRequiredAndNotInRegistry",
+    "chemicalSafetySheetsIfApplicable",
+    "secondaryMaterialCharacteristics",
+    "operatingModesHoursAndStaff",
+    "productSpecifications",
+    "energyMeterDocumentsIfInstalled",
+    "staffList",
+    "premisesRightsOrEgrnReferences"
+  ],
+  "attachmentExemption": "paragraph 9: recycler registry number and equipment/capacity correspondence verified",
+  "deadlines": [
+    [
+      "forwardToTPP",
+      1,
+      "working"
+    ],
+    [
+      "TPPReview",
+      5,
+      "working"
+    ],
+    [
+      "applicantRevision",
+      10,
+      "calendar"
+    ],
+    [
+      "additionalEvidence",
+      10,
+      "calendar"
+    ],
+    [
+      "assessmentAct",
+      5,
+      "working"
+    ],
+    [
+      "minpromtorgDecision",
+      7,
+      "working"
+    ]
+  ],
+  "pending": "Full paragraph 5 organization fields, original ROP procedure comparison and attachment applicability tests"
+}
