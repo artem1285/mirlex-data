@@ -1,0 +1,86 @@
+{
+  "status": "STAGING_REVISION_CHECK_REQUIRED",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_477805/e5bd4be00ea456eebc833e2d3dc083fe265510e3/",
+  "sourceEditionDisplayed": "2025-12-30",
+  "currentEditionToReconcile": "2026-05-30",
+  "rows": [
+    {
+      "group": 1,
+      "code": "6103490001",
+      "match": "exact",
+      "condition": null
+    },
+    {
+      "group": 5,
+      "code": "401110000",
+      "match": "prefix",
+      "condition": null
+    },
+    {
+      "group": 5,
+      "code": "401120",
+      "match": "prefix",
+      "condition": null
+    },
+    {
+      "group": 5,
+      "code": "4011400000",
+      "match": "exact",
+      "condition": null
+    },
+    {
+      "group": 5,
+      "code": "401150000",
+      "match": "prefix",
+      "condition": null
+    },
+    {
+      "group": 5,
+      "code": "4011800000",
+      "match": "exact",
+      "condition": null
+    },
+    {
+      "group": 5,
+      "code": "4011900000",
+      "match": "exact",
+      "condition": null
+    },
+    {
+      "group": 10,
+      "code": "8450",
+      "match": "prefix",
+      "condition": "exclude_laundry"
+    },
+    {
+      "group": 12,
+      "code": "850710",
+      "match": "prefix",
+      "condition": null
+    },
+    {
+      "group": 12,
+      "code": "850720",
+      "match": "prefix",
+      "condition": null
+    },
+    {
+      "group": 25,
+      "code": "3920202109",
+      "match": "exact",
+      "condition": null
+    },
+    {
+      "group": 31,
+      "code": "7612908001",
+      "match": "exact",
+      "condition": null
+    },
+    {
+      "group": 32,
+      "code": "4811510009",
+      "match": "exact",
+      "condition": null
+    }
+  ]
+}
