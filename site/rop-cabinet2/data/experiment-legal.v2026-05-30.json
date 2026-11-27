@@ -1,0 +1,19 @@
+{
+  "status": "STAGING_LEGAL_REVIEW",
+  "source750": "https://rpn.gov.ru/upload/iblock/f3c/auycq8r4ns2guj6hkte944ecnupjfupt/Postanovlenie-Pravitelstva-RF-ot-01.06.2024-N-750-_red.-ot.pdf",
+  "source1990": "https://rpn.gov.ru/upload/iblock/4f9/qzmyfhszu7ddk3w90p8uk4xloh6uiy8d/Postanovlenie-Pravitelstva-RF-ot-30.12.2024-N-1990-_red.-ot.pdf",
+  "basis": [
+    "750 paragraphs 6,7,9",
+    "1990 appendix 3 table 1 footnotes 21,24,25,26-30"
+  ],
+  "pending": [
+    "actual appendix 1 product list classifier",
+    "annual packaging aggregation and duplicate prevention",
+    "multi-position and multi-contract guarantee allocations",
+    "official rate and rounding integration",
+    "historical 2025-09-01 boundary",
+    "full field matrix and report totals",
+    "verify current amendments to 1990 and transition",
+    "PDF screenshot unavailable; text extracted"
+  ]
+}
