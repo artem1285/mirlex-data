@@ -1,0 +1,11 @@
+{
+  "id": "ECO-2026-PROJECT-173038-NVOS-WASTE-2027",
+  "knowledge_type": "LEGAL_CHANGE_RESEARCH",
+  "status": "RESEARCH_ONLY",
+  "linked_radar_card": "eco-changes/registry/ECO-2026-PROJECT-173038-NVOS-WASTE-2027.json",
+  "summary": "Проект предлагает применять коэффициент 1,079 к ставкам пунктов 1–5 раздела III распоряжения №2409-р в 2027 году; ТКО IV класса исключены",
+  "legal_status": "PROJECT_NOT_IN_FORCE",
+  "primary_source": "https://regulation.gov.ru/projects/173038/",
+  "source_gap": "Страница regulation.gov.ru доступна только как JS-оболочка; оригинальный файл проекта и стадия обсуждения не прочитаны. сигнал есть, подтверждение не найдено — не публиковать как факт",
+  "do_not_activate_expert": true
+}
