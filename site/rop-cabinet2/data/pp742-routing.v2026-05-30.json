@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "STAGING_LEGAL_REVIEW",
+  "as_of": "2026-11-27",
+  "resolution": "PP_RF_742",
+  "edition": "2026-05-30",
+  "source": "https://rpn.gov.ru/upload/iblock/aec/dmff46lqqtvpu1umnalo3a3lbd9pzpqn/Postanovlenie-Pravitelstva-RF-ot-31.05.2024-N-742-_red.-ot.pdf",
+  "legal_basis": [
+    "PP742 rules paragraph 2(a-c)",
+    "PP742 rules paragraph 3 suspension by PP650 until 2028-01-01",
+    "PP742 rules paragraph 8(a-b)",
+    "PP742 rules paragraph 9"
+  ],
+  "rules": {
+    "report_1": {
+      "production_rf": true,
+      "import_eaeu": true,
+      "import_non_eaeu_legacy_from": "2024-01-01",
+      "import_non_eaeu_legacy_before": "2026-01-01",
+      "legacy_requires_transition_basis": true
+    },
+    "report_2": {
+      "import_non_eaeu": true,
+      "suspended_before": "2028-01-01"
+    },
+    "evidence": {
+      "contract_and_act_when_external_recycler": true,
+      "act_when_own_infrastructure": true,
+      "act_date_no_earlier_than_period_start": true,
+      "act_date_no_later_than_submission": true,
+      "physical_recycling_in_reporting_year": true,
+      "excluded_recycler_act_no_later_than_exclusion": true
+    }
+  },
+  "warning": "Routing does not establish legal duty or verify experiment/transition applicability; unresolved branches are blocked."
+}
