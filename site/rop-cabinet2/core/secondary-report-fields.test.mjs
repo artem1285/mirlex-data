@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {secondaryReportFields} from './secondary-report-fields.mjs';
+const m={organizationId:"o",productKey:"p",year:2026,table:"T1",scopeVerified:true,massEvidenceVerified:true,normVerified:true,grossKg:"100000",exportKg:"0",componentsKg:"0",normPercent:50,secondaryMode:"confirmed",secondary:{organizationId:"o",productKey:"p",year:2026,section:1,origin:"production_rf",baseMassGrams:"100000000",normPercent:50,materials:[{id:"a",kind:"primary",usedGrams:"70000000",verified:true},{id:"b",kind:"secondary",usedGrams:"30000000",verified:true,origin:"RF",alreadyCredited:false}],confirmation:{kind:"ROP_1991",reference:"test",verified:true,organizationId:"o",productKey:"p",year:2026,confirmedBaseGrams:"100000000",eligibleGrams:"30000000",totalGrams:"100000000",date:"2027-03-01"}}};
+const r=secondaryReportFields(m);
+assert.equal(r.status,"STAGING_FIELDS");
+assert.equal(BigInt(r.adjustedNormPercent.numerator),35n*BigInt(r.adjustedNormPercent.denominator));
+assert.equal(BigInt(r.adjustedRequiredKg.numerator),35000n*BigInt(r.adjustedRequiredKg.denominator));
+assert.equal(r.publicationAllowed,false);
+assert.equal(secondaryReportFields({...m,secondary:{...m.secondary,confirmation:{...m.secondary.confirmation,confirmedBaseGrams:"80000000"}}}).reason,"PARTIAL_CONFIRMATION_SPLIT_REQUIRED");
+assert.equal(secondaryReportFields({...m,secondary:{...m.secondary,confirmation:{...m.secondary.confirmation,verified:false}}}).status,"BLOCKED");
+console.log("6 assertions passed");
