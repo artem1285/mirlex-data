@@ -1,0 +1,97 @@
+{
+  "status": "STAGING_FORM_MAPPING",
+  "source": "https://www.consultant.ru/document/cons_doc_LAW_463392/dd46f8e56ec01d8cf58bc77354b0aae07a32f92a/",
+  "effectiveFrom": "2024-03-01",
+  "effectiveUntilExclusive": "2030-03-01",
+  "header": [
+    "actNumber",
+    "place",
+    "actDate",
+    "executorIdentity",
+    "executorOgrn",
+    "executorInn",
+    "executorOkved",
+    "executorOkato",
+    "executorRegisteredAddress",
+    "siteAddress",
+    "siteCadastralNumber",
+    "siteOktmo",
+    "executorContact",
+    "executorRepresentative",
+    "executorAuthority",
+    "licenseDetailsOrNotRequired",
+    "customerIdentity",
+    "customerRole",
+    "customerOgrn",
+    "customerInn",
+    "customerOkved",
+    "customerOkato",
+    "customerRegisteredAddress",
+    "customerContact",
+    "customerRepresentative",
+    "customerAuthority",
+    "periodStart",
+    "periodEnd",
+    "contractDate",
+    "contractNumber",
+    "executorSignature",
+    "customerSignature"
+  ],
+  "columns": [
+    {
+      "column": 1,
+      "field": "inputName"
+    },
+    {
+      "column": 2,
+      "field": "inputCode"
+    },
+    {
+      "column": 3,
+      "field": "hazardClass"
+    },
+    {
+      "column": 4,
+      "field": "ropGroup"
+    },
+    {
+      "column": 5,
+      "field": "acceptedKg"
+    },
+    {
+      "column": 6,
+      "field": "productName"
+    },
+    {
+      "column": 7,
+      "field": "productOkpd2"
+    },
+    {
+      "column": 8,
+      "field": "standardDocument"
+    },
+    {
+      "column": 9,
+      "field": "productKg"
+    },
+    {
+      "column": 10,
+      "field": "secondaryName"
+    },
+    {
+      "column": 11,
+      "field": "secondaryOkpd2"
+    },
+    {
+      "column": 12,
+      "field": "secondaryUsedKg"
+    }
+  ],
+  "conditional": [
+    "Customer section and signature blank for own infrastructure.",
+    "Separate information for each recycling site.",
+    "Columns 3 and 10–12 blank when accepted input is secondary raw material.",
+    "Registry evidence is separate from the printed form.",
+    "Accepted mass is not automatically credited mass."
+  ]
+}
