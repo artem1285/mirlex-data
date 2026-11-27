@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0.0",
+  "created_on": "2026-11-27",
+  "kind": "MIRLEX_EXPERT_JUDICIAL_RESEARCH_PROTOCOL",
+  "status": "SPECIFICATION_PENDING_IMPLEMENTATION_AND_TESTS",
+  "scope": [
+    "ECO_EXPERT",
+    "ROP_EXPERT"
+  ],
+  "source_of_truth": "research/registry/master-index.json",
+  "purpose": "On-demand retrieval and comparison of relevant Russian judicial practice for environmental and EPR questions; reusable verified case knowledge for both experts",
+  "entrypoint": "Single user-facing MIRLEX route; route to ECO_EXPERT, ROP_EXPERT or both without manual expert invocation",
+  "search_modes": {
+    "quick": "Existing verified case registry first; live search when applicability or freshness is uncertain",
+    "deep": "Search official court sources and review several comparable decisions including adverse practice",
+    "mandatory": "High-risk dispute, fine, permit refusal, enforcement, disputed interpretation, litigation, or explicit request for judicial practice"
+  },
+  "official_sources": [
+    {
+      "url": "https://kad.arbitr.ru/",
+      "purpose": "case docket, procedural status, documents"
+    },
+    {
+      "url": "https://ras.arbitr.ru/",
+      "purpose": "full-text arbitration decisions"
+    },
+    {
+      "url": "https://vsrf.ru/",
+      "purpose": "Supreme Court acts and reviews"
+    },
+    {
+      "url": "https://bsr.sudrf.ru/bigs/portal.html",
+      "purpose": "courts of general jurisdiction"
+    }
+  ],
+  "source_policy": [
+    "Use official primary decision text whenever accessible; secondary publications are discovery only",
+    "Check court, case number, act date, instance, appeal/cassation status and operative part",
+    "Compare facts, applicable statutory edition, geography, timeframe, authority, and procedural posture",
+    "Find supporting and adverse practice; no invented case numbers, quotes, or URLs",
+    "Do not claim comprehensive search if blocked or incomplete; disclose source coverage and access limits",
+    "Respect site terms, rate limits and access controls; no CAPTCHA bypass"
+  ],
+  "case_record_fields": [
+    "permanent_id",
+    "case_number",
+    "court",
+    "decision_date",
+    "instance",
+    "procedural_status",
+    "official_document_url",
+    "source_verified_at",
+    "legal_provisions_and_edition",
+    "facts",
+    "issue",
+    "holding",
+    "supporting_reasoning",
+    "adverse_reasoning",
+    "distinguishing_facts",
+    "applicability",
+    "risks",
+    "recommended_actions",
+    "related_radar_ids",
+    "confidence_and_limits",
+    "validation_status"
+  ],
+  "pipeline": [
+    "classify_request_and_risk",
+    "retrieve_existing_radar_and_case_registry",
+    "search_official_judicial_sources_if_triggered",
+    "verify_full_text_and_current_procedural_status",
+    "compare_supporting_and_adverse_cases",
+    "deduplicate_by_case_number_and_act",
+    "save_research_only_case_with_evidence",
+    "github_readback_and_index_readback",
+    "engine_retrieval_test",
+    "eco_and_rop_expert_route_test",
+    "promote_to_executable_rule_only_after_legal_review_and_regression_tests"
+  ],
+  "expert_answer_contract": [
+    "identify_used_expert_and_tool_status",
+    "cite specific court act with verified official URL",
+    "state case facts and why comparable or distinguishable",
+    "show opposing practice when found",
+    "state law edition and decision status",
+    "give actionable conclusion with uncertainty; never promise 100% legal certainty"
+  ],
+  "safety": {
+    "fail_closed_on_incomplete_evidence": true,
+    "never_auto_promote_unverified_to_legal_rule": true,
+    "read_only_until_explicitly_validated": true,
+    "no_new_automations": true,
+    "no_change_to_existing_radar_schedule": true
+  },
+  "acceptance_tests": [
+    "ECO_EXPERT retrieves and cites verified case by number and distinguishes facts",
+    "ROP_EXPERT retrieves and cites verified case by number and distinguishes facts",
+    "Both experts can access new case after registry write and readback",
+    "A missing or blocked source yields an explicit incomplete status",
+    "Adverse case included when relevant",
+    "No duplicate permanent ID or regression of existing rules"
+  ],
+  "implementation_state": {
+    "github_specification": "PENDING_WRITE",
+    "worker_endpoint": "NOT_IMPLEMENTED",
+    "automatic_expert_routing": "NOT_VERIFIED",
+    "live_court_search": "NOT_IMPLEMENTED",
+    "expert_autonomous_tests": "NOT_RUN"
+  }
+}
