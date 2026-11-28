@@ -13,3 +13,5 @@ test('reject foreign predecessor',()=>assert.throws(()=>buildDraftRevision({...b
 test('reject predecessor marked submitted',()=>assert.throws(()=>buildDraftRevision({...base,previous:{...buildDraftRevision(base),status:'SUBMITTED'}}),/INVALID_PREVIOUS/));
 test('revision chain',()=>{const a=buildDraftRevision(base),b=buildDraftRevision({...base,previous:a});assert.equal(b.version,2);assert.equal(b.previousDigest,a.digest);assert.equal(verifyDraftChain([a,b]),true);assert.equal(verifyDraftChain([b,a]),false);});
 test('never publish',()=>{const a=buildDraftRevision(base);assert.equal(a.publicationAllowed,false);assert.equal(a.officialReportAllowed,false);});
+
+test('reject negative zero to prevent canonical collision with zero',()=>{assert.throws(()=>snapshotDigest({massGrams:-0}),/UNSAFE_NUMBER/);assert.notEqual(Object.is(-0,0),true);});
