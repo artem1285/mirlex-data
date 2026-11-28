@@ -2,7 +2,7 @@
 import {buildDraftRevision} from './draft-revisions.mjs';
 const valid=s=>typeof s==='string'&&/^[A-Za-z0-9._:-]{1,160}$/.test(s);
 export async function persistDraftRevision({principal,organizationId,year,reportId,body,sourceIds=[],authorize,store}){
- if(!principal||!valid(principal.subjectId)||!valid(organizationId)||!valid(reportId)||!Number.isInteger(year)||year<2024||year>2100)throw Error('INVALID_SCOPE');
+ if(!principal||principal.authenticated!==true||!valid(principal.subjectId)||!valid(organizationId)||!valid(reportId)||!Number.isInteger(year)||year<2024||year>2100)throw Error('INVALID_SCOPE');
  if(typeof authorize!=='function'||!store||typeof store.readHead!=='function'||typeof store.compareAndAppend!=='function')throw Error('MISSING_PROTECTED_ADAPTER');
  const scope=Object.freeze({subjectId:principal.subjectId,organizationId,year,reportId,permission:'rop:draft:write'});
  if(await authorize(scope)!==true)throw Error('FORBIDDEN');
