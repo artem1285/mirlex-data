@@ -5,7 +5,7 @@ const id=s=>typeof s==='string'&&/^[A-Za-z0-9._:-]{1,160}$/.test(s);
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
 function canonical(v){
  if(v===null||typeof v==='string'||typeof v==='boolean')return JSON.stringify(v);
- if(typeof v==='number'){if(!Number.isSafeInteger(v))throw Error('UNSAFE_NUMBER');return JSON.stringify(v);}
+ if(typeof v==='number'){if(!Number.isSafeInteger(v)||Object.is(v,-0))throw Error('UNSAFE_NUMBER');return JSON.stringify(v);}
  if(Array.isArray(v)){
   if(Object.keys(v).length!==v.length||!Array.from({length:v.length},(_,i)=>Object.prototype.hasOwnProperty.call(v,i)).every(Boolean))throw Error('UNSAFE_ARRAY');
   return '['+v.map(canonical).join(',')+']';
