@@ -61,3 +61,20 @@ test('foreign organization in second revision is rejected',async()=>{
  const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
  await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/FOREIGN_SCOPE/);
 });
+
+
+test('rejects anchor returned from browser even with a valid digest',async()=>{
+ const snapshot=validHistory();snapshot.anchorSource='BROWSER';
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNTRUSTED_SNAPSHOT/);
+});
+test('rejects missing independent anchor rather than trusting revision digest',async()=>{
+ const snapshot=validHistory();delete snapshot.expectedHeadDigest;
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}));
+});
+test('rejects deleted last revision even when anchor still points to it',async()=>{
+ const snapshot=twoVersionHistory();snapshot.snapshots.pop();
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/ANCHOR_MISMATCH/);
+});
