@@ -3,14 +3,23 @@
 import {createHash} from 'node:crypto';
 const id=s=>typeof s==='string'&&/^[A-Za-z0-9._:-]{1,160}$/.test(s);
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+function safeOwnData(v){
+ if(Reflect.ownKeys(v).some(k=>typeof k==='symbol'))throw Error('UNSAFE_PROPERTY');
+ for(const k of Object.getOwnPropertyNames(v)){
+  const d=Object.getOwnPropertyDescriptor(v,k);
+  if(!Object.prototype.hasOwnProperty.call(d,'value'))throw Error('UNSAFE_PROPERTY');
+ }
+}
 function canonical(v){
  if(v===null||typeof v==='string'||typeof v==='boolean')return JSON.stringify(v);
  if(typeof v==='number'){if(!Number.isSafeInteger(v)||Object.is(v,-0))throw Error('UNSAFE_NUMBER');return JSON.stringify(v);}
  if(Array.isArray(v)){
+  safeOwnData(v);
   if(Object.keys(v).length!==v.length||!Array.from({length:v.length},(_,i)=>Object.prototype.hasOwnProperty.call(v,i)).every(Boolean))throw Error('UNSAFE_ARRAY');
   return '['+v.map(canonical).join(',')+']';
  }
  if(v&&typeof v==='object'&&Object.getPrototypeOf(v)===Object.prototype){
+  safeOwnData(v);
   const keys=Object.keys(v).sort();
   if(keys.some(k=>k==='__proto__'||k==='constructor'||k==='prototype'))throw Error('UNSAFE_KEY');
   return '{'+keys.map(k=>JSON.stringify(k)+':'+canonical(v[k])).join(',')+'}';
