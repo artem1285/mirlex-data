@@ -6,7 +6,7 @@ export async function persistDraftInTransaction({session,organizationId,year,rep
  if(!session||session.authenticated!==true||!valid(session.subjectId))throw Error('UNAUTHENTICATED');
  // No user-controlled principal or authorization callback is accepted.
  return database.transaction(async tx=>{
-  if(!tx||typeof tx.authorize!=='function'||typeof tx.readHead!=='function'||typeof tx.compareAndAppend!=='function')throw Error('INVALID_TRANSACTION');
+  if(!tx||typeof tx.authorize!=='function'||typeof tx.readHead!=='function'||typeof tx.compareAndAppend!=='function'||typeof tx.verifySourceOwnership!=='function')throw Error('INVALID_TRANSACTION');
   const principal=Object.freeze({subjectId:session.subjectId,authenticated:true});
   const authorize=async scope=>tx.authorize(scope);
   const store={
@@ -14,6 +14,7 @@ export async function persistDraftInTransaction({session,organizationId,year,rep
    compareAndAppend:async entry=>{
     // Recheck permission in the same transaction immediately before compare-and-append.
     if(await tx.authorize(entry.scope)!==true)throw Error('FORBIDDEN');
+    if(await tx.verifySourceOwnership({scope:entry.scope,sourceIds:[...entry.sourceIds]})!==true)throw Error('SOURCE_OWNERSHIP_UNVERIFIED');
     return tx.compareAndAppend(entry);
    }
   };
