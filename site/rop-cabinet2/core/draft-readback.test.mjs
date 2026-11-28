@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {buildDraftRevision} from './draft-revisions.mjs';
+import {readVerifiedDraft} from './draft-readback.mjs';
+const base={organizationId:'org',year:2026,reportId:'r'};
+const payload={...base,version:1,previousDigest:null,body:{rows:[1]},sourceIds:['doc']};
+const revision=buildDraftRevision({...base,body:payload.body,sourceIds:payload.sourceIds});
+const input=(snapshot={revision,payload})=>({...base,principal:{subjectId:'alice'},authorize:async()=>true,store:{readSnapshot:async()=>snapshot}});
+test('verified snapshot can be read but never filed',async()=>{const r=await readVerifiedDraft(input());assert.equal(r.revision.digest,revision.digest);assert.equal(r.revision.publicationAllowed,false)});
+test('missing draft returns null',async()=>assert.equal(await readVerifiedDraft(input(null)),null));
+test('deny before storage access',async()=>{let touched=false;await assert.rejects(readVerifiedDraft({...input(),authorize:async()=>false,store:{readSnapshot:async()=>{touched=true}}}),/FORBIDDEN/);assert.equal(touched,false)});
+test('tampered body is rejected',async()=>await assert.rejects(readVerifiedDraft(input({revision,payload:{...payload,body:{rows:[2]}}})),/SNAPSHOT_INTEGRITY_FAILURE/));
+test('tampered source IDs are rejected',async()=>await assert.rejects(readVerifiedDraft(input({revision,payload:{...payload,sourceIds:['other']}})),/SNAPSHOT_INTEGRITY_FAILURE/));
+test('foreign organization rejected',async()=>await assert.rejects(readVerifiedDraft(input({revision,payload:{...payload,organizationId:'foreign'}})),/PAYLOAD_SCOPE_MISMATCH/));
+test('published flag rejected',async()=>await assert.rejects(readVerifiedDraft(input({revision:{...revision,publicationAllowed:true},payload})),/FOREIGN_OR_UNSAFE_REVISION/));
+test('invalid predecessor rejected',async()=>await assert.rejects(readVerifiedDraft(input({revision:{...revision,version:2,previousDigest:null},payload:{...payload,version:2}})),/INVALID_PREVIOUS/));
+test('missing adapter rejected',async()=>await assert.rejects(readVerifiedDraft({...input(),store:{}}),/MISSING_PROTECTED_ADAPTER/));
+test('browser principal ignored',async()=>{let subject;await readVerifiedDraft({...input(),subjectId:'attacker',authorize:async s=>{subject=s.subjectId;return true}});assert.equal(subject,'alice')});
