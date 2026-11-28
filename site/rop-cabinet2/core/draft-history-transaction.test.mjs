@@ -78,3 +78,20 @@ test('rejects deleted last revision even when anchor still points to it',async()
  const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
  await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/ANCHOR_MISMATCH/);
 });
+
+test('rejects duplicate source identifiers in persisted revision',async()=>{
+ const snapshot=validHistory();snapshot.snapshots[0].payload.sourceIds=['source1','source1'];
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/INVALID_SOURCES/);
+});
+test('rejects unsafe fractional or imprecise stored numeric mass',async()=>{
+ const snapshot=validHistory();snapshot.snapshots[0].payload.body.items[0].massGrams=1.5;
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_NUMBER/);
+});
+test('rejects prototype pollution keys inside persisted payload',async()=>{
+ const snapshot=validHistory();snapshot.snapshots[0].payload.body.items[0]['__proto__']=null;
+ Object.defineProperty(snapshot.snapshots[0].payload.body.items[0],'__proto__',{value:'unsafe',enumerable:true,configurable:true});
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_KEY/);
+});
