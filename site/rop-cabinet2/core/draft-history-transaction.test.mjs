@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readDraftHistoryInTransaction} from './draft-history-transaction.mjs';
+const args=()=>({session:{subjectId:'user1',authenticated:true},organizationId:'org1',year:2026,reportId:'report1'});
+test('rejects unauthenticated before database',async()=>{let called=false;await assert.rejects(readDraftHistoryInTransaction({...args(),session:{subjectId:'user1'},database:{transaction:()=>{called=true}}}),/UNAUTHENTICATED/);assert.equal(called,false)});
+test('requires transactional backend',async()=>{await assert.rejects(readDraftHistoryInTransaction(args()),/MISSING_TRANSACTION/)});
+test('rejects incomplete transaction',async()=>{await assert.rejects(readDraftHistoryInTransaction({...args(),database:{transaction:fn=>fn({authorize:async()=>true})}}),/INVALID_TRANSACTION/)});
+test('rejects initial permission denial without reading',async()=>{let read=false;const database={transaction:fn=>fn({authorize:async()=>false,readHistoryAndAnchor:async()=>{read=true}})};await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/FORBIDDEN/);assert.equal(read,false)});
+test('revocation between first and second check blocks read',async()=>{let checks=0,read=false;const database={transaction:fn=>fn({authorize:async()=>++checks===1,readHistoryAndAnchor:async()=>{read=true}})};await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/FORBIDDEN/);assert.equal(read,false);assert.equal(checks,2)});
+test('forged browser principal cannot change transaction scope',async()=>{let scope;const database={transaction:fn=>fn({authorize:async s=>{scope=s;return true},readHistoryAndAnchor:async()=>null})};await assert.rejects(readDraftHistoryInTransaction({...args(),principal:{subjectId:'attacker'},database}),/UNTRUSTED_SNAPSHOT/);assert.equal(scope.subjectId,'user1')});
+test('untrusted anchor rejected',async()=>{const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>({authorized:true,subjectId:'user1',organizationId:'org1',year:2026,reportId:'report1',anchorSource:'BROWSER'})})};await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNTRUSTED_SNAPSHOT/)});
+test('transaction failure propagates',async()=>{const database={transaction:async()=>{throw Error('DB_UNAVAILABLE')}};await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/DB_UNAVAILABLE/)});
