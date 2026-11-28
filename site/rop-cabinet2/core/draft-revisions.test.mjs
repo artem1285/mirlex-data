@@ -15,3 +15,7 @@ test('revision chain',()=>{const a=buildDraftRevision(base),b=buildDraftRevision
 test('never publish',()=>{const a=buildDraftRevision(base);assert.equal(a.publicationAllowed,false);assert.equal(a.officialReportAllowed,false);});
 
 test('reject negative zero to prevent canonical collision with zero',()=>{assert.throws(()=>snapshotDigest({massGrams:-0}),/UNSAFE_NUMBER/);assert.notEqual(Object.is(-0,0),true);});
+
+test('reject symbol-keyed object to avoid untracked mutation',()=>{const v={mass:'1.000'};v[Symbol('hidden')]='changed';assert.throws(()=>snapshotDigest(v),/UNSAFE_PROPERTY/);});
+test('reject accessor without invoking it',()=>{let invoked=0;const v={};Object.defineProperty(v,'mass',{enumerable:true,get(){invoked++;return '1.000';}});assert.throws(()=>snapshotDigest(v),/UNSAFE_PROPERTY/);assert.equal(invoked,0);});
+test('reject array symbol metadata and index accessor',()=>{const a=['x'];a[Symbol('extra')]=1;assert.throws(()=>snapshotDigest(a),/UNSAFE_PROPERTY/);const b=['x'];Object.defineProperty(b,'0',{enumerable:true,get(){throw Error('GETTER_CALLED');}});assert.throws(()=>snapshotDigest(b),/UNSAFE_PROPERTY/);});
