@@ -6,7 +6,10 @@ const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
 function canonical(v){
  if(v===null||typeof v==='string'||typeof v==='boolean')return JSON.stringify(v);
  if(typeof v==='number'){if(!Number.isSafeInteger(v))throw Error('UNSAFE_NUMBER');return JSON.stringify(v);}
- if(Array.isArray(v))return '['+v.map(canonical).join(',')+']';
+ if(Array.isArray(v)){
+  if(Object.keys(v).length!==v.length||!Array.from({length:v.length},(_,i)=>Object.prototype.hasOwnProperty.call(v,i)).every(Boolean))throw Error('UNSAFE_ARRAY');
+  return '['+v.map(canonical).join(',')+']';
+ }
  if(v&&typeof v==='object'&&Object.getPrototypeOf(v)===Object.prototype){
   const keys=Object.keys(v).sort();
   if(keys.some(k=>k==='__proto__'||k==='constructor'||k==='prototype'))throw Error('UNSAFE_KEY');
