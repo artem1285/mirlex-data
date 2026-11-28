@@ -95,3 +95,14 @@ test('rejects prototype pollution keys inside persisted payload',async()=>{
  const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
  await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_KEY/);
 });
+
+test('rejects sparse arrays in persisted payload',async()=>{
+ const snapshot=validHistory();snapshot.snapshots[0].payload.body.items=new Array(1);
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_ARRAY/);
+});
+test('rejects extra enumerable properties on persisted arrays',async()=>{
+ const snapshot=validHistory();snapshot.snapshots[0].payload.body.items.extra='hidden';
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_ARRAY/);
+});
