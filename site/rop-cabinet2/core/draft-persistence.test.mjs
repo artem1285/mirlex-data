@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {persistDraftRevision} from './draft-persistence.mjs';
-const args=()=>({principal:{subjectId:'user1'},organizationId:'org1',year:2026,reportId:'report1',body:{rows:[1]},sourceIds:['doc1']});
+const args=()=>({principal:{subjectId:'user1',authenticated:true},organizationId:'org1',year:2026,reportId:'report1',body:{rows:[1]},sourceIds:['doc1']});
 const storage=()=>{let head=null;return {readHead:async()=>head,compareAndAppend:async({expectedVersion,expectedDigest,revision})=>{if((head?.version??0)!==expectedVersion||(head?.digest??null)!==expectedDigest)return {accepted:false};head=revision;return {accepted:true,version:revision.version,digest:revision.digest};}}};
 test('creates draft through protected CAS',async()=>{const r=await persistDraftRevision({...args(),authorize:async()=>true,store:storage()});assert.equal(r.version,1);assert.equal(r.persisted,true);assert.equal(r.publicationAllowed,false)});
 test('serial revisions link digest',async()=>{const store=storage(),a=args();const one=await persistDraftRevision({...a,authorize:async()=>true,store});const two=await persistDraftRevision({...a,body:{rows:[2]},authorize:async()=>true,store});assert.equal(two.version,2);assert.equal(two.previousDigest,one.digest)});
@@ -11,3 +11,6 @@ test('CAS conflict rejects concurrent stale write',async()=>{const store=storage
 test('foreign stored head rejected',async()=>{await assert.rejects(persistDraftRevision({...args(),authorize:async()=>true,store:{readHead:async()=>({organizationId:'other',year:2026,reportId:'report1',status:'DRAFT'}),compareAndAppend:async()=>({accepted:true})}}),/INVALID_STORED_HEAD/)});
 test('storage must acknowledge matching digest',async()=>{await assert.rejects(persistDraftRevision({...args(),authorize:async()=>true,store:{readHead:async()=>null,compareAndAppend:async()=>({accepted:true,version:1,digest:'fake'})}}),/REVISION_CONFLICT/)});
 test('browser supplied identity cannot override principal',async()=>{let seen;await persistDraftRevision({...args(),subjectId:'attacker',authorize:async s=>{seen=s.subjectId;return true},store:storage()});assert.equal(seen,'user1')});
+
+test('unauthenticated principal rejected before backend callbacks',async()=>{let touched=false;const store={readHead:async()=>{touched=true;return null},compareAndAppend:async()=>{touched=true;return {accepted:true}}};await assert.rejects(persistDraftRevision({...args(),principal:{subjectId:'user1',authenticated:false},authorize:async()=>{touched=true;return true},store}),/INVALID_SCOPE/);assert.equal(touched,false)});
+test('missing authenticated marker rejected',async()=>{await assert.rejects(persistDraftRevision({...args(),principal:{subjectId:'user1'},authorize:async()=>true,store:storage()}),/INVALID_SCOPE/)});
