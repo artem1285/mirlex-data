@@ -5,6 +5,7 @@ const id=s=>typeof s==='string'&&/^[A-Za-z0-9._:-]{1,160}$/.test(s);
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
 function safeOwnData(v){
  if(Reflect.ownKeys(v).some(k=>typeof k==='symbol'))throw Error('UNSAFE_PROPERTY');
+ if(Object.getOwnPropertyNames(v).some(k=>!Object.prototype.propertyIsEnumerable.call(v,k)&&!(Array.isArray(v)&&k==='length')))throw Error('UNSAFE_PROPERTY');
  for(const k of Object.getOwnPropertyNames(v)){
   const d=Object.getOwnPropertyDescriptor(v,k);
   if(!Object.prototype.hasOwnProperty.call(d,'value'))throw Error('UNSAFE_PROPERTY');
