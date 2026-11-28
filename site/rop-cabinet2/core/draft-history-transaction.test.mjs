@@ -90,7 +90,7 @@ test('rejects unsafe fractional or imprecise stored numeric mass',async()=>{
  await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_NUMBER/);
 });
 test('rejects prototype pollution keys inside persisted payload',async()=>{
- const snapshot=validHistory();snapshot.snapshots[0].payload.body.items[0]['__proto__']=null;
+ const snapshot=validHistory();
  Object.defineProperty(snapshot.snapshots[0].payload.body.items[0],'__proto__',{value:'unsafe',enumerable:true,configurable:true});
  const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
  await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNSAFE_KEY/);
