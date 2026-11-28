@@ -35,3 +35,29 @@ test('changed trusted anchor rejects otherwise valid chain',async()=>{
  const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
  await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/ANCHOR_MISMATCH/);
 });
+
+function twoVersionHistory(){
+ const first=validHistory();
+ const prior=first.snapshots[0].revision;
+ const body={items:[{code:'test',massGrams:2500}]};
+ const revision=buildDraftRevision({organizationId:'org1',year:2026,reportId:'report1',previous:prior,body,sourceIds:['source1','source2']});
+ first.snapshots.push({revision,payload:{organizationId:'org1',year:2026,reportId:'report1',version:2,previousDigest:prior.digest,sourceIds:['source1','source2'],body}});
+ first.expectedHeadDigest=revision.digest;
+ return first;
+}
+test('two linked revisions verify under protected transaction',async()=>{
+ const snapshot=twoVersionHistory();
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ const result=await readDraftHistoryInTransaction({...args(),database});
+ assert.equal(result.verified,true);assert.equal(result.version,2);assert.equal(result.digest,snapshot.expectedHeadDigest);
+});
+test('missing intermediate revision is rejected even with final trusted anchor',async()=>{
+ const snapshot=twoVersionHistory();snapshot.snapshots.shift();
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/BROKEN_CHAIN/);
+});
+test('foreign organization in second revision is rejected',async()=>{
+ const snapshot=twoVersionHistory();snapshot.snapshots[1].payload.organizationId='foreign';
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/FOREIGN_SCOPE/);
+});
