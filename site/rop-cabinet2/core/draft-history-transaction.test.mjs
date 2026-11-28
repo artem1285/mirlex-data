@@ -10,3 +10,28 @@ test('revocation between first and second check blocks read',async()=>{let check
 test('forged browser principal cannot change transaction scope',async()=>{let scope;const database={transaction:fn=>fn({authorize:async s=>{scope=s;return true},readHistoryAndAnchor:async()=>null})};await assert.rejects(readDraftHistoryInTransaction({...args(),principal:{subjectId:'attacker'},database}),/UNTRUSTED_SNAPSHOT/);assert.equal(scope.subjectId,'user1')});
 test('untrusted anchor rejected',async()=>{const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>({authorized:true,subjectId:'user1',organizationId:'org1',year:2026,reportId:'report1',anchorSource:'BROWSER'})})};await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/UNTRUSTED_SNAPSHOT/)});
 test('transaction failure propagates',async()=>{const database={transaction:async()=>{throw Error('DB_UNAVAILABLE')}};await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/DB_UNAVAILABLE/)});
+
+import {buildDraftRevision} from './draft-revisions.mjs';
+function validHistory(){
+ const body={items:[{code:'test',massGrams:1000}]};
+ const revision=buildDraftRevision({organizationId:'org1',year:2026,reportId:'report1',body,sourceIds:['source1']});
+ const payload={organizationId:'org1',year:2026,reportId:'report1',version:1,previousDigest:null,sourceIds:['source1'],body};
+ return {authorized:true,subjectId:'user1',organizationId:'org1',year:2026,reportId:'report1',anchorSource:'PROTECTED_INDEPENDENT_STORE',expectedHeadDigest:revision.digest,snapshots:[{revision,payload}]};
+}
+test('valid independently anchored history is audited end-to-end inside transaction',async()=>{
+ let checks=0,reads=0;
+ const database={transaction:fn=>fn({authorize:async()=>{checks++;return true},readHistoryAndAnchor:async()=>{reads++;return validHistory()}})};
+ const result=await readDraftHistoryInTransaction({...args(),database});
+ assert.equal(result.verified,true);assert.equal(result.version,1);assert.equal(result.publicationAllowed,false);
+ assert.equal(result.officialReportAllowed,false);assert.equal(checks,2);assert.equal(reads,1);
+});
+test('tampered payload rejected despite matching stored revision',async()=>{
+ const snapshot=validHistory();snapshot.snapshots[0].payload.body.items[0].massGrams=9000;
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/DIGEST_MISMATCH/);
+});
+test('changed trusted anchor rejects otherwise valid chain',async()=>{
+ const snapshot=validHistory();snapshot.expectedHeadDigest='0'.repeat(64);
+ const database={transaction:fn=>fn({authorize:async()=>true,readHistoryAndAnchor:async()=>snapshot})};
+ await assert.rejects(readDraftHistoryInTransaction({...args(),database}),/ANCHOR_MISMATCH/);
+});
